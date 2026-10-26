@@ -232,27 +232,27 @@ export const ExamView: React.FC = () => {
 
         {/* 4 Thẻ thống kê chi tiết */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-          <div className="bg-white border border-slate-200 rounded-2xl p-4 shadow-xs text-center">
-            <span className="text-xs text-slate-500 font-medium">Tổng số câu</span>
-            <div className="text-2xl font-bold text-slate-800 mt-0.5">{result.totalQuestions}</div>
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs text-center">
+            <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Tổng số câu</span>
+            <div className="text-2xl font-bold text-slate-800 dark:text-slate-100 mt-0.5">{result.totalQuestions}</div>
           </div>
-          <div className="bg-white border border-slate-200 rounded-2xl p-4 shadow-xs text-center">
-            <span className="text-xs text-emerald-600 font-medium">Số câu đúng</span>
-            <div className="text-2xl font-bold text-emerald-700 mt-0.5">{result.correctCount}</div>
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs text-center">
+            <span className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">Số câu đúng</span>
+            <div className="text-2xl font-bold text-emerald-700 dark:text-emerald-400 mt-0.5">{result.correctCount}</div>
           </div>
-          <div className="bg-white border border-slate-200 rounded-2xl p-4 shadow-xs text-center">
-            <span className="text-xs text-rose-500 font-medium">Số câu sai</span>
-            <div className="text-2xl font-bold text-rose-600 mt-0.5">{result.wrongCount}</div>
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs text-center">
+            <span className="text-xs text-rose-500 dark:text-rose-400 font-medium">Số câu sai</span>
+            <div className="text-2xl font-bold text-rose-600 dark:text-rose-400 mt-0.5">{result.wrongCount}</div>
           </div>
-          <div className="bg-white border border-slate-200 rounded-2xl p-4 shadow-xs text-center">
-            <span className="text-xs text-slate-400 font-medium">Chưa làm</span>
-            <div className="text-2xl font-bold text-slate-600 mt-0.5">{result.unansweredCount}</div>
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs text-center">
+            <span className="text-xs text-slate-400 dark:text-slate-500 font-medium">Chưa làm</span>
+            <div className="text-2xl font-bold text-slate-600 dark:text-slate-400 mt-0.5">{result.unansweredCount}</div>
           </div>
         </div>
 
         {/* Bảng phân tích theo từng chương */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs">
-          <h3 className="text-sm font-bold text-slate-800 mb-4">
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs">
+          <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 mb-4">
             Đánh giá năng lực theo từng chương:
           </h3>
           <div className="space-y-3">
@@ -261,14 +261,14 @@ export const ExamView: React.FC = () => {
               return (
                 <div key={bd.chapterId} className="space-y-1">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="font-semibold text-slate-700">
+                    <span className="font-semibold text-slate-700 dark:text-slate-300">
                       Chương {bd.chapterId}: {bd.chapterTitle.split(':')[1]?.trim() || bd.chapterTitle}
                     </span>
-                    <span className="font-bold text-slate-800">
+                    <span className="font-bold text-slate-800 dark:text-slate-200">
                       {bd.correctCount}/{bd.totalQuestions} câu ({pct}%)
                     </span>
                   </div>
-                  <div className="w-full bg-slate-100 h-2 rounded-full overflow-hidden border border-slate-200">
+                  <div className="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden border border-slate-200 dark:border-slate-700">
                     <div
                       className={cn(
                         'h-full rounded-full transition-all duration-300',
@@ -284,16 +284,16 @@ export const ExamView: React.FC = () => {
         </div>
 
         {/* Bộ lọc xem lại chi tiết bài làm */}
-        <div className="flex flex-wrap items-center justify-between gap-3 bg-white border border-slate-200 rounded-2xl p-4 shadow-xs">
+        <div className="flex flex-wrap items-center justify-between gap-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs">
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-slate-700">Xem lại bài thi:</span>
-            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl text-xs font-medium">
+            <span className="text-xs font-bold text-slate-700 dark:text-slate-300">Xem lại bài thi:</span>
+            <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-xs font-medium">
               <button
                 type="button"
                 onClick={() => setReviewFilter('all')}
                 className={cn(
-                  'px-3 py-1 rounded-lg transition-colors',
-                  reviewFilter === 'all' ? 'bg-white font-bold text-slate-900 shadow-2xs' : 'text-slate-600'
+                  'px-3 py-1 rounded-lg transition-colors cursor-pointer',
+                  reviewFilter === 'all' ? 'bg-white dark:bg-slate-900 font-bold text-slate-900 dark:text-white shadow-2xs' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 )}
               >
                 Tất cả ({result.questionResults.length})
@@ -302,8 +302,8 @@ export const ExamView: React.FC = () => {
                 type="button"
                 onClick={() => setReviewFilter('wrong')}
                 className={cn(
-                  'px-3 py-1 rounded-lg transition-colors',
-                  reviewFilter === 'wrong' ? 'bg-white font-bold text-rose-600 shadow-2xs' : 'text-slate-600'
+                  'px-3 py-1 rounded-lg transition-colors cursor-pointer',
+                  reviewFilter === 'wrong' ? 'bg-white dark:bg-slate-900 font-bold text-rose-600 dark:text-rose-400 shadow-2xs' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 )}
               >
                 Câu sai ({result.wrongCount})
@@ -312,8 +312,8 @@ export const ExamView: React.FC = () => {
                 type="button"
                 onClick={() => setReviewFilter('correct')}
                 className={cn(
-                  'px-3 py-1 rounded-lg transition-colors',
-                  reviewFilter === 'correct' ? 'bg-white font-bold text-emerald-600 shadow-2xs' : 'text-slate-600'
+                  'px-3 py-1 rounded-lg transition-colors cursor-pointer',
+                  reviewFilter === 'correct' ? 'bg-white dark:bg-slate-900 font-bold text-emerald-600 dark:text-emerald-400 shadow-2xs' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 )}
               >
                 Câu đúng ({result.correctCount})
@@ -327,7 +327,7 @@ export const ExamView: React.FC = () => {
               setResult(null);
               setSession(null);
             }}
-            className="flex items-center space-x-1.5 px-4 py-2 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 transition-colors shadow-xs"
+            className="flex items-center space-x-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition-colors shadow-xs cursor-pointer"
           >
             <RotateCcw className="w-3.5 h-3.5 mr-1" />
             Làm đề thi mới
@@ -352,33 +352,33 @@ export const ExamView: React.FC = () => {
               <div
                 key={qResult.questionId}
                 className={cn(
-                  'bg-white border rounded-2xl p-5 shadow-xs transition-all',
-                  qResult.isCorrect ? 'border-emerald-200' : 'border-rose-200'
+                  'bg-white dark:bg-slate-900 border rounded-2xl p-5 shadow-xs transition-all',
+                  qResult.isCorrect ? 'border-emerald-200 dark:border-emerald-800/80' : 'border-rose-200 dark:border-rose-800/80'
                 )}
               >
                 <div className="flex items-center justify-between gap-2 mb-3">
                   <div className="flex items-center gap-2">
-                    <span className="font-bold text-xs bg-slate-100 text-slate-800 px-2 py-0.5 rounded-md">
+                    <span className="font-bold text-xs bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-2 py-0.5 rounded-md">
                       Câu {idx + 1}
                     </span>
-                    <span className="text-xs font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
+                    <span className="text-xs font-semibold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-950/60 px-2 py-0.5 rounded border border-blue-200 dark:border-blue-800">
                       Chương {qResult.chapterId}
                     </span>
                   </div>
 
                   {qResult.isCorrect ? (
-                    <span className="flex items-center text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-lg">
-                      <CheckCircle2 className="w-4 h-4 mr-1 text-emerald-600" /> Đúng
+                    <span className="flex items-center text-xs font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-950/60 px-2.5 py-1 rounded-lg">
+                      <CheckCircle2 className="w-4 h-4 mr-1 text-emerald-600 dark:text-emerald-400" /> Đúng
                     </span>
                   ) : (
-                    <span className="flex items-center text-xs font-bold text-rose-700 bg-rose-100 px-2.5 py-1 rounded-lg">
-                      <XCircle className="w-4 h-4 mr-1 text-rose-600" />
+                    <span className="flex items-center text-xs font-bold text-rose-700 dark:text-rose-300 bg-rose-100 dark:bg-rose-950/60 px-2.5 py-1 rounded-lg">
+                      <XCircle className="w-4 h-4 mr-1 text-rose-600 dark:text-rose-400" />
                       {userAnswersArray.length === 0 ? 'Chưa trả lời' : 'Sai'}
                     </span>
                   )}
                 </div>
 
-                <p className="text-sm sm:text-base font-bold text-slate-900 mb-4">
+                <p className="text-sm sm:text-base font-bold text-slate-900 dark:text-slate-100 mb-4">
                   {qResult.questionContent}
                 </p>
 
@@ -388,11 +388,11 @@ export const ExamView: React.FC = () => {
                     const isUserChosen = userAnswersArray.includes(opt.id);
                     const isCorrect = qResult.correctAnswers?.includes(opt.id);
 
-                    let optStyle = 'border-slate-200 bg-slate-50/50 text-slate-600';
+                    let optStyle = 'border-slate-200 dark:border-slate-700/80 bg-slate-50/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300';
                     if (isCorrect) {
-                      optStyle = 'border-emerald-500 bg-emerald-50 text-emerald-950 font-bold';
+                      optStyle = 'border-emerald-500 dark:border-emerald-500 bg-emerald-50 dark:bg-emerald-950/60 text-emerald-950 dark:text-emerald-100 font-bold';
                     } else if (isUserChosen && !isCorrect) {
-                      optStyle = 'border-rose-400 bg-rose-50 text-rose-950 line-through';
+                      optStyle = 'border-rose-400 dark:border-rose-500 bg-rose-50 dark:bg-rose-950/60 text-rose-950 dark:text-rose-100 line-through';
                     }
 
                     return (
@@ -402,15 +402,15 @@ export const ExamView: React.FC = () => {
                       >
                         <span className="font-bold w-5">{opt.id}.</span>
                         <span className="flex-1">{opt.text}</span>
-                        {isCorrect && <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />}
-                        {isUserChosen && !isCorrect && <XCircle className="w-4 h-4 text-rose-500 shrink-0" />}
+                        {isCorrect && <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />}
+                        {isUserChosen && !isCorrect && <XCircle className="w-4 h-4 text-rose-500 dark:text-rose-400 shrink-0" />}
                       </div>
                     );
                   })}
                 </div>
 
                 {/* Lời giải thích */}
-                <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed whitespace-pre-line mb-3">
+                <div className="bg-slate-50 dark:bg-slate-800/60 p-3.5 rounded-xl border border-slate-200 dark:border-slate-700 text-xs text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-line mb-3">
                   {expText}
                 </div>
 
@@ -419,7 +419,7 @@ export const ExamView: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => openDrawer(qResult.articleId, qResult.chapterId)}
-                    className="flex items-center space-x-1.5 text-xs font-bold text-amber-800 bg-amber-100 hover:bg-amber-200 px-3 py-1.5 rounded-lg border border-amber-300 transition-colors"
+                    className="flex items-center space-x-1.5 text-xs font-bold text-amber-800 dark:text-amber-300 bg-amber-100 dark:bg-amber-950/60 hover:bg-amber-200 dark:hover:bg-amber-900/60 px-3 py-1.5 rounded-lg border border-amber-300 dark:border-amber-700 transition-colors cursor-pointer"
                   >
                     <BookOpen className="w-3.5 h-3.5" />
                     <span>Tra cứu đối chiếu lý thuyết</span>
@@ -462,21 +462,21 @@ export const ExamView: React.FC = () => {
     return (
       <div className="space-y-5">
         {/* Thanh Header phiên thi: Đồng hồ đếm ngược & Nút nộp bài */}
-        <div className="sticky top-16 z-20 bg-white/95 backdrop-blur-md border border-slate-200 rounded-2xl p-4 shadow-sm flex items-center justify-between gap-4">
+        <div className="sticky top-16 z-20 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-sm flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div
               className={cn(
                 'flex items-center gap-2 px-3.5 py-2 rounded-xl font-mono text-base sm:text-lg font-bold border transition-colors',
                 isNearEnd
-                  ? 'bg-rose-50 text-rose-600 border-rose-300 animate-pulse'
-                  : 'bg-slate-100 text-slate-800 border-slate-200'
+                  ? 'bg-rose-50 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 border-rose-300 dark:border-rose-700 animate-pulse'
+                  : 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-slate-200 dark:border-slate-700'
               )}
             >
-              <Clock className={cn('w-4 h-4', isNearEnd && 'text-rose-600')} />
+              <Clock className={cn('w-4 h-4', isNearEnd && 'text-rose-600 dark:text-rose-400')} />
               <span>{timeFormatted}</span>
             </div>
-            <span className="text-xs font-semibold text-slate-500 hidden sm:inline">
-              Đã làm: <strong className="text-blue-600">{answeredCount}</strong> /{' '}
+            <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 hidden sm:inline">
+              Đã làm: <strong className="text-blue-600 dark:text-blue-400">{answeredCount}</strong> /{' '}
               {session.questions.length} câu
             </span>
           </div>
@@ -486,20 +486,20 @@ export const ExamView: React.FC = () => {
               type="button"
               onClick={() => handleToggleFlag(currentQuestion.id)}
               className={cn(
-                'flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold border transition-colors',
+                'flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold border transition-colors cursor-pointer',
                 isFlagged
-                  ? 'bg-amber-100 text-amber-800 border-amber-300'
-                  : 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200'
+                  ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-700'
+                  : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700'
               )}
             >
-              <Flag className={cn('w-3.5 h-3.5', isFlagged && 'fill-current text-amber-600')} />
+              <Flag className={cn('w-3.5 h-3.5', isFlagged && 'fill-current text-amber-600 dark:text-amber-400')} />
               <span className="hidden sm:inline">Cắm cờ xem lại</span>
             </button>
 
             <button
               type="button"
               onClick={() => setShowSubmitConfirm(true)}
-              className="flex items-center gap-1.5 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition-all shadow-xs"
+              className="flex items-center gap-1.5 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition-all shadow-xs cursor-pointer"
             >
               <Send className="w-3.5 h-3.5" />
               <span>Nộp bài</span>
@@ -508,8 +508,8 @@ export const ExamView: React.FC = () => {
         </div>
 
         {/* Ma trận điều hướng câu hỏi bài thi */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-4 shadow-xs">
-          <div className="flex items-center justify-between text-xs font-semibold text-slate-500 mb-2">
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs">
+          <div className="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400 mb-2">
             <span>Ma trận câu hỏi:</span>
             <div className="flex items-center gap-3 text-[11px]">
               <span className="flex items-center gap-1">
@@ -519,7 +519,7 @@ export const ExamView: React.FC = () => {
                 <span className="w-2.5 h-2.5 rounded-full bg-amber-500"></span> Cắm cờ
               </span>
               <span className="flex items-center gap-1">
-                <span className="w-2.5 h-2.5 rounded-full bg-slate-200"></span> Chưa làm
+                <span className="w-2.5 h-2.5 rounded-full bg-slate-200 dark:bg-slate-700"></span> Chưa làm
               </span>
             </div>
           </div>
@@ -538,16 +538,16 @@ export const ExamView: React.FC = () => {
                     setSession((prev) => (prev ? { ...prev, currentQuestionIndex: idx } : null));
                   }}
                   className={cn(
-                    'w-8 h-8 rounded-lg text-xs font-bold flex items-center justify-center border transition-all relative',
+                    'w-8 h-8 rounded-lg text-xs font-bold flex items-center justify-center border transition-all relative cursor-pointer',
                     isAnswered
                       ? 'bg-blue-600 text-white border-blue-600'
-                      : 'bg-slate-100 text-slate-700 hover:bg-slate-200 border-slate-200',
+                      : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border-slate-200 dark:border-slate-700',
                     isCurrent && 'ring-2 ring-amber-500 scale-105'
                   )}
                 >
                   {idx + 1}
                   {hasFlag && (
-                    <span className="w-2 h-2 rounded-full bg-amber-400 absolute -top-0.5 -right-0.5 ring-1 ring-white" />
+                    <span className="w-2 h-2 rounded-full bg-amber-400 absolute -top-0.5 -right-0.5 ring-1 ring-white dark:ring-slate-900" />
                   )}
                 </button>
               );
@@ -556,21 +556,21 @@ export const ExamView: React.FC = () => {
         </div>
 
         {/* Thẻ câu hỏi hiện tại */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs">
-          <div className="flex items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xs">
+          <div className="flex items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100 dark:border-slate-800">
             <div className="flex items-center gap-2">
-              <span className="font-bold text-sm bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 rounded-lg">
+              <span className="font-bold text-sm bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 px-3 py-1 rounded-lg">
                 Câu {currentQIndex + 1} / {session.questions.length}
               </span>
-              <span className="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">
+              <span className="text-xs font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-md">
                 Chương {currentQuestion.chapterId}
               </span>
-              <span className="text-xs font-semibold text-purple-700 bg-purple-50 border border-purple-200 px-2 py-0.5 rounded-md">
+              <span className="text-xs font-semibold text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-950/60 border border-purple-200 dark:border-purple-800 px-2 py-0.5 rounded-md">
                 {isMultiple ? '☑ Chọn nhiều đáp án' : '◉ Chọn 1 đáp án'}
               </span>
             </div>
 
-            <span className="text-xs font-medium text-slate-400">
+            <span className="text-xs font-medium text-slate-400 dark:text-slate-500">
               {currentQuestion.difficulty === 'easy'
                 ? 'Dễ'
                 : currentQuestion.difficulty === 'medium'
@@ -579,7 +579,7 @@ export const ExamView: React.FC = () => {
             </span>
           </div>
 
-          <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug mb-5 text-justify">
+          <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 leading-snug mb-5 text-justify">
             {currentQuestion.content}
           </h3>
 
@@ -596,8 +596,8 @@ export const ExamView: React.FC = () => {
                   className={cn(
                     'w-full text-left p-4 rounded-xl border transition-all duration-150 flex items-start gap-3 cursor-pointer',
                     isSelected
-                      ? 'border-blue-600 bg-blue-50/90 text-blue-950 font-medium ring-1 ring-blue-600'
-                      : 'border-slate-200 bg-white hover:border-slate-300 hover:bg-slate-50 text-slate-700'
+                      ? 'border-blue-600 dark:border-blue-500 bg-blue-50/90 dark:bg-blue-950/60 text-blue-950 dark:text-blue-100 font-medium ring-1 ring-blue-600 dark:ring-blue-500'
+                      : 'border-slate-200 dark:border-slate-700/80 bg-white dark:bg-slate-800/60 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200'
                   )}
                 >
                   <span
@@ -605,7 +605,7 @@ export const ExamView: React.FC = () => {
                       'w-7 h-7 rounded-lg text-xs font-bold flex items-center justify-center shrink-0 border transition-colors',
                       isSelected
                         ? 'bg-blue-600 text-white border-blue-600'
-                        : 'bg-slate-100 text-slate-700 border-slate-300'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-600'
                     )}
                   >
                     {opt.id}
@@ -619,7 +619,7 @@ export const ExamView: React.FC = () => {
           </div>
 
           {/* Điều hướng Trước / Sau */}
-          <div className="flex items-center justify-between pt-4 border-t border-slate-100">
+          <div className="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-800">
             <button
               type="button"
               disabled={currentQIndex <= 0}
@@ -628,7 +628,7 @@ export const ExamView: React.FC = () => {
                   prev ? { ...prev, currentQuestionIndex: Math.max(0, prev.currentQuestionIndex - 1) } : null
                 );
               }}
-              className="flex items-center gap-1 px-4 py-2 rounded-xl border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-slate-100 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              className="flex items-center gap-1 px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
             >
               <ChevronLeft className="w-4 h-4 mr-0.5" />
               Câu trước
@@ -650,7 +650,7 @@ export const ExamView: React.FC = () => {
                     : null
                 );
               }}
-              className="flex items-center gap-1 px-4 py-2 rounded-xl bg-slate-900 text-white text-xs font-semibold hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors shadow-xs"
+              className="flex items-center gap-1 px-4 py-2 rounded-xl bg-slate-900 dark:bg-blue-600 text-white text-xs font-semibold hover:bg-slate-800 dark:hover:bg-blue-500 disabled:opacity-40 disabled:cursor-not-allowed transition-colors shadow-xs cursor-pointer"
             >
               Câu tiếp theo
               <ChevronRight className="w-4 h-4 ml-0.5" />
@@ -661,18 +661,18 @@ export const ExamView: React.FC = () => {
         {/* Modal xác nhận nộp bài */}
         {showSubmitConfirm && (
           <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 flex items-center justify-center p-4">
-            <div className="bg-white rounded-3xl p-6 sm:p-7 max-w-md w-full shadow-2xl border border-slate-200 animate-in fade-in zoom-in-95 duration-200">
-              <div className="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-4">
+            <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-7 max-w-md w-full shadow-2xl border border-slate-200 dark:border-slate-800 animate-in fade-in zoom-in-95 duration-200">
+              <div className="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2">
+              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
                 Bạn có chắc chắn muốn nộp bài thi?
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                Bạn đã làm <strong className="text-blue-600">{answeredCount}</strong> trên tổng số{' '}
-                <strong>{session.questions.length}</strong> câu hỏi.
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                Bạn đã làm <strong className="text-blue-600 dark:text-blue-400">{answeredCount}</strong> trên tổng số{' '}
+                <strong className="text-slate-800 dark:text-slate-100">{session.questions.length}</strong> câu hỏi.
                 {session.questions.length - answeredCount > 0 && (
-                  <span className="block mt-1 text-rose-600 font-semibold">
+                  <span className="block mt-1 text-rose-600 dark:text-rose-400 font-semibold">
                     Còn {session.questions.length - answeredCount} câu chưa trả lời!
                   </span>
                 )}
@@ -681,14 +681,14 @@ export const ExamView: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setShowSubmitConfirm(false)}
-                  className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-600 hover:bg-slate-100 transition-colors"
+                  className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
                 >
                   Tiếp tục làm bài
                 </button>
                 <button
                   type="button"
                   onClick={handleFinalSubmit}
-                  className="px-5 py-2.5 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white transition-all shadow-xs"
+                  className="px-5 py-2.5 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white transition-all shadow-xs cursor-pointer"
                 >
                   Xác nhận nộp bài
                 </button>
@@ -722,7 +722,7 @@ export const ExamView: React.FC = () => {
 
       {/* Chọn Preset Thi Nhanh */}
       <div className="space-y-3">
-        <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
+        <label className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
           1. Chọn chế độ thi mô phỏng:
         </label>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -736,18 +736,18 @@ export const ExamView: React.FC = () => {
                 type="button"
                 onClick={() => setSelectedPreset(key)}
                 className={cn(
-                  'p-4 rounded-2xl border text-left transition-all duration-200 relative',
+                  'p-4 rounded-2xl border text-left transition-all duration-200 relative cursor-pointer',
                   isSelected
-                    ? 'border-blue-600 bg-blue-50/80 shadow-xs ring-2 ring-blue-600/30'
-                    : 'border-slate-200 bg-white hover:border-slate-300 hover:bg-slate-50'
+                    ? 'border-blue-600 dark:border-blue-500 bg-blue-50/80 dark:bg-blue-950/60 shadow-xs ring-2 ring-blue-600/30'
+                    : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/60'
                 )}
               >
-                <div className="text-sm font-bold text-slate-900 mb-1">{preset.label}</div>
-                <div className="text-xs text-slate-500">
+                <div className="text-sm font-bold text-slate-900 dark:text-slate-100 mb-1">{preset.label}</div>
+                <div className="text-xs text-slate-500 dark:text-slate-400">
                   {preset.questionCount} câu hỏi • {preset.durationMinutes} phút
                 </div>
                 {isSelected && (
-                  <CheckCircle2 className="w-4 h-4 text-blue-600 absolute top-4 right-4" />
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 dark:text-blue-400 absolute top-4 right-4" />
                 )}
               </button>
             );
@@ -756,9 +756,9 @@ export const ExamView: React.FC = () => {
       </div>
 
       {/* Chọn Chương thi */}
-      <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs space-y-3">
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs space-y-3">
         <div className="flex items-center justify-between">
-          <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
+          <label className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
             2. Phạm vi kiến thức (Mặc định toàn bộ 7 chương):
           </label>
           <button
@@ -767,7 +767,7 @@ export const ExamView: React.FC = () => {
               if (selectedChapters.length === 7) setSelectedChapters([1]);
               else setSelectedChapters([1, 2, 3, 4, 5, 6, 7]);
             }}
-            className="text-xs font-semibold text-blue-600 hover:text-blue-800"
+            className="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 cursor-pointer"
           >
             {selectedChapters.length === 7 ? 'Bỏ chọn tất cả' : 'Chọn toàn bộ 7 chương'}
           </button>
@@ -784,8 +784,8 @@ export const ExamView: React.FC = () => {
                 className={cn(
                   'flex items-center gap-3 p-3 rounded-xl border text-xs font-medium cursor-pointer transition-colors',
                   isChecked
-                    ? 'bg-blue-50/60 border-blue-200 text-blue-950 font-semibold'
-                    : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
+                    ? 'bg-blue-50/60 dark:bg-blue-950/50 border-blue-200 dark:border-blue-800 text-blue-950 dark:text-blue-200 font-semibold'
+                    : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/60'
                 )}
               >
                 <input
@@ -798,7 +798,7 @@ export const ExamView: React.FC = () => {
                       setSelectedChapters((prev) => prev.filter((id) => id !== chId));
                     }
                   }}
-                  className="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500"
+                  className="w-4 h-4 text-blue-600 rounded border-slate-300 dark:border-slate-600 focus:ring-blue-500"
                 />
                 <span className="truncate">
                   Chương {chId}: {ch?.title || `Chương ${chId}`}

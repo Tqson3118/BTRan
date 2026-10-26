@@ -65,3 +65,45 @@ Người dùng đã duyệt và yêu cầu tiếp tục ('continue') với đị
 Tiếp tục tiến trình: máy chủ dev đang chạy tại port 5173. Hãy tiếp tục chỉ đạo hoàn thiện việc ghép nối dữ liệu 7 chương và hoàn thiện Milestone 3/4.
 
 
+
+
+## Follow-up — 2026-10-26T21:07:02Z
+
+Thực hiện Phase 1: Phân tích 2 giáo trình Ngôn ngữ Lập trình C (`DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf` - 591 trang HCMUTE và `Ngôn ngữ lập trình C_ebook.pdf` - 211 trang GTVT), đồng bộ nội dung chương trình giảng dạy và lập Bảng phân bổ chi tiết số lượng câu hỏi trắc nghiệm (MCQ), thẻ ghi nhớ (Flashcards) và bài tập tự luận lập trình (Essays) để người dùng phê duyệt trước khi tạo code và dữ liệu.
+
+Working directory: `c:\Users\Administrator\Downloads\downloads\bài tập`
+Integrity mode: development
+
+## Requirements
+
+### R1. Khảo sát & Hợp nhất Nội dung Giáo trình
+- Phân tích chi tiết mục lục và nội dung của cả 2 tài nguyên PDF trong thư mục dự án (`DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf` và `Ngôn ngữ lập trình C_ebook.pdf`).
+- Đối chiếu, chuẩn hóa và hợp nhất thành một cây danh mục chương thống nhất (gồm các chương chuẩn về: Tổng quan & Môi trường C, Nhập xuất, Rẽ nhánh & Vòng lặp, Hàm, Mảng & Chuỗi, Con trỏ & Cấp phát bộ nhớ, Kiểu dữ liệu tự định nghĩa / Cấu trúc struct, Thao tác Tệp, và một chương riêng tổng hợp kiến thức C++ căn bản).
+- Ghi chú rõ phạm vi trang tương ứng trong cả 2 giáo trình cho từng chương/chủ đề.
+
+### R2. Thiết kế Bảng Phân bổ Ngân hàng Học liệu (Asset Allocation Matrix)
+Xây dựng ma trận phân bổ định lượng chi tiết cho từng chương với các loại tài nguyên:
+- **Trắc nghiệm (MCQ)**: Phân bổ số lượng cụ thể theo 4 dạng bài bắt buộc:
+  1. Lý thuyết khái niệm (~40%)
+  2. Đoán kết quả hiển thị & dò vết biến (Output & Trace ~30%)
+  3. Tìm lỗi cú pháp / logic & gỡ lỗi (Debug ~20%)
+  4. Điền mã khuyết (Fill-in-the-blank ~10%)
+  Kèm tỷ lệ độ khó (Dễ 25%, Trung bình 50%, Khó 25%) và số câu dùng cho bộ đề thi thử chuẩn 45 câu / 90 phút.
+- **Thẻ ghi nhớ (Flashcards)**: Định nghĩa số lượng thẻ cho từng chương (mặt trước: khái niệm/cú pháp, mặt sau: giải thích cô đọng + ví dụ code ngắn).
+- **Bài tập tự luận (Essays)**: Lên danh mục bài tập lập trình mẫu cho từng chương (mỗi bài có đề bài, mức độ, gợi ý từng bước, và yêu cầu giải pháp code đối chiếu).
+
+### R3. Xuất Báo cáo Đặc tả Phân bổ Hoàn chỉnh (Specification Report)
+- Tạo tài liệu đặc tả hoàn chỉnh `PHASE1_CURRICULUM_ALLOCATION.md` tại thư mục gốc của dự án.
+- Tài liệu phải có cấu trúc rõ ràng: Bảng tổng quan số lượng, Bảng ma trận chi tiết từng chương (chủ đề, trang giáo trình, số lượng MCQ theo 4 dạng, số flashcard, danh sách bài tự luận), và Tiêu chí nghiệm thu cho Phase 2.
+
+## Acceptance Criteria
+
+### Tính chính xác và Bao phủ Giáo trình
+- [ ] Báo cáo `PHASE1_CURRICULUM_ALLOCATION.md` được tạo tại thư mục gốc `c:\Users\Administrator\Downloads\downloads\bài tập\`.
+- [ ] Toàn bộ các chương cốt lõi trong cả 2 giáo trình (bao gồm phần C++ căn bản) được ánh xạ đầy đủ, không bỏ sót mảng kiến thức trọng tâm nào.
+- [ ] Mọi chương đều có chỉ dẫn số trang (page range) tham chiếu chính xác đến từng file PDF tương ứng.
+
+### Ma trận Phân bổ Định lượng
+- [ ] Tỷ lệ 4 dạng câu hỏi trắc nghiệm bám sát cấu trúc yêu cầu: ~40% lý thuyết, ~30% output/trace, ~20% debug, ~10% fill-in.
+- [ ] Có ma trận phân bổ độ khó (Dễ / Trung bình / Khó) khả thi cho đề thi thử 45 câu / 90 phút.
+- [ ] Danh mục bài tự luận có đủ mức độ từ cơ bản (xử lý chuỗi, mảng) đến nâng cao (con trỏ, struct, file) kèm outline giải pháp mẫu.

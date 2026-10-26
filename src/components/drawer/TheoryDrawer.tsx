@@ -135,7 +135,7 @@ export const TheoryDrawer: React.FC = () => {
         id="theory-drawer"
         aria-label="Tra cứu lý thuyết giáo trình"
         className={cn(
-          'bg-white border-l border-slate-200 flex flex-col transition-all duration-300 ease-in-out',
+          'bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-800 flex flex-col transition-all duration-300 ease-in-out',
           // Mobile: Fixed slide-over
           'fixed top-0 right-0 bottom-0 z-50 w-full sm:w-[440px] shadow-2xl',
           // Desktop: Static column docking song song
@@ -146,17 +146,17 @@ export const TheoryDrawer: React.FC = () => {
         )}
       >
         {/* Header Drawer */}
-        <div className="p-4 border-b border-slate-200 bg-slate-50 flex flex-col gap-3 shrink-0">
+        <div className="p-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 flex flex-col gap-3 shrink-0">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 flex items-center justify-center">
                 <BookOpen className="w-4 h-4" />
               </div>
               <div>
-                <h3 className="text-sm font-bold text-slate-800 leading-tight">
+                <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 leading-tight">
                   Tra cứu Lý thuyết Giáo trình
                 </h3>
-                <span className="text-[11px] text-slate-500 font-medium">
+                <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">
                   HCMUTE 2023 · 298 trang
                 </span>
               </div>
@@ -164,7 +164,7 @@ export const TheoryDrawer: React.FC = () => {
             <button
               type="button"
               onClick={closeDrawer}
-              className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-200 transition-colors"
+              className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
               title="Đóng ngăn tra cứu (Esc)"
               aria-label="Đóng ngăn tra cứu"
             >
@@ -174,14 +174,14 @@ export const TheoryDrawer: React.FC = () => {
 
           {/* Chọn chương nhanh */}
           <div className="flex items-center gap-2">
-            <label htmlFor="chapter-select" className="text-xs font-semibold text-slate-600 shrink-0">
+            <label htmlFor="chapter-select" className="text-xs font-semibold text-slate-600 dark:text-slate-400 shrink-0">
               Chương:
             </label>
             <select
               id="chapter-select"
               value={selectedChapter}
               onChange={(e) => setActiveChapterId(Number(e.target.value))}
-              className="w-full text-xs bg-white border border-slate-300 rounded-md px-2 py-1.5 font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 truncate"
+              className="w-full text-xs bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-md px-2 py-1.5 font-medium text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 truncate"
             >
               {[1, 2, 3, 4, 5, 6, 7].map((ch) => (
                 <option key={ch} value={ch}>
@@ -199,13 +199,13 @@ export const TheoryDrawer: React.FC = () => {
               value={searchFilter}
               onChange={(e) => setSearchFilter(e.target.value)}
               placeholder="Lọc nhanh mục, điều luật, từ khóa..."
-              className="w-full pl-8 pr-3 py-1.5 text-xs bg-white border border-slate-300 rounded-md text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full pl-8 pr-3 py-1.5 text-xs bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-md text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             {searchFilter && (
               <button
                 type="button"
                 onClick={() => setSearchFilter('')}
-                className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs"
+                className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 text-xs"
               >
                 ×
               </button>
@@ -216,13 +216,13 @@ export const TheoryDrawer: React.FC = () => {
         {/* Nội dung danh sách bài viết lý thuyết */}
         <div
           ref={scrollContainerRef}
-          className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50/50"
+          className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50/50 dark:bg-slate-950/50"
         >
           {filteredArticles.length === 0 ? (
-            <div className="p-8 text-center text-slate-500">
-              <HelpCircle className="w-10 h-10 mx-auto text-slate-400 mb-2 stroke-1" />
-              <p className="text-sm font-medium">Không tìm thấy nội dung tra cứu</p>
-              <p className="text-xs text-slate-400 mt-1">
+            <div className="p-8 text-center text-slate-500 dark:text-slate-400">
+              <HelpCircle className="w-10 h-10 mx-auto text-slate-400 dark:text-slate-500 mb-2 stroke-1" />
+              <p className="text-sm font-medium text-slate-700 dark:text-slate-300">Không tìm thấy nội dung tra cứu</p>
+              <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
                 Thử chọn chương khác hoặc đổi từ khóa lọc.
               </p>
             </div>
@@ -234,44 +234,44 @@ export const TheoryDrawer: React.FC = () => {
                   key={article.id}
                   id={`theory-article-${article.id}`}
                   className={cn(
-                    'bg-white border rounded-xl p-4 transition-all duration-300 shadow-xs relative',
+                    'bg-white dark:bg-slate-900 border rounded-xl p-4 transition-all duration-300 shadow-xs relative',
                     isTargeted
-                      ? 'ring-2 ring-amber-500 bg-amber-50/90 shadow-md animate-pulse'
-                      : 'border-slate-200 hover:border-slate-300'
+                      ? 'ring-2 ring-amber-500 bg-amber-50/90 dark:bg-amber-950/40 border-amber-300 dark:border-amber-700 shadow-md animate-pulse'
+                      : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700'
                   )}
                 >
                   {/* Mã mục & Số trang */}
                   <div className="flex items-center justify-between text-xs mb-2">
-                    <span className="font-mono font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
+                    <span className="font-mono font-bold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-950/60 px-2 py-0.5 rounded border border-blue-200 dark:border-blue-800">
                       Mục {article.code}
                     </span>
-                    <span className="text-slate-500 text-[11px] font-medium flex items-center">
+                    <span className="text-slate-500 dark:text-slate-400 text-[11px] font-medium flex items-center">
                       <Bookmark className="w-3 h-3 mr-1 text-slate-400" />
                       Giáo trình tr. {article.pageNumber}
                     </span>
                   </div>
 
                   {/* Tiêu đề mục */}
-                  <h4 className="font-bold text-slate-900 text-sm mb-2 leading-snug">
+                  <h4 className="font-bold text-slate-900 dark:text-slate-100 text-sm mb-2 leading-snug">
                     {article.title}
                   </h4>
 
                   {/* Nội dung chính */}
-                  <p className="text-xs text-slate-700 leading-relaxed text-justify mb-3">
+                  <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed text-justify mb-3">
                     {article.content}
                   </p>
 
                   {/* Các ý cốt lõi cần nhớ */}
                   {article.keyPoints && article.keyPoints.length > 0 && (
-                    <div className="mt-2.5 pt-2.5 border-t border-slate-100">
-                      <div className="text-[11px] font-semibold text-slate-600 mb-1.5 flex items-center">
+                    <div className="mt-2.5 pt-2.5 border-t border-slate-100 dark:border-slate-800">
+                      <div className="text-[11px] font-semibold text-slate-600 dark:text-slate-400 mb-1.5 flex items-center">
                         <span className="w-1.5 h-1.5 rounded-full bg-amber-500 mr-1.5"></span>
                         Luận điểm cốt lõi cần nhớ:
                       </div>
-                      <ul className="space-y-1 text-xs text-slate-600">
+                      <ul className="space-y-1 text-xs text-slate-600 dark:text-slate-400">
                         {article.keyPoints.map((point, idx) => (
                           <li key={idx} className="flex items-start">
-                            <span className="text-blue-500 mr-1.5 font-bold">✓</span>
+                            <span className="text-blue-500 dark:text-blue-400 mr-1.5 font-bold">✓</span>
                             <span>{point}</span>
                           </li>
                         ))}
@@ -281,7 +281,7 @@ export const TheoryDrawer: React.FC = () => {
 
                   {/* Căn cứ điều luật liên quan */}
                   {article.lawCitation && (
-                    <div className="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-blue-600 font-medium">
+                    <div className="mt-2.5 pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] text-blue-600 dark:text-blue-400 font-medium">
                       <span className="flex items-center">
                         <ExternalLink className="w-3 h-3 mr-1" />
                         {article.lawCitation}
@@ -295,8 +295,8 @@ export const TheoryDrawer: React.FC = () => {
         </div>
 
         {/* Chân Drawer */}
-        <div className="p-3 border-t border-slate-200 bg-white text-[11px] text-slate-500 text-center shrink-0">
-          Nhấn <kbd className="px-1.5 py-0.5 bg-slate-100 border border-slate-300 rounded font-mono text-[10px]">Esc</kbd> để đóng nhanh · Đồng bộ tự động theo câu hỏi
+        <div className="p-3 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-[11px] text-slate-500 dark:text-slate-400 text-center shrink-0">
+          Nhấn <kbd className="px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded font-mono text-[10px]">Esc</kbd> để đóng nhanh · Đồng bộ tự động theo câu hỏi
         </div>
       </aside>
     </>

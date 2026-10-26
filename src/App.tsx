@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ThemeProvider } from '@/context/ThemeContext';
 import { StudyProvider } from '@/context/StudyContext';
 import { DrawerProvider } from '@/context/DrawerContext';
 import { Header } from '@/components/layout/Header';
@@ -21,14 +22,16 @@ export default function App() {
   }, []);
 
   return (
-    <StudyProvider>
-      <DrawerProvider>
-        <div className="h-screen w-screen overflow-hidden flex flex-col bg-slate-100 font-sans antialiased text-slate-900 select-text">
-          <Header onOpenSearch={() => setIsSearchOpen(true)} />
-          <TwoColumnLayout />
-          <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
-        </div>
-      </DrawerProvider>
-    </StudyProvider>
+    <ThemeProvider>
+      <StudyProvider>
+        <DrawerProvider>
+          <div className="h-screen w-screen overflow-hidden flex flex-col bg-slate-100 dark:bg-slate-950 font-sans antialiased text-slate-900 dark:text-slate-100 select-text transition-colors duration-200">
+            <Header onOpenSearch={() => setIsSearchOpen(true)} />
+            <TwoColumnLayout />
+            <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+          </div>
+        </DrawerProvider>
+      </StudyProvider>
+    </ThemeProvider>
   );
 }

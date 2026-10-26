@@ -2,6 +2,7 @@ import typography from '@tailwindcss/typography';
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -26,6 +27,9 @@ export default {
           gold: '#f59e0b',
           parchment: '#fefce8',
           citation: '#0284c7',
+        },
+        slate: {
+          850: '#172033',
         },
       },
       keyframes: {
