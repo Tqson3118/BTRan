@@ -1,0 +1,368 @@
+/**
+ * src/data/chapters/chapter4.ts
+ * Số hóa toàn diện nội dung Chương 4 Giáo trình Pháp luật đại cương (HCMUTE 2023)
+ * MỘT SỐ VẤN ĐỀ CƠ BẢN VỀ LUẬT DÂN SỰ
+ */
+
+import { Chapter } from '../../types';
+
+export const chapter4: Chapter = {
+  id: 4,
+  code: 'ch4',
+  title: 'Chương 4: Một số vấn đề cơ bản về Luật Dân sự',
+  shortTitle: 'Luật Dân sự',
+  description:
+    'Nghiên cứu đối tượng, phương pháp bình đẳng thỏa thuận của Luật Dân sự; năng lực chủ thể cá nhân theo 4 mốc độ tuổi, 4 điều kiện của pháp nhân; quyền nhân thân; tài sản và 3 quyền năng sở hữu; 9 biện pháp bảo đảm nghĩa vụ; hợp đồng dân sự và chế định thừa kế theo di chúc (suất 2/3 Điều 644) và theo pháp luật (thế vị Điều 652).',
+  pageRange: {
+    start: 143,
+    end: 187,
+  },
+  coreConcepts: [
+    'Đối tượng & Phương pháp Luật Dân sự',
+    'Năng lực hành vi dân sự theo độ tuổi',
+    '4 điều kiện của Pháp nhân (Điều 74 BLDS)',
+    'Quyền nhân thân (Điều 25-39 BLDS)',
+    'Tài sản & 3 quyền năng sở hữu',
+    '9 biện pháp bảo đảm nghĩa vụ (Điều 292)',
+    'Hợp đồng dân sự & Hợp đồng vô hiệu',
+    'Thời điểm mở thừa kế & Di sản',
+    'Người thừa kế không phụ thuộc di chúc (Điều 644)',
+    '3 hàng thừa kế & Thừa kế thế vị (Điều 651, 652)',
+  ],
+  totalArticles: 9,
+  sections: [
+    {
+      id: 'sec-ch4-01',
+      chapterId: 4,
+      order: 1,
+      title: 'I. Khái quát, Chủ thể và Quyền nhân thân theo Bộ luật Dân sự',
+      description: 'Đối tượng, phương pháp bình đẳng thỏa thuận, các mốc năng lực hành vi dân sự cá nhân, tư cách pháp nhân và bảo vệ quyền nhân thân.',
+      articles: [
+        {
+          id: 'ch4-s4.1.1',
+          code: '4.1.1',
+          title: 'Khái niệm, đối tượng và phương pháp điều chỉnh của Luật Dân sự',
+          content: [
+            'Luật Dân sự là ngành luật độc lập trong hệ thống pháp luật Việt Nam, bao gồm hệ thống các quy phạm pháp luật điều chỉnh các quan hệ tài sản và quan hệ nhân thân phát sinh giữa các cá nhân, pháp nhân được xác lập trên cơ sở bình đẳng, tự do ý chí, độc lập về tài sản và tự chịu trách nhiệm.',
+            'Đối tượng điều chỉnh: Gồm quan hệ tài sản (chiếm hữu, sử dụng, định đoạt tài sản, dịch vụ, bồi thường thiệt hại) và quan hệ nhân thân (gắn liền với giá trị tinh thần của cá nhân như họ tên, danh dự, nhân phẩm, hình ảnh).',
+            'Phương pháp điều chỉnh: Phương pháp bình đẳng, thỏa thuận, tự do định đoạt và tự chịu trách nhiệm bằng tài sản của chính mình. Nhà nước không đơn phương áp đặt ý chí mà tôn trọng sự thỏa thuận hợp pháp của các bên.',
+          ],
+          keyPoints: [
+            'Đối tượng: Quan hệ tài sản và Quan hệ nhân thân',
+            'Phương pháp: Bình đẳng, tự thỏa thuận, tự định đoạt và tự chịu trách nhiệm tài sản',
+            'Nguyên tắc: Tự do cam kết thỏa thuận không vi phạm điều cấm của luật và không trái đạo đức xã hội',
+          ],
+          citations: {
+            bookTitle: 'Giáo trình Pháp luật đại cương (HCMUTE 2023)',
+            pageStart: 143,
+            pageEnd: 145,
+            exactPages: [143, 144, 145],
+          },
+          keywords: ['Luật dân sự', 'Quan hệ tài sản', 'Quan hệ nhân thân', 'Phương pháp bình đẳng thỏa thuận'],
+        },
+        {
+          id: 'ch4-s4.1.2',
+          code: '4.1.2',
+          title: 'Năng lực chủ thể cá nhân theo độ tuổi và 4 điều kiện của Pháp nhân',
+          content: [
+            'Năng lực chủ thể dân sự gồm Năng lực pháp luật dân sự (có từ khi sinh ra và chấm dứt khi chết, mọi cá nhân bình đẳng) và Năng lực hành vi dân sự (NLHVDS - khả năng bằng hành vi xác lập quyền, nghĩa vụ).',
+            'Phân loại NLHVDS của cá nhân theo 4 mốc độ tuổi (Điều 21 BLDS 2015):',
+            '1. Chưa đủ 6 tuổi: Không có NLHVDS. Mọi giao dịch dân sự do người đại diện theo pháp luật xác lập, thực hiện.',
+            '2. Từ đủ 6 tuổi đến chưa đủ 15 tuổi: Có NLHVDS một phần. Giao dịch phải được người đại diện đồng ý, TRỪ giao dịch phục vụ nhu cầu sinh hoạt hàng ngày phù hợp lứa tuổi.',
+            '3. Từ đủ 15 tuổi đến chưa đủ 18 tuổi: Tự mình xác lập, thực hiện giao dịch dân sự, TRỪ giao dịch liên quan đến bất động sản, động sản phải đăng ký quyền sở hữu thì phải được người đại diện đồng ý.',
+            '4. Từ đủ 18 tuổi trở lên: Người thành niên, có NLHVDS đầy đủ (trừ khi bị Tòa án tuyên mất, hạn chế hoặc khó khăn trong nhận thức).',
+            'Bốn điều kiện để một tổ chức có tư cách Pháp nhân (Điều 74 BLDS 2015): (1) Được thành lập hợp pháp; (2) Có cơ cấu tổ chức chặt chẽ; (3) Có tài sản độc lập với cá nhân, pháp nhân khác và tự chịu trách nhiệm bằng tài sản của mình; (4) Nhân danh mình tham gia các quan hệ pháp luật một cách độc lập.',
+            'Lưu ý bẫy: Doanh nghiệp tư nhân KHÔNG PHẢI là pháp nhân vì không có tài sản độc lập (chủ DNTN chịu trách nhiệm vô hạn).',
+          ],
+          keyPoints: [
+            'Chưa đủ 6 tuổi: Không có NLHVDS, người đại diện làm thay hoàn toàn',
+            'Từ đủ 6 đến dưới 15: Đại diện đồng ý, trừ sinh hoạt hàng ngày',
+            'Từ đủ 15 đến dưới 18: Tự giao dịch, TRỪ bất động sản và động sản đăng ký quyền sở hữu',
+            'Từ đủ 18 tuổi: NLHVDS đầy đủ',
+            '4 điều kiện Pháp nhân: Thành lập hợp pháp, Cơ cấu tổ chức, Tài sản độc lập, Nhân danh mình tham gia QHPL',
+            'Doanh nghiệp tư nhân: Không có tư cách pháp nhân',
+          ],
+          citations: {
+            bookTitle: 'Giáo trình Pháp luật đại cương (HCMUTE 2023)',
+            pageStart: 145,
+            pageEnd: 151,
+            exactPages: [145, 146, 147, 148, 149, 150, 151],
+          },
+          lawCitations: [
+            {
+              lawName: 'Bộ luật Dân sự năm 2015',
+              article: 'Điều 21, 74',
+              contentSnippet: 'Năng lực hành vi dân sự của người chưa thành niên và 4 điều kiện của pháp nhân.',
+            },
+          ],
+          keywords: ['Năng lực hành vi dân sự', 'Độ tuổi', 'Pháp nhân', 'Điều 21 BLDS', 'Điều 74 BLDS', 'Doanh nghiệp tư nhân'],
+        },
+        {
+          id: 'ch4-s4.1.3',
+          code: '4.1.3',
+          title: 'Quyền nhân thân của cá nhân (Điều 25 - 39 BLDS 2015)',
+          content: [
+            'Quyền nhân thân là quyền dân sự gắn liền với mỗi cá nhân, không thể chuyển giao cho người khác bằng bất kỳ hình thức nào (trừ trường hợp luật khác có liên quan quy định khác).',
+            'Các quyền nhân thân tiêu biểu được BLDS 2015 bảo vệ:',
+            '- Quyền đối với họ, tên và quyền thay đổi họ, tên (Điều 26, 27, 28).',
+            '- Quyền xác định lại dân tộc (Điều 29), quyền khai sinh, khai tử (Điều 30).',
+            '- Quyền đối với hình ảnh (Điều 32): Việc sử dụng hình ảnh của cá nhân phải được người đó đồng ý. Sử dụng hình ảnh vì mục đích thương mại phải trả thù lao. Ngoại lệ không cần đồng ý: Sử dụng vì lợi ích quốc gia, dân tộc, cộng đồng; sử dụng hình ảnh từ các hoạt động công cộng (hội nghị, thi đấu) mà không làm tổn hại đến danh dự, nhân phẩm.',
+            '- Quyền được bảo đảm an toàn về tính mạng, sức khỏe, thân thể (Điều 33).',
+            '- Quyền được bảo vệ danh dự, nhân phẩm, uy tín (Điều 34): Mọi hành vi bôi nhọ, xúc phạm đều phải bồi thường thiệt hại và cải chính công khai.',
+            '- Quyền chuyển đổi giới tính (Điều 37), quyền đối với đời sống riêng tư, bí mật cá nhân, gia đình (Điều 38).',
+          ],
+          keyPoints: [
+            'Đặc trưng: Gắn liền với cá nhân, không thể chuyển giao (Điều 25)',
+            'Quyền hình ảnh (Điều 32): Phải được sự đồng ý; thương mại phải trả thù lao',
+            'Ngoại lệ hình ảnh: Lợi ích quốc gia hoặc hoạt động công cộng không gây tổn hại uy tín',
+            'Danh dự, nhân phẩm (Điều 34): Được pháp luật bảo vệ tuyệt đối, có quyền yêu cầu Tòa bác bỏ thông tin sai',
+          ],
+          citations: {
+            bookTitle: 'Giáo trình Pháp luật đại cương (HCMUTE 2023)',
+            pageStart: 151,
+            pageEnd: 159,
+            exactPages: [151, 152, 153, 154, 155, 156, 157, 158, 159],
+          },
+          lawCitations: [
+            {
+              lawName: 'Bộ luật Dân sự năm 2015',
+              article: 'Điều 25, 32, 34, 38',
+              contentSnippet: 'Quyền nhân thân, quyền đối với hình ảnh và quyền được bảo vệ danh dự, nhân phẩm.',
+            },
+          ],
+          keywords: ['Quyền nhân thân', 'Điều 25 BLDS', 'Điều 32 BLDS', 'Quyền hình ảnh', 'Danh dự nhân phẩm'],
+        },
+      ],
+    },
+    {
+      id: 'sec-ch4-02',
+      chapterId: 4,
+      order: 2,
+      title: 'II. Tài sản, Quyền sở hữu và Biện pháp bảo đảm nghĩa vụ',
+      description: 'Khái niệm tài sản theo Điều 105, 3 quyền năng sở hữu và 9 biện pháp bảo đảm thực hiện nghĩa vụ dân sự theo Điều 292.',
+      articles: [
+        {
+          id: 'ch4-s4.2.1',
+          code: '4.2.1',
+          title: 'Khái niệm Tài sản và 3 quyền năng của Quyền sở hữu',
+          content: [
+            'Căn cứ Điều 105 BLDS 2015: Tài sản là vật, tiền, giấy tờ có giá và quyền tài sản. Tài sản bao gồm bất động sản (đất đai, nhà ở, công trình gắn liền với đất) và động sản (tiền, xe cộ, quyền tác giả...).',
+            'Quyền sở hữu bao gồm 03 quyền năng cơ bản (Điều 186-196):',
+            '1. Quyền chiếm hữu: Là quyền nắm giữ, chi phối tài sản một cách trực tiếp hoặc gián tiếp như chủ thể có quyền đối với tài sản. Chiếm hữu có căn cứ pháp luật và chiếm hữu không có căn cứ pháp luật (ngay tình và không ngay tình).',
+            '2. Quyền sử dụng: Là quyền khai thác công dụng, hưởng hoa lợi, lợi tức sinh ra từ tài sản.',
+            '3. Quyền định đoạt: Là quyền chuyển giao quyền sở hữu tài sản, từ bỏ quyền sở hữu, tiêu dùng hoặc tiêu hủy tài sản (định đoạt số phận pháp lý và thực tế). Đây là quyền năng quan trọng nhất, tối cao nhất của chủ sở hữu.',
+          ],
+          keyPoints: [
+            '4 dạng tài sản: Vật, Tiền, Giấy tờ có giá, Quyền tài sản (Điều 105)',
+            '3 quyền năng: Chiếm hữu (nắm giữ), Sử dụng (khai thác công dụng), Định đoạt (chuyển giao, tiêu hủy)',
+            'Quyền định đoạt: Quyền năng quyết định số phận tài sản, quan trọng nhất của chủ sở hữu',
+          ],
+          citations: {
+            bookTitle: 'Giáo trình Pháp luật đại cương (HCMUTE 2023)',
+            pageStart: 159,
+            pageEnd: 171,
+            exactPages: [159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171],
+          },
+          lawCitations: [
+            {
+              lawName: 'Bộ luật Dân sự năm 2015',
+              article: 'Điều 105, 186, 189, 192',
+              contentSnippet: 'Tài sản và các quyền năng của chủ sở hữu.',
+            },
+          ],
+          keywords: ['Tài sản', 'Quyền sở hữu', 'Chiếm hữu', 'Sử dụng', 'Định đoạt', 'Điều 105 BLDS'],
+        },
+        {
+          id: 'ch4-s4.2.2',
+          code: '4.2.2',
+          title: 'Chín biện pháp bảo đảm thực hiện nghĩa vụ dân sự (Điều 292 BLDS)',
+          content: [
+            'Căn cứ Điều 292 Bộ luật Dân sự năm 2015, có đúng 09 biện pháp bảo đảm thực hiện nghĩa vụ:',
+            '1. Cầm cố tài sản (Điều 309): Một bên giao tài sản của mình cho bên kia để bảo đảm thực hiện nghĩa vụ (Đặc trưng: Có chuyển giao tài sản).',
+            '2. Thế chấp tài sản (Điều 317): Một bên dùng tài sản của mình để bảo đảm nghĩa vụ và KHÔNG giao tài sản cho bên kia (Đặc trưng: Không chuyển giao tài sản, bên thế chấp giữ tài sản).',
+            '3. Đặt cọc (Điều 328): Giao khoản tiền/kim khí quý trong một thời hạn để bảo đảm giao kết hoặc thực hiện hợp đồng. Xử lý: Bên đặt cọc từ chối -> mất tiền cọc; Bên nhận cọc từ chối -> trả lại cọc và nộp khoản phạt cọc tương đương (trừ có thỏa thuận khác).',
+            '4. Ký cược (Điều 329): Bên thuê tài sản là ĐỘNG SẢN giao khoản tiền/kim khí quý cho bên cho thuê để bảo đảm trả lại tài sản thuê.',
+            '5. Ký quỹ (Điều 330): Gửi khoản tiền, giấy tờ có giá vào tài khoản phong tỏa tại một tổ chức tín dụng để bảo đảm nghĩa vụ.',
+            '6. Bảo lưu quyền sở hữu (Điều 331): Bên bán bảo lưu quyền sở hữu tài sản cho đến khi nghĩa vụ thanh toán được hoàn thành đầy đủ.',
+            '7. Bảo lãnh (Điều 335): Người thứ ba cam kết thực hiện nghĩa vụ thay cho bên có nghĩa vụ nếu khi đến hạn bên có nghĩa vụ không thực hiện hoặc thực hiện không đúng.',
+            '8. Tín chấp (Điều 344): Tổ chức chính trị - xã hội tại cơ sở bảo đảm bằng uy tín cho cá nhân, hộ nghèo vay vốn.',
+            '9. Cầm giữ tài sản (Điều 346): Bên có quyền đang nắm giữ hợp pháp tài sản trong hợp đồng song vụ được quyền chiếm giữ tài sản khi bên kia không thực hiện nghĩa vụ đến hạn.',
+          ],
+          keyPoints: [
+            '9 biện pháp: Cầm cố, Thế chấp, Đặt cọc, Ký cược, Ký quỹ, Bảo lưu quyền sở hữu, Bảo lãnh, Tín chấp, Cầm giữ tài sản',
+            'Phân biệt: Cầm cố (chuyển giao tài sản) vs Thế chấp (không chuyển giao tài sản)',
+            'Ký cược: Chỉ áp dụng đối với thuê tài sản là ĐỘNG SẢN',
+            'Đặt cọc: Phạt cọc gấp đôi nếu bên nhận cọc vi phạm (trả cọc + bồi thường bằng cọc)',
+          ],
+          citations: {
+            bookTitle: 'Giáo trình Pháp luật đại cương (HCMUTE 2023)',
+            pageStart: 172,
+            pageEnd: 175,
+            exactPages: [172, 173, 174, 175],
+          },
+          lawCitations: [
+            {
+              lawName: 'Bộ luật Dân sự năm 2015',
+              article: 'Điều 292, 309, 317, 328, 329, 330, 335',
+              contentSnippet: 'Chín biện pháp bảo đảm thực hiện nghĩa vụ theo Điều 292 BLDS.',
+            },
+          ],
+          keywords: ['Biện pháp bảo đảm', 'Điều 292 BLDS', 'Cầm cố', 'Thế chấp', 'Đặt cọc', 'Ký cược', 'Ký quỹ', 'Bảo lãnh'],
+        },
+      ],
+    },
+    {
+      id: 'sec-ch4-03',
+      chapterId: 4,
+      order: 3,
+      title: 'III. Hợp đồng dân sự và Chế định Thừa kế',
+      description: 'Điều kiện có hiệu lực của hợp đồng, chế định thừa kế theo di chúc (suất 2/3 Điều 644) và thừa kế theo pháp luật (thế vị Điều 652).',
+      articles: [
+        {
+          id: 'ch4-s4.3.1',
+          code: '4.3.1',
+          title: 'Hợp đồng dân sự, điều kiện có hiệu lực và Hậu quả của Hợp đồng vô hiệu',
+          content: [
+            'Hợp đồng dân sự là sự thỏa thuận giữa các bên về việc xác lập, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự (Điều 385 BLDS 2015).',
+            'Bốn điều kiện có hiệu lực của Giao dịch/Hợp đồng dân sự (Điều 117):',
+            '1. Chủ thể có năng lực pháp luật dân sự, năng lực hành vi dân sự phù hợp với giao dịch được xác lập;',
+            '2. Chủ thể tham gia giao dịch hoàn toàn tự nguyện;',
+            '3. Mục đích và nội dung của giao dịch không vi phạm điều cấm của luật, không trái đạo đức xã hội;',
+            '4. Hình thức giao dịch phù hợp với quy định của luật (trong các trường hợp luật quy định bắt buộc văn bản, công chứng, chứng thực).',
+            'Hậu quả pháp lý của Hợp đồng vô hiệu (Điều 131):',
+            '- Giao dịch dân sự vô hiệu không làm phát sinh, thay đổi, chấm dứt quyền, nghĩa vụ dân sự của các bên kể từ thời điểm giao kết;',
+            '- Các bên khôi phục lại tình trạng ban đầu, hoàn trả cho nhau những gì đã nhận (nếu không hoàn trả được bằng hiện vật thì hoàn trả bằng tiền);',
+            '- Bên có lỗi gây thiệt hại phải bồi thường.',
+          ],
+          keyPoints: [
+            'Khái niệm: Thỏa thuận xác lập, thay đổi, chấm dứt quyền, nghĩa vụ (Điều 385)',
+            '4 điều kiện hiệu lực (Điều 117): Năng lực chủ thể, Tự nguyện, Không vi phạm điều cấm/đạo đức, Hình thức luật định',
+            'Hậu quả vô hiệu (Điều 131): Không phát sinh hiệu lực từ thời điểm giao kết, khôi phục tình trạng ban đầu, bồi thường nếu có lỗi',
+          ],
+          citations: {
+            bookTitle: 'Giáo trình Pháp luật đại cương (HCMUTE 2023)',
+            pageStart: 175,
+            pageEnd: 178,
+            exactPages: [175, 176, 177, 178],
+          },
+          lawCitations: [
+            {
+              lawName: 'Bộ luật Dân sự năm 2015',
+              article: 'Điều 117, 131, 385, 407',
+              contentSnippet: 'Điều kiện có hiệu lực và hậu quả pháp lý của hợp đồng dân sự vô hiệu.',
+            },
+          ],
+          keywords: ['Hợp đồng dân sự', 'Điều 117 BLDS', 'Điều 131 BLDS', 'Hợp đồng vô hiệu', 'Khôi phục tình trạng ban đầu'],
+        },
+        {
+          id: 'ch4-s4.3.2',
+          code: '4.3.2',
+          title: 'Khái quát về Thừa kế: Thời điểm mở thừa kế, Di sản và Người không được hưởng di sản',
+          content: [
+            'Chế định thừa kế điều chỉnh việc chuyển dịch tài sản của người chết cho người còn sống.',
+            '- Thời điểm mở thừa kế (Điều 611): Là thời điểm người có tài sản chết hoặc thời điểm Tòa án tuyên bố một người là đã chết.',
+            '- Địa điểm mở thừa kế: Là nơi cư trú cuối cùng của người để lại di sản; nếu không xác định được thì là nơi có toàn bộ hoặc phần lớn di sản.',
+            '- Di sản thừa kế (Điều 612): Bao gồm tài sản riêng của người chết và phần tài sản của người chết trong khối tài sản chung với người khác.',
+            'Lưu ý bẫy tính toán: Khi vợ chồng có tài sản chung, phải chia đôi để xác định di sản của người chết trước khi đem chia thừa kế.',
+            '- Những người không được quyền hưởng di sản (Điều 621):',
+            '1. Người bị kết án về hành vi cố ý xâm phạm tính mạng, sức khỏe, ngược đãi nghiêm trọng, hành hạ người để lại di sản.',
+            '2. Người vi phạm nghiêm trọng nghĩa vụ nuôi dưỡng người để lại di sản.',
+            '3. Người bị kết án về hành vi cố ý xâm phạm tính mạng người thừa kế khác nhằm chiếm đoạt di sản.',
+            '4. Người có hành vi lừa dối, cưỡng ép, ngăn cản lập di chúc; giả mạo, sửa chữa, hủy di chúc nhằm chiếm đoạt di sản.',
+            '(Ngoại lệ: Nếu người để lại di sản đã biết rõ các hành vi đó nhưng vẫn cho họ hưởng di sản theo di chúc thì họ vẫn được hưởng).',
+          ],
+          keyPoints: [
+            'Thời điểm mở thừa kế: Thời điểm người có tài sản chết (Điều 611)',
+            'Di sản thừa kế: Tài sản riêng + 1/2 tài sản chung với vợ/chồng (Điều 612)',
+            'Người không được hưởng (Điều 621): Phạm tội xâm phạm tính mạng, ngược đãi cha mẹ, phá hoại di chúc (trừ khi di chúc vẫn cho)',
+          ],
+          citations: {
+            bookTitle: 'Giáo trình Pháp luật đại cương (HCMUTE 2023)',
+            pageStart: 178,
+            pageEnd: 180,
+            exactPages: [178, 179, 180],
+          },
+          lawCitations: [
+            {
+              lawName: 'Bộ luật Dân sự năm 2015',
+              article: 'Điều 611, 612, 621',
+              contentSnippet: 'Thời điểm mở thừa kế, di sản thừa kế và người không có quyền hưởng di sản.',
+            },
+          ],
+          keywords: ['Thừa kế', 'Thời điểm mở thừa kế', 'Di sản thừa kế', 'Điều 611', 'Điều 612', 'Điều 621 BLDS'],
+        },
+        {
+          id: 'ch4-s4.3.3',
+          code: '4.3.3',
+          title: 'Thừa kế theo di chúc và Người thừa kế không phụ thuộc nội dung di chúc (Điều 644)',
+          content: [
+            'Di chúc là sự thể hiện ý chí của cá nhân nhằm chuyển tài sản của mình cho người khác sau khi chết (Điều 624). Hình thức di chúc: Văn bản (có công chứng, chứng thực hoặc có người làm chứng) hoặc Di chúc miệng (chỉ lập khi tính mạng bị cái chết đe dọa, ít nhất 2 người làm chứng, trong 5 ngày làm việc phải công chứng/chứng thực, sau 3 tháng còn sống tự động hủy).',
+            'Người thừa kế không phụ thuộc vào nội dung của di chúc (Điều 644 BLDS 2015 - Suất thừa kế bắt buộc):',
+            '- Đối tượng được bảo vệ gồm:',
+            '1. Con chưa thành niên của người để lại di sản;',
+            '2. Cha, mẹ, vợ, chồng của người để lại di sản;',
+            '3. Con thành niên mà không có khả năng lao động.',
+            '- Mức hưởng bắt buộc: Được hưởng phần di sản bằng hai phần ba (2/3) một suất của một người thừa kế theo pháp luật nếu di sản được chia theo pháp luật, trong trường hợp họ không được người lập di chúc cho hưởng di sản hoặc chỉ cho hưởng phần di sản ít hơn 2/3 suất đó.',
+            'Bẫy thi kinh điển: Con đã thành niên VÀ có khả năng lao động thì KHÔNG THUỘC DIỆN Điều 644 (nếu di chúc không cho thì nhận 0 đồng).',
+          ],
+          keyPoints: [
+            'Di chúc: Thể hiện ý chí chuyển tài sản sau khi chết (Điều 624)',
+            'Đối tượng Điều 644: Con chưa thành niên; Cha, Mẹ, Vợ, Chồng; Con thành niên KHÔNG có khả năng lao động',
+            'Mức hưởng Điều 644: Ít nhất bằng 2/3 một suất thừa kế theo pháp luật (tính giả định theo hàng 1)',
+            'Bẫy: Con thành niên khỏe mạnh bình thường thì KHÔNG được hưởng theo Điều 644',
+          ],
+          citations: {
+            bookTitle: 'Giáo trình Pháp luật đại cương (HCMUTE 2023)',
+            pageStart: 180,
+            pageEnd: 183,
+            exactPages: [180, 181, 182, 183],
+          },
+          lawCitations: [
+            {
+              lawName: 'Bộ luật Dân sự năm 2015',
+              article: 'Điều 624, 629, 644',
+              contentSnippet: 'Di chúc và người thừa kế không phụ thuộc vào nội dung của di chúc (suất 2/3 Điều 644).',
+            },
+          ],
+          keywords: ['Thừa kế theo di chúc', 'Điều 644 BLDS', 'Suất thừa kế bắt buộc', '2/3 một suất', 'Con chưa thành niên', 'Vợ chồng'],
+        },
+        {
+          id: 'ch4-s4.3.4',
+          code: '4.3.4',
+          title: 'Thừa kế theo pháp luật, 3 hàng thừa kế và Thừa kế thế vị (Điều 651, 652 BLDS)',
+          content: [
+            'Thừa kế theo pháp luật là thừa kế theo hàng thừa kế, điều kiện và trình tự thừa kế do pháp luật quy định (áp dụng khi không có di chúc, di chúc không hợp pháp...).',
+            'Ba hàng thừa kế theo Điều 651 BLDS 2015:',
+            '- Hàng thừa kế thứ nhất: Vợ, chồng, cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi, con đẻ, con nuôi của người chết.',
+            '- Hàng thừa kế thứ hai: Ông nội, bà nội, ông ngoại, bà ngoại, anh ruột, chị ruột, em ruột của người chết; cháu ruột của người chết mà người chết là ông bà nội, ngoại.',
+            '- Hàng thừa kế thứ ba: Cụ nội, cụ ngoại của người chết; bác ruột, chú ruột, cậu ruột, cô ruột, dì ruột của người chết; cháu ruột của người chết mà người chết là bác, chú, cậu, cô, dì; chắt ruột của người chết mà người chết là cụ nội, ngoại.',
+            'Nguyên tắc chia: Những người thừa kế cùng hàng được hưởng phần di sản bằng nhau. Hàng sau chỉ được hưởng khi hàng trước không còn ai.',
+            'Thừa kế thế vị (Điều 652 BLDS 2015): Trường hợp con của người để lại di sản CHẾT TRƯỚC hoặc CHẾT CÙNG MỘT THỜI ĐIỂM với người để lại di sản thì CHÁU được hưởng phần di sản mà cha hoặc mẹ của cháu được hưởng nếu còn sống; nếu cháu cũng chết trước hoặc cùng thời điểm thì CHẮT được hưởng phần thế vị.',
+            'Quan hệ giữa con riêng và bố dượng, mẹ kế (Điều 654): Nếu có quan hệ chăm sóc, nuôi dưỡng nhau như cha con, mẹ con thì được thừa kế di sản của nhau như hàng 1 và được thừa kế thế vị.',
+          ],
+          keyPoints: [
+            'Hàng 1: Vợ, chồng, cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi, con đẻ, con nuôi (chia đều nhau)',
+            'Hàng 2: Ông bà nội ngoại, anh chị em ruột, cháu ruột (gọi người chết là ông bà)',
+            'Hàng 3: Cụ nội ngoại, cô dì chú bác cậu ruột, cháu ruột, chắt ruột',
+            'Thừa kế thế vị (Điều 652): Cháu thế vị khi cha/mẹ chết TRƯỚC hoặc CÙNG THỜI ĐIỂM với ông/bà',
+            'Con riêng và bố dượng/mẹ kế (Điều 654): Có chăm sóc nuôi dưỡng nhau thì được hưởng như hàng 1',
+          ],
+          citations: {
+            bookTitle: 'Giáo trình Pháp luật đại cương (HCMUTE 2023)',
+            pageStart: 183,
+            pageEnd: 187,
+            exactPages: [183, 184, 185, 186, 187],
+          },
+          lawCitations: [
+            {
+              lawName: 'Bộ luật Dân sự năm 2015',
+              article: 'Điều 651, 652, 654',
+              contentSnippet: 'Ba hàng thừa kế theo pháp luật, thừa kế thế vị và thừa kế giữa con riêng với bố dượng, mẹ kế.',
+            },
+          ],
+          keywords: ['Thừa kế theo pháp luật', 'Hàng thừa kế', 'Điều 651 BLDS', 'Thừa kế thế vị', 'Điều 652 BLDS', 'Điều 654 BLDS'],
+        },
+      ],
+    },
+  ],
+};
