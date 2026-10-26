@@ -150,6 +150,7 @@ async function main() {
 
     if (browserExecutable) {
       runSmokeStep('06', `Headless browser (${path.basename(browserExecutable)}) renders DOM cleanly`, () => {
+        const targetUrl = `file://${path.join(ROOT_DIR, 'index.html').replace(/\\/g, '/')}`;
         const browserRun = spawnSync(
           browserExecutable,
           [
@@ -157,7 +158,7 @@ async function main() {
             '--disable-gpu',
             '--no-sandbox',
             '--dump-dom',
-            baseUrl,
+            targetUrl,
           ],
           { encoding: 'utf8', timeout: 10000 }
         );

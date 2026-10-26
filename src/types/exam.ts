@@ -42,7 +42,7 @@ export interface ExamSession {
   config: ExamConfig;
   /** Danh sách câu hỏi đã được chọn và xáo trộn */
   questions: Question[];
-  /** Bảng phương án thí sinh đã chọn: { [questionId]: 'A' hoặc ['A', 'B'] } */
+  /** Bảng phương án thí sinh đã chọn (userAnswers: Record<string, OptionId>) */
   userAnswers: Record<string, OptionId | OptionId[]>;
   /** Danh sách questionId được thí sinh đánh dấu cắm cờ xem lại */
   flaggedQuestionIds: string[];
