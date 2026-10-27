@@ -12,6 +12,7 @@ import {
   BookOpen,
   Sun,
   Moon,
+  Code2,
 } from 'lucide-react';
 import { useStudy, StudyMode } from '@/context/StudyContext';
 import { useDrawer } from '@/context/DrawerContext';
@@ -47,22 +48,40 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch }) => {
       <div className="px-4 lg:px-6 h-16 flex items-center justify-between gap-4">
         {/* Khối Logo & Thương hiệu HCMUTE */}
         <div className="flex items-center space-x-3 shrink-0">
-          <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-sm">
-            PL
-          </div>
-          <div className="hidden sm:block">
-            <div className="flex items-center space-x-2">
-              <h1 className="text-base font-bold text-slate-800 dark:text-white leading-tight">
-                Pháp Luật Đại Cương
-              </h1>
-              <span className="text-[10px] font-semibold uppercase tracking-wider bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded-full">
-                HCMUTE 2023
-              </span>
+          <button
+            type="button"
+            onClick={() => { window.location.hash = '#/'; }}
+            className="flex items-center space-x-3 text-left hover:opacity-90 transition-opacity cursor-pointer group"
+            title="Về trang chủ chọn môn học"
+          >
+            <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-sm group-hover:scale-105 transition-transform">
+              PL
             </div>
-            <p className="text-xs text-slate-500 dark:text-slate-400">
-              Hệ thống ôn thi 2 cột thông minh (298 trang)
-            </p>
-          </div>
+            <div className="hidden sm:block">
+              <div className="flex items-center space-x-2">
+                <h1 className="text-base font-bold text-slate-800 dark:text-white leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  Pháp Luật Đại Cương
+                </h1>
+                <span className="text-[10px] font-semibold uppercase tracking-wider bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded-full">
+                  HCMUTE 2023
+                </span>
+              </div>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Hệ thống ôn thi 2 cột thông minh (298 trang)
+              </p>
+            </div>
+          </button>
+
+          {/* Quick switch sang môn Lập trình C */}
+          <button
+            type="button"
+            onClick={() => { window.location.hash = '#/c-lang'; }}
+            className="hidden xl:flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-indigo-400 dark:hover:border-indigo-500 text-xs font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all bg-slate-50 dark:bg-slate-800/60 cursor-pointer"
+            title="Chuyển sang môn Ngôn ngữ Lập trình C/C++"
+          >
+            <Code2 className="w-3.5 h-3.5 text-indigo-500" />
+            <span>Sang Lập Trình C</span>
+          </button>
         </div>
 
         {/* Thanh chuyển chế độ học tập (Desktop & Tablet) */}

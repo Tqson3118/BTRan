@@ -134,7 +134,7 @@ Lộ trình học tập được thiết kế khoa học, đi từ cú pháp nh�
   - `1.2.` Cấu trúc một chương trình C: Hàm `main()`, khối lệnh `{ }`, cú pháp chú thích (`//` và `/* ... */`).
   - `1.3.` Tập ký tự hợp lệ, danh sách 32 từ khóa chuẩn C89/C99 và quy tắc đặt tên định danh hợp lệ/không hợp lệ.
   - `1.4.` Chu trình xây dựng phần mềm: Tiền xử lý $\to$ Biên dịch (.obj) $\to$ Liên kết thư viện (.exe) $\to$ Nạp thực thi.
-  - `1.5.` Bộ tiền xử lý cơ bản: Bao hàm tệp (`#include <...>` vs `#include "..."`), macro hằng và macro hàm `#define`.
+  - `1.5.` Bộ tiền xử lý & Chỉ thị biên dịch có điều kiện: Bao hàm tệp (`#include <...>` vs `#include "..."`), macro hằng và macro hàm `#define`, chỉ thị điều kiện (`#if`, `#else`, `#elif`, `#endif`, `#ifdef`, `#ifndef`, `#undef`), xóa macro (`#undef`) và cơ chế chống đụng độ tiêu đề Header Guards (`#ifndef HEADER_H` / `#define HEADER_H` ... `#endif`).
   - `1.6.` Môi trường phát triển tích hợp (IDE): GCC, Dev-C++, Code::Blocks, xử lý các thông báo lỗi cú pháp và cảnh báo (Warnings).
 
 - **Bảng ánh xạ số trang tham chiếu kép**:
@@ -2069,6 +2069,7 @@ Nhằm phục vụ trực tiếp cho công tác biên soạn ngân hàng câu h�
 | **Chương 8** | **Mở file sai chế độ (`"w"` vs `"a"`)** | Mở ở chế độ `"w"` sẽ xóa trắng nội dung tệp cũ; muốn ghi nối tiếp bắt buộc phải dùng `"a"`. | Chương trình ghi thêm nhật ký nhưng vô tình xóa sạch dữ liệu cũ. | Câu hỏi dạng Lý thuyết/Debug: Chọn đúng chuỗi mode mở tệp. |
 | **Chương 9** | **Giải phóng mảng động C++** | Mảng động cấp phát bằng `new[]` bắt buộc phải giải phóng bằng `delete[]`. | `Sai:` `delete arr;`<br>`Đúng:` `delete[] arr;` | Câu hỏi dạng Debug: Phát hiện lỗi rò rỉ bộ nhớ khi giải phóng đối tượng mảng C++. |
 | **Chương 9** | **Tham chiếu chưa khởi tạo** | Biến tham chiếu trong C++ là một bí danh (Alias), bắt buộc phải được gán vào một biến có sẵn ngay lúc khai báo. | `int &ref;` $\to$ lỗi biên dịch ngay lập tức! | Câu hỏi dạng Lý thuyết/Debug: Phân biệt quy tắc khai báo biến con trỏ vs biến tham chiếu. |
+| **Chương 9** | **Thiếu hàm hủy ảo (Virtual Destructor)** | Khi xóa đối tượng dẫn xuất thông qua con trỏ lớp cơ sở đa hình (`Base *p = new Derived(); delete p;`), nếu lớp cơ sở không có `virtual ~Base()`, hàm hủy của lớp dẫn xuất sẽ không được kích hoạt, gây rò rỉ tài nguyên. | `Sai:` `class Base { ~Base(); };`<br>`Đúng:` `class Base { virtual ~Base(); };` | Câu hỏi dạng Lý thuyết/Debug: Nhận diện lỗi rò rỉ bộ nhớ trong mô hình kế thừa đa hình C++. |
 
 ---
 
@@ -2085,7 +2086,7 @@ Nhằm phục vụ trực tiếp cho công tác biên soạn ngân hàng câu h�
   * Bộ đề thi thử chuẩn 45 câu / 90 phút có bảng bốc đề chi tiết từng chương (3 đến 6 câu/chương).
   * Hệ thống 125 Thẻ ghi nhớ (Flashcards) bao phủ toàn bộ các định nghĩa và cú pháp hạt nhân.
   * Danh mục 32 Bài tập tự luận lập trình (Programming Essays) có đề bài, hướng dẫn thuật toán và khung code giải pháp C/C++ chuẩn mực.
-- [x] **AC4 - Bảng phân tích sư phạm bẫy đề thi**: Cung cấp đầy đủ 25 cạm bẫy học thuật điển hình phân loại theo 9 chương để làm căn cứ ra đề thi chất lượng cao ở Phase 2.
+- [x] **AC4 - Bảng phân tích sư phạm bẫy đề thi**: Cung cấp đầy đủ 26 cạm bẫy học thuật điển hình phân loại theo 9 chương (Ch1: 2, Ch2: 4, Ch3: 3, Ch4: 3, Ch5: 3, Ch6: 3, Ch7: 3, Ch8: 2, Ch9: 3 = tổng 26) để làm căn cứ ra đề thi chất lượng cao ở Phase 2.
 
 ---
 
@@ -2168,6 +2169,39 @@ Sau khi người dùng phê duyệt văn bản đặc tả `PHASE1_CURRICULUM_AL
    - Chạy build kiểm tra TypeScript: `npm run build` không phát sinh bất kỳ cảnh báo hoặc lỗi cú pháp nào.
    - Kiểm tra tương thích lưu trữ `localStorage`: Đảm bảo tiến độ học tập, lịch sử thi thử và danh sách câu hỏi đánh dấu yêu thích được lưu bền vững trên trình duyệt.
    - Bàn giao sản phẩm hoàn thiện cho người dùng.
+
+---
+
+### 6.4. Tiêu chuẩn Thẩm định Sư phạm & Kiểm toán Chống Bias Đoán mò (Psychometric Anti-Bias Gate)
+
+Để đảm bảo chất lượng khảo thí đại học và triệt tiêu hoàn toàn khả năng sinh viên đoán mò dựa vào hình thức câu hỏi thay vì kiến thức thực chất, toàn bộ 270 câu hỏi MCQ của Phase 2 phải vượt qua 5 tiêu chí kiểm định đo lường sư phạm (Psychometric Anti-Bias Standards) được tự động hóa qua script `scripts/verify_mcq_bias.py` (`npm run test:bias`):
+
+1. **[BIAS-01] Cân bằng độ dài 4 phương án (Chênh lệch ≤ 20%)**:
+   - Trong mỗi câu hỏi trắc nghiệm đơn 4 phương án, độ chênh lệch ký tự giữa phương án dài nhất ($L_{max}$) và ngắn nhất ($L_{min}$) tính theo công thức: $\Delta = \frac{L_{max} - L_{min}}{L_{max}} \times 100\%$ bắt buộc phải $\le 20\%$.
+   - Triệt tiêu hoàn toàn hiện tượng phương án đúng được viết quá dài dòng, cẩn thận, trong khi các phương án sai viết cẩu thả, ngắn ngủn.
+
+2. **[BIAS-02] Phương án sai phải hợp lý (Plausible Distractors)**:
+   - Phương án sai không được là các câu bịa vô nghĩa, mà bắt buộc phải đại diện cho các quan niệm sai lầm, bẫy cú pháp, bẫy logic thực tế mà sinh viên hay mắc phải:
+     * Nhầm lẫn giữa gán `=` và so sánh `==` trong biểu thức điều kiện.
+     * Nhầm lẫn thứ tự ưu tiên toán tử (operator precedence) và tiền tố/hậu tố (`++i` vs `i++`).
+     * Lỗi con trỏ trỏ vào vùng nhớ rác (wild/dangling pointer), dereference con trỏ NULL.
+     * Lỗi lệch 1 chỉ số mảng (off-by-one error: truy cập `arr[N]` trong mảng $N$ phần tử).
+     * Bỏ sót lệnh `break` trong `switch-case` (fall-through).
+     * Nhầm lẫn giữa truyền tham trị (pass-by-value) và truyền tham chiếu/con trỏ (pass-by-pointer).
+   - Mỗi câu hỏi đều phải có trường giải thích chi tiết phân tích lý do tại sao phương án nhiễu là bẫy.
+
+3. **[BIAS-03] Đáp án đúng thỉnh thoảng là phương án ngắn nhất (Counter-Heuristic)**:
+   - Tối thiểu 20% đến 35% số câu hỏi trong ngân hàng phải có đáp án đúng là phương án có độ dài ngắn nhất trong 4 lựa chọn.
+   - Phá vỡ hoàn toàn tâm lý/mẹo thi cử "nếu không biết thì chọn phương án dài nhất".
+
+4. **[BIAS-04] Phân bổ đều vị trí đáp án A/B/C/D & Triệt tiêu Pattern**:
+   - Tỷ lệ đáp án đúng phân bổ ngẫu nhiên độc lập: $A \approx 25\%$, $B \approx 25\%$, $C \approx 25\%$, $D \approx 25\%$ (dung sai tối đa $\pm 3\%$).
+   - Kiểm định Chi-Square Goodness-of-Fit đạt giá trị $\chi^2 < 7.815$ ($p > 0.05$).
+   - Chuỗi đáp án trùng lặp liên tiếp tối đa (Max Run) $\le 2$ câu (tuyệt đối không để xảy ra 3 câu liên tiếp cùng đáp án A-A-A hay chuỗi tuần hoàn A-B-C-D).
+
+5. **[BIAS-05] Triệt tiêu các từ khóa đoán mò hình thức (Zero Giveaways)**:
+   - Cấm 100% việc sử dụng các phương án lười biếng: "Tất cả các phương án trên đều đúng", "Tất cả đều sai", "Cả A, B và C".
+   - Kiểm soát chặt các từ hạn định tuyệt đối ("luôn luôn", "tuyệt đối", "chỉ duy nhất") để không biến phương án thành bẫy lộ liễu.
 
 ---
 *Tài liệu đặc tả được xác lập chính thức bởi Worker Agent (`worker_spec_writer`) phục vụ công tác thẩm duyệt và nghiệm thu Phase 1.*

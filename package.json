@@ -7,14 +7,21 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "node --experimental-strip-types scripts/test-storage.ts"
+    "test": "node --experimental-strip-types scripts/test-storage.ts",
+    "test:bias": "python scripts/verify_mcq_bias.py",
+    "test:clang": "node --experimental-strip-types scripts/e2e-clang-tests.mjs",
+    "test:smoke": "node scripts/smoke-test.mjs",
+    "test:e2e": "node scripts/e2e-tier-tests.mjs",
+    "test:all": "npm test && npm run test:smoke && npm run test:e2e && npm run test:clang && npm run test:bias"
   },
   "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
     "canvas-confetti": "^1.9.4",
     "clsx": "^2.1.1",
     "lucide-react": "^1.61.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.4",
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
