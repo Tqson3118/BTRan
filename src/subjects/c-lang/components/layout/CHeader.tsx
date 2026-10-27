@@ -1,146 +1,206 @@
 /**
  * src/subjects/c-lang/components/layout/CHeader.tsx
  * Thanh điều hướng chính môn Lập trình C/C++ (HCMUTE)
+ * Thiết kế đồng bộ 100% với Header của môn Pháp luật đại cương
  */
 
 import React from 'react';
 import {
-  Code2,
-  BookOpen,
-  GraduationCap,
+  CheckCircle,
+  Clock,
   Layers,
   Terminal,
   Search,
-  Moon,
+  SidebarClose,
+  BookOpen,
   Sun,
-  ArrowLeftRight,
-  BookCheck,
+  Moon,
+  Code2,
 } from 'lucide-react';
 import { useCStudy, CTabMode } from '../../context/CStudyContext';
 import { useCDrawer } from '../../context/CDrawerContext';
 import { useTheme } from '@/context/ThemeContext';
-import { useNavigate } from 'react-router-dom';
+import { cn } from '@/utils/cn';
 
-interface CHeaderProps {
+export interface CHeaderProps {
   onOpenSearch: () => void;
 }
 
+interface ModeItem {
+  id: CTabMode;
+  label: string;
+  icon: React.ComponentType<{ className?: string }>;
+}
+
+const MODES: ModeItem[] = [
+  { id: 'practice', label: 'Luyện tập', icon: CheckCircle },
+  { id: 'exam', label: 'Thi thử', icon: Clock },
+  { id: 'flashcards', label: 'Thẻ nhớ', icon: Layers },
+  { id: 'essays', label: 'Tự luận', icon: Terminal },
+];
+
 export const CHeader: React.FC<CHeaderProps> = ({ onOpenSearch }) => {
-  const { activeTab, setActiveTab, stats } = useCStudy();
+  const { activeTab, setActiveTab } = useCStudy();
   const { toggleDrawer, isOpen } = useCDrawer();
   const { theme, toggleTheme } = useTheme();
-  const isDarkMode = theme === 'dark';
-  const navigate = useNavigate();
-
-  const tabs: { id: CTabMode; label: string; icon: React.FC<{ className?: string }>; badge?: string | number }[] = [
-    { id: 'practice', label: 'Luyện tập (270c)', icon: BookOpen },
-    { id: 'exam', label: 'Thi thử (45c/90p)', icon: GraduationCap, badge: 'Đề thi' },
-    { id: 'flashcards', label: 'Flashcards (125)', icon: Layers },
-    { id: 'essays', label: 'Tự luận (32 bài)', icon: Terminal, badge: 'Monaco' },
-  ];
 
   return (
-    <header className="h-16 border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur px-4 flex items-center justify-between shrink-0 select-none z-30 shadow-sm transition-colors duration-200">
-      {/* Brand & Subject Switcher */}
-      <div className="flex items-center gap-3">
-        <button
-          onClick={() => navigate('/')}
-          className="flex items-center gap-2 group p-1 -ml-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-          title="Về trang chọn môn học"
-        >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
-            <Code2 className="w-5 h-5" />
-          </div>
-          <div className="hidden sm:block text-left">
-            <div className="flex items-center gap-1.5">
-              <span className="font-bold text-sm bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                HCMUTE
-              </span>
-              <span className="text-[10px] uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300">
-                C / C++
-              </span>
+    <header className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shrink-0 z-30 shadow-xs transition-colors duration-200">
+      <div className="px-4 lg:px-6 h-16 flex items-center justify-between gap-4">
+        {/* Khối Logo & Thương hiệu HCMUTE */}
+        <div className="flex items-center space-x-3 shrink-0">
+          <button
+            type="button"
+            onClick={() => {
+              window.location.hash = '#/';
+            }}
+            className="flex items-center space-x-3 text-left hover:opacity-90 transition-opacity cursor-pointer group"
+            title="Về trang chủ chọn môn học"
+          >
+            <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg shadow-sm group-hover:scale-105 transition-transform">
+              C
             </div>
-            <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Lập trình C & OOP</p>
-          </div>
-        </button>
+            <div className="hidden sm:block">
+              <div className="flex items-center space-x-2">
+                <h1 className="text-base font-bold text-slate-800 dark:text-white leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  Lập Trình C & C++
+                </h1>
+                <span className="text-[10px] font-semibold uppercase tracking-wider bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded-full">
+                  HCMUTE 2023
+                </span>
+              </div>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Hệ thống ôn thi 2 cột thông minh (591 trang)
+              </p>
+            </div>
+          </button>
 
-        {/* Quick Switch to Law button */}
-        <button
-          onClick={() => navigate('/phap-luat')}
-          className="hidden md:flex items-center gap-1.5 text-xs font-medium px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all bg-slate-50 dark:bg-slate-800/60"
-          title="Chuyển sang môn Pháp luật đại cương"
-        >
-          <ArrowLeftRight className="w-3.5 h-3.5" />
-          <span>Sang môn Pháp Luật</span>
-        </button>
+          {/* Quick switch sang môn Pháp luật */}
+          <button
+            type="button"
+            onClick={() => {
+              window.location.hash = '#/phap-luat';
+            }}
+            className="hidden xl:flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500 text-xs font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all bg-slate-50 dark:bg-slate-800/60 cursor-pointer"
+            title="Chuyển sang môn Pháp luật đại cương"
+          >
+            <BookOpen className="w-3.5 h-3.5 text-blue-500" />
+            <span>Sang Pháp Luật</span>
+          </button>
+        </div>
+
+        {/* Thanh chuyển chế độ học tập (Desktop & Tablet) */}
+        <nav className="hidden md:flex items-center space-x-1 bg-slate-100 dark:bg-slate-800/80 p-1 rounded-xl border border-slate-200 dark:border-slate-700/80">
+          {MODES.map((mode) => {
+            const Icon = mode.icon;
+            const isActive = activeTab === mode.id;
+            return (
+              <button
+                key={mode.id}
+                type="button"
+                onClick={() => setActiveTab(mode.id)}
+                className={cn(
+                  'flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer',
+                  isActive
+                    ? 'bg-white dark:bg-slate-900 text-blue-700 dark:text-blue-400 shadow-xs font-bold'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-700/60'
+                )}
+              >
+                <Icon
+                  className={cn(
+                    'w-3.5 h-3.5',
+                    isActive ? 'text-blue-600 dark:text-blue-400' : 'text-slate-500 dark:text-slate-400'
+                  )}
+                />
+                <span>{mode.label}</span>
+              </button>
+            );
+          })}
+        </nav>
+
+        {/* Khối nút Hành động bên phải: Theme toggle + Tìm kiếm + Tra cứu lý thuyết */}
+        <div className="flex items-center space-x-2 shrink-0">
+          {/* Nút Toggle Theme Sáng / Tối */}
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className="p-2 rounded-xl border border-slate-200 dark:border-slate-700/80 text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+            title={theme === 'dark' ? 'Chuyển sang giao diện Sáng' : 'Chuyển sang giao diện Tối'}
+            aria-label="Đổi giao diện Sáng/Tối"
+          >
+            {theme === 'dark' ? (
+              <Sun className="w-4 h-4 text-amber-400" />
+            ) : (
+              <Moon className="w-4 h-4 text-slate-700" />
+            )}
+          </button>
+
+          {/* Nút Tìm kiếm nhanh */}
+          <button
+            type="button"
+            onClick={onOpenSearch}
+            className="flex items-center space-x-2 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700/80 text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+            title="Tìm kiếm trong 9 chương giáo trình (Ctrl+K)"
+          >
+            <Search className="w-3.5 h-3.5 text-slate-400 dark:text-slate-400" />
+            <span className="hidden sm:inline">Tìm kiếm...</span>
+            <kbd className="hidden lg:inline-block px-1.5 py-0.2 rounded bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 text-[10px] text-slate-400 dark:text-slate-300 font-mono">
+              Ctrl K
+            </kbd>
+          </button>
+
+          {/* Nút Toggle Drawer Tra cứu Lý Thuyết */}
+          <button
+            type="button"
+            onClick={toggleDrawer}
+            className={cn(
+              'flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-all shadow-xs cursor-pointer',
+              isOpen
+                ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700 hover:bg-amber-200 dark:hover:bg-amber-900/60'
+                : 'bg-blue-600 dark:bg-blue-500 text-white hover:bg-blue-700 dark:hover:bg-blue-600'
+            )}
+            title={isOpen ? 'Thu gọn ngăn lý thuyết' : 'Mở ngăn lý thuyết đối chiếu'}
+          >
+            {isOpen ? (
+              <>
+                <SidebarClose className="w-4 h-4 text-amber-700 dark:text-amber-400" />
+                <span className="hidden sm:inline">Thu gọn lý thuyết</span>
+              </>
+            ) : (
+              <>
+                <BookOpen className="w-4 h-4" />
+                <span>Tra cứu lý thuyết</span>
+              </>
+            )}
+          </button>
+        </div>
       </div>
 
-      {/* Mode Navigation Tabs */}
-      <nav className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800/80 p-1 rounded-xl">
-        {tabs.map((tab) => {
-          const Icon = tab.icon;
-          const isActive = activeTab === tab.id;
+      {/* Thanh tab điều hướng cho thiết bị di động (< md) */}
+      <div className="md:hidden flex items-center space-x-1 px-3 py-2 border-t border-slate-100 dark:border-slate-800 overflow-x-auto no-scrollbar bg-slate-50 dark:bg-slate-900/80">
+        {MODES.map((mode) => {
+          const Icon = mode.icon;
+          const isActive = activeTab === mode.id;
           return (
             <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs md:text-sm font-semibold transition-all relative ${
+              key={mode.id}
+              type="button"
+              onClick={() => setActiveTab(mode.id)}
+              className={cn(
+                'flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer',
                 isActive
-                  ? 'bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-white/50 dark:hover:bg-slate-700/50'
-              }`}
-            >
-              <Icon className="w-4 h-4" />
-              <span className="hidden md:inline">{tab.label}</span>
-              {tab.badge && (
-                <span className="hidden lg:inline text-[10px] px-1 py-0.2 rounded font-mono font-normal bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300">
-                  {tab.badge}
-                </span>
+                  ? 'bg-blue-600 text-white shadow-2xs font-bold'
+                  : 'text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800'
               )}
+            >
+              <Icon className="w-3.5 h-3.5" />
+              <span>{mode.label}</span>
             </button>
           );
         })}
-      </nav>
-
-      {/* Right Actions */}
-      <div className="flex items-center gap-2">
-        {/* Search button */}
-        <button
-          onClick={onOpenSearch}
-          className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:border-slate-300 dark:hover:border-slate-600 text-xs transition-colors bg-slate-50/50 dark:bg-slate-800/40"
-          title="Tìm kiếm tra cứu (Ctrl+K)"
-        >
-          <Search className="w-4 h-4 text-slate-400" />
-          <span className="hidden lg:inline text-xs">Tìm kiếm</span>
-          <kbd className="hidden lg:inline font-mono text-[10px] px-1.5 py-0.5 bg-slate-200 dark:bg-slate-700 rounded text-slate-500 dark:text-slate-400">
-            Ctrl K
-          </kbd>
-        </button>
-
-        {/* Theory Drawer Toggle */}
-        <button
-          onClick={toggleDrawer}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${
-            isOpen
-              ? 'bg-blue-600 text-white border-blue-600 shadow-sm shadow-blue-500/20'
-              : 'border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 bg-white dark:bg-slate-800'
-          }`}
-          title="Mở ngăn kéo giáo trình lý thuyết 9 chương"
-        >
-          <BookCheck className="w-4 h-4" />
-          <span className="hidden sm:inline">Giáo trình</span>
-        </button>
-
-        {/* Theme Toggle */}
-        <button
-          onClick={toggleTheme}
-          className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-          title={isDarkMode ? 'Chuyển sang chế độ sáng' : 'Chuyển sang chế độ tối'}
-          aria-label="Toggle Theme"
-        >
-          {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-600" />}
-        </button>
       </div>
     </header>
   );
 };
+
+export default CHeader;

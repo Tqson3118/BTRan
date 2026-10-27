@@ -21,9 +21,9 @@ export const CMainWorkspace: React.FC = () => {
     <main
       id="c-main-workspace"
       role="main"
-      className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8 bg-slate-50 dark:bg-slate-950 scrollbar-thin transition-colors duration-200"
+      className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8 bg-slate-100 dark:bg-slate-950 scrollbar-thin transition-colors duration-200"
     >
-      <div className="max-w-5xl mx-auto pb-16">
+      <div className="max-w-4xl mx-auto pb-16">
         {activeTab === 'practice' && <CPracticeView />}
         {activeTab === 'exam' && <CMockExamView />}
         {activeTab === 'flashcards' && <CFlashcardsView />}
