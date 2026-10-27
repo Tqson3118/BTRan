@@ -1,0 +1,37 @@
+// Trang 236 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+236 
+34    printf("\nDien tich: %2.f",s);} 
+35  else printf("\nKhong co chu vi, dien tich"); 
+36 } 
+37 int main() 
+38 { 
+39    int luachon; 
+40    printf("a = "); scanf("%f", &a); 
+41    printf("b = "); scanf("%f", &b); 
+42    printf("c = "); scanf("%f", &c); 
+43    do 
+44    { 
+45     
+  printf("\n-----------MENU------------------\n"); 
+46       printf("\n 1.Kiem tra a, b, c co lap thanh tam giac duoc 
+khong"); 
+47       printf("\n 2.Kiem tra tam giac la tam giac gi"); 
+48       printf("\n 3.Dien tich chu vi tam giac"); 
+49       printf("\n Moi ban chon: "); scanf("%d",&luachon); 
+50       switch(luachon) 
+51       { 
+52       case 1: 
+53          if (Kiemtra()==1) printf("\n3 canh a, b, c lap thanh tam 
+giac"); 
+54          else printf("\n 3 canh a, b, c khong lap thanh tam giac"); 
+55          break; 
+56       case 2: 
+57          Loaitamgiac(); 
+58          break; 
+59       case 3: 
+60          DienTichChuVi(); 
+61          break; 
+62       } 
+63    }while(luachon!= 3); 
+64 } 

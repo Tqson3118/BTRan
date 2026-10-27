@@ -1,0 +1,49 @@
+// Trang 583 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+583 
+PHỤ LỤC 2: TỔNG HỢP MỘT SỐ THƢ VIỆN C CHUẨN 
+STT 
+Thƣ viện chuẩn 
+Các hàm thƣờng sử dụng 
+1 
+<assert.h> 
+Hàm assert() đánh giá biểu thức đầu vào 
+2 
+<ctype.h> 
+ 
+Hàm isalnum() kiểm tra kí tự là alphanumeric 
+Hàm isalpha() kiểm tra kí tự là chữ 
+Hàm iscntrl( ) kiểm tra kí tự là kí tự điều khiển 
+Hàm isdigit() kiểm tra kí tự là kiểu số 
+Hàm isgraph() kiểm tra kí tự in đƣợc 
+Hàm islower() kiểm tra kí tự là chữ in thƣờng 
+Hàm isupper() kiểm tra kí tự là chữ in hoa 
+Hàm isprint() kiểm tra kí tự in đƣợc 
+Hàm ispunct() kiểm tra kí tự in đƣợc (trừ số và 
+chữ) 
+Hàm isspace() kiểm tra kí tự trắng 
+Hàm isxdigit() kiểm tra kí tự là chữ số hexa 
+Hàm tolower() convert in hoa thành in thƣờng 
+Hàm toupper() convert in thƣờng thành in hoa 
+3 
+<math.h> 
+ 
+Hàm exp() tính e mũ x 
+Hàm log() tính logarit 
+Hàm pow() tính x mũ y 
+Hàm sqrt() tính căn bậc 2 
+Hàm ceil() làm tròn số nguyên nhỏ nhất lớn 
+hơn hoặc bằng X 
+Hàm floor() làm tròn số nguyên lớn nhất & 
+nhỏ hơn X 
+Hàm fabs() tính trị tuyệt đối của kiểu double 
+Hàm ldexp() trả về giá trị X nhân với 2 mũ Y 
+Hàm frexp() convert số dấu phẩy động về 
+dạng mũ 
+Hàm modf() tách phần nguyên và phần thập 
+phân 
+Hàm fmod() tính số dƣ của phép chia x/y 
+Hàm sin(), cos(), tan() 
+Hàm acsin(), accos(), actan() 
+Hàm atan2() tính arctan của x/y 
+Hàm tính hypebol sinx(), cosx(), tanx() 

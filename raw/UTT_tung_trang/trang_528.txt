@@ -1,0 +1,41 @@
+// Trang 528 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+528 
+164     printf("\n____________________________________\n"); 
+165 } 
+166  void xuatFile(SV a[], int n, char fileName[]){ 
+167     FILE * fp; 
+168     fp = fopen (fileName,"w"); 
+169     fprintf(fp, 
+"%20s%5s%10s%10s%10s%10s\n", 
+"Ho 
+Ten","GT", "DiemToan", "DiemLy", "DiemHoa", "DiemTB"); 
+170     for(int i = 0;i < n;i++){ 
+171         fprintf(fp, 
+"%20s%5s%10f%10f%10f%10f\n", 
+a[i].ten,a[i].gt, a[i].dT, a[i].dL, a[i].dH, a[i].dtb); 
+172     } 
+173     fclose (fp); 
+174 } 
+ Kết quả chƣơng trình: 
+Nhap so luong SV: 4 
+***************************************** 
+**    CHUONG TRINH QUAN LY SINH VIEN   ** 
+**      1. Nhap du lieu                ** 
+**      2. In danh sach sinh vien      ** 
+**      3. Sap xep sinh vien theo DTB  ** 
+**      4. Xep loai sinh vien          ** 
+**      5. Xuat DS sinh vien           ** 
+**      0. Thoat                       ** 
+***************************************** 
+**       Nhap lua chon cua ban         ** 
+1 
+Ban da chon nhap DS sinh vien! 
+__________________________________ 
+ 
+Nhap SV thu 1: 
+Nhap ten: An 
+Nhap gioi tinh: F (nu) M (nam) M 
+Nhap diem mon Toan - Ly - Hoa: 8 8 8 
+ 
+Nhap SV thu 2: 

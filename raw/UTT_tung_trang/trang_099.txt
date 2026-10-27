@@ -1,0 +1,34 @@
+// Trang 99 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+99 
+Dòng 9: Thực hiện việc gán tổng bằng a + b. 
+Dòng 10: Câu lệnh prinf() dò tìm mã định dạng trong chuỗi định 
+dạng, có một mã định dạng, tƣơng ứng với một đối số là biến tổng. Do đó 
+giá trị của biến tổng đƣợc in ra màn hình. 
+ Ví dụ 2.10 
+Viết chƣơng trình nhập giá trị cho 3 biến, trong đó biến a và b có 
+kiểu nguyên, biến x có kiểu thực. In giá trị của các biến ra màn hình. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 main() 
+4 { 
+5 int a, b; 
+6 float x; 
+7 printf("Nhap vao gia tri cua a, b va x: "); 
+8 scanf("%d %d %f", &a, &b, &x); 
+9 printf("Gia tri cua a = %d, b = %d, x = %f\n", a, b, x); 
+10 getch(); 
+11 } 
+Kết quả chƣơng trình 
+Nhap vao gia tri cua a, b va x: 12 24 8 
+Gia tri cua a = 12, b = 24, x = 8.000000 
+Giải thích: 
+Dòng 8: Trong câu lệnh scanf(), có ba mã định dạng %d %d %f, 
+đƣợc gán tƣơng ứng với 3 đối số của câu lệnh a, b và x. Nhƣ vậy chƣơng 
+trình ngầm định a, b là các biến nhận giá trị nguyên, x là biến nhận giá trị 
+thực nhƣ đã khai báo. 
+Dòng 9: Câu lệnh prinft() in giá trị của các biến a, b, x, thông qua 
+việc nhận dạng 3 mã định dạng %d, %d và %f tƣơng ứng. 
+Cải tiến chƣơng trình: Nếu thay thế câu lệnh: 
+ printf("Gia tri cua a = %d, b = %d, x = %f\n", a, b, x);  

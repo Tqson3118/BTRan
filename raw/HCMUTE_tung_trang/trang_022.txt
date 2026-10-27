@@ -1,0 +1,15 @@
+// Trang 22 - Ngôn ngữ lập trình C_ebook.pdf
+
+19
+Ví dụ 1.5. Hãy phân tích hoạt động của chương trình dựa vào lưu 
+đồ sau đây:
+1.3. NGÔN NGỮ LẬP TRÌNH C
+Mặc dù hiện nay có nhiều ngôn ngữ được ứng dụng trong cả lập 
+trình hệ thống và lập trình ứng dụng, ngôn ngữ vẫn C được xem như 
+ngôn ngữ chuẩn và cơ bản để tiếp cận lập trình máy tính cũng như lập 
+trình các thiết bị lập trình như vi xử lý, vi điều khiển. Ngôn ngữ C được 
+phát triển bởi Dennis Ritchie tại phòng thí nghiệm Bell Laboratories 
+năm 1972. C trở thành ngôn ngữ được dùng để xây dựng hệ điều hành 
+UNIX và trở nên phổ biến tại thời điểm đó. Hiện nay, có nhiều ngôn 
+ngữ lập trình phổ biến cùng tồn tại và phát triển song song với ngôn 
+TÍNH TỔNG CÁC SỐ NGUYÊN LIÊN TIẾP TỪ 1 ĐẾN N

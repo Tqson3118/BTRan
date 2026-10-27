@@ -1,0 +1,51 @@
+// Trang 319 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+319 
+ 
+ 
+pc 
+c 
+ 
+22 
+pc 
+c 
+ 
+ 
+ 
+ 
+ 
+ 
+Dòng lệnh 5: c = 22; 
+Gán giá trị 22 cho biến c, tức là 22 đƣợc lƣu trữ tại vị trí bộ nhớ của 
+biến c. 
+ 
+ 
+ 
+ 
+ 
+Dòng lệnh 6: printf("Dia chi cua bien c: %u\n", &c); 
+Trong câu lệnh này khi in &c (địa chỉ của biến c), chúng ta dùng %u 
+thay vì %d vì địa chỉ thƣờng đƣợc biểu diễn dƣới dạng số nguyên không 
+dấu (luôn dƣơng). 
+Dòng lệnh 8: pc = &c; 
+ 
+ 
+ 
+ 
+ 
+Câu lệnh này gán địa chỉ của biến c cho con trỏ pc. Nhƣ vậy, ở dòng 
+lệnh 9, 10, giá trị của pc giống địa chỉ của biến c và nội dung của con trỏ 
+pc là 22 (bằng giá trị của biến c). 
+Dòng lệnh 11: c = 11; 
+ 
+ 
+ 
+ 
+ 
+22 
+pc 
+c 
+ 
+11 
+pc 
+c 

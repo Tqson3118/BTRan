@@ -1,0 +1,30 @@
+// Trang 63 - Ngôn ngữ lập trình C_ebook.pdf
+
+60
+Giải thích hoạt động: 
+Trong chương trình này, các dòng từ 5 đến dòng 13 là khác với 
+các ví dụ trước. Ở dòng 5, biểu thức ((a > c)|| (a < b) && (b > c)) 
+sẽ được xét, nếu kết quả là đúng thì câu lệnh ở dòng lệnh 6 sẽ được 
+thực hiện còn nếu sai thì bỏ qua câu lệnh ở dòng 6 và chuyển qua 
+câu lệnh ở dòng 7. Do kết quả của biểu thức ở dòng lệnh số 5 là 
+sai nên chương trình sẽ chuyển sang kiểm tra biểu thức điều kiện ở 
+dòng lệnh 7 (biểu thức a==b): nếu là đúng thì sẽ thực hiện các lệnh 
+từ dòng 8 đến hết dòng 11, nếu sai thì sẽ chuyển sang thực thi dòng 
+lệnh 12. Do biểu thức a == b ở dòng lệnh 7 cho kết quả là sai, nên 
+chương trình sẽ thực thi các dòng 12 và 13. Đoạn lệnh từ dòng 14 
+đến cuối chương trình luôn được thực hiện vì không liên quan tới 
+lệnh if ở trên.
+2.3.4 Cấu trúc if lồng nhau
+Với cấu trúc if lồng nhau, chương trình sẽ lựa chọn và quyết định 
+thực hiện 1 trong số n khối lệnh cho trước.
+ Cú pháp
+Cú pháp của cấu trúc này là một trong 3 dạng trên, nhưng các khối 
+lệnh bên trong sẽ chứa ít nhất một lệnh if khác nữa nên gọi là cấu trúc 
+if lồng nhau. Thông thường, khi cấu trúc if lồng nhau càng nhiều cấp 
+thì độ phức tạp càng cao, chương trình chạy càng chậm và trong lúc lập 
+trình càng dễ bị nhầm lẫn.
+ Lưu ý 
+Trong lệnh if lồng nhau thì else sẽ luôn luôn kết hợp với if chưa 
+có else nào gần nó nhất. Vì vậy khi gặp những lệnh if thiếu, ta phải đặt 
+chúng trong những khối lệnh rõ ràng bằng cặp dấu {} để tránh bị hiểu 
+sai câu lệnh.

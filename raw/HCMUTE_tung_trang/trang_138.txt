@@ -1,0 +1,8 @@
+// Trang 138 - Ngôn ngữ lập trình C_ebook.pdf
+
+135
+6. Viết chương trình nhập vào 2 mảng 1 chiều kiểu số nguyên có 
+kích thước n phần tử. So sánh 2 mảng có bằng nhau không.
+7. Viết chương trình nhập vào 2 mảng một chiều kiểu số nguyên, 
+mỗi mảng có n phần tử, cộng 2 mảng và xuất mảng tổng ra theo thứ tự 
+các phần tử tăng dần.

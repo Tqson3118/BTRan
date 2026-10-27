@@ -1,0 +1,39 @@
+// Trang 518 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+518 
+Ten SV: Thuy  
+Diem = 6  
+Ten SV: Vinh  
+Diem = 8  
+Ten SV: Binh  
+Diem = 8  
+Ten SV: Nam  
+Diem = 6  
+Ten SV: Yen  
+Diem = 8 
+ Ví dụ 7.16 
+Viết chƣơng trình ghi tất cả các thành phần của một mảng các cấu 
+trúc vào một tệp sử dụng hàm fwrite(). Đọc mảng từ tệp và hiển thị ra 
+màn hình. 
+Chƣơng trình 
+1  #include <stdio.h> 
+2  #include <stdlib.h> 
+3  #define MAX 100 
+4  struct Sinhvien 
+5  { 
+6     char tensv[50]; 
+7     float diem; 
+8  }; 
+9  int main(){ 
+10      struct Sinhvien sv1[MAX], sv2[MAX];  
+11   
+int n,i ;   
+12      FILE *fptr; 
+13      printf("Nhap vao so sinh vien: "); 
+14      scanf("%d", &n); 
+15      fptr = fopen("sv.txt","wb"); 
+16      for(i = 0; i < n; ++i) 
+17      { 
+18          fflush(stdin); 
+19          printf("Nhap thong tin cua sinh vien thu %d :\n", i +1); 
+20          printf("Nhap ten sinh vien:\n"); 

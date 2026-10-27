@@ -1,0 +1,41 @@
+// Trang 494 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+494 
+16  
+scanf("%s %d %s %d %f", person.name, &person.day, 
+person.month, 
+17  
+&person.year, &person.salary); 
+18  
+printf("%s %d %s %d %f\n", person.name, person.day, 
+person.month, 
+19  
+person.year, person.salary); 
+20  
+} 
+ Bài tập 6.3 
+a. Viết chƣơng trình sử dụng con trỏ cấu trúc để hiển thị giờ, phút, 
+giây ra màn hình và tính khoảng cách giữa 2 mốc thời gian. 
+b. Viết chƣơng trình sử dụng con trỏ cấu trúc thể hiện ngày, tháng, 
+năm ra màn hình và tính khoảng cách giữa 2 ngày. 
+c. Viết chƣơng trình khai báo kiểu dữ liệu thể hiện một số phức. Sử 
+dụng kiểu này để viết hàm tính tổng, hiệu, tích của hai số phức. 
+d. Viết chƣơng trình khai báo kiểu dữ liệu để biểu diễn một phân số. 
+Hãy viết hàm thực hiện những công việc sau: 
+- Tính tổng, hiệu, tích, thƣơng hai phân số. 
+- Rút gọn phân số. 
+- Quy đồng hai phân số. 
+- So sánh hai phân số. 
+ Bài tập 6.4.  
+Viết chƣơng trình quản lý thông tin của các sinh viên trong một lớp 
+học, biết rằng thông tin của một sinh viên bao gồm: mã sinh viên, tên sinh 
+viên, điểm các môn CSDL, Toán rời rạc, Lập trình C. 
++ Nhập một danh sách n(1<n<50) sinh viên. 
++ Đỗi với mỗi sinh viên, hãy tính điểm trung bình và phân loại nhƣ sau: 
+o DTB = (Điểm CSDL + Điểm Toán rời rạc + Điểm Lập trình C)/3 
+o Và phân loại: 
+ Xuất sắc, nếu DTB > 9.0 
+ Giỏi, nếu  9.0 > DTB > 8.0 
+ Khá, nếu 8 > DTB > 7.0 
+ Trung bình, nếu 7.0 > DTB > 5.0 
+ Kém, nếu DTB < 5.0   

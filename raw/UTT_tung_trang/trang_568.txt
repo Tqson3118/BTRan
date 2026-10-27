@@ -1,0 +1,43 @@
+// Trang 568 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+568 
+ Ví dụ 8.6 
+ 
+Vẽ xe ô tô chuyển động. 
+ Chƣơng trình: 
+1 
+#include <graphics.h> 
+2 
+#include <dos.h> 
+3 
+int main() 
+4 
+{ 
+5 
+   int i, j = 0, gd = DETECT, gm; 
+6 
+   initgraph(&gd,&gm," "); 
+7 
+   settextstyle(DEFAULT_FONT,HORIZ_DIR,2); 
+8 
+   outtextxy(25,240,"Nhan mot phim de xem xe chuyen dong!"); 
+9 
+   getch(); 
+10    for( i = 0 ; i <= 420 ; i = i + 10, j++) 
+11    { 
+12       rectangle(50+i,275,150+i,400); 
+13       rectangle(150+i,350,200+i,400); 
+14       circle(75+i,410,10); 
+15       circle(175+i,410,10); 
+16       setcolor(j); 
+17       delay(100); 
+18       if( i == 420) 
+19          break; 
+20       if ( j == 15) 
+21          j = 2; 
+22       cleardevice(); // xoa man hinh 
+23    } 
+24    getch(); 
+25    closegraph(); 
+26    return 0; 
+27 } 

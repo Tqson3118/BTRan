@@ -1,0 +1,44 @@
+// Trang 3 - Ngôn ngữ lập trình C_ebook.pdf
+
+GIÁO TRÌNH 
+NGÔN NGỮ LẬP TRÌNH C  
+(Ngành kỹ thuật máy tính) 
+TRƯƠNG NGỌC SƠN, LÊ MINH, TRƯƠNG NGỌC HÀ, LÊ MINH THÀNH 
+ 
+Chịu trách nhiệm xuất bản và nội dung 
+TS. ĐỖ VĂN BIÊN 
+Biên tập 
+LÊ THỊ THU THẢO 
+ 
+Sửa bản in 
+PHAN KHÔI 
+ 
+Trình bày bìa  
+TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP. HỒ CHÍ MINH 
+Website: http://hcmute.edu.vn 
+ 
+Đối tác liên kết – Tổ chức bản thảo và chịu trách nhiệm tác quyền 
+TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP. HỒ CHÍ MINH 
+Website: http://hcmute.edu.vn 
+NHÀ XUẤT BẢN ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH 
+Phòng 501, Nhà Điều hành ĐHQG-HCM, phường Linh Trung, quận Thủ Đức, TP Hồ Chí Minh 
+ĐT: 028 6272 6361 - 028 6272 6390         E-mail: vnuhp@vnuhcm.edu.vn 
+Website: www.vnuhcmpress.edu.vn 
+ 
+VĂN PHÒNG NHÀ XUẤT BẢN 
+PHÒNG QUẢN LÝ DỰ ÁN VÀ PHÁT HÀNH 
+Tòa nhà K-Trường Đại học Khoa học Xã hội & Nhân văn, số 10-12 Đinh Tiên Hoàng, phường Bến Nghé,  
+quận 1, TP Hồ Chí Minh 
+ĐT: 028 66817058 - 028 62726390 - 028 62726351 
+Website: www.vnuhcmpress.edu.vn 
+ 
+Nhà xuất bản ĐHQG-HCM và tác giả/đối tác liên kết giữ bản quyền© 
+Copyright © by VNU-HCM Press and author/ 
+co-partnership All rights reserved 
+ 
+ISBN:  978-604-73-7623-0 
+ 
+In số lượng 300 cuốn, khổ 16 x 24 cm, XNĐKXB số: 1296-2020/CXBIPH/8-33/ĐHQGTPHCM. 
+QĐXB số 38/QĐ-NXBĐHQGTPHCM cấp ngày 21/4/2020. 
+In tại: Công ty TNHH In và Bao bì Hưng Phú. Địa chỉ: 162A/1- KP1A – P.An Phú – TX Thuận An – 
+Bình Dương. Nộp lưu chiểu: Quý II/2020. 

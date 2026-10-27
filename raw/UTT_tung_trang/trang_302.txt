@@ -1,0 +1,49 @@
+// Trang 302 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+302 
+ Phác thảo lời giải: 
+- Xây dựng hàm Sinh_mang_nn để sinh mảng: sử dụng hàm 
+rand()%(max - min + 1) để sinh ngẫu nhiên các số tự nhiên trong phạm vi 
+từ min đến max. 
+- Sử dụng hàm srand(time(0)) để sinh ngẫu nhiên các số tại các thời 
+điểm khác nhau, đồng thời khai báo thƣ viện “time.h”. 
+- Xây dựng hàm Hien_thi(): để hiển thị mảng hai chiều theo định 
+dạng gồm m dòng và n cột, sử dụng câu lệnh printf("\n") để xuống dòng 
+khi hiển thị hết dữ liệu của 1 hàng. 
+ Chƣơng trình: 
+1 
+#include<stdio.h> 
+2 
+#include <conio.h> 
+3 
+#include <stdlib.h> 
+4 
+#include <time.h> 
+5 
+#define N 100 
+6 
+void Sinh_mang_nn(int a[][N], int m, int n) 
+7 
+{ 
+8 
+    srand(time(0)); 
+9 
+ 
+for (int i=0; i<m; i++) 
+10         for (int j=0; j<n; j++) 
+11         { 
+12             a[i][j]= rand()%100; 
+13         } 
+14 } 
+15  void Hien_thi(int a[][N], int m, int n) 
+16 { 
+17     printf("Mang sau khi nhap: \n"); 
+18  
+for(int i=0; i<m; i++) 
+19     { 
+20         for(int j=0; j<n; j++) 
+21         { 
+22             printf("%d\t",a[i][j]); 
+23         } 
+24         printf("\n"); 
+25     } 

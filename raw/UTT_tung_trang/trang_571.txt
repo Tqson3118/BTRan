@@ -1,0 +1,55 @@
+// Trang 571 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+571 
+ Ví dụ 8.9 
+Cho quả bóng chuyển động ngang trên màn hình, hết chiều ngang 
+màn hình bóng quay lại. 
+Gợi ý: 
+- Hàm unsigned imagesize(int x1, int y1, int x2, int y2) cho số byte 
+cần thiết để lƣu ảnh trong phạm vi hình chữ nhật (x1, y1, x2, y2). 
+- Hàm void getimage(int x1, int y1, int x2, int y2, void *p): chép các 
+điểm ảnh trong vùng chữ nhật (x1,y1,x2,y2) vào vùng nhớ do con trỏ p 
+trỏ tới (vùng nhớ này và con trỏ p cho bởi hàm malloc(), độ lớn vùng nhớ 
+cho bởi hàm imagesize()). 
+- Hàm void putimage(int x, int y, void *p, int kiểu_chép): chép ảnh 
+tử vùng nhớ do con trỏ p trỏ tới ra màn hình sao cho góc trên trái vùng 
+ảnh có toạ độ (x, y).  
+Tạo ảnh chuyển động không có màn hình nền: 
+Bƣớc 1: Tạo ảnh bằng màu vẽ. 
+Bƣớc 2: Xoá ảnh bằng màu nền. 
+Bƣớc 3: Tạo lại ảnh bằng màu vẽ tại vị trí mới. 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 
+3 
+#include <graphics.h> 
+4 
+#include <stdlib.h> 
+5 
+#include <dos.h> 
+6 
+void bong(int x, int y, int r, int mau) 
+7 
+{  
+8 
+setcolor(mau); 
+9 
+setfillstyle(1,mau); 
+10 
+pieslice(x,y,0,360,r); 
+11 
+} 
+12 
+void main() 
+13 
+{  
+14 
+int driver = 0, mode = 0, maloi; 
+15 
+initgraph(&driver,&mode," "); 
+16 
+if ( (maloi = graphresult()) != 0) 
+17 
+{ 

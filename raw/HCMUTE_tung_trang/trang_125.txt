@@ -1,0 +1,35 @@
+// Trang 125 - Ngôn ngữ lập trình C_ebook.pdf
+
+122
+hiểu cách con trỏ được sử dụng trong việc truy xuất bộ nhớ. Ngoài việc 
+được sử dụng để truy xuất các biến riêng lẻ trong bộ nhớ, con trỏ chủ 
+yếu còn được sử dụng để truy xuất các vùng nhớ liên tục. Phần cuối 
+chương sẽ trình bày về ứng dụng của con trỏ trong việc cấp phát bộ 
+nhớ động.
+5.2. KHAI BÁO VÀ SỬ DỤNG CON TRỎ
+Giống như các biến khác, con trỏ phải được khai báo trước khi sử 
+dụng. Khai báo biến con trỏ cũng giống như khai báo các biến thông 
+thường khác được bắt đầu với kiểu dữ liệu. Tuy nhiên, kiểu dữ liệu khi 
+khai báo con trỏ không xác định độ dài ô nhớ mà xác định kiểu dữ liệu 
+con trỏ được dùng để trỏ tới. Kiểu dữ liệu này giúp cho con trỏ có thể 
+tăng địa chỉ thích hợp khi trỏ đến các phần tử liên tiếp nhau. Cú pháp 
+khai báo con trỏ như sau:
+ Tên kiểu dữ liệu      *tên con trỏ ;
+Tên kiểu dữ liệu*     tên con trỏ ;
+Ví dụ:
+1
+2
+int a, b ; 
+int *p ;
+Trong đoạn chương trình trên, ở dòng lệnh số 1 là khai báo 2 
+biến a và b, 2 biến a và b cùng có kiểu int và cùng có kích thước là 
+4 byte. Như vậy, chương trình dành ra 2 vùng nhớ, mỗi vùng nhớ 
+4 byte cho biến a và biến b. Dòng 2 của chương trình là câu lệnh 
+khai báo biến con trỏ với kiểu int. Trong trường hợp này, biến con 
+trỏ được sử dụng để truy xuất đến các biến khác có cùng kiểu int. 
+Chương trình sử dụng vùng nhớ để lưu biến con trỏ lúc này không 
+phải là 4 byte như biến a hoặc b mà là 8 byte để có thể chứa đủ địa 
+chỉ, tham chiếu được hết bộ nhớ. Như vậy, việc khai báo int *phoặc 
+char *p thì kích thước bộ nhớ sử dụng cho biến con trỏ p là như 
+nhau. Biến con trỏ p được khai báo và sử dụng để tham chiếu đến 
+một biến khác trong vùng nhớ. Nội dung dữ liệu của con trỏ p sẽ là 

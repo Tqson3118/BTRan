@@ -1,0 +1,40 @@
+// Trang 228 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+228 
+9 printf("Dia chi cua bien a,b trong ham hoan doi:\na= %p\nb = 
+%p\n", a , b); 
+10 } 
+11 main() 
+12 { 
+13  
+int x = 5, y = 9; 
+14 printf("Truoc khi doi a = %d va b = %d\n",x, y); 
+15  
+hoandoi(&x, &y); 
+16  
+printf("Dia chi cua bien x, y trong main:\nx = %p va\ny 
+= %p\n", &x , &y); 
+17  
+printf("Sau doi a = %d va b = %d\n", x , y); 
+18 } 
+Kết quả chƣơng trình: 
+Truoc khi doi a = 5 va b = 9 
+Trong hoandoi a = 9 va b = 5 
+Dia chi cua bien a,b trong ham hoan doi: 
+a = 000000000023FE4C 
+b = 000000000023FE48 
+Dia chi cua bien x, y trong main: 
+x = 000000000023FE4C va 
+Y = 000000000023FE48 
+Sau doi a = 9 va b = 5 
+ Ví dụ 4.9 
+Dùng hàm giải phƣơng trình bậc 2: ax2 + bx + c = 0 (a <> 0) 
+a. Xây dựng hàm nhập các hệ số a, b, c; 
+b. Xây dựng hàm để tính nghiệm số; 
+c. Xây dựng hàm để in kết quả. 
+Phác họa chƣơng trình 
+Xem xét đoạn chƣơng trình của ví dụ 3.4:  
+1  
+#include <stdio.h> 
+2  
+#include <math.h> 

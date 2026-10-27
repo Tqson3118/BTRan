@@ -1,0 +1,72 @@
+// Trang 242 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+242 
+Nếu tử số và mẫu số khác dấu, xét mẫu số; nếu mẫu số < 0, ta đổi 
+dấu cả tử số và mẫu số để dấu - chuyển sang tử số.  
+Nếu tử số và mẫu số cùng dấu, xét mẫu số; nếu mẫu số < 0 (nghĩa là 
+tử số cũng < 0), ta đổi dấu cả tử số và mẫu số để loại dấu -. 
+Mô tả điều kiện trên bằng ngôn ngữ lập trình:  
+if ( ts * ms < 0 ) {  
+  if ( ms < 0 ) { ts = -ts; ms = -ms; }  
+} else {  
+  if ( ms < 0 ) { ts = -ts; ms = -ms; }  
+}  
+Ta rút gọn thành:  
+if ( ms < 0 ) { ts = -ts; ms = -ms; } 
+Chƣơng trình 
+1  
+#include <stdio.h>  
+2  
+#include <conio.h> 
+3  
+#include <math.h> 
+4  
+//Ham tim uscln 
+5  
+int uscln(int a, int b) 
+6  
+{ 
+7  
+ 
+//dung lap kiem tra chung nao a = b thì dung 
+8  
+ 
+while (a != b) 
+9  
+ 
+{ 
+10  
+ 
+ 
+if (a > b) a - = b; 
+11  
+ 
+ 
+else b - = a; 
+12  
+ 
+} 
+13  
+ 
+if (a == b) return a; 
+14  
+} 
+15  
+main() 
+16  
+{ 
+17  
+ 
+int ts, ms, dts, dms; 
+18  
+ 
+printf("Nhap ts= "); scanf("%d", &ts); 
+19  
+ 
+//rang buoc cho ms 
+20  
+ 
+do 
+21  
+ 
+{ 

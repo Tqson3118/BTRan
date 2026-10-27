@@ -1,0 +1,38 @@
+// Trang 380 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+380 
+54     { 
+55         printf("Nhap %d phan tu cua ma tran thu hai:\n",p*q); 
+56  
+57         for(i = 0; i < p; i++)    
+58             for(j = 0; j < q; j++)    
+59                 scanf("%d", &b[i][j]); 
+60         // In ma tran thu nhat 
+61         printf("Ma tran thu nhat la: \n"); 
+62         for(i = 0; i < m; i++)   
+63         { 
+64             for(j = 0; j < n; j++)    
+65             { 
+66                 printf("%d\t", a[i][j]); 
+67             } 
+68             printf("\n"); 
+69         } 
+70         // In ma tran thu hai 
+71         printf("Ma tran thu hai la: \n"); 
+72         for(i = 0; i < p; i++)    
+73         { 
+74             for(j = 0; j < q; j++)   
+75             { 
+76                 printf("%d\t", b[i][j]); 
+77             } 
+78             printf("\n"); 
+79         } 
+80         // tinh ma tran tich 
+81         for(i = 0; i < m; i++)   
+82         { 
+83             for(j = 0; j < q; j++)   
+84             { 
+85                 for(k = 0; k < p; k++) 
+86                 { 
+87                     Tong = Tong + a[i][k]*b[k][j]; 
+88                 } 

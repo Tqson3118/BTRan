@@ -1,0 +1,50 @@
+// Trang 422 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+422 
+ 
+Data_type member_2; 
+ 
+… 
+ 
+Data_type member_n; 
+ 
+}; 
+ 
+Trong đó: 
+ 
+struct_name: tên kiểu cấu trúc; 
+ 
+member_1, member_2,…, member_ n: các thành phần, hay còn 
+gọi là thành viên của kiểu cấu trúc. Các thành phần của một kiểu cấu trúc 
+có kiểu dữ liệu khác nhau. 
+  Data_type: Kiểu dữ liệu của các thành phần, có thể là các kiểu dữ 
+liệu cơ bản nhƣ kiểu số nguyên, số thực, ký tự, chuỗi, cũng có thể là kiểu 
+dữ liệu có cấu trúc. 
+Trong cú pháp khai báo ở trên, chúng ta bắt đầu với từ khóa struct, 
+sau đó là tên cấu trúc (nên đặt tên), tiếp theo bên trong dấu ngoặc nhọn, 
+khai báo các biến thành viên, không có gì ngoài các biến ngôn ngữ C bình 
+thƣờng thuộc các loại khác nhau nhƣ int, float, mảng, v.v. Sau khi đóng 
+ngoặc nhọn, chúng ta có thể chỉ định một hoặc nhiều biến cấu trúc. 
+Lƣu ý:  
+Dấu ngoặc nhọn đóng trong khai báo kiểu cấu trúc phải đƣợc theo 
+sau bởi dấu; 
+ Ví dụ 6.1 
+Khai báo kiểu cấu trúc Nhan_vien, bao gồm các thông tin họ tên, địa 
+chỉ và lƣơng nhƣ sau: 
+1 
+struct Nhan_vien 
+2 
+{ 
+3 
+char ho_ten[20]; 
+4 
+char dia_chi[50]; 
+5 
+float luong; 
+6 
+}; 
+ Ví dụ 6.2 
+Khai báo kiểu cấu trúc Sinh_vien để lƣu trữ các thông tin của một 
+sinh viên bao gồm bốn trƣờng dữ liệu: Tên sinh viên, tuổi, địa chỉ và giới 
+tính. Các trƣờng này đƣợc gọi là các thành phần hoặc thành viên của kiểu 
+cấu trúc Sinh_vien. Mỗi thành phần này có kiểu dữ liệu khác nhau, trong 

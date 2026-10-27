@@ -1,0 +1,75 @@
+// Trang 270 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+270 
+23    int Multiply(int a, int b) 
+24    {   
+ 
+25    return(a * b);   
+ 
+26    }   
+ 
+27    float Divide(int a,int b) 
+28    {   
+ 
+29    return(a/b);    
+30    }   
+ 
+31    int Modulus(int a, int b) 
+32    {   
+ 
+33    return(a % b);   
+ 
+34    }   
+ 
+35    int main()   
+36    {   
+ 
+37    //hien thi menu  
+ 
+38    hienthi();    
+39    int luachon;   
+40    int a;   
+ 
+41    int b;   
+ 
+42    char ok;   
+ 
+43    do    
+44    {   
+ 
+45     
+printf("Nhap vao lua chon(1-5): ");    
+46  
+scanf("%d:",&luachon);   
+ 
+47  
+printf("Nhap vao hai so nguyen: ");    
+48  
+scanf("%d %d", &a, &b);   
+ 
+ 
+49  
+switch(luachon) 
+50  
+{  
+ 
+51  
+case 1:printf("Ket qua = %d", Add(a,b));break;   
+ 
+52  
+case 2:printf("Ket qua = %d", Substract(a,b));break;   
+ 
+53  
+case 3:printf("Ket qua = %d", Multiply(a,b));break;   
+ 
+54  
+case 4:printf("Ket qua = %.2f", Divide(a,b));break;   
+55  
+case 5:printf("Ket qua = %d", Modulus(a,b));break;   
+ 
+56  
+default:printf("Khong hop le!");   
+ 
+57  
+}   
+ 

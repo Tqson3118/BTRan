@@ -1,0 +1,42 @@
+// Trang 442 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+442 
+ 
+In thong tin chi tiet cua cac sinh vien.... 
+ 
+Le Kien sv01 8.8 
+ 
+Le Chi sv02 8.9 
+ 
+Pham Thuan sv03 9.2 
+Trong chƣơng trình trên, chúng ta đã lƣu trữ dữ liệu của ba sinh viên 
+trong chƣơng trình. Tuy nhiên, độ phức tạp của chƣơng trình sẽ tăng lên 
+nếu có hai mƣơi sinh viên. Trong trƣờng hợp đó, chúng ta sẽ phải khai 
+báo hai mƣơi biến cấu trúc khác nhau và lƣu trữ từng biến một. Điều này 
+sẽ gây khó khăn vì chúng ta sẽ phải khai báo một biến mỗi khi chúng ta 
+thêm một sinh viên. Ghi nhớ tên của tất cả các biến cũng là một nhiệm vụ 
+rất khó khăn. Bên cạnh đó, các câu lệnh đƣợc sử dụng để nhập cho mỗi 
+sinh viên đƣợc lặp đi lặp lại, khiến cho số dòng lệnh của chƣơng trình 
+nhiều, không cần thiết. 
+ C cho phép chúng ta khai báo một mảng các cấu trúc. Với cách làm 
+này, chúng ta có thể tránh khai báo các biến cấu trúc khác nhau; giảm 
+thiểu số lƣợng dòng mã code bị trùng lặp. 
+6.2.1. Định nghĩa mảng cấu trúc 
+Một mảng các cấu trúc trong C có thể đƣợc định nghĩa là tập hợp của 
+nhiều biến cấu trúc trong đó mỗi biến chứa thông tin về các thực thể khác 
+nhau. Mảng cấu trúc trong C đƣợc sử dụng để lƣu trữ thông tin về nhiều 
+thực thể thuộc các loại dữ liệu khác nhau. Mảng cấu trúc còn đƣợc gọi là 
+tập hợp các cấu trúc. 
+Cú pháp: 
+//Khai báo kiểu cấu trúc: 
+struct [struct_name_tag] 
+{ 
+data_type member; 
+}; 
+Khai báo mảng cấu trúc 
+struct kiểu_cấu_trúc Tên_biến_mảng_cấu_trúc[số_phần_tử];  
+ Ví dụ 6.20  
+Cho khai báo: 
+struct Sinh_vien SV[10];   
+Khai báo mảng SV gồm 10 phần tử, mỗi phần tử có kiểu cấu trúc 
+Sinh_vien; 

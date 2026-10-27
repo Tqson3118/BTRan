@@ -1,0 +1,49 @@
+// Trang 276 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+276 
+Khai báo một mảng có tên là a, số lƣợng phần tử của mảng là 5, kiểu 
+dữ liệu của mỗi phần tử trong mảng a là số nguyên. Chỉ số các phần tử 
+của mảng đƣợc đánh từ 0 đến 4. Hình ảnh minh họa của mảng một chiều: 
+a[0] 
+a[1] 
+a[2] 
+a[3] 
+a[4] 
+Lƣu ý:  
+Có thể khai báo và khởi tạo giá trị mảng ban đầu. Khởi tạo mảng rất 
+đơn giản trong lập trình C. Các giá trị khởi tạo đƣợc đặt trong dấu ngoặc 
+nhọn trong khai báo và đƣợc đặt sau dấu bằng sau tên mảng. Dƣới đây là 
+một ví dụ khai báo và khởi tạo một mảng gồm năm phần tử kiểu int. 
+Mảng cũng có thể đƣợc khởi tạo sau khi khai báo. 
+ Ví dụ 5.2 
+int a[5] = {13, -6, 9, 45, 7}; 
+Không cần thiết phải xác định kích thƣớc của mảng trong quá trình 
+khởi tạo, nhƣ ví dụ 5.3 sau đây: 
+ Ví dụ 5.3 
+ 
+int a[] = {13, -6, 9, 45, 7}; 
+Trong trƣờng hợp này, trình biên dịch xác định kích thƣớc của mảng 
+bằng cách tính số lƣợng phần tử của mảng: 
+a[0] 
+a[1] 
+a[2] 
+a[3] 
+a[4] 
+13 
+-6 
+9 
+45 
+7 
+Điều này rất hữu ích vì kích thƣớc của mảng có thể đƣợc kiểm soát 
+bằng cách thêm hoặc xóa các phần tử khởi tạo khỏi định nghĩa mà không 
+cần điều chỉnh kích thƣớc. 
+Nếu kích thƣớc mảng đƣợc xác định trƣớc, tức đƣợc cấp phát bộ nhớ 
+theo số phần tử đã khai báo, nhƣng  chỉ một số phần tử trong mảng đƣợc 
+khởi tạo, khi đó các phần tử còn lại sẽ chứa giá trị 0. Với cách thức khai 
+báo nhƣ vậy rất thích hợp trong trƣờng hợp phải xử lý với mảng lớn. 
+ Ví dụ 5.4 
+Cho khai báo: int a[2000] = {13, 9}; 
+Với khai báo trên, a[0] = 13, a[1] = 9, a[2] = 0,…, a[1999] = 0. 
+5.1.1.2. Truy cập các phần tử của mảng 
+Trong C, mảng đƣợc truy cập và xử lý giống nhƣ các biến. 
+Cú pháp:  

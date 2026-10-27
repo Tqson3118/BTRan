@@ -1,0 +1,21 @@
+// Trang 531 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+531 
+4 
+Ban da chon thoat xep loai SV! 
+____________________________________ 
+Xep loai cua SV thu 1 la: Kha 
+Xep loai cua SV thu 2 la: Kha 
+Xep loai cua SV thu 3 la: Gioi 
+Xep loai cua SV thu 4 la: Gioi 
+_________________________________ 
+Bam phim bat ky de tiep tuc! 
+**       Nhap lua chon cua ban          ** 
+5 
+Ban da chon xuat DS SV! 
+Xuat DSSV thanh cong vao file DSSV.txt! 
+Bam phim bat ky de tiep tuc! 
+ 
+ 
+ 
+ 

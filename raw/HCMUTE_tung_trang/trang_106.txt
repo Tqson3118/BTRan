@@ -1,0 +1,19 @@
+// Trang 106 - Ngôn ngữ lập trình C_ebook.pdf
+
+103
+điều kiện ở dòng lệnh 15 giúp cho việc sắp xếp các giá trị của mảng sẽ 
+theo thứ tự từ bé đến lớn.
+4.1.2. Mảng 2 chiều
+Mảng 2 chiều là mảng gồm chiều ngang và chiều dọc hay mảng 
+gồm hàng và cột (mảng một chiều có thể xem là một mảng 2 chiều 
+có số hàng là 1 và số cột là số lượng phần tử của mảng).
+4.1.2.1. Khai báo:
+Cú pháp :  kiểu dữ liệu     tên mảng [số hàng][số cột];
+Ví dụ 4.8:        int      a[5][10];
+ 	Mỗi phần tử trong mảng có kiểu int
+    
+Tham chiếu tới từng phần tử mảng:
+    
+Ví dụ 4.9a: Gán giá trị cho các phần tử trong mảng: gán đầy đủ các 
+giá trị cho các phần tử.
+int b[ 2 ][ 2 ] = { { 1, 2 }, { 3, 4 } };

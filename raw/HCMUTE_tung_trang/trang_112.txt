@@ -1,0 +1,20 @@
+// Trang 112 - Ngôn ngữ lập trình C_ebook.pdf
+
+109
+Trong chương trình này, từng phần tử s[i] của chuỗi s sẽ được 
+kiểm tra và so sánh với ký tự ‘e’ để thực hiện thao tác đếm số lượng 
+ký tự ‘e’ đang tồn tại trong chuỗi s. Kết quả thu được khi chạy chương 
+trình trên sẽ là:
+Co 1 ky tu e.
+4.2.2. Mảng chuỗi
+4.2.2.1. Định nghĩa:
+Là mảng 2 chiều các ký tự, mỗi hàng sẽ được kết thúc bằng một 
+ký tự NULL.
+4.2.2.2. Khai báo mảng chuỗi:
+ Cú pháp 1: char     tên mảng chuỗi [số hàng][số cột];
+Ví dụ 4.15:  char   s[5][10]:
+Mỗi phần tử trong mảng chuỗi có kiểu char
+ Cú pháp 2: char     tên mảng chuỗi [số hàng][số cột]= {“nội 
+dung”};
+Ví dụ 4.16:  char s[5][10]={“Mot”, “Hai”, “Ba”, “Bon”, “Nam”}:
+Mỗi phần tử trong mảng chuỗi có kiểu char

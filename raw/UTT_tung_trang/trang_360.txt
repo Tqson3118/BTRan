@@ -1,0 +1,58 @@
+// Trang 360 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+360 
+7    gets(a); 
+8    printf("Chuoi ky tu viet thuong: %s\n", strlwr(a)); 
+9    return  0; 
+10 } 
+ Cách 2: Không sử dụng hàm strlwr() 
+1 
+#include <stdio.h> 
+2 
+void lower_string(char []); 
+3 
+int main() 
+4 
+{ 
+5 
+   char a[100]; 
+6 
+   printf("Chuoi ban dau chua cac ky tu can chuyen doi thanh ky 
+tu thuong:\n"); 
+7 
+   gets(a); 
+8 
+   // goi ham chuyen doi tu hoa thanh thuong 
+9 
+   lower_string(a); 
+10 
+   printf("Chuoi thu duoc sau chuyen doi: %s\n", a); 
+11 
+   return 0; 
+12 
+} 
+13 
+void lower_string(char s[]) { 
+14 
+   int c = 0; 
+15 
+   // dua vao bang ma, ma cua ky tu thuong = ma cua ky tu hoa + 
+32 
+16 
+   while (s[c] != '\0') { 
+17 
+      if (s[c] >= 'A' && s[c] <= 'Z') { 
+18 
+         s[c] = s[c] + 32; 
+19 
+      } 
+20 
+      c++; 
+21 
+   } 
+22 
+} 
+  Kết quả chƣơng trình: 
+Nhap chuoi can chuyen doi: 
+TRUONG DAI HOC CNGTVT 
+Chuoi ky tu viet thuong: truong dai hoc cngtvt 

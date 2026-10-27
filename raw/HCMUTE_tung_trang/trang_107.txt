@@ -1,0 +1,48 @@
+// Trang 107 - Ngôn ngữ lập trình C_ebook.pdf
+
+104
+Như vậy ta sẽ được các giá trị của từng phần tử mảng 2 chiều 
+như sau:
+1
+2
+3
+4
+b[0][0]=1
+b[0][1]=2
+b[1][0]=3
+b[1][1]=4
+Ví dụ 4.9b: Gán các giá trị cho các phần tử trong mảng bằng 
+cách khác:
+1
+int a1[ 2 ][ 3 ] = { 1, 2, 3, 4, 5 };
+Khi đó, kết quả các phần tử của mảng này sẽ là:
+1
+2
+3
+4
+5
+6
+a1[0][0]=1
+a1[0][1]=2
+a1[0][2]=3
+a1[1][0]=4
+a1[1][1]=5
+a1[1][2]=0
+Ví dụ 4.9c: Gán giá trị cho các phần tử trong mảng: gán không đầy 
+đủ các giá trị cho các phần tử.
+int a2[ 2 ][ 3 ] = { { 1, 2 }, { 4 } };
+Khi đó, các phần tử trong mảng này có giá trị là:
+1
+2
+3
+4
+5
+6
+a2[0][0]=1
+a2[0][1]=2
+a2[0][2]=0
+a2[1][0]=4
+a2[1][1]=0
+a2[1][2]=0
+4.1.2.2. Các thao tác cơ bản trên mảng 2 chiều:
+ Nhập giá trị cho mảng: 

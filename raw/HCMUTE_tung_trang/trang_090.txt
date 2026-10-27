@@ -1,0 +1,61 @@
+// Trang 90 - Ngôn ngữ lập trình C_ebook.pdf
+
+87
+ Câu lệnh goto và nhãn cần nằm trong một khối lệnh. Điều này 
+nói lên rằng: lệnh goto chỉ cho phép nhảy từ vị trí này đến vị trí khác 
+trong thân của một hàm. Nó không thể dùng để nhảy từ hàm này sang 
+hàm khác. 
+ Không cho phép dùng toán tử goto để nhảy từ ngoài vào trong 
+một khối lệnh. Tuy nhiên việc nhảy từ trong ra ngoài khối lệnh lại hoàn 
+toàn hợp lệ.
+Ví dụ 3.10:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+#include <stdio.h>
+int main (void)
+{
+int a = 1;
+nhan:do
+   {
+      if(a == 4)
+      {
+         a = a+2;
+	
+   printf(“khong in a=4 va a=5!\n”);
+         goto nhan;
+      }
+      printf(“Gia tri cua a la: %d\n”, a);
+      a = a+1;
+    }while(a < 9);
+  return 0;
+}
+Kết quả chạy chương trình là:
+1
+2
+3
+4
+5
+6
+7
+Gia tri cua a la: 1
+Gia tri cua a la: 2
+Gia tri cua a la: 3
+khong in a=4 va a=5!
+Gia tri cua a la: 6
+Gia tri cua a la: 7
+Gia tri cua a la: 8

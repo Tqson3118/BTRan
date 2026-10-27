@@ -1,0 +1,28 @@
+// Trang 130 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+130 
+b. Hoạt động 
+Dựa vào biểu thức điều kiện đúng hoặc sai mà chƣơng trình sẽ thực 
+hiện khối lệnh tƣơng ứng. Nếu biểu thức điều kiện (expression) đúng thì 
+thực hiện khối câu lệnh 1 (statement block 1), nếu biểu thức điều kiện sai 
+thì thực hiện khối câu lệnh 2 (statement  block 2). 
+c. Sơ đồ khối 
+ 
+Hình 3.3. Sơ đồ khối biểu diễn câu lệnh if đầy đủ 
+ Ví dụ 3.3 
+Viết chƣơng trình nhập vào kí tự c. Kiểm tra xem nếu kí tự nhập vào 
+là kí tự thƣờng trong khoảng từ 'a' đến 'z' thì đổi sang chữ in hoa và in ra, 
+ngƣợc lại in ra thông báo "Kí tự bạn vừa nhập là: c". 
+Phác họa lời giải: 
+ Trƣớc tiên chúng ta phải kiểm tra xem nếu kí tự c thuộc khoảng 'a' 
+và 'z' thì c là kí tự thƣờng. Ta đổi kí tự c thành chữ in hoa bằng cách lấy kí 
+tự c - 32 rồi gán lại cho chính nó (c = c - 32) (vì giữa kí tự thƣờng và in 
+hoa trong bảng mã ASCII cách nhau 32, chẳng hạn mã ASCII của ký tự 
+„A‟ trong bảng mã là 65, mã ASCII của ký tự „B‟ là 66, trong khi, mã 
+ASCII của ký tự „a‟ là 97, mã ASCII của ký tự b là 98, v.v.), sau khi đổi 
+xong bạn in kí tự c ra. Ngƣợc lại, in câu thông báo "Kí tự bạn vừa nhập là: 
+c". 
+Chƣơng trình:  
+1 /* Chuong trinh nhap vao ky tu c, neu c la chu thuong in ra chu IN 
+HOA */   
+2 #include <stdio.h>  

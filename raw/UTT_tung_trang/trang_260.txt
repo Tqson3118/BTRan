@@ -1,0 +1,37 @@
+// Trang 260 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+260 
+19         flag = ktnguyento(i); 
+20         if(flag == 1) 
+21             printf("%d ",i); 
+22     } 
+23     return 0; 
+24 } 
+25 // Ham do nguoi dung dinh nghia de kiem tra so nguyen to 
+26 int ktnguyento(int n) 
+27 { 
+28     int j, flag = 1; 
+29     for(j=2; j <= n/2; ++j) 
+30     { 
+31         if (n%j == 0) 
+32         { 
+33             flag =0; 
+34             break; 
+35         } 
+36     } 
+37     return flag; 
+38 } 
+Kết quả chƣơng trình: 
+Nhap vao hai so nguyen: 
+Nhap a = 12 
+Nhap b = 8 
+Nhap lai! Nhap vao 2 so thoa man a < b: 
+Nhap a = 6 
+Nhap b = 27 
+Cac so nguyen to trong pham vi tu 6 den 27 la: 7 11 13 17 19 23 
+Bài tập 4.2 
+ 
+Viết chƣơng trình sử dụng hàm, chuyển đổi một số từ hệ thập 
+phân sang hệ nhị phân. In kết quả ra màn hình. 
+ 
+ 

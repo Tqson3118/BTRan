@@ -1,0 +1,45 @@
+// Trang 540 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+540 
+  Kết quả chƣơng trình: 
+Dem so tu va so ky tu trong mot tep: 
+-------------------------------------------------------- 
+Nhap ten tep can mo : test_7_3.txt 
+Noi dung cua tep test_7_3.txt la: 
+Ao lua Ha Dong 
+Nang Sai Gon anh di ma chot mat 
+Boi vi em mac ao lua Ha Dong 
+Anh van yeu mau ao ay vo cung 
+Tho cua anh van con nguyen lua trang 
+ 
+So tu trong tep test_7_3.txt la: 36 
+So ky tu trong tep test_7_3.txt la: 107 
+ Bài tập 7.7 
+Viết chƣơng trình xóa một dòng đƣợc chỉ định trong một tệp văn bản. 
+Chƣơng trình: 
+1  #include <stdio.h> 
+2  #include <string.h> 
+3  #define MAX 256 
+4    int main()  
+5    { 
+6          int lno, ctr = 0; 
+7          char ch; 
+8          FILE *fptr1, *fptr2; 
+9    
+char fname[MAX]; 
+10          char str[MAX], temp[] = "temp.txt"; // tep ghi tam 
+11    
+printf("\nXoa mot dong trong tep van ban :\n"); 
+12    
+printf("--------------------------------\n");  
+13    
+printf("Nhap ten tep can mo ra: "); 
+14    
+scanf("%s",fname); 
+ 
+ 
+15          fptr1 = fopen(fname, "r"); 
+16          if (!fptr1)  
+17    
+{ 
+18         printf("Tep khong ton tai hoac khong the mo!!\n"); 

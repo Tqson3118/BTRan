@@ -1,0 +1,59 @@
+// Trang 367 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+367 
+29     return 0;  
+30 } 
+ Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi s: 
+ 
+ababccbaba 
+ 
+ababccbaba la chuoi doi xung 
+ 
+Nhap vao chuoi s: 
+ 
+abcdabc 
+ 
+abcdabc khong phai chuoi doi xung 
+Cách 4: Sử dụng hàm và con trỏ, không sử dụng các hàm strcpy, 
+strcmp, strrev 
+Phác thảo lời giải 
+- Xây dựng các hàm is_palindrome(): kiểm tra tính đối xứng; 
+- Xây dựng hàm copy_string(): sao chép chuỗi; 
+- Xây dựng hàm reverse_string(): đảo ngƣợc chuỗi ký tự; 
+- Xây dựng hàm string_length(): xác định độ dài chuỗi; 
+- Xây dựng hàm copare_string(): so sánh hai chuỗi; 
+- Thực chất là xây dựng các hàm để thay thế các hàm strcpy, strcmp, 
+strrev, strlen trong thƣ viện “string.h” 
+Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+#include <string.h> 
+4 
+int is_palindrome(char*); 
+5 
+void copy_string(char*, char*); 
+6 
+void reverse_string(char*); 
+7 
+int string_length(char*); 
+8 
+int compare_string(char*, char*); 
+9 
+  
+10 
+int main() 
+11 
+{ 
+12 
+   char a[100]; 
+13 
+   int kq; 
+14 
+    printf("Nhap vao chuoi ky tu\n"); 
+15 
+   gets(a); 

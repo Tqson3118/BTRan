@@ -1,0 +1,39 @@
+// Trang 386 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+386 
+24     for(i=1;i<n;++i)   
+25     { 
+26        if(*p<*(p+i))  
+27            *p=*(p+i); 
+28     } 
+29     printf("Phan tu lon nhat cua mang:  %.2f \n\n",*p); 
+30     return 0; 
+31 } 
+  Kết quả chƣơng trình 
+Tim kiem phan tu lon nhat cua mang: 
+----------------------------------- 
+Nhap so phan tu cua mang (1 den 100): 4 
+Nhap phan tu thu 1: 43 
+Nhap phan tu thu 2: 2 
+Nhap phan tu thu 3: 55 
+Nhap phan tu thu 4: 23 
+Phan tu lon nhat cua mang: 55.00 
+ Bài tập 5.8 
+Sử dụng con trỏ cấp phát bộ nhớ động, viết chƣơng trình sắp xếp 
+mảng gồm n phần tử. 
+ Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <stdlib.h> 
+3 int main() 
+4 { 
+5    int *a,i,j,tmp,n; 
+6   
+printf("Sap xep mang su dung con tro :\n");  
+7  
+printf("------------------------------\n");     
+8    printf("Nhap so phan tu cua mang : "); 
+9    scanf("%d",&n); 
+10    a = (int*) malloc(n * sizeof(int)); 
+11    printf("Nhap %d phan tu cua mang : \n",n); 
+12    // nhap mang 
+13    for(i=0;i<n;i++) 

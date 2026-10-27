@@ -1,0 +1,36 @@
+// Trang 497 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+497 
+c. Liệt kê tên các nhân viên sinh năm 1972. 
+d. Đếm số lƣợng nhân viên có lƣơng lớn hơn 1 triệu. 
+e. Xoá một nhân viên có mã số bằng x, x nhập từ bàn phím, nếu 
+không có thì thông báo là không có. 
+f. Sắp xếp các nhân viên giảm dần theo năm sinh. 
+ Bài tập 6.9 
+Tổ chức dữ liệu để quản lí sinh viên bằng cấu trúc mẫu tin trong một 
+mảng N phần tử, mỗi phần tử có cấu trúc nhƣ sau: 
+- Mã sinh viên. 
+- Tên. 
+- Năm sinh. 
+- Điểm toán, lý, hoá, điểm trung bình. 
+Viết chƣơng trình thực hiện những công việc sau: 
+a. Nhập danh sách các sinh viên cho một lớp học. 
+b. Xuất danh sách sinh viên ra màn hình. 
+c. Tìm sinh viên có điểm trung bình cao nhất. 
+d. Sắp xếp danh sách lớp theo thứ tự tăng dần của điểm trung bình. 
+e. Sắp xếp danh sách lớp theo thứ tự giảm dần của điểm toán. 
+f. Tìm kiếm và in ra các sinh viên có điểm trung bình > 5 và không 
+có môn nào dƣới 3. 
+g. Tìm sinh viên có tuổi lớn nhất. 
+h. Nhập vào tên của sinh viên. Tìm và in ra các thông tin liên quan 
+đến sinh viên đó (nếu có). 
+ Bài tập 6.10 
+Tổ chức dữ liệu quản lí danh mục các bộ phim VIDEO, các thông tin 
+liên quan đến bộ phim này nhƣ sau: 
+- Tên phim (tựa phim). 
+- Thể loại (3 loại: hình sự, tình cảm, hài). 
+- Tên đạo diễn. 
+- Tên điễn viên nam chính. 
+- Tên diễn viên nữ chính. 
+- Năm sản xuất. 
+- Hãng sản xuất 

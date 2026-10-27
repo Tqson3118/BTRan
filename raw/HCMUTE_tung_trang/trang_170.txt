@@ -1,0 +1,36 @@
+// Trang 170 - Ngôn ngữ lập trình C_ebook.pdf
+
+167
+struct ThietBi  d[5];
+sẽ tạo ra một mảng một chiều d gồm 5 phần tử kiểu ThietBi. 
+Trong câu lệnh này, từ khóa struct là bắt buộc, ThietBi là tên của kiểu 
+cấu trúc đã định nghĩa trước đó, d là tên mảng, và 5 là số lượng phần tử 
+mảng. Lúc này, chương trình sẽ phát sinh vùng nhớ cho mảng d gồm 5 
+phần tử như sau:
+chỉ số 
+mảng
+0
+1
+2
+3
+4
+d
+d[0]
+d[4]
+Trong mảng d, các phần tử mảng lần lượt có tên gọi là d[0], d[1], 
+d[2], d[3], và d[4]; mỗi phần tử mảng sẽ mang định dạng dữ liệu của 
+kiểu cấu trúc ThietBi. Hay nói cách khác, mỗi ô nhớ d[i] (i = 0 
+– 4) đều có các biến thành phần là: tenTB, namSanXuat, giaTien, 
+trangThai. Chẳng hạn, ô nhớ d[0] sẽ có vùng nhớ chi tiết như sau:
+        d[0].tenTB            d[0].namSanXuat    d[0].giaTien [0].trangThai 
+                                      
+d[0]
+Các phần tử mảng còn lại (d[1], d[2], d[3], d[4]) sẽ có cấu trúc 
+vùng nhớ gồm 4 biến thành phần (tenTB, namSanXuat, giaTien, 
+trangThai) tương tự như phần tử mảng d[0].
+Để truy xuất vào các biến thành phần của một phần tử mảng cấu 
+trúc, ta sẽ dùng toán tử dấu chấm (.) như đã đề cập ở phần trước. Ví dụ 
+câu lệnh:
+d[0].namSanXuat = 2019;
+sẽ lưu giá trị số 2019 vào biến thành phần namSanXuat của ô nhớ 
+mảng d[0] như minh họa ở hình sau.

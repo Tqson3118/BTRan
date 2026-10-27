@@ -1,0 +1,70 @@
+// Trang 563 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+563 
+Tên hàm 
+Chức năng 
+Ví dụ minh họa 
+x = 2: đƣờng trung 
+tâm. 
+x = 3: nét đứt. 
+x = 4: do ngƣời dùng 
+định nghĩa. 
+y: là mẫu. 
+z: độ dày. 
+setcolor(x) 
+Thiết lập màu cho các 
+đƣờng thẳng, có  tất 
+cả 16 màu. 
+setcolor(RED): thiết lập 
+màu cho bút vẽ là màu 
+đỏ. 
+setfillstyle(x,y) 
+Đặt mẫu tô (x) và 
+mầu tô (y) cho các 
+hình đặc và miền 
+đóng. Màu có 16 giá 
+trị từ 0 đến 15, mẫu 
+có 12 giá trị từ 0 đến 
+12. 
+setfillstyle(SOLID_FILL, 
+RED):  lấp đầy vùng theo 
+mẫu đặc với màu đỏ. 
+fillellipse(xc, yc, xrad, 
+yrad) 
+Điền đầy vào hình 
+elip có tâm (xc, yc), 
+có hai trục tại xrad và 
+yrad. 
+fillellipse(320, 240, 100, 
+50): vẽ hình elip có tâm ở 
+giữa màn hình và hai trục 
+tại x = 100 và y = 50. 
+drawpoly(x, y) 
+Vẽ hình đa giác trong 
+đó x là số điểm đƣợc 
+sử dụng để vẽ đa giác, 
+y: địa chỉ cơ sở của 
+mảng chứa các điểm 
+phối hợp. 
+drawpoly(4, array): vẽ 
+một đa giác chứa 4 điểm 
+và địa chỉ cơ sở đƣợc 
+chứa trong một mảng 
+array[]. 
+fillpoly(x, y) 
+Lấp đầy một đa giác, 
+với x: số lƣợng điểm 
+đƣợc sử dụng để xây 
+dựng đa giác và y: địa 
+chỉ cơ sở của mảng 
+chứa các điểm phối 
+hợp. 
+fillpoly(4, array): vẽ một 
+đa giác chứa 4 điểm và 
+địa chỉ cơ sở đƣợc chứa 
+trong một mảng array[]. 
+Nó cũng lấp đầy đa giác 
+bằng cách sử dụng kiểu 
+và màu tô hiện tại. 
+settextstyle(x, y, z) 
+Thiết lập kiểu font ký settextstyle(DEFAULT_f

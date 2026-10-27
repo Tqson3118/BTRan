@@ -1,0 +1,47 @@
+// Trang 325 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+325 
+12       sum += *(a+i); 
+13   } 
+14   printf("Tong = %d", sum); 
+15   return 0; 
+16 } 
+ Kết quả chƣơng trình: 
+Nhap vao so phan tu cua mang: 7 
+Su dung con tro, nhap vao gia tri cac phan tu: 
+6 
+7 
+5 
+12 
+62 
+6 
+3 
+Tong = 101 
+Trong ví dụ 5.31, tên mảng đƣợc chuyển đổi thành con trỏ. Đó là lý do 
+tại sao, chúng ta có thể sử dụng con trỏ có cùng tên với mảng để thao tác 
+trên các phần tử của mảng. Tuy nhiên, con trỏ và mảng không giống nhau. 
+Trong một vài trƣờng hợp không chuyển đổi tên mảng thành con trỏ.  
+Ví dụ 5.32 
+Cho đoạn chƣơng trình sau đây: 
+1 
+#include <stdio.h> 
+2 
+int main() 
+3 
+{ 
+4 
+  int a[7] = {12, 5, 7, 4, 22, 18, 33}; 
+5 
+  int* p; 
+6 
+  p = &a[2];  
+7 
+  printf("*p = %d \n", *p); 
+8 
+  printf("*p + 1 = %d \n", *p+1); 
+9 
+  printf("*p - 1 = %d", *p-1); 
+10 
+  return 0; 
+11 
+} 

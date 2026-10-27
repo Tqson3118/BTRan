@@ -1,0 +1,33 @@
+// Trang 107 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+107 
+Kết quả chƣơng trình: 
+Nhap vao mot chuoi su dung ham gets(): 
+Truong Dai hoc Cong nghe GTVT 
+Chuoi ky tu vua nhap su dung ham gets(): Truong Dai hoc Cong 
+nghe GTVT 
+Nhap vao mot chuoi su dung ham scanf(): 
+Truong Dai hoc Cong nghe GTVT 
+Chuoi ky tu vua nhap su dung ham scanf(): Truong 
+2.2.1.2. Hàm getchar() 
+Cú pháp: 
+int getchar(void); 
+Chức năng: Hàm getchar() đọc một ký tự đầu vào stdin (từ bàn phím). 
+Hàm trả về ký tự đọc đƣợc, nếu thành công, trả về EOF nếu thất bại. 
+Lƣu ý:  
+Muốn sử dụng hàm getchar(), phải khai báo thƣ viện “stdio.h”. 
+ Ví dụ 2.19 
+Vi dụ 2.19n trình nhình2.19ng hàm getchar(), phải khai báo thƣ viện “s 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 int main () { 
+3    char s; 
+4    printf("Nhap vao mot ky tu: "); 
+5    s = getchar(); 
+6    printf("Ky tu vua nhap: "); 
+7    printf("%c",s); 
+8    return(0); 
+9 } 
+Kết quả chƣơng trình: 
+Nhap vao mot ky tu: a 
+Ky tu vua nhap: a 

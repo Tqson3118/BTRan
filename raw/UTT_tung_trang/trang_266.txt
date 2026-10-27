@@ -1,0 +1,73 @@
+// Trang 266 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+266 
+3  
+/*Nguyen mau ham */  
+4  
+int reverse(int num); 
+5  
+int isPalindrome(int num); 
+6  
+int main() 
+7  
+{ 
+8  
+    int num; 
+9  
+     
+10  
+    /* Nhap du lieu tu ban phim */ 
+11  
+    printf("Nhap vao mot so: "); 
+12  
+    scanf("%d", &num); 
+13  
+    // Dua ra thong bao la so doi xung hay khong 
+14  
+    if(isPalindrome(num) == 1) 
+15  
+    { 
+16  
+        printf("%d la so doi xung.\n", num); 
+17  
+    } 
+18  
+    else 
+19  
+    { 
+20  
+        printf("%d khong la so doi xung.\n", num); 
+21  
+    } 
+22  
+    return 0; 
+23  
+} 
+24  
+// ham kiem tra co la so doi xung 
+25  
+int isPalindrome(int num) 
+26  
+{ 
+27  
+    /*  
+28  
+     * Kiem tra so voi so nghich dao cua no  
+29  
+     */ 
+30  
+    if(num == reverse(num)) 
+31  
+    { 
+32  
+        return 1; 
+33  
+    } 
+34  
+    return 0; 
+35  
+} 
+36  
+// Ham lay nghich dao cua mot so 
+37  
+int reverse(int num) 

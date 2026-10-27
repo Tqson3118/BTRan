@@ -1,0 +1,40 @@
+// Trang 81 - Ngôn ngữ lập trình C_ebook.pdf
+
+78
+  Bước 2: Nếu giá trị của Biểu thức là sai (= 0) thì chương trình 
+thoát khỏi khỏi vòng while.
+ Bước 3: Nếu giá trị của Biểu thức là đúng (khác 0) thì thực hiện 
+Khối lệnh và quay lại bước 1. 
+Chú ý: 
+ Biểu thức ở đây được hiểu là một biểu thức hoặc nhiều biểu 
+thức con. Nếu là nhiều biểu thức con thì các biểu thức con sẽ được cách 
+nhau bởi các dấu phẩy (,) và tính đúng sai sẽ được quyết định bởi biểu 
+thức con cuối cùng. 
+ Trong thân while (khối lệnh) có thể chứa một hoặc nhiều cấu 
+trúc điều khiển khác. 
+ Trong thân while có thể sử dụng lệnh continue để chuyển đến 
+đầu vòng lặp để thực hiện lần lặp tiếp theo (bỏ qua các câu lệnh còn lại 
+trong thân).
+ Muốn thoát khỏi vòng lặp while tùy ý, có thể dùng các lệnh 
+break, goto, return.
+3.2.3. Ví dụ minh họa
+Ví dụ 3.4: Xét đoạn chương trình sau:
+1
+2
+3
+4
+5
+6
+int a = 4, i = 0;
+while (i < 4)
+    {
+      i++;
+    }
+   a = a + i;
+Đầu tiên, ở dòng lệnh số 1, các biến a và i được khai báo kiểu int 
+và gán giá trị.
+Sau đó chương trình chạy tới vòng lặp while. Ở đây biểu thức 
+i<4 sẽ được kiểm tra xem có đúng hay không, nếu đúng thì khối lệnh 
+sẽ được thực hiện còn nếu sai thì sẽ thoát ra khỏi vòng lặp. Như vậy, ở 
+lần lặp đầu tiên, biểu thức này là đúng (vì 0 < 4) và khối lệnh sẽ được 
+thực hiện: i sẽ được tăng lên 1 giá trị, sau đó quay lại để thực hiện lần 

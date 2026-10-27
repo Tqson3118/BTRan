@@ -1,0 +1,34 @@
+// Trang 204 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+204 
+B. BÀI TẬP TỰ GIẢI 
+ Bài tập 3.11 
+Viết chƣơng trình nhập vào ngày, tháng, năm.  
+a. Cho biết tháng đó có bao nhiêu ngày. 
+b. In ra ngày tháng năm trƣớc đó. 
+Dữ liệu test: 12/12/2019. 
+Kết quả mong đợi: Tháng 12 có 30 ngày. 
+Ngày trƣớc đó: 11/12/2019. 
+ Bài tập 3.12 
+Viết chƣơng trình nhập vào hai số nguyên a, b. Thực hiện việc lựa 
+chọn công việc và in kết quả lên màn hình: 
+- Tính tổng hai số a và b. 
+- Tính hiệu hai số a và b. 
+- Tính tích hai số a và b. 
+- Tính thƣơng của hai số a và b. 
+ Bài tập 3.13 
+Viết chƣơng trình nhập vào ba số. Kiểm tra ba số vừa nhập có thỏa 
+mãn là độ đo ba góc của tam giác hay không? 
+Dữ liệu test: 40 50 90. 
+Kết quả mong đợi: là độ đo ba góc của tam giác. 
+ Bài tập 3.14 
+Viết chƣơng trình nhập vào một số nguyên có ba chữ số. In ra cách 
+đọc của số nguyên này  
+Dữ liệu test: 345. 
+Kết quả mong đợi: ba trăm bốn mƣơi lăm. 
+ Bài tập 3.15 
+Viết chƣơng trình giải phƣơng trình trùng phƣơng: ax4 + bx2 + c = 0. 
+ Bài tập 3.16 
+Viết chƣơng trình giải hệ phƣơng trình bậc nhất hai ẩn sau đây: 
+{       
+        

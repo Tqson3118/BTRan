@@ -1,0 +1,37 @@
+// Trang 510 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+510 
+8  { 
+9     int n; 
+10     struct threeNum num; 
+11     FILE *fptr; 
+12     if ((fptr = fopen("databinary.bin","rb")) == NULL){ 
+13         printf("Loi"); 
+14         // Chuong trinh thoat neu con tro tra ve gia tri NULL 
+15         exit(1); 
+16     } 
+17     // di chuyen con tro den vi tri cuoi cua file 
+18     fseek(fptr, -sizeof(struct threeNum), SEEK_END); 
+19     for(n = 1; n < 5; ++n) 
+20     { 
+21        fread(&num, sizeof(struct threeNum), 1, fptr);  
+22        printf("n1: %d\tn2: %d\tn3: %d\n", num.n1, num.n2, 
+num.n3); 
+23        fseek(fptr, -2*sizeof(struct threeNum), SEEK_CUR); 
+24     } 
+25     fclose(fptr);  
+26     return 0; 
+27  } 
+ Kết quả chƣơng trình 
+ 
+n1: 4   n2: 20  n3: 21 
+ 
+n1: 3   n2: 15  n3: 16 
+ 
+n1: 2   n2: 10  n3: 11 
+ 
+n1: 1   n2: 5   n3: 6 
+Yêu cầu với sinh viên:  
+Nhận xét kết quả thu đƣợc giữa hai ví dụ 7.6 và ví dụ 7.7. 
+Chƣơng trình sẽ đọc các bản ghi từ tệp databinary.bin theo thứ tự 
+ngƣợc lại từ bản ghi cuối và in kết quả ra màn hình. 

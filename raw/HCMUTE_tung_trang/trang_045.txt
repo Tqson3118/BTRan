@@ -1,0 +1,34 @@
+// Trang 45 - Ngôn ngữ lập trình C_ebook.pdf
+
+42
+gọn các toán tử khi có chung một toán hạng. Ví dụ trong câu lệnh a = a 
++b;  thì toán hạng a được cập nhật bằng cách cộng chính nó với b. Trong 
+câu lệnh này, có thể được lượt bỏ a bên phải phép gán = và di chuyển 
+phép + về trước, do đó sẽ có thể được rút gọn thành a += b ;
+1.11.  XUẤT NHẬP DỮ LIỆU
+1.11.1 Hàm nhập dữ liệu
+Như đã đề cập trong phần trước, trong chương trình cộng hai số 
+nguyên, ta có câu lệnh nhập dữ liệu từ bàn phím
+scanf(“%d”,&a);   //nhap so nguyen tu ban phim
+sử dụng hàm scanf để cho phép người dùng nhập một số nguyên 
+từ bàn phím và lưu vào biến a. Hàm scanf này có hai tham số: “%d” và 
+&a, với “%d” là mã định dạng kiểu số nguyên cho dữ liệu nhận vào và 
+& là toán tử xác định địa chỉ của biến để lưu dữ liệu.
+Vậy cú pháp chung của hàm nhập dữ liệu sẽ là:
+scanf(“mãĐịnhDạng”,&biếnLưuDữLiệu);
+với mãĐịnhDạng là mã định dạng dữ liệu dùng để định dạng kiểu 
+dữ liệu cho dữ liệu nhập vào. Một số mã định dạng phổ biến như sau:
+%d
+mã định dạng kiểu số nguyên hệ thập phân
+%f
+mã định dạng kiểu số thực
+%c
+mã định dạng kiểu ký tự
+%s
+mã định dạng kiểu chuỗi nhiều ký tự
+Ví dụ cho phép nhập 3 số liên tiếp và lưu vào 3 biến a, b, c:
+scanf(“%d%d%d”,&a,&b,&c) ;
+trong câu lệnh trên, các ký tự định dạng được viết liền nhau cho 
+phép chương trình dừng lại và chờ nhập 3 giá trị số nguyên. Các biến 
+được tham chiếu thông qua địa chỉ và đặt cách nhau bởi dấu “,”. Trường 
+hợp sau đây là không hợp lệ:

@@ -1,0 +1,53 @@
+// Trang 82 - Ngôn ngữ lập trình C_ebook.pdf
+
+79
+lặp tiếp theo. Biểu thức điều kiện một lần nữa sẽ được kiểm tra xem còn 
+đúng không… tiếp tục như vậy cho đến khi kết quả của biểu thức i < 4 
+là sai. Trong ví dụ này, vòng lặp được thực hiện 4 lần (với i = 0, 1, 2, 3) 
+đến khi i = 4 thì biểu thức i < 4 bị sai và thoát ra khỏi vòng lặp. Chương 
+trình sẽ chuyển đến dòng 6 và tính giá trị của biến a = a + i = 4 + 4 = 8, 
+và kết thúc đoạn chương trình. 
+Như vậy, với đoạn chương trình trên, nếu vắng mặt biểu thức điều 
+kiện i < 4 của lệnh while ở dòng 4 thì vòng lặp sẽ lặp vô hạn vì thao tác 
+kiểm tra biểu thức sẽ cho kết quả luôn luôn đúng, đó là điều không 
+mong muốn. Do đó, người lập trình cần cẩn thận để tránh các vòng lặp 
+vô hạn này.
+Ví dụ 3.5: Chương trình tính giai thừa của một số nhập từ bàn phím:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+#include <stdio.h>
+int main(void)
+{  
+int  a = 1, N, i = 1;
+printf(“Moi nhap vao so can tim giai thua “);
+scanf(“%d”,&N);
+if(N < 0)printf(“So nay khong co giai thua”);
+else if (N == 0)printf(“Giai thua cua 0 la 1”);
+else
+{
+   while  (i <= N)
+   {
+    	 a = a*i;
+    	 i ++;
+   }
+    printf(“\n Giai thua cua %d la %d”, N,a);
+}
+return 0;
+}

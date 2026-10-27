@@ -1,0 +1,41 @@
+// Trang 133 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+133 
+ Ví dụ 3.4 
+Viết chƣơng trình giải phƣơng trình bậc 2: ax2 + bx + c = 0. 
+ Phác họa lời giải: 
+Sử dụng biến delta để xác định biến của chƣơng trình:  
+delta = b*b - 4 * a * c; 
+Xét delta 
++ Nếu delta > 0 thì phƣơng trình có 2 nghiệm phân biệt: 
+x1 = (-b + sqrt(delta))/(2*a) 
+x2 = (-b - sqrt(delta))/(2*a) 
++ Nếu delta = 0 thì phƣơng trình có 1 nghiệm kép. 
+x1 = x2 = -b/(2*a) 
++ Nếu delta < 0 thì phƣơng trình vô nghiệm. 
+ Chƣơng trình: 
+1 #include<stdio.h> 
+2 #include<math.h> 
+3 int main() 
+4 { 
+5    float delta,a,b,c,x1,x2; 
+6    printf("a = "); scanf("%f",&a); 
+7    printf("b = "); scanf("%f",&b); 
+8    printf("c = "); scanf("%f",&c); 
+9    delta = b * b - 4 * a * c; 
+10    if (delta < 0) 
+11       printf("ptvn\n"); 
+12    else if (delta == 0) 
+13     
+ 
+{ 
+14     
+ 
+printf("\nPhuong trinh co nghiem kep:\n"); 
+15     
+ 
+   printf("x1 = x2 = %8.2f",-b/(2*a)); 
+16  
+ 
+} 
+17         else 

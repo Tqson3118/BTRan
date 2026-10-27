@@ -1,0 +1,16 @@
+// Trang 554 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+554 
+- Dòng 1 ghi tổng của dãy con. 
+- Dòng 2 ghi mảng con tăng dần có tổng lớn nhất. 
+ Bài tập 7.27 
+ Viết chƣơng trình nhập lý lịch một nhân viên vào danh sách các 
+nhân viên. Khi không nhập nữa bấm phím Esc và ghi vào tập tin 
+NHANVIEN.DAT sau đó: 
+a. Đọc từ tập tin NHANVIEN.DAT vừa tạo và in danh sách các 
+nhân viên lên màn hình. 
+b. Tìm và in lý lịch một nhân viên bằng các nhập và họ tên hoặc mã 
+số nhân viên. 
+ 
+ 
+ 

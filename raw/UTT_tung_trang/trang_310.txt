@@ -1,0 +1,201 @@
+// Trang 310 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+310 
+ 
+A[2][2] = 12 
+ 
+Mang duoc nhap vao la: 
+ 
+12      3       43 
+ 
+15      4       6 
+ 
+33      23      12 
+ 
+Tong cac phan tu tren duong cheo chinh = 28 
+ 
+Can bac hai tong binh phuong cac phan tu cua ma tran = 63 
+ Ví dụ 5.24 
+Viết chƣơng trình nhập vào hai ma trận cùng cấp n × m (m, n nhập từ 
+bàn phím). Thực hiện các yêu cầu sau đây: 
+a. Cộng hai ma trận và hiển thị ma trận tổng ra màn hình. 
+b. Trừ hai ma trận và hiển thị ma trận hiện ra màn hình. 
+Phác thảo lời giải: 
+Sử dụng công thức cộng, trừ hai ma trận cùng cấp nhau sau: 
+[
+ 
+ 
+ 
+ 
+   
+   
+ 
+   
+   
+   
+ 
+   
+   
+   
+ 
+   
+ 
+ 
+ 
+ 
+   
+   
+ 
+   ]
+ 
+ 
+ 
+ 
+  
+[
+ 
+ 
+ 
+    
+   
+ 
+   
+   
+   
+ 
+   
+   
+   
+ 
+   
+ 
+ 
+ 
+ 
+   
+   
+ 
+   ]
+ 
+ 
+ 
+ 
+  
+[
+ 
+ 
+ 
+          
+        
+ 
+        
+        
+        
+ 
+        
+        
+        
+ 
+        
+ 
+ 
+ 
+ 
+        
+        
+ 
+        ]
+ 
+ 
+ 
+ 
+  
+ 
+[
+ 
+ 
+ 
+ 
+   
+   
+ 
+   
+   
+   
+ 
+   
+   
+   
+ 
+   
+ 
+ 
+ 
+ 
+   
+   
+ 
+   ]
+ 
+ 
+ 
+ 
+  
+[
+ 
+ 
+ 
+    
+   
+ 
+   
+   
+   
+ 
+   
+   
+   
+ 
+   
+ 
+ 
+ 
+ 
+   
+   
+ 
+   ]
+ 
+ 
+ 
+ 
+  
+[
+ 
+ 
+ 
+          
+        
+ 
+        
+        
+        
+ 
+        
+        
+        
+ 
+        
+ 
+ 
+ 
+ 
+        
+        
+ 
+        ]
+ 
+ 
+ 
+ 
+  

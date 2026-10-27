@@ -1,0 +1,41 @@
+// Trang 28 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+28 
+3 
+[Phần định nghĩa marco] 
+Xác định các hằng tƣợng trƣng trong chƣơng trình. Hằng 
+tƣợng trƣng là các đại lƣợng có giá trị không thay đổi 
+trong chƣơng trình. Phần này không bắt buộc phải có. 
+4 
+[Phần khai báo nguyên hàm mẫu] 
+Khai báo các nguyên mẫu hàm. Phần này không bắt buộc, 
+trong trƣờng hợp phần định nghĩa các hàm đƣợc đặt ở vị trí 
+này thì bỏ qua các nguyên hàm mẫu. 
+5 
+[Phần định nghĩa các cấu trúc] 
+Phần này đƣợc sử dụng khi cần định nghĩa các kiểu dữ liệu 
+do ngƣời dùng định nghĩa. Không bắt buộc phải có. 
+6 
+<kiểu trả về> main(tham số) 
+{ 
+Thân hàm main(): chứa các khai báo và các lệnh thực thi, 
+chứa các lời gọi hàm; 
+} 
+Đây là phần bắt buộc phải có. Chƣơng trình khi biên dịch 
+đƣợc thực hiện bắt đầu từ đây. 
+7 
+[Định nghĩa hàm của ngƣời dùng] 
+Nếu có lời gọi hàm thì phần này bắt buộc phải có. Có hai 
+vị trí có thể đặt các định nghĩa hàm. 
+Vị trí 1: Trƣớc hàm main(), khi đó có thể bỏ qua các khai 
+báo nguyên hàm mẫu. 
+Vị trí 2: Sau hàm main(), nhƣ vậy bắt buộc phải có phần 
+khai báo nguyên hàm mẫu trƣớc hàm main(). 
+1.3.2.1. Phần tài liệu 
+Đây là phần đầu tiên trong một chƣơng trình viết bằng ngôn ngữ C. 
+Nhiệm vụ của phần tài liệu cung cấp những thông tin cơ bản về chƣơng 
+trình: tác giả, ngày giờ, tên tệp chƣơng trình và có thể thêm phần tóm tắt 
+nội dung của chƣơng trình. 
+Khi biên dịch, chƣơng trình sẽ bỏ qua phần này, bởi vì tất cả những 
+nội dung trong phần này, đƣợc chƣơng trình hiểu là các chú thích. 
+Các chú thích trong C đƣợc thể hiện dƣới hai dạng: 

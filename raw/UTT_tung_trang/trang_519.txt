@@ -1,0 +1,39 @@
+// Trang 519 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+519 
+21          gets(sv1[i].tensv); 
+22          printf("Nhap diem sinh vien:\n ");  
+23          scanf("%f", &sv1[i].diem);  
+24      } 
+25      fwrite(sv1, sizeof(sv1), 1, fptr); 
+26      fclose(fptr); 
+27      fptr = fopen("sv.txt", "rb"); 
+28      fread(sv2, sizeof(sv2), 1, fptr); 
+29      for(i = 0; i < n; ++i) 
+30      { 
+31          printf("Ten Sinh vien: %s  Diem sV: %0.2f \n", 
+sv2[i].tensv, sv2[i].diem); 
+32      } 
+33      fclose(fptr); 
+34  } 
+Kết quả chƣơng trình 
+ ở Màn hình Console 
+Nhap vao so sinh vien: 4 
+Nhap thong tin cua sinh vien thu 1: 
+Nhap ten sinh vien: 
+An 
+Nhap diem sinh vien: 
+ 9.1 
+Nhap thong tin cua sinh vien thu 2: 
+Nhap ten sinh vien: 
+Cuong 
+Nhap diem sinh vien: 
+ 4.5 
+Nhap thong tin cua sinh vien thu 3: 
+Nhap ten sinh vien: 
+Thuy 
+Nhap diem sinh vien: 
+ 6.8 
+Nhap thong tin cua sinh vien thu 4: 
+Nhap ten sinh vien: 
+Nam 

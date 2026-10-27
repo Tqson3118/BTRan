@@ -1,0 +1,35 @@
+// Trang 214 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+214 
+o Hàm có giá trị trả về: tong(), nguyento(), v.v 
+o Hàm không có giá trị trả về: nhapmang(), xuatmang(), v.v. 
+4.1.1.3. Ưu điểm của hàm do người dùng định nghĩa 
+- Chƣơng trình dễ hiểu, dễ duy trì và dễ gỡ lỗi. 
+- Tái sử dụng mã trong nhiều chƣơng trình khác. 
+- Một chƣơng trình lớn có thể đƣợc phân chia thành các mô đun nhỏ 
+hơn. Do đó một dự án lớn có thể đƣợc chia cho nhiều lập trình viên cùng 
+thực hiện. 
+4.1.1.4. Cách xác định một hàm 
+Một hàm cần phải xác định 3 thông tin: 
+- Tên hàm.  
+- Tham số của hàm (dữ liệu vào). 
+- Kiểu dữ liệu trả về (kiểu hàm). 
+4.1.2. Khai báo hàm 
+4.1.2.1. Cấu trúc chương trình chứa hàm 
+#include <stdio.h> 
+void functionName() 
+{ 
+    ... .. ... 
+    ... .. ... 
+} 
+ 
+int main() 
+{ 
+    ... .. ... 
+    ... .. ... 
+ 
+    functionName(); 
+    ... .. ... 
+    ... .. ... 
+} 
+Trong đó: functionName(): tên của hàm 

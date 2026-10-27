@@ -1,0 +1,98 @@
+// Trang 376 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+376 
+33 
+                imax = a[j];  
+34 
+             
+35 
+                 //Hoan doi a[i] va a[j] 
+36 
+                 tg = a[i];  
+37 
+                 a[i] = a[j];  
+38 
+                 a[j] = tg; 
+39 
+            } 
+40 
+    }                    
+41 
+} 
+42 
+int main() 
+43 
+{ 
+44 
+ 
+int n; 
+45 
+ 
+int a[MAX]; 
+46 
+ 
+//Kiem tra tinh hop le cua so n nhap vao, dam bao 0 <= n <= MAX 
+47 
+ 
+do 
+48 
+ 
+{ 
+49 
+ 
+ 
+printf("\nNhap so phan tu: "); 
+50 
+ 
+ 
+scanf("%d", &n); 
+51 
+ 
+ 
+if(n <= 0 || n > MAX) 
+52 
+ 
+ 
+{ 
+53 
+ printf("Khong hop le. Nhap so trong pham vi 
+tu 0 den MAX !"); 
+54 
+ 
+ 
+} 
+55 
+ 
+}while(n <= 0 || n > MAX); 
+56 
+ 
+Nhap_mang(a, n); 
+57 
+ 
+printf("In cac phan tu cua mang ban dau: \n"); 
+58 
+ 
+Hien_thi(a, n); 
+59 
+ 
+Sapxep(a, n); 
+60 
+ 
+printf("In cac phan tu cua mang sap xep giam dan dan: \n"); 
+61 
+ 
+// Goi ham Hien_thi() de in cac phan tu cua mang ra man hinh 
+62 
+ 
+Hien_thi(a, n); 
+63 
+ 
+//Dung man hinh 
+64 
+ 
+getch(); 
+65 
+ 
+return 0; 
+66 
+} 

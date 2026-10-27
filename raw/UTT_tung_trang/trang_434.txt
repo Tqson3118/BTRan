@@ -1,0 +1,53 @@
+// Trang 434 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+434 
+6.1.6. Cấu trúc lồng nhau 
+Ngôn ngữ lập trình C cho phép một cấu trúc lồng trong một cấu trúc 
+khác. Khi đó một cấu trúc có một cấu trúc khác là một biến thành viên. 
+Có hai cách để định nghĩa cấu trúc lồng nhau trong C: 
+6.1.6.1. Định nghĩa cấu trúc riêng biệt 
+Khai báo hai cấu trúc, cấu trúc phụ thuộc đƣợc sử dụng bên trong cấu 
+trúc chính nhƣ là thành viên. 
+ Ví dụ 6.12 
+ Xem xét đoạn khai báo sau đây: 
+1 
+struct NgaySinh  
+2 
+{   
+3 
+   int ngay;   
+4 
+   int thang;   
+5 
+   int nam;    
+6 
+};   
+7 
+struct Nhan_vien   
+8 
+{      
+9 
+   int id_nv;   
+10 
+   char ten_nv[20];   
+11 
+   struct NgaySinh ns;   
+12 
+}nv1, nv2; 
+Trong ví dụ trên, ns là biến kiểu NgaySinh, ns đƣợc sử dụng nhƣ một 
+thành phần trong cấu trúc Nhan_vien. Theo cách khai báo trên, cấu trúc 
+NgaySinh có thể đƣợc sử dụng trong nhiều cấu trúc khác nhau.  
+6.1.6.2. Định nghĩa cấu trúc nhúng 
+Cấu trúc nhúng cho phép khai báo cấu trúc bên trong cấu trúc. Do 
+đó, nó đòi hỏi ít dòng mã hơn, nhƣng nó không thể đƣợc sử dụng trong 
+nhiều cấu trúc. 
+ Ví dụ 6.13 
+ Xem xét đoạn khai báo sau đây: 
+1 
+struct Nhan_vien   
+2 
+{      
+3 
+   int id_nv;   
+4 
+   char ten_nv[20];   

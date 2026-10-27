@@ -1,0 +1,44 @@
+// Trang 138 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+138 
+ Ví dụ 3.7 
+Viết chƣơng trình nhập vào điểm trung bình khóa học của sinh viên 
+(0  dtb  10) theo tiêu chí sau:  
+ Nếu 0.0   dtb   4.0:  Xếp loại Yếu; 
+ Nếu 4.0   dtb   5.5: Xếp loại Trung bình - Yếu; 
+ Nếu 5.5   dtb   7.0: Xếp loại Trung bình; 
+ Nếu 7.0   dtb   8.5: Xếp loại Khá; 
+ Nếu dtb   8.5: Xếp loại Giỏi. 
+Phác họa lời giải: 
+Điểm số nhập vào nếu hợp lệ (0   đtb   10), bạn tiếp tục công việc 
+xếp loại, ngƣợc lại thông báo “Nhập điểm không hợp lệ”. Việc xếp loại 
+bạn sử dụng cấu trúc else if nhƣ ví dụ 3.5. 
+Chƣơng trình 
+1 #include<stdio.h> 
+2 #include<math.h> 
+3 int main() 
+4 { 
+5 float dtb; 
+6 printf("\nNhap diem tb: "); scanf("%f",&dtb); 
+7 if (dtb >= 0 && dtb <= 10) 
+8   if(dtb < 4)  
+9  
+ { 
+10       printf("\nLoai yeu"); 
+11  
+ }  
+12   else if(dtb < 5.5)  
+13  
+ { 
+14     
+  printf("\n Loai trung binh yeu"); 
+15  
+ }  
+16   else if(dtb < 7)  
+17  
+ { 
+18     
+  printf("\n Loai trung binh"); 
+19  
+ }  
+20   else if(dtb < 8.5) 

@@ -1,0 +1,38 @@
+// Trang 88 - Ngôn ngữ lập trình C_ebook.pdf
+
+85
+Trong chương trình trên, lệnh for(; ;) ở dòng lệnh số 5 sẽ tạo ra một 
+vòng lặp vô tận. Bên trong thân vòng lặp, lệnh break; ở dòng lệnh số 
+10 sẽ giúp chương trình thoát khỏi vòng lặp vô tận trên khi xảy ra điều 
+kiện a >= 0. Điều này tương đương với việc vòng lặp sẽ tiếp tục lặp nếu 
+người dùng nhập vào một số a < 0 và chỉ kết thúc bởi lệnh break; khi 
+người dùng nhập một số a >= 0. Kết quả của chương trình là:
+1
+2
+3
+Nhap so duong: -4
+Nhap so duong: -6
+Nhap so duong: 8
+3.5. CÂU LỆNH CONTINUE
+Trái với câu lệnh break; (dùng để thoát khỏi vòng lặp), câu lệnh 
+continue; dùng để bắt đầu một lần lặp mới của vòng lặp bên trong nhất 
+đang chứa nó. Nói một cách chính xác hơn thì:
+ Khi gặp câu lệnh continue; bên trong thân của một lệnh for, các 
+lệnh phía sau lệnh continue của sẽ được bỏ qua, chương trình sẽ tăng 
+biến điều khiển và kiểm tra điều kiện để thực hiện tiếp các lệnh trong 
+vòng lặp nếu điều kiện trả về True hoặc dừng lại nếu điều kiện trả về 
+False.
+ Khi gặp lệnh continue bên trong thân của while hoặc do...
+while, chương trình sẽ chuyển tới xác định giá trị biểu thức điều kiện 
+(viết sau từ khóa while) và sau đó tiến hành kiểm tra điều kiện kết thúc 
+vòng lặp.
+Lưu ý là lệnh continue; chỉ áp dụng cho các vòng lặp chứ không 
+dùng cho lệnh switch.
+Ví dụ 3.9: Ta xét lại ví dụ 3.1 ở trường hợp 3 và thêm vào câu lệnh 
+continue; như sau:
+1
+2
+3
+#include <stdio.h>
+int main(void)
+{

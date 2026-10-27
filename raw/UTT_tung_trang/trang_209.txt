@@ -1,0 +1,57 @@
+// Trang 209 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+209 
+ 
+ 
+ 
+                 
+ 
+ 
+ 
+    
+ 
+     
+ 
+      
+       
+      
+ Bài tập 3.36 
+Viết chƣơng trình nhập vào số nguyên n, số thực x. Tính giá trị của 
+biểu thức sau đây: 
+        
+      
+        
+   
+       
+     
+       
+   
+ Bài tập 3.37 
+Viết chƣơng trình tính căn bậc hai của số a cho trƣớc theo công thức 
+lặp sau đây: 
+ 
+ 
+ 
+x0 = a; 
+ 
+ 
+ 
+xn+1 = 
+       
+   
+ 
+ 
+Quá trình lặp sẽ dừng khi |       |  , với   đủ bé cho trƣớc. 
+ Bài tập 3.38 
+Viết chƣơng trình in dãy số Fibonaci. 
+f1 = f0 =1; 
+fn = fn-1 + fn-2; (n > 1) 
+ Bài tập 3.39 
+Viết chƣơng trình in ra số fibonaci thứ n với n đƣợc nhập từ bàn phím. 
+ Bài tập 3.40 
+Viết chƣơng trình nhập vào một số tự nhiên n (n > 0)  
+a.  Số tự nhiên n có bao nhiêu chữ số.  
+b.  Hãy tìm chữ số cuối cùng của n.  
+c.  Hãy tìm chữ số đầu tiên của n.  
+d.  Tính tổng các chữ số của n.  
+e.  Hãy tìm số đảo ngƣợc của n. 

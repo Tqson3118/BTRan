@@ -1,0 +1,70 @@
+// Trang 203 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+203 
+5 
+{ 
+6 
+float sotiengui, sotienrut; 
+7 
+int SoNam;  
+8 
+SoNam = 0 ;  
+9 
+printf("Nhap vao so tien can gui: "); 
+10 
+do 
+11 
+{ 
+12 
+ 
+scanf("%f", &sotiengui); 
+13 
+ 
+if (sotiengui <= 1000000) printf("Nhap lai so tien can gui 
+lon hon 1000000!: "); 
+14 
+} while (sotiengui < 1000000); 
+15 
+printf("Nhap vao so tien can rut:"); 
+16 
+do 
+17 
+{ 
+18 
+ 
+scanf("%f", &sotienrut); 
+19 
+ 
+if (sotienrut <= sotiengui) printf("Nhap lai so tien rut phai 
+lon hon %f!",sotiengui); 
+20 
+} while (sotienrut < sotiengui); 
+21 
+while (sotiengui < sotienrut) 
+22 
+{ 
+23 
+SoNam = SoNam + 1; 
+24 
+sotiengui = pow((1 + 0.08), SoNam) * sotiengui; 
+25 
+} 
+26 
+printf("\nSo nam  can gui la: %d",SoNam); 
+27 
+printf("\nSo tien rut duoc la: %2.1f",sotiengui); 
+28 
+return 0; 
+29 
+} 
+Kết quả chƣơng trình: 
+ 
+Nhap vao so tien can gui: 500000 
+ 
+Nhap lai so tien can gui lon hon 1000000!: 20000000 
+ 
+Nhap vao so tien can rut:40000000 
+ 
+So nam  can gui la: 4 
+ 
+So tien rut duoc la: 43178500.0 

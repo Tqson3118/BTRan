@@ -1,0 +1,55 @@
+// Trang 429 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+429 
+ 
+Nhap thong tin cho nv2: 
+ 
+Ma nhan vien: nv02 
+ 
+Ho ten nhan vien: Le Luan 
+ 
+Nhap luong cua nhan vien: 9000000 
+ 
+ --------- Hien thi thong tin nhan vien: ----- 
+ 
+Ma NV            Ho ten                   Luong 
+ 
+nv01                 Le Kien                        7000000.00 
+ 
+nv02                 Le Luan                        9000000.00 
+6.1.3. Khởi tạo kiểu cấu trúc 
+Giống nhƣ biến của bất kỳ kiểu dữ liệu nào khác, biến cấu trúc có thể 
+đƣợc khởi tạo tại thời điểm biên dịch. 
+ Ví dụ 6.7 
+Cho khai báo kiểu cấu trúc Sinh_vien và khai báo 1 biến p1 kiểu 
+Sinh_vien đƣợc khởi tạo giá trị sau đây: 
+1   struct Sinh_vien 
+2  { 
+3  char ten[20]; 
+int tuoi; 
+4  char dia_chi[50]; 
+5  char gioitinh; // nhan gia tri F (female) hoặc M (male) 
+6  }; 
+7  struct Sinh_vien p1 ={“Nam”,19, “Ha Noi”, „F‟}; 
+Hoặc khởi tạo nhƣ sau: 
+1 
+struct Sinh_vien 
+2 
+{ 
+3 
+char ten[20]; 
+int tuoi; 
+4 
+char dia_chi[50]; 
+5 
+char gioitinh; // nhan gia tri F (female) hoặc M (male) 
+6 
+}; 
+7 
+struct Sinh_vien p1 ={“Nam”,19, “Ha Noi”, „F‟}; 
+8 
+p1.ten = “Nam”; 
+9 
+p1.tuoi =19; 
+10 p1.dia_chi = “Ha Noi”; 
+11 P1.gioitinh = „F‟; 

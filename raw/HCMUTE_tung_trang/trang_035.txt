@@ -1,0 +1,63 @@
+// Trang 35 - Ngôn ngữ lập trình C_ebook.pdf
+
+32
+Trong một số ngôn ngữ lập trình hiện đại, biến chỉ cần được khai 
+báo trước khi sử dụng và tại bất kỳ vị trí nào trong chương trình. Một 
+số ngôn ngôn ngữ còn bỏ qua bước khai báo biến, tương đương với việc 
+biến sẽ được khởi tạo khi lần đầu tiên được sử dụng mà không cần phải 
+khai báo trước đó. Tuy nhiên, ngôn ngữ lập trình C bắt buộc biến phải 
+được khai báo trước khi sử dụng. Hơn nữa, biến phải được khai báo ở 
+đầu chương trình, trước vị trí các câu lệnh. Biến có thể được khai báo 
+bên trong chương trình chính hoặc chương trình con, hoặc bên ngoài 
+chương trình chính hoặc chương trình con. Trong 2 trường hợp này, 
+phạm vi hoạt động của biến khác nhau. Cụ thể, dựa vào phạm vi hoạt 
+động của biến, các biến được chia làm 2 loại cơ bản như sau:
+ Biến chung hoặc biến toàn cục (global): là các biến được khai 
+báo bên ngoài các hàm và có thể được truy xuất trong bất kỳ hàm nào 
+cùng nằm trong một tệp chương trình. Ví dụ một chương trình được viết 
+có tên file1.c có nội dung như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+#include <stdio.h>
+#include <conio.h>
+int a,b,tong,hieu ;
+void tinhhieu(){
+      hieu = a - b;     //tinh hieu
+	
+printf(“Hieu la: %d \n”,hieu);
+}
+int main (void)
+{
+	
+printf (“Nhap so thu nhat : \n”);
+	
+scanf(“%d”,&a);  //nhap so nguyen tu ban phim
+	
+printf(“Nhap so thu hai: \n”);
+	
+scanf(“%d”,&b);  //nhap so nguyen tu ban phim
+	
+tong = a + b;     //tinh tong
+	
+printf(“Tong la: %d \n”,tong); //in ket qua
+	
+getch(); //cho nhap 1 ky tu bat ky
+	
+return 0; 	
+}

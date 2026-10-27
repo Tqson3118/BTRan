@@ -1,0 +1,36 @@
+// Trang 150 - Ngôn ngữ lập trình C_ebook.pdf
+
+147
+số ứng dụng, người ta viết hàm main không tham số, không giá trị trả 
+về. Ví dụ hàm main được viết như sau: 
+ 1
+2
+3
+4
+5
+6
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+ …
+ return 0;
+}
+Trong ví dụ trên, hàm main nhận 2 tham số, thực tế 2 tham số này 
+được truyền cho hàm main khi chương trình được gọi từ dòng lệnh. 
+Lệnh return trong hàm main trả về kết quả cho hệ thống, cho biết hàm 
+main thực thi thành công (có giá trị là 0) hoặc không thành công (trả về 
+giá trị khác 0, thường là mã lỗi).
+6.4. KHAI BÁO HÀM
+Hàm phải được khai báo trước khi sử dụng. Điều này đồng nghĩa 
+với việc định nghĩa hàm hoặc là khai báo hàm phải tồn tại ở trước vị 
+trí nó được gọi. Trong các ví dụ trên, hàm được định nghĩa ở trên hàm 
+main và nó được gọi trong hàm main. Để đảm bảo việc hàm có thể được 
+gọi từ một hàm khác mà hàm này có thể được viết trên hoặc dưới hàm 
+được gọi thì các hàm cần phải được khai báo ở vị trí đầu chương trình. 
+Việc khai báo hàm chỉ đơn thuần là cung cấp cho chương trình các 
+thông tin về hàm như tên hàm, kiểu dữ liệu trả về, tham số. Khai báo 
+hàm được thực hiện theo cú pháp sau
+Kiểu_dữ_liệu   Tên_hàm (danh sách tham số);
+Các hàm được khai báo trong cùng một chương trình hoặc có 
+thể được đặt trong một tệp tiêu đề (header file). Ví dụ về khai báo 
+hàm như sau:

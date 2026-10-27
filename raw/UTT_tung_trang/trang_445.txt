@@ -1,0 +1,49 @@
+// Trang 445 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+445 
+6.2.2. Cấp phát bộ nhớ động cho kiểu cấu trúc 
+Đôi khi, số lƣợng biến cấu trúc chúng ta khai báo có thể không đủ. 
+Chúng ta có thể cần phân bổ bộ nhớ trong thời gian chạy. Đây là cách 
+chúng ta có thể đạt đƣợc điều này trong ngôn ngữ lập trình C. 
+ Ví dụ 6.22 
+Xem xét ví dụ sau đây: 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+struct sinhvien { 
+4 
+   char masv[10]; 
+5 
+   char ten_sv[30]; 
+6 
+   float diem_tb; 
+7 
+}; 
+8 
+int main() 
+9 
+{ 
+10    struct sinhvien *p; 
+11    int i, n; 
+12    printf("Nhap so sinh vien: "); 
+13    scanf("%d", &n); 
+14    // cap phat bo nho dong 
+15    p = (struct sinhvien*) malloc(sizeof(struct sinhvien)); 
+16    for(i = 0; i < n; ++i) 
+17    { 
+18        printf("Nhap ma sinh vien thu %d:\n",i); 
+19        scanf("%s", &(p+i)->masv); 
+20        printf("Nhap ten sinh vien:\n"); 
+21        scanf("%s", &(p+i)->ten_sv); 
+22  
+   printf("Nhap diem sinh vien:\n"); 
+23        scanf("%f", &(p+i)->diem_tb);  
+24    } 
+25    printf("Hien thi thong tin sinh vien:\n"); 
+26    for(i = 0; i < n; ++i) 
+27        printf("MaSV: %s\tTenSV: %s\tDiemTB: %0.2f\n", (p+i)-
+>masv, (p+i)->ten_sv,(p+i)->diem_tb); 
+28    return 0; 
+29 } 

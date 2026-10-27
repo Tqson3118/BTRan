@@ -1,0 +1,35 @@
+// Trang 14 - Ngôn ngữ lập trình C_ebook.pdf
+
+11
+viết dưới dạng ngôn ngữ máy có thể thực thi nhanh và chính xác. 
+Tuy nhiên, bên cạnh những ưu điểm, lập trình bằng ngôn ngữ máy 
+cũng có nhiều nhược điểm. Cụ thể là các mã nhị phân làm cho người 
+lập trình khó nhớ, khó hiểu, khó chỉnh sửa. Hơn nữa, việc sửa lỗi, 
+tìm lỗi chương trình cũng trở nên khó khăn thông qua việc dò, tham 
+chiếu các mã nhị phân với các lệnh. 
+Một ví dụ chương trình được viết bằng ngôn ngữ máy như sau:
+Lệnh bằng mã nhị phân
+Lệnh bằng mã Hex
+0010 0001 0000 0100
+2104
+0001 0001 0000 0101
+1105
+0011 0001 0000 0110
+3106
+0111 0000 0000 0001
+7001
+0000 0000 0101 0011
+0053
+1111 1111 1111 1110
+FFFE
+Hợp ngữ (Assemly language) là ngôn ngữ thế hệ thứ 2 của ngôn 
+ngữ lập trình. Thay vì sử dụng mã nhị phân, 0 và 1, để thể hiện các lệnh, 
+hợp ngữ sử dụng các từ khóa, các ký hiệu bằng tiếng Anh để diễn tả các 
+câu lệnh. Hợp ngữ giúp cho người lập trình có thể hiểu được mỗi dòng 
+lệnh dễ dàng hơn, từ đó việc chỉnh sửa, thay đổi chương trình, cũng như 
+quản lý chương trình đơn giản hơn so với lập trình bằng ngôn ngữ máy. 
+Tuy nhiên, máy tính nói chung và các bộ xử lý nói riêng chỉ có thể hiểu 
+được ngôn ngữ máy hay các mã nhị phân, do đó, cần một trình chuyển 
+đổi hay biên dịch (compiler) để chuyển từ hợp ngữ sang mã máy, giúp 
+máy tính nói chung và các bộ vi xử lý nói riêng có thể đọc hiểu và thực 
+thi chương trình.

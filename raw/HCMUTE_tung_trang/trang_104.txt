@@ -1,0 +1,30 @@
+// Trang 104 - Ngôn ngữ lập trình C_ebook.pdf
+
+101
+Kết quả thu được khi chạy chương trình ở ví dụ 4.6 là:
+987621
+Giải thích hoạt động: 
+Đây là một bài toán khá điển hình về mảng nói chung và mảng 
+một chiều nói riêng. Để sắp xếp mảng bắt thì buộc phải dùng 2 vòng for 
+lồng vào nhau. Với vòng for bên trong, sau khi chạy hết vòng for này 
+ta sẽ được một giá trị lớn nhất (do dòng lệnh số 5 với điều kiện so sánh 
+(a[i]<a[j])) và được đặt ở ví trí đầu tiên trong mảng. Vòng for ngoài sẽ 
+thay đổi vị trí để tìm giá trị lớn tiếp theo và đặt ở vị trí kế tiếp với giá 
+trị đã tìm được trước đó. Cứ như vậy cho đến khi kết thúc 2 vòng for.
+Cụ thể:
++ Với i = 0; j = 1, 2, 3, 4, 5: đầu tiên chương trình sẽ so sánh giá 
+trị của phần tử a[0] với giá trị của a[1], nếu a[1] lớn hơn a[0] thì hoán 
+đổi giá trị của a[0] và giá trị của a[1], lúc đó giá trị của a[0] sẽ lớn hơn 
+giá trị của a[1]. Tiếp tục so sánh a[0] với a[2]…. Và chương trình chạy 
+cho đến giá trị j = 5 (hết vòng for bên trong) thì ta thu được mảng a khi 
+đó là: a[]={9,1,7,6,8,2}.
++ i =1: máy sẽ bắt đầu so sánh từ phần tử a[1] (vì ta đã tìm được 
+giá trí a[0] là lớn nhất) và làm như đã giải thích ở phần trên, ta sẽ tìm 
+được a[]={9,8,1,6,7,2}.
++ i = 2: ta tìm tiếp được a[]={9,8,7,1,6,2}.
++ i = 3, ta tìm tiếp được a[]={9,8,7,6,1,2}.
++ i = 4, ta tìm tiếp được a[]={9,8,7,6,2,1}.
+Các dòng lệnh từ 11 đến hết dòng 14 là vòng lặp for giúp chương 
+trình in ra các giá trị của mảng đã được sắp xếp.
+Nếu với yêu cầu sắp xếp mảng và in ra giá trị từ lớn đến bé ta chỉ 
+cần thay đổi điều kiện so sánh ở dòng lệnh số 5 thành: if (a[i] >a[j]).Khi 

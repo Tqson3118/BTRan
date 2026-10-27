@@ -1,0 +1,63 @@
+// Trang 291 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+291 
+53  
+}while(n <= 0 || n > MAX); 
+54  
+Nhap_mang(a, n); 
+55  
+printf("In cac phan tu cua mang ban dau: \n"); 
+56  
+Hien_thi(a, n); 
+57  
+Sapxep(a, n); 
+58  
+printf("In cac phan tu cua mang sap xep tang dan: \n"); 
+59  
+// Goi ham Hien_thi() de in cac phan tu cua mang ra man 
+hinh 
+60  
+Hien_thi(a, n); 
+61  
+//Dung man hinh 
+62  
+getch(); 
+63  
+return 0; 
+64 } 
+ Kết quả chƣơng trình: 
+ 
+MAX = 100: 
+ 
+Nhap so phan tu: -1 
+ 
+Khong hop le. Nhap so trong pham vi tu 0 den MAX ! 
+ 
+Nhap so phan tu: 102 
+ 
+Khong hop le. Nhap so trong pham vi tu 0 den MAX ! 
+ 
+Nhap so phan tu: 6 
+ 
+Phan tu a[0]: 12 
+ 
+Phan tu a[1]: 54 
+ 
+Phan tu a[2]: 6 
+ 
+Phan tu a[3]: 72 
+ 
+Phan tu a[4]: 9 
+ 
+Phan tu a[5]: 34 
+ 
+In cac phan tu cua mang ban dau: 
+   12  54   6  72   9  34 
+ 
+In cac phan tu cua mang sap xep tang dan: 
+    6   9  12  34  54  72 
+Dạng 4: Thêm, bớt phần tử trong mảng 
+a. Chèn một phần tử vào vị trí k của mảng 
+Phát biểu bài toán: 
+Cho dãy số a[0], a[1], a[2],…., a[n - 1] và một số nguyên dƣơng k 
+(     ). Chèn một phần tử vào dãy số đã cho ở vị trí k. 

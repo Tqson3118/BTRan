@@ -1,0 +1,48 @@
+// Trang 535 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+535 
+13   scanf("%d", &n); 
+14   printf("\nNoi dung cac dong:\n"); 
+15   fptr = fopen (fname,"w");  
+16   for(i = 0; i < n+1;i++) 
+17    
+{ 
+18    
+fgets(str, sizeof str, stdin); 
+19    
+fputs(str, fptr); 
+20    
+} 
+21    fclose (fptr); 
+22  /*------------ Doc noi dung tep va hien thi -----------*/ 
+23   fptr = fopen (fname, "r");   
+24   printf("\n Noi dung cua tep %s la :\n",fname); 
+25   str1 = fgetc(fptr); 
+26   while (str1 != EOF) 
+27    
+{ 
+28    
+ 
+printf ("%c", str1); 
+29    
+ 
+str1 = fgetc(fptr); 
+30    
+} 
+31      printf("\n\n"); 
+32      fclose (fptr); 
+33      return 0; 
+34  } 
+  Kết quả chƣơng trình 
+Chuong trinh ghi nhieu dong vao 1 tep van ban va doc noi dung tep: 
+-------------------------------------------------------- 
+Nhap vao so dong can ghi: 5 
+Noi dung cac dong: 
+Ao lua Ha Dong 
+Nang Sai Gon anh di ma chot mat 
+Boi vi em mac ao lua Ha Dong 
+Anh van yeu mau ao ay vo cung 
+Tho cua anh van con nguyen lua trang 
+Noi dung cua tep test_7_3.txt la: 
+Ao lua Ha Dong 
+Nang Sai Gon anh di ma chot mat 

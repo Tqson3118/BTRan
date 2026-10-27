@@ -1,0 +1,49 @@
+// Trang 526 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+526 
+96                 return 0; 
+97             default: 
+98              printf("\nKhong co chuc nang nay!"); 
+99              printf("\nBam phim bat ky de tiep tuc!"); 
+100                 getch(); 
+101                 break; 
+102         } 
+103     } 
+104 } 
+105  void tinhDTB(SV &sv){ 
+106     sv.dtb = (sv.dH + sv.dL + sv.dT)/3;     
+107 } 
+108 void nhap(SV &sv){ 
+109     printf("\nNhap ten: ");  
+110  
+fflush(stdin);  
+111  
+gets(sv.ten); 
+112     printf("Nhap gioi tinh: F (nu) M (nam) ");  
+113  
+gets(sv.gt); 
+114     printf("Nhap 
+diem 
+mon 
+Toan 
+- 
+Ly 
+- 
+Hoa: 
+"); 
+scanf("%f%f%f", &sv.dT, &sv.dL, &sv.dH); 
+115     tinhDTB(sv); 
+116 } 
+117  void nhapN(SV a[], int n){ 
+118     printf("\n____________________________________\n"); 
+119     for(int i = 0; i< n; ++i){ 
+120         printf("\nNhap SV thu %d:", i+1); 
+121         nhap(a[i]); 
+122     } 
+123     printf("\n____________________________________\n"); 
+124 } 
+125  void xuat(SV sv){ 
+126     printf("\nHo ten SV: %s", sv.ten); 
+127     printf("\nGioi tinh: %s", sv.gt); 
+128     printf("\nDiem Toan - Ly - Hoa: %.2f - %.2f - %.2f", sv.dT, 
+sv.dL, sv.dH); 

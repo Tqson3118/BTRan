@@ -1,0 +1,60 @@
+// Trang 470 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+470 
+35  
+} 
+36  
+else if (cot_capnhat == 5) 
+37  
+{ 
+38  
+printf("Nhap diem chuyen can:"); 
+39  
+scanf("%f",&sv[index].d_cc); 
+40  
+} 
+41  
+else if (cot_capnhat == 6) 
+42  
+{ 
+43  
+printf("Nhap diem giua ky:"); 
+44  
+scanf("%f",&sv[index].d_gk); 
+45  
+} 
+46  
+else if (cot_capnhat == 7) 
+47  
+{ 
+48  
+printf("Nhap diem cuoi ky:"); 
+49  
+scanf("%f",&sv[index].d_kt); 
+50  
+} 
+51  
+else printf("Khong phai cot can cap nhat"); 
+52 sv[index].tong_diem = sv[index].d_tp1 + sv[index].d_tp2 + 
+sv[index].d_cc + sv[index].d_gk + sv[index].d_kt; 
+53 } 
+54 else printf("Ban ghi khong ton tai. Kiem tra lai Masv va thu lai."); 
+55 } 
+Tính điểm trung bình của sinh viên 
+ Bƣớc 8: Xây dựng hàm dtb(sinhvien[] sv, int n) để tính điểm 
+trung bình của sinh viên đƣợc lựa chọn. Hàm bắt đầu bằng việc yêu cầu 
+ngƣời dùng nhập mã sinh viên muốn tính điểm trung bình. Mã sinh viên 
+đƣợc yêu cầu đảm bảo tồn tại. Tính điểm trung bình của sinh viên theo 
+công thức dtb = (điểm thành phần 1 + điểm thành phần 2 + điểm chuyên 
+cần + điểm giữa kỳ + điểm thi)/5. 
+//Ham tinh diem trung binh cua sinh vien 
+1 
+void tb_sv(sinhvien sv[], int spt) 
+2 
+{ 
+3 
+char id[10]; 
+4 
+float dtb=0; 
+5 
+printf("Nhap ma sinh vien:"); 

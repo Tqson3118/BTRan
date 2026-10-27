@@ -1,0 +1,38 @@
+// Trang 527 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+527 
+129     printf("\nDiem TB: %.2f", sv.dtb); 
+130 } 
+131  void xuatN(SV a[], int n){ 
+132     printf("\n____________________________________\n"); 
+133     for(int i = 0;i < n;++i){ 
+134         printf("\nThong tin SV thu %d:", i+1); 
+135         xuat(a[i]); 
+136     } 
+137     printf("\n____________________________________\n"); 
+138 } 
+139  void sapxep(SV a[], int n){ 
+140     //Sap xep theo DTB tang dan 
+141     SV tmp; 
+142     for(int i = 0;i < n;++i){ 
+143         for(int j = i+1; j < n;++j){ 
+144             if(a[i].dtb > a[j].dtb){ 
+145                 tmp = a[i]; 
+146                 a[i] = a[j]; 
+147                 a[j] = tmp; 
+148             } 
+149         } 
+150     } 
+151 } 
+152  void xeploai(SV sv){ 
+153     if(sv.dtb >= 8) printf("Gioi"); 
+154     else if(sv.dtb >= 6.5) printf("Kha"); 
+155     else if(sv.dtb >= 4) printf("Trung binh"); 
+156     else printf("Yeu"); 
+157 } 
+158 void xeploaiN(SV a[], int n){ 
+159     printf("\n____________________________________\n"); 
+160     for(int i = 0;i < n;++i){ 
+161         printf("\nXep loai cua SV thu %d la: ", i+1); 
+162         xeploai(a[i]); 
+163     } 

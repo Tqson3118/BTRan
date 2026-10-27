@@ -1,0 +1,38 @@
+// Trang 46 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+46 
+6 int main () { 
+7    /* Khai bao bien cuc bo: */ 
+8    int a, b; 
+9    int c; 
+10    float f; 
+11    /* Khoi tao gia tri */ 
+12    a = 10; 
+13    b = 20; 
+14   // cau lenh gan 
+15    c = a + b; 
+16    printf("Gia tri cua c : %d \n", c); 
+17    f = 70.0/3.0; 
+18    printf("Gia tri cua f : %f \n", f); 
+19    return 0; 
+20 } 
+Kết quả chƣơng trình: 
+ 
+Gia tri cua c : 30 
+ 
+Gia tri cua f : 23.333334 
+1.5.2. Hằng 
+1.5.2.1. Định nghĩa 
+Hằng là một đại lƣợng có giá trị không thay đổi trong quá trình thực 
+thi chƣơng trình. 
+Xem xét đoạn chƣơng trình sau đây, để thấy sự cần thiết phải khai 
+báo trong chƣơng trình một số đại lƣợng có giá trị không thay đổi trong 
+toàn bộ chƣơng trình: 
+ Ví dụ 1.27 
+Viết chƣơng trình tính diện tính hình tròn, khi biết bán kính của 
+đƣờng tròn. 
+1 #include <stdio.h> 
+2 int main() 
+3 { 
+4     float r, pi, dt; 
+5     pi = 3.14159; 

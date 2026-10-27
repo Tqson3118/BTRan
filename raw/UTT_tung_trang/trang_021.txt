@@ -1,0 +1,39 @@
+// Trang 21 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+21 
+Chƣơng 1 
+CÁC KHÁI NIỆM CƠ BẢN CỦA NGÔN NGỮ C 
+ 
+Nội dung của Chương 1 đề cập đến những khái niệm ban đầu của 
+ngôn ngữ lập trình C, một ngôn ngữ đã ra đời từ khá lâu, là nền tảng cho 
+rất nhiều ngôn ngữ lập trình hiện đại ngày nay. Có rất nhiều vấn đề mà 
+một người mới bắt đầu làm quen với một ngôn ngữ lập trình gặp phải, 
+chẳng hạn như ngôn ngữ đó sử dụng tập ký hiệu nào là hợp lệ, quy cách 
+viết một chương trình theo đúng cấu trúc của ngôn ngữ, cần bao nhiêu 
+đại lượng như biến và hằng trong một chương trình và kiểu dữ liệu của 
+các biến, hằng đó như thế nào? Giữa các biến, hằng và các toán tử có 
+một mối quan hệ ra sao trong một biểu thức, cần sử dụng công cụ (tool) 
+nào để soạn thảo và biên dịch chương trình. Những vấn đề này sẽ được 
+giới thiệu và giải đáp chi tiết trong nội dung của Chương 1, các khái 
+niệm cơ bản của ngôn ngữ C. 
+1.1. GIỚI THIỆU NGÔN NGỮ C  
+1.1.1. Lịch sử ngôn ngữ lập trình C 
+Lập trình cấu trúc là phƣơng pháp tổ chức, phân chia chƣơng trình 
+thành các hàm, thủ tục, chúng đƣợc dùng để xử lý dữ liệu nhƣng lại tách 
+rời các cấu trúc dữ liệu. Thông qua các ngôn ngữ Foxpro, Pascal, C, v.v. 
+đa số những ngƣời làm Tin học đã khá quen biết với phƣơng pháp lập 
+trình này. 
+Năm 1972, tại phòng thí nghiệm Bell, lập trình viên Dennis Ritchie 
+đã tạo ra một ngôn ngữ mới có tên C. (Đƣợc dùng để thay thế ngôn ngữ 
+lập trình cũ mà anh ta đang sử dụng là ngôn ngữ B. C có nguồn gốc từ 
+ngôn ngữ BCPL do Martin Richards phát triển, BCPL sau đó đã đƣợc 
+Ken Thompson phát triển thành ngôn ngữ B. Trong khi BCPL và B không 
+hỗ trợ kiểu dữ liệu, thì C đã có nhiều kiểu dữ liệu khác nhau. Những kiểu 
+dữ liệu chính gồm: kiểu ký tự (character), kiểu số nguyên (interger) và 
+kiểu số thực (float)). 
+Ngôn ngữ C đƣợc thiết kế với một mục tiêu: Sử dụng để viết hệ điều 
+hành. (Ban đầu, ngôn ngữ C đƣợc phát triển để sử dụng trong hệ điều 
+hành UNIX. Nó kế thừa nhiều tính năng của các ngôn ngữ trƣớc đây nhƣ 
+B và BCPL). Ngôn ngữ cực kỳ đơn giản và linh hoạt và sớm đƣợc sử 
+dụng cho nhiều loại chƣơng trình khác nhau. Nó nhanh chóng trở thành 
+một trong những ngôn ngữ lập trình phổ biến nhất trên thế giới. 

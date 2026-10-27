@@ -1,0 +1,38 @@
+// Trang 174 - Ngôn ngữ lập trình C_ebook.pdf
+
+171
+lệnh này, chương trình sẽ cấp phát vùng nhớ dữ liệu cho biến c gồm 4 
+biến thành phần như sau:
+    c.tenTB               c.namSanXuat     c.giaTien c.trangThai 
+                                                                                             
+    c
+Quat
+2019
+225.5
+T
+Câu lệnh ở dòng lệnh số 2 là câu lệnh khai báo biến p là một biến 
+con trỏ cấu trúc thuộc kiểu cấu trúc ThietBi. Trong câu lệnh này, từ 
+khóa struct là bắt buộc, ThietBi là tên của kiểu cấu trúc, * là toán tử 
+bắt buộc đặt trước tên biến p để thể hiện p là biến con trỏ. Chương trình 
+sẽ cấp phát một vùng nhớ cho con trỏ p dùng để lưu trữ địa chỉ của vùng 
+nhớ mà con trỏ p muốn trỏ tới. Vùng nhớ của biến con trỏ p lúc này có 
+thể có kích thước là 4 byte (hoặc 8 byte, tùy thuộc vào phần cứng) và 
+được khởi tạo một giá trị ngẫu nhiên như hình dưới, biến p không có 
+các biến thành phần (tenTB, namSanXuat, giaTien, trangThai) của 
+kiểu ThietBi như biến c.
+p
+1824868116
+Như vậy, cú pháp chung để khai báo một biến con trỏ kiểu cấu 
+trúc sẽ là:
+struct TênKiểuCấuTrúc  *TênBiếnConTrỏ;
+Sau khi khai báo, có thể sử dụng con trỏ cấu trúc để trỏ tới một 
+vùng nhớ cấu trúc cùng kiểu cấu trúc với con trỏ. Ví dụ, đoạn lệnh sau:
+1
+2
+p = &c;
+p->namSanXuat = 2015; //tuc: c.namSanXuat = 2015;
+sẽ lưu trữ giá trị 2015 vào vùng nhớ c.namSanXuat bằng cách 
+dùng con trỏ p. Ở đây, câu lệnh p = &c; ở dòng lệnh số 1 sẽ lưu địa chỉ 
+của biến c vào con trỏ p. Ở câu lệnh ở dòng lệnh số 2, toán tử mũi tên 
+(->) được sử dụng để yêu cầu con trỏ p truy xuất tới biến thành phần 
+namSanXuat của vùng nhớ mà p đang lưu địa chỉ, trong trường hợp này 

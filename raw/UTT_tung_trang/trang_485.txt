@@ -1,0 +1,71 @@
+// Trang 485 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+485 
+  
+ 
+case 3: capnhat(sv, spt); break; 
+  
+ 
+case 4: hienthi(sv, spt); break; 
+  
+ 
+case 5: tb_sv(sv, spt);break; 
+  
+ 
+case 6: caonhat(sv, spt);break; 
+  
+ 
+case 7: thapnhat(sv, spt);break; 
+  
+ 
+case 8:find(sv, spt);break; 
+  
+ 
+case 9: { 
+  
+ 
+ 
+     Sx_theo_tong(sv, spt); 
+  
+ 
+ 
+ 
+ hienthi(sv, spt); 
+  
+ 
+ 
+ 
+ break; 
+  
+ 
+ 
+    } 
+  
+ 
+default: printf("Khong co lua chon nay\n"); break; 
+  
+} 
+  
+printf("Nhan phim y de tiep tuc:");  
+  
+scanf("%s", &ok);  
+ } while (ok == 'y'); 
+ if (ok!='y') printf("CAM ON BAN DA THUC HIEN CHUONG 
+TRINH!\n"); 
+ return 0; 
+} 
+ Kết quả chƣơng trình 
+------------------------------------------- 
+             CHUONG TRINH CHINH 
+------------------------------------------- 
+ 1. Them ho so sinh vien 
+ 2. Xoa ho so sinh vien 
+ 3. Cap nhat ho so sinh vien 
+ 4. Hien thi toan bo thong tin sinh vien 
+ 5. Tinh diem tong ket cua sinh vien 
+ 6. Hien thi sinh vien co diem tong ket cao nhat 
+ 7. Hien thi sinh vien co diem tong ket thap nhat 
+ 8. Tim kiem sinh vien dua vao ma sinh vien 
+ 9. Sap xep danh sach sinh vien dua vao diem tong ket 
+Lua chon cong viec(1-9):1 
+Nhap vao ma sinh vien:sv01 

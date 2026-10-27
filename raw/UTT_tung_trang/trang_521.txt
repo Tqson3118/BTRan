@@ -1,0 +1,76 @@
+// Trang 521 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+521 
+19   
+// test3.txt de trang noi dung, duoc cap nhat ket qua khi 
+bien dich chuong trinh 
+20   
+printf("Nhap ten tep moi khi hop nhat hai tep: "); 
+21   
+scanf("%s",fname3); 
+22   
+f1=fopen(fname1, "r"); 
+23   
+f2=fopen(fname2, "r"); 
+24   
+if(f1==NULL || f2==NULL) 
+25   
+{ 
+26  // 
+ 
+Thong bao loi 
+27   
+ 
+printf(" Tep khong ton tai hoac loi khi mo 
+ra...!!\n"); 
+28   
+ 
+exit(EXIT_FAILURE); 
+29   
+} 
+30   
+fnew=fopen(fname3, "w"); 
+31   
+if(fnew==NULL) 
+32   
+{ 
+33  // 
+ 
+Thong bao loi 
+34   
+ 
+printf(" Tep khong ton tai hoac loi khi mo 
+ra...!!\n"); 
+35   
+ 
+exit(EXIT_FAILURE); 
+36   
+} 
+37   
+while((ch=fgetc(f1))!=EOF) 
+38   
+{ 
+39   
+ 
+fputc(ch, fnew); 
+40   
+} 
+41   
+while((ch=fgetc(f2))!=EOF) 
+42   
+{ 
+43   
+ 
+fputc(ch, fnew); 
+44   
+} 
+45   
+printf(" Ghep noi 2 tep vao tep %s thanh cong..!!\n\n", 
+fname3); 
+46   
+fclose(f1); 
+47   
+fclose(f2); 
+48   
+fclose(fnew); 
+49  } 

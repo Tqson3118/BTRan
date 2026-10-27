@@ -1,0 +1,58 @@
+// Trang 458 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+458 
+ Ví dụ 6.28. 
+Bài toán tính tiền điện cho các hộ gia đình trong khu phố: 
+Viết chƣơng trình tính tiền điện cho các hộ gia đình của một khu phố 
+có n hộ (n đƣợc nhập từ bàn phím).  
+Thông tin về một hộ gia đình gồm có tên chủ hộ, số điện tiêu thụ 
+tháng trƣớc, số điện tiêu thụ tháng này, số tiền phải trả. Biết rằng: 
+o Số tiền phải trả đƣợc tính dựa vào số điện tiêu thụ.  
+o Điện tiêu thụ = Điện tiêu thụ tháng này - Điện tiêu thụ tháng trƣớc. 
+o  Đơn giá/1 kWh đƣợc tính theo hình thức lũy tiến nhƣ sau: 
+Bậc tính 
+Giá 
+Bậc 1: Cho kWh từ 0 - 50 
+ 
+1.678 
+Bậc 2: Cho kWh từ 51 - 100 
+ 
+1.734 
+Bậc 3: Cho kWh từ 101 - 200 
+ 
+2.014 
+Bậc 4: Cho kWh từ 201 - 300 
+ 
+2.536 
+Bậc 5: Cho kWh từ 301 - 400 
+ 
+2.834 
+Bậc 6: Cho kWh từ 401 trở lên 
+ 
+2.927 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Nhập thông tin của các hộ gia đình, sử dụng mảng các cấu trúc; 
+- Tính tiền điện cho các hộ gia đình và hiển thị ra màn hình. 
+- Thống kê hộ sử dụng theo từng loại: 
+c1. < 100 kWh 
+c2. > 101 kWh và < 300 kWh 
+c3. > 301 kWh 
+ Chƣơng trình: 
+1 
+#include<stdio.h> 
+2 
+ 
+3 
+#define max 100 
+4 
+struct hogd 
+5 
+{ 
+6 
+char ht[30]; 
+7 
+float csd, css; 
+8 
+double tiendien; 
+9 
+}; 

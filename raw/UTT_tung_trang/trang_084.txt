@@ -1,0 +1,33 @@
+// Trang 84 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+84 
+ Bài tập 1.11 
+Sử dụng Turbo C hoặc Dev C++, soạn thảo chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 void main() 
+4 { 
+5 int a = 10, b = 5,c = 10, d; 
+6 clrscr(); 
+7 printf("\n Minh hoa phep toan tang giam \n"); 
+8 d = a == (b=c); 
+9 printf(" A :a =%d b =%d c =%d d =%d\n",a,b,c,d); 
+10 a = b = c = 5; 
+11 a += b += c; 
+12 printf(" B :a =%d b =%d c =%d \n",a,b,c); 
+13 c = a < b ? a++ : b++; 
+14 printf(" C :a =%d b =%d c =%d \n",a,b,c); 
+15 c = a > b ? a++ : b++; 
+16 printf(" D :a =%d b =%d c =%d \n",a,b,c); 
+17 getch(); 
+18 } 
+Yêu cầu: 
+- Biên dịch và chạy chƣơng trình? Chƣơng trình có lỗi? Hãy sửa lỗi 
+của chƣơng trình? 
+- Nếu không còn lỗi, hãy cho biết kết quả của chƣơng trình và giải thích? 
+- Giải thích dòng lệnh 8. 
+- Giải thích dòng lệnh 11. 
+- Giải thích dòng lệnh 13. 
+- Giải thích dòng lệnh 15. 
+ Bài tập 1.12 
+Sử dụng Turbo C hoặc Dev C++, soạn thảo chƣơng trình sau đây: 

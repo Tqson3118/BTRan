@@ -1,0 +1,42 @@
+// Trang 164 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+164 
+19              printf("*");             
+20          } 
+21          printf("\n"); 
+22      }     
+23  } 
+Kết quả chƣơng trình: 
+ 
+Nhap n: -2 
+ 
+Phai nhap n > 0 
+ 
+Nhap lai n: 4 
+ 
+* 
+ 
+** 
+ 
+*** 
+ 
+**** 
+ Ví dụ 3.22 
+Nhập vào một số n (n  > 0), kiểm tra xem số đó có phải là số hoàn 
+hảo không? 
+In ra các số hoàn hảo nhỏ hơn n (số hoàn hảo là số có tổng các ƣớc = 
+chính nó, chẳng hạn 6 có các ƣớc 1, 2, 3 và 1 + 2 + 3 = 6). 
+Phác họa lời giải: 
+- Kiểm tra số nhập vào n có là số hoàn hảo. Muốn kiểm tra một số 
+có là số hoản hảo hơn không, chúng ta xác định các ƣớc của n (trừ ƣớc là 
+n) và tính tổng của các ƣớc này. Nếu tổng các ƣớc bằng chính số vừa 
+nhập, thì kết luận nó là số hoàn hảo, ngƣợc lại kết luận n không phải số 
+hoàn hảo. 
+- Để liệt kê tất cả các số hoàn hảo nhỏ hơn n, chúng ta kiểm tra từng 
+số trong phạm vi từ 0 đến n, theo bƣớc 1. Nếu là số hoàn hảo thì in số đó 
+ra, ngƣợc lại bỏ qua, kiểm tra đến số tiếp theo. 
+Chƣơng trình 
+1 #include <stdio.h>  
+2 int main() {  
+3 unsigned n, i, j, sum;  
+4 sum=0; 

@@ -1,0 +1,73 @@
+// Trang 168 - Ngôn ngữ lập trình C_ebook.pdf
+
+165
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+	
+char tam[2];
+	
+struct ThietBi  c = {“NA”, 0, 0, ‘T’};
+	
+printf(“Nhap thong tin cua 1 thiet bi:\n”);
+	
+printf(“Nhap ten: “);
+	
+gets(c.tenTB);
+	
+printf(“Nhap nam san xuat: “);
+	
+scanf(“%d”,&c.namSanXuat);
+	
+printf(“Nhap gia tien: “);
+	
+scanf(“%f”,&c.giaTien);
+	
+	
+gets(tam);
+	
+printf(“Nhap trang thai: Tot (T) hoac Hong 
+(H): “);
+	
+scanf(“%c”,&c.trangThai);
+	
+	
+printf(“\nThong tin thiet bi da nhap:\n”);
+	
+printf(“%s, %d, %.1f, %c\n”,c.tenTB,c.nam-
+SanXuat,c.giaTien,c.trangThai);
+	
+getch();
+	
+return 0;
+}
+Trong chương trình này, kiểu cấu trúc ThietBi đã được định nghĩa 
+ở trước hàm main ở đoạn từ dòng lệnh số 4 đến dòng lệnh số 10. Việc 
+định nghĩa kiểu cấu trúc ThietBi trước hàm main nhằm đảm bảo rằng 
+kiểu ThietBi được tạo ra có thể được sử dụng trong toàn chương trình 
+(hàm main và các hàm khác – nếu có). Trong chương trình chính – hàm 
+main – biến c thuộc kiểu cấu trúc ThietBi được khai báo và khởi tạo 
+giá trị ban đầu ở dòng lệnh số 15. Vùng nhớ dành cho biến c được cấp 
+phát và khởi tạo giá trị ban đầu như hình sau:

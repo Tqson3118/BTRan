@@ -1,0 +1,71 @@
+// Trang 373 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+373 
+ Kết quả chƣơng trình: 
+ 
+Nhap so phan tu cua mang = 10 
+ 
+Hien thi cac phan tu cua mang: 
+ 
+98.031403   87.193977       97.529831       74.747459  
+ 
+55.821102   39.637440       28.904387       76.005737  
+ 
+46.360821       43.713795 
+ Bài tập 5.2 
+Lập trình nhập vào một mảng gồm n số nguyên. Hiển thị mảng ra 
+màn hình, đồng thời in các số lẻ ra màn hình? 
+ Phác thảo lời giải 
+- Xây dựng hàm Nhap_mang() để nhập các phần tử của mảng. 
+- Xây dựng hàm Hien_thi() để hiển thị các phần tử của mảng 
+- Xây dựng hàm In_so_le() để liệt kê các số lẻ của mảng (số lẻ là số 
+không chia hết cho 2). 
+- Cả ba hàm trên đều sử dụng vòng lặp for. 
+ Chƣơng trình: 
+1 
+#include<stdio.h> 
+2 
+#include<conio.h> 
+3 
+void Nhap_mang(int a[], int n) 
+4 
+ 
+{ 
+5 
+ 
+ for (int i = 0; i < n; i++) 
+6 
+ 
+ 
+ { 
+7 
+ 
+ 
+ printf("Phan tu thu %d: ", i); 
+8 
+  
+ 
+scanf("%d", &a[i]); 
+9 
+  
+ 
+ } 
+10  
+} 
+11 void Hien_thi(int a[], int n) 
+12  
+{ 
+13   
+for (int i = 0; i < n; i++) 
+14   
+ 
+{ 
+15   
+ 
+printf("%d \t", a[i]); 
+16   
+ 
+} 
+17  
+} 
+18  

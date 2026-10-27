@@ -1,0 +1,23 @@
+// Trang 164 - Ngôn ngữ lập trình C_ebook.pdf
+
+161
+{
+		
+Khai báo các biến thành phần;
+};
+7.1.3. Khai báo biến kiểu cấu trúc
+Các thao tác định nghĩa kiểu cấu trúc ở trên không tạo ra bất kỳ 
+vùng nhớ dữ liệu nào trong bộ nhớ chương trình, mà thay vào đó là tạo 
+ra các kiểu dữ liệu mới để dùng cho việc khai báo biến. Các biến kiểu 
+cấu trúc cũng được khai báo tương tự như các biến kiểu dữ liệu khác. 
+Xét câu lệnh khai báo biến sau:
+struct SinhVien  a,b;
+Câu lệnh này đã khai báo ra biến a thuộc kiểu cấu trúc SinhVien 
+và biến b thuộc kiểu cấu trúc SinhVien . Trong câu lệnh này, từ khóa 
+struct là bắt buộc, SinhVien  là tên của kiểu cấu trúc đã được định 
+nghĩa trước đó, và a,b là tên của các biến được khai báo. Vì thuộc kiểu 
+cấu trúc SinhVien  nên mỗi biến a và b sẽ có 5 biến thành phần, mang tên 
+gọi lần lượt là hoTen, MSSV, diemGiuaKy, diemCuoiKy, diemTongKet. 
+Vùng nhớ của các biến a và b sẽ được phát sinh như hình sau:
+Tổng kích thước vùng nhớ của biến a là 64 bytes  
+Tổng kích thước vùng nhớ của biến b là 64 bytes  

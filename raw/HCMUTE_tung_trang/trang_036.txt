@@ -1,0 +1,64 @@
+// Trang 36 - Ngôn ngữ lập trình C_ebook.pdf
+
+33
+Trong chương trình trên, biến a, b được khai báo bên ngoài có đặc 
+tính là biến chung, hàm main nhập giá trị cho 2 biến a, b. Trong hàm 
+con tinhhieu(), giá trị a và b được sử dụng với nội dung biến đã được 
+cập nhật trong hàm main. Nội dung của các biến cục bộ có thể được truy 
+xuất, thay đổi bởi các câu lệnh trong bất kỳ hàm nào. Trong ngôn ngữ 
+lập trình C, các biến không có thuộc tính truy cập nên quyền truy cập 
+các biến chung là như nhau.
+ Biến cục bộ hay biến địa phương (local variable): các biến cục 
+bộ được khai báo bên trong các hàm, kể cả hàm main. Phạm vi hoạt 
+động của các biến cục bộ là trong các hàm mà nó được khai báo. Các 
+hàm không có khả năng truy xuất các biến cục bộ trong các hàm khác. 
+Ví dụ, biến cục bộ được khai báo và sử dụng như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+#include <stdio.h>
+#include <conio.h>
+void tinhhieu(){
+      int a,b,hieu ;
+      hieu = a - b;     //tinh hieu
+	
+printf(“Hieu la: %d \n”,hieu);
+}
+int main (void)
+{
+	
+int a,b,tong ;
+      printf (“Nhap so thu nhat : \n”);
+	
+scanf(“%d”,&a);  //nhap so nguyen tu ban phim
+	
+printf(“Nhap so thu hai: \n”);
+	
+scanf(“%d”,&b);  //nhap so nguyen tu ban phim
+	
+tong = a + b;     //tinh tong
+	
+printf(“Tong la: %d \n”,tong);  //in ket qua
+	
+tinhhieu();
+      getch(); //cho nhap 1 ky tu bat ky
+	
+return 0; 	
+}

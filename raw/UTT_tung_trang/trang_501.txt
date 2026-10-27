@@ -1,0 +1,40 @@
+// Trang 501 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+501 
+o Tạo một tệp mới. 
+o Mở tệp tin hiện có. 
+o Đóng tệp tin.  
+o Đọc và ghi nội dung trong tệp tin. 
+7.2.2. Khai báo tệp tin 
+Khi làm việc với các tệp, bạn cần khai báo một con trỏ của loại tệp. 
+Khai báo này là cần thiết để liên lạc giữa các tập tin và chƣơng trình. 
+Cú pháp: 
+ 
+FILE * fptr; 
+ 
+Trong đó fptr là biến con trỏ, đại diện cho tệp tin. 
+ Ví dụ 7.1 
+FILE * f1, f2; 
+Trong đó f1, f2 là các biến con trỏ, đại diện cho tệp tin. 
+7.2.3. Mở tệp tin 
+Việc mở tệp đƣợc thực hiện thông hàm fopen() trong thƣ viện 
+“stdio.h”. 
+ 
+Cú pháp mở một tệp tin tiêu chuẩn I/O: 
+ 
+ptr = fopen("fileopen","mode") 
+ Ví dụ 7.2 
+fopen("E:\\cprogram\\data1.txt","w"); 
+Giả sử tệp data1.txt không tồn tại ở thƣ mục E:\cprogram 
+(cprogram là một thƣ mục trên máy của ngƣời dùng, lƣu các chƣơng 
+trình viết bằng ngôn ngữ C). Khi đó việc đầu tiên hàm fopen() sẽ tạo ra 
+một tệp trong thƣc mục E:\cprogram có tên data1.txt và mở tệp tin để 
+ghi theo chế độ “w”. Chế độ ghi cho phép bạn tạo và chỉnh sửa (ghi đè) 
+nội dung của tệp tin. 
+fopen("E:\\cprogram\\data2.bin","rb"); 
+Giả sử tệp nhị phân thứ hai data2.bin tồn tại ở vị trí E:\ cprogram. 
+Hàm fopen() mở tệp hiện có để đọc ở chế độ nhị phân 'rb'. Chế độ đọc chỉ 
+cho phép bạn đọc tệp, bạn không thể ghi vào tệp. 
+Các chế độ mở tệp trong chế độ chuẩn I/O: 
+ 
+ 

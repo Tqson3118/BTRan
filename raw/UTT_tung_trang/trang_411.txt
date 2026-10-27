@@ -1,0 +1,49 @@
+// Trang 411 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+411 
+35         } 
+36     } 
+ 
+37     printf("Ky tu xuat hien nhieu nhat trong chuoi '%c' voi so lan 
+xuat hien la : %d \n\n", max, ch_fre[max]); 
+38     return 0; 
+39 } 
+  Kết quả chƣơng trình: 
+Tim ky tu xuat hien nhieu nhat trong chuoi: 
+-------------------------------------------------- 
+Nhap vao chuoi: truong dai hoc cong nghe giao thong van tai 
+Ky tu xuat hien nhieu nhat trong chuoi 'g' voi so lan xuat hien la: 5 
+ Bài tập 5.22 
+Viết chƣơng trình xây dựng một chuỗi rút gọn của một chuỗi bất kỳ 
+nhập vào từ bàn phím.  
+Ví dụ: X = “aaaaabbbcccchhhaaat” thì chuỗi rút gọn sẽ là: 
+“5a3b4c3h3a1t”. 
+ Phác thảo lời giải 
+Sử dụng các hàm sau:  
+itoa(int dem,char *str,10); chuyển đổi số nguyên int dem từ hệ 10 
+thành xâu str. 
+strncpy(char *s1,char *s2, int n); sao chép tối đa n ký tự đầu của 
+chuỗi s2 vào trong s1. 
+strcat(char *s1,char *s2); ghép xâu s2 vào cuối sâu s1. 
+strcpy(str+i,str+i+dem);  xóa dem ký tự bắt đầu từ ký tự i của xâu str. 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+#include <string.h> 
+4 
+void Nhap(char *s)     
+5 
+{   
+6 
+    printf("Nhap chuoi ky tu: ");  
+7 
+ 
+fflush(stdin); 
+8 
+ 
+gets(s);  
+9 
+} 

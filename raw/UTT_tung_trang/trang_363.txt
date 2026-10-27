@@ -1,0 +1,37 @@
+// Trang 363 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+363 
+• Địa chỉ c: nếu tìm thấy. 
+strtok(s1, s2):  
+• Nếu s2 có xuất hiện trong s1: Tách chuỗi s1 thành hai chuỗi: Chuỗi đầu 
+là những ký tự cho đến khi gặp chuỗi s2 đầu tiên, chuỗi sau là những ký 
+tự còn lại của s1 sau khi đã bỏ đi chuỗi s2 xuất hiện trong s1. 
+• Nếu s2 không xuất hiện trong s1 thì kết quả chuỗi tách vẫn là s1. 
+5.3.5. Một số dạng bài tập về chuỗi ký tự 
+ Ví dụ 5.59 
+Nhập vào một chuỗi ký tự. Đƣa ra màn hình cho biết chuỗi ký tự đó 
+có đối xứng hay không? 
+Gợi ý: Cho chuỗi s, s đƣợc gọi là chuỗi đối xứng nếu chuỗi đảo 
+ngƣợc s thu đƣợc một chuỗi giống s. Chẳng hạn, “abcba” là một chuỗi đối 
+xứng, “abcdba” không là chuỗi đối xứng. 
+Cách 1:  
+Phác thảo lời giải  
+- Nhập vào một chuỗi a; 
+- Sử dụng hàm strcpy() để sao chép nội dung của chuỗi a vào chuỗi b; 
+- Sử dụng hàm strrev() để đảo ngƣợc chuỗi b, kết quả lƣu vào b; 
+- Sử dụng hàm strcmp(a, b) để so sánh hai chuỗi a, b có bằng nhau; 
+- Nếu strcmp(a, b) = 0 thì kết luận a là chuỗi đối xứng, ngƣợc lại kết 
+luận a không phải là chuỗi đối xứng. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <string.h> 
+3 int main() 
+4 { 
+5   char a[100], b[100]; 
+6   printf("Nhap vao mot chuoi:\n"); 
+7   gets(a); 
+8   strcpy(b, a);  // sao chep a vao b 
+9   strrev(b);  // dao nguoc xau b 
+10   if (strcmp(a, b) == 0)  // so sanh chuoi ban dau voi chuoi dao 
+nguoc 
+11     printf("%s la chuoi doi xung.\n", a); 

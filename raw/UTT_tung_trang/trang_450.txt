@@ -1,0 +1,80 @@
+// Trang 450 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+450 
++ 50 > Điểm trung bình: Yếu. 
+- Hiển thị thông tin của các sinh viên sau khi đã cập nhật điểm trung bình. 
+ Chƣơng trình: 
+1  
+#include <stdio.h> 
+2  
+#include <string.h> 
+3  
+#define N 4 
+4  
+struct sinhvien{ 
+5  
+    char ten_sv[20]; 
+6  
+    int d_anh; 
+7  
+    int d_toan; 
+8  
+    int d_ly; 
+9  
+    double d_tb; 
+10  
+    char xeploai[15]; 
+11  
+}; 
+12  
+static struct sinhvien sv[]={ 
+13  
+    {"Cuong", 90, 82, 88}, 
+14  
+    {"Nam", 95, 90, 89},  
+15  
+    {"Sinh", 52, 62, 39},  
+16  
+    {"Thuy", 61, 82, 88} 
+17  
+};  
+18  
+int main() 
+19  
+{ 
+20  
+    int i; 
+21  
+    //tinh diem trung binh cho moi sinh vien 
+22  
+    for(i=0; i<N; i++) 
+23  
+ 
+{ 
+24  
+     
+sv[i].d_tb = (sv[i].d_anh + sv[i].d_toan +sv[i].d_ly)/3; 
+25  
+    } 
+26  
+    //xep loai dua vao diem trung binh 
+27  
+     for(i = 0; i < N; i++) 
+28  
+ 
+{ 
+29  
+     
+if (sv[i].d_tb >= 90) strcpy(sv[i].xeploai,"Xuat sac"); 
+30  
+     
+else if (sv[i].d_tb >= 80) strcpy(sv[i].xeploai,"Gioi"); 
+31  
+     
+ 
+ else 
+if 
+(sv[i].d_tb 
+>= 
+65) 
+strcpy(sv[i].xeploai,"Kha"); 

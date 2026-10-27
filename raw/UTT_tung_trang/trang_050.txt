@@ -1,0 +1,46 @@
+// Trang 50 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+50 
+b. Hằng số thực 
+Hằng số thực đƣợc viết theo hai cách: 
+Cách 1: Theo dạng thập phân. Số thực gồm phần nguyên, dấu chấm 
+thập phân và phần thập phân.   
+ Ví dụ 1.33 
+Các hằng số thực: 214.55, 12.0 
+Cách 2: Theo dạng mũ. Số thực đƣợc tách gồm hai phần là định trị 
+và bậc. Phần định trị là một số nguyên hoặc số thực đƣợc viết dƣới dạng 
+thập phân, phần bậc là một số nguyên biểu diễn số mũ của cơ số 10, hai 
+phần này cách nhau bởi ký tự e hoặc E.  
+ Ví dụ 1.34 
+ 0.12E3 biểu diễn giá trị 0.12*103 = 120.0. 
+1.23e - 2 biểu diễn giá trị 1.23 * 10^- 2 = 0.0123. 
+c. Hằng ký tự 
+Là một ký tự đƣợc viết trong hai dấu nháy đơn. 
+ Ví dụ 1.35 
+„a‟ là một hằng ký tự. Giá trị của „a‟ chính là mã của ký tự „a‟ trong 
+bảng mã ASCII. Nhƣ vậy giá trị của “a” là 97. 
+Đối với một số hằng ký tự đặc biệt, ta cần sử dụng cách viết sau 
+(thêm dấu \ vào trƣớc ký tự đó): 
+Bảng 1.4. Hằng ký tự đặc biệt  
+Cách viết 
+Ký tự 
+„\‟‟ 
+‟ 
+„\”‟ 
+” 
+„\\‟ 
+\ 
+„\n‟ 
+xuống dòng 
+„\0‟ 
+\0 (null) 
+„\t‟ 
+Tab 
+„\b‟ 
+Backspace 
+„\r‟ 
+Về đầu dòng 
+„\f‟ 
+Sang trang 
+d. Hằng ký tự 
+Là một dãy ký tự bất kỳ đặt trong hai dấu nháy kép. 

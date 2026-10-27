@@ -1,0 +1,39 @@
+// Trang 50 - Ngôn ngữ lập trình C_ebook.pdf
+
+47
+CHƯƠNG 2
+LỆNH RẼ NHÁNH CÓ ĐIỀU KIỆN 
+Mục tiêu:
+Sau khi kết thúc chương này, người đọc có thể:
+- Phân biệt được câu lệnh đơn và câu lệnh kép.
+- Phân loại được các cú pháp lệnh rẽ nhánh khác nhau.
+- Viết được các chương trình C liên quan đến các lệnh rẽ nhánh.
+2.1. LỆNH ĐƠN VÀ LỆNH PHỨC
+Phần đầu tiên ta sẽ tìm hiểu về lệnh đơn và lệnh phức (hay 
+khối lệnh).
+2.1.1 Lệnh đơn
+Lệnh đơn là một câu lệnh không chứa các câu lệnh khác bên trong 
+nó và kết thúc bằng một dấu chấm phẩy (;).
+Ví dụ 2.1:
+1
+2
+3
+int x=5; //một câu lệnh đơn
+x++; //một câu lệnh đơn
+printf(“Giá trị x là: %d”,x); //một câu lệnh đơn
+2.1.2 Lệnh phức/ Khối lệnh
+Lệnh phức hay khối lệnh là một tập hợp nhiều lệnh đơn được đặt 
+trong cặp dấu ngoặc móc { và }.
+Ví dụ 2.2:
+1
+2
+3
+4
+5
+6
+{
+char ten[30];
+printf(“\n Nhap vao ten cua ban:”);
+scanf(“%s”, ten);
+printf(“\n Chao Ban %s”,ten);
+}

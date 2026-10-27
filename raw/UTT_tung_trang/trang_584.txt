@@ -1,0 +1,45 @@
+// Trang 584 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+584 
+STT 
+Thƣ viện chuẩn 
+Các hàm thƣờng sử dụng 
+ 
+4 
+<stdio.h> 
+ 
+Hàm printf() xuất dữ liệu ra màn hình 
+Hàm putchar() in kí tự ra màn hình 
+Hàm puts() in một chuỗi kí tự ra màn hình 
+Hàm scanf() đọc dữ liệu từ bàn phím 
+Hàm sscanf() đọc dữ liệu theo định dạng 
+Hàm getchar() đọc kí tự đầu vào 
+Hàm gets() đọc string từ bàn phím 
+Hàm fflush() làm sạch bộ đệm 
+Hàm fopen() mở file 
+Hàm fclose() để close file 
+Hàm fprintf() ghi nội dung theo định dạng vào 
+file text 
+Hàm fscanf() đọc dữ liệu có định dạng từ file 
+Hàm fputc() ghi kí tự xuống file 
+Hàm fgetc() đọc một kí tự từ file 
+Hàm fputs() ghi một chuỗi kí tự xuống file 
+Hàm fgets() đọc chuỗi kí tự từ file 
+Hàm fwrite() ghi nội dung xuống file binary 
+Hàm fread() đọc dữ liệu từ file binary 
+Hàm fseek() di chuyển con trỏ file tới vị trí bất 
+kì 
+Hàm ftell() trả về vị trí con trỏ file 
+Hàm rewind() di chuyển con trỏ file về đầu 
+file 
+Hàm fsetpos() di chuyển con trỏ file về vị trí 
+mong muốn 
+Hàm fgetpos() lấy vị trí con trỏ file hiện tại 
+Hàm feof() kiểm tra con trỏ file ở cuối file 
+5 
+<stdlib.h> 
+Hàm abs() tính giá trị tuyệt đối 
+Hàm div() lấy thƣơng và số dƣ của phép chia 
+Hàm atoi() convert string thành số nguyên 
+Hàm atof() convert string thành số thập phân 
+Hàm strtod() tách số từ string 

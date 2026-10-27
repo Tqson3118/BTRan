@@ -1,0 +1,84 @@
+// Trang 491 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+491 
+84  
+Nhanvien tg; 
+85  
+for(i = 0; I < n; i++) 
+86  
+ 
+for (j = i+1; j < n; j++) 
+87  
+ 
+{ 
+ 
+ 
+88  
+ 
+ 
+if((ds_nv+i)->tuoi < (ds_nv+j)->tuoi)  
+89  
+ 
+ 
+{ 
+90  
+ 
+ 
+tg = *(ds_nv+j); 
+91  
+ 
+ 
+*(ds_nv+j) = *(ds_nv+i); 
+92  
+ 
+ 
+*(ds_nv+i) = tg; 
+93  
+ 
+ 
+} 
+94  
+ 
+} 
+95 hienthi(ds_nv, n); 
+96 } 
+97 int main() 
+98 { 
+99  
+char ok; 
+100  
+int luachon; 
+101  
+Nhanvien ds_nv[20]; 
+102  
+int n = 0; 
+103  
+printf("-----------------------------------\n"); 
+104  
+printf("     CHUONG TRINH CHINH            \n"); 
+105  
+printf("-----------------------------------\n"); 
+106  
+printf("1. Nhap thong tin nhan vien\n"); 
+107  
+printf("2. In danh sach nhan vien da sap xep theo ten\n"); 
+108  
+printf("3. In danh sach nhan vien sap xep theo tuoi\n\n"); 
+109 do 
+110 { 
+111  
+printf("Nhap vao lua chon (1-3): ");  
+112  
+scanf("%d", &luachon); 
+113  
+switch (luachon) 
+114  
+{ 
+115  
+case 1: Themnv(ds_nv, &n); break; 
+116  
+case 2: In_ds_theo_ten(ds_nv, n); break; 
+117  
+case 3: In_ds_theo_tuoi(ds_nv, n); break; 
+118  
+default: printf("Khong ton tai lua chon nay!\n"); 

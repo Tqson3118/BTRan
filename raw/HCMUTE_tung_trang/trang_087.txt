@@ -1,0 +1,59 @@
+// Trang 87 - Ngôn ngữ lập trình C_ebook.pdf
+
+84
+Giải thích hoạt động:
+Ví dụ này cho ta thấy kết quả của biểu thức điều kiện của vòng 
+lặp do… while là do khối lệnh của nó tạo ra, tương ứng với dữ liệu nhập 
+vào. Dòng 14 là điều kiện để đảm bảo các giá trị đã nhập vào cho 3 biến 
+sẽ là độ dài 3 cạnh của tam giác: nếu điều này đúng thì thoát ra khỏi 
+vòng lặp, nếu sai thì lặp lại cho đến khi nào đúng thì mới thoát. Kết 
+hợp ví dụ này và ví dụ 2.4 ta sẽ có một bài toán tính chu vi và diện 
+tích của một tam giác và có xét đến các điều kiện của 3 cạnh của tam 
+giác đó.
+3.4. CÂU LỆNH BREAK
+Câu lệnh break; cho phép thoát khỏi for, while, do...while và 
+switch. Khi có nhiều vòng lặp lồng nhau, câu lệnh break; sẽ đưa máy ra 
+khỏi vòng lặp (hoặc switch) bên trong nhất đang chứa break. Như vậy, 
+lệnh break; cho ta khả năng thoát khỏi vòng lặp từ một điểm bất kỳ bên 
+trong vòng lặp mà không dùng đến điều kiện kết thúc vòng lặp ở biểu 
+thức điều kiện. Mọi câu lệnh break; có thể thay bằng lệnh goto với nhãn 
+ở vị trí thích hợp. Xét chương trình sau: 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+#include <stdio.h>
+int main(void)
+{
+	
+int a;
+	
+for(; ;)
+	
+{
+	
+	
+printf(“Nhap so duong: “);
+	
+	
+scanf(“%d”,&a);
+	
+	
+if (a >= 0)
+	
+	
+	
+break;
+	
+}
+	
+return 0;}

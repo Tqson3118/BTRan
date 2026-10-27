@@ -1,0 +1,46 @@
+// Trang 365 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+365 
+7 
+  gets(a); 
+8 
+   while (a[length] != '\0') 
+9 
+    length++; 
+10    end = length - 1; 
+11   middle = length/2; 
+12    for (begin = 0; begin < middle; begin++) 
+13   { 
+14     if (a[begin] != a[end]) 
+15     { 
+16       printf("Khong phai chuoi doi xung.\n"); 
+17       break; 
+18     } 
+19     end--; 
+20   } 
+21   if (begin == middle) 
+22     printf("%s la chuoi doi xung.\n", a); 
+23    return 0; 
+24 } 
+ Kết quả chƣơng trình: 
+ 
+Nhap vao mot chuoi: 
+ 
+abcddcba 
+ 
+abcddcba la chuoi doi xung. 
+ 
+Nhap vao mot chuoi: 
+ 
+abcdabc 
+ 
+Khong phai chuoi doi xung. 
+Cách 3: 
+Phác thảo lời giải 
+- Xây dựng hàm doixung(str) để kiểm tra tính đối xứng của chuỗi 
+str. 
+- Sử dụng hàm strlen() để xác định độ dài của chuỗi str, giả sử chuỗi 
+str có độ dài n, tức là n = strlen(str); 
+- Sử dụng các biến l, r để đánh dấu các ký tự bên trái và bên phải của 
+chuỗi str; khởi tạo các chỉ số  l = 0 và r = n - 1; 
+- Trong khi l < r: 

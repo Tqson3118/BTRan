@@ -1,0 +1,42 @@
+// Trang 80 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+80 
+6      int  r; 
+7  
+float  p, s; 
+8  
+   printf(“\n nhap r=”); scanf(“%d”,&r); 
+9  
+     p = 2 * pi * r; 
+10  
+     s = pi * r * r; 
+11  
+  printf(“\n chu vi = %3.1f”, p); 
+12         printf(“\n dien tich = %3.1f”, s); 
+13  
+  getch(); 
+14  
+} 
+Yêu cầu: 
+- Biên dịch và chạy chƣơng trình? 
+- Cho biết chƣơng trình trên thực hiện công việc gì? 
+- Cho biết ý nghĩa của dòng lệnh #define pi 3.14? 
+- Dòng lệnh 9, 10 đƣợc gọi là gì?  
+Gợi ý:  
+- Chƣơng trình tính diện tích và chu vi. 
+- Ý nghĩa của lệnh #define pi 3.14: khai báo hằng pi có giá trị là 3.14. 
+B. BÀI TẬP TỰ GIẢI 
+ Bài tập 1.7 
+Sử dụng Turbo C hoặc Dev C++, soạn thảo chƣơng trình sau đây: 
+1 #include<stdio.h> 
+2 #include<conio.h> 
+3 #include<math.h> 
+4 void   main() 
+5 { 
+6 int x, n; 
+7 float   t, p, q; 
+8 printf(“\n nhap n va x= ”); 
+9 scanf(“%d%d”,&n,&x); 
+10 t = sqrt(x + n*3/2); 
+11 P = exp(x) + pow(x,n); 
+12 q = sin(x) + log(x)  + pow(10,n); 

@@ -1,0 +1,35 @@
+// Trang 31 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+31 
+kết quả không nhƣ chúng ta mong đợi. Trong trƣờng hợp này chúng ta 
+nên sử dụng dấu ngoặc cho các tham số của macro #define bp(a) (a)*(a). 
+1.3.2.4. Khai báo nguyên mẫu 
+Trong phần này chúng ta nêu một số thông tin về khai báo nguyên 
+mẫu để giải thích cấu trúc chƣơng trình chứ không có ý định trình bày về 
+hàm, chi tiết về hàm sẽ đƣợc trình bày trong phần định nghĩa hàm. 
+Nguyên mẫu một hàm là dòng khai báo cung cấp các thông tin: tên 
+hàm, kiểu hàm, số đối số và kiểu từng đối số của hàm. 
+Cú pháp khai báo nguyên mẫu 
+<kiểu_hàm> <tên_hàm> ([khai báo đối]); 
+ Ví dụ 1.8 
+Cho các khai bao nguyên mẫu sau đây: 
+int min (int, int); 
+float binhphuong (float y);  
+float giatri(int, float); 
+Lƣu ý:  
+Phần khai báo đối của nguyên mẫu, mục đích là xác định số đối số và 
+kiểu của từng đối số, do vậy bạn có thể không viết tên của đối số nhƣng 
+kiểu của chúng thì phải có và bạn phải liệt kê đầy đủ kiểu của từng đối số. 
+1.3.2.5. Phần định nghĩa các cấu trúc 
+Ngoài những kiểu chuẩn đã đƣợc cung cấp sẵn của ngôn ngữ, ngƣời 
+lập trình có thể định nghĩa ra các kiểu mới từ những kiểu đã có bằng cách 
+sử dụng từ khoá typedef (type define). 
+Với cú pháp nhƣ sau: 
+typedef <mô_tả_kiểu> <tên_kiểu_mới>; 
+Trong đó <tên_kiểu_mới> là tên kiểu cần tạo do ngƣời lập trình đặt 
+theo quy tắc về tên của ngôn ngữ và <mô_tả_kiểu> là phần chúng ta định 
+nghĩa các thành phần cấu  thành lên kiểu mới. 
+ Ví dụ 1.9 
+Cho hai định nghĩa cấu trúc sau đây: 
+typedef unsigned char byte;  
+typedef long nguyen_dai; 

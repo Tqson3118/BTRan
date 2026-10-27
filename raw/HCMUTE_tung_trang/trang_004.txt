@@ -1,0 +1,18 @@
+// Trang 4 - Ngôn ngữ lập trình C_ebook.pdf
+
+GIÁO TRÌNH 
+NGÔN NGỮ LẬP TRÌNH C 
+(Ngành kỹ thuật máy tính) 
+TRƯƠNG NGỌC SƠN, 
+LÊ MINH, 
+TRƯƠNG NGỌC HÀ, 
+LÊ MINH THÀNH 
+. 
+Bản tiếng Việt ©, TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP. HCM, NXB ĐHQG-HCM và 
+TÁC GIẢ. 
+Bản quyền tác phẩm đã được bảo hộ bởi Luật Xuất bản và Luật Sở hữu trí tuệ Việt Nam. Nghiêm cấm 
+mọi hình thức xuất bản, sao chụp, phát tán nội dung khi chưa có sự đồng ý của Trường đại học Sư 
+phạm Kỹ thuật TP. HCM và Tác giả. 
+ 
+ĐỂ CÓ SÁCH HAY, CẦN CHUNG TAY BẢO VỆ TÁC QUYỀN! 
+ 

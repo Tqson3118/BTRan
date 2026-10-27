@@ -1,0 +1,14 @@
+// Trang 75 - Ngôn ngữ lập trình C_ebook.pdf
+
+72
+ Bước 1: Thực thi Biểu thức 1.
+ Bước 2: Xác định Biểu thức 2.
+Tuỳ thuộc vào tính đúng sai của Biểu thức 2 mà máy lựa chọn một 
+trong hai nhánh: nếu Biểu thức 2 có giá trị là 0 (sai) thì máy sẽ kết thúc 
+lệnh for và chuyển tới câu lệnh tiếp theo sau for; nếu Biểu thức 2 có giá 
+trị khác 0 (đúng) thì máy sẽ thực hiện Khối lệnh trong thân for, sau đó 
+thực thi Biểu thức 3, rồi quay lại Bước 2 để bắt đầu một lần lặp mới của 
+vòng lặp.
+Hình 3.1. Lưu đồ giải thuật của vòng lặp for
+Chú ý nếu Biểu thức 2 vắng mặt thì kết quả của thao tác “xác định 
+Biểu thức 2” được xem là đúng. Trong trường hợp này, việc thoát khỏi 

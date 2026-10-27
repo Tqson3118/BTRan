@@ -1,0 +1,37 @@
+// Trang 412 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+412 
+10 void RutGon(char *s) 
+11 {    int i,len,dem,length;  
+12      char kq[100], s1[100], tg[100]; 
+13      strcpy(kq,""); strcpy(tg,""); strcpy(s1,""); 
+14      length=strlen(s); 
+15      do { 
+16      dem = 1; len = strlen(s); 
+17      for (i = 0; i<len-1; i++) 
+18       if (s[i] == s[i+1]) dem++; //dem so ky tu giong nhau dau chuoi s 
+19      else break; 
+20      itoa(dem,s1,10); //doi dem thanh chuoi s1 
+21      strncpy(tg,s,1); //lay 1 ky tu dau chuoi s dua vao chuoi tg 
+22      if ((length ==1)||(len >= 1))  
+23       strcat(kq,s1); //ghep chuoi s1 va cuoi chuoi kq 
+24       strcat(kq,tg);//Ghep  ky tu  dai dien vao cuoi chuoi kq 
+25      strcpy(s+0,s+0+dem);  // Xoa dem ky tu dau tien trong chuoi s 
+26          }  while (len>1); 
+27      printf("\nChuoi rut gon: %s", kq);   
+28      } 
+29 int main() 
+30 { 
+31   char s[100]; 
+32   Nhap(s);    
+33   RutGon(s); 
+34   return 0; 
+35 } 
+ Kết quả chƣơng trình: 
+Nhap chuoi ky tu: abbbbccddd 
+Chuoi rut gon: a4b2c3d 
+B. BÀI TẬP TỰ GIẢI 
+ Bài  tập 5.23 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Nhập mảng gồm n số nguyên. Hiển thị các phần tử của mảng ra 
+màn hình. 

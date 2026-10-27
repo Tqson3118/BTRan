@@ -1,0 +1,33 @@
+// Trang 94 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+94 
+4     int a = 6; 
+5     float b = 6.7; 
+6     char c = 'A'; 
+7     long d = 8866; 
+8 char s[] = "Truong Dai hoc Cong nghe GTVT"; // Khai bao va 
+khoi tao s 
+9     printf("%6d %5.3f %.3f \n", a, b, a+b); 
+10     printf("%-5d %5ld %5ld \n", a, d, a*d); 
+11     printf("%5c \n", c); 
+12     printf("%30s \n", s); 
+13     return 0; 
+14 } 
+Kết quả chƣơng trình: 
+6 6.700 12.700 
+6      8866 53196 
+    A 
+ Truong Dai hoc Cong nghe GTVT 
+Ý nghĩa của các ký tự định dạng trong chƣơng trình: 
+- %5c: Xuất ký tự có bề rộng 5; 
+- %6d: Số nguyên có bề rộng 6; 
+- %30s: Xuất chuỗi có bề rộng 30; 
+- %5.3f: Xuất số thực có bề rộng 5 trong đó có 3 số sau dấu phẩy; 
+- %-5d: Số nguyên có bề rộng 5 nhƣng căn lề trái. 
+ Ví dụ 2.7 
+Đoạn chƣơng trình sau đây thể hiện các mã định dạng với các kiểu 
+dữ liệu khác nhau: 
+Chƣơng trình: 
+1 #include <stdio.h> 
+2 int main() 
+3 { 

@@ -1,0 +1,74 @@
+// Trang 111 - Ngôn ngữ lập trình C_ebook.pdf
+
+108
+7
+8
+9
+10
+11
+12
+	
+gets(s);
+	
+	
+printf(“Chuoi da nhap la: \n”);
+	
+puts(s);
+	
+return 0;
+}
+Trong chương trình này, lệnh gets(s); ở dòng lệnh số 7 sẽ chờ 
+người dùng nhập vào một chuỗi dữ liệu và lưu vào biến chuỗi s. Lệnh 
+puts(s); ở dòng lệnh số 10 sẽ in nội dung của dữ liệu trong biến s ra màn 
+hình. Kết quả thu được khi chạy chương trình trên sẽ là:
+1
+2
+3
+4
+Hay nhap 1 chuoi:
+Xin chao!
+Chuoi da nhap la:
+Xin chao!
+với chuỗi Xin chao! ở dòng kết quả số 2 là dữ liệu người dùng 
+nhập vào từ bàn phím.
+4.2.1.4. Các thao tác trên từng phần tử của chuỗi
+Ta có thể thao tác trên từng phần tử của một chuỗi tương tự như 
+thao tác trên từng phần tử mảng 1 chiều. 
+Xét chương trình sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+#include <stdio.h>
+ 
+int main(void)
+{
+	
+char s[10] = “Hello”;
+	
+int i,dem;
+	
+dem = 0;
+	
+for(i = 0; i < 10; i++)
+	
+	
+if(s[i] == ‘e’)
+	
+	
+	
+dem++;
+	
+printf(“Co %d ky tu e.”,dem);
+	
+return 0;
+}

@@ -1,0 +1,54 @@
+// Trang 370 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+370 
+86 
+   { 
+87 
+      if (*first == '\0' || *second == '\0') 
+88 
+         break; 
+89 
+      first++; 
+90 
+      second++; 
+91 
+   } 
+92 
+   if (*first == '\0' && *second == '\0') 
+93 
+      return 0; 
+94 
+   else 
+95 
+      return -1; 
+96 
+} 
+ Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi ky tu 
+ 
+abcdcba 
+ 
+"abcdcba" la chuoi doi xung. 
+ 
+Nhap vao chuoi ky tu 
+ 
+abccab 
+ 
+"abccab" khong la chuoi doi xung. 
+ Ví dụ 5.60 
+Nhập vào một số nguyên dƣơng? Kiểm tra số nguyên dƣơng đó có 
+đối xứng không? 
+ Phác thảo lời giải 
+- Nhập vào số nguyên dƣơng n; 
+- Xác định số nghịch đảo r của n; 
+- Nếu n = r thì kết luận n là số đối xứng, ngƣợc lại kết luận n không 
+phải số đối xứng. 
+ Chƣơng trình: 
+1 #include <stdio.h> 
+2  int main() 
+3 { 
+4    int n, r = 0, t; 
+5     printf("Nhap vao mot so nguyen:\n"); 
+6    scanf("%d", &n); 
+7     t = n; 

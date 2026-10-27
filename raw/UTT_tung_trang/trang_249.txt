@@ -1,0 +1,40 @@
+// Trang 249 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+249 
+38     if(S == n) 
+39        return 1; 
+40     else 
+41        return 0; 
+42  } 
+43  void inSHH(int n) 
+44  { 
+45     int i; 
+46     printf("\nCac so hoan hao la: "); 
+47     for(i = 1; i < n; i++) 
+48     { 
+49        if(kiemTraSHH(i) == 1) 
+50        { 
+51           printf("%d ",i); 
+52        } 
+53     } 
+54  } 
+55  int UCLN(int a,int b) 
+56  { 
+57   
+int ad = abs(a); 
+58   
+int bd = abs(b); 
+59     while(ad != bd) 
+60     { 
+61        if(ad > bd) 
+62           ad = ad - bd; 
+63        Else 
+64           bd = bd - ad; 
+65     } 
+66     return ad; 
+67  } 
+68  void phanSo(int a, int b) 
+69  { 
+70     int c = UCLN(a, b); 
+71     int am = a/c; 
+72     int bm = b/c; 

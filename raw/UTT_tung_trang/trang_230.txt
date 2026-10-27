@@ -1,0 +1,45 @@
+// Trang 230 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+230 
+7 void Delta_am(float a, float b, float c, float delta) 
+8 { 
+9  
+printf("ptvn\n");    
+10 } 
+11 void Delta_duong(float a, float b,float c, float delta, float x1,float 
+x2) 
+12 { 
+13      x1 = (-b + sqrt(delta))/(2*a); 
+14      x2 = (-b - sqrt(delta))/(2*a);  
+15  
+printf("\nPhuong trinh co 2 nghiem phan biet:\nx1 = 
+%f\nx2 = %f", x1, x2);       
+16 } 
+17 void Delta_khong(float a, float b,float c, float delta, float x1,float 
+x2) 
+18 { 
+19 x1 = x2 = -b/(2*a); 
+20 printf("\nPhuong trinh co nghiem kep:\nx1 = x2 = %f",x1);  
+21 } 
+22 void Inketqua(float a, float b, float c, float delta, float x1, float x2) 
+23 { 
+24  
+if (delta < 0) 
+25  
+Delta_am(a, b, c, delta); 
+26  
+else if (delta > 0) 
+27  
+Delta_duong(a, b, c, delta, x1, x2); 
+28  
+else  
+29  
+Delta_khong(a, b, c, delta, x1, x2); 
+30 } 
+31 int main() 
+32 { 
+33    float delta, a, b, c, x1, x2; 
+34    do 
+35    { 
+36    Nhaphs(&a); 
+37    }while (a == 0); 

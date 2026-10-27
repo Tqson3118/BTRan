@@ -1,0 +1,51 @@
+// Trang 533 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+533 
+ Nội dung đƣợc ghi vào tệp test_7_1.txt 
+ 
+ Bài tập 7.2 
+Viết chƣơng trình đọc và hiển thị nội dung của tệp văn bản đang tồn tại. 
+ Phác thảo lời giải: 
+- Nhập vào tên tệp, kiểm tra sự tồn tại của tệp. 
+- Sử dụng hàm fgetc() đọc từng ký tự, kết hợp vòng lặp while để đọc 
+tất cả các ký tự của tệp. 
+ Chƣơng trình 
+1  #include <stdio.h> 
+2  #include <stdlib.h> 
+3  int main() 
+4  { 
+5   
+FILE *fptr; 
+6   
+char fname[20]; 
+7   
+char str; 
+8   printf("\nChuong trinh in noi dung cua tep van ban :\n"); 
+9   
+printf("------------------------------\n");  
+10   
+printf(" Nhap vao ten tep tin can doc noi dung : "); 
+11   
+// Vi du doc lai tep test_7_1.txt cua bai tap 7.1 
+12   
+scanf("%s",fname); 
+13   
+fptr = fopen (fname, "r");   
+14   
+if (fptr == NULL) 
+15   
+{ 
+16   
+ 
+printf("Tep khong ton tai hoac khong the mo.\n"); 
+17   
+ 
+exit(0); 
+18   
+} 
+19   
+printf("\nNoi dung cua tep %s duoc hien thi  :\n",fname); 
+20   
+str = fgetc(fptr); 
+21   
+while (str != EOF) 

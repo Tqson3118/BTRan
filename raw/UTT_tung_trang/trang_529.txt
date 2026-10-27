@@ -1,0 +1,38 @@
+// Trang 529 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+529 
+Nhap ten: Cuong 
+Nhap gioi tinh: F (nu) M (nam) M 
+Nhap diem mon Toan - Ly - Hoa: 6 7 8 
+ 
+Nhap SV thu 3: 
+Nhap ten: Thuy 
+Nhap gioi tinh: F (nu) M (nam) F 
+Nhap diem mon Toan - Ly - Hoa: 9 8 8 
+ 
+Nhap SV thu 4: 
+Nhap ten: Mai 
+Nhap gioi tinh: F (nu) M (nam) F 
+Nhap diem mon Toan - Ly - Hoa: 9 6 8 
+____________________________________ 
+ 
+Ban da nhap thanh cong! 
+Bam phim bat ky de tiep tuc! 
+**       Nhap lua chon cua ban          ** 
+2 
+Ban da chon xuat DS sinh vien! 
+___________________________________ 
+Thong tin SV thu 1: 
+Ho ten SV: An 
+Gioi tinh: M 
+Diem Toan - Ly - Hoa: 8.00 - 8.00 - 8.00 
+Diem TB: 8.00 
+Thong tin SV thu 2: 
+Ho ten SV: Cuong 
+Gioi tinh: M 
+Diem Toan - Ly - Hoa: 6.00 - 7.00 - 8.00 
+Diem TB: 7.00 
+Thong tin SV thu 3: 
+Ho ten SV: Thuy 
+Gioi tinh: F 
+Diem Toan - Ly - Hoa: 9.00 - 8.00 - 8.00 

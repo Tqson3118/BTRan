@@ -1,0 +1,40 @@
+// Trang 93 - Ngôn ngữ lập trình C_ebook.pdf
+
+90
+{
+int a = 0,i, j = 0;
+for (i = 3; i > 0; i--)
+   {
+    while (j++<10)
+	 {   
+            if (j == 7)
+ 		
+continue;
+	     if (j%2==1) 
+               	
+printf(“%d”,j);
+      	
+}
+   }
+getch();
+return 0;
+}
+Yêu cầu:
+ Cho biết kết quả in ra màn hình của chương trình. 
+4. Hãy đọc và phân tích chương trình sau: 
+#include <stdio.h>
+#include <conio.h>
+int main (void)
+{
+  int n, i, j;
+printf(“Nhap vao so n :”);
+scanf(“%d”,&n);
+if (n == 0 || n ==1 || n == 2)
+     printf(“SNT”);
+else
+ {
+lặp 3 lần
+bắt đầu từ j=0
+khi j=7 nhảy về lệnh while bỏ qua lệnh printf
+vì j=7 mới thực hiện tiếp nên 7 chia 2 dư 1 thỏa màn đk if
+1359

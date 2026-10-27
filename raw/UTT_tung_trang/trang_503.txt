@@ -1,0 +1,39 @@
+// Trang 503 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+503 
+Lƣu ý:  
+- Hàm fopen() trả về một con trỏ tệp tin. Chƣơng trình sẽ không thay 
+đổi giá trị của con trỏ này. Nếu có lỗi xuất hiện khi mở tệp tin thì hàm trả 
+về giá trị NULL. 
+- Muốn mở tệp tin chỉ cho phép đọc, thì tệp tin đó phải tồn tại, nếu 
+không một lỗi sẽ xuất hiện. 
+- Phân biệt chế độ mở tệp để ghi đè (w, wb, w+, wb+)  với mở tệp để 
+ghi tiếp (a, ab, a+, ab+). 
+7.2.4. Đóng tệp 
+Tệp tin (cả tệp văn bản và tệp nhị phân) sẽ đƣợc đóng sau thao tác 
+đọc/ghi tệp. Đóng tệp đƣợc thực hiện bằng hàm fclose() trong thƣ viện 
+“stdio.h” 
+Cú pháp: 
+ 
+fclose(fptr); 
+Trong đó: fptr là biến con trỏ đƣợc liên kết với tệp tin sẽ đƣợc đóng. 
+7.2.5. Đọc và ghi với tệp văn bản 
+Để đọc và ghi tệp văn bản, chúng ta sử dụng các câu lệnh fprintf() và 
+fscanf(). Trong đó fprintf() và fscanf() là các phiên bản của lệnh printf() 
+và scanf() đƣợc áp dụng với tệp. Sự khác biệt duy nhất, lệnh fprintf() và 
+fscanf() mong đợi một con trỏ trỏ tới cấu trúc FILE. 
+ Ví dụ 7.3 
+ 
+Ghi vào tệp văn bản với lệnh fprintf() 
+1  #include <stdio.h> 
+2  #include <stdlib.h> 
+3  int main() 
+4  { 
+5     int num; 
+6     FILE *fptr; 
+7     fptr = fopen("data.txt","w"); 
+8     if(fptr == NULL) 
+9     { 
+10        printf("Loi!");    
+11        exit(1);              
+12     } 

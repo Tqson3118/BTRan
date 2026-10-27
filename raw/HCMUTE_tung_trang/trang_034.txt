@@ -1,0 +1,61 @@
+// Trang 34 - Ngôn ngữ lập trình C_ebook.pdf
+
+31
+để khai báo nên 3 biến a, b, tong có kiểu dữ liệu là kiểu số nguyên, 
+thay cho 3 câu lệnh khai báo đã viết trước đó là:
+int a;   
+int b;   
+int tong;  
+Tới đây, có thể thấy mỗi biến là một vùng nhớ độc lập có định 
+dạng dữ liệu nhất định được quy định bởi kiểu dữ liệu trong quá trình 
+khai báo biến. Bên cạnh việc quy định định dạng dữ liệu của vùng nhớ 
+một biến, kiểu dữ liệu còn quy định kích thước của vùng nhớ dành cho 
+biến đó. Một số kiểu dữ liệu cơ bản của C được liệt kê ở bảng dưới.
+Tên kiểu 
+dữ liệu
+Kích thước 
+vùng nhớ biến
+Định dạng dữ liệu
+Ví dụ
+char
+1 byte
+Kiểu ký tự
+A
+b
+unsigned char
+1 byte
+int
+2 byte hoặc 4 
+byte
+Kiểu số nguyên
+-3569
++137
+unsigned int
+2 byte hoặc 4 
+byte
+23052
+short
+2 byte
++423
+-7
+unsigned short
+2 byte
+153
+long
+4 byte
+-2456783
++4539847
+unsigned long
+4 byte
+345231
+float
+4 byte
+Kiểu số thực
+5.6
+double
+8 byte
+245.78
+long double
+10 byte
+3.1
+Bảng 1.2. Các kiểu dữ liệu trong C

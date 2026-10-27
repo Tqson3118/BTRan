@@ -1,0 +1,32 @@
+// Trang 19 - Ngôn ngữ lập trình C_ebook.pdf
+
+16
+Trong lưu đồ trên, điểm đầu cuối cho quá trình bắt đầu và kết 
+thúc được phân biệt bởi từ khóa start và end trong hình oval. Các 
+từ khóa này có thể sử dụng begin và end, start và stop hoặc bằng 
+bất kỳ ngôn ngữ nào chỉ định việc bắt đầu và kết thúc. Để biểu diễn 
+tổng sum là kết quả của phép cộng 2 số a và b, có thể sử dụng mô tả 
+sum ← num1 + num2 hoặc đơn giản hơn có thể biểu diễn bởi 
+sum = num1 + num2.
+Ví dụ 1.2. Lưu đồ cho bài toán in ra số lớn nhất trong 3 số được 
+nhập vào từ bàn phím.
+Start
+Declare variables a, b, c
+Read a,b,c
+Print a 
+Stop
+a>b?
+b>c?
+a>c?
+False
+True 
+Print c 
+True 
+False
+True 
+Print b 
+False
+b
+c
+Declare variables: Khai báo 
+biến

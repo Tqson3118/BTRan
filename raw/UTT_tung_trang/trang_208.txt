@@ -1,0 +1,46 @@
+// Trang 208 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+208 
+ Bài tập 3.28 
+Viết chƣơng trình tìm các số có 3 chữ số, sao cho tổng các chữ số 
+cộng lại bằng 9. In ra màn hình. 
+ Bài tập 3.29 
+Viết chƣơng trình xác định số nguyên dƣơng n nhỏ nhất để tổng các 
+số từ 1 đến n lớn hơn một giá trị S cho trƣớc. 
+ Bài tập 3.30 
+Viết chƣơng trình tìm ƣớc chung lớn nhất của 2 số nguyên dƣơng A 
+và B. 
+Trong chƣơng trình yêu cầu ngƣời sử dụng phải nhập 2 số nguyên 
+dƣơng nếu nhập sai yêu cầu nhập lại đến khi nhập đúng thì tính. 
+ Bài tập 3.31 
+Viết chƣơng trình  tính tổng các số chia hết cho 3 và có tận cùng là 6 
+trong khoảng từ 1 đến 100 bằng lệnh while. 
+ Bài tập 3.32 
+Viết chƣơng trình thực hiện các yêu cầu sau:   
+- Nhập vào một số nguyên n.   
+- Đếm xem số đó có bao nhiêu chữ số và tính tổng của chúng. In kết 
+quả ra màn hình.  
+- Phân tích số đó thành tích của các số nguyên tố.  
+Dữ liệu test  n = 12. Phân tích  n = 2 * 2 * 3. 
+ Bài tập 3.33 
+Xây dựng hàm tìm ƣớc số chung lớn nhất (USCLN) và bội số chung 
+nhỏ nhất (BSCNN) của 2 số nguyên dƣơng bất kỳ. Áp dụng nhập vào 2 số  
+nguyên từ bàn phím, in ra màn hình USCLN và BSCNN của 2 số đó. 
+ Bài tập 3.34 
+Viết chƣơng trình tính: 
+ 
+ 
+ 
+   
+ 
+   
+ 
+   
+ 
+     
+ 
+  
+với n đƣợc nhập từ bàn phím. 
+ Bài tập 3.35 
+Viết chƣơng trình nhập vào số nguyên n, số thực x. Tính giá trị của 
+biểu thức sau đây: 

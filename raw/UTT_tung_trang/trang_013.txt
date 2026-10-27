@@ -1,0 +1,29 @@
+// Trang 13 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+13 
+DANH MỤC HÌNH 
+ 
+Hình 1.1. Quá trình thực thi chương trình ............................................... 36 
+Hình 1.2. Các kiểu dữ liệu của ngôn ngữ C. ............................................ 37 
+Hình 1.3. Dịch trái 1 bit ........................................................................... 67 
+Hình 1.4. Dịch phải 1 bit .......................................................................... 67 
+Hình 1.5. Giao diện màn hình của Turbo C ............................................. 69 
+Hình 1.6. Khởi động soạn thảo chương trình C bằng DevC++ .............. 73 
+Hình 1.7. Màn hình New Project ............................................................. 73 
+Hình 1.8. Màn hình soạn thảo chương trình C bằng DevC++ ................ 74 
+Hình 1.9. Màn hình khi biên dịch thành công .......................................... 75 
+Hình 1.10. Màn hình kết quả .................................................................... 75  
+Hình 3.1. Phân cấp các câu lệnh trong chương trình C ........................ 125 
+Hình 3.2. Sơ đồ khối biểu diễn câu lệnh if dạng khuyết ......................... 127 
+Hình 3.3. Sơ đồ khối biểu diễn câu lệnh if đầy đủ. ................................ 130 
+Hình 3.4. Sơ đồ khối biểu diễn câu lệnh else if ...................................... 132 
+Hình 3.5. Sơ đồ khối biểu diễn câu lệnh if else lồng nhau ..................... 136 
+Hình 3.6. Sơ đồ khối biểu diễn câu lệnh switch ..................................... 145 
+Hình 3.7. Sơ đồ khối biểu diễn vòng lặp for .......................................... 158 
+Hình 3.8. Sơ đồ khối biểu diễn vòng lặp while ...................................... 168 
+Hình 3.9. Chuyển số thập phân sang số nhị phân .................................. 172 
+Hình 3.10. Sơ đồ khối biểu diễn vòng lặp do… while ............................ 173  
+Hình 4.1. Minh họa cách thức thực thi hàm functionName() ................ 215 
+Hình 4.2. Minh họa cách truyền tham số. .............................................. 220 
+ 
+ 

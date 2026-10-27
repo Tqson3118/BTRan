@@ -1,0 +1,63 @@
+// Trang 581 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+581 
+PHỤ LỤC 1: TỪ KHÓA TRONG C 
+Nhóm 1: Từ khóa khai báo kiểu dữ liệu 
+Từ khóa 
+Ý nghĩa 
+char 
+Kiểu số nguyên 1 byte, ký tự 
+int 
+Kiểu số nguyên 2 byte 
+short 
+Kiểu số nguyên 2 byte 
+long 
+Kiểu số nguyên 4 byte 
+unsigned 
+Số nguyên dƣơng (đặt trƣớc các từ khóa số nguyên để tăng 
+phạm vi biểu diễn số nguyên dƣơng) 
+signed 
+Có dấu (mặc định số nguyên là signed) 
+float 
+Kiểu số thực 4 byte 
+double 
+Kiểu số thực 8 byte 
+void 
+Dùng với hàm không có giá trị trả về hoặc với con trỏ chƣa 
+xác định đƣợc giá trị trả về là kiểu gì 
+Nhóm 2: Từ khóa điều kiện, lựa chọn 
+Từ khóa 
+Ý nghĩa 
+if 
+Nếu … thì 
+else 
+Trƣờng hợp còn lại (thƣờng dùng với if) 
+switch 
+Với các trƣờng hợp của giá trị (rẽ nhiều nhánh) 
+case 
+Với 1 trƣờng hợp (thƣờng dùng với switch) 
+default 
+mặt định (thƣờng dùng với switch) 
+Nhóm 3: Từ khóa lặp 
+Từ khóa 
+Ý nghĩa 
+for 
+Lặp từ … đến 
+do 
+Lặp trƣớc kiểm tra sau 
+while 
+Kiểm tra trƣớc, lặp sau 
+Nhóm 4: Từ khóa lệnh nhảy 
+Từ khóa 
+Ý nghĩa 
+continue 
+Tiếp tục (bỏ qua lần lặp này, chạy tiếp lần lặp sau) 
+break 
+Nhảy ra ngoài khối lệnh 
+return 
+Kết thúc hàm và trả về kết quả 
+goto 
+Nhảy đến nhãn … 
+ 
+ 
+ 

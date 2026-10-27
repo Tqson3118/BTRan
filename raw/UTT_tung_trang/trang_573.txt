@@ -1,0 +1,54 @@
+// Trang 573 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+573 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 
+3 
+#include <graphics.h> 
+4 
+#include <stdlib.h> 
+5 
+#include <dos.h> 
+6 
+void bong(int x, int y, int r, int mau) 
+7 
+{ 
+8 
+setcolor(mau); 
+9 
+setfillstyle(1, mau); 
+10 pieslice(x , y, 0, 360, r); 
+11 } 
+12 void main() 
+13 { 
+14 int driver=0, mode = 0, maloi; 
+15 initgraph(&driver,&mode,""); 
+16 if ((maloi=graphresult()) !=0) 
+17 { 
+18 printf("khong the khoi dong do hoa \n"); 
+19 printf("ma 
+loi: 
+%d 
+\nnguyen 
+nhan 
+loi 
+%s", 
+maloi, 
+grapherrormsg(maloi)); 
+20 getch(); 
+21 exit(1); 
+22 } 
+23 setcolor(RED); 
+24 setfillstyle(1,RED); 
+25 pieslice(50,50,0,360,50); 
+26 char *p; 
+27 int n= imagesize(0, 0, 100, 100); 
+28 p = (char *)malloc(n); 
+29 getimage(0, 0, 100, 100, p); 
+30 getch(); 
+31 cleardevice(); 
+32 randomize(); 
+33 for (int i=0; i<=300; i++) 

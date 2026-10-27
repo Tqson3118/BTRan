@@ -1,0 +1,68 @@
+// Trang 464 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+464 
+5 
+printf("---------------------------------------\n");  
+6 
+printf(" 1. Them ho so sinh vien\n"); 
+7 
+printf(" 2. Xoa ho so sinh vien\n"); 
+8 
+printf(" 3. Cap nhat ho so sinh vien\n"); 
+9 
+printf(" 4. Hien thi toan bo thong tin sinh vien\n"); 
+10 
+printf(" 5. Tinh diem tong ket cua sinh vien\n"); 
+11 
+printf(" 6. Hien thi sinh vien co diem tong ket cao nhat\n"); 
+12 
+printf(" 7. Hien thi sinh vien co diem tong ket thap nhat\n");  
+13 
+printf(" 8. Tim kiem sinh vien dua vao ma sinh vien\n");  
+14 
+printf(" 9. Sap xep danh sach sinh vien dua vao diem tong ket\n");  
+15 
+} 
+ Bƣớc 3: Xây dựng hàm Themsv(sinhvien sv[], int *spt) để thêm 
+một bản ghi mới vào mảng các đối tƣợng sinh viên. Hàm này có hai đối 
+số, đối số đầu là mảng các đối tƣợng sinh viên (sv), đối số thứ hai là số 
+phần tử trong mảng. Đầu tiên, hàm này sẽ kiểm tra bản ghi mới (sử dụng 
+hàm tìm kiếm, đƣợc xây dựng ở bƣớc sau) trƣớc khi nó đƣợc thêm vào 
+mảng để tránh các bản ghi trùng lặp. Khi bản ghi mới đƣợc thêm vào, số 
+phần tử của mảng n đƣợc tăng thêm 1, đồng nghĩa với số lƣợng bản ghi 
+trong danh sách đƣợc tăng lên. 
+// Hàm để thêm một bản ghi mới  
+1 
+void Themsv(sinhvien sv[], int *spt ) 
+2 
+{ 
+3 
+ kt: 
+4 
+ 
+printf("Nhap vao ma sinh vien:");  
+5 
+ 
+fflush(stdin); 
+6 
+ 
+scanf("%s",&sv[*spt].masv); 
+7 
+ 
+if (timkiem(sv,sv[*spt].masv,*spt)!=-1) 
+8 
+ 
+ { 
+9 
+ 
+ 
+ printf("Ma sinh vien da ton tai\n"); goto kt; 
+10  
+ } 
+11  printf("Nhap ten sinh vien:");  
+ 
+12  fflush(stdin);  
+13  gets(sv[*spt].tensv);  
+14  printf("Nhap gioi tinh sinh vien:(F hoac M):");  
+15  fflush(stdin);  
+16  scanf("%s", &sv[*spt].gt); 

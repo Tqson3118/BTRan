@@ -1,0 +1,41 @@
+// Trang 430 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+430 
+ Ví dụ 6.8 
+Xem xét chƣơng trình sau đây: 
+1  #include<stdio.h> 
+2  #include<string.h> 
+3  struct Sinh_vien 
+4  { 
+5      char ten_sv[20]; 
+6      int tuoi_sv; 
+7      char dia_chi[50]; 
+8      //F (female) va M (male) 
+9      char gioi_tinh; 
+10  }; 
+11  int main() 
+12  { 
+13      struct Sinh_vien s1 ={"Nam",19, "Ha Noi", 'F'}; 
+14      printf("Ten cua sinh vien: %s\n", s1.ten_sv); 
+15      printf("Tuoi cua sinh vien: %d\n", s1.tuoi_sv); 
+16      printf("Dia chi cua sinh vien: %s\n", s1.dia_chi); 
+17      printf("Gioi tinh cua sinh vien: %c\n", s1.gioi_tinh); 
+18      return 0; 
+19  } 
+  Kết quả chƣơng trình: 
+ 
+Ten cua sinh vien: Nam 
+ 
+Tuoi cua sinh vien: 19 
+ 
+Dia chi cua sinh vien: Ha Noi 
+ 
+Gioi tinh cua sinh vien: F 
+6.1.4. Khai báo với từ khóa typedef 
+typedef là một từ khóa đƣợc sử dụng trong ngôn ngữ C để gán tên 
+thay thế cho các kiểu dữ liệu hiện có. Nó chủ yếu đƣợc sử dụng với các 
+kiểu dữ liệu do ngƣời dùng định nghĩa, khi tên của các kiểu dữ liệu trở 
+nên hơi phức tạp để sử dụng trong các chƣơng trình.  
+Sau đây là cú pháp chung để sử dụng typedef: 
+ 
+typedef <existing_name> <alias_name> 

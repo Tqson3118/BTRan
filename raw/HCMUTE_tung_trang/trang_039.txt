@@ -1,0 +1,51 @@
+// Trang 39 - Ngôn ngữ lập trình C_ebook.pdf
+
+36
+dụng trong ngôn ngữ C bao gồm các phép toán số học, các phép toán 
+quan hệ, các phép toán luận lý và các phép toán thao tác trên các bit nhị 
+phân (bit-wise).
+ Các phép toán số học bao gồm các phép toán cộng, trừ, nhân, 
+chia,… được liệt kê trong bảng bên dưới.
+Nhóm phép 
+toán
+Ký hiệu trong 
+ngôn ngữ C
+Ý nghĩa
+Ví dụ
+Số học
+=
+Phép gán
+int a;
+a = 5;
++
+Cộng
+-
+Trừ
+*
+Nhân
+/
+Chia
+a = 5/2;
+%
+Chia lấy phần 
+dư
+a = 5%2;
+Bảng 1.3. Các phép toán số học trong ngôn ngữ C
+Ví dụ để thực hiện phép toán: 
+c
+x
+b
+a
+y
++
+=
+thì câu lệnh được viết trong ngôn ngữ C tương ứng sẽ là:
+y = (a/b)*x + c;
+Lưu ý với các phép toán, thứ tự ưu tiên sẽ là:
+1. Các phép toán trong cặp dấu ngoặc đơn ( ). Nếu có nhiều cặp 
+ngoặc đơn lồng vào nhau thì ưu tiên từ trong ra ngoài.
+2. Phép nhân, phép chia và phép chia lấy phần dư. Nếu có nhiều 
+phép nhân, chia, chia lấy phần dư ngang hàng nhau thì sẽ thực thi từ trái 
+sang phải.
+3. Phép cộng và phép trừ. Nếu có nhiều phép cộng và phép trừ 
+ngang hàng nhau thì sẽ thực thi từ trái sang phải.

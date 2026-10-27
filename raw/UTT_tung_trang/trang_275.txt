@@ -1,0 +1,38 @@
+// Trang 275 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+275 
+Chƣơng 5 
+MẢNG VÀ CON TRỎ 
+ 
+Ngoài các kiểu dữ liệu cơ bản (số nguyên, số thực, ký tự), trong ngôn 
+ngữ lập trình C cho phép ngƣời lập trình viên có thể tạo ra các kiểu dữ 
+liệu mới. Trong Chƣơng 5, các vấn đề sau đây sẽ đƣợc đề cập đến: 
+- Mảng một chiều và mảng hai chiều: Khai báo, cách thức truy cập 
+các phần tử trong mảng, một số dạng bài tập với mảng một chiều và mảng 
+hai chiều. 
+- Con trỏ: Định nghĩa, khai báo con trỏ, các phép toán với biến con trỏ, 
+mối quan hệ giữa con trỏ và mảng, sử dụng con trỏ cấp phát bộ nhớ động. 
+- Chuỗi ký tự: Khai báo, các phép toán trên chuỗi, một số dạng bài 
+tập vận dụng xử lý đối với chuỗi. 
+5.1. MẢNG 
+5.1.1. Mảng một chiều 
+Mảng một chiều là tập hợp các thành phần có cấu trúc (thƣờng đƣợc 
+gọi là các phần tử mảng) có thể đƣợc truy cập riêng lẻ bằng cách chỉ định 
+vị trí của một thành phần với giá trị chỉ số duy nhất. Mảng phải đƣợc khai 
+báo trƣớc khi chúng có thể đƣợc sử dụng trong chƣơng trình. 
+5.1.1.1. Khai báo mảng 
+Cú pháp: 
+ 
+ 
+data_Type arrayName [ arraySize ]; 
+Trong đó: 
+data_Type: là kiểu giá trị của các phần tử mảng, có thể là kiểu dữ 
+liệu cơ bản nhƣ kiểu số nguyên, số thực, ký tự, chuỗi, v.v. hoặc cũng có 
+thể là kiểu dữ liệu có cấu trúc nhƣ kiểu bản ghi, v.v. 
+arrayName: là tên đƣợc đặt cho mảng, cách thức đặt tên biến mảng 
+giống nhƣ định danh. 
+arraySize: kích thƣớc của mảng, luôn đƣợc đặt trong cặp dấu []. 
+ Ví dụ 5.1 
+Cho khai báo sau đây: 
+ 
+int a[5]; 

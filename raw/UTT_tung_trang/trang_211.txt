@@ -1,0 +1,36 @@
+// Trang 211 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+211 
+Chƣơng 4 
+HÀM 
+Tại sao chúng ta cần hàm? Có ba lý do sau đây đƣợc đƣa ra giải thích 
+cho lý do tại sao trong một chƣơng trình nên có các hàm: 
+Thứ nhất, hàm giúp chúng ta trong việc giảm sự dƣ thừa mã chƣơng 
+trình. Nếu một đoạn chƣơng trình đƣợc thực hiện ở nhiều nơi trong một 
+phần mềm, thay vì lặp đi lặp lại viết cùng một mã, chúng ta sẽ tạo một 
+hàm và gọi nó ở mọi nơi. Điều này cũng giúp bảo trì vì chúng ta chỉ phải 
+thay đổi tại một nơi, thay vì phải sửa đổi tại nhiều vị trí khác nhau trong 
+chƣơng trình. 
+Thứ hai, hàm đƣợc sử dụng giống các modun. Hãy xem xét một tập 
+tin lớn có nhiều dòng mã. Việc đọc và sử dụng mã trở nên thực sự đơn 
+giản nếu mã đƣợc chia theo các hàm. 
+Thứ ba, hàm cung cấp sự trừu tƣợng. Chẳng hạn, chúng ta có thể sử 
+dụng các hàm nhƣ các thƣ viện mà không phải lo lắng về hoạt động bên 
+trong của nó. 
+Chƣơng 4 của giáo trình, giới thiệu các khái niệm về hàm, cách thức khai 
+báo hàm, truyền các tham số cho hàm và cách gọi hàm trong chƣơng trình.  
+4.1. KHÁI NIỆM HÀM 
+4.1.1. Khái niệm 
+4.1.1.1. Định nghĩa 
+Hàm là một chƣơng trình con thực hiện một khối công việc đƣợc lặp 
+đi lặp lại nhiều lần trong khi chạy chƣơng trình hoặc dùng tách một khối 
+công việc cụ thể để chƣơng trình đỡ phức tạp. 
+ Ví dụ 4.1 
+Xem xét ví dụ sau đây: 
+Viết chƣơng trình nhập vào ba số nguyên a, b, c. Lần lƣợt tính tổng a 
++ b, a + c, b + c và in kết quả ra màn hình. 
+Chƣơng trình 1 
+1 #include <stdio.h> 
+2 int main() 
+3 { 
+4     int a,b,c, tong1, tong2, tong3; 

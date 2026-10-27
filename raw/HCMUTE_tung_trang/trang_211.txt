@@ -1,0 +1,6 @@
+// Trang 211 - Ngôn ngữ lập trình C_ebook.pdf
+
+CHÍNH SÁCH CHẤT LƯỢNG
+Không ngừng nâng cao chất lượng dạy, học, nghiên cứu khoa học
+và phục vụ cộng đồng nhằm mang đến cho người học những điều kiện tốt nhất
+để phát triển toàn diện các năng lực đáp ứng nhu cầu phát triển và hội nhập quốc tế.

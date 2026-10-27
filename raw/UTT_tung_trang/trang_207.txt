@@ -1,0 +1,34 @@
+// Trang 207 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+207 
+ Bài tập 3.23 
+Viết chƣơng trình nhập vào số nguyên dƣơng a. In ra màn hình các 
+ƣớc số của a. 
+Dữ liệu test: 12. 
+Kết quả mong đợi: 1 2 3 4 6 12. 
+ Bài tập 3.24 
+Viết chƣơng trình tính tổng các ƣớc của số nguyên dƣơng n (n nhập 
+từ bàn phím). 
+Dữ liệu test: 12. 
+Kết quả mong đợi: 1 + 2 + 3 + 4 + 6 + 12 = 28. 
+ Bài tập 3.25 
+a. Viết chƣơng trình kiểm tra một số nhập vào n có là số nguyên tố 
+hay không? 
+b. In các số nguyên tố nhỏ hơn n. 
+c. In các số nguyên tố trong phạm vi [a, b] với a và b đƣợc nhập từ 
+bàn phím. 
+ Bài tập 3.26 
+Viết chƣơng trình giải quyết bài toán cổ sau đây, in ra màn hình các 
+đáp án của bài toán. 
+“Vừa gà vừa chó 
+Bó lại cho tròn 
+Ba mươi sáu con 
+Một trăm chân chẵn” 
+ Bài tập 3.27 
+Viết chƣơng trình giải quyết bài toán cổ sau đây, in ra màn hình các 
+đáp án của bài toán. 
+“Trăm trâu, trăm cỏ 
+Trâu đứng ăn năm 
+Trâu nằm ăn ba 
+Lụ khụ trâu già, ba con một bó” 
+Hỏi số trâu đứng, trâu nằm, trâu già? 

@@ -1,0 +1,12 @@
+// Trang 61 - Ngôn ngữ lập trình C_ebook.pdf
+
+58
+else 
+ {
+Khối lệnh n;
+}
+ Hoạt động
+Hình 2.3. Lưu đồ giải thuật của lệnh if...else if...else
+ Giải thích
+Nếu Biểu thức 1 là đúng thì thực hiện Khối lệnh 1 và kết thúc lệnh 
+if. Ngược lại, nếu Biểu thức 2 là đúng thì thực hiện Khối lệnh 2 và kết 

@@ -1,0 +1,39 @@
+// Trang 330 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+330 
+- Kích thƣớc vùng nhớ cần cấp phát vƣợt quá kích thƣớc vật lý của 
+hệ thống. 
+- Tại thời điểm gọi hàm malloc() và calloc(), tạm thời không đủ bộ 
+nhớ để cấp phát. 
+Khác nhau: 
+Hàm malloc() nhận tham số truyền vào là số byte của vùng nhớ cần 
+cấp phát. Hàm malloc() trả về con trỏ trỏ tới vùng nhớ nếu cấp phát thành 
+công, trả về NULL nếu cấp phát thất bại. 
+Hàm calloc() nhận hai tham số truyền vào là số block và kích thƣớc của 
+mỗi block. Hàm calloc() trả về con trỏ trỏ tới vùng nhớ đƣợc cấp phát và 
+vùng nhớ đƣợc khởi tạo giá trị bằng 0, trả về NULL nếu cấp phát thất bại. 
+Hàm malloc() nhanh hơn hàm calloc(). Hàm calloc() tốn thời gian 
+khởi tạo vùng nhớ. 
+5.2.5.4. Hàm free() 
+Bộ nhớ đƣợc phân bổ động bằng hàm malloc() và calloc() không tự 
+giải phóng bộ nhớ. Muốn giải phóng đƣợc bổ nhớ phải dùng hàm free(). 
+Cú pháp hàm free() 
+ 
+ 
+free(ptr); 
+Câu lệnh này giải phóng không gian đƣợc phân bổ trong bộ nhớ đƣợc 
+trỏ bởi ptr. 
+ Ví dụ 5.37 
+Sử dụng hàm malloc() để cấp phát bộ nhớ và hàm free() để thu hồi 
+bộ nhớ. 
+Viết chƣơng trình tính tổng của n số đƣợc nhập từ bàn phím. 
+Để thực hiện chƣơng trình này, bộ nhớ đƣợc cấp phát động sử dụng 
+hàm malloc() và đƣợc giải phóng bộ nhớ bằng hàm free(). 
+ Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <stdlib.h> 
+3 int main() 
+4 { 
+5     int n, i, *p, tong = 0; 
+6     printf("Nhap vao so phan tu cua mang: "); 
+7     scanf("%d", &n); 

@@ -1,0 +1,51 @@
+// Trang 502 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+502 
+ 
+Bảng 7.1. Mở tệp tin trong chế độ chuẩn I/O 
+Chế độ 
+Ý nghĩa 
+r 
+Mở để đọc 
+Nếu tệp không tồn tại, hàm fopen() trả về giá trị NULL 
+rb 
+Mở để đọc ở chế độ nhị phân 
+Nếu tệp không tồn tại, hàm fopen() trả về giá trị NULL 
+w 
+Mở để ghi 
+Nếu tập tin tồn tại, nội dung của nó đƣợc ghi đè. Nếu tập tin 
+không tồn tại, nó sẽ đƣợc tạo mới với tên tệp đã đƣợc ấn định 
+trong khai báo của hàm fopen() 
+wb 
+Mở để ghi ở chế độ nhị phân 
+Nếu tập tin tồn tại, nội dung của nó đƣợc ghi đè. Nếu tập tin 
+không tồn tại, nó sẽ đƣợc tạo mới với tên tệp đã đƣợc ấn định 
+trong khai báo của hàm fopen() 
+a 
+Mở để ghi tiếp, dữ liệu đƣợc ghi tiếp ở cuối tệp 
+Nếu tệp tin không tồn tại, nó sẽ đƣợc tạo mới 
+ab 
+Mở để ghi tiếp ở chế độ nhị phân, dữ liệu đƣợc ghi tiếp ở cuối tệp. 
+Nếu tệp tin không tồn tại, nó sẽ đƣợc tạo mới 
+r+ 
+Mở  tệp cho phép đọc và ghi 
+Nếu tệp không tồn tại, hàm fopen() trả về giá trị NULL 
+rb+ 
+Mở  tệp cho phép đọc và ghi ở chế độ nhị phân 
+Nếu tệp không tồn tại, hàm fopen() trả về giá trị NULL 
+w+ 
+Mở  tệp cho phép đọc và ghi 
+Nếu tập tin tồn tại, nội dung của nó đƣợc ghi đè. Nếu tập tin 
+không tồn tại, nó sẽ đƣợc tạo mới với tên tệp đã đƣợc ấn định 
+trong khai báo của hàm fopen() 
+wb+ 
+Mở  tệp cho phép đọc và ghi ở chế độ nhị phân 
+Nếu tập tin tồn tại, nội dung của nó đƣợc ghi đè. Nếu tập tin 
+không tồn tại, nó sẽ đƣợc tạo mới với tên tệp đã đƣợc ấn định 
+trong khai báo của hàm fopen() 
+a+ 
+Mở tệp cho phép đọc và ghi tiếp ở cuối tệp 
+Nếu tệp tin không tồn tại, nó sẽ đƣợc tạo mới 
+ab+ 
+Mở tệp cho phép đọc và ghi tiếp ở cuối tệp ở chế độ nhị phân 
+Nếu tệp tin không tồn tại, nó sẽ đƣợc tạo mới 

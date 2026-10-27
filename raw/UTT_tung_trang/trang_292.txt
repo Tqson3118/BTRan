@@ -1,0 +1,64 @@
+// Trang 292 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+292 
+Phác thảo lời giải 
+- Nhập giá trị các phần tử của mảng. 
+- Nhập giá trị phần tử cần chèn value. 
+- Duyệt mảng từ phải qua trái (cuối dãy), di chuyển các phần tử từ vị 
+trí n - 1 đến k sang phải. 
+- Gán giá trị phần tử a[k ] bằng value. 
+ Ví dụ 5.13 
+Viết chƣơng trình nhập vào mảng gồm n phần tử  là các số nguyên và 
+nhập vào một số nguyên dƣơng k, một số nguyên x. Hãy chèn vào mảng 
+phần tử có giá trị x tại vị trí k trong mảng? 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+int main() 
+3 
+{ 
+4 
+   int a[100], k, i, n, value; 
+5 
+     
+printf("Nhap vao so phan tu cua mang\n"); 
+6 
+    
+scanf("%d", &n); 
+7 
+     
+printf("Nhap %d phan tu cua mang\n", n); 
+8 
+     
+for (i = 0; i < n; i++) 
+9 
+       
+scanf("%d", &a[i]); 
+10      
+printf("Nhap vi tri can chen phan tu:\n"); 
+11     
+scanf("%d", &k); 
+12      
+printf("Nhap gia tri phan tu can chen\n"); 
+13     
+scanf("%d", &value); 
+14      
+for (i = n - 1; i >= k ; i--) 
+15        
+a[i+1] = a[i]; 
+16      
+ 
+a[k] = value; 
+17      
+printf("Mang sau khi them la\n"); 
+18      
+for (i = 0; i <= n; i++) 
+19       printf("%4d", a[i]); 
+20     return 0; 
+21 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao so phan tu cua mang 
+ 
+6 

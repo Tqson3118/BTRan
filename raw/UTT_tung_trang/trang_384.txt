@@ -1,0 +1,53 @@
+// Trang 384 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+384 
+Chƣơng trình 
+1 
+#include <stdio.h> 
+2 
+int main()  
+3 
+{ 
+4 
+   int n, i, arr1[15]; 
+5 
+   int *pt; 
+6 
+ printf("\nIn cac phan tu cua mang theo thu tu dao nguoc :\n");  
+7 
+ 
+printf("-------------------------------------\n"); 
+8 
+   printf("Nhap vao so phan tu cua mang (toi da 15) : "); 
+9 
+   scanf("%d",&n); 
+10    pt = &arr1[0];  //  con tro pt chua dia chi cua phan tu dau tien cua 
+mang  
+11    printf("Nhap %d phan tu cua mang: \n",n); 
+12    for(i=0;i<n;i++) 
+13       { 
+14  
+  printf("Phan tu thu - %d : ",i+1); 
+15  
+  scanf("%d",pt); 
+16  
+  pt++; 
+17  
+  }  
+ 
+18    pt = &arr1[n - 1]; 
+19    printf("\nCac phan tu cua mang theo thu tu dao nguoc :"); 
+20    for (i = n; i > 0; i--)  
+21    { 
+22       printf("\nPhan tu - %d : %d  ", i, *pt); 
+23       pt--; 
+24    } 
+25 printf("\n\n"); 
+26 } 
+  Kết quả chƣơng trình 
+In cac phan tu cua mang theo thu tu dao nguoc: 
+------------------------------------------------ 
+Nhap vao so phan tu cua mang (toi da 15): 4 
+Nhap 4 phan tu cua mang: 
+Phan tu thu - 1: 12 
+Phan tu thu - 2: 3 

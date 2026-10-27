@@ -1,0 +1,37 @@
+// Trang 234 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+234 
+27  
+printf("\nChu vi tam giac: %.2f",2 * p); 
+28  
+printf("\nDien tich tam giac %.2f", s); 
+29 } 
+30 main() 
+31 { 
+32 float a, b, c; 
+33 nhap(&a); 
+34 nhap(&b); 
+35 nhap(&c); 
+36 int x = kttamgiac(a, b, c); 
+37 if (x == 1)  
+38 {loaitamgiac(a, b, c); 
+39 tinhdientich(a, b, c); 
+40 } 
+41 else printf("\n khong la tam giac"); 
+42 } 
+Kết quả chƣơng trình:  
+Nhap canh: 3 
+Nhap canh: 4 
+Nhap canh: 5 
+Tam giac vuong 
+Chu vi tam giac: 12.00 
+Dien tich tam giac 6.00 
+Nhận xét 
+Xem xét lại ví dụ 4.10, nếu chúng ta khai báo a, b, c là biến toàn cục 
+thì ở các hàm chúng ta không cần khai bao tham biến hình thức nữa, vì tất 
+cả sẽ dùng biến toàn cục và chúng ta cải tiến dùng menu lựa chọn cho 
+từng hàm ở trong chƣơng trình chính nhƣ sau: 
+Cách 2:  
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <math.h> 

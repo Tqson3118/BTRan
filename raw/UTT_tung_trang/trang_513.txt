@@ -1,0 +1,34 @@
+// Trang 513 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+513 
+Kiểm tra tệp data_7_10.txt cùng thƣ mục với tệp chƣơng trình, nội 
+dung đƣợc ghi vào tệp là “Hoc lap trinh C!” 
+7.2.7.2. Hàm fgets() 
+Cú pháp: 
+char* fgets(char *s, int n, FILE *stream) 
+Chức năng: Đọc một dòng ký tự từ tệp. 
+ Ví dụ 7.11 
+ Xét đoạn chƣơng trình sau đây: 
+1  #include<stdio.h> 
+2  #include<conio.h> 
+3  int main(){ 
+4      FILE *fp; 
+5      char text[300]; 
+6      fp=fopen("data_7_10.txt", "r"); 
+7      printf("%s",fgets(text,200,fp)); 
+8      fclose(fp); 
+9      getch(); 
+10  } 
+ Kết quả chƣơng trình 
+Hoc lap trinh C! 
+ 7.2.7.3. Hàm fputc()                                                                                       
+Cú pháp: 
+int fputc(int c, FILE *stream) 
+Chức năng: Ghi một ký tự vào tệp 
+ Ví dụ 7.12 
+Xem xét đoạn chƣơng trình sau đây: 
+1 #include <stdio.h>   
+2 main() {   
+3    FILE *fp; 
+4    // Mo tep, con tro fp anh xa vao tep data_7_12.txt, mo de ghi 
+5    fp = fopen("data_7_12.txt", "w"); 

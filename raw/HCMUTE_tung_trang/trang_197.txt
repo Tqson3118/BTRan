@@ -1,0 +1,24 @@
+// Trang 197 - Ngôn ngữ lập trình C_ebook.pdf
+
+194
+đang Tắt thì in thông báo “Tat ca thiet bi da Tat”.
+c. Tìm và in ra danh sách các thiết bị được sản xuất từ năm 2018 
+trở về trước.
+d. Cho phép người dùng tìm kiếm thông tin của một thiết bị nào 
+đó bằng cách nhập vào mã thiết bị để tìm kiếm. Nếu tìm thấy thì in 
+thông tin của thiết bị đã tìm thầy, nếu không tìm thấy thì in thông báo 
+“Khong tim thay”.
+6. Viết chương trình như ở bài tập trên nhưng xử lý cho n thiết bị, 
+yêu cầu cấp phát động bộ nhớ cho mảng cấu trúc.
+7. Tạo cấu trúc để quản lý danh bạ điện thoại với các nội dung:
+ Họ tên
+ Số điện thoại
+ Địa chỉ
+Viết chương trình quản lý danh bạ điện thoại với các chức năng sau:
+a. In ra menu lựa chọn với các tủy chọn:
+Nhập số 1: Thêm tên vào danh bạ
+Nhập số 2: Tìm theo số điện thoại nhập vào
+Nhập số 3: Thoát chương trình
+b. Chương trình sẽ xử lý theo lựa chọn của người dùng sau khi 
+nhập số tương ứng với menu chức năng, trong đó khi xử lý chức năng 
+Thêm tên, danh bạ lưu được tối đa 40 số.

@@ -1,0 +1,35 @@
+// Trang 29 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+29 
+Ghi chú thích trên 1 dòng, sử dụng ký hiệu //: 
+// dòng chú thích 
+Ghi chú thích trên nhiều dòng, các dòng trong chú thích đƣợc đặt 
+trong cặp /* và */ nhƣ sau:  
+/* 
+Nội dung chú thích 
+*/ 
+ Ví dụ 1.5 
+// Chuong trinh tinh tong hai so 
+/* 
+Ten tep: tinhtong.c 
+Tac gia: Le Thi Chi 
+Ngay 20/7/2019 
+*/ 
+1.3.2.2. Phần liên kết (Bao hàm tệp) 
+Trong chƣơng trình C (trong hàm main cũng nhƣ các hàm khác do 
+ngƣời lập trình viết) có thể sử dụng các hàm, hằng, kiểu dữ liệu, v.v. (gọi 
+chung là các thành phần) đã đƣợc định nghĩa trong thƣ viện của C. Để sử 
+dụng các thành phần này chúng ta phải chỉ dẫn cho chƣơng trình dịch biết 
+các thông tin về các thành phần cần sử dụng, các thông tin đó đƣợc khai 
+báo trong tệp gọi là tệp tiêu đề (có phần mở rộng là h - viết tắt của 
+header). Và phần các bao hàm tệp là các chỉ dẫn để chƣơng trình gộp các 
+tệp này vào chƣơng trình. Trong một chƣơng trình, có thể không dùng 
+hoặc dùng nhiều tệp tiêu đề. 
+Cú pháp của một dòng bao hàm tệp: 
+#include <tên_tệp> hoặc #include “tên_tệp”. 
+Trong đó: tên_tệp là tên có thể có cả đƣờng dẫn của tệp tiêu đề (.h) 
+mà chúng ta cần sử dụng, mỗi lệnh bao hàm tệp trên một dòng. 
+ Ví dụ 1.6  
+Cho các khai báo bao hàm tệp sau đây: 
+#include<stdio.h> 
+#include <conio.h> 

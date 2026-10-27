@@ -1,0 +1,65 @@
+// Trang 47 - Ngôn ngữ lập trình C_ebook.pdf
+
+44
+Mã định dạng
+Ý nghĩa
+%c
+Kiểu ký tự
+%d hoặc %i
+Kiểu số nguyên hệ thập phân
+%e
+Kiểu số mũ
+%f
+Kiểu số thực
+%o
+Kiểu số nguyên hệ bát phân
+%u
+Kiểu số nguyên không dấu hệ thập phân
+%x
+Kiểu số nguyên hệ thập lục phân không dấu
+%s
+Kiểu chuỗi
+1.12. BÀI TẬP
+1. Hãy tìm và sửa lỗi trong các câu lệnh/đoạn lệnh sau:
+a.
+scanf(“Nhap gia tri: %d”,a);
+b.
+int a;
+scanf(a);
+c.
+printf(“Gia tri bien a: %d”, &a);
+d.
+int a = 5;
+printf(a);
+e.
+5 = a;	
+f.
+float b = 3.5;
+printf(“Gia tri b: %d\n”, b);
+g.
+#include <stdio.h>
+	
+int a;
+	
+printf(“Nhap a: “);
+	
+scanf(“%d”,&a);
+	
+printf(“So da nhap: %d\n”,a);
+h.
+#include <stdio.h>
+int main(void)
+	
+printf(“Xin chao!”);
+	
+return 0;
+scanf("%d",&a);
+scanf("%d",&a);
+printf("%d",a);
+a=5;
+%f
+int main (void)
+{
+}
+{
+}

@@ -1,0 +1,37 @@
+// Trang 505 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+505 
+ 
+Kết quả chƣơng trình: 
+Gia tri cua n = 15 
+Chƣơng trình trên sẽ đọc một số nguyên có trong tệp và in ra màn 
+hình. Nếu chúng ta đã tạo thành công tệp từ ví dụ 7.3, khi chạy chƣơng 
+trình này sẽ in ra số nguyên đã nhập và ghi vào tệp data.txt trong ví dụ 7.3. 
+Tại sao khi in, chƣơng trình chỉ in giá trị đầu tiên trong tệp? Lý do 
+trong chƣơng trình, chúng ta chỉ sử dụng câu lệnh fscanf() để đọc dòng 
+đầu tiên của tệp data1.txt. 
+Nếu muốn in tất cả các giá trị đƣợc ghi trong tệp data1.txt, ta cần 
+thêm các dòng lệnh để đọc từng dòng của tệp, sử dụng vòng lặp while để 
+đọc hết tệp: 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+int main() 
+4 
+{ 
+5 
+   int num; 
+6 
+   FILE *fptr; 
+7 
+   if ((fptr = fopen("data1.txt","r")) == NULL){ 
+8 
+       printf("Loi! khi mo tep"); 
+9 
+    //Chuong trinh se thoat neu con tro tep tra ve NULL 
+10        exit(1); 
+11    } 
+12    while (!feof(fptr)) 
+13    { 

@@ -1,0 +1,51 @@
+// Trang 484 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+484 
+} 
+//Ham sap xep theo tong diem 
+void Sx_theo_tong(sinhvien sv[], int n) 
+{ 
+int i, j; 
+sinhvien tg; 
+for (i = 0; i < n; i++) 
+ for (j = n - 1; j > i; j--) 
+  
+if (sv[j].tong_diem < sv[j - 1].tong_diem ) 
+  
+{ 
+  
+tg = sv[j]; 
+  
+sv[j] = sv[j - 1]; 
+  
+sv[j - 1] = tg; 
+  
+} 
+} 
+void tieude() 
+{ 
+printf("MASV TENSV GT D_TP1 D_TP2 D_CC D_GK D_KT TONG  
+\n   "); 
+printf("==============================================
+==\n"); 
+int main() 
+{ 
+ sinhvien sv[MAX]; 
+ int spt=0; 
+ hienthi_menu(); 
+ int luachon; 
+ char ok; 
+ do 
+ { 
+  
+printf("Lua chon cong viec(1-9):"); scanf("%d", &luachon); 
+  
+switch(luachon) 
+  
+{ 
+  
+ 
+case 1: Themsv(sv, &spt); break; 
+  
+ 
+case 2: xoasv(sv, &spt); break; 

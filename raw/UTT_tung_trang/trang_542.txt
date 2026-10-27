@@ -1,0 +1,45 @@
+// Trang 542 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+542 
+52              ch=fgetc(fptr1);  
+53            printf("Noi dung tep sau khi xoa %s la : \n",fname);  
+54            while(ch!=EOF)  
+55              {  
+56                  printf("%c",ch);  
+57                   ch=fgetc(fptr1);  
+58              } 
+59          fclose(fptr1); 
+60  /*------- Ket thuc doc ---------------*/ 
+61          return 0; 
+62   
+63    } 
+  Kết quả chƣơng trình 
+Xoa mot dong trong tep van ban: 
+----------------------------------------- 
+Nhap ten tep can mo ra: test_7_3.txt 
+Nhap vao chi so dong trong tep can xoa: 3 
+Noi dung tep sau khi xoa test_7_3.txt la: 
+ 
+Ao lua Ha Dong 
+Nang Sai Gon anh di ma chot mat 
+Anh van yeu mau ao ay vo cung 
+Tho cua anh van con nguyen lua trang 
+ Bài tập 7.8 
+ 
+Viết chƣơng trình đếm số lần xuất hiện của tất cả các từ trong một 
+tệp văn bản. 
+Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+#include <string.h> 
+4 
+#include <ctype.h> 
+5 
+#define MAX_WORDS   1000 
+6 
+int main() 
+7 
+{ 

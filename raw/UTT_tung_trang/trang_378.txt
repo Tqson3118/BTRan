@@ -1,0 +1,67 @@
+// Trang 378 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+378 
+                                          ∑
+        
+ 
+   
+   
+với            . 
+Phép nhân ma trận thỏa mãn quy tắc: 
+Tính chất kết hợp: (AB)C = A(BC). 
+Luật phân phối trái và phải: (A + B)C = AC + BC và C(A + B) = CA 
++ CB khi kích thƣớc của các ma trận tham gia vào phép nhân thỏa mãn 
+yêu cầu của tích hai ma trận. 
+Tích AB có thể xác định trong khi BA không nhất thiết phải xác 
+định, tức là nếu A và B lần lƣợt có số chiều mn và nk và m ≠ k. Thậm 
+chí khi cả hai tích này đều tồn tại thì chúng không nhất thiết phải bằng 
+nhau, tức là AB ≠ BA. 
+Chƣơng trình: 
+1 #include<stdio.h> 
+2 #define MAX 10 
+3 int main() 
+4 { 
+5     int n, m, p, q, k, a[MAX][MAX], b[MAX][MAX], 
+Tich[MAX][MAX],Tong = 0; 
+6     int i, j; 
+7     printf("Nhap so hang va so cot cua ma tran thu nhat:\n");  
+8  
+ 
+do 
+9  
+{ 
+10  
+ 
+printf("+ Nhap so hang cua ma tran thu nhat: "); 
+11  
+ 
+scanf("%d", &m); 
+12  
+ 
+if(m <= 0 || m > MAX) 
+13  
+ 
+{ 
+14  
+ 
+ 
+printf("Khong hop le. Nhap so trong pham 
+vi tu 0 den MAX !\n"); 
+15  
+ 
+} 
+16  
+}while(m <= 0 || m > MAX); 
+17  
+//doan chuong trinh kiem tra so cot nhap vao 
+18  
+ 
+do 
+19  
+{ 
+20  
+ 
+printf("+ Nhap so cot cua ma tran thu nhat: "); 
+21  
+ 
+scanf("%d", &n); 

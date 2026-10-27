@@ -1,0 +1,48 @@
+// Trang 241 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+241 
+42  
+printf("\n Nhap nam: "); scanf("%d", &n); 
+43  
+}while(n < 1000 || n > 9999); 
+44  
+do 
+45  
+{ 
+46  
+printf("\n Nhap thang: "); scanf("%d", &th); 
+47  
+}while(th < 1||th > 12);  
+48  
+d = Ngaycuathang(th, n); 
+49  
+do 
+50  
+{ 
+51  
+printf("\n Nhap ngay: "); scanf("%d", &ng); 
+52  
+}while(ng < 1||ng > d);  
+53  
+printf("\n Ngay vua nhap %d-%d-%d\n", ng,th,n); 
+54  
+Timngayketiep(ng,th,n); 
+55 getch(); 
+56 return 0; 
+57 } 
+Kết quả chƣơng trình 
+Nhap nam: 2019 
+Nhap thang: 2 
+Nhap ngay: 23 
+Ngay vua nhap 23 - 2 - 2019 
+Ngay ke tiep: 24 - 2 - 2019 
+ Ví dụ 4.12 
+Viết chƣơng trình thực hiện các yêu cầu sau: 
+Xây dựng hàm tìm ƣớc số chung lớn nhất (USCLN) của 2 số nguyên 
+dƣơng bất kỳ.  
+Áp dụng, nhập vào 2 số nguyên tƣơng ứng là tử số và mẫu số (mẫu 
+số khác 0) của 1 phân số, in ra màn hình dạng tối giản của phân số đó.  
+Phác họa lời giải 
+Thuật toán Euclid tính USCLN chỉ đúng với hai số nguyên dƣơng, vì 
+vậy cần lấy giá trị tuyệt đối của hai số trƣớc khi tiến hành thuật toán.  
+Để phân số có dạng in thuận tiện, ta biện luận nhƣ sau:  

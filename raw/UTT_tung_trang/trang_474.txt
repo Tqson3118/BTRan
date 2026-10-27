@@ -1,0 +1,100 @@
+// Trang 474 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+474 
+ Bƣớc 11: Định nghĩa hàm bubblesort(sinhvien sv[], int n) để sắp 
+xếp các bản ghi tăng dần theo điểm tổng. Hàm này đƣợc dựa trên thuật 
+toán bubble sort. 
+//Ham sap xep theo tong diem 
+1 
+void Sx_theo_tong(sinhvien sv[], int n) 
+2 
+{ 
+3 
+int i, j; 
+4 
+sinhvien tg; 
+5 
+for (i = 0; i < n; i++) 
+6 
+ 
+for (j = n - 1; j > i; j--) 
+7 
+ 
+ 
+if (sv[j].tong_diem < sv[j - 1].tong_diem ) 
+8 
+ 
+ 
+{ 
+9 
+ 
+ 
+tg = sv[j]; 
+10 
+ 
+ 
+sv[j] = sv[j - 1]; 
+11 
+ 
+ 
+sv[j - 1] = tg; 
+12 
+ 
+ 
+} 
+13 
+} 
+ Bƣớc 12: Xây dựng hàm main() thực hiện các công việc 
+1 
+int main() 
+2 
+{ 
+3 
+ 
+sinhvien sv[MAX]; 
+4 
+ 
+int spt = 0; 
+5 
+ 
+hienthi_menu(); 
+6 
+ 
+int luachon; 
+7 
+ 
+char ok; 
+8 
+ 
+do 
+9 
+ 
+{ 
+10  
+printf("Lua chon cong viec(1-9):"); scanf("%d", &luachon); 
+11  
+ 
+switch(luachon) 
+12  
+ 
+{ 
+13  
+ 
+ 
+case 1: Themsv(sv, &spt); break; 
+14  
+ 
+ 
+case 2: xoasv(sv, &spt); break; 
+15  
+ 
+ 
+case 3: capnhat(sv, spt); break; 
+16  
+ 
+ 
+case 4: hienthi(sv, spt); break; 
+17  
+ 
+ 
+case 5: tb_sv(sv, spt);break; 

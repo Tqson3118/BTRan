@@ -1,0 +1,35 @@
+// Trang 551 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+551 
+e. Nhập vào một mã hàng, cho biết mã hàng đó có trong cửa hàng 
+hay không? 
+f. Sắp xếp các mặt hàng trong cửa hàng tăng dần theo số tiền thanh 
+toán. Ghi thông tin đã sắp xếp vào tệp dssx.bin. 
+Lƣu ý: 
+- Mỗi ý xây dựng bằng một hàm. 
+ Bài tập 7.20 
+Cho mảng các số nguyên, tính tổng các phần tử của mảng. 
+Dữ liệu vào: tập tin văn bản ARRAY.INP gồm hai dòng. 
+- Dòng 1 chứa số nguyên n (n < = 10). 
+- Dòng 2 chứa n số nguyên. 
+Kết quả: Đƣa ra tập tin văn bản ARRAY.OUT gồm 1 dòng ghi tổng 
+các phần tử trong mảng. 
+ Bài tập 7.21 
+Cho mảng các số nguyên, hãy liệt kê các phần tử là số nguyên tố. 
+Dữ liệu vào: tập tin văn bản NT.INP gồm hai dòng. 
+- Dòng 1 chứa số nguyên n (n < = 100); 
+- Dòng 2 chứa n số nguyên. 
+Kết quả: Đƣa ra tập tin văn bản NT.OUT gồm hai dòng: 
+- Dòng 1 chứa số lượng các phần tử nguyên tố trong mảng. 
+- Dòng 2 liệt kê các số nguyên tố đó. 
+ Bài tập 7.22*  
+Tạo file văn bản có tên là “INPUT.TXT” có cấu trúc nhƣ sau: 
+- Dòng đầu tiên ghi N (N là số nguyên dương nhập từ bàn phím). 
+- Trong các dòng tiếp theo ghi N số nguyên ngẫu nhiên trong phạm 
+vi từ 0 đến 100, mỗi dòng 10 số (các số cách nhau ít nhất một khoảng 
+trắng). 
+Hãy đọc dữ liệu của file “INPUT.TXT” và lƣu vào mảng một chiều A. 
+Thực hiện các công việc sau: 
+a. Tìm giá trị lớn nhất của mảng A. 
+b. Đếm số lƣợng số chẵn, số lƣợng số lẻ của mảng A. 
+c. Hãy sắp xếp các phần tử theo thứ tự tăng dần. 

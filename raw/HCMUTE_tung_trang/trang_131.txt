@@ -1,0 +1,28 @@
+// Trang 131 - Ngôn ngữ lập trình C_ebook.pdf
+
+128
+Mặc nhiên, người lập trình sẽ khởi tạo một mảng số thực với số phần 
+tử lớn nhất có thể để sử dụng cho việc lưu điểm. Trong trường hợp số 
+lượng điểm nhập vào thực sự nhỏ hơn nhiều lần so với số phần tử mảng 
+đã cấp phát thì sẽ dẫn đến lãng phí bộ nhớ. 
+Việc cấp phát bộ nhớ động sẽ giúp cho việc sử dụng bộ nhớ hiệu 
+quả hơn. Cấp phát bộ nhớ động (Dymanic memory allocation) là quá 
+trình cấp phát bộ nhớ trong lúc chương trình đang thực thi, thay vì cấp 
+phát lúc biên dịch chương trình. Các hàm, thư viện quản lý bộ nhớ cho 
+phép cấp phát cũng như giải phóng vùng nhớ trong lúc đang thực thi 
+chương trình. Các hàm quản lý bộ nhớ động được định nghĩa trong thư 
+viện stdlib.h.
+Tiến trình cấp phát bộ nhớ cho chương trình được mô tả trong 
+hình dưới.
+Biến cục bộ
+Vùng nhớ trống
+Biến toàn cục
+Lệnh chương 
+trình
+Biến tĩnh
+Stack
+Heap
+Hình 5.4. Phân vùng bộ nhớ cho chương trình
+Các biến toàn cục, các biến tĩnh và mã lệnh chương trình sử dụng 
+bộ nhớ cố định, trong khi các biến cục bộ được lưu trong vùng nhớ ngăn 
+xếp (Stack). Không gian bộ nhớ giữa vùng nhớ cố định và vùng nhớ 

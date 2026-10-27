@@ -1,0 +1,55 @@
+// Trang 463 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+463 
+- d_tp1 (số thực - float) để lƣu điểm thành phần thứ nhất; 
+- d_tp2 (số thực - float) để lƣu điểm thành phần thứ hai; 
+- d_cc (số thực - float) để lƣu điểm chuyên cần của sinh viên; 
+- d_gk (số thực - float) để lƣu điểm giữa kỳ của sinh viên; 
+- d_kt (số thực - float) để lƣu điểm thi cuối kỳ của sinh viên; 
+- diem_tong (số thực - float) để lƣu điểm tổng kết của sinh viên. 
+1 
+typedef struct 
+2 
+{ 
+3 
+char masv[10]; 
+4 
+char tensv[10]; 
+5 
+char gt; 
+6 
+float d_tp1; 
+7 
+float d_tp2; 
+8 
+float d_cc; 
+9 
+float d_gk; 
+10 
+float d_kt; 
+11 
+float tong_diem; 
+12 
+} sinhvien; 
+ Bƣớc 2: Khai báo các hàm đƣợc sử dụng trong chƣơng trình và 
+xây dựng hàm để hiển thị các chức năng của chƣơng trình. Chƣơng trình 
+cho phép lựa chọn các công việc (chức năng) từ 1 đến 9 để thao tác với 
+các bản ghi. 
+// khai báo các hàm đƣợc sử dụng trong chƣơng trình 
+1 void Themsv(sinhvien sv[], int *spt); 
+2 int timkiem(sinhvien sv[], char id[], int spt); 
+3 void xoasv(sinhvien sv[], int *spt); 
+4 void khoitao(sinhvien sv[], int index); 
+5 void capnhat(sinhvien sv[], int spt); 
+6 void Sx_theo_tong(sinhvien sv[], int n); 
+7 void hienthi(sinhvien sv[], int spt); 
+8 void tieude(); 
+// Hàm cho phép hiển thị hệ thống lựa chọn các chức năng 
+1 
+//Ham de hien thi cac menu duoc chon 
+2 
+void hienthi_menu(){ 
+3 
+printf("---------------------------------------\n"); 
+4 
+printf("             CHUONG TRINH CHINH \n"); 

@@ -1,0 +1,21 @@
+// Trang 18 - Ngôn ngữ lập trình C_ebook.pdf
+
+15
+trình cũng có thể đọc và hiểu được. Các ngôn ngữ dùng để biểu diễn 
+trong lưu đồ như vậy còn được gọi là code giả (Psuedo code). Một số 
+quy ước khi biểu diễn giải thuật dưới dạng lưu đồ như sau:
+Bắt đầu hay kết thúc của một chương trình.
+Nhập hay xuất dữ liệu
+Các xử lý, tính toán
+Rẽ nhánh hay các quyết định có điều kiện
+Chương trình con, hàm, thủ tục
+ 
+Các điểm đầu cuối dùng để nối lưu đồ khi sang trang
+Chiều đi của quá trình xử lý
+Ví dụ 1.1. Lưu đồ cho chương trình cộng 2 số được nhập từ bàn phím. 
+Start
+Declare variables num1, num2, and sum
+Read num1 and num2
+sum ←num1+num2  
+Display sum
+Stop

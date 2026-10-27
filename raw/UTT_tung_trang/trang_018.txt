@@ -1,0 +1,40 @@
+// Trang 18 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+18 
+Mảng, chuỗi ký tự là những kiểu dữ liệu như vậy. Chương 5, trình bày 
+khái niệm về mảng, chuỗi ký tự và các bài toán xử lý trên mảng, chuỗi ký 
+tự. Các bài toán này có ý nghĩa thực tế, chẳng hạn tìm kiếm một phần tử 
+trong tập hợp các phần tử, sắp xếp một mảng, chỉ ra phần tử lớn nhất, 
+phần tử nhỏ nhất, liệt kê các phần tử thỏa mãn một tính chất nào đó, v.v. 
+Ngoài ra, Chương 5 còn trình bày một vấn đề, có thể nói là khá khó với 
+hầu hết những người mới làm quen với ngôn ngữ lập trình, đó là con trỏ. 
+Thực chất con trỏ là một biến được sử dụng để lưu địa chỉ của một biến, 
+nhưng thông qua biến con trỏ có thể xử lý các đối tượng mà con trỏ đó đang 
+trỏ tới. Sử dụng con trỏ cho phép lập trình viên có thể cấp phát động bộ nhớ 
+cho một mảng gồm nhiều phần tử. Các bạn sinh viên có thể hiểu rõ bản chất 
+của con trỏ qua những ví dụ khá điển hình trong Chương 5. 
+CHƢƠNG 6: KIỂU CẤU TRÚC 
+Nội dung của Chương 6, trình bày về một kiểu dữ liệu do người dùng 
+định nghĩa, kiểu bản ghi (kiểu cấu trúc), phản ánh cho sự đa dạng của 
+các thành phần dữ liệu trong một phần tử. Hiểu nôm na, giống như việc 
+chúng ta loay hoay tìm một kiểu dữ liệu phù hợp cho một đối tượng thực 
+tế trong đời sống như sinh viên, công nhân, hay một cuốn sách, một bộ 
+phim, v.v. Rõ ràng các đối tượng này có rất nhiều thuộc tính, chẳng hạn 
+như cuốn sách có các thuộc tính như mã sách, tên sách, tác giả của cuốn 
+sách, năm xuất bản, v.v. Vậy đối tượng này khi đưa vào để xử lý phải làm 
+như thế nào? Kiểu cấu trúc cho phép lập trình viên định nghĩa ra một cấu 
+trúc có tên là Sach bao gồm các thuộc tính vừa kể và mọi chuyện đã trở 
+nên khá đơn giản, khi lập trình xử lý các biến thuộc kiểu Sach giống như 
+các biến thông thường. 
+Trong Chương 6, đề cập đến định nghĩa kiểu cấu trúc, cách thức 
+khai báo kiểu cấu trúc, khai báo các biến kiểu cấu trúc và khai báo một 
+mảng mà mỗi phần tử có kiểu cấu trúc, mối liên hệ giữa kiểu cấu trúc và 
+con trỏ. Có rất nhiều ví dụ minh họa, được trình bày khá chi tiết để các 
+bạn sinh viên có thể tham khảo và để hiểu rõ hơn, tại sao ngôn ngữ C là 
+ngôn ngữ lập trình cấu trúc, phân biệt với ngôn ngữ lập trình hướng đối 
+tượng như C++ hoặc Java. Chẳng hạn với lập trình hướng đối tượng, khi 
+khai báo một lớp (lớp là tập hợp của các đối tượng), thường phải chỉ rõ 2 
+thành phần: các thuộc tính và các phương thức (tức là các hàm), trong 
+khi với ngôn ngữ C, khi khai báo kiểu cấu trúc (phản ánh cho một đối 
+tượng) chỉ phải khai báo các thuộc tính của các đối tượng, các hàm tác 
+động lên kiểu cấu trúc đó được xây dựng hoàn toàn độc lập, v.v. 

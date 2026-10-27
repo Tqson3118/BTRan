@@ -1,0 +1,61 @@
+// Trang 179 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+179 
+Nhận xét 
+Ở ví dụ 3.16, chƣa học cấu trúc do…while nên ta dùng lệnh goto để 
+ràng buộc điều kiện cho nhập ngày, tháng, năm. 
+Ở ví dụ 3.30 này chúng ta dùng cấu trúc do…while để ràng buộc điều 
+kiện cho nhập ngày, tháng, năm, chƣơng trình đƣợc viết gọn hơn, rõ ràng, 
+dễ hiểu hơn. 
+So sánh sự khác nhau của các vòng lặp: For, while, do…while 
+ Đều có khả năng lặp lại nhiều hành động 
+//Vòng lặp for 
+int n = 10, i; 
+ 
+for (i = 1; i <= n; i++) 
+ 
+ 
+printf(“%d\n”, i); 
+ 
+//Vòng lặp while 
+ 
+int i = 1; 
+ 
+while (i <= n) 
+ 
+{ 
+ 
+ 
+printf(“%d\n”, i); i++; 
+ 
+} 
+//Vòng lặp do…while 
+ 
+int i = 1; 
+ 
+do { 
+ 
+ 
+printf(“%d\n”, i); i++; 
+ 
+} while (i < n); 
+ Vòng lặp for thƣờng sử dụng khi biết đƣợc số lần lặp xác định. 
+Vòng lặp while, do…while sử dụng khi không biết rõ số lần lặp. 
+//Vòng lặp for biết trƣớc số lần lặp là n = 10. 
+ 
+int n = 10,i; 
+ 
+for (i = 1; i <= n; i++) 
+ 
+ …; 
+ 
+//Vòng lặp while, do…while phụ thuộc thân vòng lặp mới biết 
+đƣợc số lần lặp 
+ 
+int i = 1; 
+ 
+while (i <= n) 
+ 
+{ 
+ 
+ …; 

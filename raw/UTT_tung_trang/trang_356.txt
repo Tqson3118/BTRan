@@ -1,0 +1,36 @@
+// Trang 356 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+356 
+ Kết quả chƣơng trình: 
+Nhap vao mot xau 
+abcdef 
+Xau dao nguoc la 
+fedcba 
+ Cách 2: Không sử dùng hàm strrev 
+1 #include <stdio.h> 
+2 int main() 
+3 { 
+4    char s[1000], r[1000]; 
+5    int begin, end, count = 0; 
+6     printf("Nhap vao chuoi:\n"); 
+7    gets(s); 
+8     // tinh do dai cua chuoi 
+9     while (s[count] != '\0') 
+10     count++; // bien dem do dai chuoi 
+11     end = count - 1; 
+12     for (begin = 0; begin < count; begin++) 
+13     { 
+14       r[begin] = s[end]; 
+15       end--; 
+16     } 
+17     r[begin] = '\0'; 
+18     printf("Chuoi dao nguoc la:\n"); 
+19  
+printf("%s\n", r); 
+20     return 0; 
+21 } 
+ Kết quả chƣơng trình: 
+Nhap vao chuoi: 
+truong dai hoc cong nghe giao thong van tai 
+Chuoi dao nguoc la: 
+iat nav gnoht oaig ehgn gnoc coh iad gnourt 

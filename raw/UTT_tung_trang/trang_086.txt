@@ -1,0 +1,36 @@
+// Trang 86 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+86 
+3 void main() 
+4 { 
+5 float x,y,z,max,min; 
+6 clrscr(); 
+7 printf("\nNhap vao 3 so "); 
+8 scanf("%f%f%f",&x,&y,&z); 
+9 Max = (x > y)?x:y; 
+10 Max = (max > z)?max:z; 
+11 Min = (x > y)?y:x; 
+12 Min = (min > z)?z:min; 
+13 printf("\nSo lon nhat la %f",max); 
+14 printf("\nSo nho nhat la %f",min); 
+15 printf("\nDay la 5 tieng chuong !\a\a\a\a\a"); 
+16 getch(); 
+17 } 
+ 
+Yêu cầu: 
+- Biên dịch và chạy chƣơng trình? Chƣơng trình có lỗi? Hãy sửa lỗi 
+của chƣơng trình? 
+- Nếu không còn lỗi, hãy cho biết kết quả của chƣơng trình và giải 
+thích? 
+- Giải thích dòng lệnh 9, 10. 
+- Giải thích dòng lệnh 11, 12. 
+- Giải thích dòng lệnh 13, 14, 15. 
+ Bài tập 1.14 
+Sử dụng Turbo C hoặc Dev C++, soạn thảo chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 main() 
+3 { 
+4  
+int i,j; 
+5  
+clrscr(); 

@@ -1,0 +1,45 @@
+// Trang 205 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+205 
+ Bài tập 3.17 
+Viết chƣơng trình tính tiền cƣớc TAXI. Biết rằng: 
+- Tiền mở cửa 5000 VND. 
+- Km đầu tiên 10000 VND. 
+- Từ Km thứ hai đến Km thứ 30: 9000 VND. 
+- Từ Km thứ 31 trở đi: 8000 VND. 
+Hãy nhập số Km sau đó in ra số tiền phải trả. 
+ Bài tập 3.18 
+ 
+Viết chƣơng trình tính tiền điện. Biết rằng: 
+ 
+Bậc tính 
+Giá (VND) 
+Bậc 1: Cho kWh từ 0-50 
+1.678 
+Bậc 2: Cho kWh từ 51-100 
+1.734 
+Bậc 3: Cho kWh từ 101-200 
+2.014 
+Bậc 4: Cho kWh từ 201-300 
+2.536 
+Bậc 5: Cho kWh từ 301- 400 
+2.834 
+Bậc 6: Cho kWh từ 401 trở lên 
+2.927 
+ 
+Nhập số điện tiêu thụ, in số tiền cần thanh toán ra màn hình. 
+ Bài tập 3.19 
+Viết chƣơng trình thực hiện các yêu cầu sau:  
+- Nhập số nguyên dƣơng n ở hệ m bất kỳ (2 ≤ m ≤ 16). Yêu cầu đổi n 
+sang số ở hệ 10.  
+- In kết quả ra màn hình. 
+ Bài tập 3.20 
+ Viết chƣơng trình thực hiện các yêu cầu sau:  
+- Nhập số nguyên dƣơng n ở hệ 10. Yêu cầu đổi n sang số ở hệ m bất 
+kỳ (2 ≤ m  ≤  16).  
+- In kết quả ra màn hình. 
+ Bài tập 3.21 
+Viết chƣơng trình thực hiện các yêu cầu sau:  
+- Thực hiện lặp lại việc nhập 1 số nguyên dƣơng n từ bàn phím, tính 
+n! (n giai thừa). Kết thúc chƣơng trình khi nhập n = 0.  
+- In kết quả ra màn hình. 

@@ -1,0 +1,66 @@
+// Trang 160 - Ngôn ngữ lập trình C_ebook.pdf
+
+157
+}
+int main(void)
+{
+	
+int x,y;
+	
+scanf(“%d%d”,&x,&y);
+	
+printf(“%d”,Ham2(x,y));
+	
+return 0;
+}
+c.
+#include<stdio.h>
+void Ham3(void)
+{
+	
+printf(“Xin chao!”);
+}
+int main(void)
+{
+	
+Ham3(void);
+	
+return 0;
+}
+d.
+#include<stdio.h>
+#include <malloc.h>
+//chuong trinh nhap mang 5 so nguyen va in ra mang
+void Ham(int n)
+{
+	
+int *x;
+	
+int i;
+	
+x = (int*)malloc(n*sizeof(int));
+	
+for(i = 0; i < n; i++)
+	
+	
+scanf(“%d”,(a+i));
+}
+int main(void)
+{
+	
+int k = 5, i;
+	
+printf(“Nhap mang 5 phan tu:\n”);
+	
+Ham(k);
+	
+	
+printf(“Mang da nhap:\n”);
+	
+for(i = 0; i < k; i++)
+	
+	
+printf(“%d  “,*(x+i));
+	
+return 0;
+}

@@ -1,0 +1,56 @@
+// Trang 104 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+104 
+2.2. HÀM NHẬP/XUẤT KÍ TỰ VÀ DÒNG VÀO STDIN 
+Input: là đƣa một số dữ liệu vào một chƣơng trình. Một đầu vào có 
+thể đƣợc đƣa ra dƣới dạng một tập tin hoặc từ dòng lệnh. C cung cấp một 
+tập hợp các hàm dựng sẵn để đọc đầu vào đã cho và đƣa nó vào chƣơng 
+trình theo yêu cầu.  
+Output: là hiển thị một số dữ liệu trên màn hình, máy in hoặc trong bất 
+kỳ tệp nào, C cung cấp một tập hợp các hàm tích hợp để xuất dữ liệu trên 
+màn hình máy tính cũng nhƣ lƣu nó trong tệp văn bản hoặc tệp nhị phân. 
+Các tệp tin tiêu chuẩn 
+Các tập tin tiêu chuẩn của ngôn ngữ C xem tất cả các thiết bị là tập 
+tin. Vì vậy, các thiết bị nhƣ màn hình đƣợc xử lý giống nhƣ các tệp và ba 
+tệp sau sẽ tự động đƣợc mở khi chƣơng trình thực thi để cung cấp quyền 
+truy cập vào bàn phím và màn hình. 
+Bảng 2.2. Danh sách các tệp tiêu chuẩn 
+Tệp tin tiêu 
+chuẩn 
+Con trỏ tệp 
+Thiết bị 
+standard input 
+stdin 
+ 
+Bàn phím 
+Mặc định là bàn phím, nhƣng có thể 
+đƣợc xem là tệp ảo chỉ đọc và có thể 
+định nghĩa lại là một tệp trên đĩa cứng.  
+standard output 
+stdout 
+Màn hình 
+Mặc định là màn hình console, nhƣng 
+có thể đƣợc xem là tệp ảo chỉ ghi và có 
+thể định nghĩa lại là một tệp trên đĩa 
+học máy in. 
+standard error 
+stderr 
+Tƣơng tự nhƣ stdout, nhƣng thƣờng 
+đƣợc dùng để ghi các dòng lỗi gặp 
+phải trong chƣơng trình. 
+Các con trỏ tệp là phƣơng tiện để truy cập tệp cho mục đích đọc và 
+viết. Phần tiếp theo sẽ giải thích cách đọc các giá trị từ màn hình và cách 
+in kết quả trên màn hình. 
+2.2.1. Dòng vào stdin 
+Trong 
+C, 
+dòng 
+vào 
+tiêu 
+chuẩn 
+là 
+stdin. 
+Các 
+hàm 
+nhƣ scanf(), gets(), getchar(), v.v. đều nhận dữ liệu từ stdin. Khi trên stdin 
+không còn dữ liệu, các hàm nhập dữ liệu sẽ yêu cầu ngƣời dùng nhập vào 

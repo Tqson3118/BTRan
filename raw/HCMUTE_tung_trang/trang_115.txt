@@ -1,0 +1,49 @@
+// Trang 115 - Ngôn ngữ lập trình C_ebook.pdf
+
+112
+1
+2
+3
+4
+int number = 12345;
+char string[25];
+itoa(number, string, 2); 
+puts(string);
+Kết quả:
+11000000111001
+ Hàm tolower
+Cú pháp: int tolower(int ch);   // Phải khai báo thư viện ctype.h
+Hàm có chức năng đổi chữ hoa sang chữ thường.
+Ví dụ 4.22: 
+1
+2
+3
+4
+5
+6
+int len, i;
+char string[] = “XIN CHAO”;
+len = strlen(string);
+for (i = 0; i < len; i++)
+	
+string[i] = tolower(string[i]); 
+puts(string);
+Kết quả khi chạy chương trình:
+xin chao
+ Hàm toupper
+Cú pháp: int toupper(int ch);   // Phải khai báo thư viện ctype.h
+Hàm có chức năng đổi chữ thường sang chữ hoa.
+Ví dụ 4.23: 
+1
+2
+3
+4
+5
+6
+int len, i; 
+char string[] = “xin chao”; 
+len = strlen(string);
+for (i = 0; i < len; i++)
+	
+string[i] = toupper(string[i]); 
+puts(string);

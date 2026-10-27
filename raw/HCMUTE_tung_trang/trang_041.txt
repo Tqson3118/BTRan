@@ -1,0 +1,62 @@
+// Trang 41 - Ngôn ngữ lập trình C_ebook.pdf
+
+38
+Giá trị trả về của các phép toán quan hệ được sử dụng để thiết lập 
+các quyết định có điều kiện. Ví dụ, sử dụng các phép toán quan hệ trong 
+cú pháp sau:
+int a = 3, b=2;
+if (a>b) {…}
+biểu thức (a>b) không trả về giá trị cho biến nào, tuy nhiên, biểu 
+thức (a>b) trả về kết quả luận lý là đúng (true), giúp cho phát biểu điều 
+kiện if có cơ sở thực hiện. 
+ Các phép toán luận lý: các phép toán luận lý cho phép kết nối 
+luận lý các phép toán quan hệ để tạo thành một biểu thức luận lý. Có 3 
+phép toán luận lý cơ bản như sau:
+Nhóm phép 
+toán
+Ký hiệu trong 
+ngôn ngữ C
+Ý nghĩa
+Ví dụ
+Luận lý
+!
+not
+!(a > b)
+&&
+and
+(a > 3)&&(b < c)
+||
+or
+(a < 0)||(a >10)
+Bảng 1.5. Các phép toán luận lý trong ngôn ngữ C
+Kết quả luận lý của các phép toán luận lý cũng trả về kết quả là 
+đúng (true) hay sai (false).
+A
+B
+A&&B
+A||B
+!A
+False
+False
+False
+False
+True
+False
+True
+False
+True
+True
+True
+False
+False
+True
+False
+True
+True
+True
+True
+False
+Ví dụ, xét kết quả trả về của phép toán luận lý sau:
+int a = 3, b=2, c=4;
+if ((a>b)&&(c==0)) {…}
+Biểu thức luận lý ((a>b)&&(c==0)) là kết hợp luận lý của 2 biểu 

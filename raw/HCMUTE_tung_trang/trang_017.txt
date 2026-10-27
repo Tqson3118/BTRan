@@ -1,0 +1,35 @@
+// Trang 17 - Ngôn ngữ lập trình C_ebook.pdf
+
+14
+đã nắm trong đầu từng bước xử lý. Tuy nhiên, sẽ trở nên tai hại khi xây 
+dựng các chương trình xử lý ở mức độ phức tạp mà bỏ qua bước xây 
+dựng lưu đồ. Khi bắt đầu một chương trình, các ý tưởng cần được liệt 
+kê, phân tích một cách cụ thể. Tiếp theo đó, lưu đồ để thực hiện các ý 
+tưởng, các yêu cầu đó phải được viết ra một cách cẩn thận. Thực tế cho 
+thấy, nhiều sinh viên viết hoàn chỉnh chương trình trước rồi sau đó mới 
+viết lại lưu đồ giải thuật do yêu cầu phải trình bày trong báo cáo. Điều 
+này đi ngược với quá trình lập trình. Việc xây dựng và kiểm tra kỹ lưu 
+đồ cho phép người lập trình đánh giá, kiểm tra chương trình đã đáp ứng 
+được yêu cầu hay chưa; nó cho phép người lập trình tìm ra được các lỗi 
+mà chương trình khi chạy thực tế có thể mắc phải hoặc phát hiện một số 
+trường hợp bị bỏ sót. Khi lưu đồ đã hoàn chỉnh, việc lập trình chỉ là một 
+cách biên dịch từ các hình khối sang một ngôn ngữ nào đó. Vì thế, khi 
+viết lưu đồ có thể dùng ngôn ngữ mô tả sao cho đọc hiểu được, không 
+nhất thiết phải dùng một ngôn ngữ nhất định nào. Người lập trình dựa 
+vào các bộ nguyên tắc cụ thể của ngôn ngữ lập trình mà mình hướng 
+tới, xây dựng chương trình từ lưu đồ. Như vậy, tính chính xác, tính khoa 
+học, logic của một chương trình thể hiện ở chỗ xây dựng lưu đồ, giải 
+thuật có logic, chính xác hay không. Nếu lưu đồ giải thuật chính xác và 
+logic, mà chương trình chạy chưa chính xác thì giống như bạn viết một 
+bài văn mà sai chính tả, hoặc bạn dịch một bài từ tiếng Việt sang tiếng 
+Anh mà sai ngữ pháp, từ vựng. Vấn đề tác giả muốn nhấn mạnh ở đây là 
+các bạn mới học lập trình cần xây dựng tốt lưu đồ giải thuật, cũng như 
+học cách thể hiện ý tưởng thông qua lưu đồ, giải thuật.
+Lưu đồ (Flowchart) là cách biểu diễn bằng hình ảnh của giải thuật 
+hay các bước xử lý và thực hiện của chương trình. Lưu đồ được viết 
+dưới dạng các khối được quy ước cụ thể nhằm giúp người lập trình có 
+thể đọc hiểu và chuyển các ý tưởng, giải thuật sang ngôn ngữ lập trình. 
+Trong quá trình vẽ lưu đồ giải thuật, các ký hiệu, từ khóa, ngôn ngữ thể 
+hiện có thể tùy chọn sao cho người đọc có thể hiểu được. Ngôn ngữ thể 
+hiện ở đây không nhất thiết là một ngôn ngữ lập trình cụ thể nào. Nó 
+có thể là một ngôn ngữ thông thường mà người không có kiến thức lập 

@@ -1,0 +1,53 @@
+// Trang 78 - Ngôn ngữ lập trình C_ebook.pdf
+
+75
+Ta chú ý lệnh for dòng lệnh 5, ở đây biểu thức 3 là một khối lệnh 
+(đây là trường hợp khá đặc biệt: các lệnh không được đặt trong cặp dấu 
+ngoặc nhọn { } và các lệnh ngăn cách với nhau bằng dấu phẩy). Mục 
+đích của chương trình này là nhằm làm rõ: biểu thức 3 sẽ được thực hiện 
+trước hay khối lệnh trong vòng lặp for sẽ thực hiện trước. Và kết quả 
+chương trình đã cho ta câu trả lời chính xác như phần giải thích ở ví dụ 
+3.1: khối lệnh trong thân vòng lặp for sẽ được thực hiện trước, sau đó 
+biểu thức 3 mới được thực hiện.
+Ví dụ 3.1 sẽ hoàn toàn tương đương với các đoạn lệnh sau:
+Trường hợp 1:
+1
+2
+3
+int i=0, a = 3;
+for (; i<5; i++)
+    a ++;
+Trường hợp 2:
+1
+2
+3
+4
+5
+6
+int i=0, a = 3;
+for (; i<5;)
+{  
+	
+a ++;
+      i++;
+}
+Trường hợp 3:
+1
+2
+3
+4
+5
+6
+7
+8
+int i=0, a = 3;
+for (; ;)
+{ 
+	
+a ++;
+      i++;
+      if (i>=5) 
+	
+	
+break;
+}

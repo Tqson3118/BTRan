@@ -1,0 +1,30 @@
+// Trang 161 - Ngôn ngữ lập trình C_ebook.pdf
+
+158
+Viết hàm tính và trả về giá trị ab, với b là số nguyên dương.
+Viết chương trình nhập vào số nguyên k > 0, tính và in ra giá trị 
+10k, sử dụng hàm đã định nghĩa ở trên.
+3. Viết hàm tìm và trả về số chẵn lớn nhất trong một mảng một 
+chiều gồm n số nguyên, nếu trong mảng không có số chẵn thì hàm trả 
+về giá trị -1. Ứng dụng: viết chương trình nhập vào một mảng gồm n số 
+nguyên, tìm và in ra số chẵn lớn nhất, nếu mảng không có số chẵn thì 
+in ra thông báo
+4. Viết chương trình nhập vào một mảng gồm n số nguyên, cho 
+biết giá trị và vị trí của số lớn nhất trong mảng. Trong đó xây dựng và 
+sử dụng các hàm sau:
+a. Hàm nhập mảng
+b. Hàm tìm và trả về phần tử lớn nhất trong mảng
+c. Hàm tìm và trả về vị trí phần tử lớn nhất trong mảng
+5. Viết chương trình nhập vào một mảng gồm n số nguyên, sắp 
+xếp và in ra mảng theo thứ tự tăng dần. Trong đó xây dựng và sử dụng 
+các hàm sau:
+a. Hàm nhập mảng
+b. Hàm in mảng
+c. Hàm sắp xếp mảng theo thứ tự tăng dần
+6. Viết hàm thực hiện phép cộng 2 mảng 1 chiều có cùng kích 
+thước. Viết chương trình nhập vào 2 mảng một chiều, in ra mảng là kết 
+quả của phép cộng 2 mảng vừa nhập. Sử dụng hàm nhập mảng đã viết 
+ở bài tập trước.
+7. Viết hàm đệ quy thực hiện phép cộng các số lẻ từ 1 đến n, với 
+n được nhập từ bàn phím.
+8. Viết hàm đệ quy tạo ra một dãy Fibonacci cho một số cho trước.

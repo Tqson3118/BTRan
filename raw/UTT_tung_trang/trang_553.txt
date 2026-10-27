@@ -1,0 +1,29 @@
+// Trang 553 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+553 
+Hãy đọc dữ liệu từ file trên và lƣu vào mảng hai chiều. Rồi thực hiện 
+các công việc sau: 
+a. Tìm giá trị lớn nhất của ma trận. 
+b. Đếm số lƣợng số chẵn, lẻ, nguyên tố có trong ma trận. 
+c. Hãy tính tổng các phần tử trên mỗi dòng của ma trận. 
+Hãy ghi kết quả này vào filetext có tên là “OUTPUT.TXT” 
+ Bài tập 7.25*  
+Xét dãy số a1, a2,…, aN. Một đoạn con của dãy là dãy các phần tử 
+liên tiếp nhau đƣợc xác định bởi chỉ số của số bắt đầu (L) và chỉ số của số 
+cuối cùng (R). Tổng các số trên đoạn đƣợc gọi là tổng đoạn. 
+Yêu cầu: Cho dãy (aN), hãy tìm đoạn con có tổng đoạn lớn nhất (T). 
+Dữ liệu đƣợc cho trong tập tin văn bản SUMMAX.INP. 
+- Dòng thứ nhất chứ số nguyên N (0 < N <= 30000). 
+- N dòng tiếp theo, mỗi dòng chứa một số là các số của dãy đã cho 
+theo đúng thứ tự. Giá trị tuyệt đối của mội số không vượt quá 30000. 
+Kết quả tìm đƣợc ghi vào tập tin văn bản SUMMAX.OUT gồm 1 
+dòng ghi 3 số T, L, R. 
+Ví dụ: 
+ 
+ Bài tập 7.26 *  
+Cho dãy (aN), hãy tìm đoạn con tăng dần có tổng lớn nhất. 
+Dữ liệu: đƣợc cho trong tập tin AMAX.INP. 
+- Dòng 1 chứa số nguyên N (0 < N <= 30000). 
+- N dòng tiếp theo, mỗi dòng chứa một số là các số của dãy đã cho 
+theo đúng thứ tự. Giá trị tuyệt đối của mỗi số không vược quá 30000. 
+Kết quả tìm đƣợc ghi vàp tin văn bản AMAX.OUT gồm hai dòng: 

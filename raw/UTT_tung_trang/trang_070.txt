@@ -1,0 +1,70 @@
+// Trang 70 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+70 
+Mũi tên sang trái 
+Đƣa con trỏ sang trái một ký tự 
+Ctrl-S 
+Mũi tên sang phải Đƣa con trỏ sang phải một ký tự 
+Ctrl-D 
+End 
+Đƣa con trỏ đến cuối dòng 
+Home 
+Đƣa con trỏ đến đầu dòng 
+PgUp 
+Đƣa con trỏ lên trang trƣớc 
+Ctrl-R 
+PgDn 
+Đƣa con trỏ xuống trang sau 
+Ctrl-C 
+Đƣa con trỏ sang từ bên trái 
+Ctrl-A 
+Đƣa con trỏ sang từ bên phải 
+Ctrl-F 
+Các phím xoá ký tự/dòng: 
+Bảng 1.13. Các phím xóa ký tự 
+Phím 
+Ý nghĩa 
+Phím tắt 
+Delete 
+Xoá ký tự tại ví trí con trỏ 
+Ctrl-G 
+BackSpace 
+Di chuyển sang trái đồng thời xoá ký tự đứng 
+trƣớc con trỏ 
+Ctrl-H 
+Xoá một dòng chứa con trỏ 
+Ctrl-Y 
+Xóa từ vị trí con trỏ đến cuối dòng 
+Ctrl-Q-Y 
+Xóa ký tự bên phải con trỏ 
+Ctrl-T 
+Các phím chèn ký tự/dòng: 
+Bảng 1.14. Các phím chèn ký tự/dòng 
+Insert 
+Thay đổi viết xen hay viết chồng 
+Ctrl-N 
+Xen một dòng trống vào trƣớc vị trí con trỏ 
+Sử dụng khối: 
+Bảng 1.15. Tổ hợp phím xử lý khối 
+Phím tắt 
+Ý nghĩa 
+Ctrl-K-B 
+Đánh dấu đầu khối 
+Ctrl-K-K 
+Đánh dấu cuối khối 
+Ctrl-K-C 
+Chép khối vào sau vị trí con trỏ 
+Ctrl-K-V 
+Chuyển khối tới sau vị trí con trỏ 
+Ctrl-K-Y 
+Xoá khối 
+Ctrl-K-W 
+Ghi khối vào đĩa nhƣ một tập tin 
+Ctrl-K-R 
+Đọc khối (tập tin) từ đĩa vào sau vị trí con trỏ 
+Ctrl-K-H 
+Tắt/mở khối 
+Ctrl-K-T 
+Đánh dấu từ chứa con trỏ 
+Ctrl-K-P 
+In một khối 

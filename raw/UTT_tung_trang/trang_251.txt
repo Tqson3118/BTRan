@@ -1,0 +1,41 @@
+// Trang 251 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+251 
+108             scanf("%d",&n); 
+109             if (n < 1) 
+110              printf("\nn duong, nhap lai\n"); 
+111            } while (n < 1); 
+112           inSNT(n); 
+113           break; 
+114        case 3: 
+115         
+ do { 
+116             printf("nhap n = "); 
+117             scanf("%d", &n); 
+118             if (n < 1) 
+119              printf("\nn duong, nhap lai\n"); 
+120           } while (n < 1); 
+121           if(kiemTraSHH(n) == 1) 
+122              printf("\n%d la so hoan hao\n",n); 
+123           else 
+124         printf("\n%d khong phai la so hoan hao\n",n); 
+125           break; 
+126        case 4: 
+127         
+ do { 
+128             printf("nhap n = "); 
+129             scanf("%d",&n); 
+130             if (n < 1) 
+131              printf("\nn duong, nhap lai\n"); 
+132             } while (n < 1); 
+133           inSHH(n); 
+134           break; 
+135        case 5: 
+136         
+ do { 
+137              printf("Nhap tu so = "); 
+138              scanf("%d", &a); 
+139              printf("\nNhap mau so = "); 
+140              scanf("%d", &b); 
+141             if (a == 0||b == 0) 
+142              printf("\nNhap so khac 0, nhap lai: \n"); 

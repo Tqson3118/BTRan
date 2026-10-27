@@ -1,0 +1,43 @@
+// Trang 585 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+585 
+STT 
+Thƣ viện chuẩn 
+Các hàm thƣờng sử dụng 
+Hàm strtoul() tách số từ string dựa vào cơ số 
+Hàm malloc() cấp phát bộ nhớ động 
+Hàm realloc() thay đổi kích thƣớc của vùng 
+nhớ đã cấp phát 
+Hàm calloc() cấp phát và khởi tạo cho vùng 
+nhớ 
+Hàm free() giải phóng vùng nhớ đã cấp phát 
+Hàm abort() kết thúc chƣơng trình đang chạy 
+Hàm exit() kết thúc chƣơng trình đang chạy 
+Hàm rand() trả về số nguyên ngẫu nhiên 
+6 
+<string.h> 
+Hàm strcpy() copy chuỗi nguồn sang chuỗi 
+đích 
+Hàm strncpy() copy n byte từ chuỗi nguồn 
+sang chuỗi đích 
+Hàm strcat() nối hai chuỗi 
+Hàm strncat() nối n byte chuỗi nguồn vào 
+chuỗi đích 
+Hàm strcmp() so sánh hai chuỗi 
+Hàm strncmp() so sánh hai chuỗi con 
+Hàm strchr() tìm kiếm kí tự trong chuỗi 
+Hàm strrchr() tìm kiếm kí tự c trong chuỗi 
+Hàm strspn() tìm kiếm bộ kí tự trong chuỗi 
+Hàm strpbrk() trả về con trỏ tới vị trí xuất hiện 
+đầu tiên của một trong các kí tự 
+Hàm strstr() tìm kiếm chuỗi con 
+Hàm strlen() tính độ dài của chuỗi 
+Hàm strtok() tìm chuỗi con dựa vào bộ kí tự 
+Hàm strxfrm() copy n kí tự chuỗi nguồn vào 
+chuỗi đích 
+Hàm memcpy() copy n byte vùng nhớ nguồn 
+vào vùng nhớ đích 
+Hàm memmove() copy n byte từ nguồn vào 
+đích 
+Hàm memcmp() so sánh n byte của 2 vùng 
+nhớ 

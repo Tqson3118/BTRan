@@ -1,0 +1,157 @@
+// Trang 136 - Ngôn ngữ lập trình C_ebook.pdf
+
+133
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+	
+	
+scanf(“%d”,(p+i));
+	
+}
+   	
+for(i=0;i<n-1;i++)
+   	
+	
+for(j=i+1;j<n;j++)
+   	
+	
+	
+if(*(p+i)>*(p+j))
+   	
+	
+	
+{
+	
+	
+	
+	
+*(p+i)=*(p+i)+*(p+j);
+   	
+ 	
+	
+	
+*(p+j)=*(p+i) - *(p+j);
+   	
+ 	
+	
+	
+*(p+i)=*(p+i) - *(p+j);
+   	
+	
+	
+}
+   	
+for (i=0;i<n;i++)
+	
+{
+	
+	
+printf(“ %d , “,*(p+i));
+	
+}
+	
+	
+	
+do 
+	
+{
+	
+ 	
+printf(“\nNhap m: “);
+	
+ 	
+scanf(“%d”,&m) ;	
+	
+}while (m<=0);
+	
+p = (int*)realloc(p,(n+m)*sizeof(int));
+	
+if (p!=NULL)
+	
+{
+	
+	
+for (i=0;i<m;i++)
+	
+	
+{
+	
+	
+	
+printf(“\nnhap phan tu thu %d: 
+“,n+i+1);
+	
+	
+	
+scanf(“%d”,(p+n+i));
+	
+	
+}	
+	
+	
+min = *p ;
+	
+	
+for (i=1;i<n+m;i++)
+	
+	
+{
+	
+	
+	
+if(min>*(p+i))
+	
+	
+	
+	
+min = *(p+i);	
+	
+	
+}	
+	
+	
+	
+printf(“min = %d”,min)	 ;
+	
+}
+}
+free(p);	
+}

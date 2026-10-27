@@ -1,0 +1,35 @@
+// Trang 226 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+226 
+18 } 
+ 
+Kết quả chƣơng trình: 
+Truoc khi hoan doi a = 5 va b = 9 
+Hoan doi trong ham a = 9 va b = 5 
+Dia chi cua bien a,b trong ham hoan doi la: 
+a = 000000000023FE20 
+b = 000000000023FE28 
+Dia chi cua bien x, y trong main: 
+X = 000000000023FE4C 
+Y = 000000000023FE48 
+Sau doi a = 5 va b= 9 
+Nhận xét: 
+Ở ví dụ 4.6, chúng ta thấy rõ đƣợc địa chỉ của tham biến trị ở dòng 2 
+void hoanvi(int a, int b), khi gọi đến hàm ở dòng 15, hoanvi(x,y) máy tính 
+sẽ cấp phát 2 ô nhớ có địa chỉ nhƣ trên là a, b khác với địa chỉ của x, y ở 
+trong main(). Nên mọi thao tác trong hàm không làm thay đổi giá trị của 
+các biến x, y. 
+ Truyền tham chiếu theo con trỏ 
+Khi một hàm đƣợc gọi, giá trị của các tham số thực sự đƣợc gán cho 
+các tham số hình thức là con trỏ, các đối là con trỏ chính là giá trị của các 
+tham số thực sự. Nhƣ vậy, hai địa chỉ của tham số thực sự và tham số 
+hình thức đều cùng một địa chỉ, vì vậy mọi thao tác trên tham số hình 
+thức cũng chính là thao tác trên tham số thực sự. Có nghĩa là có thể sử 
+dụng kết quả đối để làm thay đổi giá trị của bất kỳ đại lƣợng nào bên 
+ngoài hàm. Nhƣ vậy, có thể mang giá trị của đối ra khỏi hàm. 
+ Ví dụ 4.7 
+Nhập vào 2 số nguyên a, b. Hoán đổi vị trí 2 số nguyên vừa nhập. 
+Chƣơng trình 
+1 #include<stdio.h> 
+2 void hoandoi(int *a, int *b) 
+3 { 

@@ -1,0 +1,54 @@
+// Trang 316 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+316 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Hình 5.2. Con trỏ, địa chỉ và giá trị 
+ Ví dụ 5.25 
+ Cho đoạn chƣơng trình sau đây: 
+1 
+#include <stdio.h> 
+2 
+int main() 
+3 
+{ 
+4 
+  int k = 5; 
+5 
+  printf("Gia tri: %d\n", k); 
+6 
+  printf("Dia chi: %u", &k);  //ky hieu & truoc bien k 
+7 
+  return 0; 
+8 
+} 
+  Kết quả chƣơng trình: 
+Gia tri: 5 
+Dia chi: 6487580 
+Giải thích: Trong đoạn chƣơng trình trên, giá trị 5 đƣợc lƣu ở địa 
+chỉ 6487580, k chỉ là tên đƣợc đặt cho vị trí đó. 
+Lƣu ý: Lợi ích của việc sử dụng con trỏ: 
++ Con trỏ hiệu quả hơn trong việc xử lý mảng và cấu trúc; 
++ Con trỏ cho phép tham chiếu đến 1 hàm và do đó cho phép truyền 
+hàm dƣới dạng đối số cho các hàm khác. 
++ Giảm thời lƣợng của chƣơng trình và thời gian thực hiện. 
++ Hỗ trợ quản lý bộ nhớ động. 
+a 
+80F 
+10 
+80F 
+p 
+80C 
+Địa chỉ của con trỏ 
+Tên con trỏ 
+Tên con trỏ 
+Địa chỉ của biến a 

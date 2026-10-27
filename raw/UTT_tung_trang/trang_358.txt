@@ -1,0 +1,43 @@
+// Trang 358 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+358 
+3 
+void reverse(char*); 
+4 
+main() 
+5 
+{ 
+6 
+   char s[100]; 
+7 
+    printf("Nhap vao chuoi:\n"); 
+8 
+    gets(s); 
+9 
+    reverse(s); 
+10     printf("Chuoi dao nguoc la:\n"); 
+11     printf("%s\n", s); 
+12     return 0; 
+13 } 
+14  void reverse(char *s) 
+15 { 
+16    int length, c; 
+17    char *begin, *end, temp; 
+18     length = string_length(s); 
+19    begin  = s; 
+20    end    = s; 
+21     for (c = 0; c < length - 1; c++) 
+22       end++; 
+23     for (c = 0; c < length/2; c++) 
+24    {         
+25       temp   = *end; 
+26       *end   = *begin; 
+27       *begin = temp; 
+28        begin++; 
+29       end--; 
+30    } 
+31 } 
+32  int string_length(char *pointer) 
+33 { 
+34    int c = 0; 
+35     while( *(pointer + c) != '\0' ) 

@@ -1,0 +1,28 @@
+// Trang 103 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+103 
+Nội dung trong tệp vi_du_2_14.txt 
+ 
+2.1.3.2. Hàm fscanf() 
+Cú pháp: 
+int fscanf(FILE *stream, const char *format [,argument, ...])   
+Chức năng: Hàm fscanf() đƣợc sử dụng để đọc tập hợp các ký tự từ 
+tệp. Nó đọc một từ trong tệp và trả về EOF ở cuối tệp. 
+ Ví dụ 2.16 
+ 
+Đọc lại nội dung tệp vi_du_2_14.txt 
+Chƣơng trình: 
+1 #include <stdio.h>   
+2 main(){   
+3    FILE *fp;   
+4    char a[255];//mang cac ky tu chua noi dung cua tep 
+5    fp = fopen("vi_du_2_14.txt", "r");   
+6    while(fscanf(fp, "%s", a)!=EOF){   
+7    printf("%s ", a );   
+8    }   
+9    fclose(fp);   
+10 }   
+Kết quả chƣơng trình: 
+Ghi tep boi ham fprintf... 
+Lƣu ý: Nội dung của đọc và ghi tệp sẽ đƣợc trình bày kỹ hơn ở 
+Chƣơng 7_ Tệp. 

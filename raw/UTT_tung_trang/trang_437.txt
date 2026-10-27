@@ -1,0 +1,45 @@
+// Trang 437 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+437 
+13     printf("Ma sinh vien:\n"); 
+14     fflush(stdin); 
+15     gets(s.ma_sv); 
+16     printf("Ten sinh vien:\n"); 
+17     fflush(stdin); 
+18     gets(s.ten_sv); 
+19     printf("Nhap diem cua sinh vien:\n"); 
+20     scanf("%f", &s.diemtb); 
+21     Hienthi(s); 
+22     return 0; 
+23 } 
+24 void Hienthi(struct Sinh_Vien sv) 
+25 { 
+26  printf("\n%s %s %0.2f", sv.ma_sv,sv.ten_sv, sv.diemtb); 
+27 } 
+ Kết quả chƣơng trình: 
+ 
+Nhap thong tin sinh vien: 
+ 
+Ma sinh vien: 
+ 
+sv01 
+ 
+Ten sinh vien: 
+ 
+Le Kien 
+ 
+Nhap diem cua sinh vien: 
+ 
+8.8 
+ 
+sv01 Le Kien 8.8 
+6.1.8. Cấu trúc và con trỏ 
+//Khai báo kiểu cấu trúc: 
+struct [struct_name_tag] 
+{ 
+    Data_type member; 
+}; 
+Khai báo biến con trỏ kiểu cấu trúc: 
+Struct struct_name_tag * variable_struct_pointer; 
+Sử dụng toán tử → để truy cập đến các thành phần của cấu trúc 
+thông qua biến con trỏ: variable_struct_pointer → member; 

@@ -1,0 +1,37 @@
+// Trang 152 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+152 
+3.1.3. Toán tử goto và nhãn 
+3.1.3.1. Cú pháp 
+ 
+goto   label; 
+ 
+label:  statement; 
+Trong đó:  
+label: tên nhãn do ngƣời dùng tự đặt; 
+statement: câu lệnh thực hiện. 
+3.1.3.2. Hoạt động 
+Khi gặp lệnh goto chƣơng trình sẽ nhảy đến lệnh nơi chứa từ nhãn và 
+thực hiện lệnh sau từ khóa nhãn. 
+Chú ý: 
+- Khi gặp lệnh goto chƣơng trình sẽ nhảy đến lệnh nơi chứa từ nhãn 
+và thực hiện lệnh sau từ khóa nhãn. 
+- Câu lệnh goto và nhãn cần nằm trong một hàm, có nghĩa là toán tử 
+goto chỉ cho phép nhảy từ vị trí này đến vị trí khác trong thân một hàm và 
+không thể dùng để nhảy từ một hàm này sang một hàm khác. 
+- Không cho phép dùng toán tử goto để nhảy từ ngoài vào trong một 
+khối lệnh. Tuy nhiên, việc nhảy từ trong một khối lệnh ra ngoài là hoàn 
+toàn hợp lệ. 
+ Ví dụ 3.16 
+Xem xét lại ví dụ 3.15:  
+Viết chƣơng trình nhập vào một ngày/tháng/năm (với ràng buộc cho 
+ngày chỉ nhập từ 1 đến ngày theo tháng (nhận một trong các giá trị 28, 29, 
+30, 31), tháng nhập giá trị từ 1 đến 12, năm chỉ nhập năm có bốn chữ số). 
+Tìm ngày kế tiếp (ngày/tháng/năm) của ngày vừa nhập. 
+Phác họa lời giải 
+- Nhập vào tháng (kiểm soát giá trị từ 1 đến 12). 
+- Nhập vào năm (kiểm soát giá trị từ 1000 đến 9999). 
+- Kiểm tra tháng để trả ngày theo tháng: 
++ Các tháng 1, 3, 5, 7, 8, 10, 12: Số ngày d = 31 ngày.  
++ Các tháng 4, 6, 9, 11: Số ngày d = 30 ngày.  
++ Tháng là tháng 2 và năm nhuận thì có d = 29 ngày. 

@@ -1,0 +1,37 @@
+// Trang 67 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+67 
+2 
+int main() 
+3 
+{ 
+4 
+    printf("Ket qua ~35  = %d\n",~35); 
+5 
+    printf("Ket qua ~-12 = %d\n",~-12); 
+6 
+    return 0; 
+7 
+} 
+Kết quả chƣơng trình 
+ 
+Ket qua ~35 = -36 
+ 
+Ket qua ~-12 = 11 
+e. Dịch bit 
+Có hai phép toán dịch bit trong C: 
+- Dịch trái bit; 
+- Dịch phải bit. 
+Toán tử dịch trái dịch chuyển tất cả các bit về phía trái theo số bit 
+nhất định. Nó đƣợc ký hiệu là <<. 
+Toán tử dịch phải dịch chuyển tất cả các bit về phía bên phải theo số 
+bit nhất định. Nó đƣợc ký hiệu là >>. 
+ 
+Hình 1.3. Dịch trái 1 bit 
+ 
+Hình 1.4. Dịch phải 1 bit 
+ Ví dụ 1.57 
+21210 = 110101002.  
+212>>2 = 00110101  [Dịch phải 2 bit]. 
+212>>7 = 00000001 (Dịch phải 7 bit). 
+212>>8 = 00000000 (Dịch phải 8 bit). 

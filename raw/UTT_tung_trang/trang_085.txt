@@ -1,0 +1,43 @@
+// Trang 85 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+85 
+1 
+#include<stdio.h> 
+2 
+#include<conio.h> 
+3 
+void main() 
+4 
+{ 
+5 
+int a,b,c; 
+6 
+clrscr(); 
+7 
+printf(" \n Chuong trinh minh hoa toan tu logic \n "); 
+8 
+a = 5; b = 2; /* Truong hop 1 */ 
+9 
+c = (a++ > b ) || ( b++ != 3); 
+10 printf("A : a = %d b = %d c = %d\n",a,b,c); 
+11 a = 5; b = 2 ; /* Truong hop 2 */ 
+12 printf(" B : a = %d b = %d c = %d\n",a,b,c); 
+13 a = 5; b = 2 ; /* Truong hop 3 */ 
+14 c = (++a == 3)&&( ++b == 3); 
+15 printf(" C : a = %d b = %d c = %d\n",a,b,c); 
+16 a = 5; b = 2; /* Truong hop 4 */ 
+17 c = (++a == 6)&& ( ++b == 3); 
+18 printf(" D : a = %d b = %d c = %d\n",a,b,c); 
+19 getch(); 
+20 } 
+Yêu cầu: 
+- Biên dịch và chạy chƣơng trình? Chƣơng trình có lỗi? Hãy sửa lỗi 
+của chƣơng trình? 
+- Nếu không còn lỗi, hãy cho biết kết quả của chƣơng trình và giải thích? 
+- Giải thích dòng lệnh 9. 
+- Giải thích dòng lệnh 14. 
+- Giải thích dòng lệnh 17. 
+ Bài tập 1.13 
+Sử dụng Turbo C hoặc Dev C++, soạn thảo chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 #include <conio.h> 

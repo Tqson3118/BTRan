@@ -1,0 +1,63 @@
+// Trang 177 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+177 
++ Tháng 4, 6, 9, 11 có số ngày d = 30 ngày.  
++ Tháng 2 năm nhuận có số ngày d  = 29 ngày. 
++ Tháng 2, không là năm nhuận có số ngày d = 28 ngày. 
+(Năm nhuận là năm chia hết cho 4 và không chia hết cho 100 hoặc 
+chia hết cho 400).  
+- Nhập vào ngày (1   ngày   d). 
++ Nếu ngày nhập vào < ngày của tháng (d) thì tăng ngày lên. 
++ Nếu ngày nhập vào   ngày của tháng (d), thực hiện kiểm tháng 
+nhập vào:  
++ Nếu tháng < 12, thiết lập ngày = 1 và tăng tháng lên 1. 
++ Nếu tháng   12, thiết lập ngày = tháng = 1, tăng năm lên 1. 
+Chƣơng trình 
+1 #include<stdio.h> 
+2 #include<conio.h> 
+3 int main() 
+4 { 
+5  
+int ng,th,n,d; 
+6  
+do 
+7  
+{ 
+8  
+printf(“\n Nhap nam: “); scanf(“%d”,&n); 
+9  
+}while(n < 1000 ||n > 9999); 
+10  
+Do 
+11  
+{ 
+12  
+printf(“\n Nhap thang: “); scanf(“%d”,&th); 
+13  
+}while(th < 1||th > 12);  
+14  
+switch(th) 
+15  
+{ 
+16  
+case 1: case 3: case 5: case 7: case 8: case 10: case 12: d = 31; 
+17  
+ 
+break; 
+18  
+ 
+case 9: case 4: case 6: d = 30; break; 
+19  
+ 
+case 2:  
+20  
+ 
+ { 
+21  
+ 
+ if(n % 4 == 0 && n %100!= 0||n % 400 == 0) 
+22  
+ 
+  
+  
+d = 29; 

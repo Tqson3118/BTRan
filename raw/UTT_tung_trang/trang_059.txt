@@ -1,0 +1,43 @@
+// Trang 59 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+59 
+Phep so sanh 2 >= 3 cho kq = 0 
+Phep so sanh 2 <= 2 cho kq = 1 
+Phep so sanh 2 <= 3 cho kq = 1 
+1.6.4.3. Toán tử logic 
+Một biểu thức chứa toán tử logic trả về 0 hoặc 1 tùy thuộc vào kết 
+quả biểu thức đúng hay sai. Toán tử logic thƣờng đƣợc sử dụng trong việc 
+ra quyết định trong lập trình C. 
+Bảng 1.7. Toán tử logic 
+Toán tử 
+Mô tả 
+Biểu diễn 
+&& 
+Toán tử AND, cho kết quả T 
+khi tất cả các toán hạng là T 
+A&&B 
+|| 
+Toán tử OR, cho kết quả T khi 
+một trong các toán hạng là T  
+A||B 
+! 
+Toán tử NOT, cho kết quả T khi 
+toán hạng là F 
+NOT A 
+ Ví dụ 1.46 
+Cho chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 int main() 
+3 { 
+4  int a = 2, b = 2, c = 3, kq; 
+5  printf("a = %d  b = %d c = %d\n", a, b, c); 
+6  printf("1: Dung - 0: Sai\n"); 
+7  kq = (a == b) && (c > b); 
+8  printf("Ket qua cua phep (a == b) && (c > b) la = %d \n", kq); 
+9  kq = (a == b) && (c < b); 
+10  printf("Ket qua cua phep (a == b) && (c < b) la %d \n", kq); 
+11  kq = (a == b) || (c < b); 
+12  printf("Ket qua cua phep (a == b) || (c < b) la %d \n", kq); 
+13  kq = (a != b) || (c < b); 
+14  printf("Ket qua cua phep (a != b) || (c < b) la %d \n", kq); 
+15  kq = !(a != b); 

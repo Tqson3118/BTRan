@@ -1,0 +1,62 @@
+// Trang 516 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+516 
+24    fclose(fptr); 
+25    return 0; 
+26 } 
+ Kết quả chƣơng trình (Ở màn hình Console) 
+ 
+Nhap vao so sinh vien: 4 
+ 
+Nhap ten sinh vien thu 1 : An 
+ 
+Nhap diem: 8 
+ 
+Nhap ten sinh vien thu 2 : Cuong 
+ 
+Nhap diem: 9 
+ 
+Nhap ten sinh vien thu 3 : Thuy 
+ 
+Nhap diem: 6 
+ 
+Nhap ten sinh vien thu 4 : Vinh 
+ 
+Nhap diem: 8 
+Nội dung của tệp Sinhvient.txt: 
+ 
+Ten SV: An  
+ 
+Diem = 8  
+ 
+Ten SV: Cuong  
+ 
+Diem = 9  
+ 
+Ten SV: Thuy  
+ 
+Diem = 6  
+ 
+Ten SV: Vinh  
+ 
+Diem = 8 
+ Ví dụ 7.15 
+Viết chƣơng trình nhập vào tên và điểm của n sinh viên. Nếu tệp đã 
+tồn tại trƣớc đó, hãy thêm thông tin của n sinh viên này vào tệp. 
+ Chƣơng trình 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+int main() 
+4 
+{ 
+5 
+   char tensv[50]; 
+6 
+   int diem, i, n; 
+7 
+   printf("Nhap vao so sinh vien: "); 
+8 
+   scanf("%d", &n); 

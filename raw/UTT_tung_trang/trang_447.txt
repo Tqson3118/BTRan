@@ -1,0 +1,46 @@
+// Trang 447 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+447 
+Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#define N 4 
+3 
+struct sinhvien{ 
+4 
+    char ten_sv[20]; 
+5 
+    int d_anh; 
+6 
+    int d_toan; 
+7 
+    int d_ly; 
+8 
+}; 
+9 
+struct sinhvien sv[]={ 
+10     {"Cuong", 82, 72, 58}, 
+11     {"Nam", 77, 82, 79},  
+12     {"Sinh", 52, 62, 39},  
+13     {"Thuy", 61, 82, 88} 
+14 };  
+15  
+16 int main() 
+17 { 
+18     int i; 
+19    for(i=0; i<N; i++){ 
+20    printf("%9s: TiengAnh = %3d  Toan = %3d   VatLy =  
+%3d\n", sv[i].ten_sv, sv[i].d_anh, sv[i].d_toan,  
+21   sv[i].d_ly);     
+22     } 
+23     return (0); 
+24 } 
+Kết quả chƣơng trình khi thực hiện: 
+      Cuong: TiengAnh =  82  Toan =  72   VatLy =  58 
+     Nam:  TiengAnh =  77   Toan =  82   VatLy =  79 
+     Sinh: TiengAnh =  52   Toan =  62   VatLy =  39 
+     Thuy: TiengAnh =  61   Toan =  82   VatLy =  88 
+ Ví  dụ 6.24 
+Khai báo kiểu struct và khởi tạo giá trị 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 

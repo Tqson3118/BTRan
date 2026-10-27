@@ -1,0 +1,7 @@
+// Trang 66 - Ngôn ngữ lập trình C_ebook.pdf
+
+63
+Hình2.4. Lưu đồ giải thuật của lệnh switch...case
+2.5.3 Giải thích
+Từ khóa switch, case, break phải viết bằng chữ thường, biểu 
+thức phải là có kết quả là các giá trị hằng nguyên (char, int, long,...). 

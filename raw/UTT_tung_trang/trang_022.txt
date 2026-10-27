@@ -1,0 +1,38 @@
+// Trang 22 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+22 
+Sự phổ biến của C là do hai yếu tố chính. Đầu tiên là ngôn ngữ 
+không cản trở lập trình viên. Anh ta có thể làm bất cứ điều gì bằng cách 
+sử dụng cấu trúc C thích hợp. Lý do thứ hai mà C phổ biến là trình biên 
+dịch C có sẵn cho hầu hết các máy tính. Do đó, mọi ngƣời có thể đính 
+kèm trình biên dịch C cho máy của họ một cách dễ dàng và ít chi phí. Các 
+mã lệnh viết bằng C trên máy này có thể đƣợc biên dịch và chạy trên một 
+máy khác chỉ cần thay đổi rất ít hoặc không phải thay đổi gì cả. 
+Năm 1980, Bjarne Stroustrup bắt đầu làm việc với một ngôn ngữ 
+mới, đƣợc gọi là “C++”. Ngôn ngữ này đƣợc cải thiện và tăng cƣờng trên 
+C bằng cách thêm một số tính năng mới.  
+Một trong những ngôn ngữ mới nhất, Java, dựa trên C++, Java là 
+đƣợc thiết kế để trở thành “C++ với các lỗi đã đƣợc sửa”.  
+1.1.2. Các tính chất của ngôn ngữ C 
+C là ngôn ngữ đƣợc sử dụng rộng rãi. C có những tính chất sau đây: 
+- Đơn giản 
+C là một ngôn ngữ đơn giản theo nghĩa nó cung cấp một cách tiếp 
+cận có cấu trúc (để giải quyết vấn đề thành nhiều phần), tập hợp phong 
+phú các hàm thư viện, kiểu dữ liệu, v.v. 
+- Máy độc lập và linh hoạt 
+Không giống như ngôn ngữ Assembly, các chương trình C có thể 
+được thực thi trên các máy khác nhau với một số thay đổi cụ thể của máy. 
+Do đó, C là một ngôn ngữ độc lập máy. 
+- Ngôn ngữ lập trình bậc trung 
+Ban đầu, C được dự định để làm lập trình cấp thấp. Nó được sử 
+dụng để phát triển các ứng dụng hệ thống như kernel, trình điều khiển, 
+v.v. Nó cũng hỗ trợ các tính năng của ngôn ngữ cấp cao. Đó là lý do tại 
+sao nó được gọi là ngôn ngữ bậc trung. 
+- Ngôn ngữ lập trình cấu trúc 
+C là một ngôn ngữ lập trình cấu trúc theo nghĩa chúng ta có thể chia 
+chương trình thành các phần bằng các hàm. Vì vậy, nó rất dễ hiểu và sửa 
+đổi. Các hàm cũng cung cấp khả năng sử dụng lại mã. 
+- Thƣ viện phong phú 
+C cung cấp rất nhiều hàm sẵn có giúp phát triển nhanh chương 
+trình. 
+- Quản lý bộ nhớ 

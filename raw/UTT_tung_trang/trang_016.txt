@@ -1,0 +1,39 @@
+// Trang 16 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+16 
+dịch, các hệ thống nhúng, v.v. Chẳng hạn, Linux kernel đƣợc viết bằng 
+ngôn ngữ C và Assembly. Các ngôn ngữ phổ biến nhƣ Python, PHP, Perl 
+và Ruby đều đƣợc thực hiện trong C. Thậm chí, C cũng đƣợc viết bằng 
+chính nó. Bởi nhiều hệ thống nhúng có giới hạn tài nguyên nghiêm ngặt 
+nên C thƣờng là ngôn ngữ đƣợc lựa chọn nhiều nhất vì tốn ít chi phí. 
+Trong chƣơng trình môn học của ngành Hệ thống thông tin và mới 
+nhất là ngành Công nghệ thông tin, C là môn học đƣợc đƣa vào sớm nhất 
+để giảng dạy nền tảng lập trình cho sinh viên của khoa Công nghệ thông 
+tin, Trƣờng Đại học Công nghệ Giao thông vận tải. 
+Vì những lý do đó, nhóm tác giả với sự nhiệt huyết của mình, với 
+kinh nghiệm đã giảng dạy môn học nhiều năm cho các thế hệ sinh viên từ 
+K64 đến K68 ngành Hệ thống thông tin đã biên soạn cuốn “Giáo trình 
+Ngôn ngữ lập trình C”. Giáo trình nhằm cung cấp những kiến thức nền 
+tảng của một ngôn ngữ đã có từ lâu đời, là nền tảng, cội nguồn của các 
+ngôn ngữ hiện đại ngày nay, để từ đây nhóm tác giả hy vọng các bạn sinh 
+viên có thể lĩnh hội và làm chủ kiến thức về một ngôn ngữ lập trình nào 
+đó mà mình theo đuổi, là hành trang trên giảng đƣờng đại học và lập 
+nghiệp sau này. 
+Giáo trình gồm 8 chƣơng: 
+CHƢƠNG 1: CÁC KHÁI NIỆM CƠ BẢN CỦA NGÔN NGỮ C 
+Một số vấn đề trọng tâm được trình bày trong Chương 1 bao gồm: 
+tập ký tự được sử dụng trong ngôn ngữ C, tập 32 từ khóa dành riêng 
+trong C mà người lập trình có thể sử dụng trong chương trình tùy theo ý 
+nghĩa của từng từ. Ngoài ra, Chương 1 còn giới thiệu cấu trúc, thành 
+phần của một chương trình viết bằng C, trình tự các bước từ lúc soạn 
+thảo đến lúc biên dịch và chạy chương trình, các kiểu dữ liệu được sử 
+dụng cho các biến, các hằng, các toán tử, toán hạng được sử dụng trong 
+các biểu thức, v.v. Cuối Chương 1 giới thiệu hai công cụ được sử dụng để 
+lập trình C, bao gồm Turbo C, Dev C++. 
+CHƢƠNG 2: CÁC LỆNH NHẬP - XUẤT DỮ LIỆU TRONG C 
+Hai hoạt động chủ yếu của bất kỳ ngôn ngữ lập trình, đó là đưa dữ 
+liệu vào chương trình để xử lý và đưa dữ liệu sau khi xử lý ra ngoài. 
+Chương 2, đề cập đến các lệnh được sử dụng để đưa dữ liệu từ bàn phím 
+hoặc tệp vào chương trình và các lệnh để đưa dữ liệu ra màn hình hoặc 
+ghi vào tệp. Dữ liệu được đưa vào hoặc đưa ra có thể là một ký tự, một 
+chuỗi ký tự, có thể là dữ liệu dạng số nguyên, số thực, v.v. Vì vậy một nội 

@@ -1,0 +1,40 @@
+// Trang 418 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+418 
+- Nhập vào ký tự ch, đếm số lần xuất hiện của ký tự ch trong chuỗi s. 
+Chẳng hạn, chuỗi s là “dai hoc cong nghe gtvt”, ký tự đƣợc nhập vào là o, 
+kết quả trả về là 2. 
+Yêu cầu:  
+Thể hiện mỗi ý trong bài bằng một hàm, xây dựng hàm main() để gọi 
+các kết quả đạt đƣợc. 
+ Bài tập 5.44 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Nhập vào chuỗi s1 và s2, hiển thị chuỗi s1 và s2 ra màn hình. 
+- Cho biết vị trí xuất hiện của chuỗi s2 trong s1. 
+Yêu cầu:  
+- Xây dựng hàm nhập chuỗi ký tự. 
+- Xây dựng hàm cho biết vị trí xuất hiện của chuỗi s2 trong s1. 
+ Bài tập 5.45 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+ 
+- Nhập vào một chuỗi ho_ten (chứa cả họ và tên), in chuỗi ra màn hình. 
+- Nhập vào một từ là tên của một ngƣời, thực hiện tìm kiếm tên trong 
+chuỗi họ tên. Nếu có  tên này trong chuỗi ho_ten thì thì xuất ra màn hình 
+“Ten cua nguoi nay da nhap!”, ngƣợc lại thông báo “Da nhap sai!”. 
+ Bài tập 5.46 
+Viết chƣơng trình đổi chữ xen kẻ 1 chữ hoa và 1 chữ thƣờng. 
+Test: nhập ABCDEfgh đổi thành AbCdEfGh. 
+ Bài tập 5.47 
+Viết chƣơng trình đảo ngƣợc các ký tự trong chuỗi. 
+Test: nhập ABCDE, xuất ra màn hình là: EDCBA. 
+Yêu cầu: 
+ 
+- Xây dựng hàm nhập chuỗi. 
+ 
+- Xây dựng hàm nghịch đảo các ký tự trong chuỗi. 
+ 
+- Xây dựng hàm hiển thị chuỗi. 
+ Bài tập 5.48 
+a. Viết chƣơng trình nhập vào một chuỗi ký tự S. 
+b. Nhập vào một ký tự, thông báo có hay không có ký tự đó trong 
+chuỗi S, nếu có đƣa ra vị trí của ký tự đó. 

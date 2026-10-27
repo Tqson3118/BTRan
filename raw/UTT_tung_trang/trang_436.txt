@@ -1,0 +1,43 @@
+// Trang 436 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+436 
+18    strcpy(nv1.ten_nv, "Le Trung Kien");//su dung ham strcpy de 
+sao chep   
+19    nv1.ns.ngay=30;   
+20    nv1.ns.thang=6;   
+21    nv1.ns.nam=1980;   
+22    //In thong tin cua nhan vien nv1   
+23    printf( "Ma nhan vien : %d\n", nv1.id_nv);   
+24    printf( "Ten nhan vien : %s\n", nv1.ten_nv);   
+25    printf( 
+"Ngay 
+sinh 
+cua 
+nhan 
+vien 
+(dd/mm/yyyy): 
+%d/%d/%d\n", nv1.ns.ngay,nv1.ns.thang,nv1.ns.nam);   
+26    return 0;   
+27 }   
+  Kết quả chƣơng trình: 
+Ma nhan vien : 101 
+Ten nhan vien : Le Trung Kien 
+Ngay sinh cua nhan vien (dd/mm/yyyy) : 30/6/1980 
+6.1.7. Cấu trúc đƣợc sử dụng nhƣ một tham số của hàm 
+Chúng ta có thể truyền cấu trúc nhƣ là một đối số hàm giống nhƣ 
+truyền các biến, mảng trở thành các đối số trong một hàm. 
+ Ví dụ 6.16 
+Xem xét chƣơng trình sau đây, sử dụng cấu trúc Sinh_vien làm một 
+tham số trong hàm: 
+1 #include<stdio.h> 
+2 struct Sinh_Vien 
+3 { 
+4     char ma_sv[10]; 
+5     char ten_sv[20]; 
+6     float diemtb; 
+7 }; 
+8 void Hienthi(struct Sinh_Vien sv); 
+9 int main() 
+10 { 
+11     struct Sinh_Vien s; 
+12     printf("Nhap thong tin sinh vien:\n"); 

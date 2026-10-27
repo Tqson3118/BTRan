@@ -1,0 +1,35 @@
+// Trang 212 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+212 
+5     printf("Nhap vao ba so: "); 
+6     scanf("%d %d %d",&a,&b, &c); 
+7     tong1 = a + b; 
+8     tong2 = a + c; 
+9     tong3 = b + c; 
+10     printf("Tong %d + %d = %d\n", a , b , tong1); 
+11     printf("Tong %d + %d = %d\n", a , c , tong2); 
+12     printf("Tong %d + %d = %d\n", b , c , tong3); 
+13     return 0; 
+14 } 
+Kết quả chƣơng trình 
+Nhap vao ba so: 12 23 43 
+Tong 12 + 23 = 35 
+Tong 12 + 43 = 55 
+Tong 23 + 43 = 66 
+Nhận xét: 
+ 
+Chƣơng trình có những công việc đƣợc lặp lại, chẳng hạn các 
+công việc ở dòng lệnh 7 đến dòng lệnh 9, dòng lệnh 10 đến dòng lệnh 12. 
+Có thể xây dựng các hàm thể hiện các công việc đó nhƣ sau: 
+Chƣơng trình 2 
+1 #include <stdio.h> 
+2 void tong(int x, int y);   // khai bao phuong thuc tong 
+3 int main() 
+4 { 
+5     int a, b, c; 
+6     printf("Nhap vao ba so: "); 
+7     scanf("%d %d %d", &a, &b, &c); 
+8     tong(a, b); 
+9     tong(a, c); 
+10     tong(b, c); 
+11     return 0; 

@@ -1,0 +1,41 @@
+// Trang 92 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+92 
+3 
+main() 
+4 
+{ 
+5 
+int a = 7; 
+6 
+int b = 4; 
+7 
+printf("Tong cua 2 so %d va %d la %d . \n", a, b, a + b); 
+8 
+getch(); 
+9 
+} 
+Kết quả chƣơng trình 
+Tong cua 2 so 7 va 4 la 11. 
+Giải thích: 
+Dòng 5 và dòng 6: Khai báo hai biến số nguyên a và b, khởi tạo giá 
+trị a = 7 và b = 4. 
+Dòng 7: Trong câu lệnh printf() xuất hiện ba mã định dạng %d, 
+tƣơng ứng với ba đối số a, b và a + b. Do đó chƣơng trình sẽ in ra  “Tong 
+cua 2 so 7 va 4 la 11.” 
+ Ví dụ 2.4 
+Viết chƣơng trình in ra chuỗi ký tự “Truong Dai hoc Cong nghe 
+GTVT”. 
+Chƣơng trình 
+1  #include <stdio.h> 
+2  #include <conio.h> 
+3  main() 
+4  { 
+5  char st[50]= "Truong Dai hoc Cong nghe GTVT"; 
+6  printf("%s", st); 
+7  getch(); 
+8  } 
+Giải thích: 
+Dòng 5: Khai báo 1 chuỗi ký tự st, có độ dài tối đa 50 ký tự, đƣợc 
+khởi tạo bằng câu “Truong Dai hoc Cong nghe GTVT”. 
+Dòng 6: Trong câu lệnh printf(), xuất hiện mã định dạng %s, do đó 

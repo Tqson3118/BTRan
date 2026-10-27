@@ -1,0 +1,13 @@
+// Trang 74 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+74 
+ 
+Bƣớc 4: Soạn thảo chƣơng trình 
+ 
+Hình 1.8. Màn hình soạn thảo chƣơng trình C bằng DevC++ 
+1.7.2.2. Thực hiện chương trình 
+Sau khi đã viết xong chƣơng trình, để thực hiện chƣơng trình, chúng 
+ta làm nhƣ sau: 
+Bƣớc 1: Vào menu Execute, chọn Compile (hoặc nhấn F9). 
+Bƣớc 2: Nếu chƣơng trình còn lỗi, thì sửa các dòng lỗi.  
+Bƣớc 3: Nếu biên dịch không có lỗi thì sẽ trả về kết quả nhƣ sau: 

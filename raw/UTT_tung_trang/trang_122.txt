@@ -1,0 +1,37 @@
+// Trang 122 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+122 
+Phác thảo chƣơng trình: 
+- Nhập vào hai số (kiểu nguyên hoặc kiểu thực). 
+- Sử dụng các công thức tính tổng, tính hiệu, tính tích, tính thƣơng 
+của hai số. 
+- In các kết quả thu đƣợc ra màn hình. 
+Chƣơng trình: 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 int main()   
+4 {   
+5     int a, b;   
+6     int tong, hieu, tich, mod;   
+7     float thuong;   
+8     printf("Nhap vao hai so cach nhau dau phay : ");   
+9     scanf("%d, %d", &a, &b);   
+10     tong = a + b;   
+11     hieu = a - b;   
+12     tich = a * b;   
+13     thuong = (float)a / b;   
+14     mod = a % b;   
+15     printf("Tong cua hai so = %d\n", tong);  // in tong 
+16     printf("Hieu cua hai so = %d\n", hieu);  // in hieu 
+17     printf("Tich cua hai so =  %d\n", tich);  //in tich 
+18     printf("Thuong cua hai so=  %4.2f\n", thuong);  // in thuong 
+19     printf("Du cua phep chia = %d\n", mod);  // chia lay du 
+20     return 0;    
+21 } 
+Kết quả thực hiện 
+Nhap vao hai so cach nhau dau phay : 12, 6 
+Tong cua hai so = 18 
+Hieu cua hai so = 6 
+Tich cua hai so =  72 
+Thuong cua hai so=  2.00 
+Du cua phep chia = 0 

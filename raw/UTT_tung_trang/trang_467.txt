@@ -1,0 +1,92 @@
+// Trang 467 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+467 
+ Bƣớc 6: Xây dựng hàm xoasv(sinhvien sv[], int *spt) để xóa một 
+bản ghi từ mảng các đối tƣợng sinh viên. Đầu tiên ngƣời dùng sẽ nhập mã 
+sinh viên cần xóa. Bƣớc tiếp theo, mã sinh viên này sẽ đƣợc kiểm tra để 
+đảm bảo nó tồn tại trong danh sách. Nếu bản ghi hoặc phần tử đó thực sự 
+tồn tại, quá trình xóa có thể đƣợc thực hiện. Hàm xoasv() đƣợc thực hiện 
+bằng việc kiểm tra bản ghi cần xóa là bản ghi đầu tiên, bắt đầu hay ở giữa 
+danh sách. Nếu bản ghi cần xóa là bản ghi cuối cùng trong danh sách, 
+chúng ta chỉ cần xóa bản ghi bằng cách cung cấp cho nó 1 phƣơng thức 
+khoitao(sinhvien sv[], int index) (khởi tạo tất cả giá trị về null hoặc 0). 
+Bản ghi cuối cùng là bản ghi có chỉ số bằng số phần tử trong danh sách - 
+1. Nếu bản ghi cần xóa ở đầu hoặc ở giữa danh sách, chúng ta cần sử 
+dụng một vòng lặp cho phép phần tử trƣớc tiếp quản phần tử kế tiếp (Dịch 
+chuyển phần tử sang trái, bắt đầu từ vị trí của phần từ cần xóa đến hết 
+danh sách, ở mỗi bƣớc phƣơng thức khoitao() đƣợc gọi để xóa thông tin 
+của phần tử cuối cùng trong danh sách, thực chất đây là thao tác ghi đè dữ 
+liệu lên phần tử cần xóa). Sau khi phần tử đƣợc xóa, số phần tử của danh 
+sách bị giảm đi 1 đơn vị. 
+1 
+void xoasv(sinhvien sv[], int *spt) 
+2 
+{ 
+3 
+ 
+char id[10]; 
+4 
+ 
+int index, i; 
+5 
+ 
+if (*spt>0) 
+6 
+ 
+ { 
+7 
+ 
+ 
+printf("Nhap ma sv can xoa:"); scanf("%s", &id); 
+8 
+ 
+ 
+index=timkiem(sv, id, *spt); 
+9 
+ 
+ 
+ 
+10  
+ 
+if (index!=-1 && *spt!=0) 
+11  
+ 
+ { 
+12  
+ 
+ if (index==*spt-1) // xoa phan tu cuoi cung 
+13  
+ 
+ 
+ { 
+14  
+ 
+ 
+ khoitao(sv, index);  
+15  
+ 
+ 
+ *spt--; 
+16  
+ 
+ 
+ printf("Ban ghi cua sinh vien da bi xoa.\n"); 
+17  
+ 
+ 
+ } 
+18  
+ 
+ 
+ else  
+19  
+ 
+ 
+ 
+{ 
+20  
+ 
+ 
+ 
+for(i=index;i<*spt;i++) //Xoa phan 
+tu dau tien hoac phan tu o giua 

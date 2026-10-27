@@ -1,0 +1,36 @@
+// Trang 32 - Ngôn ngữ lập trình C_ebook.pdf
+
+29
+Tên gọi: là những từ được quy ước bởi người dùng, thường dùng 
+để gọi tên một số thành phần khi viết chương trình như: biến, hằng hoặc 
+hàm. Khi đặt một tên gọi trong C, cần tuân thủ một số quy ước như sau:
++ Tên gọi không được phép trùng với từ khóa.
++ Tên gọi chỉ bao gồm: ký số 0 - 9, chữ cái thường a – z, chữ cái 
+hoa A – Z, dấu gạch dưới _
++ Tên gọi không được bắt đầu bằng số.
++ Tên gọi có phân biệt chữ thường và chữ viết hoa.
+Ví dụ một số tên gọi hợp lệ như:
+Tên gọi hợp lệ
+a
+bien1
+bien_1
+thamSoThuNhat
+Các tên gọi được đặt không tuân theo các quy ước trên thì sẽ là tên 
+gọi không hợp lệ, ví dụ như các tên gọi sau là không hợp lệ:
+Tên gọi 
+không hợp lệ
+2a
+sai vì bắt đầu bằng số
+if
+sai vì trùng với từ khóa
+bien@
+sai vì chứa ký tự không hợp lệ @
+tham so thu nhat
+sai vì chứa khoảng trắng
+Trong khi lập trình, các ngôn ngữ lập trình không cho phép đặt 
+các tên gọi trùng với tên từ khóa. Với ngôn ngữ lập trình C, hệ thống từ 
+khóa sử dụng toàn bộ ký tự thường. Do đó, để tránh việc trùng với các 
+từ khóa, các tên gọi có thể được đặt bằng các sử dụng một hoặc nhiều 
+ký tự in hoa. Ví dụ, đặt tên biến là “enum” là không hợp lệ vì trùng với 
+từ khóa. Tuy nhiên, tên biến là “Enum” là hoàn toàn hợp lệ vì nó không 
+trùng từ khóa.

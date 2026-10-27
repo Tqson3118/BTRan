@@ -1,0 +1,81 @@
+// Trang 31 - Ngôn ngữ lập trình C_ebook.pdf
+
+28
+Hình 1.2. Các bước biên dịch chương trình C
+1.7. TỪ KHÓA VÀ TÊN GỌI
+Trong câu lệnh khai báo biến: 
+int a;   
+thì int được hiểu là từ khóa – keywork, trong trường hợp này 
+mang ý nghĩa là kiểu dữ liệu và a là tên gọi - identifier được đặt 
+cho biến.
+ Từ khóa: là những từ được quy ước bởi ngôn ngữ C, mang 
+một ý nghĩa cố định mà người dùng không được phép thay đổi. Các từ 
+khóa trong C được liệt kê ở bảng dưới.
+auto
+double
+int
+struct
+break
+else
+long
+switch
+case
+enum
+register
+typedef
+char
+extern
+return
+union
+const
+float
+short
+unsigned
+continue
+for
+signed
+void
+default
+goto
+sizeof
+volatile
+do
+if
+static
+while
+Bảng 1.1. Các từ khóa trong C
+mặc định, khai báo 
+biến cục bộ
+thoát khỏi vòng lặp
+nhánh gtri trong nhawnsh switch
+kiểu dữ liệu kí tự
+hằng số, ko thay đổi đc
+bỏ qua phần còn lại của vòng 
+lặp đến vòng tiếp theo
+ko có case khớp: nhánh mđ trong switch
+vòng lặp do...while
+kdl số thực dấu , động
+độ chính xác kép
+nhánh ngược lệnh if..else
+liệt kê_tập hợp hằng số có tên
+khai báo biến, hàm đc định nghĩa ở file khác
+số thực, độ chính xác đơn
+vòng lặp với số lần lặp xđ
+nhảy k đk đến 1 nhãn(label) khác
+câu lệnh điều kiện
+kdl số nguyên
+gợi ý trình biên dịch lưu biến vào 
+thanh cpu nhanh
+trả về gtri và kthuc hàm 
+kí tự có dấu
+trả về kích thước(byte)
+biến giữ nguyên gtri các lần gọi hàm
+giới hạn phạm vi trong file
+gom nhiều biến khác kiểu vào 1 khối
+cấu trúc rẻ nhãnh nhiều trường hợp
+cách đặt tên khác cho kiểu đã có
+= struct dùng chung 1 vùng nhớ
+k có dấu
+rõng k có gtri cụ thê->hàm trả về
+con trỏ đa năng
+vòng lặp với đk kiểm tra trước

@@ -1,0 +1,51 @@
+// Trang 57 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+57 
+Chẳng hạn, có - (a + b) nhƣng không có phép toán + (a +b). 
+- Phép chia hai số nguyên sẽ cho kết quả bỏ đi phần thập phân. 
+Chẳng hạn, 11/3 = 3. Muốn có kết quả là số thực có cả phần thập 
+phân, ta phải ép kiểu kết quả: (float) 11/3. 
+- Phép % cho phần dƣ của phép chia nguyên, không áp dụng cho các 
+giá trị kiểu float và double. 
+1.6.4.2. Toán tử quan hệ 
+Kết quả trả về chỉ nhận một trong hai giá trị: T (True) hoặc F (False). 
+Bảng 1.6. Toán tử quan hệ 
+Toán tử 
+Mô tả 
+Biểu diễn 
+== 
+Kiểm tra giá trị của hai toán hạng 
+có bằng nhau hay không? Nếu 
+đúng, thì kết quả trả về là T. 
+A == B 
+!= 
+Kiểm tra giá trị của hai toán hạng 
+có bằng nhau hay không? Nếu sai, 
+thì kết quả trả về là F. 
+A!=B 
+> 
+Kiểm tra giá trị của toán hạng bên 
+trái có lớn hơn giá trị của toán hạng 
+bên phải hay không? Nếu có, điều 
+kiện trở thành T. 
+A > B 
+< 
+Kiểm tra giá trị của toán hạng bên 
+trái nhỏ hơn giá trị của toán hạng 
+bên phải. Nếu có, điều kiện trở 
+thành T. 
+A < B 
+>= 
+Kiểm tra giá trị của toán hạng bên 
+trái có lớn hơn hoặc bằng giá trị của 
+toán hạng bên phải hay không? Nếu 
+có, điều kiện trở thành T. 
+A >= B 
+<= 
+Kiểm tra giá trị của toán hạng bên 
+trái nhỏ hơn hoặc bằng giá trị của 
+toán hạng bên phải. Nếu có, điều 
+kiện trở thành T 
+A <= B 
+ Ví dụ 1.45 
+Cho đoạn chƣơng trình sau đây: 

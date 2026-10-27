@@ -1,0 +1,30 @@
+// Trang 371 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+371 
+8     while (t != 0) // xac dinh so nghich dao r 
+9    { 
+10       r = r * 10; 
+11       r = r + t%10; 
+12       t = t/10; 
+13    } 
+14     if (n == r) 
+15       printf("%d la so doi xung.\n", n); 
+16    else 
+17       printf("%d khong la so doi xung.\n", n); 
+18     return 0; 
+19 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao mot so nguyen: 
+ 
+1234321 
+ 
+1234321 la so doi xung. 
+ 
+Nhap vao mot so nguyen: 
+ 
+123654 
+ 
+123654 khong la so doi xung. 
+ 
+ 

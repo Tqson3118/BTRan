@@ -1,0 +1,36 @@
+// Trang 496 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+496 
+b. Viết hàm liệt kê mã và tên của các mặt hàng có năm sản xuất là 
+2019, có bao nhiêu mặt hàng nhƣ vậy, cho biết số lƣợng đếm đƣợc. 
+c. Viết hàm đếm các mặt hàng có màu đỏ và có giá bán lớn hơn 
+200000. Nếu không có thì thông báo không có, nếu có cho biết số lƣợng 
+đếm đƣợc. 
+d. Viết hàm liệt kê ra các mặt hàng có giá bán thấp nhất trong siêu thị. 
+e. Viết hàm nhập vào một mã số x (x- ký tự), kiểm tra và trả lời có 
+mặt hàng nào có mã số x trong siêu thị hay không? 
+f. Viết hàm sắp xếp lại danh sách giảm dần theo năm sản xuất.  
+Yêu cầu: 
+- Thể hiện mỗi ý của bài tập bằng một hàm. 
+ Bài tập 6.7 
+Thông tin về cầu thủ của một đội bóng bao gồm: Mã cầu thủ (chuỗi 
+ký tự, độ dài tối đa 10), Tên cầu thủ (chuỗi ký tự, 20), quê quán (chuỗi ký 
+tự, 30), tuổi (số nguyên), vị trí (chuỗi ký tự, 15),  hợp đồng (số nguyên). 
+Hãy thực hiện các yêu cầu sau đây bằng ngôn ngữ lập trình C 
+a. Nhập thông tin của n cầu thủ trong một câu lạc bộ. 
+b. Viết hàm liệt kê mã và tên của các cầu thủ đá ở vị trí tiền đạo, cho 
+biết có bao nhiêu cầu thủ đá ở vị trí này. 
+c. Viết hàm cho biết có bao nhiêu cầu thủ sắp giải nghệ (có tuổi lớn 
+hơn 32). Nếu không có thì thông báo không có, nếu có cho biết số lƣợng 
+đếm đƣợc. 
+d. Viết hàm in ra các cầu thủ có số năm hợp đồng bé hơn 2 ( để câu 
+lạc bộ có thể biết để ký tiếp hợp đồng khác) 
+e. Viết hàm nhập vào tên của một cầu thủ, cho biết có cầu thủ này 
+trong đội bóng hay không? 
+f. Viết hàm xoá một cầu thủ có mã số là x, x nhập vào từ bàn phím.  
+ Bài tập 6.8 
+Viết chƣơng trình thực hiện các công việc sau đây: 
+a. Khai báo cấu trúc nhân viên, biết rằng thông tin của một nhân 
+viên: Mã số nhân viên (kiểu ký tự), họ tên nhân viên (30 ký tự), ngày sinh 
+(kiểu ngày), lƣơng (số thực), giới tính (0: nữ, 1: nam). 
+b. Viết hàm nhập thông tin cho n nhân viên, n đƣợc nhập từ bàn phím. 

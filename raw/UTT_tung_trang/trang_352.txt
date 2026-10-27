@@ -1,0 +1,38 @@
+// Trang 352 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+352 
+Cú pháp: 
+ 
+char *strcat(char *s1, const char *s2); 
+Chức năng: Hàm strcat() nối thêm một bản sao của chuỗi đƣợc trỏ 
+bởi con trỏ s2 vào cuối chuỗi đƣợc trỏ bởi con trỏ s1. Kết quả của hàm trả 
+về một con trỏ trỏ vào tới s1, nơi chứa kết quả của phép ghép hai chuỗi. 
+Hai tham số của hàm strcat():  
+s1: Con trỏ trỏ tới chuỗi sẽ đƣợc thay đổi, nội dung của chuỗi mà con 
+trỏ s2 đang trỏ tới đƣợc sao chép vào cuối chuỗi, nơi con trỏ s1 đang trỏ tới. 
+s2: Con trỏ trỏ tới chuỗi sẽ đƣợc nối vào cuối chuỗi con trỏ s1 đang 
+trỏ tới. 
+Lƣu ý:  Sử dụng hàm strcat() một cách thận trọng, vì nó dễ dàng 
+sao chép nhiều bytes vào biến, có thể gây ra những hành vi không thể 
+đoán trƣớc. 
+ Ví dụ 5.55 
+Nhập vào hai chuỗi ký tự, nối và in màn hình kết quả của phép nối 
+hai chuỗi ký tự?  
+ Cách 1: Sử dùng hàm strcat() 
+1 #include <stdio.h> 
+2 #include <string.h> 
+3  int main() 
+4 { 
+5   char a[1000], b[1000]; 
+6    printf("Nhap vao chuoi thu nhat:\n"); 
+7   gets(a); 
+8    printf("Nhap vao chuoi thu hai:\n"); 
+9   gets(b); 
+10   // noi hai chuoi a va b bang ham strcat, ghep chuoi b vao chuoi a 
+11   strcat(a, b); 
+12    printf("Chuoi ky tu thu duoc khi ghep hai chuoi tren: %s\n", a); 
+13    return 0; 
+14 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi thu nhat: 

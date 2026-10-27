@@ -1,0 +1,57 @@
+// Trang 108 - Ngôn ngữ lập trình C_ebook.pdf
+
+105
+Ví dụ 4.10:
+1
+2
+3
+4
+5
+6
+7
+8
+int  a[5][10];
+int i, j;
+for (i=0; i<5; i++)
+	
+for(j=0; j<10; j++)
+	
+{
+	
+	
+printf(“Nhap phan tu %d %d”,i, j);
+	
+	
+scanf(“%d”, &a[i][j]) ;
+	
+}
+	
+Thứ tự nhập dữ liệu vào mảng 2 chiều:
+ In giá trị các phần tử mảng ra màn hình: 
+Ví dụ 4.11:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+int  a[3][2]={{1,2},{2,3},{3,4}};
+int i,j;
+for (i=0;i<3;i++)
+{
+	
+for(j=0;j<2;j++)
+	
+{
+	
+	
+printf (“%d”, a[i][j]);
+	
+}
+	
+printf(“\n”);
+}

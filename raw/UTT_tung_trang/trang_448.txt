@@ -1,0 +1,40 @@
+// Trang 448 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+448 
+- Khai báo kiểu cấu trúc sinh viên, bao gồm các trƣờng thông tin 
+nhƣ: tên sinh viên, điểm môn toán, điểm môn tiếng anh và điểm môn vật 
+lý, trung bình môn. 
+- Khởi tạo 4 sinh viên, bao gồm các thông tin: tên sinh viên, điểm 
+môn toán, điểm môn tiếng anh, điểm môn vật lý. 
+- Tính điểm trung bình cho các sinh viên. In thông tin của các sinh 
+viên ra màn hình. 
+Phác thảo lời giải 
+- Khai báo cấu trúc sinhvien. 
+- Khởi tạo mảng sv[] gồm 4 sinh viên, mỗi sinh viên có thông tin của 
+tên sinh viên, điểm môn tiếng anh, điểm môn toán, điểm môn vật lý. 
+- Sử dụng công thức điểm trung bình = (điểm môn tiếng anh + điểm 
+môn toán + điểm môn vật lý)/3. 
+- Hiển thị thông tin của các sinh viên sau khi đã cập nhật điểm trung bình. 
+Chƣơng trình 
+1  #include <stdio.h> 
+2  #define N 4 
+3  struct sinhvien{ 
+4      char ten_sv[20]; 
+5      int d_anh; 
+6      int d_toan; 
+7      int d_ly; 
+8      double d_tb; 
+9  }; 
+10  static struct sinhvien sv[]={ 
+11      {"Cuong", 82, 72, 58,0.0}, 
+12      {"Nam", 77, 82, 79, 0.0},  
+13      {"Sinh", 52, 62, 39, 0.0},  
+14      {"Thuy", 61, 82, 88, 0.0} 
+15  };  
+16  int main() 
+17  { 
+18      int i; 
+19      //tinh diem trung binh cho moi sinh vien 
+20      for(i=0; i<N; i++) 
+21   
+{ 

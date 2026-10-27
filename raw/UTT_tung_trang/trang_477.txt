@@ -1,0 +1,40 @@
+// Trang 477 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+477 
+  } 
+ printf("Nhap ten sinh vien:");  
+ fflush(stdin);  
+ gets(sv[*spt].tensv);  
+ printf("Nhap gioi tinh sinh vien:(F hoac M):");  
+ fflush(stdin);  
+ scanf("%s", &sv[*spt].gt); 
+ printf("Nhap diem thanh phan thu nhat:");  
+ scanf("%f", &sv[*spt].d_tp1); 
+ printf("Nhap diem thanh phan thu hai:");  
+ scanf("%f", &sv[*spt].d_tp2); 
+ printf("Nhap diem chuyen can:");  
+ scanf("%f", &sv[*spt].d_cc); 
+ printf("Nhap diem giua ky:");  
+ scanf("%f", &sv[*spt].d_gk); 
+ printf("Nhap diem ket thuc mon:");  
+ scanf("%f", &sv[*spt].d_kt); 
+ (*spt)++; 
+} 
+int timkiem(sinhvien sv[], char id[], int spt) 
+{  
+ int timthay = -1, i; 
+ for(i = 0; i < spt && timthay == -1; i++) 
+ { 
+  
+if(strcmp(sv[i].masv, id) == 0) timthay = i; 
+  
+else timthay = -1; 
+ } 
+ return timthay; 
+} 
+void xoasv(sinhvien sv[], int *spt) 
+{ 
+ char id[10]; 
+ int index, i; 
+ if (*spt > 0) 
+  { 

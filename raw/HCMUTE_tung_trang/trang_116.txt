@@ -1,0 +1,40 @@
+// Trang 116 - Ngôn ngữ lập trình C_ebook.pdf
+
+113
+Kết quả khi chạy chương trình:
+XIN CHAO
+  Hàm strcat
+Cú pháp: char *strcat(char *dest, const char *src);  //
+Phải khai báo thư viện string.h.
+Hàm có chức năng thêm chuỗi src vào sau chuỗi dest.
+Lưu ý: cú pháp trên có ký hiệu *, đây là ký hiệu của con trỏ sẽ 
+trình bày ở chương 5. Ở đây, ta hiểu đơn giản đây phải là tên của chuỗi 
+hay mảng.
+1
+2
+3
+4
+5
+6
+char dich[25];
+char s2[]=” “,s3[]=”chao”,s1[]=”Xin”;
+strcat(dich, s1);
+strcat(dich, s2);
+strcat(dich, s3); 
+puts(dich);
+Kết quả khi chạy chương trình:
+Xin chao
+ Hàm strcpy
+Cú pháp: char *strcpy(char *dest, const char *src);  //Phải khai 
+báo thư viện string.h. 
+Hàm có chức năng chép chuỗi src vào dest.
+Ví dụ 4.24: 
+1
+2
+3
+4
+char dich[25];
+char nguon[]=”Xin chao”;
+strcpy(dich, nguon); 
+puts(dich);
+Kết quả khi chạy chương trình:

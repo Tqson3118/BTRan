@@ -1,0 +1,42 @@
+// Trang 537 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+537 
+21          i++; 
+22      } 
+23      tot = i; 
+24   printf("\n Noi dung cua tep %s  la : \n",fname);     
+25      for(i = 0; i < tot; ++i) 
+26      { 
+27          printf(" %s\n", line[i]); 
+28      } 
+29      printf("\n"); 
+30      return 0; 
+31  } 
+ Kết quả chƣơng trình: 
+Chuong trinh doc tu tep va luu vao mang: 
+------------------------------------------------------ 
+ Nhap ten tep can mo : test_7_3.txt 
+ Noi dung cua tep test_7_3.txt  la: 
+ Ao lua Ha Dong 
+ Nang Sai Gon anh di ma chot mat 
+ Boi vi em mac ao lua Ha Dong 
+ Anh van yeu mau ao ay vo cung 
+ Tho cua anh van con nguyen lua trang 
+ Bài tập 7.5 
+Viết chƣơng trình để đếm số dòng trong một tệp văn bản. 
+Phác thảo lời giải: 
+- Nhập vào tên của tệp, kiểm tra sự tồn tại của tệp. 
+- Trích xuất từng ký tự của tệp vào biến ký tự c. 
+- Sử dụng vòng lặp để duyệt các ký tự, nếu gặp ký tự xuống dòng 
+“\n” thì tăng biến đếm lên một đơn vị. 
+ Chƣơng trình 
+1 
+#include <stdio.h> 
+2 
+#define FSIZE 100 
+3 
+int main() 
+4 
+{ 
+5 
+    FILE *fptr; 

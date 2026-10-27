@@ -1,0 +1,94 @@
+// Trang 109 - Ngôn ngữ lập trình C_ebook.pdf
+
+106
+Ví dụ 4.12: Chương trình sau sẽ in ra số lớn nhất trên từng hàng 
+của một mảng 2 chiều nhập vào từ bàn phím.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+#include <stdio.h>
+#include <conio.h>
+int main (void)
+{
+	
+int a[5][4], i,j,max;
+	
+for (i=0;i<5;i++)
+	
+	
+for(j=0;j<4;j++)
+	
+	
+{
+	
+	
+printf(“Nhap phan tu %d %d: “,i, j);
+	
+	
+	
+scanf(“%d”, &a[i][j]) ;
+	
+	
+}
+	
+for (i=0; i<5; i++)
+	
+{
+	
+	
+max = a[i][0];
+	
+	
+for(j=0;j<4;j++)
+	
+	
+{
+	
+	
+	
+if (max < a[i][j])
+   	
+	
+	
+	
+ max = a[i][j];
+	
+	
+}
+	
+	
+printf(“%d\n”, max);
+	
+}
+	
+getch();
+	
+return 0;
+}
+4.2. CHUỖI VÀ MẢNG CHUỖI
+4.2.1. Chuỗi
+4.2.1.1. Định nghĩa:
+Chuỗi là mảng 1 chiều các phần tử kiểu ký tự, kết thúc bằng ký 
+tự NULL.

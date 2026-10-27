@@ -1,0 +1,50 @@
+// Trang 217 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+217 
+- Hàm này có tên hàm là max. 
+- Kiểu hàm là kiểu nguyên (int). 
+- Có 2 tham số hình thức là a, b có kiểu nguyên. 
+void Tinhtong(int a, int b) 
+- Hàm này có tên hàm là Tinhtong. 
+- Kiểu hàm là void (không trả về giá trị). 
+- Có 2 tham số hình thức là a, b có kiểu số nguyên. 
+ Ví dụ 4.3 
+Viết chƣơng trình tính tổng của hai số a, b nhập từ bàn phím (sử 
+dụng hàm). 
+Cách 1: Không  có kết quả trả về 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 
+3 
+void tinhtong(int a, int b) 
+4 
+{ 
+5 
+printf("tong= %d", a + b); 
+6 
+} 
+7 
+main() 
+8 
+{ 
+9 
+int x, y; 
+10 printf("Nhap x = "); 
+11 scanf("%d", &x); 
+12 printf("Nhap y = "); 
+13 scanf("%d", &y); 
+14  
+tinhtong(x, y); 
+15  
+getch(); 
+16 } 
+Cách 2: Hàm  trả về giá trị 
+1 #include<stdio.h> 
+2 #include<conio.h> 
+3 int tinhtong(int a, int b) 
+4 { 
+5  
+return a + b; 
+6 } 
+7 main() 

@@ -1,0 +1,62 @@
+// Trang 438 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+438 
+ Ví dụ 6.17 
+ Cho khai báo cấu trúc Sinh_vien sau đây: 
+1 
+struct Sinh_vien  
+2 
+{ 
+3 
+  char ma_sv[15]; 
+4 
+  char ten_sv[30]; 
+5 
+  float diem; 
+6 
+}; 
+Khai báo con trỏ kiểu cấu trúc Sinh_vien nhƣ sau: 
+struct Sinh_vien *sv;  
+Truy cập đến thành phần ten_sv: 
+ 
+sv->ten_sv; 
+ Ví dụ 6.18 
+ Xem xét chƣơng trình sau đây: 
+1 
+#include <stdio.h> 
+2 
+// dinh nghia kieu cau truc 
+3 
+  struct Sinh_vien { 
+4 
+    char ma_sv[15]; 
+5 
+    char ten_sv[30]; 
+6 
+    float diem_tb; 
+7 
+  }; 
+8 
+int main()  
+9 
+{ 
+10 
+  // khai bao bien cau truc  
+11 
+  struct Sinh_vien sv; 
+12 
+  // bien con tro kieu Sinh_vien 
+13 
+  struct Sinh_vien *p = NULL; 
+14 
+  // con tro p tro toi sv 
+15 
+  p = &sv; 
+16 
+  // Nhap thong tin 
+17 
+  printf("Nhap vao ma sinh vien: "); 
+18 
+  scanf("%s", p->ma_sv); 
+19 
+  printf("Nhap vao ten sinh vien: "); 

@@ -1,0 +1,35 @@
+// Trang 16 - Ngôn ngữ lập trình C_ebook.pdf
+
+13
+Ví dụ, một chương trình viết bằng ngôn ngữ cấp cao như sau:
+#include <stdio.h>
+int main()
+{
+    printf(“Hello, World!\n”);   
+    return 0;
+}
+1.2. GIẢI THUẬT VÀ LƯU ĐỒ
+Một chương trình được xem như một sự kết hợp của giải thuật và 
+cách thể hiện của giải thuật thông qua ngôn ngữ lập trình. Giải thuật 
+(Algorithm) là các cách để giải quyết bài toán lập trình, hay phương 
+pháp cụ thể để thực hiện các tác vụ. Giải thuật được xem là cốt lõi để 
+giải quyết các vấn đề lập trình. Giải thuật còn thể hiện các ý tưởng của 
+người lập trình nhằm giúp chương trình đạt hiệu quả cao nhất. Chương 
+trình cuối cùng là tập hợp của các miêu tả giải thuật thông qua một ngôn 
+ngữ lập trình nào đó.
+Lập trình là một quá trình tư duy logic giải quyết một vấn đề nào 
+đó. Do đó, giải thuật là một yếu tố quan trọng trong lập trình. Ví dụ, 
+để giải một phương trình bậc 2, người lập trình phải biết các bước cần 
+thiết để tự giải một phương trình. Nói cách khác là người lập trình có 
+thể tự giải được thông qua các bước, các bước đó chính là giải thuật. 
+Khi chúng ta không biết giải quyết vấn đề từ đâu, thì thật khó để viết 
+một chương trình máy tính để giải quyết vấn đề đó. Lưu đồ là thể hiện 
+của giải thuật bằng hình ảnh. Nó thể hiện các bước giải quyết một vấn 
+đề dựa trên một giải thuật nào đó. Các sinh viên mới học lập trình hoặc 
+đã biết lập trình ở mức cơ bản thường có thói quen bỏ qua bước vẽ lưu 
+đồ nhằm tiết kiệm thời gian. Điều này mang tính chất chủ quan vì các 
+bạn cho rằng mình đã quen với ngôn ngữ và các công việc lập trình. 
+Việc viết lưu đồ mang tính hình thức và mất thêm thời gian, điều này có 
+thể đúng với một số chương trình nhỏ, một vài ví dụ cơ bản mà các bạn 
+Khi copy để chạy code cần sử lại dấu " thẳng 
+vì máy k đọc đc dấu " cong như trong tài liệu

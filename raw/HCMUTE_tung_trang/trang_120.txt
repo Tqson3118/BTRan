@@ -1,0 +1,43 @@
+// Trang 120 - Ngôn ngữ lập trình C_ebook.pdf
+
+117
+ 		
+scanf(“%d”,&a[i]);
+	 }
+for (i=0; i<10; i++)
+	 {
+	 	
+if ((a[i]%2 == 1)&&(a[i]>=20))
+	 	
+{
+ 		
+	
+flag = 1;
+	 	
+	
+break;
+	 	
+}
+	 }
+if (flag == 1)
+	 printf(“Co”);
+else
+	 printf(“Khong”);
+getch();
+return 0;
+}
+Yêu cầu:
+ Cho biết chức năng của chương trình là gì?
+3. Hãy đọc và phân tích chương trình sau :
+#include <stdio.h>
+#include <conio.h>
+int main (void)
+{
+int a[10],i, dem=0;
+for (i=0; i<10; i++)
+	 {
+	 	
+printf(“nhap phan tu thu %d: “, i);
+ 		
+scanf(“%d”,&a[i]);
+	 }

@@ -1,0 +1,77 @@
+// Trang 547 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+547 
+23 
+    fTemp = fopen("replace.tmp", "w");  
+24 
+    /* Ham fopen() tra ve NULL neu khong mo duoc tep. */ 
+25 
+    if (fPtr == NULL || fTemp == NULL) 
+26 
+    { 
+27 
+        /* Thoat neu khong mo duoc tep tin */ 
+28 
+        printf("\nKhong the mo duoc tep tin.\n"); 
+29 
+        printf("Kiem tra va chon lai tep ton tai co the doc/ghi.\n"); 
+30 
+        exit(EXIT_SUCCESS); 
+31 
+    } 
+32 
+    /* 
+33 
+     * Doc tung dong o tep nguon va ghi vao tep dich  
+34 
+     * tep tin sau khi da thay the tu . 
+35 
+     */ 
+36 
+    while ((fgets(buffer, BUFFER_SIZE, fPtr)) != NULL) 
+37 
+    { 
+38 
+      // Thay the tat ca tu can thay the xuat hien trong dong hien tai 
+39 
+        replaceAll(buffer, oldWord, newWord); 
+40 
+        // Sau thay the ghi no vao tep tin tam thoi 
+41 
+        fputs(buffer, fTemp); 
+42 
+    } 
+43 
+    /* Dong tat ca cac tep tin co lien quan*/ 
+44 
+    fclose(fPtr); 
+45 
+    fclose(fTemp); 
+46 
+    /* Xoa tep nguon ban dau */ 
+47 
+    remove(path); 
+48 
+    /* Doi ten tep tam thoi tro thanh ten cua tep ban dau */ 
+49 
+    rename("replace.tmp", path); 
+50 
+    printf("\nThay the thanh cong tat ca cac tu can thay the '%s' 
+bang tu '%s'.", oldWord, newWord); 
+51 
+    return 0; 
+52 
+} 
+53 
+/** 
+54 
+ * Ham de thay the tu can thay the trong tep bang mot tu khac. 
+55 
+ */ 
+56 
+void replaceAll(char *str, const char *oldWord, const char 
+*newWord) 
+57 
+{ 
+58 
+    char *pos, temp[BUFFER_SIZE]; 

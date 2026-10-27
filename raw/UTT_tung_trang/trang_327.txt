@@ -1,0 +1,38 @@
+// Trang 327 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+327 
+12 // Con tro  n1 va n2 chua dia chi cua a va b tuong ung 
+13 void swap(int* n1, int* n2) 
+14 { 
+15     int temp; 
+16     temp = *n1; 
+17     *n1 = *n2; 
+18     *n2 = temp; 
+19 } 
+  Kết quả chƣơng trình: 
+ 
+a = 10 
+ 
+b = 5 
+ Giải thích chƣơng trình: 
+Địa chỉ của hai biến a, b đƣợc truyền cho hàm swap() thông qua lời gọi 
+trong hàm chính swap(&a, &b); con trỏ n1 và n2 chứa địa chỉ của a và b. 
+Khi giá trị tại địa chỉ n1 và n2 bị thay đổi, a, b cũng đƣợc thay đổi 
+tƣơng ứng. Nghĩa là nếu *n1 và *n2 đƣợc thay đổi bên trong hàm swap() 
+thì a, b cũng đƣợc thay đổi bên trong hàm main(). 
+Bên trong hàm swap(), *n1 và *n2 đƣợc tráo đổi giá trị. Do đó, giá 
+trị trong a và b cũng đƣợc hoán đổi. Lƣu ý, hàm swap() không trả về giá 
+trị, kiểu trả về của nó là void. 
+Hàm trả về biến con trỏ: một hàm cũng có thể trả về một con trỏ tới 
+hàm gọi. Trong trƣờng hợp này, chúng ta cần thận trọng, bởi vì các biến 
+cục bộ của hàm không nằm ngoài hàm, có phạm vi bên trong hàm. Do đó, 
+nếu ta trả về một con trỏ đƣợc kết nối với một biến cục bộ, con trỏ đó sẽ 
+không trỏ đến bất cứ cái gì khi hàm kết thúc. 
+ Ví dụ 5.34 
+Viết chƣơng trình tìm số lớn nhất trong hai số nguyên a, b đƣợc nhập 
+từ bàn phím. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 int* find_max(int*, int*); 
+3 int main() 
+4 { 

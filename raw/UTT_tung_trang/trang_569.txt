@@ -1,0 +1,43 @@
+// Trang 569 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+569 
+ Ví dụ 8.7 
+Sử dụng hàm bar3D() vẽ thanh hình chữ nhật ba chiều. 
+Gợi ý:  Hàm bar3d(int left, int top, int right, int bottom, int depth, int 
+topflag): có 6 tham số trong đó:  
+left: chỉ định tọa độ X của góc trên bên trái; 
+top: chỉ định tọa độ Y của góc trên bên trái; 
+right: chỉ định tọa độ X của góc dƣới bên phải; 
+bottom: chỉ định tọa độ Y của góc dƣới bên phải; 
+depth: chỉ định độ sâu của thanh tính theo pixel. 
+topflag: là một tham số quan trọng xác định rằng đỉnh 3D có nên 
+đƣợc đặt trên thanh hay không. Nếu giá trị của topflag = 1, thì nó sẽ đặt 
+đỉnh trên thanhvà ngƣợc lại nếu khác 1, nó sẽ không đặt đỉnh trên thanh. 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 
+3 
+#include <graphics.h> 
+4 
+void main() 
+5 
+{ 
+6 
+int gd = DETECT,gm; 
+7 
+initgraph(&gd,&gm, “ ”); 
+8 
+bar3d( 100,150,200,200,25,1); 
+9 
+getch(); 
+10 closegraph(); 
+11 } 
+ Kết quả chƣơng trình: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

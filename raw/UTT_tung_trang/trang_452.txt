@@ -1,0 +1,38 @@
+// Trang 452 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+452 
+*-------------------------------------* 
+Sinh vien Thuy: 
+TiengAnh = 61  Toan = 82   VatLy = 88 
+DiemTB = 77.0 
+XepLoai = Kha 
+*-------------------------------------* 
+ Yêu cầu với sinh viên: Viết lại chƣơng trình từ ví dụ 6.23 đến ví 
+dụ 6.25: 
+- Xây dựng hàm nhập thông tin các sinh viên; 
+- Xây dựng hàm hiển thị thông tin sinh viên; 
+- Xây dựng hàm tính điểm trung bình cho mỗi sinh viên; 
+- Xây dựng hàm xếp loại cho mỗi sinh viên. 
+ Ví dụ 6.26 
+Sử dụng biến con trỏ và từ khóa typedef, viết lại chƣơng trình ở ví dụ 
+6.23. 
+1  #include <stdio.h> 
+2  #define N 4 
+3  struct sinhvien{ 
+4      char ten_sv[20]; 
+5      int d_anh; 
+6      int d_toan; 
+7      int d_ly; 
+8      double d_tb; 
+9  }; 
+10  static struct sinhvien sv[]={ 
+11      {"Cuong", 82, 72, 58}, 
+12      {"Nam", 77, 82, 79},  
+13      {"Sinh", 52, 62, 39},  
+14      {"Thuy", 61, 82, 88} 
+15  };  
+16   
+17  int main() 
+18  { 
+19      int i; 
+20      //tinh diem trung binh cho moi sinh vien 

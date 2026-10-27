@@ -1,0 +1,45 @@
+// Trang 346 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+346 
+9    gets(b); 
+10     if (strcmp(a,b) == 0) 
+11       printf("Hai chuoi giong nhau.\n"); 
+12    else 
+13       printf("Hai chuoi khong giong nhau.\n"); 
+14     return 0; 
+15 } 
+  Kết quả chƣơng trình: 
+Trƣờng hợp 1: 
+Nhap vao chuoi thu nhat: 
+ab 
+Nhap vao chuoi thu hai: 
+ab 
+Hai chuoi giong nhau. 
+Trƣờng hợp 2: 
+Nhap vao chuoi thu nhat: 
+ab 
+Nhap vao chuoi thu hai: 
+abc 
+Hai chuoi khong giong nhau. 
+Cách 2: Xây dựng hàm compare(a, b): so sánh 2 chuỗi a và b 
+1 
+#include <stdio.h> 
+2 
+int compare_strings(char [], char []); 
+3 
+int main() 
+4 
+{ 
+5 
+   char a[1000], b[1000]; 
+6 
+   printf("Nhap vao chuoi thu nhat:\n"); 
+7 
+   gets(a); 
+8 
+   printf("Nhap vao chuoi thu hai:\n"); 
+9 
+   gets(b); 
+10     if (compare_strings(a, b) == 0) 
+11       printf("Hai chuoi giong nhau.\n"); 
+12    else 

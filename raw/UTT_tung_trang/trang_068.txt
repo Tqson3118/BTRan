@@ -1,0 +1,48 @@
+// Trang 68 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+68 
+212>>0 = 11010100 (Không dịch). 
+21210 = 11010100. 
+212<<1 = 110101000 [Dịch trái 1 bit]. 
+212<<0 =11010100 (Không dịch, hoặc dịch bởi 0 bit). 
+212<<4 = 110101000000 = 3392 (Hệ thập phân). 
+ Ví dụ 1.58 
+Cho đoạn chƣơng trình sau đây: 
+1 
+#include <stdio.h> 
+2 
+int main() 
+3 
+{ 
+4 
+    int num=212, i; 
+5 
+    for (i=0; i<=2; ++i) 
+6 
+        printf("Dich phai %d bit: %d\n", i, num>>i); 
+7 
+     printf("\n"); 
+8 
+     for (i=0; i<=2; ++i)  
+9 
+        printf("Dich trai %d bit: %d\n", i, num<<i);     
+10 
+     return 0; 
+11 
+} 
+Kết quả chƣơng trình 
+Dich phai 0 bit: 212 
+Dich phai 1 bit: 106 
+Dich phai 2 bit: 53 
+Dich trai 0 bit: 212 
+Dich trai 1 bit: 424 
+Dich trai 2 bit: 848 
+1.7. MỘT SỐ TOOL SỬ DỤNG  
+1.7.1. Turbo C 
+Turbo C là môi trƣờng hỗ trợ lập trình C do hãng Borland cung cấp. 
+Môi trƣờng này cung cấp các chức năng nhƣ: soạn thảo chƣơng trình, dịch, 
+thực thi chƣơng trình, v.v. Phiên bản đƣợc sử dụng ở đây là Turbo C 3.0. 
+1.7.1.1. Gọi Turbo C 
+Chạy Turbo C cũng giống nhƣ chạy các chƣơng trình khác trong môi 
+trƣờng DOS hay Windows, màn hình sẽ xuất hiện menu của Turbo C có 
+dạng nhƣ sau: 

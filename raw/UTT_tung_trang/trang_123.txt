@@ -1,0 +1,29 @@
+// Trang 123 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+123 
+B. BÀI TẬP TỰ GIẢI 
+ Bài tập 2.6  
+Viết chƣơng trình in lên màn hình dòng chữ  “CHAO MUNG DEN VOI 
+NGON NGU LAP TRINH C”. 
+Với điều kiện nếu không bấm phím hoặc bấm một phím khác C và P 
+thì dòng chữ trên tiếp tục hiện ra. Nếu bấm C thì chƣơng trình in ra dòng 
+chữ TURBO C. Nếu bấm P thì chƣơng trình in ra dòng chữ TURBO 
+PASCAL. Bấm tiếp phím bất kỳ thì chƣơng trình kết thúc. 
+ Bài tập 2.7 
+Viết chƣơng trình tạo hình sau và in lên màn hình: 
+ 
+ Bài tập 2.8  
+Viết chƣơng trình nhập phần thực x và phần ảo y của một số phức, 
+sau đó in ra theo mẫu: (x, y) với các yêu cầu: 
+- Số in ra có hai chữ số sau dấu chấm thập phân; 
+- Kết quả in ra tạo thành một dãy ký tự liên tiếp nhau (không có 
+khoảng trống); 
+ Bài tập 2.9 
+Viết chƣơng trình nhập vào ba số thỏa mãn điều kiện là ba cạnh của 
+một tam giác. Sau đó tính chu vi và diện tích của tam giác và in các giá trị 
+vừa tính đƣợc ra màn hình. 
+ Bài tập 2.10 
+Viết chƣơng trình nhập vào bán kính của hình tròn. Tính chu vi và 
+diện tích của một hình tròn sau đó in các giá trị vừa tính đƣợc ra màn hình.  
+ 
+ 

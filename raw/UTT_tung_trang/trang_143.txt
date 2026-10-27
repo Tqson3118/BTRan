@@ -1,0 +1,55 @@
+// Trang 143 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+143 
+13   
+else if (a == b ||b == c|| c == a) printf(" \nTam giac can"); 
+14     
+else if (a * a + b * b == c * c ||a * a + c * c == b * b||c * c + 
+b * b == a * a) printf("\nTam giac vuong"); 
+15   
+else printf("\nTam giac thuong"); 
+16   
+float p = (a + b + c)/2; 
+17   
+float s = sqrt(p * (p - a) * (p - b) * (p - c)); 
+18   
+printf("\nChu vi tam giac: %.2f",2 * p); 
+19   
+printf("\nDien tich tam giac %.2f",s); 
+20  } 
+21  else printf("\n khong la tam giac"); 
+22  } 
+Kết quả chƣơng trình: 
+ 
+Nhap canh a= 3 
+ 
+Nhap canh b= 4 
+ 
+Nhap canh c= 5 
+ 
+Tam giac vuong 
+ 
+Chu vi tam giac: 12.00 
+ 
+Dien tich tam giac 6.00 
+ 
+ Ví dụ 3.10 
+Nhập vào số nguyên dƣơng n (n  >  0), kiểm tra xem n có phải là số 
+chính phƣơng không?  
+Số chính phƣơng là số mà căn bậc hai của nó là một số nguyên, 
+chẳng hạn các số  4, 9, 16, v.v. là các số chính phƣơng. 
+Chƣơng trình: 
+1  
+#include <stdio.h>  
+2  
+#include <math.h>  
+3  
+int main() 
+4  
+{ 
+5  
+unsigned n, m; 
+6  
+printf("Nhap n: "); 
+7  
+scanf("%d", &n); 

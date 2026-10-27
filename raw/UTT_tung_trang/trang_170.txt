@@ -1,0 +1,50 @@
+// Trang 170 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+170 
+Qua ví dụ 3.23 và 3.25, ta thấy bài toán này dùng vòng lặp while gọn 
+và rõ ràng hơn. 
+ Vậy những bài toán biết trƣớc số lần lặp ta dùng for; 
+ Bài toán không biết trƣớc số lần lặp ta dùng while. 
+ Ví dụ 3.26  
+Tính S = 13 + 23 +…+ n3 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 int main() 
+4 { 
+5  
+int n, s,i; 
+6  
+s = 0; 
+7  
+i = 1; 
+8  
+printf("\nNhap n= "); scanf("%d",&n); 
+9  
+while (i <= n) 
+10  
+{ 
+11  
+ 
+s = s + i * i * i; 
+12  
+ 
+i++; 
+13  
+} 
+14  
+printf("\nTong s= %d",s); 
+15  
+return 0; 
+16 } 
+Kết quả chƣơng trình 
+ 
+Nhap n = 3 
+ 
+Tong s = 36 
+ Ví dụ 3.27 
+Viết chƣơng trình chuyển số nhị phân sang hệ thập phân 
+Phác họa lời giải 
+Đổi hệ nhị phân sang hệ thập phân:  
+101112 = 1 * 24 + 0 * 23 + 1 * 22 + 1 * 21 + 1 * 20 
+Ta dùng một biến donvi để lần lƣợt lấy chữ số hàng đơn vị của số nhị phân. 

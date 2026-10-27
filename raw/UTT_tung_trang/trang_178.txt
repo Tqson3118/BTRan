@@ -1,0 +1,69 @@
+// Trang 178 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+178 
+23  
+ 
+  
+else d = 28; 
+24  
+ 
+ };break; 
+25  
+} 
+26  
+do 
+27  
+{ 
+28  
+printf(“\n Nhap ngay: “); scanf(“%d”,&ng); 
+29  
+}while(ng < 1||ng > d);  
+30  
+printf(“\n Ngay vua nhap %d-%d-%d\n”, ng, th, n); 
+31  
+if (ng < d) 
+32  
+{ 
+33  
+ 
+ng++; 
+34  
+} 
+35  
+else if (th < 12) 
+36  
+{ 
+37  
+ 
+ng = 1; th++; 
+38  
+} 
+39  
+else  
+40  
+{ 
+41  
+ 
+ng = th = 1; n++; 
+42  
+} 
+43  
+printf(“\nNgay ke tiep: %d- %d - %d”, ng,th,n); 
+44 getch(); 
+45 return 0; 
+46 } 
+Kết quả chƣơng trình 
+ 
+Nhap nam: 215 
+ 
+Nhap nam: 2015 
+ 
+Nhap thang: 15 
+ 
+Nhap thang: 12 
+ 
+Nhap ngay: 23 
+ 
+Ngay vua nhap 23-12-2015 
+ 
+Ngay ke tiep: 24- 12 - 2015 

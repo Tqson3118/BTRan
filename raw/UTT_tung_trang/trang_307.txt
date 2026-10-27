@@ -1,0 +1,48 @@
+// Trang 307 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+307 
+ 
+Max = 45 
+ 
+Min = 3 
+ Ví dụ 5.23 
+Nhập vào ma trận vuông cấp n (n đƣợc nhập từ bàn phím).  
+a. In ma trận. 
+b. Tính căn bậc hai của tổng bình phƣơng các phần tử của ma trận. 
+c. Tính tổng các phần tử trên đƣờng chéo chính của ma trận. 
+Phác thảo lời giải 
+Ma trận vuông: là mảng hai chiều trong đó số hàng bằng số cột. 
+Phần tử trên đƣờng chéo chính: là phần tử có chỉ số hàng bằng chỉ số cột. 
+Xây dựng hàm nhập giá trị các phần tử của ma trận vuông cấp n, 
+gồm hai tham số: tên biến mảng hai chiều, chỉ số cột. 
+Xây dựng hàm hiển thị các phần tử của ma trận vuông cấp n. 
+Xây dựng hàm tính căn bậc hai của tổng bình phƣơng các phần tử 
+của ma trận. 
+Xây dựng hàm tính tổng các phần tử trên đƣờng chéo chính của ma trận. 
+Chƣơng trình: 
+1 
+ #include <stdio.h> 
+2 
+#include <math.h> 
+3 
+// khai bao hang MAX la gioi han cua so hang va so cot  
+4 
+#define MAX 100 
+5 
+// ham nhap vao mang hai chieu kich thuoc n x n 
+6 
+void Nhap_Mang(int a[][MAX], int n) 
+7 
+{ 
+8 
+   for(int i = 0; i < n; i++) 
+9 
+      for(int j = 0; j < n; j++) 
+10       { 
+11          printf("A[%d][%d] = ", i, j); 
+12          scanf("%d", &a[i][j]); 
+13       } 
+14 } 
+15 //hàm in ma tran vuong cap n 
+16 void In_Mang(int a[][MAX], int n) 
+17 { 

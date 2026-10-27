@@ -1,0 +1,37 @@
+// Trang 574 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+574 
+34 { 
+35 int k = random(16); 
+36 setcolor(k); 
+37 setfillstyle(1,k); 
+38 pieslice(random(640), random(480), 0, 360, 2); 
+39 } 
+40 int x=random(640-100), y=random(480-100),x1,y1; 
+41 do 
+42 { 
+43 // in bong mau do voi phep XOR 
+44 // ve bong tren man hinh, vi tri nao da co mau lan truoc 
+45 // thi in de len bong 
+46 putimage(x,y,p,1); 
+47 delay(100); // tam dung 
+48 // in voi phep XOR mot lan nua 
+49 // xoa bong vua in tren man hinh do bong lan truoc in la mau do 
+50 // in lai mau do theo phep XOR, 1 XOR 1 = 0 
+51 // tuc la hai mau do de len nhau se ra mau nen cu truoc do 
+52 putimage(x,y,p,1); 
+53   do 
+54 {  
+55 // muc dich cua vong lap do while nay 
+56 // nham khong cho qua bong hien thi ngoai vung man hinh 
+57 // (0, 0, 540, 340) và tao gia tri toa do ngau nhien moi cho bong 
+58 x1 =x+random(50) -25; 
+59 y1 =y+random(50) -25; 
+60 } while ( (x1<0) || ( x1> (639-100) ) || (y1<0) || (y1>(439-100) ) ) 
+; 
+61 x=x1; 
+62 y=y1; 
+63 }while(!kbhit()) ;// lap vo han cho den khi nhan 1 phim bat ky 
+64 getch(); 
+65 closegraph(); 
+66 } 

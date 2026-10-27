@@ -1,0 +1,58 @@
+// Trang 289 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+289 
+Phát biểu bài toán:  
+Cho dãy số có n phần tử a[0], a[1], a[2],…, a[n -1]. Hãy sắp xếp dãy 
+số đã cho để đƣợc dãy số theo thứ tự tăng dần của các phần tử. 
+Phác thảo lời giải 
+- Xây dựng hàm Nhap_mang() với hai tham số: tên biến mảng và số 
+phần tử của mảng, để nhập giá trị cho các phần tử của mảng. 
+- Xây dựng hàm Hien_thi() với hai tham số: tên biến mảng và số 
+phần tử của mảng, hiển thị các phần tử của mảng ra màn hình. 
+- Xây dựng hàm Sapxep() với hai tham số: tên biến mảng, số phần tử 
+của mảng, sử dụng thuật toán đổi chỗ trực tiếp để sắp xếp mảng tăng dần 
+theo giá trị, sử dụng biến tg khi cần tráo đổi giá trị của hai phần tử trong 
+mảng. 
+ Ví dụ 5.12 
+Viết chƣơng trình nhập vào mảng gồm n phần tử  là các số nguyên. 
+Sắp xếp các phần tử của mảng tăng dần theo giá trị. 
+ Chƣơng trình: 
+1 
+#include<stdio.h> 
+2 
+#include<conio.h> 
+3 
+#include<math.h> 
+4 
+// khai bao hang MAX = 100 la so phan tu toi da cua mang 
+5 
+#define MAX 100 
+6 
+void Nhap_mang(int a[], int n) 
+7 
+{ 
+8 
+ 
+// Su dung vong lap for de nhap mang, co the su dung 
+phuong phap sinh ngau nhien mang 
+9 
+ 
+for(int i = 0; i < n; i++) 
+10  
+{ 
+11  
+ 
+printf("\nPhan tu a[%d]: ", i); 
+12  
+ 
+scanf("%d", &a[i]); 
+13  
+} 
+14 } 
+15 void Hien_thi(int a[], int n) 
+16 { 
+17  
+18  
+for(int i = 0; i < n; i++) 
+19  
+{ 

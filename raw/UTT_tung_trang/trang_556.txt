@@ -1,0 +1,41 @@
+// Trang 556 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+556 
+Bƣớc thứ hai là khởi tạo trình điều khiển đồ họa trên máy tính bằng 
+phƣơng thức initgraph của thƣ viện Graphics.h. 
+void initgraph(int *graphicsDriver, int *graphicsMode, char 
+*driverDirectoryPath); 
+Hàm initgraph khởi tạo hệ thống đồ họa bằng cách tải trình điều khiển 
+đồ họa, thay đổi hệ thống sang chế độ đồ họa. Nó cũng đặt lại hoặc khởi tạo 
+tất cả các cài đặt đồ họa nhƣ màu sắc, bảng màu, vị trí hiện tại, v.v. về các 
+giá trị mặc định của chúng. Hàm initgraph có ba tham số đầu vào: 
+GraphicsDriver: là một con trỏ tới một số nguyên, chỉ định trình điều 
+khiển đồ họa sẽ đƣợc sử dụng. Nó báo cho trình biên dịch biết sử dụng 
+trình điều khiển đồ họa nào hoặc tự động phát hiện ổ đĩa. Trong tất cả các 
+chƣơng trình, chúng ta sẽ sử dụng macro DETECT của thƣ viện 
+Graphics.h hƣớng dẫn trình biên dịch để tự động phát hiện trình điều 
+khiển đồ họa. 
+GraphicsMode: là một con trỏ tới một số nguyên, chỉ định chế độ đồ 
+họa sẽ đƣợc sử dụng. Nếu *gdriver đƣợc thiết lập thành DETECT, thì 
+initgraph thiết lập * gmode thành độ phân giải cao nhất có sẵn cho trình 
+điều khiển. 
+driverDirectoryPath: chỉ định đƣờng dẫn thƣ mục chứa các tệp trình 
+điều khiển đồ họa (tệp BGI). Nếu đƣờng dẫn thƣ mục không đƣợc cung 
+cấp, thì nó sẽ tìm kiếm các tệp trình điều khiển trong thƣ mục làm việc 
+hiện tại. Trong tất cả các chƣơng trình đồ họa mẫu, chúng ta phải thay đổi 
+đƣờng dẫn của thƣ mục BGI cho phù hợp với trình biên dịch Turbo C++ 
+đƣợc cài đặt. (Nếu sử dụng DevC, việc thiết lập đƣờng dẫn này sẽ phức 
+tạp hơn). 
+Bƣớc tiếp theo, khai báo các biến để theo dõi điểm bắt đầu và điểm 
+kết thúc 
+int x1=200, y1=200; 
+int x2=300, y2=300; 
+ 
+Truyền 4 tham số vào hàm line() 
+line(x1,y1,x2,y2); 
+ 
+Hàm line() vẽ một đƣờng thẳng từ điểm (x1, y1) đến điểm (x2,y2) 
+ 
+Cú pháp hàm line() 
+ 
+line(x1,y1,x2,y2); 

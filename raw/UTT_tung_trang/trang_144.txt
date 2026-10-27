@@ -1,0 +1,45 @@
+// Trang 144 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+144 
+8  
+m=(unsigned)sqrt(n); 
+9  
+if (n == m * m) printf("%u la so chinh phuong",n); 
+10  
+else printf("%u khong la so chinh phuong",n); 
+11  
+return 0; 
+12  
+} 
+Kết quả chƣơng trình: 
+Nhap n: 16 
+16 la so chinh phuong 
+3.1.2. Cấu trúc switch 
+Lệnh switch cũng giống cấu trúc else if, thực hiện một trong n nhánh 
+công việc (có n lựa chọn), nhƣng switch mềm dẻo hơn và linh động, dễ 
+nhìn, chƣơng trình sáng sủa hơn. Tuy nhiên, câu lệnh switch cũng có mặt 
+hạn chế là kết quả của biểu thức phải là giá trị hằng nguyên hoặc kí tự. 
+Một bài toán sử dụng lệnh switch thì cũng có thể sử dụng if, nhƣng ngƣợc 
+lại còn tùy thuộc vào giải thuật của bài toán. 
+a. Cú pháp: 
+switch (Variable/Expression) 
+{ 
+ 
+case  <value 1>: statement 1; break; 
+ 
+case  <value 2>: statement 2; break; 
+ 
+… 
+ 
+case  <value n>: statement n; break; 
+ 
+[default: statement n+1; break;] 
+} 
+Trong đó:  
+- Các từ khóa switch, case, break là viết thƣờng. 
+- Variable/Expression:  Biến/biểu thức, phải trả về là hằng nguyên 
+hoặc kí tự; 
+- value 1, value 2,…, value n:  giá trị 1, giá trị 2,… giá trị n,  là các 
+hằng nguyên hoặc kí tự, là các giá trị khác nhau của biến/biểu thức; 
+- statement 1, statement 2,.., statement n: Các khối lệnh 1, khối 
+lệnh 2, …, khối lệnh n. 

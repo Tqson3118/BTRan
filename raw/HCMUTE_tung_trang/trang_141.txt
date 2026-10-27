@@ -1,0 +1,53 @@
+// Trang 141 - Ngôn ngữ lập trình C_ebook.pdf
+
+138
+Kiểu_dữ_liệu    Tên_hàm (danh sách các tham số)
+	
+{
+	
+	
+Khai báo biến cục bộ;
+	
+	
+Câu lệnh;
+ 	
+	
+...
+	
+	
+return  giá trị;
+	
+}
+Trong đó:
+ Tên hàm phải được đặt theo quy tắc đặt tên hàm, biến, đã được 
+giới thiệu trong chương trước. 
+ Danh sách tham số bao gồm kiểu dữ liệu và tên tham số. Các 
+hàm không giới hạn số lượng tham số. Tuy nhiên, khi xây dựng hàm với 
+số lượng tham số nhiều có thể sử dụng phương pháp truyền tham chiếu 
+hoặc truyền mảng. 
+ Các biến được khai báo bên trong hàm là các biến cục bộ. Các 
+biến cục bộ được tạo ra khi hàm được gọi và sẽ được giải phóng khi 
+hàm kết thúc. 
+ Từ khóa return sẽ trả về giá trị cho hàm với kiểu giá trị là 
+Kiểu_dữ_liệu đã được định nghĩa trước tên hàm. 
+Ví dụ hàm tìm max của 2 số nguyên được định nghĩa như sau:
+1
+2
+3
+4
+5
+6
+7
+int   timmax(int a, int b)
+{
+	
+int max;
+	
+if (a>b) max = a;
+	
+else   max = b;
+	
+return   max;
+}
+Hàm tìm max được đặt tên là timmax, nhận vào 2 tham số kiểu int. 
+Biến max là biến cục bộ, biến max được khởi tạo ngay khi hàm được 

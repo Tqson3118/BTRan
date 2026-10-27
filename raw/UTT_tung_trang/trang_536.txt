@@ -1,0 +1,31 @@
+// Trang 536 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+536 
+Boi vi em mac ao lua Ha Dong 
+Anh van yeu mau ao ay vo cung 
+Tho cua anh van con nguyen lua trang  
+Nội dung đƣợc ghi trong tệp test_7_3.txt 
+ Bài tập 7.4 
+Viết chƣơng trình đọc tệp và lƣu các dòng vào mảng. 
+Chƣơng trình: 
+1  #include <stdio.h> 
+2  #include <stdlib.h> 
+3  #include <string.h> 
+4  #define dong 128  
+5  #define cot 10  
+6  int main(void)  
+7  { 
+8      char line[dong][cot]; 
+9   char fname[20]; 
+10      FILE *fptr = NULL;  
+11      int i = 0; 
+12      int tot = 0; 
+13    printf("\n\nChuong trinh doc tu tep va luu vao mang :\n"); 
+14   printf("--------------------------------------\n");  
+15   printf(" Nhap ten tep can mo : "); 
+16   scanf("%s",fname); 
+ 
+17      fptr = fopen(fname, "r"); 
+18      while(fgets(line[i], dong, fptr))  
+19   { 
+20          line[i][strlen(line[i]) - 1] = '\0'; 

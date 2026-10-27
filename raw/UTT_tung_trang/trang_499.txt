@@ -1,0 +1,42 @@
+// Trang 499 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+499 
+CHƢƠNG 7 
+TỆP 
+ 
+ 
+Nếu máy tính của bạn chỉ có thể xử lý dữ liệu đƣợc lƣu trữ trong bộ 
+nhớ chính của máy (Ram) thì phạm vi và sự đa dạng của các ứng dụng 
+của bạn có thể xử lý sẽ bị hạn chế nghiêm trọng. Hầu hết tất cả ứng dụng 
+trong kinh doanh đều đòi hỏi về phạm vi lƣu trữ dữ liệu bên ngoài bộ nhớ 
+chính và sự linh động phụ thuộc vào khả năng xử lý dữ liệu đƣợc lƣu trữ 
+trên một thiết bị mở rộng nhƣ ổ đĩa cứng. Ngôn ngữ lập trình C cung cấp 
+một số hàm trong thƣ viện stdio.h phục vụ cho quá trình đọc, ghi dữ liệu 
+từ các tệp đƣợc lƣu trữ trên các thiết bị mở rộng. Các thƣ viện đƣợc sử 
+dụng để làm việc với các tệp độc lập với các thiết bị, đƣợc áp dụng cho 
+hầu hết tất cả các thiết bị lƣu trữ mở rộng. Tuy nhiên, trong phạm vi của 
+chƣơng này, trong tất cả các ví dụ của Chƣơng 7, chúng ta đều xử lý và 
+truy xuất các tệp đƣợc lƣu trữ trên các ổ cứng của máy. 
+Nội dung của Chƣơng 7 đề cập đến các vấn đề sau đây: 
+o Tập tin là gì? 
+o Cách xử lý tệp tin. 
+o Cách đọc và ghi dữ liệu vào tệp tin theo định dạng. 
+o Cách đọc và ghi dữ liệu với tệp nhị phân. 
+o Cách đọc và ghi dữ liệu với tệp ngẫu nhiên. 
+7.1. KHÁI NIỆM VỀ TỆP TIN 
+7.1.1. Khái niệm tệp  
+Trong hầu hết các ví dụ và bài tập từ chƣơng một đến chƣơng sáu, 
+mọi dữ liệu mà ngƣời dùng nhập sẽ mất khi chƣơng trình kết thúc. Nếu 
+ngƣời dùng muốn chạy chƣơng trình có dữ liệu, thao tác đều tiên yêu cầu 
+ngƣời dùng nhập lại mỗi lần biên dịch chƣơng trình. Với những chƣơng 
+trình nhỏ, dữ liệu không lớn, việc nhập dữ liệu có thể dễ dàng, chƣa đƣa 
+đến cảm giác khó chịu cho ngƣời dùng, nhƣng với những chƣơng trình 
+mà bộ dữ liệu tƣơng đối lớn, chẳng hạn chƣơng trình quản lý nhân sự, với 
+100 nhân viên, mỗi nhân viên đều có những thông tin cá nhân nhƣ họ tên, 
+mã nhân viên, địa chỉ, bậc lƣơng, v.v. với mỗi lần biên dịch để xử lý một 
+nghiệp vụ nào đó, ngƣời dùng bắt buộc phải nhập lại dữ liệu của tất cả các 
+nhân viên, lúc này vấn đề không chỉ là sự bất tiện, mà đôi khi nó còn 
+khiến cho nhiệm vụ lập trình trở nên bất khả thi. 
+ 
+Đáp án cho những khó khăn trên là lƣu trữ dữ liệu trên bộ nhớ 
+ngoài (vĩnh viễn), giúp cho dữ liệu đƣợc duy trì và tái sử dụng sau khi 

@@ -1,0 +1,74 @@
+// Trang 240 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+240 
+9  
+break; 
+10  
+case 9: case 4: case 6: d = 30; break; 
+11  
+case 2:  
+12  
+ 
+ { 
+13  
+  
+if(n % 4 == 0 && n % 100! = 0||n % 400 == 0) 
+14  
+ 
+  
+  
+d = 29; 
+15  
+ 
+  
+else d = 28; 
+16  
+ 
+ };break; 
+17  
+} 
+18  
+return d; 
+19 } 
+20 void Timngayketiep(int ng, int th, int n) 
+21 { 
+22  
+int d = Ngaycuathang(th,n); 
+23  
+if (ng < d) 
+24  
+{ 
+25  
+ 
+ng++; 
+26  
+} 
+27  
+else if (th < 12) 
+28  
+{ 
+29  
+ 
+ng = 1; th++; 
+30  
+} 
+31  
+else  
+32  
+{ 
+33  
+ 
+ng = th = 1; n++; 
+34  
+} 
+35  
+printf("\nNgay ke tiep: %d- %d - %d", ng, th, n); 
+36 } 
+37 int main() 
+38 { 
+39  
+int ng, th, n, d; 
+40  
+do 
+41  
+{ 

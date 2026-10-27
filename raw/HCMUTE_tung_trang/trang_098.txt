@@ -1,0 +1,47 @@
+// Trang 98 - Ngôn ngữ lập trình C_ebook.pdf
+
+95
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+kich thuoc cua a[0] la: 4
+dia chi cua a[0] la: 2686664
+dia chi cua a[1] la: 2686668
+dia chi cua a[2] la: 2686672
+dia chi cua a[3] la: 2686676
+dia chi cua a[4] la: 2686680
+dia chi cua a[5] la: 2686684
+dia chi cua a[6] la: 2686688
+dia chi cua a[7] la: 2686692
+dia chi cua a[8] la: 2686696
+dia chi cua a[9] la: 2686700
+Với kết quả trên cho thấy địa chỉ trong bộ nhớ của các biến trong 
+mảng là liền kề nhau và tăng dần từ a[0] đến a[9], mỗi biến có kích 
+thước là 4 byte.
+ Cú pháp 2: kiểu dữ liệu    tên mảng [số phần tử]= {giá trị};
+Ví dụ 4.2:  int  a[10] = {5,7,9};
+Với cách khai báo như trong ví dụ 4.2 thì các phần tử a[0], a[1], 
+a[2] là đã được gán giá trị ban đầu lần lượt là 5, 7 và 9, các phần tử còn 
+lại sẽ được khởi tạo bằng 0. Xem ví dụ này qua chương trình dưới đây:
+1
+2
+3
+4
+5
+6
+7
+#include <stdio.h>
+int main(void)
+{  
+int  a[10] = {5,7,9};
+printf(“gia tri phan tu a[0] la: %d”,a[0]);
+printf(“\ngia tri phan tu a[1] la: %d”,a[1]);
+printf(“\ngia tri phan tu a[2] la: %d”,a[2]);

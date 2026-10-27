@@ -1,0 +1,47 @@
+// Trang 366 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+366 
+ Nếu str(l) khác với str(r) thì thông báo str không phải là chuỗi đối 
+xứng và dừng; 
+ Nếu str(l) = str(r) thì tăng l, giảm r, tức là l++ và r --; 
+- Thoát khỏi vòng lặp, thông báo str là chuỗi đối xứng. 
+Chƣơng trình: 
+1 
+#include <stdio.h>  
+2 
+#include <string.h>  
+3 
+// Xay dung ham doixung de kiem tra chuoi str co doi xung 
+khong? 
+4 
+void doixung(char str[])  
+5 
+{  
+6 
+    // danh dau vi tri ben trai va ben phai chuoi str  
+7 
+    int l = 0;  
+8 
+    int r = strlen(str) - 1;  
+9 
+      // Tiep tuc so sanh cac ky tu khi chung con giong nhau  
+10     while (r > l)  
+11     {  
+12         if (str[l++] != str[r--])  
+13         {  
+14             printf("%s khong phai chuoi doi xung", str);  
+15             return;  
+16         }  
+17     }  
+18     printf("%s la chuoi doi xung", str);  
+19 }  
+20    
+21 // Chuong trinh chinh  
+22 int main()  
+23 {  
+24     char s[100]; 
+25     printf("Nhap vao chuoi s:\n"); 
+26     gets(s); 
+27     // goi ham kiem tra doi xung 
+28  
+doixung(s);  

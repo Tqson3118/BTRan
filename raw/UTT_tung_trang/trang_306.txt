@@ -1,0 +1,71 @@
+// Trang 306 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+306 
+63  
+ 
+scanf("%d", &n); 
+64  
+ 
+if(n <= 0 || n > MAX) 
+65  
+ 
+{ 
+66  
+ 
+ 
+printf("Khong hop le. Nhap so trong pham 
+vi tu 0 den MAX !\n"); 
+67  
+ 
+} 
+68  
+}while(n <= 0 || n > MAX); 
+69  
+//goi ham nhap mang 
+70  
+Nhap_Mang(a, m , n); 
+71     printf("Mang duoc nhap vao la:\n"); 
+72  
+In_Mang(a, m, n); 
+73     printf("\nMax = %d", In_Max(a, m, n)); 
+74     printf("\nMin = %d", In_Min(a, m, n)); 
+75 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap so hang cua mang: -1 
+ 
+Khong hop le. Nhap so trong pham vi tu 0 den MAX ! 
+ 
+Nhap so hang cua mang: 102 
+ 
+Khong hop le. Nhap so trong pham vi tu 0 den MAX ! 
+ 
+Nhap so hang cua mang: 2 
+ 
+Nhap so cot cua mang: -2 
+ 
+Khong hop le. Nhap so trong pham vi tu 0 den MAX ! 
+ 
+Nhap so cot cua mang: 103 
+ 
+Khong hop le. Nhap so trong pham vi tu 0 den MAX ! 
+ 
+Nhap so cot cua mang: 3 
+ 
+A[0][0] = 12 
+ 
+A[0][1] = 43 
+ 
+A[0][2] = 5 
+ 
+A[1][0] = 23 
+ 
+A[1][1] = 45 
+ 
+A[1][2] = 3 
+ 
+Mang duoc nhap vao la: 
+ 
+12      43      5 
+ 
+23      45      3 

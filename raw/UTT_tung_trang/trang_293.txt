@@ -1,0 +1,50 @@
+// Trang 293 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+293 
+ 
+Nhap 6 phan tu cua mang 
+ 
+12 
+ 
+54 
+ 
+23 
+ 
+65 
+ 
+3 
+ 
+77 
+ 
+Nhap vi tri can chen phan tu: 
+ 
+3 
+ 
+Nhap gia tri phan tu can chen 
+ 
+24 
+ 
+Mang sau khi them la 
+   12  54  23  24  65   3  77 
+ Yêu cầu đối với sinh viên: Xây dựng lại chƣơng trình bằng các 
+hàm sau đây: 
+- Hàm Nhap_mang() 
+- Hàm Hien_thi() 
+- Hàm Them_pt() 
+b. Xóa phần tử khỏi mảng 
+ Phát biểu bài toán: 
+Cho dãy số a[0], a[1], a[2],…,a[n - 1] và một số nguyên dƣơng k 
+(     ). Xóa phần tử vào dãy số đã cho ở vị trí k. 
+ Phác thảo lời giải 
+- Nhập giá trị các phần tử của mảng. 
+- Nhập vị trí cần xóa. 
+- Duyệt mảng từ trái qua phải, lần lƣợt di chuyển các phần tử bắt đầu 
+từ vị trí k + 1 đến n - 1 sang trái. 
+ Ví dụ 5.14 
+Viết chƣơng trình nhập vào mảng gồm n phần tử  là các số nguyên và 
+nhập vào một số nguyên dƣơng k. Hãy xóa phần tử ở vị trí k của mảng? 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+ int main() 

@@ -1,0 +1,46 @@
+// Trang 192 - Ngôn ngữ lập trình C_ebook.pdf
+
+189
+b.
+#include<stdio.h>
+struct HinhChuNhat
+{
+	
+float dai,rong;
+};
+int main(void)
+{
+	
+printf(“Nhap chieu dai, rong:\n”);
+	
+scanf(“%f%f”,&HinhChuNhat.dai, &HinhChuNhat.
+rong)
+	
+	
+float dienTich = HinhChuNhat.dai * HinhChuNhat.
+rong;
+	
+printf(“%f”,dienTich);
+	
+return 0;
+}
+c.
+#include<stdio.h>
+struct Diem
+{
+	
+float giuaKy;
+	
+float cuoiKy;
+};
+int main(void)
+{
+	
+struct Diem a;
+	
+scanf(“%f”,&giuaKy.a);
+	
+scanf(“%f”,&cuoiKy.a);
+	
+return 0;
+}

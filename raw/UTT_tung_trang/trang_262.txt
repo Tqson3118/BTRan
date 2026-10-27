@@ -1,0 +1,57 @@
+// Trang 262 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+262 
+Kết quả chƣơng trình 
+Su dung ham: chuyen tu thap phan sang nhi phan: 
+…………………………………………………… 
+Nhap vao so thap phan: 12 
+So nhi phan tuong ung : 1100 
+Bài tập 4.3 
+Viết chƣơng trình kiểm tra một số có là số Armstrong hay không? 
+Phác thảo lời giải 
+Số Armstrong là số thỏa mãn tổng lập phƣơng các chữ số bằng chính 
+số đó. 
+ 
+Dữ liệu test: 153 
+ 
+Kết quả mong đợi: 153 là số Armstrong, vì 153 = 13 + 53 + 33 
+Chƣơng trình 
+ 
+1  
+#include <stdio.h> 
+2  
+// nguyen mau ham  
+3  
+int checkArmstrong(int n1); 
+4  
+int main() 
+5  
+{ 
+6  
+    int n1; 
+7  
+ 
+printf("\nKiem tra mot so co la so Armstrong:\n"); 
+8  
+ 
+printf("-------------------------------------\n");   
+9  
+    printf("Nhap vao mot so nguyen: "); 
+10  
+    scanf("%d", &n1); 
+11  
+    //Goi ham checkArrmstrong() 
+12  
+    if(checkArmstrong(n1)) 
+13  
+    { 
+14  
+        printf("So %d la so Armstrong.\n", n1); 
+15  
+    } 
+16  
+    else 
+17  
+    { 
+18  
+        printf("So %d khong la so Armstrong.\n", n1); 

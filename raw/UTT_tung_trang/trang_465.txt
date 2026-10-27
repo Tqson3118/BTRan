@@ -1,0 +1,55 @@
+// Trang 465 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+465 
+17  printf("Nhap diem thanh phan thu nhat:");  
+18  scanf("%f", &sv[*spt].d_tp1); 
+19  printf("Nhap diem thanh phan thu hai:");  
+20  scanf("%f", &sv[*spt].d_tp2); 
+21  printf("Nhap diem chuyen can:");  
+22  scanf("%f", &sv[*spt].d_cc); 
+23  printf("Nhap diem giua ky:");  
+24  scanf("%f", &sv[*spt].d_gk); 
+25  printf("Nhap diem ket thuc mon:");  
+26  scanf("%f", &sv[*spt].d_kt); 
+27 sv[*spt].tong_diem=sv[*spt].d_tp1+sv[*spt].d_tp2+sv[*spt].d_
+cc+sv[*spt].d_gk+sv[*spt].d_kt; 
+28  (*spt)++; 
+29 } 
+Hiển thị các bản ghi trong danh sách 
+ Bƣớc 4: Xây dựng hàm tìm kiếm search(sinhvien sv[], char id[], 
+int spt): tìm kiếm theo mã sinh viên. Hàm này rất hữu ích vì chúng ta cần 
+sử dụng nó để tìm vị trí của bản ghi trong mảng các đối tƣợng sinh viên. 
+Hàm tìm kiếm còn đƣợc sử dụng để bảo đảm bản ghi này tồn tại trƣớc khi 
+thực hiện xóa hoặc cập nhật bản ghi. Nếu phần tử đƣợc tìm thấy, hàm sẽ 
+trả về chỉ số của phần tử này, trả về -1, nếu không tìm thấy phần tử cần 
+tìm (theo mã số sinh viên) trong mảng. 
+//Hàm tìm kiếm vị trí của bản ghi 
+1 
+int timkiem(sinhvien sv[], char id[], int spt) 
+2 
+{  
+3 
+ 
+int timthay =-1, i; 
+4 
+ 
+for(i=0; i< spt && timthay==-1; i++ ) 
+5 
+ 
+{ 
+6 
+ 
+ 
+if(strcmp(sv[i].masv, id)==0) timthay = i; 
+7 
+ 
+ 
+else timthay=-1; 
+8 
+ 
+} 
+9 
+ 
+return timthay; 
+10 
+} 

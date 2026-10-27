@@ -1,0 +1,28 @@
+// Trang 72 - Ngôn ngữ lập trình C_ebook.pdf
+
+69
+3. Vẽ lưu đồ xử lý và viết chương trình nhập vào 4 số nguyên từ 
+bàn phím và in ra số lớn nhất trong 4 số này.
+4. Vẽ lưu đồ xử lý và viết chương trình giải phương trình bậc 2 : 
+ax2 + bx + c = 0 (không xét đến trường hợp hệ số a = 0).
+5. Vẽ lưu đồ xử lý và viết chương trình giải phương trình bậc 2: 
+ax2 + bx + c = 0 có xét đến trường hợp hệ số a = 0.
+6. Vẽ lưu đồ xử lý và viết chương trình nhập vào: giờ : phút : giây 
+từ bàn phím; kiểm tra thời gian vừa nhập vào có hợp lệ hay không; nếu 
+hợp lệ cho biết trước đó 15s là thời gian bao nhiêu.
+Ví dụ : 	 Nhap gio:    25
+            	 Nhap phut:  19
+            	 Nhap giay:   43
+            	 Thoi gian nhap vao khong hop le!!!! 
+Ví dụ : 	 Nhap gio:     0
+            	 Nhap phut:   0
+             	Nhap giay:   0
+             	Truoc do 15s la 23:59:45
+7. Biết rằng một mã số sinh viên sẽ có định dạng như sau: 
+yyNNNsss. Trong đó:
+yy: là năm nhập học
+NNN: là mã ngành học
+sss: là số thứ tự của sinh viên
+Ví dụ nếu mã số sinh viên là 20141125, thì các thông tin tương 
+ứng sẽ là:
+20: năm nhập học là 2020

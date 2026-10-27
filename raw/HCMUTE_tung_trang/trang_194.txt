@@ -1,0 +1,115 @@
+// Trang 194 - Ngôn ngữ lập trình C_ebook.pdf
+
+191
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+void  NhapDs( struct SinhVien *sv, int n)
+{
+	
+int  i; char tam[2];
+	
+puts (“Nhap du lieu cho danh sach Sinh 
+vien”);
+	
+for (i = 0; i < n; i++)
+	
+{
+	
+	
+printf ( “Sinh vien thu : %d\n”,i);
+	
+	
+puts ( “Ho ten:”);
+	
+	
+gets ((sv+i)->hoTen);
+	
+	
+puts (“Diem toan:”);
+	
+	
+scanf (“%f”, &(sv+i)->diemToan);
+	
+	
+puts (“Diem ly:”);
+	
+	
+scanf (“%f”, &(sv+i)->diemLy);
+	
+	
+puts (“Diem hoa:”);
+	
+	
+scanf (“%f”, &(sv+i)->diemHoa);
+	
+	
+gets(tam);
+	
+	
+	
+	
+(sv+i)->diemTB = ((sv+i)->diemToan + 
+(sv+i)->diemLy + (sv+i)->diemHoa)/3;
+	
+	
+}
+}
+void  InDs(struct SinhVien *sv, int n)
+{
+	
+int  i;
+	
+puts(“Danh sach sinh vien da nhap:”);
+	
+for (i = 0; i < n; i++)
+   	
+	
+{
+	
+	
+	
+puts ( “ho ten: “);
+	
+	
+	
+puts ((sv+i)->hoTen);
+	
+	
+	
+printf (“Diem tb: %f\n”, 
+(sv+i)->diemTB);

@@ -1,0 +1,83 @@
+// Trang 154 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+154 
+24  
+case 1: case 3: case 5: case 7: case 8: case 10: case 12: d = 31; 
+25  
+ 
+break; 
+26  
+ 
+case 9: case 4: case 6: d = 30; break; 
+27  
+ 
+case 2:  
+28  
+ 
+ { 
+29  
+    
+if(n % 4 == 0 && n % 100!= 0||n % 400 == 0) 
+30  
+ 
+  
+   d = 29; 
+31  
+ 
+  
+else d = 28; 
+32  
+ 
+ };break; 
+33  
+} 
+34  
+tng: 
+35  
+printf("\n Nhap ngay: "); scanf("%d",&ng); 
+36  
+if (ng < 1||ng > d)  
+37  
+{ 
+38  
+ 
+printf("\n Nhap lai ngay"); 
+39  
+ 
+goto tng; 
+40  
+} 
+41  
+printf("\n Ngay vua nhap %d-%d-%d\n",ng,th,n); 
+42  
+if (ng < d) 
+43  
+{ 
+44  
+ 
+ng++; 
+45  
+} 
+46  
+else if (th < 12) 
+47  
+{ 
+48  
+ 
+ng = 1; th++; 
+49  
+} 
+50  
+else  
+51  
+{ 
+52  
+ 
+ng = th = 1; n++; 
+53  
+} 
+54  
+printf("\nNgay ke tiep: %d- %d - %d", ng,th,n); 
+55 getch(); 
+56 return 0; 
+57 } 

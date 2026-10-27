@@ -1,0 +1,56 @@
+// Trang 404 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+404 
+3 
+int main() 
+4 
+{ 
+5 
+   char st[100]; 
+6 
+   int i = 0, count[26] = {0}, x; 
+7 
+   printf("Nhap vao chuoi ky tu:\n"); 
+8 
+   gets(st); 
+9 
+   while (st[i] != '\0') { 
+10 
+   /*chi xem xet cac ky tu tu 'a' den 'z', bo qua cac ky tu khac */ 
+11 
+      if (st[i] >= 'a' && st[i] <= 'z') { 
+12 
+         x = st[i] - 'a'; 
+13 
+         count[x]++; 
+14 
+      } 
+15 
+      i++; 
+16 
+   } 
+17 
+   for (i = 0; i < 26; i++) 
+18 
+     printf("%c xuat hien %d lan trong chuoi.\n", i + 'a', count[i]); 
+19 
+   return 0; 
+20 
+} 
+  Kết quả chƣơng trình: 
+Nhap vao chuoi ky tu: 
+truong dai hoc cong nghe gtvt 
+a xuat hien 1 lan trong chuoi. 
+b xuat hien 0 lan trong chuoi. 
+c xuat hien 2 lan trong chuoi. 
+d xuat hien 1 lan trong chuoi. 
+e xuat hien 1 lan trong chuoi. 
+f xuat hien 0 lan trong chuoi. 
+g xuat hien 4 lan trong chuoi. 
+h xuat hien 2 lan trong chuoi. 
+i xuat hien 1 lan trong chuoi. 
+j xuat hien 0 lan trong chuoi. 
+k xuat hien 0 lan trong chuoi. 
+l xuat hien 0 lan trong chuoi. 
+m xuat hien 0 lan trong chuoi. 
+n xuat hien 3 lan trong chuoi. 

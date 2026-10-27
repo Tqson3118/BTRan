@@ -1,0 +1,38 @@
+// Trang 517 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+517 
+9 
+   FILE *fptr; 
+10    //mo tep ghi tiep 
+11    fptr = (fopen("Sinhvien.txt", "a")); 
+12    if(fptr == NULL) 
+13    { 
+14        printf("Loi!"); 
+15        exit(1); 
+16    } 
+17    for(i = 0; i < n; ++i) 
+18    { 
+19       printf("Nhap ten sinh vien thu %d : ", i+1); 
+20       scanf("%s", tensv); 
+21       printf("Nhap diem: "); 
+22       scanf("%d", &diem); 
+23       fprintf(fptr,"Ten SV: %s \nDiem =%d \n", tensv, diem); 
+24    } 
+25    fclose(fptr); 
+26    return 0; 
+27 } 
+ Kết quả chƣơng trình 
+ Nhập dữ liệu ở màn hình Console 
+Nhap vao so sinh vien: 3 
+Nhap ten sinh vien thu 1: Binh 
+Nhap diem: 8 
+Nhap ten sinh vien thu 2: Nam 
+Nhap diem: 6 
+Nhap ten sinh vien thu 3: Yen 
+Nhap diem: 8 
+ Dữ liệu trong tệp Sinhvien.txt, đƣợc ghi tiếp từ tệp Sinhvien.txt 
+trong ví dụ 7.14 
+Ten SV: An  
+Diem = 8  
+Ten SV: Cuong  
+Diem = 9  

@@ -1,0 +1,61 @@
+// Trang 336 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+336 
+25     /* In cac ky tu cua xau nghich dao cua S */ 
+26     printf("\nCac ky tu duoc in theo chieu nguoc:\n"); 
+27   for (i = l-1; i >= 0; --i)  
+28     printf("A[%d] = %c\n",i,S[i]); 
+29 } 
+ Kết quả chƣơng trình: 
+ 
+In xau S:       DHCNGTVT 
+ 
+Do dai xau S:   8 
+ 
+Tu ky tu dau tien den ky tu cuoi cung: 
+ 
+A[0] = D 
+ 
+A[1] = H 
+ 
+A[2] = C 
+ 
+A[3] = N 
+ 
+A[4] = G 
+ 
+A[5] = T 
+ 
+A[6] = V 
+ 
+A[7] = T 
+Cac ky tu duoc in theo chieu nguoc: 
+ 
+A[7] = T 
+ 
+A[6] = V 
+ 
+A[5] = T 
+ 
+A[4] = G 
+ 
+A[3] = N 
+ 
+A[2] = C 
+ 
+A[1] = H 
+ 
+A[0] = D 
+Hình ảnh của chuỗi S: 
+D 
+H 
+C 
+N 
+G 
+T 
+V 
+T 
+\0 
+Trong C, hằng chuỗi đƣợc đặt trong dấu nháy kép, chẳng hạn chuỗi 
+“DHCNGTVT”, đƣợc biên dịch thành mảng các ký tự và đƣợc bổ sung ký 
+tự „\0‟ đánh dấu kết thúc chuỗi. 

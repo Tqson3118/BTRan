@@ -1,0 +1,60 @@
+// Trang 79 - Ngôn ngữ lập trình C_ebook.pdf
+
+76
+Với 3 trường hợp trên ta thấy: lệnh for có thể vắng mặt từ 1 đến cả 
+3 biểu thức nhưng chương trình vẫn thực hiện đúng như yêu cầu. Cũng 
+cần lưu ý, các biểu thức có thể vắng mặt nhưng các dấu chấm phẩy (;) 
+thì không được bỏ.
+Ví dụ 3.3: Viết chương trình nhập điểm số một môn học của một 
+sinh viên từ bàn phím. Biết rằng điểm phải lớn hơn 0 và nhỏ hơn 10. 
+Nếu vi phạm điều kiện này thì yêu cầu nhập lại.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+#include <stdio.h>
+int main(void)
+{  
+float a;
+printf(“Moi ban nhap 1 so: “);
+scanf(“%f”,&a);
+for (; ;)
+{  
+    if ((a<=10)&&(a>=0))
+	
+{
+	
+printf(“ban da nhap gia tri phu hop”);
+	
+break;
+	
+}
+    else 
+	
+printf(“\ngia tri ban nhap khong phu hop”);
+    printf(“\n moi ban nhap gia tri khac: “);
+    scanf(“%f”,&a);
+}
+printf(“\n gia tri ban nhap phu hop la %f”, a);
+return 0;
+}
+Với chương trình ở trên, các lệnh ở những dòng lệnh từ 9 đến 15 
+sẽ giúp kiểm tra điều kiện để quyết định vòng lặp có được tiếp tục hay 
+không. Như vậy, đây là ví dụ có dùng kết hợp giữa vòng lặp for và điều 

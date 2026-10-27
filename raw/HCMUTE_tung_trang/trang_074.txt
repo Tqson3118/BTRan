@@ -1,0 +1,26 @@
+// Trang 74 - Ngôn ngữ lập trình C_ebook.pdf
+
+71
+CHƯƠNG 3
+LỆNH VÒNG LẶP 
+Mục tiêu:
+Sau khi kết thúc chương này, người đọc có thể:
+- Phân biệt được cấu trúc lặp trong C
+- Viết được các chương trình C liên quan đến các lệnh vòng lặp.
+- Sử dụng được lệnh break và lệnh continue trong vòng lặp.
+3.1. LỆNH FOR 
+3.1.1. Cú pháp
+for  (biểu thức 1; biểu thức 2; biểu thức 3)
+   {
+     Khối lệnh;
+    }
+Lệnh for gồm 3 biểu thức và thân for. Thân for là một câu lệnh 
+hoặc một khối lệnh viết sau từ khoá for. Bất kỳ biểu thức nào trong 3 
+biểu thức trên đều có thể vắng mặt nhưng phải giữ dấu ; ngăn cách giữa 
+các biểu thức. Thông thường, biểu thức 1 là toán tử gán để tạo giá trị 
+ban đầu cho biến điều khiển, biểu thức 2 là một quan hệ logic biểu thị 
+điều kiện để tiếp tục vòng lặp, biểu thức 3 là một toán tử gán dùng để 
+thay đổi giá trị của biến điều khiển.
+ 3.1.2. Hoạt động
+Vòng lặp for hoạt động như trong Hình 3.1. Ta có thể thấy, lệnh 
+for hoạt động theo các bước sau : 

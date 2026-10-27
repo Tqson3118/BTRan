@@ -1,0 +1,41 @@
+// Trang 284 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+284 
+Dạng 3: Tìm kiếm và sắp xếp trên mảng 
+a. Tìm kiếm 
+Phát biểu bài toán:  
+Cho dãy số gồm n số nguyên và một số nguyên x. Cho biết có hay 
+không có số x trong dãy số đã cho? 
+Có hai thuật toán đƣợc sử dụng để tìm kiếm một số x trong dãy số 
+nguyên đã cho: Thuật toán tìm kiếm tuyến tính và thuật toán tìm kiếm 
+nhị phân. 
+a1. Cài đặt bằng thuật toán tìm kiếm tuyến tính 
+Tƣ tƣởng thuật toán:  
+Xét dãy số gồm n số nguyên a[0], a[1], a[2],…, a[n -1] và một số 
+nguyên x. Lần lƣợt so sánh các phần tử của dãy, bắt đầu từ phần tử đầu 
+tiên a[0] cho đến khi gặp phần tử đầu tiên a[i] trong dãy số,        , 
+sao cho a[i] = x, thông báo tìm thấy phần tử trong dãy số có giá trị bằng x, 
+hoặc đi hết đến phần tử cuối cùng a[n - 1] mà không có phần tử nào có giá 
+trị bằng x, thông báo không tìm thấy phần tử có giá trị bằng x trong dãy 
+số. 
+Phác thảo lời giải 
+-  Xây dựng hàm nhập mảng gồm n số nguyên với hai tham số: tên 
+biến mảng và số phần tử của mảng. 
+-  Xây dựng hàm tìm kiếm với ba tham số: tên biến mảng, số phần tử 
+của mảng và giá trị cần tìm x. 
+-  Sử dụng vòng lặp while để tìm kiếm. 
+ Ví dụ 5.10 
+Viết chƣơng trình nhập vào mảng gồm n phần tử  là các số nguyên và 
+nhập vào một số nguyên x. Thông báo có hay không có phần tử có giá trị 
+bằng x trong mảng? 
+Phác thảo lời giải 
+-  Xây dựng hàm Nhap với hai tham số: tên biến mảng, số phần tử 
+của mảng; 
+-  Xây dựng hàm tìm kiếm tuyến tính, với ba tham số: tên biến mảng, 
+số phần tử của mảng, số cần tìm kiếm, kết quả của hàm trả về là 1 (nếu 
+tìm thấy) và 0 (nếu không tìm thấy). 
+ Chƣơng trình: 
+1 
+#include<stdio.h> 
+2 
+#include<conio.h> 

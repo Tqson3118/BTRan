@@ -1,0 +1,49 @@
+// Trang 83 - Ngôn ngữ lập trình C_ebook.pdf
+
+80
+Trong ví dụ này, có sự kết hợp của câu lệnh if…else if…else... và lệnh 
+while để tìm điều kiện của một số để tính giai thừa của số này và in ra 
+kết quả. Các phần liên quan đến lệnh rẽ nhánh if đã được bày ở chương 
+trước. Trong phần này, ta chú ý đến chương trình trên trong câu lệnh 
+while, từ dòng 11 đến hết dòng 15, đây là đoạn chính để tính giai thừa, 
+giúp chương trình nhân liên tục các số từ 1 đến N. Dòng 16 sẽ in ra kết 
+quả đã tính được ở vòng lặp while.
+Ví dụ 3.6: Xét đoạn chương trình yêu cầu người dùng nhập vào 
+một số bí mật (số 0) sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+int  a , b;
+printf(“moi nhap vao so bi mat “);
+scanf(“%d”, &a);
+b = 1;
+while (a!=0)
+     {
+          printf(“vui long nhap lai “);
+          scanf(“%d”,&a);
+          b++;
+          if(b>=3) 
+           {
+            printf(“Ban bi khoa chuong trinh”);
+            while(1);
+           }
+     }
+Trong đoạn chương trình trên ta thấy, lệnh while được sử dụng để 
+kiểm tra một số nguyên nhập vào có bằng với một giá trị đã cho trước 
+hay không (biểu thức kiểm tra a != 0: trong trường hợp này là kiểm tra 
+xem số nhập vào có bằng 0 hay không). Nếu số nhập vào là số 0 thì 
+chương trình sẽ thoát ra khỏi vòng lặp while, nếu sai thì chương trình sẽ 
+yêu cầu nhập lại và chỉ được phép nhập lại tối đa 3 lần (dòng lệnh 10). 
+Nếu cả 3 lần nhập lại đều sai thì chương trình sẽ rơi vào vòng lặp vô hạn 

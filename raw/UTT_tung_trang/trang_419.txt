@@ -1,0 +1,32 @@
+// Trang 419 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+419 
+Test: Chuỗi ABCDEF, ký tự nhập vào D. 
+Thông báo “ Có ký tự D, ở vị trí 3”. 
+c. Đếm xem có bao nhiêu ký tự vừa nhập trong chuỗi S. 
+ Bài tập 5.49 
+Viết chƣơng trình nhập vào một chuỗi ký tự.  
+Đảo vị trí của từ đầu và từ cuối. In chuỗi kết quả thu đƣợc. 
+Test: Chuỗi “ bo an co”, chuỗi thu đƣợc sau khi đảo vị trí “ co an bo”. 
+Yêu cầu: 
+- Xây dựng hàm nhập vào chuỗi. 
+- Xây dựng hàm đảo vị trí của từ đầu và từ cuối. 
+- Xây dựng hàm hiển thị chuỗi. 
+ Bài tập 5.50 
+Viết chƣơng trình nhập vào một chuỗi ký tự. 
+Nhập vào từ bắt đầu tách, in màn hình chuỗi thu đƣợc cắt ra bắt đầu 
+từ từ vừa nhập. 
+Test:  Nhập chuỗi S1: “Khoa Công Nghệ Thông tin”.  
+Ngƣời nhập muốn tách bắt đầu từ chữ “Công” thì sẽ đƣa ra màn hình 
+chuỗi “Công Nghệ Thông Tin”. 
+ Bài tập 5.51 
+Viết chƣơng trình nhập vào một chuỗi ký tự. 
+Nếu trong chuỗi có ký tự viết hoa thì đƣợc chuyển sang ký tự viết 
+thƣờng và những ký tự viết thƣờng đƣợc chuyển sang ký tự viết hoa. 
+Test: Chuỗi “nGuYen vAN a” đƣợc đổi thành: “Nguyễn Văn A”. 
+ Bài tập 5.52(*) 
+Viết chƣơng trình nhập vào một chuỗi đếm xem chuỗi có bao nhiêu 
+từ. Các từ cách nhau bằng khoảng trắng, dấu chấm câu: dấu chấm (.), dấu 
+phẩy (,), dấu chấm phẩy (;), dấu hỏi (?) và dấu chấm than (!). 
+ 
+ 

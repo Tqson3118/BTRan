@@ -1,0 +1,49 @@
+// Trang 62 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+62 
+Dòng lệnh 9: printf("d-- = %d \n", d--); in ra giá trị của d--, giá trị 
+đƣợc in ra là 9 (d đƣợc đƣa vào thực hiện trƣớc, sau đó mới giảm d, tại 
+thời điểm của dòng lệnh 9, giá trị d chƣa giảm) 
+Dòng lệnh 11: printf("a = %d, b = %d, c = %d, d = %d", a, b, c, d); 
+lúc này các biến a, b, c, d đã đƣợc tăng hoặc giảm giá trị, do đó, kết quả in 
+ra là a = 11, b = 6, c = 13, d = 8. 
+1.6.4.5. Toán tử gán 
+Toán tử gán đƣợc sử dụng để gán giá trị cho một biến.  
+Bảng 1.9. Toán tử gán 
+Toán tử 
+Mô tả 
+Biểu diễn 
+= 
+a = b 
+a = b 
++= 
+a += b 
+a = a + b 
+-= 
+a -= b 
+a = a - b 
+*= 
+a*= b 
+a = a * b 
+/= 
+a /= b 
+a = a/b 
+%= 
+a %=b 
+a = a % b 
+ Ví dụ 1.48 
+Cho đoạn chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 int main() 
+3 { 
+4     int a = 10, c; 
+5     c = a;      // c = 10 
+6     printf("c = %d\n", c); 
+7     c += a;     // c = 20  
+8     printf("c = %d\n", c); 
+9     c -= a;     // c = 10 
+10     printf("c = %d\n", c); 
+11     c *= a;     // c = 100 
+12     printf("c = %d\n", c); 
+13     c /= a;     // c = 10 
+14     printf("c = %d\n", c); 

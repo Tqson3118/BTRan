@@ -1,0 +1,34 @@
+// Trang 116 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+116 
+4     char firstname[20], lastname[20]; 
+5     int bir_year; 
+6     printf("Nhap vao ho: "); 
+7     scanf("%s", firstname); 
+8     printf("Nhap vao ten: "); 
+9     scanf("%s", lastname); 
+10     printf("Nhap vao nam sinh: "); 
+11     scanf("%d", &bir_year); 
+12     printf("%s %s %d\n", firstname, lastname, bir_year); 
+13     return 0; 
+14 } 
+Kết quả chƣơng trình: 
+Nhap vao ho: Le 
+Nhap vao ten: Kien 
+Nhap vao nam sinh: 1980 
+Le Kien 1980 
+ Ví dụ 2.30 
+Viết chƣơng trình nhập vào thông tin của một sinh viên gồm: masv, 
+hoten, diemtoan, diemanh.  
+Yêu cầu: 
+a. Tính tongdiem  = diemtoan + diemanh. 
+b. In thông tin của sinh viên đó lên màn hình gồm: masv, hoten, 
+tongdiem. 
+Phác thảo lời giải: 
+- Xác định các biến đầu vào: masv (Kiểu char), hoten (Kiểu char), 
+diemtoan (Kiểu float), diemanh (Kiểu float); 
+- Sử dụng câu lệnh nhập, xuất, tính tổng điểm; 
+- In thông tin của các sinh viên. 
+Chƣơng trình: 
+1 #include <stdio.h>  
+2 #include <conio.h> 

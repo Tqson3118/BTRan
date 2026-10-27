@@ -1,0 +1,40 @@
+// Trang 101 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+101 
+5  
+int ngay, thang,nam; 
+6  
+printf("Nhap vao du lieu kieu ngay-thang-nam: "); 
+7  
+scanf("%d%*c%d%*c%d", &ngay, &thang, &nam); 
+8  
+printf("%d/%d/%d", ngay, thang, nam); 
+9  
+getch(); 
+10  
+} 
+Kết quả chƣơng trình 
+Nhap vao du lieu kieu ngay-thang-nam: 12-7-2019 
+12/7/2019 
+ Ví dụ 2.13 
+Viết chƣơng trình nhập vào ngày tháng năm theo định dạng 
+dd/mm/yyyy và in ra màn hình theo định dạng dd/mm/yyyy. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 main() 
+4 { 
+5 int ngay, thang,nam; 
+6 printf("Nhap vao du lieu kieu dd/mm/yyyy: "); 
+7 scanf("%2d%2d%4d", &ngay, &thang, &nam); 
+8 printf("%2d/%2d/%4d", ngay, thang, nam); 
+9 getch(); 
+10 } 
+Kết quả chƣơng trình 
+Nhap vao du lieu kieu dd/mm/yyyy: 12 12 2019 
+12/12/2019 
+ Ví dụ 2.14 
+Viết chƣơng trình nhập vào một ký tự, in ký tự đó ra màn hình và in 
+giá trị trong bảng mã ASCII của ký tự đó. 
+ 
+ 

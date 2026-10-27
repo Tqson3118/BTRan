@@ -1,0 +1,40 @@
+// Trang 166 - Ngôn ngữ lập trình C_ebook.pdf
+
+163
+Như vậy, cú pháp chung để khai báo các biến thuộc kiểu cấu trúc 
+sẽ là:
+struct  TênKiểuCấuTrúc 	tênBiến;
+hoặc
+struct  TênKiểuCấuTrúc  tênBiến = {các giá trị khởi tạo};
+Với kiểu cấu trúc, các phép toán có thể sử dụng được trên các biến 
+cấu trúc là: phép gán = giữa các biến cấu trúc cùng kiểu, phép toán lấy 
+địa chỉ & của một biến cấu trúc, phép truy xuất .  tới các biến thành phần 
+của một biến cấu trúc. Các phép so sánh (ví dụ: ==, !=, ...) sẽ không thể 
+thực hiện được trên các biến cấu trúc. Chẳng hạn ở đoạn lệnh sau:
+1
+2
+3
+4
+5
+6
+7
+struct ThietBi  c = {“Quat”, 2019, 225.5, ‘T’};
+struct ThietBi d;
+d = c; //gan du lieu cua c vao d
+	
+//phep toan hop le
+if (d != c)   //phep toan khong hop le
+	
+printf(“Du lieu khac nhau”);
+thì trình biên dịch sẽ báo lỗi ở dòng lệnh 6 if (d != c) vì 
+phép so sánh khác nhau != không thể thực hiện được trên hai biến 
+cấu trúc d và c.
+7.1.4 .Truy xuất tới các thành phần của biến cấu trúc
+Có hai toán tử có thể được sử dụng để truy xuất tới các thành phần 
+của một vùng nhớ kiểu cấu trúc: toán tử dấu chấm (.) và toán tử mũi 
+tên (->). 
+Toán tử dấu chấm (.) hay còn gọi là toán tử thành phần cấu trúc 
+dùng để truy xuất tới các biến thành phần của một biến cấu trúc thông 
+qua tên gọi của biến cấu trúc đó. Ví dụ, với biến c thuộc kiểu cấu trúc 
+ThietBi đã khai báo ở trên:
+struct ThietBi  c = {“Quat”, 2019, 225.5, ‘T’};

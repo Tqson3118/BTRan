@@ -1,0 +1,30 @@
+// Trang 173 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+173 
+18      getch(); 
+19  } 
+Kết quả chƣơng trình 
+ 
+Nhap so nguyen he thap phan: 125 
+ 
+So thap phan = 125 
+ 
+So nhi phan = 1111101 
+3.2.3. Cấu trúc vòng lặp do … while 
+3.2.3.1. Cú pháp 
+ 
+do 
+ 
+{ statement; 
+ 
+} while (expression); 
+Trong đó: 
+- expression: Biểu thức điều kiện, là một biểu thức logic. 
+- statement: Câu lệnh trong vòng lặp. 
+3.2.3.2. Hoạt động 
+Bƣớc 1: Thực hiện các lệnh bên trong thân vòng lặp do…while. 
+Bƣớc 2: Kiểm tra điều kiện, chừng nào điều kiện còn đúng thì thực 
+hiện lệnh, điều kiện sai thì thoát khỏi vòng lặp. 
+3.2.3.3. Sơ đồ khối 
+ 
+Hình 3.10. Sơ đồ khối biểu diễn vòng lặp do… while 

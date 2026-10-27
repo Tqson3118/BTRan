@@ -1,0 +1,45 @@
+// Trang 318 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+318 
+2 
+int main() 
+3 
+{ 
+4 
+   int* pc, c; 
+5 
+   c = 22; 
+6 
+   printf("Dia chi cua bien c: %u\n", &c); 
+7 
+   printf("Gia tri cua bien c: %d\n\n", c); 
+8 
+   pc = &c; 
+9 
+   printf("Dia chi cua con tro pc: %u\n", pc); 
+10    printf("Noi dung cua con tro pc: %d\n\n", *pc); 
+11    c = 11; 
+12    printf("Dia chi cua con tro pc: %u\n", pc); 
+13    printf("Noi dung cua con tro pc: %d\n\n", *pc); 
+14    *pc = 2; 
+15    printf("Dia chi cua bien  c: %u\n", &c); 
+16    printf("Gia tri cua bien c: %d\n\n", c); 
+17    return 0; 
+18 } 
+ Kết quả chƣơng trình: 
+Dia chi cua bien c: 6487572 
+Gia tri cua bien c: 22 
+Dia chi cua con tro pc: 6487572 
+Noi dung cua con tro pc: 22 
+Dia chi cua con tro pc: 6487572 
+Noi dung cua con tro pc: 11 
+Dia chi cua bien  c: 6487572 
+Gia tri cua bien c: 2 
+Giải thích về đoạn chƣơng trình trên: 
+Dòng lệnh 4: int* pc, c; 
+Đầu tiên biến con trỏ pc và một biến bình thƣờng c, cùng có kiểu số 
+nguyên, đƣợc tạo ra. Do lúc đầu pc và c không đƣợc khởi tạo, nên con trỏ 
+pc không lƣu địa chỉ hoặc lƣu trữ một địa chỉ ngẫu nhiên và biến c có địa 
+chỉ nhƣng chứa một giá trị ngẫu nhiên bất kỳ.  
+ 
+ 

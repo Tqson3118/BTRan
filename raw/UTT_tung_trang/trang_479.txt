@@ -1,0 +1,38 @@
+// Trang 479 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+479 
+sv[index].d_gk = 0; 
+sv[index].d_kt = 0; 
+sv[index].tong_diem = 0; 
+} 
+void capnhat(sinhvien sv[], int spt)  
+{ 
+char id[10]; 
+int cot_capnhat; 
+printf("Nhap ma sinh vien:"); 
+scanf("%s",&id); 
+printf("Truong ban muon cap nhat(1-7)?:"); 
+scanf("%d",&cot_capnhat); 
+int index = timkiem(sv, id, spt); 
+if (index != -1) 
+{ 
+ if (cot_capnhat == 1) 
+ { 
+ printf("Nhap ten sinh vien:"); 
+ fflush(stdin); 
+ scanf("%s",&sv[index].tensv); 
+ } 
+ else if (cot_capnhat == 2) 
+ { 
+ printf("Nhap gioi tinh sinh vien (F hoac M):"); 
+ scanf("%c",&sv[index].gt); 
+ } 
+ else if (cot_capnhat == 3) 
+ { 
+ printf("Nhap diem thanh phan 1:"); 
+ scanf("%f",&sv[index].d_tp1); 
+ } 
+ else if (cot_capnhat == 4) 
+ { 
+ printf("Nhap diem thanh phan 2:"); 
+ scanf("%f",&sv[index].d_tp2); 

@@ -1,0 +1,40 @@
+// Trang 190 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+190 
+Nhiệt độ 30oC - 40oC: Nóng 
+Nhiệt độ > 40oC: Rất nóng. 
+Dữ liệu Test: 35. 
+Kết quả mong đợi: Nóng. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 int main() 
+3 { 
+4 int t; 
+5    printf("Nhap vao nhiet do trong ngay: "); 
+6    scanf("%d",&t); 
+7   if(t < 0) 
+8             printf("Dong bang.\n"); 
+9   else if( t < 10) 
+10        printf("Rat lanh.\n"); 
+11        else if( t < 20) 
+12                printf("Lanh.\n"); 
+13              else if( t < 30) 
+14                         printf("Binh thuong.\n"); 
+15                   else if(t < 40) 
+16                         printf("Nong.\n"); 
+17                         Else 
+18                               printf("Rat nong.\n"); 
+19 } 
+Kết quả chƣơng trình: 
+ 
+Nhap vao nhiet do trong ngay: 22 
+ 
+Binh thuong. 
+ Bài tập 3.4 
+Chỉ số khối cơ thể (viết tắt là BMI - Body Mass Index) đƣợc dùng để 
+đánh giá mức độ gầy hay béo của một ngƣời. Chỉ số này có thể giúp xác 
+định một ngƣời bị bệnh béo phì hay bị bệnh suy dinh dƣỡng. 
+Công thức tính chỉ số: BMI = 
+ 
+    đƣợc làm tròn kết quả đến 2 chữ số 
+thập phân. 

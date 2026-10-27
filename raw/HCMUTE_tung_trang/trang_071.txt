@@ -1,0 +1,51 @@
+// Trang 71 - Ngôn ngữ lập trình C_ebook.pdf
+
+68
+2. Hãy đọc và phân tích chương trình sau: 
+#include <stdio.h>
+#include <conio.h>
+int main (void)
+{
+	
+int   a,b,c,m;
+	
+printf (“Nhap a:”);
+	
+scanf(“%d”, &a);
+	
+printf (“Nhap b:”);
+	
+scanf(“%d”, &b);
+	
+printf (“Nhap c:”);
+	
+scanf(“%d”, &c);
+	
+if (a > b)
+   	
+	
+ m = a;
+ 	
+else 
+	
+	
+m = b;
+	
+ if (m < c)
+   	
+	
+m = c;
+	
+printf(“ket qua =  %d”,m);
+	
+getch();
+	
+return 0;
+}
+Yêu cầu : 
+ Cho biết chương trình thực hiện chức năng gì?
+ Vẽ lưu đồ hoạt động của chương trình.
+ Viết lại chương trình khác thực hiện cùng chức năng với 
+chương trình trên.
+nhập 3 số nguyên từ bàn phím 
+và tìm ra số lớn nhất trong 3 số

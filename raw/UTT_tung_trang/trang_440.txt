@@ -1,0 +1,43 @@
+// Trang 440 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+440 
+ Ví dụ 6.19 
+ 
+Xem xét đoạn chƣơng trình sau đây: 
+1 
+#include<stdio.h>   
+2 
+#include <stdlib.h>  
+3 
+struct Sinh_vien 
+4 
+{   
+5 
+    char ten_sv[20];   
+6 
+    char ma_sv[10];   
+7 
+    float diemtb;   
+8 
+};   
+9 
+int main()   
+10 {   
+11     struct Sinh_vien s1,s2,s3;   
+12     printf("Nhap vao ten cua sinh vien thu nhat:\n");   
+13     fflush(stdin); 
+14     gets(s1.ten_sv); 
+15     printf("Nhap vao ma cua sinh vien thu nhat:\n");   
+16     fflush(stdin); 
+17     gets(s1.ma_sv); 
+18     printf("Nhap vao diem cua sinh vien thu nhat:\n");   
+19     scanf("%f",&s1.diemtb);   
+20     printf("Nhap vao ten cua sinh vien thu hai:\n");  
+21     fflush(stdin); 
+22     gets(s2.ten_sv); 
+23     printf("Nhap vao ma cua sinh vien thu hai:\n");  
+24     fflush(stdin);  
+25     gets(s2.ma_sv); 
+26     printf("Nhap vao diem cua sinh vien thu hai:\n");   
+27     scanf("%f",&s2.diemtb);    
+28     printf("Nhap vao ten cua sinh vien thu ba:\n");   

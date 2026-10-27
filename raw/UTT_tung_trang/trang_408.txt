@@ -1,0 +1,41 @@
+// Trang 408 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+408 
+28         } 
+29         else 
+30         { 
+31             so_ktdb++; // con lai, tang so ky tu dac biet len 1 don vi 
+32         } 
+33         i++; 
+34     } 
+35     printf("So cac ky tu trong chuoi : %d\n", so_kt); 
+36     printf("So cac chu so trong chuoi : %d\n", so_cs); 
+37     printf("So cac ky tu dac biet trong chuoi : %d\n\n", so_ktdb); 
+38 return 0; 
+39 } 
+  Kết quả chƣơng trình: 
+Chuong trinh in so ky tu, so chu so, so ky tu dac biet trong chuoi : 
+---------------------------------------------------- 
+Nhap vao chuoi can dem : SinhvienK69 CNTT DHCNGTVT 
+So cac ky tu trong chuoi : 21 
+So cac chu so trong chuoi : 2 
+So cac ky tu dac biet trong chuoi : 3 
+ Bài tập 5.20 
+Nhập vào một chuỗi ký tự, in ra màn hình chuỗi sau khi loại bỏ các 
+ký tự đặc biệt và các chữ số (chỉ giữ lại các ký tự)? 
+ Phác thảo lời giải 
+- Nhập vào chuỗi s; 
+- Kiểm tra từng ký tự của chuỗi s, nếu không phải là ký tự (ký tự 
+trong bảng mã ASCII nằm trong giới hạn từ a → z hoặc A→Z), thì thực 
+hiện xóa ký tự đó. 
+- Để xóa 1 ký tự đặc biệt, chữ số thực hiện giống nhƣ xóa 1 phần tử 
+trong mảng: Chẳng hạn, để xóa ký tự i, dịch chuyển các ký tự từ i + 1 đến  
+ký tự cuối cùng của chuỗi sang trái 1 vị trí. 
+- Thực hiện quá trình trên cho đến khi hết chuỗi. 
+ Chƣơng trình: 
+1 
+#include<stdio.h> 
+2 
+int main() 
+3 
+{ 

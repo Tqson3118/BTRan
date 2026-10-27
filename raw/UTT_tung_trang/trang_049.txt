@@ -1,0 +1,34 @@
+// Trang 49 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+49 
+1 #include <stdio.h> 
+2 #define float PI = 3.14159; 
+3 int main() 
+4 { 
+5     float r, pi, dt; 
+6     printf(“Nhap vao ban kinh hinh tron:”); 
+7     Scanf(“%f”, r); 
+8     dt = PI * r * r; 
+9     printf("Dien tich = %f", dt); 
+10     return 0; 
+11 } 
+#define PI 3.14159 xác định PI có giá trị không đổi, bằng 3.14159. 
+Bộ xử lý thay thế tất cả các xuất hiện của PI trong chƣơng trình bằng 
+3.14159 trƣớc khi biên dịch. 
+Lƣu ý: Tên hằng nên khai báo với tất cả các ký tự viết hoa. 
+1.5.2.4. Phân loại hằng 
+a. Hằng số nguyên 
+Là một số nguyên có giá trị trong khoảng từ -32768 đến 32767. 
+ Ví dụ 1.31 
+-45,543 là các hằng số nguyên. 
+Lƣu ý: Phân biệt cách viết 543 và 543.0. Số 543 là hằng số nguyên 
+còn 543.0 là hằng số thực. 
+Một hằng số nguyên có thể đƣợc biểu diễn nhƣ sau: 
+- Theo cách thông thƣờng: 2019, 12, v.v. tức là số đƣợc biểu diễn ở 
+hệ cơ số 10; 
+- Theo cơ số 8: Thêm số 0 vào đằng trƣớc số 017 (8) = 15 (10); 
+- Theo cơ số 16: Thêm 0x ở đầu số: 0x1A (16) = 26 (10); 
+- Kiểu char cũng đƣợc xem nhƣ là một hằng nguyên. 
+ Ví dụ 1.32 
+Câu lệnh printf(“so = %d”, „A‟ + 5); sẽ cho ra kết quả là so  = 70. 
+Câu lệnh printf(“chu = %c”, „A‟+ 2); sẽ cho ra kết quả là chu = „C‟. 

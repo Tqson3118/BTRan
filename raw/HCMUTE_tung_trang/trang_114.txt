@@ -1,0 +1,38 @@
+// Trang 114 - Ngôn ngữ lập trình C_ebook.pdf
+
+111
+Kết quả :
+12345.67
+12345.67
+ Hàm atoi
+Cú pháp: int atoi(const char *s);  // Phải khai báo thư viện 
+stdlib.h.
+Hàm có chức năng chuyển đổi 1 chuỗi sang giá trị kiểu int.
+Ví dụ 4.20:
+1
+2
+3
+4
+int i;
+char str[] = “12345.67”;
+i = atoi(str);
+printf (“%d”, i);
+ Kết quả 
+12345
+ Hàm itoa
+Cú pháp: char *itoa(int value, char *string, int radix); // 
+Phải khai báo thư viện stdlib.h
+Hàm có chức năng chuyển đổi số nguyên value sang chuỗi string 
+theo cơ số radix.
+Ví dụ 4.21a: 
+1
+2
+3
+4
+int number = 12345;
+char string[25];
+itoa(number, string, 10);
+puts(string);
+Kết quả:
+12345
+Ví dụ 4.21b: chuyển đổi số sang chuỗi theo cơ số 2:

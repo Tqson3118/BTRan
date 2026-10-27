@@ -1,0 +1,38 @@
+// Trang 130 - Ngôn ngữ lập trình C_ebook.pdf
+
+127
+tự động tăng nội dung biến con trỏ lên một giá trị tương ứng với kiểu 
+dữ liệu mà nó được định nghĩa để có thể tham chiếu đến phần tử tiếp 
+theo của vùng nhớ đang được truy xuất bởi con trỏ. Ví dụ, đối với 
+con trỏ kiểu int, lệnh p++ sẽ tăng địa chỉ lên 4 byte để tham chiếu 
+đến phần tử tiếp theo, thay vì chỉ tăng lên 1 đơn vị như tác dụng trên 
+biến thông thường. Sau khi tăng, con trỏ p đang tham chiếu đến phần tử 
+thứ 1 của mảng a. 
+Truy xuất từng phần tử mảng theo cách dùng tên mảng như là tên 
+con trỏ:  
+1
+2
+3
+4
+5
+6
+int a[] = {1,2,3,4,5,6} ;
+int *p;
+p = a;
+printf(“ p(0)= %d, p(1) = %d  \n “, *a,*(a+1)) ; 
+a++ ; // lenh khong hop le
+printf(“ p(0)= %d, p(1) = %d  \n “, *a,*(a+1)) ;  
+Trong đoạn chương trình này, việc sử dụng cách tham chiếu như 
+con trỏ đế lấy nội dung của mảng a tại câu lệnh ở dòng thứ 4 và thứ 6 
+là hoàn toàn hợp lệ. Tuy nhiên lệnh a++; ở dòng lệnh 5 lại không hợp 
+lệ vì trường hợp này a được khai báo là mảng, không phải con trỏ. Như 
+vậy, người lập trình cần chú ý cách sử dụng giống và khác nhau giữa 
+mảng và con trỏ.
+5.4. CẤP PHÁT BỘ NHỚ ĐỘNG
+Thông thường, người lập trình ít quan tâm đến việc chương trình 
+tiêu tốn bộ nhớ bao nhiêu. Khi máy tính có bộ nhớ đủ lớn, việc sử dụng 
+bộ nhớ nhiều hơn hay ít hơn vài Mbyte có lẽ không là vấn đề gì lớn. Tuy 
+nhiên, thử hình dung chúng ta đang lập trình và thực thi trên các thiết 
+bị có bộ nhớ giới hạn thì việc sử dụng hiệu quả bộ nhớ lại trở nên cần 
+thiết. Ví dụ, khi viết chương trình cho phép người dùng nhập điểm cho 
+một lớp học, mà chúng ta không biết trước là sẽ có bao nhiêu sinh viên. 

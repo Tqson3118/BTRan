@@ -1,0 +1,48 @@
+// Trang 523 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+523 
+- Nhập vào danh sách N sinh viên; 
+- Xuất danh sách N sinh viên; 
+- Tính điểm trung bình cho N sinh viên; 
+- Sắp xếp N sinh viên theo thứ tự tăng dần của điểm trung bình; 
+- Xếp loại N sinh viên; 
+- Xuất danh sách N sinh viên ra file; 
+- Viết chƣơng trình dạng menu cho phép sử dụng các tính năng trên. 
+Chƣơng trình 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 
+3 
+#include <stdlib.h> 
+4 
+ struct SinhVien{ 
+5 
+    char ten[30]; 
+6 
+    char gt[5]; 
+7 
+    float dT, dL, dH; 
+8 
+    float dtb = 0; 
+9 
+}; 
+10  typedef SinhVien SV; 
+11  void nhap(SV &sv); 
+12 void nhapN(SV a[], int n); 
+13 void xuat(SV sv); 
+14 void xuatN(SV a[], int n); 
+15 void tinhDTB(SV &sv); 
+16 void sapxep(SV a[], int n); 
+17 void xeploai(SV a); 
+18 void xeploaiN(SV a[], int n); 
+19 void xuatFile(SV a[], int n, char fileName[]); 
+20  int main(){ 
+21     int key; 
+22     char fileName[] = "DSSV.txt"; 
+23     int n; 
+24     bool daNhap = false; 
+25     do{ 
+26         printf("\nNhap so luong SV: "); scanf("%d", &n); 
+27     }while(n <= 0); 
+28     SV a[n]; 

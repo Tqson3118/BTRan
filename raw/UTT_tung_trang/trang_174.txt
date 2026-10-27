@@ -1,0 +1,54 @@
+// Trang 174 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+174 
+Lƣu ý:  
+ Câu lệnh do… while có thể lồng nhau. 
+do 
+{ 
+ 
+b = 1; 
+ 
+do 
+ 
+{ 
+ 
+ 
+printf(“%d\n”, a + b); 
+ 
+ 
+b = b + 2; 
+ 
+} 
+ 
+while (b < 20); 
+ 
+a++; 
+} 
+while (a < 20); 
+ Câu lệnh do… while sẽ đƣợc thực hiện ít nhất 1 lần. 
+do 
+ 
+{ 
+ 
+ 
+printf(“Nhap n: ”); 
+ 
+ 
+scanf(“%d”, &n); 
+ 
+} 
+ 
+while (n < 1 || n > 100); 
+ Ví dụ 3.29  
+Viết chƣơng trình thực hiện các yêu cầu sau:  
+Nhập vào 3 số thực a, b, c từ bàn phím.  
+a.  Kiểm tra a, b, c có lập thành ba cạnh của tam giác không?  
+b.  Nếu có hãy kiểm tra đây là tam giác cân, đều, vuông hay tam giác 
+thƣờng. Tính chu vi và diện tích của tam giác. In kết quả ra màn hình.  
+Dữ liệu test: 1  4  7. 
+Kết quả mong đợi: Không là ba cạnh tam giác. 
+Dữ liệu test: 2  4  5. 
+Kết quả mong đợi: Tam giác thƣờng.  
+Phác họa lời giải 
+Đây là ví dụ 3.8, nhƣng có một hạn chế là không cho bắt lỗi khi 
+nhập a, b, c nhỏ hơn 0. Ở đây, ta sử dụng cấu trúc do…while lệnh đƣợc 

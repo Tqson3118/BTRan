@@ -1,0 +1,53 @@
+// Trang 37 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+37 
+Bƣớc 2: Mã nguồn mở rộng (tệp simple.i) đƣợc gửi đến trình biên 
+dịch (compiler) để biên dịch mã và chuyển đổi nó thành mã assembly (mã 
+máy, tệp simple.s). 
+Bƣớc 3: Mã asembly (tệp simple.s) đƣợc gửi đến trình biên dịch mã 
+(assembler) chuyển đổi simple.s thành mã đối tƣợng (Object code). Bây 
+giờ một tệp tin simple.obj đƣợc tạo ra. 
+Bƣớc 4: Mã đối tƣợng (tệp simple.obj) đƣợc gửi đến trình liên kết 
+liên kết nó với thƣ viện, chẳng hạn nhƣ các tệp tiêu đề. Sau đó, nó đƣợc 
+chuyển đổi thành mã thực thi (executable code). Một tập tin đơn 
+simple.exe đƣợc tạo ra. 
+Bƣớc 5: Mã thực thi (tệp simple.exe) đƣợc gửi đến trình tải (loader) 
+sẽ tải vào bộ nhớ và sau đó nó đƣợc thực thi. Sau khi thực hiện, đầu ra 
+đƣợc gửi đến bàn điều khiển. 
+1.4. KIỂU DỮ LIỆU TRONG C 
+ 
+Kiểu dữ liệu đƣợc hệ thống dùng để xác định các thuộc tính cơ 
+bản khác nhau về dữ liệu đƣợc lƣu trong bộ nhớ. Các thuộc tính đó bao 
+gồm: loại dữ liệu, phạm vi của dữ liệu, số byte bị chiếm dụng, v.v. 
+Các kiểu dữ liệu trong C đƣợc phân chia thành 3 nhóm chính: 
+ 
+ 
+ 
+Hình 1.2. Các kiểu dữ liệu của ngôn ngữ C 
+Kiểu dữ liệu 
+Kiểu dữ liệu 
+nguyên thủy 
+Char 
+int 
+float/doube 
+void 
+Kiểu dữ liệu dẫn 
+xuất 
+signed 
+signed char 
+signed short 
+signed int 
+signed long 
+unsigned 
+unsigned char 
+unsigned short 
+unsigned int 
+unsigned long 
+long double 
+Kiểu dữ liệu do 
+người dùng định 
+nghĩa 
+array 
+struct 
+union 
+enum 

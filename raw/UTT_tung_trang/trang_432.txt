@@ -1,0 +1,43 @@
+// Trang 432 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+432 
+16  
+s1.tuoi_sv = 18; 
+17     /* 
+18         su dung ham strcpy de them ten sinh vien 
+19     */ 
+20     strcpy(s1.dia_Chi, "Ha Noi"); 
+21     s1.gioi_tinh='M'; 
+22     /* 
+23         Hien thi gia tri 
+24     */ 
+25     printf("Ten cua sinh vien: %s\n", s1.ten_sv); 
+26     printf("Tuoi cua sinh vien: %d\n", s1.tuoi_sv); 
+27     printf("Dia chi cua sinh vien: %s\n", s1.dia_Chi); 
+28     printf("Gioi tinh cua sinh vien: %c\n", s1.gioi_tinh); 
+29     return 0; 
+30 } 
+  Kết quả chƣơng trình: 
+ 
+Ten cua sinh vien: Le Thi Chi 
+ 
+Tuoi cua sinh vien: 18 
+ 
+Dia chi cua sinh vien: Ha Noi 
+ 
+Gioi tinh cua sinh vien: M 
+6.1.5. Phép gán các biến cùng có kiểu cấu trúc 
+Việc thực hiện gán các biến cùng kiểu cấu trúc đƣợc thực hiện giống 
+nhƣ phép gán hai biến cùng kiểu dữ liệu. 
+ Ví dụ 6.10 
+1  struct Sinh_vien 
+2  { 
+3  char ten[20]; 
+int tuoi; 
+4  char dia_chi[50]; 
+5  char gioitinh; // nhan gia tri F (female) hoặc M (male) 
+6  }; 
+7  struct Sinh_vien s1 = {"Nam",19, "Ha Noi", 'F'}; 
+8  struct s2; 
+9  s2 = s1; 
+Sau lệnh gán s2 = s1; mọi thông tin về Sinh_vien s1 đƣợc gán cho s2. 

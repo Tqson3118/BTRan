@@ -1,0 +1,22 @@
+// Trang 576 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+576 
+26 rectangle(0, 0, 639, 449); 
+27 while(!kbhit()) 
+28 { 
+29 temp1 = 1 + random (588); 
+30 temp2 = 1 + random (380); 
+31 getimage(left, top, left + 50, top + 50, p); 
+32 putimage(left, top, p, XOR_PUT); 
+33 putimage(temp1, temp2, p, XOR_PUT); 
+34 delay(100); 
+35 left = temp1; 
+36 top = temp2; 
+37 } 
+38 getch(); 
+39 closegraph(); 
+40 return 0; 
+41 } 
+ 
+ 
+ 

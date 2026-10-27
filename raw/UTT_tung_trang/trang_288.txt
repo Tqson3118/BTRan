@@ -1,0 +1,39 @@
+// Trang 288 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+288 
+19  }  
+20  //Tra ve gia tri - 1 neu khong co phan tu can tim trong day  
+21  
+return -1;  
+22 }  
+23 int main(void)  
+24 {  
+25  //khoi tao mang ban dau 
+26  int a[] = { 2, 3, 4, 10, 40 };  
+27  //xac dinh kich thuoc cua mang, su dung ham sizeof 
+28  int n = sizeof(a) / sizeof(int);  
+29  //khoi tao gai tri can tim kiem 
+30  int x = 10;  
+31  int result = binarySearch(a, 0, n - 1, x);  
+32  //Dua ra thong bao co hay khong co phan tu x, neu co chi ra vi 
+tri cua phan tu 
+33  (result == -1) ? printf("Phan tu khong co trong mang") : 
+printf("Phan tu duoc tim thay o vi tri %d ", result);  
+34  return 0;  
+35 } 
+Mảng khởi tạo giá trị ban đầu (đã sắp xếp tăng dần): 
+a[] = {2, 3, 4, 10, 40} 
+Giá trị cần tìm x = 10 
+ Kết quả chƣơng trình: 
+Phan tu duoc tim thay o vi tri 3 
+Yêu cầu với sinh viên: Viết lại chƣơng trình với ba hàm sau đây: 
+- Hàm Nhap(): nhập vào các giá trị của mảng, với hai tham số cơ bản 
+là tên biến mảng, số phần tử của mảng; 
+- Hàm Hien_thi(): hiển thị các phần tử của mảng, với hai tham số là 
+tên biến mảng, số phần tử của mảng; 
+- Hàm Sap_xep(): sắp xếp mảng theo chiều tăng dần, hoặc giảm dần, 
+với hai tham số là tên biến mảng và số phần tử của mảng; 
+- Hàm Tim_kiem_NP(): tìm kiếm phần tử có giá trị bằng x, dựa trên 
+mảng đã sắp xếp, với ba tham số: tên biến mảng, số phần tử của mảng, 
+phần tử cần tìm kiếm x. 
+b. Sắp xếp mảng 

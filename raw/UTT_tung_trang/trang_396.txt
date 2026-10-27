@@ -1,0 +1,38 @@
+// Trang 396 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+396 
+  Kết quả chƣơng trình: 
+Nhap 10 tu: 
+ab 
+a 
+cdr 
+gg 
+acb 
+dgghs 
+acbd 
+gfrwe 
+yta 
+uqot 
+Cac chuoi duoc in theo thu tu tu dien: 
+a 
+ab 
+acb 
+acbd 
+cdr 
+dgghs 
+gfrwe 
+gg 
+uqot 
+yta 
+ Bài tập 5.14 
+Viết chƣơng trình nhập vào một chuỗi các ký tự. In ra chuỗi thu đƣợc 
+sau khi sắp xếp lại các ký tự của chuỗi theo vần alphabet? 
+ Phác thảo lời giải 
+Xây dựng chƣơng trình bằng ngôn ngữ C để sắp xếp một chuỗi theo 
+thứ tự chữ cái: chẳng hạn, nếu ngƣời dùng nhập chuỗi "programming" thì 
+đầu ra sẽ là "aggimmnoprr", vì vậy chuỗi đầu ra sẽ chứa các ký tự theo 
+thứ tự bảng chữ cái. Giả sử chuỗi đầu vào chỉ chứa các chữ cái in thƣờng. 
+Đầu tiên, chúng tôi đếm số lần xuất hiện của ký tự 'a' đến 'z' trong chuỗi 
+đầu vào và sau đó tạo một chuỗi khác chứa các ký tự 'a' đến 'z' với số lần 
+xuất hiện đếm đƣợc. 
+ Cách 1: 

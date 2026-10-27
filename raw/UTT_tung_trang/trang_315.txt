@@ -1,0 +1,45 @@
+// Trang 315 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+315 
+5.2.1. Địa chỉ trong C 
+Khi một biến đƣợc khai báo trong C, một địa chỉ nhớ đƣợc gán cho 
+nó, trong đó giá trị của biến đƣợc lƣu trữ. Chúng ta dễ dàng kiểm tra địa 
+chỉ bộ nhớ này bằng ký hiệu &. Nếu ta có một biến k trong chƣơng trình 
+của mình, &k sẽ cung cấp địa chỉ của k trong bộ nhớ, với toán tử & 
+thƣờng đƣợc gọi là toán tử tham chiếu. 
+Chúng ta thƣờng hay thấy toán tử & xuất hiện khi sử dụng hàm scanf() 
+để nhập giá trị cho một biến. Toán tử & đƣợc sử dụng trong hàm scanf() để 
+lƣu trữ giá trị nhập vào của ngƣời dùng trong địa chỉ của biến k. 
+scanf("%d", &k); 
+Khi một biến đƣợc khai báo trong chƣơng trình, hệ thống sẽ phân bổ 
+một vị trí tức là một địa chỉ cho biến trong bộ nhớ, để giữ giá trị đƣợc 
+gán. Vị trí này có một địa chỉ riêng. 
+Chẳng hạn khai báo  
+int a =10; 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Hình 5.1. Minh họa vị trí, địa chỉ và giá trị của một biến 
+Giả sử hệ thống đã phân bổ địa chỉ nhớ 80F cho biến a. Chúng ta có 
+thể truy cập giá trị 10 bằng cách sử dụng tên biến a hoặc bằng cách sử 
+dụng địa chỉ 80F. Vấn đề đặt ra làm thế nào chúng ta có thể truy cập một 
+biến bằng địa chỉ của nó? Vì các địa chỉ bộ nhớ cũng chỉ là các số, nên 
+chúng cũng có thể gán cho một biến khác. Các biến đƣợc sử dụng để giữ 
+địa chỉ bộ nhớ đƣợc gọi là biến con trỏ. Do đó, một biến con trỏ không có 
+gì khác ngoài nghĩa là một biến chứa địa chỉ của một biến khác. Và giá trị 
+của một biến con trỏ đƣợc lƣu trữ ở một địa chỉ nhớ khác. 
+ 
+ 
+10 
+a 
+80F 
+Vị trí 
+Giá trị 
+Tên của vị trí 
+Địa chỉ 

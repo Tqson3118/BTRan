@@ -1,0 +1,46 @@
+// Trang 335 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+335 
+Độ dài của một chuỗi ký tự đƣợc xác định từ ký tự đầu tiên của chuỗi 
+đến khi gặp ký tự kết thúc null „\0‟. Chẳng hạn, một chuỗi có nội dung 
+“abcdef” gồm bảy ký tự „a‟, „b‟, „c‟, „d‟, „e‟, „f‟ và ký tự kết thúc „\0‟ (có 
+giá trị bằng 0). 
+ Ví dụ 5.41 
+Viết chƣơng trình in chuỗi S = “DHCNGTVT” ra màn hình, cho biết 
+độ dài của chuỗi S. In các ký tự của S từ ký tự đầu tiên đến ký tự cuối 
+cùng và in các ký tự của S theo chiều ngƣợc, từ ký tự cuối đến ký tự đầu 
+tiên ra màn hình. 
+Chƣơng trình 
+1 
+#include<stdio.h> 
+2 
+#include<string.h> 
+3 
+#define MAX_STRING_LEN 80 
+4 
+int main() { 
+5 
+    /*  Xau la  mang cac ky tu 
+6 
+   * cham dut bang ky tu NULL'\0' */ 
+7 
+    char S[MAX_STRING_LEN]; 
+8 
+  int l, i; 
+9 
+  S[0] = 'D'; 
+10   S[1] = 'H'; 
+11   S[2] = 'C'; 
+12   S[3] = 'N'; 
+13   S[4] = 'G'; 
+14   S[5] = 'T'; 
+15   S[6] = 'V'; 
+16   S[7] = 'T'; 
+17   S[8] = 0; 
+18   l = strlen(S); 
+19   printf("In xau S:\t%s\n",S); 
+20   printf("Do dai xau S:\t%d\n",l); 
+21     /* In cac ky tu trong xau S */ 
+22   printf("Tu ky tu dau tien den ky tu cuoi cung:\n"); 
+23   for (i = 0; i < l; ++i)  
+24     printf("A[%d] = %c\n",i,S[i]); 

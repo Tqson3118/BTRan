@@ -1,0 +1,44 @@
+// Trang 433 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+433 
+ Ví dụ 6.11 
+ Xem xét chƣơng trình sau đây: 
+1 
+#include<stdio.h> 
+2 
+#include<string.h> 
+3 
+struct Sinh_vien 
+4 
+{ 
+5 
+    char ten_sv[20]; 
+6 
+    int tuoi_sv; 
+7 
+    char dia_chi[50]; 
+8 
+    //F (female) va M (male) 
+9 
+    char gioi_tinh; 
+10 }; 
+11 int main() 
+12 { 
+13     struct Sinh_vien s1 ={"Nam",19, "Ha Noi", 'F'}; 
+14     struct Sinh_vien s2; 
+15     s2 = s1; 
+16     printf("Ten cua sinh vien thu 2: %s\n", s1.ten_sv); 
+17     printf("Tuoi cua sinh vien thu 2: %d\n", s1.tuoi_sv); 
+18     printf("Dia chi cua sinh vien thu 2: %s\n", s1.dia_chi); 
+19     printf("Gioi tinh cua sinh vien thu 2: %c\n", s1.gioi_tinh); 
+20     return 0; 
+21 } 
+  Kết quả chƣơng trình: 
+ 
+Ten cua sinh vien thu 2: Nam 
+ 
+Tuoi cua sinh vien thu 2: 19 
+ 
+Dia chi cua sinh vien thu 2: Ha Noi 
+ 
+Gioi tinh cua sinh vien thu 2: F 

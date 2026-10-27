@@ -1,0 +1,52 @@
+// Trang 140 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+140 
+Nếu c = = 0: Phƣơng trình vô số nghiệm; 
+Nếu c != 0: Phƣơng trình vô nghiệm; 
+Nếu b != 0: Phƣơng trình có một nghiệm x =  
+  
+ ; 
+Nếu a ! = 0:  Giải phƣơng trình bậc hai: 
+Tính delta = b * b  -  4 * a * c. 
+Xét delta 
+Nếu delta > 0: Phƣơng trình có hai nghiệm phân biệt: 
+x1 = (-b + sqrt(delta))/(2*a) 
+x2 = (-b - sqrt(delta))/(2*a) 
+Nếu delta = =0: Phƣơng trình có một nghiệm kép 
+x1 = x2  =  
+  
+    
+Nếu delta < 0: Phƣơng trình vô nghiệm. 
+Chƣơng trình: 
+1  #include<stdio.h> 
+2  #include<math.h> 
+3  int main() 
+4  { 
+5     float delta,a,b,c,x1,x2; 
+6     printf("a = ");scanf("%f",&a); 
+7     printf("b = ");scanf("%f",&b); 
+8     printf("c = ");scanf("%f",&c); 
+9     if (a == 0)  
+10      
+{ 
+11   
+ if (b == 0) 
+12   
+  
+{ 
+13   
+ if (c == 0) printf("\nPhuong trinh vo so nghiem"); 
+14   
+  
+else printf("\nPhuong trinh vo nghiem"); 
+15   
+ 
+} 
+16   
+ else  
+17   
+  
+{ 
+18   
+  
+ float x = -c/b; 

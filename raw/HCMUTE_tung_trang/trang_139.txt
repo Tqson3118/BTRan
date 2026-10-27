@@ -1,0 +1,27 @@
+// Trang 139 - Ngôn ngữ lập trình C_ebook.pdf
+
+136
+CHƯƠNG 6
+HÀM
+Mục tiêu:
+Sau khi kết thúc chương này, người đọc có thể:
+- Định nghĩa được hàm mới trong chương trình.
+- Sử dụng được các hàm đã định nghĩa trước đó.
+6.1. GIỚI THIỆU
+Hàm được sử dụng để chia các công việc xử lý tính toán phức tạp 
+thành nhiều chương trình nhỏ hơn. Hàm cho phép người lập trình xây 
+dựng các ứng dụng từ các chương trình được viết sẵn, thay vì phải bắt 
+đầu viết lại từ đầu. Trong một số trường hợp, người lập trình xem các 
+hàm như là các hộp đen mà không cần thiết phải nắm rõ các chương 
+trình chi tiết trong hàm. 
+Có nhiều mục đích khác nhau khi sử dụng hàm. Trong quá trình 
+lập trình, thay vì viết một chương trình dài, người lập trình có thể chia 
+nhỏ các chương trình ra thành nhiều chương trình con, mỗi chương 
+trình con là một hàm. Mặt khác, khi đoạn chương trình lặp lại nhiều lần 
+thì việc sử dụng hàm thực thi đoạn chương trình đó sẽ tiết kiệm được 
+nhiều hơn. 
+Ngoài ra, ngôn ngữ C còn cung cấp các hàm xây dựng sẵn, 
+cho phép người lập trình sử dụng để tạo ra các ứng dụng nhanh hơn. 
+Khi sử dụng hàm, người lập trình cần quan tâm đến các thông số sẽ 
+được đưa vào khi gọi hàm và kết quả trả về của hàm sau khi hàm 
+kết thúc.

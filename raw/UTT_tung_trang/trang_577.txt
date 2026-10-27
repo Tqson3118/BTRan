@@ -1,0 +1,51 @@
+// Trang 577 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+577 
+BÀI TẬP CHƢƠNG 8 
+A. BÀI TẬP CÓ LỜI GIẢI 
+ Bài tập 8.1 
+Viết chƣơng trình bằng ngôn ngữ C in dòng chữ Hello Word ra màn hình. 
+Chƣơng trình 
+1 
+#include<stdio.h> 
+2 
+#include<conio.h> 
+3 
+int main() 
+4 
+{ 
+5 
+ 
+textcolor(RED); 
+6 
+ 
+clrcsr(); 
+7 
+ 
+cprintf("HELLO WORLD\N"); 
+8 
+ 
+getch(); 
+9 
+ 
+return 0; 
+10 } 
+Kết quả chƣơng trình 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Bài tập 8.2 
+Viết chƣơng trình in ra các vòng tròn xoắn ốc. 
+Chƣơng trình 
+1 
+#include<stdio.h> 
+2 
+#include<conio.h> 
+3 
+#include<graphics.h> 
+4 
+#include<dos.h> 

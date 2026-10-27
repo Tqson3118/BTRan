@@ -1,0 +1,10 @@
+// Trang 123 - Ngôn ngữ lập trình C_ebook.pdf
+
+120
+10. Viết một chương trình thực hiện các yêu cầu sau:
+a. Nhập vào điểm giữa kỳ và cuối kỳ môn C của một lớp học gồm 
+25 sinh viên, lưu vào 1 mảng 2 chiều.
+b. Cho biết tỉ lệ % đậu và tỉ lệ % rớt của lớp.
+11. Viết chương trình nhập vào 1 danh sách họ và tên gồm 5 người. 
+	 a. In ra danh sách họ tên những người đã nhập.
+b. In ra danh sách tên những người đã nhập.

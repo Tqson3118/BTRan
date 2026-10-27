@@ -1,0 +1,47 @@
+// Trang 245 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+245 
+ Ví dụ 4.14 
+Viết chƣơng trình nhập họ tên, điểm lập trình C, điểm Java của một 
+sinh viên. Tính điểm trung bình và xuất ra kết quả. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 #include <string.h> 
+4 char hoten [30]; 
+5 float java; 
+6 float ltc; 
+7 float DiemTrungBinh; 
+8 void Nhap() 
+9 { 
+10  
+fflush(stdin); 
+11  
+printf("\nNhap ho ten: "); 
+12  
+gets(hoten); 
+13  
+printf("\nNhap java: "); 
+14  
+scanf("%f", &java); 
+15  
+printf("\nNhap ltc: "); 
+16  
+scanf("%f", &ltc); 
+17 } 
+18 void XuLy() 
+19 { 
+20  
+DiemTrungBinh = (java + ltc) / 2.0; 
+21  
+printf("\n%8.2f", DiemTrungBinh); 
+22 } 
+23 void Xuat() 
+24 { 
+25  
+printf("\n%-20s|%-8s|%-8s|%-8s\n" , "hoten", "java", "ltc", 
+"dtb"); 
+26  
+printf("%-20s|%-8.2f|%-8.2f|%-8.2f\n" , hoten , java, ltc, 
+DiemTrungBinh); 
+27 } 

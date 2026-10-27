@@ -1,0 +1,31 @@
+// Trang 37 - Ngôn ngữ lập trình C_ebook.pdf
+
+34
+Hàm main khai báo 2 biến cục bộ, a và b, và tiến hành nhập giá trị 
+cho 2 biến. Biến tổng được cập nhật giá trị là tổng của a và b tại dòng 
+15. Sau khi in tổng, hàm tinhhieu() được gọi. Trong hàm tinhhieu(), 2 
+biến a và b lại được khai báo. Các biến trong hàm main() có thể có cùng 
+tên với các biến trong hàm tinhhieu(). Trong hàm main() có 2 biến a và b, 
+trong hàm tinhhieu() cũng có 2 biến a và b. Biến a và b trong hàm main() 
+khác với biến a và b trong hàm tinhieu() mặc dù chúng được đặt cùng một 
+tên nhưng do chúng là các biến nội bộ. Như vậy, trong hàm tinhhieu(), giá 
+trị của a và b chưa được nhập nên chương trình sẽ lấy giá trị ngẫu nhiên cho 
+2 biến a và b trong hàm tinhhieu(). Để có thể cập nhật giá trị a và b đã được 
+nhập trong hàm main cho hàm giá trị nội bộ a và b trong hàm tinhhieu() 
+có thể sử dụng nhiều phương pháp sẽ đề cập trong các chương sau.
+1.9.  HẰNG SỐ
+Tương tự như biến, hằng số là một vùng nhớ được phát sinh trong 
+bộ nhớ RAM để lưu trữ dữ liệu, tuy nhiên giá trị dữ liệu bên trong vùng 
+nhớ của hằng số chỉ được khởi tạo một lần và không được phép thay đổi 
+trong suốt chương trình. 
+Hằng số cần được khai báo và khởi tạo giá trị ban đầu trước khi 
+sử dụng. Câu lệnh khai báo sau:
+ const float PI = 3.14;
+là một câu lệnh khai báo hằng số. Trong câu lệnh này, từ khóa const 
+là bắt buộc để bắt đầu một câu lệnh khai báo hằng; float là kiểu dữ liệu của 
+hằng, PI là tên của hằng và 3.14 là giá trị khởi tạo cho hằng số. Sau câu lệnh 
+này, chương trình sẽ tạo ra một ô nhớ kiểu float cho hằng PI và khởi tạo giá 
+trị dữ liệu lưu trong ô nhớ này là 3.14, như minh họa ở hình dưới:
+PI
+3.14
+kích thước 4 bytes

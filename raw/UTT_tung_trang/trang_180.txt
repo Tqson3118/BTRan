@@ -1,0 +1,91 @@
+// Trang 180 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+180 
+ 
+} 
+ 
+int i = 1; 
+ 
+do { 
+ 
+ …; 
+ 
+} while (i > n); 
+ while có thể không thực hiện lần nào, do…while sẽ đƣợc thực 
+hiện ít nhất 1 lần. 
+int n = 100; 
+while (n < 10) 
+{ 
+ 
+…; 
+} 
+… 
+do 
+{ 
+ 
+printf(“Nhap n: ”); 
+ 
+scanf(“%d”, &n); 
+} 
+while (n > 10); 
+ Ví dụ 3.31 
+Viết chƣơng trình in ra tam giác cân đặc và rỗng, tạo từ các dấu sao 
+(*), có độ cao là n nhập từ bàn phím. 
+Chẳng hạn, nhập n: 4 
+ 
+ 
+ 
+* 
+ 
+ 
+ 
+ 
+ 
+* 
+* 
+* 
+ 
+ 
+ 
+* 
+* 
+* 
+* 
+* 
+ 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+ 
+ 
+ 
+ 
+* 
+ 
+ 
+ 
+ 
+ 
+* 
+ 
+* 
+ 
+ 
+ 
+* 
+ 
+ 
+ 
+* 
+ 
+* 
+* 
+* 
+* 
+* 
+* 
+* 

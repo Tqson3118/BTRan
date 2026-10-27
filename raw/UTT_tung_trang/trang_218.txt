@@ -1,0 +1,53 @@
+// Trang 218 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+218 
+8 { 
+9  
+int x, y, z; 
+10  
+printf("Nhap x = "); 
+11 scanf("%d", &x); 
+12  
+printf("Nhap y = "); 
+13 scanf("%d", &y); 
+14  
+z = tinhtong(x, y); 
+15  
+printf("tong = %d", z); 
+16 getch(); 
+17 } 
+Nhận xét: 
+So sánh 
+Hàm có kiểu không trả về kết quả 
+Hàm có kiểu trả về kết quả 
+Xét dòng 3 
+Kiểu hàm: void 
+Kiểu hàm: int 
+Thân hàm: dùng printf thông báo tổng 
+Thân hàm: dùng return trả về giá 
+trị tổng 
+Trong main: ở dòng 12 
+Gọi hàm nhƣ một lệnh: tinhtong(x, y) 
+Gọi hàm trong một biểu thức 
+4.2. SỬ DỤNG HÀM 
+4.2.1. Vị trí viết hàm 
+Cách 1:  
+#include<stdio.h> 
+<khai báo nguyên mẫu hàm>; 
+main() 
+{ 
+… … … 
+Lời gọi hàm; 
+… … … 
+} 
+<định nghĩa hàm> 
+Cách 2: 
+#include<stdio.h> 
+<Định nghĩa hàm> 
+main() 
+{ 
+--- --- --- 
+Lời gọi hàm; 
+… … … 
+} 
+ 

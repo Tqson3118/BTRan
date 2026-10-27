@@ -1,0 +1,27 @@
+// Trang 273 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+273 
+ Bài tập 4.13 
+Sử dụng hàm, viết chƣơng trình tính tiền lƣơng ngày cho công nhân, 
+cho biết trƣớc giờ vào ca, giờ ra ca của mỗi ngƣời. 
+Giả sử rằng: 
+- Tiền trả cho mỗi giờ trƣớc 12 giờ là 6000 đ và sau 12 giờ là 7500 đ. 
+- Giờ vào ca sớm nhất: 6 giờ sáng và giờ ra ca trễ nhất: 18 giờ (giờ 
+nhập vào là số nguyên). 
+ Bài tập 4.14 
+Viết chƣơng trình nhập vào 6 số thực a, b, c, d, e, f . Giải hệ phƣơng 
+trình sau: 
+{       
+        
+ Bài tập 4.15 
+Sử dụng hàm, viết chƣơng trình nhập 2 số nguyên dƣơng a, b. Tìm 
+USCLN và BSCNN của a, b. 
+ Bài tập 4.16 
+Sử dụng hàm, viết chƣơng trình nhập số nguyên dƣơng n, tìm ƣớc số 
+lẻ lớn nhất của n (trừ ƣớc số n). 
+Dữ liệu test: 27  
+Kết quả mong muốn: 9. 
+ Bài tập 4.17 
+ 
+Sử dụng hàm, viết lại chƣơng trình từ bài 3.11 đến 3.30 của 
+Chƣơng 3. 

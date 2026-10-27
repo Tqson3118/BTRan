@@ -1,0 +1,65 @@
+// Trang 219 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+219 
+Lƣu ý: 
+Nguyên mẫu hàm là dòng khai báo cho chƣơng trình dịch biết các 
+thông tin về hàm bao gồm: tên hàm, kiểu hàm và kiểu các tham số (đầu 
+vào) của hàm. Trong nguyên mẫu không bắt buộc phải có tên tham số 
+nhƣng kiểu của nó thì bắt buộc.  
+float fmax(float, int);  
+void nhapmang(int a[], int); 
+ Ví dụ 4.4 
+Viết chƣơng trình tính tổng của hai số a, b nhập từ bàn phím (sử 
+dụng hàm). 
+Cách 1 
+#include<stdio.h> 
+#include<conio.h> 
+int addNumbers(int, int); 
+main() 
+{ 
+int x, y,z; 
+printf("Nhap x = "); 
+scanf("%d",&x); 
+printf("Nhap y = "); 
+scanf("%d", &y); 
+z = addNumbers(x, y); 
+printf("tong = %d",z); 
+getch(); 
+} 
+int tinhtong(int a, int b) 
+{ 
+return a + b; 
+} 
+Cách 2 
+#include<stdio.h> 
+#include<conio.h> 
+int addNumbers (int a, int b) 
+{ 
+ 
+return a + b; 
+} 
+main() 
+{ 
+ 
+int x, y, sum; 
+ 
+printf("Nhap x = "); 
+ 
+scanf("%d", &x); 
+ 
+printf("Nhap y = "); 
+ 
+scanf("%d", &y); 
+ 
+sum = addNumbers(x, y); 
+ 
+printf("tong = %d", z); 
+ 
+getch(); 
+} 
+ 
+4.2.2. Lời gọi hàm và truyền tham số 
+4.2.2.1. Lời gọi hàm 
+Một hàm chỉ đƣợc thực thi khi có lời gọi đến nó. Khi hàm đƣợc gọi 
+thì các tham số thực sự sẽ lần lƣợt truyền cho tham số hình thức và hàm 
+đƣợc thực hiện bắt đầu từ dấu mở móc { và kết thúc khi gặp đóng móc }. 

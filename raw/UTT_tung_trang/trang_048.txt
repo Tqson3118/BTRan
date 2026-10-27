@@ -1,0 +1,38 @@
+// Trang 48 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+48 
+- Sử dụng chỉ thị #define. 
+1.5.2.2. Khai báo hằng sử dụng từ khóa const 
+Một biến đƣợc khai báo với từ khóa const đƣợc ghi nhận là chỉ đọc. 
+Trình biên dịch sẽ tìm kiếm sự thay đổi của biến này và báo cáo lỗi nếu 
+tìm thấy. 
+ Cú pháp: 
+const <data_type> <constant_name> = <constant_value>; 
+hoặc 
+<data_type> const <constant_name> = <constant_value>; 
+Trong đó: 
+ data_type: kiểu dữ liệu của biến không thay đổi giá trị. 
+constant_name: tên biến không thay đổi giá trị. 
+constant_value: giá trị hằng. 
+const: từ khóa để khai báo biến không thay đổi giá trị. 
+ Ví dụ 1.29 
+const float PI = 3.14159; 
+float const e = 2.71828; 
+1.5.2.3. Khai báo hằng sử dụng chỉ thị #define 
+#define là một chỉ thị tiền xử lý, đƣợc sử dụng để xác định các hằng 
+và các marco. Nó xác định hằng số trong suốt thời gian biên dịch và đảm 
+bảo 100 % là hằng số. Không giống nhƣ từ khóa const, chỉ thị #define 
+không xác định bất kỳ biến nào và không tiêu tốn bộ nhớ. Thay vào đó, 
+trong quá trình biên dịch, trình biên dịch sẽ thay thế tất cả các xuất hiện 
+của hằng số bằng giá trị của nó. 
+Cú pháp: 
+#define <constant_name> <constant_value> 
+Trong đó: - #define:  là chỉ thị tiền xử lý 
+ 
+ 
+- constant_name: Tên hằng 
+ 
+ 
+- constant_value: giá trị hằng 
+ Ví dụ 1.30 
+Viết lại đoạn chƣơng trình ở ví dụ 1.27, khai báo hằng. 

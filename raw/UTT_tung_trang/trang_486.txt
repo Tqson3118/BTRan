@@ -1,0 +1,38 @@
+// Trang 486 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+486 
+Nhap ten sinh vien:An Huy 
+Nhap gioi tinh sinh vien:(F hoac M):M 
+Nhap diem thanh phan thu nhat:7 
+Nhap diem thanh phan thu hai:8 
+Nhap diem chuyen can:7 
+Nhap diem giua ky:9 
+Nhap diem ket thuc mon:8 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):4 
+MASV   TENSV     GT    D_TP1   D_TP2   D_CC   D_GK  D_KT   TONG 
+  sv01     An Huy      M     7.0          8.0         7.0        9.0        8.0       39.0 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):1 
+Nhap vao ma sinh vien:sv01 
+Ma sinh vien da ton tai 
+Nhap vao ma sinh vien:sv02 
+Nhap ten sinh vien:Kien 
+Nhap gioi tinh sinh vien:(F hoac M):M 
+Nhap diem thanh phan thu nhat:8 
+Nhap diem thanh phan thu hai:9 
+Nhap diem chuyen can:8 
+Nhap diem giua ky:9 
+Nhap diem ket thuc mon:8 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):4 
+MASV   TENSV     GT    D_TP1   D_TP2   D_CC   D_GK  D_KT   TONG 
+sv01     An Huy    M       7.0          8.0         7.0         9.0      8.0        39.0 
+sv02     Kien         M       8.0          9.0         8.0         9.0      8.0        42.0 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):3 
+Nhap ma sinh vien:sv02 
+Truong ban muon cap nhat(1-7)?:1 
+Nhap ten sinh vien:Luan 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):3 

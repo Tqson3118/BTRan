@@ -1,0 +1,40 @@
+// Trang 332 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+332 
+3 int main() 
+4 { 
+5     int n, i, *p, tong = 0; 
+6     printf("Nhap vao so phan tu cua mang: "); 
+7     scanf("%d", &n); 
+8     // cap phat bo nho dong bang ham calloc() 
+9     p = (int*) calloc(n, sizeof(int)); 
+10     // neu khong du bo nho 
+11  
+if(p == NULL)                      
+12     { 
+13         printf("Loi! bo nho khong duoc phan bo."); 
+14         exit(0); 
+15     } 
+16     // nhap mang thong qua con tro 
+17  
+printf("Nhap cac phan tu cua mang:\n"); 
+18     for(i = 0; i < n; ++i) 
+19     { 
+20      
+printf("Nhap gia tri phan tu thu %d: ", i+1); 
+21         scanf("%d", p + i); 
+22         tong += *(p + i); 
+23     } 
+24     printf("Tong cac phan tu = %d", tong); 
+25     free(p); 
+26     return 0; 
+27 } 
+5.2.6. Một số bài tập sử dụng con trỏ 
+ Ví dụ 5.39 
+Viết chƣơng trình hoán đổi giá trị của ba số a, b, c bằng cách sử dụng 
+hàm tham chiếu. 
+Nhập từ bàn phím ba giá trị, lƣu trữ trong ba biến a, b, c. 
+Ba biến này đƣợc truyền vào hàm cyclicswap(), thay vì truyền các 
+biến thực tế, địa chỉ của các biến đƣợc truyền vào. 
+Khi các biến này đƣợc hoán đổi theo thứ tự tuần hoàn trong hàm 
+cyclicswap(), các biến a, b, c trong hàm main() cũng tự động hoán đổi. 

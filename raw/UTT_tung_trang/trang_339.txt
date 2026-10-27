@@ -1,0 +1,47 @@
+// Trang 339 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+339 
+7   
+return 0; 
+8  } 
+Kết quả chƣơng trình: 
+ 
+DHCNGTVT 
+Thao tác này khởi tạo biến con trỏ char_ptr để trỏ đến ký tự đầu tiên 
+của chuỗi "DHCNGTVT".  
+5.3.3. Thao tác nhập xuất chuỗi ký tự 
+5.3.3.1. Nhập xuất chuỗi ký tự 
+a. Nhập chuỗi ký tự 
+Hàm gets trong C đƣợc sử dụng để quét hoặc đọc một dòng văn bản 
+từ một thiết bị đầu vào tiêu chuẩn (stdin) và lƣu trữ nó trong biến chuỗi. 
+Khi nó đọc ký tự dòng mới thì hàm gets sẽ bị chấm dứt.  
+Để sử dụng hàm gets, bắt buộc phải khai báo thƣ viện stdio.h. 
+Cú pháp của hàm gets: 
+ 
+gets(<str_name>);  
+ 
+Trong đó: str_name là tên biến chuỗi ký tự; 
+ 
+hoặc char *gets(char *str_pointer_name);  
+ 
+Trong đó: str_pointer_name: tên biến con trỏ chuỗi ký tự 
+ Ví dụ 5.45 
+ Cho đoạn chƣơng trình sau đây: 
+1 // Vi du ve ham gets trong C 
+2 #include <stdio.h>  
+3 int main() 
+4 { 
+5  
+char name[50]; 
+6  
+printf("\nNhap vao ten: \n"); 
+7  
+gets(name); 
+8  
+printf("=============\n"); 
+9  
+printf("%s", name); 
+10  
+return 0; 
+11 } 
+ 

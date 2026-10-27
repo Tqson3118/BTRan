@@ -1,0 +1,10 @@
+// Trang 75 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+75 
+ 
+Hình 1.9. Màn hình khi biên dịch thành công 
+ 
+Bƣớc 4: Chạy chƣơng trình. 
+Vào menu Execute và chọn Run (hoặc nhấn F10). 
+ 
+Hình 1.10. Màn hình kết quả 

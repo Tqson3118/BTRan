@@ -1,0 +1,45 @@
+// Trang 99 - Ngôn ngữ lập trình C_ebook.pdf
+
+96
+8
+9
+10
+11
+12
+printf(“\ngia tri phan tu a[3] la: %d”,a[3]);
+printf(“\ngia tri phan tu a[4] la: %d”,a[4]);
+printf(“\ngia tri phan tu a[5] la: %d”,a[5]);
+return 0;
+}
+Khi chạy chương trình trên, ta được kết quả sau:
+1
+2
+3
+4
+5
+6
+gia tri phan tu a[0] la: 5
+gia tri phan tu a[1] la: 7
+gia tri phan tu a[2] la: 9
+gia tri phan tu a[3] la: 0
+gia tri phan tu a[4] la: 0
+gia tri phan tu a[5] la: 0
+Cú pháp 3: kiểu dữ liệu    tên mảng [ ] = {giá trị};
+Ví dụ 4.3:  int  a[] = {5,7,9,3,4,6,8,1,2,5};
+Với cách khai báo như ví dụ 4.3 thì máy sẽ tạo ra một mảng a có 
+số phần tử mảng đúng bằng số lượng các giá trị được khởi tạo trong cặp 
+dấu ngoặc nhọn { }. Và giá trị của từng phần tử cũng tương ứng với các 
+giá trị đã được khai báo trong cặp dấu ngoặc nhọn { } này. Chương trình 
+và kết quả chạy ở dưới đây thể hiện điều đó.
+1
+2
+3
+4
+5
+6
+#include <stdio.h>
+int main(void)
+{  
+int  a[10] = {5,7,9,3,4,6,8,1,2,5};
+printf(“gia tri phan tu a[0] la: %d”,a[0]);
+printf(“\ngia tri phan tu a[1] la: %d”,a[1]);

@@ -1,0 +1,59 @@
+// Trang 101 - Ngôn ngữ lập trình C_ebook.pdf
+
+98
+Ví dụ 4.4: Nhập giá trị cho mảng từ bàn phím:
+1
+2
+3
+4
+5
+6
+int a[10], i;
+for (i=0; i<10; i++)
+{
+	
+printf(“nhap phan tu thu %d: “, i);
+ 	
+scanf(“%d”, &a[i]);
+}
+Xuất giá trị các phần tử mảng:
+Ví dụ 4.5: Xuất ra màn hình các giá trị của một mảng cho trước.
+1
+2
+3
+4
+5
+int a[5]={1,2,3};
+for (i = 0; i<5; i++)
+{
+	
+printf(“%d  “, a[i]);
+}
+Tìm giá trị lớn nhất trong các phần tử mảng:
+Ví dụ 4.5a: Tìm giá trị lớn nhất trong một mảng cho trước và in 
+ra giá trị này: 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+int a[6]={1,7,9,6,8,2};
+int max, i;
+max = a[0];
+for (i=1; i<6; i++)
+{
+	
+if(max < a[i])  
+	
+	
+max = a[i];
+}
+printf(“gia tri lon nhat la %d”, max);
+Kết quả thu được khi chạy ví dụ 4.5a là:
+gia tri lon nhat la 9
+Giải thích hoạt động: 
+Trong đoạn chương trình trên, biến max được dùng để so sánh giá 

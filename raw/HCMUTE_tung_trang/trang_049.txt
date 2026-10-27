@@ -1,0 +1,34 @@
+// Trang 49 - Ngôn ngữ lập trình C_ebook.pdf
+
+46
+4. Cho biết kết quả khi thực thi chương trình sau:
+#include <stdio.h>
+int main(void)
+{
+    int a = 5, c;
+    c = a;      
+    printf(“c = %d\n”, c); // Kết quả in:......
+    c += a;     
+    printf(“c = %d\n”, c); // Kết quả in:......
+    c -= a;     
+    printf(“c = %d\n”, c); // Kết quả in:......
+    c *= a;     
+    printf(“c = %d\n”, c); // Kết quả in:......
+    c /= a;     
+    printf(“c = %d\n”, c); // Kết quả in:......
+    c %= a;     
+    printf(“c = %d\n”, c); // Kết quả in:......
+    return 0;
+}
+5. Vẽ lưu đồ giải thuật và viết chương trình: nhập vào 2 số nguyên 
+từ bàn phím và in ra tổng, hiệu, tích, thương của 2 số đó.
+6. Vẽ lưu đồ giải thuật cho bài toán: nhập vào 1 số nguyên và kiểm 
+tra xem số vừa nhập có phải là số nguyên tố hay không.
+7. Vẽ lưu đồ giải thuật và viết chương trình cho bài toán nhập vào 
+4 số nguyên, in ra màn hình số lớn nhất, số bé nhất trong các số đã nhập.
+5
+10
+5
+25
+5
+0

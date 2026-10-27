@@ -1,0 +1,31 @@
+// Trang 30 - Ngôn ngữ lập trình C_ebook.pdf
+
+27
+thư viện conio.h như ở dòng lệnh số 2:
+#include <conio.h>
+1.6. CÁC BƯỚC BIÊN DỊCH CHƯƠNG TRÌNH C
+Một chương trình trước khi được thực thi cần trải qua 4 bước như 
+hình dưới. Chương trình được viết và lưu dưới dạng các tập tin văn bản, 
+có phần mở rộng là .c cho các chương trình viết thuần túy bằng ngôn 
+ngữ C và .cpp cho các chương trình được viết bằng ngôn ngữ C++. 
+Các tập tin được lưu dưới dạng .h là các tập tin đầu (header), thông 
+thường các tập tin .h chứa các khai báo hàm hoặc có thể bao gồm các 
+định nghĩa (define). 
+ Preprocessor – Quá trình tiền xử lý là bước đầu tiên trong quá 
+trình biên dịch. Các tập tin chương trình được loại bỏ các phần chú 
+thích (comment). Đồng thời các chỉ thị được thể hiện sau dấu # được 
+xử lý. Các chỉ thị sau ký tự # bao gồm các khai báo thư viện, các định 
+nghĩa. Ví dụ:
+#include <stdio.h>
+#define PI 	
+3.14
+ Compilation – biên dịch: Chương trình được biên dịch sang 
+mã hợp ngữ (assembly code).
+ Asembly – hợp dịch: Các mã hợp ngữ được biên dịch sang mã 
+máy (machine-code).
+ Link- quá trình liên kết: trong trường hợp chương trình tham 
+chiếu đến các hàm thuộc các thư viện hoặc các hàm từ các tập tin mã 
+nguồn khác, trình liên kết sẽ tổng hợp các mã chương trình này lại để 
+tạo một tập tin mã nguồn có khả năng thực thi (executable machine 
+code). Tập tin cuối cùng này có phần mở rộng .exe. Đây là tập tin chứa 
+mã nhị phân để thực thi chương trình.

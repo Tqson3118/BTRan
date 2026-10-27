@@ -1,0 +1,38 @@
+// Trang 52 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+52 
+thể cứng nhắc nhƣ vậy, chẳng hạn cộng một số nguyên với một số thực rõ 
+ràng là khác kiểu nhƣng bạn vẫn có thể thực hiện đƣợc. Thực ra thì trƣớc 
+khi thực hiện toán tử cộng đó chƣơng trình dịch đã thực hiện thao tác 
+chuyển đổi kiểu của số nguyên thành số thực chúng ta gọi là phép chuyển 
+kiểu (ép kiểu). Trong một số tình huống việc chuyển kiểu trong C có thể 
+đƣợc chƣơng trình dịch thực hiện tự động (gọi là ép kiểu tự động) hoặc 
+đƣợc ép kiểu kiểu tƣờng minh (ngƣời lập trình viết câu lệnh - toán tử 
+chuyển kiểu). 
+Nói chung sự chuyển kiểu tự động xảy ra trong bốn trƣờng  
+hợp sau: 
+- Trong một biểu thức: các toán hạng có kiểu khác nhau. 
+- Gán một biểu thức vào một biến khác kiểu. 
+- Truyền tham số thực sự khác kiểu với tham số hình thức. 
+- Giá trị trả về của hàm sau câu lệnh return khác với kiểu hàm đƣợc 
+khai báo. 
+Trong trƣờng hợp thứ nhất quy tắc chuyển kiểu từ thấp lên cao đƣợc 
+áp dụng, tức là toán hạng có kiểu thấp hơn sẽ đƣợc tự động chuyển thành 
+kiểu của toán hạng cao hơn theo trật tự: 
+char → int → long → float → double 
+Trong ba trƣờng hợp cuối kiểu của giá trị vế phải đƣợc chuyển theo 
+kiểu của biến bên trái, kiểu các tham số thực sự đƣợc chuyển theo kiểu 
+của tham số hình thức, kiểu giá trị trả về (sau return) phải chuyển thành 
+kiểu của hàm. 
+Lƣu ý: Chuyển kiểu giá trị tức thời của toán hạng rồi thực hiện phép 
+toán chứ kiểu của bản thân toán hạng thì không thay đổi. 
+Trong một số yêu cầu chúng ta cần sự chuyển kiểu rõ ràng (ép kiểu 
+tƣờng minh) chứ không sử dụng quy tắc chuyển kiểu ngầm định, trong 
+trƣờng hợp này bạn có thể sử dụng toán tử chuyển kiểu theo cú pháp sau: 
+(new_data_type) (expression); 
+Trong đó: new_data_type: kiểu_dữ_liệu_mới là tên một kiểu hợp 
+lệ nào đóvà giá trị của (expression) trả về bắt buộc phải chuyển thành 
+(kiểu_dữ_liệu_mới). 
+ Ví dụ 1.38 
+int a = 5, b  = 2;  
+float c; 

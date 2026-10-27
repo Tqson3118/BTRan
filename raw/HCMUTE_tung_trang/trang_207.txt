@@ -1,0 +1,47 @@
+// Trang 207 - Ngôn ngữ lập trình C_ebook.pdf
+
+204
+dòng 7, chương trình tự động thay thế hello bằng chuỗi “xin chao \n”.
+Kết quả sau khi chạy chương trình trên là:
+1
+2
+xin chao
+Dien tich hinh tron la 12.56
+Chỉ thị #define còn được sử dụng để định nghĩa một đoạn chương 
+trình, được xem như một macro. Ví dụ, định nghĩa macro timmax như sau: 
+1
+2
+3
+4
+5
+6
+7
+8
+#include  <stdio.h>
+#define timmax(x,y) ((x)>(y) ? (x) : (y))
+void main (void)
+{
+int a = 5, b = 9 ; 
+int max = timmax(a,b);
+printf (“max = %d”,max);
+}
+Macro này sẽ được sử dụng tương tự như hàm với chức năng tìm 
+max trong 2 số, tuy nhiên về cấu trúc và cách thức hoạt động macro 
+không giống hàm, mặc dù ngôn ngữ C cho phép định nghĩa Macro với 
+tham số. Macro được xử lý ở bước tiền xử lý. Bộ tiền xử lý thay thế 
+macro với đoạn code được định nghĩa. 
+So sánh macro trên với hàm sau đây:
+1
+2
+3
+4
+int timmax1 (int a, int b) 
+{
+return a>b?a:b ;
+}
+Trong hàm timmax1, kiểu dữ liệu cho tham số và giá trị trả về được 
+định nghĩa là kiểu số nguyên. Như vậy, khi gọi hàm timmax1, tham số 
+đưa vào cũng phải là kiểu số nguyên. Còn đối với macro timmax, đoạn 
+code thay để có thể nhận bất kỳ kiểu dữ liệu nào.
+8.4. CHỈ THỊ ĐIỀU KHIỂN TRÌNH BIÊN DỊCH
+Bộ tiền xử lý của ngôn ngữ C cung cấp các chỉ thị điều kiện điều 

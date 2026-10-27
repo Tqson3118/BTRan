@@ -1,0 +1,86 @@
+// Trang 70 - Ngôn ngữ lập trình C_ebook.pdf
+
+67
+d.
+if (a < b)
+	
+max = b;
+	
+printf(“%d\n”,max);
+else
+	
+max = a;
+	
+printf(“%d\n”,max);
+e.
+if (a < b);
+	
+max = b;
+else
+	
+max = a;
+printf(“%d\n”,max);	
+f.
+float diem;
+scanf(“%f”,&diem);
+if (diem > 0)
+	
+if (diem < 10)
+	
+	
+printf(“Diem hop le.\n”);
+else
+	
+printf(“Khong chap nhan diem am.\n”);
+g.
+scanf(“%d”,&nam);
+switch (nam%4)
+{
+	
+case ==0:
+	
+	
+printf(“Nam nhuan\n”);
+	
+	
+break;
+	
+default:
+	
+	
+printf(“Nam binh thuong\n”);
+}
+h.
+scanf(“%d”,&a);
+switch (a % 2)
+{
+	
+case 0:
+	
+	
+printf(“La so chan\n”);
+	
+case 1:
+	
+	
+printf(“La so le\n”);
+}
+{
+{
+}
+}
+bỏ ;
+{
+}
+{
+}
+{
+}
+{
+}
+{
+}
+case 0:
+thiếu lệnh thoát vòng lặp
+break;
+break;

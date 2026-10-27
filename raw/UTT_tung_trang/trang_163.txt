@@ -1,0 +1,35 @@
+// Trang 163 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+163 
+ 
+printf(“%d\n”, i + j); 
+ Ví dụ 3.21 
+Viết chƣơng trình in ra tam giác vuông cân đặc n (n > 0 nhập từ bàn 
+phím) nhƣ sau: 
+n = 4 
+* 
+** 
+*** 
+**** 
+Phác họa lời giải: 
+- Kiểm tra điều kiện n đƣợc nhập vào đảm bảo lớn hơn 0. 
+- Với mỗi dòng in ra số dấu * bằng đúng thứ tự dòng. 
+Chƣơng trình 
+1  #include<conio.h> 
+2  #include<stdio.h> 
+3  int main() 
+4  { 
+5      int n, i, j;  
+6      printf("Nhap n: "); 
+7      scanf("%d", &n); 
+8      // Kiem tra dieu kien cua n 
+9      for(; n <= 0;) 
+10      { 
+11          printf("Phai nhap n > 0 \nNhap lai n: "); 
+12          scanf("%d",&n); 
+13      } 
+14      // In ra tam giac vuong co chieu cao n 
+15      for(i = 1; i <= n; i++) 
+16      { 
+17          for(j = 1; j <= i;j++) 
+18          { 

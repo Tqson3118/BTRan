@@ -1,0 +1,76 @@
+// Trang 68 - Ngôn ngữ lập trình C_ebook.pdf
+
+65
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+#include <stdio.h>
+int main(void)
+{  
+int a = 15, b = 0;
+switch (a%3)
+      {
+	
+case 0:
+	
+	
+b = 0;
+	
+	
+printf (“chia het”);
+	
+	
+break;
+	
+case 1:
+	
+	
+b = 1;
+	
+	
+printf(“khong chia het”);
+	
+	
+break;
+	
+default:
+	
+	
+b = 2;
+	
+	
+printf(“khong chia het”);
+        };
+     printf(“\n gia tri cua b la %d”, b);
+    getch();
+return 0;
+}
+Khi chạy chương trình, kết quả in ra màn hình sẽ là:  
+1
+2
+Chia het
+Gia tri cua b la 0
+Giải thích hoạt động của chương trình:
+Ví dụ này khác với các ví dụ trước đó từ dòng lệnh 5. Ở dòng lệnh 
+5, biểu thức a%3 của lệnh switch sẽ được tính toán và kiểm tra, nếu kết 
+quả của biểu thức này là giá trị 0 thì chương trình sẽ nhảy đến vị trí dòng 
+lệnh 7 tương ứng với nhãn case 0:, nếu kết quả của biểu thức này là giá 

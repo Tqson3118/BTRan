@@ -1,0 +1,44 @@
+// Trang 128 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+128 
+- Gán a cho max; 
+- Nếu b > max thì gán b cho max; 
+- In kết quả max. 
+ Chƣơng trình 
+1 #include "stdio.h" 
+2 main() 
+3 { 
+4  
+int a, b, max; 
+5  
+printf("Nhap a= "); scanf("%d", &a); 
+6  
+printf("Nhap b= "); scanf("%d", &b); 
+7  
+max = a; 
+8  
+if (b > max) max = b; 
+9  
+printf("Gia tri lon nhat la: %d",max); 
+10 } 
+Kết quả in ra màn hình: 
+Nhap a = 3 
+Nhap b = 6 
+Gia tri lon nhat la: 6 
+ Ví dụ 3.2 
+Viết chƣơng trình nhập vào tuổi của một ngƣời, nếu tuổi ngƣời đó    
+> 18 tuổi thì in ra màn hình 2 dòng: 
+ 
+Dòng 1: Tuổi của bạn là 18+; 
+ 
+Dòng 2: Bạn đủ tuổi để bỏ phiếu. 
+Nếu tuổi ngƣời đó < 18 tuổi thì không thực hiện gì cả. 
+Phác họa lời giải:  
+- Nhập vào tuổi của một ngƣời. 
+- Kiểm tra: nếu  tuổi   18 thì in ra 2 dòng nhƣ trên. 
+- Nếu tuổi < 18 thì không in gì cả. 
+Chƣơng trình: 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 main() 
+4 { 

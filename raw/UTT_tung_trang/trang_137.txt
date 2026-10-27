@@ -1,0 +1,35 @@
+// Trang 137 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+137 
+Lƣu ý:  
+Khi số từ khóa if bằng số từ khóa else thì ta dễ dàng xác định đƣợc 
+từng cặp if - else tƣơng ứng. Trong trƣờng hợp số từ khóa else ít hơn số từ 
+khóa if  thì else sẽ đƣợc gắn với if không có else gần nhất trƣớc đó. Vì 
+vậy, khi gặp những lệnh if không có else, chúng ta phải đặt chúng trong 
+những khối lệnh rõ ràng để tránh bị hiểu sai câu lệnh. 
+ Ví dụ 3.6 
+if (n > 0)  
+    if (a > b)  
+     x = a;   
+ else  
+    x = b;  
+   …  
+Mặc dù chúng ta viết lệnh else thẳng hàng với if (n > 0), nhƣng lệnh 
+else ở đây đƣợc hiểu đi kèm với if (a > b), vì nó nằm gần với if (a > b) 
+nhất và if (a > b) chƣa có else. Để dễ nhìn và dễ hiểu hơn chúng ta viết lại 
+nhƣ sau:  
+if (n > 0)  
+    if (a > b)  
+     x = a;  
+    else  
+     x = b;  
+   …  
+Còn nếu chúng ta muốn lệnh else là của if (n > 0) thì chúng ta phải 
+đặt if (a > b) x = a trong một khối lệnh, viết lại nhƣ sau:  
+if (n > 0)  
+   {  
+    if (a > b)  
+     x = a;  
+   }  
+else  
+    x = b; 

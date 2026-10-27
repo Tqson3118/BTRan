@@ -1,0 +1,54 @@
+// Trang 565 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+565 
+1 #include<graphics.h> 
+2 #include<conio.h> 
+3  main() 
+4 { 
+5 int gd = DETECT, gm; 
+int left=100, top=100, right=200, bottom=200; 
+int x= 300, y=150, radius=50; 
+6    initgraph(&gd, &gm, "");// tham so thu ba de trong, la thu muc 
+chua BGI, tuy vao viec cai tool ho tro 
+7     rectangle(left, top, right, bottom); 
+8    circle(x, y, radius); 
+9    bar(left + 300, top, right + 300, bottom); 
+10    line(left - 10, top + 150, left + 410, top + 150); 
+11    ellipse(x, y + 200, 0, 360, 100, 50); 
+12    outtextxy(left + 100, top + 325, "Chuong trinh ve hinh don 
+gian"); 
+13     getch(); 
+14    closegraph(); 
+15    return 0; 
+16 } 
+ Ví dụ 8.4 
+Viết chƣơng trình vẽ các thanh biểu đồ. 
+1 
+#include <graphics.h> 
+2 
+#include <conio.h> 
+3 
+#include <dos.h> 
+4 
+#include <stdlib.h> 
+5 
+void main() { 
+6 
+ 
+//Khoi tao trinh dieu khien do hoa 
+7 
+ 
+// va bien che do do hoa 
+8 
+ 
+int graphicdriver=DETECT, graphicmode; 
+9 
+ 
+//goi ham initgraph voi cac tham so  
+10  
+initgraph(&graphicdriver,&graphicmode," "); 
+11  
+//In thong diep tren man hinh 
+12  
+outtextxy(10, 10 + 10, "Chuong trinh ve thanh bieu do 
+trong C "); 

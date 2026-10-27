@@ -1,0 +1,39 @@
+// Trang 90 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+90 
++ %u: unsigned int (số nguyên dạng thập phân không dấu); 
++ %f: float (số thực - số chấm động); 
++ %e hoặc %E: float or double exponential format (số chấm động 
+dạng số mũ, chẳng hạn 1,2E-8, nghĩa là 1,2 × 10-8); 
++ %o: octal (số nguyên dạng bát phân); 
++ %x hoặc %X: hexadecimal (số thập lục phân (cơ số 16) không dấu 
+viết thường và viết hoa tương ứng); 
++ %ld, %li, %lu, %lx: cho các số nguyên dài; 
++ %lf, %le, %lE: cho kiểu double, thay l bằng L cho kiểu long double. 
++ Với số thực, quy định độ rộng và độ chính xác được ghi sau dấu % 
+có dạng wid.pre với wid là độ rộng của số thực, pre là phần lẻ sau dấu 
+thập phân. Ví dụ %5.2f nghĩa là độ rộng ít nhất 5 ký tự (thêm các khoảng 
+trống vào nếu thiếu) và nhiều nhất là 2 ký tự cho phần lẻ sau dấu chấm 
+thập phân. 
+- Các ký hiệu điều khiển và các ký tự đặc biệt: 
++ \n: new line (xuống dòng); 
++ \t: tab (ký tự tiếp theo cách 1 tab); 
++ \r: carrier return (nhảy về đầu dòng, không xuống dòng); 
++ \a: tiếng kêu bip; 
++ \\: in ra dấu \; 
++ \”: in ra dấu ”; 
++ \’: in ra dấu ’; 
++ %%: in ra dấu %; 
+argument_1, argument_2,…, argument_n: danh sách các đối số 
+đƣợc phân cách với nhau bằng dấu chấm phẩy theo đúng trình tự, nếu 
+không đúng trình tự dẫn đến kết quả đầu ra sai. 
+Lƣu ý: Khi sử dụng hàm printf(), bắt buộc phải khai báo tiền xử lý 
+#include <stdio.h> 
+ Ví dụ 2.1 
+Câu lệnh printf("Bai hoc C dau tien. \n");  In lên màn hình dòng 
+thông báo “Bai hoc C dau tien”. Sau đó con trỏ nhảy xuống dòng. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 main() 
+4 { 

@@ -1,0 +1,37 @@
+// Trang 157 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+157 
+Nhƣợc điểm:  
+Nếu in ra màn hình 10 dòng, mọi việc trong tầm kiểm soát, nhƣng 
+nếu cần in ra 1000 dòng, sẽ gây ra sự khó chịu nhất định, bởi do số dòng 
+code lặp đi lặp lại. 
+Chƣơng trình sẽ dài dòng, những lệnh giống nhau bị viết lặp đi lặp lại 
+nhiều lần sẽ không rõ ràng chƣơng trình, khó tái sử dụng code, rƣờm rà.  
+Giải pháp đƣa ra là sử dụng vòng lặp. Vòng lặp có tác dụng giúp 
+chƣơng trình chạy nhanh, gọnvà tái sử dụng đƣợc code. 
+Trong một vòng lặp, một chƣơng trình thực hiện chuỗi các câu lệnh 
+nhiều lần cho đến điều kiện bị sai. Một vòng lặp bao gồm hai phần, phần 
+thân của vòng lặp và câu lệnh điều khiển. Câu lệnh điều khiển là sự kết 
+hợp của một số điều kiện, điều khiển sự thực thi của phần thân vòng lặp 
+cho đến khi điều kiện đƣợc chỉ định trở thành sai. 
+Cấu trúc lặp bao gồm: 
+- Vòng lặp for; 
+- Vòng lặp while; 
+- Vòng lặp do... while. 
+3.2.1. Cấu trúc vòng lặp For 
+3.2.1.1. Cú pháp 
+for (Exp1; Exp2; Exp3) 
+  statement;   
+Trong đó: 
+- Exp1: Biểu thức khởi tạo cho biến; 
+- Exp2: Biểu thức điều kiện - điều kiện lặp; 
+- Exp3: Bƣớc nhảy - thay đổi giá trị của biến vòng lặp. 
+- statement: câu lệnh đƣợc thực thi, có thể là câu lệnh đơn, hoặc câu 
+lệnh ghép. 
+Exp1, Exp2, Exp3 có thể vắng mặt trong câu lệnh nhƣng các dấu 
+chấm phẩy phải xuất hiện trong cấu trúc. 
+3.2.1.2. Hoạt động 
+Bƣớc 1:  Thực hiện exp1. 
+Bƣớc 2:  Kiểm tra điều kiện exp2.  
+- Nếu điều kiện đúng thì thực hiện lệnh statement và sang bƣớc 3. 
+- Nếu điều kiện sai sang bƣớc 4. 

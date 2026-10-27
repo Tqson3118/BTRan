@@ -1,0 +1,39 @@
+// Trang 500 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+500 
+máy tính bị tắt. Dữ liệu đƣợc lƣu dƣới dạng các tệp, sẽ bảo vệ dữ liệu của 
+chƣơng trình ngay cả khi chƣơng trình kết thúc. Ngoài ra, nếu chúng ta có 
+một tệp chứa tất cả dữ liệu, chúng ta có thể dễ dàng truy cập nội dung của tệp 
+bằng vài lệnh trong C. Chúng ta có thể dễ dàng di chuyển dữ liệu của mình 
+từ máy tính này sang máy tính khác mà không có bất kỳ thay đổi nào. 
+Theo định nghĩa của Wikipedia về tệp (file): Một tệp là một tài 
+nguyên dùng để lƣu trữ thông tin lâu dài, sử dụng cho các chƣơng trình 
+máy tính. 
+Cũng giống nhƣ việc lƣu trữ dữ liệu tạm thời trên RAM, tệp cũng lƣu 
+trữ dữ liệu dƣới dạng nhị phân (0 hoặc 1), tuy nhiên tùy vào định dạng 
+của tệp và cách chuyển đổi của mỗi phần mềm đọc tệp mà chúng ta có 
+những kiểu thông tin khác nhau. Ví dụ tệp .png thì đƣợc chuyển về dạng 
+hình ảnh, phần mềm Microsoft Word chuyển dãy bit nhị phân về dạng 
+text, v.v. 
+Trong ngôn ngữ lập trình C: Tệp là kiểu đối tƣợng, nó xác định một 
+stream và chứa các thông tin cần thiết để điều khiển, bao gồm một con trỏ 
+trỏ đến buffer của nó, các chỉ mục và trạng thái của nó. 
+7.1.2. Phân loại tệp 
+Trong ngôn ngữ lập trình C, có hai loại tệp đƣợc đề cập: 
+Tập tin văn bản. 
+Tệp nhị phân. 
+7.1.2.1. Tệp văn bản 
+Các tệp văn bản là các tệp .txt, có thể dễ dàng tạo bằng Notepad hoặc 
+bất kỳ trình soạn thảo văn bản đơn giản nào. Khi chúng ta mở các tệp đó, 
+sẽ thấy tất cả nội dung trong tệp dƣới dạng văn bản thuần túy, có thể dễ 
+dàng chỉnh sửa hoặc xóa nội dung.  
+7.1.2.2. Tệp nhị phân 
+Các tệp nhị phân chủ yếu là các tệp .bin trong máy tính. Thay vì lƣu 
+trữ dữ liệu trong văn bản thuần túy, dữ liệu đƣợc lƣu trữ  ở dạng nhị phân 
+(0 và 1). Chúng có thể chứa lƣợng dữ liệu cao hơn, không thể đọc đƣợc 
+dễ dàng và cung cấp bảo mật tốt hơn các tệp văn bản. 
+7.2. THAO TÁC XỬ LÝ VỚI TỆP 
+7.2.1. Các thao tác với tệp tin 
+ 
+Trong ngôn ngữ lập trình C, có thể thực hiện bốn thao tác chính 
+trên tệp, dƣới dạng tệp văn bản hoặc tệp nhị phân: 

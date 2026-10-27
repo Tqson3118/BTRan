@@ -1,0 +1,37 @@
+// Trang 328 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+328 
+5     int a,b; 
+6     int *p; 
+7     printf("Nhap vao so thu nhat: "); 
+8     scanf("%d",&a); 
+9     printf("Nhap vao so thu hai: "); 
+10     scanf("%d",&b); 
+11     p = find_max(&a, &b); 
+12     printf("%d la so lon hon",*p); 
+13 } 
+14 int* find_max(int *x, int *y) 
+15 { 
+16     if(*x > *y) 
+17         return x; 
+18     else 
+19         return y; 
+20 } 
+ Kết quả khi biên dịch chƣơng trình 
+ 
+Nhap vao so thu nhat: 12 
+ 
+Nhap vao so thu hai: 56 
+ 
+56 la so lon hon 
+ Giải thích chƣơng trình:  Lời gọi trong chƣơng trình  p = 
+find_max(&a, &b); tham chiếu đến hàm int* find_max(int *x, int *y), với 
+x, y là hai biến con trỏ, kết quả trả về là một con trỏ p trỏ vào số lớn hơn. 
+Do đó khi gọi lệnh printf("%d la so lon hon",*p); sẽ trả về nội dung của 
+con trỏ p, tức là giá trị lớn nhất trong hai số a và b. 
+5.2.5. Quản lý bộ nhớ động 
+Nội dung của Mục 5.2.4, chúng ta sẽ tìm hiểu cách phân bổ bộ nhớ 
+động và thu hồi bộ nhớ với các hàm malloc(), calloc(), free(). 
+Mảng là một tập hợp các phần tử có cùng kiểu dữ liệu. Trƣớc khi sử 
+dụng, cần khai báo kích thƣớc của mảng. Đôi khi kích thƣớc mảng khai báo 
+không đủ khi biên dịch chƣơng trình, hoặc nhiều khi khai báo kích thƣớc 

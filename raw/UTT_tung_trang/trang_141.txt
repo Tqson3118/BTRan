@@ -1,0 +1,64 @@
+// Trang 141 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+141 
+19   
+ 
+ printf("\nPhuong trinh co 1 nghiem x = 
+%.1f",x); 
+20   
+ 
+} 
+21   
+} 
+22     else      
+23   
+{ 
+24   
+   delta = b * b - 4 * a * c; 
+25      
+   if (delta < 0) 
+26            printf("ptvn\n"); 
+27          else if (delta == 0) 
+28      
+ 
+ 
+{ 
+29      
+ 
+printf("\nPhuong trinh co nghiem kep:\n"); 
+30      
+ 
+ 
+ printf("x1 = x2 = %.2f",-b/(2*a)); 
+31   
+ 
+ 
+} 
+32              else 
+33              { 
+34         printf("\nPhuong trinh co 2 nghiem phan biet:\n "); 
+35               x1 = (-b + sqrt(delta))/(2*a); 
+36       
+        x2 = (-b - sqrt(delta))/(2*a); 
+37               printf("x1 = %.2f\n",x1); 
+38               printf("x2 = %.2f",x2); 
+39              } 
+40      } 
+41   } 
+Kết quả chƣơng trình: 
+ 
+Trƣờng hợp 1: 
+ 
+a = 0 
+ 
+b = 0 
+ 
+c = 1 
+ 
+Phuong trinh vo nghiem 
+ 
+Trƣờng hợp 2: 
+ 
+a = 1 
+ 
+b = 2 

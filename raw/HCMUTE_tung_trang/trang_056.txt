@@ -1,0 +1,62 @@
+// Trang 56 - Ngôn ngữ lập trình C_ebook.pdf
+
+53
+trình chính và dấu đóng ngoặc } ở dòng lệnh số 13 dùng để kết thúc nội 
+dung chương trình chính.
+Ở dòng lệnh số 4, các biến a, b, c được khai báo kiểu int và gán 
+giá trị ban đầu. 
+Ở dòng lệnh số 5 là lệnh if (c > a), khi gặp dòng lệnh này, chương 
+trình sẽ xét biểu thức trong cặp dấu ( ) và xét kết quả luận lý của nó. 
+Như ở đây, trong cặp dấu ( ) là biểu thức c > a, với c = 7 và a = 5; như 
+vậy, biểu thức này đúng do đó khối lệnh trong cặp { } bắt đầu ở dòng 6 
+và kết thúc ở dòng 9 sẽ được thực hiện. 
+Như vậy các dòng 7 và 8 các giá trị a và b sẽ được thực hiện theo 
+phép toán. 
+Dòng 10 sẽ in giá trị a, b vừa tính dòng 7 và 8. Ở đây, kết quả a là 
+11 và b là 7, như vậy thực sự khối lệnh từ dòng 6 đến dòng 9 đã được 
+thực hiện.
+Như vậy trong ví dụ này, biểu thức luận lý trong câu lệnh if là 
+đúng (khác 0) và khối lệnh được thực hiện. 
+Ta xét tiếp một ví dụ khác liên quan đến lệnh if sau đây:
+Ví dụ 2.6: So sánh sự khác nhau của ví dụ 2.6 này và ví dụ 2.5 ở 
+phía trên:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+#include <stdio.h>
+int main(void)
+{  
+     int a = 5, b = 6, c = 7;
+	
+if (c < a)
+ 	
+	
+{
+ 	
+	
+	
+a = a + b;
+	
+	
+	
+b = b + 1;
+	
+	
+}
+	
+printf(“Gia tri cua a la %d cua b la %d”,a,b);
+	
+getch();
+	
+return 0;
+}

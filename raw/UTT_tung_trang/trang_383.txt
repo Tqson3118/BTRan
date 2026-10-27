@@ -1,0 +1,39 @@
+// Trang 383 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+383 
+Yêu cầu với sinh viên: Đoạn chƣơng trình còn một số đoạn code 
+bị lặp lại. Viết lại chƣơng trình bằng các hàm sau: 
+- Hàm nhập ma trận. 
+- Hàm hiển thị ma trận. 
+- Hàm nhân hai ma trận, kiểm tra số hàng của ma trận thứ hai bằng 
+số cột của ma trận thứ nhất. 
+ Bài tập 5.5 
+ 
+Cải tiến chƣơng trình để in ra năm số nguyên theo thứ tự đảo 
+ngƣợc với quá trình nhập vào? 
+ Chƣơng trình: 
+1 #include<stdio.h> 
+2 #include<conio.h>  
+3    int main()  
+4     {  
+5      int arr[5],i;  
+6      int *p=arr;  
+7      printf("Nhap 5 phan tu cach nhau boi dau cach:");  
+8      scanf("%d%d%d%d%d",p,p+1,p+2,p+3,p+4);  
+9      printf("In mang theo thu tu nguoc:\n");  
+10     for(i=4;i>=0;i--)  
+11        printf("%d\n",*(p+i));  
+12     getch();  
+13     return 0;  
+14    } 
+ Kết quả chƣơng trình: 
+Nhap 5 phan tu cach nhau boi dau cach:12 54 3 65 4 
+In mang theo thu tu nguoc: 
+4 
+65 
+3 
+54 
+12 
+ Bài tập 5.6 
+Cải tiến chƣơng trình ở bài tập 5.5, viết chƣơng trình nhập vào mảng 
+gồm n phần tử. In mảng theo thứ tự đảo ngƣợc. 

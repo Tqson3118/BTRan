@@ -1,0 +1,76 @@
+// Trang 145 - Ngôn ngữ lập trình C_ebook.pdf
+
+142
+chính. Mặc khác, lệnh return không nhất thiết phải đặt ở cuối chương 
+trình của hàm. Trong một số trường hợp có thể đặt lệnh return ở giữa 
+hoặc bất kỳ nơi đâu trong thân hàm. Khi gặp lệnh return, hàm xem như 
+kết thúc và trả về giá trị cho chương trình gọi nó. Ví dụ: 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+#include<stdio.h>
+#include <stdlib.h>
+int   KiemtraSNT(int n)
+/* 
+Hàm trả về 1 nếu là số nguyên tố, ngược lại trả về 0
+*/
+{	
+	
+int i ; 
+	
+for (i=2;i<n;i++)
+	
+{
+	
+	
+if (n%i==0) return 0;
+	
+}
+	
+return 1 ; 	
+}
+void main (void)
+{
+	
+int n,Snt;
+	
+printf(“Nhap n : “);
+	
+scanf(“%d”,&n);
+	
+Snt = KiemtraSNT(n) ;
+	
+if (Snt)
+	
+printf(“ %d la So nguyen to” ,n);
+	
+else 
+	
+printf(“ %d khong phai la So nguyen to” 
+,n);
+}
+Trong ví dụ trên, hàm thực hiện chức năng kiểm tra xem một số 
+nguyên có phải là số nguyên tố hay không, nếu đúng thì trả về 1, ngược 

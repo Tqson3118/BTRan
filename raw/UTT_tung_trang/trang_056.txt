@@ -1,0 +1,49 @@
+// Trang 56 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+56 
+- Toán tử hỗn hợp. 
+1.6.4.1. Toán tử số học 
+Bảng 1.5. Toán tử số học 
+Phép toán 
+Mô tả 
+Biểu diễn 
++ 
+Cộng 
+a + b 
+- 
+Trừ 
+a - b 
+* 
+Nhân 
+a * b 
+/ 
+Chia lấy phần nguyên 
+a / b 
+% 
+Chia lấy dƣ 
+a % b 
+ Ví dụ 1.44 
+Xem xét đoạn chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 int main () { 
+3    /* Khai bao bien cuc bo: */ 
+4    int a, b; 
+5    /* Khoi tao gia tri */ 
+6    a = 20; 
+7    b = 7; 
+8    printf("% d + % d  = %d\n", a, b, a + b); 
+9    printf("% d - % d  = %d\n", a, b, a - b); 
+10    printf("% d * % d  = %d\n", a, b, a * b); 
+11    printf("% d / % d  = %.2f\n", a, b, (float) a / b); 
+12    printf("% d %% % d  = %d\n", a, b, a % b); 
+13    return 0; 
+14 } 
+Kết quả chƣơng trình 
+ 
+20 +  7  = 27 
+  20 -  7  = 13 
+  20 *  7  = 140 
+  20 /  7  = 2.86 
+  20 %  7  = 6 
+Nhận xét: 
+- Có phép toán một ngôi -  

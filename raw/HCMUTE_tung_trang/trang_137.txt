@@ -1,0 +1,35 @@
+// Trang 137 - Ngôn ngữ lập trình C_ebook.pdf
+
+134
+5.5. BÀI TẬP
+1. Hãy tìm và sửa lỗi trong các câu/đoạn lệnh sau:
+a.
+int a = 3;
+int *b;
+b = a;
+*b = 5;
+b.
+int a = 5;
+float *p;
+p = &a;
+c.
+int n;
+int *p;
+p = (int *)malloc(n*sizeof(int))
+printf(“nhap so luong phan tu: “);
+scanf(“%d”,&n);
+Các chương trình trong các bài tập dưới đều yêu cầu sử dụng con 
+trỏ và cấp phát bộ nhớ động.
+2. Viết chương trình nhập vào một mảng gồm 10 số nguyên. Sau 
+đó copy và lưu các số lẻ (nếu có) trong mảng đã nhập ra một mảng thứ 
+hai. In ra mảng thứ hai vừa copy được.
+3. Viết chương trình nhập vào n số nguyên, sau đó nhập vào một 
+số X bất kỳ, tìm xem số X này có tồn tại trong dãy số vừa nhập không.
+4. Viết chương trình nhập vào một mảng 1 chiều gồm n số nguyên 
+và thực hiện các yêu cầu:
+ Không được phép nhập số âm.
+ Tìm và in ra số lẻ lớn nhất trong mảng, nếu mảng không có số 
+lẻ thì in ra thông báo.
+5. Viết chương trình nhập mảng gồm n phần tử số nguyên, in các 
+phần tử vừa nhập theo thứ tự giảm dần. Nhập tiếp m phần tử số nguyên 
+vào mảng trên, in (n+m) phần tử vừa nhập theo thứ tự giảm dần.

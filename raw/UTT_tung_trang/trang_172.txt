@@ -1,0 +1,62 @@
+// Trang 172 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+172 
+Phác họa lời giải 
+Đổi hệ thập phân sang hệ nhị phân:  
+Ta lấy số thập phân chia dần cho 2 chừng nào thƣơng = 0 thì phép 
+chia dừng, cách chuyển đổi đƣợc lấy từ dƣới lên. 
+1510 =11112= 1*1000 + 1*100 +1*10 + 1*1 
+Biến ng để lƣu phần dƣ của phép chia decimal cho 2.  
+Biến base =1 mỗi lần lặp tăng dần lên 10 lần. 
+Biến num để lấy phần nguyên sau khi decimal chia cho 2. 
+Biến binary để lƣu các số dƣ của phép chia decimal cho 2. 
+Chừng nào biến num còn lớn hơn 0 thì thực hiện các thao tác trên. 
+ 
+ 
+ 
+ 
+ 
+Hình 3.9. Chuyển số thập phân sang số nhị phân 
+Chƣơng trình 
+1  #include "stdio.h" 
+2  #include "conio.h" 
+3  main() 
+4  { 
+5      unsigned long num, binary = 0, decimal, base = 1, ng; 
+6      printf("\nNhap so nguyen he thap phan: "); 
+7      scanf("%ld", &num);  
+8      decimal = num; 
+9      while (num > 0) 
+10      { 
+11          ng = num % 2; 
+12          binary = binary + ng * base; 
+13          num = num / 2; 
+14          base = base * 10; 
+15      } 
+16      printf("So thap phan = %d \n", decimal); 
+17      printf("So nhi phan = %d \n", binary); 
+15 
+2 
+ 
+ 
+ 
+1 
+7 
+2 
+ 
+ 
+ 
+1 
+3 
+2 
+ 
+ 
+ 
+1 
+1 
+2 
+ 
+ 
+ 
+1 
+0 

@@ -1,0 +1,120 @@
+// Trang 177 - Ngôn ngữ lập trình C_ebook.pdf
+
+174
+18
+19
+20
+21
+22
+23
+ 
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49 
+50
+51
+52
+53
+54
+55
+56
+	
+scanf(“%d”,&n);
+	
+struct ThietBi  *p;
+	
+p = (ThietBi*)malloc(n*sizeof(ThietBi));
+	
+if (p == NULL)
+	
+printf(“Cap phat bo nho khong thanh cong!”);
+	
+else
+	
+{
+	
+for (i = 0; i < n; i++)
+	
+{
+	
+	
+printf(“\nNhap thong tin cua thiet bi thu
+ %d:\n”, i);
+	
+	
+gets(tam);
+	
+	
+printf(“Nhap ten: “);
+	
+	
+gets((p+i)->tenTB);
+	
+	
+printf(“Nhap nam san xuat: “);
+	
+	
+scanf(“%d”,&(p+i)->namSanXuat);
+	
+	
+printf(“Nhap gia tien: “);
+	
+	
+scanf(“%f”,&(p+i)->giaTien);
+	
+	
+	
+gets(tam);
+	
+	
+printf(“Nhap trang thai: Tot (T) hoac 
+Hong (H): “);
+	
+	
+scanf(“%c”,&(p+i)->trangThai);
+	
+}
+	
+	
+printf(“\nThong tin cac thiet bi da nhap:\n”);
+	
+for ( i = 0; i < n; i++)
+	
+	
+printf(“%s, %d, %.1f, %c\n”,       
+(p+i)->tenTB,(p+i)->namSanXuat,(p+i)->giaTien,  
+(p+i)->trangThai);
+	
+}
+	
+free(p);
+	
+getch();
+	
+return 0;
+}
+Trong chương trình này, con trỏ p kiểu cấu trúc ThietBi được khai 
+báo ở câu lệnh tại dòng lệnh số 20. Sau đó, chương trình sẽ cấp phát động 

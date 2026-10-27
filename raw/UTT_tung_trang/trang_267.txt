@@ -1,0 +1,49 @@
+// Trang 267 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+267 
+38  
+{ 
+39  
+    /* Tim so chu so trong so da cho */ 
+40  
+    int digit = (int)log10(num); 
+41  
+    /* Dieu kien co so cua ham de quy */ 
+42  
+    if(num == 0) 
+43  
+        return 0; 
+44  
+    // goi de quy 
+45  
+    return ((num%10 * pow(10, digit)) + reverse(num/10)); 
+46  
+} 
+Kết quả chƣơng trình 
+Nhap vao mot so: 12121 
+12121 la so doi xung. 
+Nhap vao mot so: 123123 
+123123 khong la so doi xung. 
+ Bài tập 4.6 
+Viết chƣơng trình in ra màn hình số Fibonacci thứ n, với n đƣợc nhập 
+từ bàn phím. 
+Phác thảo lời giải 
+Tìm ra số Fibonacci thứ n, sử dụng công thức đệ quy sau đây: 
+ 
+      {
+        
+        
+                 
+ 
+Hàm đệ quy để tìm ra số Fibonacci thứ n dựa vào 3 điều kiện sau 
+đây: 
+Nếu n = 0, trả về kết quả = 0. Do đó số Fibonacci thứ 0 bằng 0. 
+Nếu n = 1, trả về kết quả = 1. Do đó số Fibonacci thứ 1 bằng 1. 
+Nếu n > 1, trả về kết quả f(n -1) + f(n -2). 
+Nhƣ vậy, trong chƣơng trình: 
+- Xây dựng hàm fibo(int n), trả về giá trị của số Fibonacci thứ n trong 
+dãy các số Fibonacci. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 /* Nguyen mau ham */ 
+3 unsigned long long fibo(int num); 

@@ -1,0 +1,39 @@
+// Trang 414 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+414 
+- Hãy xuất ra màn hình: 
++ Dòng 1: các phần tử của mảng. 
++ Dòng 2: gồm các số lẻ, tổng cộng có bao nhiêu số lẻ. 
++ Dòng 3: gồm các số chẵn, tổng cộng có bao nhiêu số chẵn. 
++ Dòng 4: gồm các số nguyên tố, có tất cả bao nhiêu số nguyên tố 
+trong mảng. 
++ Dòng 5: gồm các số không phải là số nguyên tố. 
+Yêu cầu: 
+ 
+Xây dựng chƣơng trình với mỗi ý đƣợc thể hiện bằng một hàm. 
+ Bài tập 5.28  
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Viết chƣơng trình nhập vào một dãy các số theo thứ tự tăng, nếu 
+nhập sai quy cách thì yêu cầu nhập lại. 
+- In dãy số sau khi đã nhập xong. 
+- Nhập thêm một số mới và chèn số đó vào dãy đã có sao cho dãy 
+vẫn đảm bảo thứ tự tăng. In lại dãy số để kiểm tra. 
+Yêu cầu: 
+ 
+Mỗi ý của bài toán đƣợc xây dựng bằng một hàm. 
+ Bài tập 5.29 
+Viết chƣơng trình thực hiện việc đảo mảng một chiều. Chẳng hạn 
+cho mảng sau: 1 2 3 4 5 7 9 10, kết quả sau khi đảo thành 10 9 7 5 4 3 2 1.  
+Yêu cầu:  
+Không dùng mảng phụ để lƣu trữ kết quả. 
+ Bài tập 5.30 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Nhập vào số phần tử n của mảng. Kiểm soát giá trị nhập vào có giá 
+trị trong phạm vi từ 0 đến 100. 
+- Sinh ngẫu nhiên các phần tử của mảng có giá trị từ 100 đến 1000. 
+- Hiển thị các phần tử của mảng ra màn hình. 
+- Chèn một phần tử có giá trị x vào vị trí k của mảng, x và k đƣợc nhập 
+từ bàn phím và đƣợc kiểm soát giá trị (100 < x < 1000, 0 < k < n).  
+Yêu cầu:  
+Với mỗi ý, thể hiện bằng một hàm. Xây dựng hàm main() để gọi các 
+hàm vừa xây dựng. 

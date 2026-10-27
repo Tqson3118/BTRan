@@ -1,0 +1,31 @@
+// Trang 51 - Ngôn ngữ lập trình C_ebook.pdf
+
+48
+Chú ý:
+ Nếu một biến được khai báo bên ngoài khối lệnh và không 
+trùng tên với biến bên trong khối lệnh thì nó cũng được sử dụng bên 
+trong khối lệnh. 
+ Một khối lệnh bên trong có thể sử dụng các biến đã được khai 
+báo bên ngoài khối lệnh đó. Các lệnh bên ngoài của một khối lệnh 
+không thể sử dụng các biến đã được khai báo bên trong khối lệnh đó.
+2.2. CÁC DẠNG CẤU TRÚC CHƯƠNG TRÌNH
+Với một ngôn ngữ lập trình thì một chương trình là tập nhiều câu 
+lệnh, thông thường một cách trực quan, chúng ta hiểu một chương trình 
+sẽ thực hiện tuần tự các lệnh theo thứ tự từ trên xuống dưới, bắt đầu từ 
+lệnh thứ nhất trong hàm main và kết thúc sau lệnh cuối cùng của nó. 
+Nhưng thực tế, một chương trình có thể được thực thi theo kiểu phức 
+tạp hơn kiểu tuần tự nhiều, chẳng hạn như một câu lệnh (hay khối lệnh) 
+chỉ được thực hiện khi có một điều kiện nào đó đúng, còn ngược lại nó 
+sẽ bị bỏ qua, tức là xuất hiện khả năng lựa chọn một nhánh nào đó. Hay 
+một chức năng nào đó có thể phải lặp lại nhiều lần.
+Như vậy với một ngôn ngữ lập trình có cấu trúc nói chung, phải có 
+các cấu trúc để điều khiển trình tự thực hiện các lệnh trong chương trình 
+(gọi là các cấu trúc, các toán tử điều khiển hay các lệnh điều khiển). Có 
+hai dạng cấu trúc: cấu trúc tuần tự và cấu trúc điều kiện.
+2.2.1 Cấu trúc tuần tự
+Đây là cấu trúc đơn giản nhất của các ngôn ngữ lập trình, điều 
+khiển thực hiện tuần tự các lệnh trong chương trình (bắt đầu từ các lệnh 
+trong thân hàm main) theo thứ tự từ trên xuống dưới (nếu không có điều 
+khiển nào khác).
+ Ví dụ 2.3: Chương trình nhập năm sinh của một người từ bàn 
+phím, sau đó in ra lời chào và tuổi của người đó.

@@ -1,0 +1,61 @@
+// Trang 192 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+192 
+18     }  
+19  
+  else if (chiSoBMI <= 24.9)  
+20  
+{ 
+21         strcpy(ketQua, "Than hinh hoan toan binh thuong"); 
+22     }  
+23  
+     else if (chiSoBMI <= 29.9)  
+24  
+ 
+  
+{ 
+25           
+strcpy(ketQua, "Ban bi beo phi cap do 1, can co che 
+do an uong hop ly"); 
+26     
+ 
+    }  
+27  
+ 
+ 
+   else if (chiSoBMI <= 34.9)  
+28  
+ 
+ 
+   { 
+29                     strcpy(ketQua, "Ban beo phi cap do 2, hay than trong"); 
+30      
+        }                           
+31  
+ 
+ 
+ 
+    else  
+32  
+ 
+ 
+ 
+ 
+{ 
+33                          strcpy(ketQua, "Ban beo phi cap do 3, canh bao 
+nguy co beo phi!"); 
+34                     } 
+35     printf("%s",ketQua); 
+36 } 
+Kết quả chƣơng trình: 
+Nhap vao can nang: 78 
+Nhap vao chieu cao: 1.74 
+Chi so BMI = 25.76 
+Ban bi beo phi cap do 1, can co che do an uong hop ly 
+ Bài tập 3.5 
+Viết chƣơng trình nhập vào nhập vào một số trong phạm vi 10, hiển 
+thị từ tiếng Anh tƣơng ứng. 
+Dữ liệu Test_1: 5. 
+Kết quả mong muốn: Five. 
+Dữ liệu Test_2: 9. 
+Kết quả mong muốn: Nine. 

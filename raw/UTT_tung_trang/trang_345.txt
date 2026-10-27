@@ -1,0 +1,39 @@
+// Trang 345 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+345 
+5.3.4.2. Hàm so sánh hai chuỗi ký tự 
+Hàm strcmp() là một hàm thƣ viện tích hợp trong thƣ viện <string.h>. 
+Hàm này lấy 2 chuỗi làm đối số và so sánh hai chuỗi này theo từ vựng. 
+Cú pháp: 
+ 
+int strcmp(const char *leftStr, const char *rightStr); 
+ 
+Chức năng: 
+Hàm strcmp() sử dụng hai chuỗi làm tham số, trả về một giá trị 
+nguyên dựa trên việc so sánh các chuỗi: 
+Strcmp() so sánh hai chuỗi theo từ vựng tiếng anh, nghĩa là bắt đầu 
+so sánh từ ký tự đầu tiên cho đến khi các ký tự của hai chuỗi bằng nhau, 
+hoặc gặp phải một ký tự NULL. Nếu ký tự đầu tiên trong cả hai chuỗi 
+bằng nhau, thì hàm sẽ kiểm tra ký tự thứ hai của cả hai chuỗi, nếu hai ký 
+tự này bằng nhau thì kiểm tra đến ký tự thứ ba, v.v. Quá trình này tiếp tục 
+cho đến khi gặp ký tự NULL ở một trong hai chuỗi hoặc hai ký tự tƣơng 
+ứng ở hai chuỗi không bằng nhau. 
+Hàm strcmp() có thể trả về ba giá trị: 
+0: nếu hai chuỗi giống hệt nhau (tất cả các ký tự ở các vị trí tƣơng 
+ứng của hai chuỗi là giống nhau). 
+> 0: nếu ký tự không khớp đầu tiên trong leftStr có giá trị trong bảng 
+mã ASCII lớn hơn ký tự tƣơng ứng trong rightStr. 
+< 0: nếu ký tự không khớp đầu tiên trong leftStr có giá trị trong bảng 
+mã ASCII nhỏ hơn ký tự tƣơng ứng trong rightStr. 
+ Ví dụ 5.53 
+Viết chƣơng trình nhập vào hai chuỗi, đƣa ra màn hình kết quả so 
+sánh hai chuỗi. 
+Cách 1: Sử dụng hàm ctrcmp 
+1 #include <stdio.h> 
+2 #include <string.h> 
+3 int main() 
+4 { 
+5    char a[100], b[100]; 
+6     printf("Nhap vao chuoi thu nhat:\n"); 
+7    gets(a); 
+8     printf("Nhap vao chuoi thu hai:\n"); 

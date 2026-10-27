@@ -1,0 +1,71 @@
+// Trang 544 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+544 
+41 
+            word[len - 1] = '\0'; 
+42 
+ 
+43 
+        // Kiem tra tu da ton tai trong danh sach cac tu phan biet 
+cua tep 
+44 
+        isUnique = 1; 
+45 
+        for (i=0; i<index && isUnique; i++) 
+46 
+        { // hàm kiem tra 2 xau ký tu strcmp 
+47 
+            if (strcmp(words[i], word) == 0) 
+48 
+                isUnique = 0; 
+49 
+        } 
+50 
+        // Neu tu  la duy nhat thi them tu vao danh sach cac tu 
+rieng biet 
+51 
+        // va tang chi so. Nguoc lai tang so lan xuat hien 
+52 
+        // dem tu hien tai 
+53 
+        if (isUnique)  
+54 
+        { 
+55 
+            strcpy(words[index], word); 
+56 
+            count[index]++; 
+57 
+            index++; 
+58 
+        } 
+59 
+        else 
+60 
+        { 
+61 
+            count[i - 1]++; 
+62 
+        } 
+63 
+    } 
+64 
+    // dong tep 
+65 
+    fclose(fptr); 
+66 
+    /* 
+67 
+     * In so lan xuat hien cua tat ca tu trong tep  
+68 
+     */ 
+69 
+    printf("\nSo lan xuat hien cua tat ca cac tu trong tep: \n"); 
+70 
+    for (i=0; i<index; i++) 
+71 
+    { 
+72 
+        /* 
+73 
+         * %-15s in chuoi co do rong 15 ky tu. 

@@ -1,0 +1,17 @@
+// Trang 80 - Ngôn ngữ lập trình C_ebook.pdf
+
+77
+kiện if cho một yêu cầu cụ thể. Cần lưu ý thêm, câu lệnh break ở dòng 
+lệnh 12 sẽ giúp chương trình thoát khỏi vòng lặp gần nhất chứa nó. Như 
+vậy, khi gặp lệnh break này, chương trình sẽ thoát khỏi câu lệnh for (vì 
+lệnh break nằm trong lệnh for).
+3.2. LỆNH WHILE
+3.2.1. Cú pháp
+while  (Biểu thức)
+   {
+     Khối lệnh;
+    }
+3.2.2. Hoạt động
+Hình 3.2. Lưu đồ giải thuật của vòng lặp while
+Nguyên tắc thực hiện: 
+  Bước 1: Tính giá trị của Biểu thức. 

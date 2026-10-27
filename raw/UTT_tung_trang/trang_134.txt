@@ -1,0 +1,36 @@
+// Trang 134 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+134 
+18           { 
+19    printf("\nPhuong trinh co 2 nghiem phan biet:\n "); 
+20              x1 = (-b + sqrt(delta))/(2*a); 
+21      
+        x2 = (-b - sqrt(delta))/(2*a); 
+22              printf("\nx1 = %8.2f",x1); 
+23              printf("\nx2 = %8.2f",x2); 
+24           } 
+25  } 
+ Kết quả chƣơng trình: 
+a = 1 
+b = 3 
+c = 2 
+Phuong trinh co 2 nghiem phan biet: 
+x1 = -1.00 
+x2 = -2.00 
+ Ví dụ 3.5 
+Viết chƣơng trình xếp loại kết quả học tập của sinh viên dựa vào 
+điểm trung bình khoá học (dtb) theo tiêu chí sau:  
+ Nếu 0.0   dtb < 4.0: Xếp loại Yếu; 
+ Nếu 4.0   dtb < 5.5: Xếp loại Trung bình yếu; 
+ Nếu 5.5   dtb < 7.0: Xếp loại Trung bình; 
+ Nếu 7.0    dtb < 8.5: Xếp loại Khá; 
+ Nếu dtb   8.5: Xếp loại Giỏi. 
+ Phác họa lời giải: 
+- Chƣơng trình yêu cầu nhập điểm trung bình của sinh viên theo khóa học; 
+- Căn cứ vào điểm trung bình để xếp loại: 
++ Nếu điểm trung bình < 4.0: Xếp loại Yếu; 
++ Ngƣợc lại, nếu điểm trung bình < 5.5: Xếp loại Trung bình yếu; 
++ Nếu điểm trung bình < 7: Xếp loại Trung bình; 
++ Nếu điểm trung bình < 8.5: Xếp loại Khá; 
++ Nếu điểm trung bình   8.5: Xếp loại Giỏi. 
+- Chƣơng trình sử dụng 4 vòng lặp if … else để xếp loại. 

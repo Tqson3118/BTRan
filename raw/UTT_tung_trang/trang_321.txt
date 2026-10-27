@@ -1,0 +1,39 @@
+// Trang 321 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+321 
+21 printf ("\nGia tri cua q = %f\n" , q); 
+22 printf ("Dia chi cua q = %p\n" , &q); 
+23 printf ("Gia tri cua r = %f\n" , r); 
+24 printf ("Dia chi cua r = %p\n" , &r); 
+25 printf ("Gia tri cua p = %p\n" , p); 
+26 printf ("Dia chi cua p = %p\n" , &p); 
+27 printf ("Gia tri cua *p = %f\n" , *p); 
+28 /* thay doi gia tri cua bien con tro p dang tro toi */ 
+29 *p = 12.86; 
+30 /* in bien, con tro va noi dung cua con tro */ 
+31 printf ("\nGia tri cua q = %f\n" , q); 
+32 printf ("Dia chi cua q = %p\n" , &q); 
+33 printf ("Gia tri cua r = %f\n" , r); 
+34 printf ("Dia chi cua r = %p\n" , &r); 
+35 printf ("Gia tri cua p = %p\n" , p); 
+36 printf ("Dia chi cua p = %p\n" , &p); 
+37 printf ("Gia tri cua *p = %f\n" , *p); 
+38 /* thay doi gia tri cua bien va con tro */ 
+39 p = &r; 
+40 r = 5.69; 
+41 /* in bien, con tro va noi dung cua con tror */ 
+42 printf ("\nGia tri cua q = %f\n" , q); 
+43 printf ("Dia chi cua q = %p\n" , &q); 
+44 printf ("Gia tri cua r = %f\n" , r); 
+45 printf("Dia chi cua r = %p\n" , &r); 
+46 printf ("Gia tri cua p = %p\n" , p); 
+47 printf ("Dia chi cua p = %p\n" , &p); 
+48 printf ("Gia tri cua *p = %f\n" , *p); 
+49 } 
+ Kết quả chƣơng trình: 
+ 
+Gia tri cua q = 1.340000 
+ 
+Dia chi cua q = 000000000062FDF8 
+ 
+Gia tri cua r = 6.780000 

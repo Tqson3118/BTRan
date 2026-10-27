@@ -1,0 +1,27 @@
+// Trang 87 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+87 
+6  
+printf("\nNhap so thu nhat = "); 
+7  
+scanf("%d",&i); 
+8  
+printf("\nNhap so thu hai = "); 
+9  
+scanf("%d",&j); 
+10 
+printf("\nSo %d co NOT %d : %d ",i,i,!i); 
+11 
+printf("\nSo %d co NOT %d : %d ",j,j,!j); 
+12 
+printf("\nSo %d AND %d : %d ",i,j,i&&j); 
+13 
+printf("\nSo %d OR %d : %d ",i,j,i||j); 
+14 
+getch(); 
+15 } 
+Yêu cầu: 
+- Biên dịch và chạy chƣơng trình? 
+- Hãy cho biết kết quả của chƣơng trình và giải thích? 
+- Giải thích dòng lệnh 10, 11, 12, 13. 
+ 

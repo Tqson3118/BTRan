@@ -1,0 +1,41 @@
+// Trang 402 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+402 
+12          int tg = i + 1; 
+13          if (a[tg] != '\0') { 
+14             while (a[tg] == ' ' && a[tg] != '\0') { 
+15                if (a[tg] == ' ') { 
+16                   i++; 
+17                }   
+18                tg++; 
+19             } 
+20          } 
+21       } 
+22       b[j] = a[i]; 
+23       i++; 
+24       j++; 
+25    } 
+26    b[j] = '\0'; 
+27  printf("Chuoi ky tu sau khi xoa cac khoang trang thua:\n%s\n", b); 
+28    return 0; 
+29 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi ky tu: 
+ 
+truong  dai  hoc cngtvt 
+ 
+Chuoi ky tu sau khi xoa cac khoang trang thua: 
+ 
+truong dai hoc cngtvt 
+ Bài tập 5.17 
+Hoán đổi hai chuỗi ký tự: 
+1 #include <stdio.h> 
+2 #include <string.h> 
+3 int main() 
+4 { 
+5   char a[100], b[100], tg[100]; 
+6   printf("Nhap chuoi thu nhat:\n"); 
+7   gets(a); 
+8   printf("Nhap chuoi thu hai:\n"); 
+9   gets(b); 

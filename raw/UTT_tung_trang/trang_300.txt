@@ -1,0 +1,38 @@
+// Trang 300 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+300 
+5.1.2.3. Các dạng bài tập mảng một chiều 
+Dạng 1: Nhập và hiển thị mảng hai chiều theo định dạng [dòng][cột] 
+a. Nhập từ bàn phím và hiển thị màn hình theo định dạng 
+ Ví dụ 5.20 
+Viết chƣơng trình nhập vào mảng hai chiều kích thƣớc m  n bao 
+gồm các phần tử là các số nguyên, với m là số hàng, n là số cột đƣợc nhập 
+từ bàn phím. Hiển thị mảng ra màn hình gồm m hàng và n cột, mỗi phần 
+tử cách nhau độ dài phím tab. 
+ Phác thảo lời giải  
+Để duyệt mảng hai chiều, sử dụng hai vòng lặp for lồng nhau, vòng 
+lặp thứ nhất duyệt theo từng dòng của mảng, vòng lặp thứ hai tƣơng ứng 
+với mỗi dòng duyệt các phần tử tƣơng ứng với từng cột. 
+ Chƣơng trình: 
+1 #include<stdio.h> 
+2 #include <conio.h> 
+3 #define N 100 
+4 void Nhap_mang(int a[][N], int m, int n) 
+5 { 
+6     for (int i=0; i<m; i++) 
+7         for (int j=0; j<n; j++) 
+8         { 
+9             printf("\nNhap a[%d][%d]: ",i,j); 
+10             scanf("%d", &a[i][j]); 
+11         } 
+12 } 
+13  void Hien_thi(int a[][N], int m, int n) 
+14 { 
+15     printf("Mang sau khi nhap: \n"); 
+16  
+for(int i=0; i<m; i++) 
+17     { 
+18         for(int j=0; j<n; j++) 
+19         { 
+20             printf("%d\t",a[i][j]); 
+21         } 

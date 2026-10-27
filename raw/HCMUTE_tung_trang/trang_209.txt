@@ -1,0 +1,55 @@
+// Trang 209 - Ngôn ngữ lập trình C_ebook.pdf
+
+206
+điều khiển trình biên dịch #ifdef, #else, #endif sẽ kiểm tra một đối 
+tượng đã được định nghĩa bằng chỉ thị #define hay chưa để quyết định 
+đoạn chương trình nào sẽ được biên dịch. 
+Tương tự, cũng có thể dùng các chỉ thị điều khiển quá trình biên 
+dịch với #if, #else, và #endif. Ví dụ:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+#include  <stdio.h>
+#define INTERGER 1
+#if INTERGER == 1
+int timmax(int a, int b)
+{
+	 return a>b ? a:b ;
+} 
+#else
+float timmax(float a, float b)
+{
+	 return a>b ? a:b ; 
+} 
+#endif
+void main (void)
+{
+	 int a = 5, b = 9 ; 
+	 int max = timmax(a,b);
+	 printf (“max = %d”,max);
+}
+Trong chương trình này, bộ tiền xử lý sẽ kiểm tra phát biểu sau 
+#if trả về giá trị đúng hay sai để quyết định đoạn chương nào được biên 
+dịch, đoạn chương trình nào bị bỏ qua.
+8.5. BÀI TẬP
+1. Định nghĩa macro thực thi hoán vị 2 số, viết chương trình ứng 
+dụng và so sánh macro đã viết với hàm hoán vị đã viết ở chương 6.
+2. Định nghĩa macro in ra các số lẻ từ 0 đến n, ứng dụng viết 
+chương trình nhập vào n, in ra các số lẻ từ 0 đến n.
+  

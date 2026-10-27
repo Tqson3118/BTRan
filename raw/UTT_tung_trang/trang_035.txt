@@ -1,0 +1,37 @@
+// Trang 35 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+35 
+- /* nội dung ghi chú */. Khi đó nội dung ghi chú có thể ghi trên một 
+dòng, trên nhiều dòng hoặc trên phần còn lại của một dòng. 
+ Ví dụ 1.13 
+Viết chƣơng trình in ra số lớn nhất giữa 2 số a và b. 
+1 void  main() 
+2 { 
+3 int a, b;  //khai báo biến a,b kiểu int 
+4 a = 11;   //gán 11 cho a 
+5 b = -13;  //gán -13 cho b 
+6 /* thuat toan tim so lon nhat giua 2 so a va b, neu a lon hon b thi a 
+lon nhat nguoc lai b lon nhat */ 
+7 if (a > b) printf("max =: %d", a); 
+8 else printf("max =: %d", b); 
+9 } 
+Khi biên dịch chƣơng trình, C gặp cặp dấu ghi chú sẽ không dịch ra 
+ngôn ngữ máy. 
+1.3.3. Trình tự các bƣớc thực thi một chƣơng trình viết bằng C 
+Chƣơng trình C tuân theo nhiều bƣớc trong thực thi. Để hiểu rõ về 
+trình tự các bƣớc của chƣơng trình C, trƣớc tiên chúng ta hãy xem một 
+chƣơng trình đơn giản sau đây: 
+ Ví dụ 1.14 
+Tệp: simple.c 
+1 #include <stdio.h>     
+2 int main(){     
+3 printf("Xin chao! Day la chuong trinh don gian!");     
+4 return 0;    
+5 }   
+Chúng ta hãy sẽ tìm hiểu quá trình thực thi của chƣơng trình trên 
+bằng Hình 1.1: 
+Bƣớc 1: Mã nguồn của chƣơng trình C (C program, tệp simple.c) 
+đƣợc gửi đến bộ tiền xử lý (preprocessor). Bộ tiền xử lý có trách nhiệm 
+chuyển đổi các chỉ thị tiền xử lý thành các giá trị tƣơng ứng của chúng. 
+Bộ tiền xử lý tạo ra một mã nguồn mở rộng (Expanded source code, tệp 
+simple.i). 

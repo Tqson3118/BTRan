@@ -1,0 +1,65 @@
+// Trang 38 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+38 
+Bảng 1.1. Các kiểu dữ liệu - kích thƣớc và phạm vi 
+Kiểu dữ liệu 
+Kích thƣớc 
+Phạm vi 
+char 
+1 byte 
+-128 đến 127 
+signed char 
+unsigned char 
+1 byte 
+0 đến 255 
+short 
+2 bytes 
+-32,767 đến 32,767 
+signed short 
+signed short int 
+unsigned short 
+2 bytes 
+0 đến 65,535 
+unsigned short int 
+int 
+2 hoặc  
+4 bytes 
+-32,768 đến 32,767  
+hoặc -2,147,483,648 đến 
+2,147,483,647 
+signed int 
+unsigned int 
+2 hoặc 
+ 4 bytes 
+0 đến 65,535  
+hoặc 0 đến 4,294,967,295 
+long 
+4 bytes 
+-2,147,483,648 đến 2,147,483,647 
+signed long 
+signed long int 
+unsigned long 
+4 bytes 
+0 đến 4,294,967,295 
+unsigned long int 
+long long 
+8 bytes 
+-9,223,372,036,854,775,808  đến 
+9,223,372,036,854,775,807 
+long long int 
+signed long long 
+signed long long int 
+unsigned long long 
+8 bytes 
+0 đến 18,446,744,073,709,551,615 
+unsigned long long 
+int 
+float 
+4 bytes 
+1.2E-38 đến 3.4E+38 
+double 
+8 bytes 
+2.3E-308 đến 1.7E+308 
+long double 
+12 bytes 
+3.4E-4932 đến 1.1E+4932 

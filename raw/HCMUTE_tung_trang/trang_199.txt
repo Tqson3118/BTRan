@@ -1,0 +1,35 @@
+// Trang 199 - Ngôn ngữ lập trình C_ebook.pdf
+
+196
+8.2. CHỈ THỊ BAO HÀM TỆP (INCLUDE)
+Chỉ thị bao hàm tệp (include) xuất hiện trong hầu hết các chương 
+trình C. Chỉ thị bao hàm tệp được sử dụng để khai báo thư viện, đồng 
+thời được sử dụng để khai báo các tệp tiêu đề (header file). Trong các 
+ví dụ ở các chương trước đó, chúng ta thường bắt gặp chỉ thị bao hàm 
+tệp sau: 
+1
+2
+3
+#include  <stdio.h>
+#include <math.h>
+#include “myfile.h”
+Khai báo trên cho phép bộ tiền xử lý đính kèm các mã nguồn của 
+các hàm trong thư viện stdio.h hoặc trong thư viện math.h khi hàm được 
+gọi. Khi sử dụng cặp ký hiệu < >, bộ tiền xử lý sẽ tự hiểu rằng các tệp 
+thư viện này được lưu trong thư mục mà trình biên dịch được cài đặt 
+trong hệ thống. Mặt khác, khi sử dụng cặp ký hiệu “ “, bộ tiền xử lý sẽ 
+tìm tệp có tên tương ứng trong cùng một thư mục với tệp mã nguồn, nơi 
+khai báo bao hàm tệp.  
+Ngoài việc khai báo các thư viện chuẩn, chỉ thị bao hàm tệp còn 
+được sử dụng rộng rãi khi khai báo tập tiêu đề. Trong các ví dụ trong tài 
+liệu, các chương trình khá đơn giản và được đặt trong cùng một tệp mã 
+nguồn. Thực tế các chương trình hệ thống phức tạp hơn, số lượng hàm 
+nhiều hơn và được chia ra nhiều tệp mã nguồn khác nhau. Chương trình 
+có thể gọi một hàm mà hàm đó được định nghĩa ở một tệp mã nguồn 
+khác. Lúc này, hàm cần được khai báo trong tệp tiêu đề.
+Ví dụ: Viết chương trình thực hiện các yêu cầu sau: nhập mảng n 
+phần tử, in các phần tử mảng, tìm giá trị lớn nhất, nhỏ nhất trong các 
+phần tử mảng. Tính giá trị trung bình phần tử lớn nhất và phần tử nhỏ 
+nhất mảng. Hoán đổi phần tử lớn đầu tiên và phần tử cuối cùng của 
+mảng. In mảng theo thứ tự tăng dần. Mỗi chức năng đều được viết dưới 
+dạng 1 hàm.

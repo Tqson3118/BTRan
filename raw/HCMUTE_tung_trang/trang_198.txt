@@ -1,0 +1,30 @@
+// Trang 198 - Ngôn ngữ lập trình C_ebook.pdf
+
+195
+CHƯƠNG 8
+TIỀN XỬ LÝ
+Mục tiêu:
+Sau khi kết thúc chương này, người đọc có thể:
+- Khai báo được các thư viện bằng chỉ thị bao hàm tệp.
+- Khai báo được các đối tượng thay thế bằng các chỉ thị định nghĩa.
+- Sử dụng các chỉ thị điều khiển trình biên dịch để biên dịch hoặc 
+không biên dịch một đoạn chương trình.
+8.1. GIỚI THIỆU
+Tiền xử lý (preprocessor) là các xử lý đơn giản có chức năng xử 
+lý tập tin mã nguồn trước khi trình biên dịch đọc và biên dịch chúng. 
+Các bộ tiền xử lý trong ngôn ngữ C được bắt đầu với một số từ khóa 
+đặc biệt, bắt đầu các tiền xử lý là ký tự #. Bộ tiền xử lý thay thế các lệnh 
+tiền xử lý bằng các đoạn chương trình, hoặc các đoạn lệnh tương ứng và 
+đặt trong tập tin mã nguồn. Chương này giới thiệu đến người đọc một 
+số tiền xử lý thông dụng và cách sử dụng chúng để tạo ra các chương 
+trình tối ưu hơn. Các tiền xử lý không theo nguyên tắc giống như các 
+lệnh trong chương trình C. 
+Quá trình tiền xử lý được thực hiện trước khi quá trình biên dịch 
+diễn ra, được biểu diễn như hình 8.1.
+Tiền xử lý
+Tệp mã nguồn
+Trình biên dịch
+Tệp mã nguồn
+đã được tiền xử lý
+Hình 8.1. Sơ đồ khối quá trình tệp mã nguồn được tiền xử lý trước 
+khi đưa đến trình biên dịch

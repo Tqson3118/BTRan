@@ -1,0 +1,36 @@
+// Trang 272 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+272 
+B. BÀI TẬP TỰ GIẢI 
+ Bài tập 4.8 
+Sử dụng hàm, viết chƣơng trình tính diện tích và chu vi của hình chữ 
+nhật, biết rằng chiều dài và chiều rộng đƣợc nhập từ bàn phím. 
+Dữ liệu test: 
+Chiều dài  =  4. 
+Chiều rộng = 3. 
+Kết quả mong muốn: 
+Chu vi = 14 cm. 
+Diện tích = 12 cm2. 
+ Bài tập 4.9 
+Sử dụng hàm, viết chƣơng trình tính diện tích và chu vi hình tròn với 
+bán kính đƣợc nhập từ bàn phím. 
+ Bài tập 4.10 
+Sử dụng hàm, viết chƣơng trình nhập số nguyên dƣơng n (n > 0). 
+Liệt kê n số chính phƣơng đầu tiên. 
+ Bài tập 4.11 
+Sử dụng hàm, viết chƣơng trình nhập số nguyên dƣơng n (0   n   
+1000) và in ra cách đọc của n. 
+Dữ liệu test: 
+Nhập n = 105. 
+Kết quả mong muốn: 
+ In ra màn hình: Mot tram le nam. 
+ Bài tập 4.12 
+Sử dụng hàm, viết chƣơng trình tính tiền thuê máy dịch vụ Internet 
+và in ra màn hình kết quả. Với dữ liệu nhập vào là giờ bắt đầu thuê 
+(GBD), giờ kết thúc thuê (GKT), số máy thuê (SoMay). 
+- Điều kiện cho dữ liệu nhập: 6   GBD < GKT   21. Giờ là số 
+nguyên. 
+- Đơn giá: 2500 đ cho mỗi giờ máy trƣớc 17:30 và 3000 đ cho mỗi 
+giờ máy sau 17:30. 
+ 
+ 

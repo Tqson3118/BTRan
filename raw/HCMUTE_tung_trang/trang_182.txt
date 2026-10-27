@@ -1,0 +1,73 @@
+// Trang 182 - Ngôn ngữ lập trình C_ebook.pdf
+
+179
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+Nhap thong tin cua thiet bi thu 1:
+Nhap ten: Tivi
+Nhap nam san xuat: 2019
+Nhap gia tien: 12.4
+Nhap trang thai: Tot (T) hoac Hong (H): T
+Thong tin cac thiet bi da nhap:
+may vi tinh, 2018, 15.5, T
+Tivi, 2019, 12.4, T
+trong đó, các thông tin ở các dòng kết quả từ dòng số 1 đến dòng 
+số 12 là thông tin do người dùng nhập vào từ bàn phím.
+Xét một chương trình khác được viết như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+  
+#include <stdio.h>
+#include <conio.h>
+#include <malloc.h>
+struct ThietBi
+{
+	
+char tenTB[20];
+	
+int namSanXuat;
+	
+float giaTien;
+	
+char  trangThai;
+};
+void NhapDuLieu(struct ThietBi *x, int n)
+{
+	
+char tam[2];
+	
+int i;
+	
+for (i = 0; i < n; i++)
+	
+{
+	
+	
+printf(“\nNhap thong tin cua thiet bi thu 
+%d:\n”, i);

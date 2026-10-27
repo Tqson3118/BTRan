@@ -1,0 +1,64 @@
+// Trang 471 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+471 
+6 
+scanf("%s",&id); 
+7 
+int index = timkiem(sv, id,spt); 
+8 
+if (index != -1 && spt>0) 
+9 
+{ 
+10 
+sv[index].tong_diem = sv[index].d_tp1 + sv[index].d_tp2 + 
+sv[index].d_cc + sv[index].d_gk + sv[index].d_kt; 
+11 
+dtb = sv[index].tong_diem/5; 
+12 
+printf("Diem trung binh cua sinh vien la: %f",dtb); 
+13 
+printf("\n"); 
+14 
+} 
+15 
+else printf("Ban ghi khong ton tai. Kiem tra lai Masv va thu lai."); 
+16 
+} 
+Tính tổng điểm cao nhất và thấp nhất. 
+ Bƣớc 9: Định nghĩa hàm caonhat(sinhvien sv[], int spt) và 
+thapnhat(sinhvien sv[], int spt) để hiển thị thông tin của sinh viên nhận 
+điểm cao nhất và điểm thấp nhất. Để tìm điểm cao nhất hoặc điểm thấp 
+nhất, chúng ta cần so sánh điểm tổng của từng sinh viên. 
+//Ham hien thi diem cao nhat  
+1 
+void caonhat(sinhvien sv[], int spt) 
+2 
+{ 
+3 
+float max = sv[0].tong_diem; 
+4 
+int index=0,j; 
+5 
+if (spt >= 2) 
+6 
+{ 
+7 
+ 
+8 
+  for (j = 0; j < spt-1; ++j) 
+9 
+ 
+if (max < sv[j+1].tong_diem) 
+10  
+{ 
+11  
+max = sv[j+1].tong_diem; 
+12  
+index = j+1; 
+13  
+} 
+14 printf("Sinh vien co ma sinh vien ID %s  co tong diem cao nhat 
+la: %f",sv[index].masv,max); 
+15 printf("\n"); 
+16 } 
+17 else if (spt == 1) 

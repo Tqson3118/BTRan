@@ -1,0 +1,36 @@
+// Trang 389 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+389 
+24                 }  
+25    return p;  
+26 } 
+  Kết quả chƣơng trình: 
+Mang sau khi sap xep: 
+2 
+3 
+5 
+8 
+12 
+23 
+34 
+42 
+56 
+89  
+ Bài tập 5.10 
+Nhập vào một chuỗi ký tự str và một ký tự ch. Cho biết số lần xuất 
+hiện của ký tự ch trong chuỗi str? 
+ Phác thảo lời giải 
+Trong chƣơng trình này, chuỗi đƣợc nhập bởi ngƣời dùng đƣợc lƣu 
+trữ trong biến str. 
+Sau đó, ngƣời dùng đƣợc yêu cầu nhập ký tự ch. 
+Sử dụng vòng lặp for, mỗi ký tự trong chuỗi đƣợc kiểm tra cho ký tự 
+đƣợc nhập. 
+Nếu ký tự đƣợc tìm thấy, số lần xuất hiện đƣợc tăng lên. Nếu không, 
+vòng lặp tiếp tục. 
+Kết thúc vòng lặp, in số lần xuất hiện của ký tự ch trong chuỗi str. 
+ Chƣơng trình 
+1 #include <stdio.h> 
+2 int main() 
+3 { 
+4    char str[1000], ch; 
+5    int i, solan = 0; 

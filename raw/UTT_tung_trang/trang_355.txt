@@ -1,0 +1,55 @@
+// Trang 355 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+355 
+24       a++; 
+25    } 
+26    *a = '\0'; 
+27 } 
+ Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi a: 
+ 
+abc 
+ 
+Nhap vao chuoi b: 
+ 
+bcdef 
+ 
+Chuoi thu duoc sau khi ghep b vao a: "abcbcdef" 
+5.3.4.5. Hàm xác định chuỗi nghịch đảo 
+ 
+Hàm strrev() là hàm đƣợc dựng sẵn trong C, đƣợc định nghĩa 
+trong thƣ viện “string.h”. Hàm strrev() đƣợc sử dụng để đảo ngƣợc chuỗi 
+đã cho. 
+ 
+Cú pháp: 
+ 
+char *strrev(char *str); 
+ 
+Hàm trả về một chuỗi ký tự, sau khi đã đảo ngƣợc chuỗi str đã cho 
+ Ví dụ 5.56 
+Viết chƣơng trình nhập vào 1 chuỗi ký tự. In chuỗi đảo ngƣợc? 
+ Cách 1 : Sử dùng hàm strrev 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <string.h> 
+3 
+int main() 
+4 
+{ 
+5 
+   char arr[100]; 
+6 
+    printf("Nhap vao mot xau\n"); 
+7 
+   gets(arr); 
+8 
+    strrev(arr); 
+9 
+    printf("Xau dao nguoc la \n%s\n", arr); 
+10 
+    return 0; 
+11 
+} 

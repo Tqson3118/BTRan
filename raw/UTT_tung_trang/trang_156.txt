@@ -1,0 +1,42 @@
+// Trang 156 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+156 
+4  
+{ 
+5  
+    int s, i;  
+6  
+    i = s = 0;  
+7  
+    tong:  
+8  
+    ++i;  
+9  
+    s = s + i;  
+10  
+    if (i < 10) goto tong;  
+11  
+    printf("\n Tong s = %d",s);  
+12  
+} 
+Kết quả chƣơng trình 
+Tong s = 55 
+3.2. CẤU TRÖC VÕNG LẶP (FOR, WHILE, DO... WHILE) 
+Xem xét ví dụ sau đây: 
+ Ví dụ 3.18  
+Viết chƣơng trình in ra 10 dòng “Chao cac ban sinh vien K70, Dai 
+học Cong nghe GTVT” ra màn hình. 
+Phác họa lời giải 
+Với mỗi dòng đƣợc in ra màn hình, sử dụng một câu lệnh printf(). 
+Nhƣ vậy để in ra 10 dòng “Chao cac ban sinh vien K70, Dai học Cong 
+nghe GTVT”, chúng ta cần sử dụng 10 câu lệnh printf() nhƣ sau: 
+Printf(“Chao cac ban sinh vien K70, Dai học Cong nghe GTVT”); 
+Printf(“Chao cac ban sinh vien K70, Dai học Cong nghe GTVT”); 
+Printf(“Chao cac ban sinh vien K70, Dai học Cong nghe GTVT”); 
+Printf(“Chao cac ban sinh vien K70, Dai học Cong nghe GTVT”); 
+Printf(“Chao cac ban sinh vien K70, Dai học Cong nghe GTVT”); 
+Printf(“Chao cac ban sinh vien K70, Dai học Cong nghe GTVT”); 
+Printf(“Chao cac ban sinh vien K70, Dai học Cong nghe GTVT”); 
+Printf(“Chao cac ban sinh vien K70, Dai học Cong nghe GTVT”); 
+Printf(“Chao cac ban sinh vien K70, Dai học Cong nghe GTVT”); 
+Printf(“Chao cac ban sinh vien K70, Dai học Cong nghe GTVT”); 

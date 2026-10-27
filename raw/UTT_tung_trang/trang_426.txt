@@ -1,0 +1,39 @@
+// Trang 426 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+426 
+25     */ 
+26     printf("Ten cua sinh vien: %s\n", s1.ten_sv); 
+27     printf("Tuoi cua sinh vien: %d\n", s1.tuoi_sv); 
+28     return 0; 
+29 } 
+ Kết quả chƣơng trình: 
+Ten cua sinh vien: Kien 
+Tuoi cua sinh vien: 18 
+Chúng ta có thể dụng lệnh scanf() để nhập giá trị cho các thành phần 
+của cấu trúc: 
+scanf(“%s”, s1.ten_sv); 
+scanf(“%d”, &s1.tuoi_sv); 
+ Ví dụ 6.5 
+1  #include<stdio.h> 
+2  #include<string.h> 
+3  struct Sinh_vien 
+4  { 
+5      char ten_sv[20]; 
+6      int tuoi_sv; 
+7      char dia_Chi[50]; 
+8      //F (female) va M (male) 
+9      char gioi_tinh; 
+10  }; 
+11  int main() 
+12  { 
+13      struct Sinh_vien s1; 
+14      printf("Nhap ten sinh vien s1: \n"); 
+15   
+scanf("%s", s1.ten_sv); 
+16      printf("Nhap tuoi sinh vien s1: \n"); 
+17   
+scanf("%d", &s1.tuoi_sv); 
+18      printf("Ten cua sinh vien: %s\n", s1.ten_sv); 
+19      printf("Tuoi cua sinh vien: %d\n", s1.tuoi_sv); 
+20      return 0; 
+21  } 

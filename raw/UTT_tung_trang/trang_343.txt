@@ -1,0 +1,46 @@
+// Trang 343 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+343 
+3 {  
+4     // % duoc dat o day de cho thay tac dung phu cua lenh printf(str)  
+5     printf("DHCNGTVT%sCNGTVT%s"); 
+6     getchar();  
+7     return 0;  
+8 } 
+ Ví dụ 5.50 
+ Sử dụng hàm fputs() 
+1 
+#include<stdio.h>  
+2 
+int main()  
+3 
+{  
+4 
+    fputs("DHCNGTVT", stdout);  
+5 
+    fputs("CNGTVT", stdout);  
+6 
+    getchar();  
+7 
+    return 0;  
+8 
+} 
+ Kết quả khi biên dịch chƣơng trình 
+ 
+DHCNGTVTCNGTVT 
+Tuy nhiên, tùy theo tình huống cụ thể, việc sử dụng hàm puts() hoặc 
+printf() đƣợc áp dụng linh hoạt. 
+5.3.4. Các hàm xử lý chuỗi ký tự cơ bản 
+5.3.4.1. Hàm xác định độ dài chuỗi 
+Hàm strlen() tính toán độ dài của một chuỗi đã cho, không tính đến 
+ký tự null „\0‟. Hàm strlen() đƣợc định nghĩa thƣ viện “string.h”. 
+ 
+Cú pháp: 
+ 
+int strlen(const char *str);  
+ 
+Chức năng: Trả về độ dài của chuỗi str. (str đại diện cho chuỗi ký 
+tự cần xác định độ dài) 
+ Ví dụ 5.51  
+ Cho chƣơng trình sau đây: 
+1 #include<stdio.h>  

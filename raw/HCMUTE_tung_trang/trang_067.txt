@@ -1,0 +1,32 @@
+// Trang 67 - Ngôn ngữ lập trình C_ebook.pdf
+
+64
+Khối lệnh 1, 2…n có thể gồm nhiều lệnh nhưng không cần đặt trong 
+cặp dấu { }. Không đặt dấu chấm phẩy ngay sau switch(biểu thức).
+Với ni (n1, n2,… nk) là các số nguyên, hằng ký tự hoặc biểu thức 
+hằng và các ni cần có giá trị khác nhau. Đoạn chương trình nằm giữa 
+các dấu { } gọi là thân của lệnh switch. Thành phần default là một thành 
+phần không bắt buộc phải có trong thân của lệnh switch. Sự hoạt động 
+của lệnh switch phụ thuộc vào giá trị của biểu thức viết trong dấu ngoặc 
+() như sau: khi giá trị của biểu thức này bằng ni, máy sẽ nhảy tới các câu 
+lệnh có nhãn là case ni:. Khi giá trị của biểu thức không bằng bất kỳ giá 
+trị ni nào thì máy sẽ nhảy tới câu lệnh sau nhãn default : (nếu có thành 
+phần default) hoặc máy sẽ nhảy ra khỏi cấu trúc switch (nếu không có 
+thành phần default). 
+Lưu ý là máy sẽ nhảy ra khỏi lệnh switch khi nó gặp câu lệnh 
+break hoặc dấu ngoặc } đóng cuối cùng của thân switch. Ta cũng có thể 
+dùng câu lệnh goto trong thân của lệnh switch để nhảy tới một câu lệnh 
+bất kỳ nào đó bên ngoài switch. Khi lệnh switch nằm trong nội dung 
+của một hàm nào đó thì ta cũng có thể sử dụng câu lệnh return trong 
+thân của lệnh switch để thoát ra khỏi lệnh switch và kết thúc hàm này 
+(lệnh return sẽ đề cập sau). Khi máy nhảy tới một vị trí câu lệnh nào 
+đó thì sự hoạt động tiếp theo của nó sẽ phụ thuộc vào nội dung của các 
+lệnh đứng sau vị trí này. Như vậy nếu máy nhảy tới vị trí có nhãn case 
+ni: thì máy sẽ thực hiện tất cả các câu lệnh sau vị trí đó cho tới khi nào 
+gặp câu lệnh break, goto hoặc return. Nói cách khác, máy có thể đi từ 
+khối lệnh thuộc case ni sang khối lệnh thuộc case thứ ni+1, nếu không 
+tồn tại lệnh break, goto hoặc return ở cuối mỗi khối lệnh. Nếu mỗi khối 
+lệnh được kết thúc bằng lệnh break thì switch sẽ thực hiện chỉ một trong 
+các khối lệnh này.
+2.5.4 Ví dụ minh họa
+Ví dụ 2.11: Cho chương trình sau:

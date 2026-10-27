@@ -1,0 +1,43 @@
+// Trang 555 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+555 
+CHƢƠNG 8 
+ĐỒ HỌA 
+ 
+Lập trình đồ họa trong C đƣợc sử dụng để vẽ các hình dạng hình học 
+khác nhau (hình chữ nhật, nhật thực hình tròn, v.v.), sử dụng chức năng 
+toán học trong vẽ đƣờng cong, tô màu một đối tƣợng với màu sắc và hoa 
+văn khác nhau và các chƣơng trình hoạt hình đơn giản nhƣ nhảy bóng và 
+di chuyển ô tô. 
+8.1. GIỚI THIỆU 
+8.1.1. Chƣơng trình đầu tiên 
+ Ví dụ 8.1 
+1 
+#include<graphics.h> 
+2 
+#include<stdio.h> 
+3 
+#include<conio.h> 
+4 
+int main()  
+5 
+{ 
+6 
+    int gd = DETECT, gm; 
+7 
+    int x1 = 200, y1 = 200; 
+8 
+    int x2 = 300, y2 = 300; 
+9 
+    clrscr(); 
+10      
+11     initgraph(&gd, &gm, ""); 
+12     line(x1, y1, x2, y2); 
+13     getch(); 
+14     closegraph(); 
+15 } 
+8.1.2. Giải thích về các lệnh 
+Bƣớc đầu tiên trong bất kỳ chƣơng trình đồ họa nào khai báo thƣ 
+viện “Graphics.h”. Thƣ viện “Graphics.h” cung cấp quyền truy cập vào 
+thƣ viện đồ họa đơn giản cho phép vẽ các đƣờng, hình chữ nhật, hình bầu 
+dục, cung, đa giác, hình ảnh và chuỗi trên cửa sổ đồ họa. 

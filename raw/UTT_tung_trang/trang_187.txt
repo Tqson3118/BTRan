@@ -1,0 +1,39 @@
+// Trang 187 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+187 
+Chƣơng trình 
+1  
+#include<stdio.h> 
+2  
+#include<conio.h> 
+3  
+int main() 
+4  
+{ 
+int i; 
+5  
+for (i = 1; i <= 12; i++ ) 
+6  
+{ 
+if (i == 5) continue; 
+7  
+ 
+printf(“Day la thang %d\n”, i); 
+8  
+} 
+9  
+return 0; 
+10  
+} 
+Kết quả chƣơng trình 
+Day la thang 1 
+Day la thang 2 
+Day la thang 3 
+Day la thang 4 
+Day la thang 6 
+Day la thang 7 
+Day la thang 8 
+Day la thang 9 
+Day la thang 10 
+Day la thang 11  
+Day la thang 12 

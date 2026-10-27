@@ -1,0 +1,48 @@
+// Trang 129 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+129 
+5  int tuoi; 
+6  char ten[10]; 
+7  printf("Nhap vao ten cua ban:"); 
+8  fflush(stdin); 
+9  gets(ten); 
+10  printf("Nhap vao tuoi cua ban %s: ", ten);  
+11  scanf("%d", &tuoi); 
+12  if (tuoi >= 18)  
+13  
+{ 
+14  
+      printf("Tuoi cua ban %s la 18+ \n",ten); 
+15  
+      printf("Ban %s  du tuoi de bo phieu",ten); 
+16  
+} 
+ 
+17 } 
+Kết quả chƣơng trình 
+ 
+Nhap vao ten cua ban: Kien 
+ 
+Nhap vao tuoi cua ban Kien: 21 
+ 
+Tuoi cua ban Kien la 18+ 
+ 
+Ban Kien  du tuoi de bo phieu 
+3.1.1.2. Câu lệnh điều kiện đầy đủ 
+Câu lệnh điều kiện dạng khuyết chỉ thực hiện khi điều kiện đúng, 
+trong trƣờng hợp điều kiện sai, khối lệnh if  sẽ đƣợc bỏ qua, thực hiện các 
+câu lệnh khác trong chƣơng trình. Trong hầu hết các chƣơng trình, chúng 
+ta đều mong muốn tùy thuộc vào giá trị của điều kiện, chƣơng trình đều 
+thực hiện một hoặc nhiều câu lệnh nào đó. 
+a. Cú pháp 
+ 
+if (expression) 
+ 
+<statement block 1>; 
+ 
+else 
+ 
+<statement block 2>; 
+Trong đó: 
+expression: điều kiện, là một biểu thức logic 
+statement block 1, statement block 2: khối các câu lệnh đƣợc thực thi. 

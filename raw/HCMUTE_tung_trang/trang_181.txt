@@ -1,0 +1,38 @@
+// Trang 181 - Ngôn ngữ lập trình C_ebook.pdf
+
+178
+Trong chương trình này, hàm NhapDuLieu được định nghĩa trong 
+đoạn lệnh từ dòng 13 đến dòng 37. Hàm này có một tham số đầu vào 
+là một con trỏ x kiểu cấu trúc ThietBi, tham số đầu vào này cần được 
+truyền vào địa chỉ của một ô nhớ kiểu ThietBi khi hàm được gọi. Hàm 
+InMotThietBi được định nghĩa trong đoạn lệnh từ dòng 39 đến dòng 
+43. Hàm này có một tham số đầu vào là một biến dữ liệu a kiểu cấu trúc 
+ThietBi, tham số đầu vào này cần được truyền vào giá trị của một ô 
+nhớ kiểu ThietBi khi hàm được gọi. Trong hàm main, sau khi khai báo 
+mảng 2 phần tử kiểu cấu trúc ThietBi bằng câu lệnh struct ThietBi 
+d[2]; ở dòng lệnh số 48, chương trình sẽ gọi hàm NhapDuLieu bằng câu 
+lệnh NhapDuLieu(&d[0],n); ở dòng lệnh 50, thông số &d[0] sẽ truyền 
+địa chỉ của ô nhớ d[0] vào cho con trỏ đầu vào x của hàm NhapDuLieu. 
+Khi hàm NhapDuLieu chạy, con trỏ x sẽ truy xuất tới các ô nhớ của 
+mảng d và lưu dữ liệu vào mảng d. Do đó, dữ liệu khi người dùng nhập 
+vào sẽ được lưu vào vùng nhớ của mảng d. Sau khi hàm NhapDuLieu đã 
+thực hiện xong, hàm main tiếp tục thực hiện vòng lặp for ở dòng lệnh số 
+53. Vòng lặp này sẽ thực hiện việc in thông tin của từng thiết bị đã nhập. 
+Ở mỗi lần in thông tin, câu lệnh InMotThietBi(d[i]); ở dòng lệnh số 
+54 sẽ gọi hàm InMotThietBi, thông số d[i] sẽ lấy toàn bộ giá trị của ô 
+nhớ thứ i trong vùng nhớ kiểu cấu trúc ThietBi của mảng d truyền vào 
+cho biến đầu vào a của hàm InMotThietBi. Lúc này, tham số a sẽ mang 
+thông tin dữ liệu tương tự như ô nhớ d[i], và hàm InMotThietBi sẽ in 
+các nội dung này ra màn hình. 
+Kết quả sau khi chạy chương trình trên là:
+1
+2
+3
+4
+5
+6
+Nhap thong tin cua thiet bi thu 0:
+Nhap ten: may vi tinh
+Nhap nam san xuat: 2018
+Nhap gia tien: 15.5
+Nhap trang thai: Tot (T) hoac Hong (H): T

@@ -1,0 +1,63 @@
+// Trang 287 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+287 
+Nếu x lớn hơn phần tử có chỉ số mid, thì x nếu tìm thấy chỉ có thể 
+nằm ở nửa sau bên phải của dãy số. 
+Ngƣợc lại, phần tử cần tìm đƣợc tiếp tục tiếp kiếm ở nửa trƣớc bên 
+trái của dãy số. 
+Phác thảo lời giải 
+- Nhập hoặc khởi tạo các giá trị của mảng (điều kiện là mảng đã 
+đƣợc sắp xếp tăng dần). 
+- Xây dựng hàm tìm kiếm nhị phân. 
+- Hiển thị chỉ số của phần tử nếu tìm thấy. 
+ Ví dụ 5.11 
+ 
+Viết chƣơng trình nhập vào mảng gồm n phần tử  là các số nguyên 
+và nhập vào một số nguyên x. Thông báo có hay không có phần tử có giá 
+trị bằng x trong mảng? Nếu có, hãy in ra chỉ số của phần tử đó. 
+ Chƣơng trình: 
+1 
+//Chuong trinh viet bang ngon ngu C thuc hien tim kiem nhi 
+phan de quy 
+2 
+#include <stdio.h>  
+3 
+//Ham tim kiem nhi phan de quy. Tra ve vi tri cua x trong mang 
+a[l..r], nguoc lai tra ve gia tri -1  
+4 
+int binarySearch(int a[], int l, int r, int x)  
+5 
+{  
+6 
+ if (r >= l) {  
+7 
+ 
+//Xac dinh vi tri mid cua day a[l..r] 
+8 
+ 
+int mid = l + (r - l) / 2;  
+9 
+ 
+//Neu phan tu can tim o chinh giua cua day 
+10  
+//tra ve vi tri cua no 
+11  
+if (a[mid] == x)  
+12  
+ 
+return mid;  
+13  
+//Neu phan tu can tim nho hon a[mid] thi 
+14  
+//no chi co the tim thay o nua con ben trai   
+15  
+if (a[mid] > x)  
+16  
+ 
+return binarySearch(a, l, mid - 1, x);  
+17  
+//Nguoc lai phan tu can tim chi co the tim thay o nua 
+con ben phai cua day  
+18  
+ 
+return binarySearch(a, mid + 1, r, x);  

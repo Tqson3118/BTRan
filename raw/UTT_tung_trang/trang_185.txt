@@ -1,0 +1,42 @@
+// Trang 185 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+185 
+8     printf(“Nhap pass= ”); scanf(“%d”, &pass); 
+9     if (pass == 111) 
+break; 
+10     printf(“Ban nhap sai\n”); 
+11  } 
+12  printf(“\nSo lan nhap da het, may se khoa trong 5 phut”); 
+13  getch(); 
+14  } 
+Kết quả chƣơng trình 
+ 
+Nhap pass= 23 
+ 
+Ban nhap sai 
+ 
+Nhap pass= 162 
+ 
+Ban nhap sai 
+ 
+Nhap pass= 25 
+ 
+Ban nhap sai 
+ 
+Nhap pass= 452 
+ 
+Ban nhap sai 
+ 
+So lan nhap da het, may se khoa trong 5 phut 
+ Ví dụ 3.34 
+Viết chƣơng trình nhập vào số n, sau đó in ra màn hình n là số 
+nguyên tố hay không? 
+Dữ liệu test1: 50. 
+Kết quả mong đợi: 50 không phải là số nguyên tố. 
+Dữ liệu test2: 29. 
+Kết quả mong đợi: 29 là số nguyên tố. 
+Chƣơng trình 
+1  #include “stdio.h” 
+2  #include “conio.h”  
+3  main()  
+4  {  

@@ -1,0 +1,38 @@
+// Trang 381 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+381 
+89             Tich[i][j] = Tong;     
+90             Tong = 0;    
+91             } 
+92         } 
+93         // In cac phan tu cua ma tran tich 
+94         printf("Tich cua hai ma tran la:\n"); 
+95         for(i = 0; i < m; i++)   
+96         { 
+97             for(j = 0; j < q; j++)    
+98             { 
+99                 printf("%d\t", Tich[i][j]); 
+100             } 
+101             printf("\n");  
+102         } 
+103     } 
+104     return 0; 
+105 } 
+ Kết quả chƣơng trình: 
+Trƣờng hợp 1: Nhập số hàng của ma trận thứ hai bằng số cột của ma 
+trận thứ nhất 
+Nhap so hang va so cot cua ma tran thu nhat: 
++ Nhap so hang cua ma tran thu nhat: 3 
++ Nhap so cot cua ma tran thu nhat: 2 
+Nhap 6 phan tu cua ma tran thu nhat: 
+4 
+12 
+54 
+3 
+22 
+5 
+Nhap so hang va so cot cua ma tran thu hai: 
++ Nhap so hang cua ma tran thu hai: 2 
++ Nhap so cot cua ma tran thu hai: 4 
+Nhap 8 phan tu cua ma tran thu hai: 
+65 

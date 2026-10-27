@@ -1,0 +1,53 @@
+// Trang 441 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+441 
+29     fflush(stdin); 
+30     gets(s3.ten_sv); 
+31     printf("Nhap vao ma cua sinh vien thu ba:\n");   
+32     fflush(stdin); 
+33     gets(s3.ma_sv); 
+34     printf("Nhap vao diem cua sinh vien thu ba:\n");   
+35     scanf("%f",&s3.diemtb);    
+36     printf("In thong tin chi tiet cua cac sinh vien....\n");   
+37     printf("%s %s %0.2f\n",s1.ten_sv,s1.ma_sv,s1.diemtb);   
+38     printf("%s %s %0.2f\n",s2.ten_sv,s2.ma_sv,s2.diemtb);   
+39     printf("%s %s %0.2f\n",s3.ten_sv,s3.ma_sv,s3.diemtb);   
+40 return 0; 
+41 }   
+  Kết quả chƣơng trình: 
+ 
+Nhap vao ten cua sinh vien thu nhat: 
+ 
+Le Kien 
+ 
+Nhap vao ma cua sinh vien thu nhat: 
+ 
+sv01 
+ 
+Nhap vao diem cua sinh vien thu nhat: 
+ 
+8.8 
+ 
+Nhap vao ten cua sinh vien thu hai: 
+ 
+Le Chi 
+ 
+Nhap vao ma cua sinh vien thu hai: 
+ 
+sv02 
+ 
+Nhap vao diem cua sinh vien thu hai: 
+ 
+8.9 
+ 
+Nhap vao ten cua sinh vien thu ba: 
+ 
+Pham Thuan 
+ 
+Nhap vao ma cua sinh vien thu ba: 
+ 
+sv03 
+ 
+Nhap vao diem cua sinh vien thu ba: 
+ 
+9.2 

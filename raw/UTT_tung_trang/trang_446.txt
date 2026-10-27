@@ -1,0 +1,40 @@
+// Trang 446 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+446 
+  Kết quả chƣơng trình: 
+Nhap so sinh vien: 3 
+Nhap ma sinh vien thu 0: 
+sv01 
+Nhap ten sinh vien: 
+An 
+Nhap diem sinh vien: 
+8.7 
+Nhap ma sinh vien thu 1: 
+sv02 
+Nhap ten sinh vien: 
+Binh 
+Nhap diem sinh vien: 
+7.9 
+Nhap ma sinh vien thu 2: 
+sv03 
+Nhap ten sinh vien: 
+Cuong 
+Nhap diem sinh vien: 
+9.2 
+Hien thi thong tin sinh vien: 
+MaSV: sv01      TenSV: An       DiemTB: 8.70 
+MaSV: sv02      TenSV: Binh     DiemTB: 7.90 
+MaSV: sv03      TenSV: Cuong    DiemTB: 9.20 
+6.2.3. Một số dạng bài tập với cấu trúc 
+ Ví dụ 6.23 
+Khai báo kiểu struct và khởi tạo giá trị 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Khai báo kiểu cấu trúc sinh viên, bao gồm các trƣờng thông tin nhƣ: 
+tên sinh viên, điểm môn toán, điểm môn tiếng anh và điểm môn vật lý. 
+- Khởi tạo bốn bản ghi. 
+- In thông tin của các bản ghi này ra màn hình. 
+Phác thảo lời giải 
+- Khai báo cấu trúc sinhvien. 
+- Khởi tạo mảng sv[] gồm bốn sinh viên, mỗi sinh viên có thông tin 
+của tên sinh viên, điểm môn tiếng anh, điểm môn toán, điểm môn vật lý. 
+- Hiển thị thông tin của các sinh viên. 

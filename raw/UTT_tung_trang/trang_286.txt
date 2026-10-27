@@ -1,0 +1,58 @@
+// Trang 286 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+286 
+38  
+{ 
+39  
+ 
+printf("%d khong co trong mang", x); 
+40  
+} 
+41  
+return 0; 
+42 } 
+ Kết quả chƣơng trình: 
+Tình huống thứ nhất: Có phần tử trong mảng có giá trị bằng x 
+ 
+Nhap so phan tu cua mang: 5 
+ 
+Gia tri phan tu a[0] = 5 
+ 
+Gia tri phan tu a[1] = 65 
+ 
+Gia tri phan tu a[2] = 34 
+ 
+Gia tri phan tu a[3] = 87 
+ 
+Gia tri phan tu a[4] = 23 
+ 
+Nhap phan tu can tim: 65 
+ 
+65 co trong mang 
+Tình huống thứ hai: không có phần tử nào trong mảng có giá trị 
+bằng x 
+ 
+Nhap so phan tu cua mang: 5 
+ 
+Gia tri phan tu a[0] = 5 
+ 
+Gia tri phan tu a[1] = 65 
+ 
+Gia tri phan tu a[2] = 34 
+ 
+Gia tri phan tu a[3] = 87 
+ 
+Gia tri phan tu a[4] = 23 
+ 
+Nhap phan tu can tim: 88 
+ 
+88 khong co trong mang 
+a2. Tìm kiếm nhị phân 
+Điều kiện: Dãy số nguyên đã đƣợc sắp xếp. 
+Phát biểu bài toán: Cho dãy số gồm n số nguyên đã đƣợc sắp xếp 
+tăng dần và một số nguyên x? Cho biết có số nguyên x trong dãy số đã 
+cho hay không? Nếu có cho biết vị trí của số x? 
+Ý tƣởng thuật toán: 
+Về cơ bản, thuật toán thu gọn phạm vi tìm kiếm sau một phép so sánh. 
+So sánh x với phần tử ở giữa dãy số, có chỉ số mid. Nếu x bằng phần 
+tử này, trả về mid. 

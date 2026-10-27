@@ -1,0 +1,53 @@
+// Trang 349 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+349 
+ 
+src: chuỗi sẽ đƣợc sao chép. 
+Trả về giá trị: sau khi sao chép chuỗi nguồn vào chuỗi đích, hàm 
+strcpy() trả về con trỏ trỏ vào chuỗi đích. 
+ Ví dụ 5.54 
+Viết chƣơng trình khai báo hai chuỗi a, b. Nhập nội dung cho chuỗi 
+a, sau đó sao chép nội dung của chuỗi a sang chuỗi b và in nội dung của 
+hai chuỗi ra màn hình. 
+ Cách 1: sử dụng hàm strcpy() 
+1 
+#include <stdio.h> 
+2 
+#include <string.h> 
+3 
+int main() 
+4 
+{ 
+5 
+   char a[1000], b[1000]; 
+6 
+   printf("Nhap chuoi\n"); 
+7 
+   gets(a); 
+8 
+   strcpy(b, a); 
+9 
+   printf("Chuoi nguon: %s\n", a); 
+10    printf("Chuoi sao chep: %s\n", b); 
+11    return 0; 
+12 } 
+Kết quả chƣơng trình: 
+Nhap chuoi 
+abc 
+Chuoi nguon: abc 
+Chuoi sao chep: abc 
+ Cách 2: Không sử dụng hàm strcpy() 
+1 
+#include <stdio.h> 
+2 
+ void copy_string(char [], char []); 
+3 
+ int main() { 
+4 
+char s[1000], d[1000]="dhcngtvt"; 
+5 
+printf("Noi dung cua chuoi luc ban dau: %s\n", d); 
+6 
+  printf("Nhap vao chuoi:\n"); 
+7 
+  gets(s); 

@@ -1,0 +1,53 @@
+// Trang 142 - Ngôn ngữ lập trình C_ebook.pdf
+
+139
+gọi và sẽ được giải phóng khi hàm kết thúc. Sau khi so sánh, hàm sẽ trả 
+về giá trị max bằng câu lệnh return. Chương trình chính có thể gọi hàm 
+một hoặc nhiều lần. Trong quá trình gọi hàm, phải đảm bảo truyền 2 
+tham số cho hàm và nhận về giá trị từ giá trị trả về của hàm. 
+Ví dụ chương trình chính sử dụng hàm đã viết để tìm giá trị lớn 
+nhất từ 4 số nguyên a, b, c, d. Để tìm số lớn nhất trong 4 số, ta có thể xét 
+từng cặp và đi so sánh 2 kết quả với nhau. Thực tế, đây không phải là 
+phương pháp tối ưu khi tìm giá trị lớn nhất của 4 số nguyên. Tuy nhiên, 
+chương trình sử dụng phương pháp so sánh từng cặp này để minh họa 
+cho việc sử dụng hàm. 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+int   timmax(int a, int b)
+{
+	
+int max;
+	
+if (a>b) max = a;
+	
+else   max = b;
+	
+return   max;
+}
+void main (void)
+{
+  int a = 5, b = 7, c=6, d= 9, max1, max2, max;
+  max1 = timmax (a,b);
+  max2 = timmax(c,d);
+  max = timmax(max1, max2);                   
+  printf(“ max = :%d”,max);
+}
+Trong ví dụ trên, hàm timmax được gọi 3 lần với 3 tham số khác 
+nhau. Trong một chương trình có nhiều hàm, chương trình sẽ tìm hàm 
+chính (hàm main) thực thi từ vị trí bắt đầu hàm cho đến khi kết thúc hàm. 
+Trong quá trình thực thi chương trình chính, hàm nào được gọi thì sẽ 
+được thực hiện, một hàm được định nghĩa trong chương trình nhưng nếu 
+không được gọi trong chương trình chính thì nó sẽ không được thực thi. 

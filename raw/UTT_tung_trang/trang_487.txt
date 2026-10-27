@@ -1,0 +1,35 @@
+// Trang 487 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+487 
+Nhap ma sinh vien:sv02 
+Truong ban muon cap nhat(1-7)?:7 
+Nhap diem cuoi ky:9 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):4 
+MASV   TENSV     GT    D_TP1   D_TP2   D_CC   D_GK  D_KT   TONG 
+sv01       An Huy    M        7.0         8.0         7.0        9.0       8.0       39.0 
+sv02       Luan         M        8.0         9.0         8.0        9.0       9.0       43.0 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):5 
+Nhap ma sinh vien:sv01 
+Diem trung binh cua sinh vien la: 7.800000 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):6 
+Sinh vien co ma sinh vien ID sv02  co tong diem cao nhat la: 43.0 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):7 
+Sinh vien co ma sinh vien ID sv01  co tong diem thap nhat la: 39.0 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):9 
+MASV   TENSV     GT    D_TP1   D_TP2   D_CC   D_GK  D_KT   TONG 
+sv01       An Huy    M        7.0         8.0         7.0        9.0       8.0       39.0 
+sv02       Luan         M        8.0         9.0         8.0        9.0       9.0       43.0 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):2 
+Nhap ma sv can xoa:sv01 
+Nhan phim y de tiep tuc:y 
+Lua chon cong viec(1-9):4 
+MASV   TENSV     GT    D_TP1   D_TP2   D_CC   D_GK  D_KT   TONG 
+sv02       Luan         M        8.0          9.0        8.0        9.0      9.0        43.0 
+Nhan phim y de tiep tuc:K 
+CAM ON BAN DA THUC HIEN CHUONG TRINH! 

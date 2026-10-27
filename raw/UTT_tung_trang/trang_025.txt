@@ -1,0 +1,58 @@
+// Trang 25 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+25 
+- Ký tự đầu tiên của định danh phải là chữ cái hoặc dấu gạch dƣới. 
+- Không sử dụng từ khóa làm định danh. 
+- Chiều dài tối đa của định danh là 32 ký tự. 
+Lƣu ý: Nên đặt định danh có ý nghĩa trong các bài toán cụ thể.  
+ Ví dụ 1.3 
+Một số định danh đúng: delta, a_1, x, x1, x2, Num_ODD; 
+Một số định danh sai: 
+3a_1 
+ 
+ 
+(ký tự đầu là số) 
+a-1 
+ 
+ 
+(sử dụng dấu gạch ngang)             
+int 
+ 
+ 
+(đặt tên trùng với từ khóa) 
+del ta 
+ 
+ 
+(có khoảng trắng) 
+g(x) 
+ 
+ 
+(có dấu ngoặc tròn) 
+Lƣu ý:  
+Trong C, định danh đƣợc phân biệt bởi chữ hoa và chữ thƣờng. 
+Ví dụ number khác Number; 
+case khác Case (case là từ khóa, do đó bạn đặt tên là Case vẫn đúng). 
+1.3. MỘT SỐ QUY ƢỚC KHI VIẾT CHƢƠNG TRÌNH 
+1.3.1. Chƣơng trình đầu tiên 
+Một ví dụ kinh điển đƣợc sử dụng để giới thiệu trong hầu hết các 
+ngôn ngữ lập trình, in ra màn hình console dòng “Hello, World”. 
+1 
+#include <stdio.h> 
+2 
+int main() 
+3 
+{ 
+4 
+/* Chuong trinh dau tien trong C */ 
+5 
+printf("Hello, World!\n"); 
+6 
+return 0; 
+7 
+} 
+- Sử dụng DevC, gõ các dòng code trên; 
+- Lƣu chƣơng trình với tên hello.c 
+- Nhấn F9 để biên dịch. 
+- Nhấn F10 để chạy chƣơng trình, dòng chữ “Hello, World” sẽ hiển 
+thị trên màn hình console. 
+Giải thích:  

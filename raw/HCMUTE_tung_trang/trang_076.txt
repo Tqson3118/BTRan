@@ -1,0 +1,36 @@
+// Trang 76 - Ngôn ngữ lập trình C_ebook.pdf
+
+73
+vòng lặp for cần phải được thực hiện nhờ các lệnh break, goto hoặc 
+return viết trong thân vòng lặp. Trong dấu ngoặc tròn sau từ khoá for là 
+3 biểu thức phân cách nhau bởi hai dấu ; . Trong mỗi biểu thức, chúng 
+ta không những có thể viết một biểu thức mà còn có quyền viết một dãy 
+nhiều biểu thức phân cách nhau bởi các dấu phẩy. Khi đó các biểu thức 
+trong mỗi phần được xác định theo thứ tự từ trái sang phải. Tính đúng 
+sai của dãy biểu thức sẽ được quyết định bởi tính đúng sai của biểu thức 
+cuối cùng trong dãy này.
+Trong thân của for, ta có thể dùng thêm các lệnh for khác, vì thế, 
+ta có thể xây dựng các lệnh for lồng nhau. Khi gặp câu lệnh break trong 
+thân for, máy ra sẽ ra khỏi lệnh for nào đang chứa lệnh break này. Trong 
+thân for cũng có thể sử dụng toán tử goto để nhảy đến một ví trí mong 
+muốn bất kỳ.
+Trong thân for (hoặc while, do…while) cũng có thể có lệnh 
+continue: khi lệnh continue thi hành thì quyền điều khiển sẽ trao qua 
+cho biểu thức điều kiện của vòng lặp gần nhất. Điều này có nghĩa là 
+chương trình sẽ quay lại đầu vòng lặp gần nhất đang chứa lệnh continue 
+và bỏ qua các lệnh phía sau lệnh continue trong vòng. Ðối với lệnh for 
+máy sẽ tính lại biểu thức 3 và quay lại bước 2.
+ 3.1.3. Ví dụ minh họa
+Ví dụ 3.1: Xét đoạn chương trình sau:
+1
+2
+3
+int i, a = 3;
+for (i = 0; i<5; i++)
+    a ++;
+Ở dòng lệnh đầu tiên, các biến i và a được khai báo và gán giá trị.
+Tiếp theo là đến vòng lặp for, biểu thức 1 ở đây giá trị biến i được 
+khởi tạo giá trị ban đầu: i = 0. Sau đó, chương trình sẽ thực hiện biểu thức 
+2: kiểm tra i < 5 là đúng hay sai. Trong trường hợp này, kết quả kiểm tra 
+sẽ là đúng (vì i = 0 sẽ nhỏ nhơn 5). Chương trình sẽ nhảy đến thực hiện 
+khối lệnh (ở đây là lệnh a++ hay a = a+1). Sau đó, chương trình sẽ thực 

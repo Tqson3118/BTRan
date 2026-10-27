@@ -1,0 +1,37 @@
+// Trang 415 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+415 
+ Bài tập 5.31 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Sinh ngẫu nhiên các giá trị của mảng gồm n phần tử, n là số nguyên 
+dƣơng đƣợc nhập từ bàn phím, các phần tử của mảng có giá trị từ 0 đến 100. 
+- Liệt kê các số lẻ trong mảng, đồng thời tính tổng của các số lẻ, in 
+các kết quả ra màn hình. 
+- Xóa phần tử thứ k trong mảng, k đƣợc nhập từ bàn phím      . 
+Hiển thị mảng sau khi xóa ra màn hình. 
+ Bài tập 5.32 
+Viết chƣơng trình thực hiện việc trộn hai dãy có thứ tự thành một dãy 
+có thứ tự.  
+Yêu cầu:  
+Không đƣợc trộn chung rồi mới sắp thứ tự. Khi trộn phải tận dụng 
+đƣợc tính chất đã sắp của hai dãy con. 
+ Bài tập 5.33 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Nhập giá trị của một ma trận (mảng hai chiều) các số nguyên, bao 
+gồm m hàng, n cột (với m, n đƣợc nhập từ bàn phím).  
+- In ma trận đó lên màn hình theo định dạng gồm m hàng và mỗi 
+hàng gồm n phần tử.  
+- Nhập từ bàn phím một số nguyên x, cho biết có những phần tử nào 
+của ma trận trùng với x không? Cho biết số lƣợng phần tử trong ma trận 
+có giá trị bằng x và vị trí của các phần tử này trong ma trận. 
+- Tìm phần tử lớn nhất ở hàng 1 của ma trậnvà phần tử nhỏ nhất nằm 
+ở cột n. In ra màn hình các giá trị này. 
+- In các phần tử trên đƣờng chéo chính ra màn hình, tính tổng các 
+phần tử trên đƣờng chéo chính. 
+- Sắp xếp mảng tăng dần, in kết quả sau sắp xếp ra màn hình. 
+ Bài tập 5.34 
+Viết chƣơng trình để chuyển đổi vị trí từ dòng thành cột của một ma 
+trận (ma trận chuyển vị) vuông 4 hàng 4 cột.  
+Sau đó viết cho ma trận tổng quát cấp m * n. 
+ 
+ 

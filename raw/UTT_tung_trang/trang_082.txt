@@ -1,0 +1,35 @@
+// Trang 82 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+82 
+- Cho biết ý nghĩa của dòng lệnh 1, dòng lệnh 2. Phân biệt giữa cách 
+viết “stdio.h” và <stdio.h>. 
+- Dòng lệnh 10, cv = (float)(dai+rong)*2; cho kết quả in ra nhƣ thế nào? 
+ Bài tập 1.9 
+Sử dụng Turbo C hoặc Dev C++, soạn thảo chƣơng trình minh họa 
+cho việc khai báo và khởi gán giá trị cho các biến. 
+1 #include<stdio.h> 
+2 #include<conio.h> 
+3 void main() 
+4 { 
+5 int a = 20; /* Khai bao va khoi dau cac bien */ 
+6 int b = 15; 
+7 float x = 25.678; 
+8 clrscr(); 
+9 printf("\n1:%d %f\n",a,x); 
+10 printf("2:%4d %10f\n",b,x); 
+11 printf("3:%2d %3f\n",a,x); 
+12 printf("4:%10.3f %10d\n",x,b); 
+13 printf("5:%-5d %f\n",a,x); 
+14 printf("6:%*d\n",b,b); 
+15 printf("7:%*.*f\n",12,5,x); 
+16 printf("8:%x :%8x :\n",a,a); 
+17 printf("9:%o :%8o :\n",a,a); 
+18 getch(); 
+19 } 
+ 
+ Yêu cầu: 
+- Biên dịch và chạy chƣơng trình. 
+- Giải thích kết quả thu đƣợc. 
+- Tìm hiểu về các ký tự định dạng của câu lệnh printf(). 
+ Bài tập 1.10 
+Sử dụng Turbo C hoặc Dev C++, soạn thảo chƣơng trình sau đây: 

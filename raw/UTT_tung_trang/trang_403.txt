@@ -1,0 +1,50 @@
+// Trang 403 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+403 
+10   printf("\nTruoc khi hoan doi\n"); 
+11   printf("Chuoi thu nhat: %s\n", a); 
+12   printf("Chuoi thu hai: %s\n\n", b); 
+13   //hoan doi hai chuoi, su dung bien tg 
+14   strcpy(tg, a); 
+15   strcpy(a, b); 
+16   strcpy(b, tg); 
+17   printf("Sau khi hoan doi:\n"); 
+18   printf("Chuoi thu nhat: %s\n", a); 
+19   printf("Chuoi thu hai: %s\n", b); 
+20   return 0; 
+21 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap chuoi thu nhat: 
+ 
+abc 
+ 
+Nhap chuoi thu hai: 
+ 
+ccd 
+ 
+Truoc khi hoan doi 
+ 
+Chuoi thu nhat: abc 
+ 
+Chuoi thu hai: ccd 
+ 
+Sau khi hoan doi: 
+ 
+Chuoi thu nhat: ccd 
+ 
+Chuoi thu hai: abc 
+ Bài tập 5.18  
+Tần số xuất hiện của các ký tự trong chuỗi 
+Viết chƣơng trình bằng ngôn ngữ lập trình C để tìm tần số của các ký 
+tự trong một chuỗi: Chƣơng trình đếm tần số của các ký tự trong một 
+chuỗi, tức là, ký tự đó xuất hiện bao nhiêu lần trong chuỗi. Ví dụ: trong 
+chuỗi "code", mỗi ký tự 'c', 'd', 'e' và 'o' đã xuất hiện ra một lần. Trong 
+chƣơng trình này, chỉ xét với bảng chữ cái viết thƣờng, các ký tự khác 
+(chữ hoa và ký tự đặc biệt) đƣợc bỏ qua. Chúng ta có thể dễ dàng sửa đổi 
+chƣơng trình này để xử lý chữ hoa và ký hiệu đặc biệt. 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <string.h> 

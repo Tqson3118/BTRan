@@ -1,0 +1,49 @@
+// Trang 39 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+39 
+1.4.1. Kiểu dữ liệu nguyên thủy 
+ 
+Ngôn ngữ C hỗ trợ bốn kiểu dữ liệu nguyên thủy, bao gồm char, 
+int, float và void. Các kiểu dữ liệu nguyên thủy còn đƣợc gọi là các kiểu 
+dữ liệu cơ bản, đƣợc xác định trƣớc. 
+Bảng 1.2. Kiểu dữ liệu nguyên thủy 
+Kiểu dữ liệu 
+Kích thƣớc 
+Phạm vi 
+char 
+1 byte 
+[-128, 127] 
+int 
+2 byte  
+hoặc 4 byte 
+[-32.768, 32.767] 
+hoặc [-2.147.483.648 , 2.147.483.647] 
+float 
+4 byte 
+[1.2E-38, 3.4E+38] 
+void 
+1 byte 
+ 
+Kích thƣớc và phạm vi của một loại dữ liệu phụ thuộc vào máy và có 
+thể khác nhau tùy theo trình biên dịch. Ngôn ngữ C chỉ yêu cầu kích 
+thƣớc tối thiểu đƣợc thực hiện bởi mọi trình biên dịch cho từng loại dữ 
+liệu. Chẳng hạn, kích thƣớc của kiểu int thay đổi từ trình biên dịch này 
+sang trình biên dịch khác, nhƣng nó phải có ít nhất 2 byte trên mỗi trình 
+biên dịch. 
+1.4.1.1. Kiểu ký tự 
+Bất kỳ một ký tự đơn trong C đều đƣợc biểu diễn bằng kiểu char. 
+Kích thƣớc của kiểu char là 1 byte và có thể lƣu trữ 128 ký tự. 
+ Ví dụ 1.15 
+Cho khai báo sau: 
+char  test = „A‟; 
+1.4.1.2. Kiểu nguyên  
+Trong ngôn ngữ C, từ khóa int đƣợc sử dụng để xác định dữ liệu 
+dạng số nguyên. Kích thƣớc của int là 2 byte hoặc 4 byte (phụ thuộc vào 
+trình biên dịch) và có thể lƣu trữ các giá trị trong phạm vi [-32.768, 
+32.767] (2 byte) hoặc [-2.147.483.648, 2.147.483.647] (4 byte). 
+ Ví dụ 1.16 
+int a = 15;  
+Khai báo một biến a kiểu nguyên, có giá trị trong phạm vi [-32.768, 
+32.767]. 
+1.4.1.3. Kiểu thực 
+Trong ngôn ngữ C, giá trị kiểu thực đƣợc xác định bằng từ khóa float 

@@ -1,0 +1,37 @@
+// Trang 127 - Ngôn ngữ lập trình C_ebook.pdf
+
+124
+Trong đoạn chương trình trên, các lệnh ở dòng 1 và dòng 2 cập 
+nhật giá trị mới cho a, b tương ứng là 9, 12. Con trỏ p được gán nội dung 
+là địa chỉ của biến a. Trong ngôn ngữ C, toán tử & đặt trước tên biến cho 
+phép chương trình trả về địa chỉ vùng nhớ đã cấp cho biến. Người lập 
+trình thao tác với các biến thông qua tên, vùng nhớ cấp cho biến có thể 
+thay đổi tùy từng lúc thực thi chương trình. Ở dòng 3 là lệnh gán địa chỉ 
+của biến a cho con trỏ p. Lúc này, con trỏ p sẽ tham chiếu đến vùng nhớ 
+của biến a. Ở dòng 4, lệnh *p = 7 sẽ gán giá trị 7 vào vùng nhớ mà con 
+trỏ p đang chứa địa chỉ, cụ thể ở đây là địa chỉ của biến a. Như vậy, sau 
+câu lệnh trên, biến a sẽ được cập nhật giá trị mới là 7. Như vậy, biến con 
+trỏ được sử dụng để tham chiếu đến vùng nhớ của biến a. Lệnh ở dòng 
+thứ 5 lại lấy địa chỉ biến b và gán cho con trỏ, nội dung con trỏ bây giờ 
+là địa chỉ của biến b, hay nói khác, lúc này con trỏ dùng để tham chiếu 
+đến biến b, thay vì biến a. Cuối cùng, giá trị biến a được cập nhật giá trị 
+mới là ô nhớ mà con trỏ p đang chứa địa chỉ, tức biến b. Sau câu lệnh, 
+biến a có giá trị là nội dung của biến b, tức a = 12.
+5.3. CON TRỎ VÀ MẢNG
+Con trỏ và mảng có mối liên hệ mật thiết với nhau. Trong quá 
+trình lập trình, có thể sử dụng qua lại giữa con trỏ và mảng. Khi khai 
+báo mảng 1 chiều, tên mảng cũng chính là địa chỉ bắt đầu của mảng, 
+chính vì thế, tên mảng một chiều cũng được sử dụng giống như con trỏ. 
+Xét câu lệnh sau:
+ 1
+	
+int a[5]= {1,5,3,2,4} ;
+Đây là câu lệnh khai báo mảng kiểu int với 5 phần tử và a là tên 
+mảng. Lệnh a[i] sẽ tham chiếu đến phần tử thứ i trong mảng, nếu khai 
+báo con trỏ và gán giá trị cho con trỏ như sau:
+1
+2
+3
+int *p,x;
+p = &a[0];
+x = *p ;

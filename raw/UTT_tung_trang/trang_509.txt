@@ -1,0 +1,42 @@
+// Trang 509 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+509 
+ghi đó. Điều này sẽ lãng phí rất nhiều bộ nhớ và thời gian hoạt động. Một 
+cách dễ dàng hơn để có đƣợc dữ liệu cần thiết có thể đạt đƣợc bằng cách 
+sử dụng fseek(). Hàm tìm kiếm fseek() đƣa con trỏ tới bản ghi đã cho 
+trong tệp. 
+Hàm fseek() trong C đƣợc sử dụng để đặt con trỏ tập tin vào vị trí 
+offset đƣợc chỉ định. Nó đƣợc sử dụng để ghi dữ liệu vào file tại vị trí 
+mong muốn. Nó sẽ giữ lại dữ liệu của file từ vị trí bắt đầu đến vị trí chỉ 
+định, dữ liệu còn lại bị thay thế bởi dữ liệu mới. 
+Cú pháp hàm fseek() 
+ 
+fseek(FILE * stream, long int offset, int whence) 
+Trong đó:  
+ 
+Tham số đầu tiên stream là con trỏ trỏ tới tệp; 
+ 
+Tham số thứ hai là offset là số byte sẽ di chuyển con trỏ file bắt 
+đầu từ vị trí whence; 
+ 
+Tham số thứ ba là vị trí ban đầu của con trỏ file.  Có 3 vị trí đƣợc 
+định nghĩa sẵn trong thƣ viện “stdio.h”; 
+ 
+SEEK_CUR: vị trí hiện tại của con trỏ file; 
+ 
+SEEK_END: vị trí cuối file; 
+ 
+SEEK_SET: vị trí đầu file. 
+Lƣu ý:  
+Hàm fseek() di chuyển con trỏ tới vị trí mong muốn: 
+Hàm fseek() trả về 0 nếu di chuyển thành công; 
+Hàm fseek() trả về giá trị khác 0 nếu xảy ra lỗi. 
+ Ví dụ 7.7 
+Xem xét ví dụ sau đây: 
+1  #include <stdio.h> 
+2  #include <stdlib.h> 
+3  struct threeNum 
+4  { 
+5     int n1, n2, n3; 
+6  }; 
+7  int main() 

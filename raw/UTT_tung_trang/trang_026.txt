@@ -1,0 +1,58 @@
+// Trang 26 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+26 
+Dòng 1: #include <stdio.h>: bộ lệnh tiền xử lý, thông báo cho trình 
+biên dịch C đã thêm tệp tiêu đề stdio.h trong chƣơng trình trƣớc khi biên 
+dịch mã nguồn, stdio là các chuẩn đầu vào/đầu ra, cho phép sử dụng các 
+lệnh đƣợc chứa trong tệp stdio.h 
+Dòng 2: int main(): hàm chính, nơi bắt đầu thực thi chƣơng trình. 
+Dòng 4: /* Chuong trinh dau tien trong C */: sẽ đƣợc trình biên dịch 
+bỏ qua, đƣợc sử dụng để thêm các chú thích trong chƣơng trình. 
+Dòng 5: printf("Hello, World! \n");: là một chức năng có sẵn trong C, 
+hiển thị ra màn hình dòng Hello, World. 
+Dòng 6: return 0; : chấm dứt hàm main() và trả về giá trị 0. 
+1.3.2. Cấu trúc chƣơng trình viết trong C 
+Một chƣơng trình trong C đƣợc phân chia thành nhiều phần. Xem xét 
+Ví dụ 1.4 sau đây: 
+ Ví dụ 1.4 
+Viết chƣơng trình tính tổng hai số nguyên a, b. 
+1 
+/* 
+ 
+Phần tài liệu 
+- Mô tả tên tệp. 
+- Tác giả. 
+- Tóm tắt nội dung của 
+chƣơng trình. 
+2 
+* Vi_du_1_4.c - Le Thi Chi - 
+15.07.2019 
+3 
+*Tinh tong cua hai so nguyen a 
+va b 
+4 
+*/ 
+5 
+#include <stdio.h> 
+ 
+Phần liên kết. 
+Phần liên kết bao gồm 
+các tệp tiêu đề của các 
+hàm thƣ viện chuẩn có 
+thể đƣợc sử dụng 
+trong chƣơng trình.  
+6 
+#include <conio.h> 
+7 
+int tinhtong(int, int); 
+ 
+Phần khai báo nguyên 
+mẫu hàm. 
+Khai báo các nguyên 
+mẫu hàm đƣợc sử 
+dụng trong chƣơng 
+trình. 
+8 
+main() 
+ 
+Phần hàm chính. 

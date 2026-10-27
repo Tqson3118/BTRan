@@ -1,0 +1,46 @@
+// Trang 120 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+120 
+ Bài tập 2.3 
+Viết chƣơng trình tính chu vi và diện tích của hình chữ nhật, khi biết 
+chiều dài và chiều rộng. 
+Chu vi của hình chữ nhật CV = 2*(a  + b) với a, b là chiều dài và 
+chiều rộng của hình chữ nhật; 
+Diện tích của hình chữ nhật  S = a * b. 
+Phác thảo lời giải 
+- Nhập vào chiều dài và chiều rộng của hình chữ nhật; 
+- Sử dụng công thức tính chu vi và diện tính hình chữ nhật để tính. 
+- In kết quả ra màn hình. 
+Chƣơng trình 
+1 #include <stdio.h>    
+2 int main()  
+3 { 
+4  
+float chieu_dai;     
+5     float chieu_rong;   
+6  
+float cv, S; 
+7  
+printf("Nhap chieu dai cua hinh chu nhat: "); 
+8  
+scanf("%f", &chieu_dai); 
+9  
+printf("Nhap chieu rong cua hinh chu nhat: "); 
+10  
+scanf("%f", &chieu_rong); 
+11  
+cv = 2.0 * (chieu_dai + chieu_rong); 
+12  
+S = chieu_dai * chieu_rong; 
+13  
+printf("Chu vi cua hinh chu nhat la % 4.2f\n", cv); 
+14  
+printf("Dien tich cua hinh chu nhat la  %4.2f\n", S); 
+15  
+return(0); 
+16 } 
+Kết quả chƣơng trình 
+Nhap chieu dai cua hinh chu nhat: 8.2 
+Nhap chieu rong cua hinh chu nhat: 6.4 
+Chu vi cua hinh chu nhat la  29.20 
+Dien tich cua hinh chu nhat la  52.48 

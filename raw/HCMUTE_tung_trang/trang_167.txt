@@ -1,0 +1,45 @@
+// Trang 167 - Ngôn ngữ lập trình C_ebook.pdf
+
+164
+thì ta có thể thực hiện in thông tin của các biến thành phần của 
+biến c bằng câu lệnh:
+printf(“%s, %d, %.1f, %c\n”,c.tenTB,c.namSanXuat,c.gia-
+Tien,c.trangThai);
+và thu được kết quả in ra màn hình sẽ là:
+Quat, 2019, 225.5, T
+Như vậy, các truy xuất : c.tenTB, c.namSanXuat, c.giaTien, 
+c.trangThai sẽ truy xuất vào các thành phần tenTB, namSanXuat, 
+giaTien, trangThai của biến c như hình sau:
+Toán tử mũi tên, hay còn gọi là toán tử con trỏ cấu trúc, bao gồm 
+dấu trừ (-) và dấu so sánh lớn hơn (>) dùng để truy xuất tới các biến 
+thành phần của một vùng nhớ kiểu cấu trúc thông qua một con trỏ cấu 
+trúc. Điều này sẽ được minh họa rõ hơn ở phần sau.
+Xét một chương trình được viết như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+#include <stdio.h>
+#include <conio.h>
+struct ThietBi
+{
+	
+char tenTB[20];
+	
+int namSanXuat;
+	
+float giaTien;
+	
+char  trangThai;
+};
+int main (void)
+{

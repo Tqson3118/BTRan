@@ -1,0 +1,75 @@
+// Trang 567 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+567 
+7 
+ 
+setcolor(WHITE); 
+8 
+ 
+rectangle(150,180,250,300); 
+9 
+ 
+rectangle(250,180,420,300); 
+10 
+ 
+rectangle(180,250,220,300); 
+11 
+ 
+12 
+ 
+line(200,100,150,180); 
+13 
+ 
+line(200,100,250,180); 
+14 
+ 
+line(200,100,370,100); 
+15 
+ 
+line(370,100,420,180); 
+16 
+ 
+17 
+ 
+/* Do mau */ 
+18 
+ 
+setfillstyle(SOLID_FILL, BROWN); 
+19 
+ 
+floodfill(152, 182, WHITE); 
+20 
+ 
+floodfill(252, 182, WHITE); 
+21 
+ 
+setfillstyle(SLASH_FILL, BLUE); 
+22 
+ 
+floodfill(182, 252, WHITE); 
+23 
+ 
+setfillstyle(HATCH_FILL, GREEN); 
+24 
+ 
+floodfill(200, 105, WHITE); 
+25 
+ 
+floodfill(210, 105, WHITE); 
+26 
+ 
+getch(); 
+27 
+ 
+closegraph(); 
+28 
+ 
+return 0; 
+29 
+} 
+ Kết quả chƣơng trình 
+ 
+ 
+ 
+ 
+ 

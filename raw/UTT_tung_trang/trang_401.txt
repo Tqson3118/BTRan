@@ -1,0 +1,53 @@
+// Trang 401 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+401 
+17 //Dinh nghia ham lay ra chuoi con cua chuoi ky tu 
+18 void substring(char s[], char sub[], int p, int l) { 
+19    int i = 0; 
+20     
+21    while (i < l) { 
+22       sub[i] = s[p+i-1]; 
+23       i++; 
+24    } 
+25    sub[i] = '\0'; 
+26 } 
+ Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi ky tu: 
+ 
+dhcngtvt 
+ 
+Nhap vao vi tri bat dau cua chuoi con: 
+ 
+5 
+ 
+Nhap vao do dai cua chuoi con: 
+ 
+4 
+ 
+Chuoi con duoc cat ra la: "gtvt" 
+ Bài tập 5.16 
+Xóa khoảng cách 
+Viết chƣơng trình nhập vào một chuỗi các ký tự. In ra màn hình 
+chuỗi ký tự, sau khi xóa các khoảng trắng thừa của chuỗi ký tự? 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+int main() 
+3 
+{ 
+4 
+   // khai bao 2 chuoi a: chuoi ban dau chua cac khoang trang thua 
+5 
+   // b: chuoi thu duoc tu a sau khi xoa cac khoang trang thua 
+6 
+   char a[1000], b[1000]; 
+7 
+   int i = 0, j = 0; 
+8 
+   printf("Nhap vao chuoi ky tu:\n"); 
+9 
+   gets(a); 
+10    while (a[i] != '\0') { 
+11       if (a[i] == ' ') { 

@@ -1,0 +1,41 @@
+// Trang 508 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+508 
+ Ví dụ 7.6 
+Xem xét đoạn chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 #include <stdlib.h> 
+3 struct threeNum 
+4 { 
+5    int n1, n2, n3; 
+6 }; 
+7 int main() 
+8 { 
+9    int n; 
+10    struct threeNum num; 
+11    FILE *fptr; 
+12    if ((fptr = fopen("databinary.bin","rb")) == NULL){ 
+13        printf("Loi"); 
+14        exit(1); 
+15    } 
+16    for(n = 1; n < 5; ++n) 
+17    { 
+18       fread(&num, sizeof(struct threeNum), 1, fptr);  
+19       printf("n1: %d\tn2: %d\tn3: %d \n", num.n1, num.n2, num.n3); 
+20    } 
+21    fclose(fptr);  
+22    
+23    return 0; 
+24 } 
+ Kết quả chƣơng trình: 
+ 
+n1: 1   n2: 5   n3: 6 
+ 
+n1: 2   n2: 10  n3: 11 
+ 
+n1: 3   n2: 15  n3: 16 
+ 
+n1: 4   n2: 20  n3: 21 
+7.2.6.3. Lấy dữ liệu với hàm fseek() 
+Nếu bạn có nhiều bản ghi trong một tệp và cần truy cập vào một bản 
+ghi tại một vị trí cụ thể, bạn cần phải lặp qua tất cả các bản ghi trƣớc bản 

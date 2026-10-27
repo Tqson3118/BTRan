@@ -1,0 +1,38 @@
+// Trang 216 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+216 
++ Kiểu trả về của hàm là void. 
++ Hai đối số kiểu int đƣợc truyền cho hàm. 
+Nguyên mẫu hàm không cần thiết nếu hàm do ngƣời dùng định nghĩa 
+đƣợc xác định trƣớc hàm main(). 
+b. Gọi hàm 
+Điều khiển chƣơng trình nhảy đến hàm do ngƣời dùng định nghĩa 
+bằng cách gọi hàm trong hàm main() 
+Cú pháp gọi hàm: 
+ 
+functionName(argument1, argument2, ...); 
+Trong Ví dụ 4.1, lời gọi hàm tong(a, b); đặt trong thân hàm main(). 
+c. Định nghĩa hàm 
+Cú pháp 
+returnType functionName(type1 argument1, type2 argument2, ...) 
+ 
+{ 
+     //body of the function 
+ 
+} 
+Trong đó: 
+- returnType: kiểu trả về của hàm, có thể là kiểu void, int, float, v.v. 
++ Kiểu void: nếu hàm không có giá trị trả về, trong thân hàm main() 
+không có lệnh return; 
++ Kiểu int, float, char, bool, v.v.: trong thân hàm main() có lệnh 
+return <giá trị> để trả về một giá trị trùng với kiểu dữ liệu đã khai báo. 
+functionName: tên của hàm, đƣợc đặt theo quy tắc đặt tên, định danh, 
+nên đặt tên dễ gợi nhớ đến công việc cần thực hiện. 
+- type1, type2, …: Kiểu dữ liệu của các đối số. 
+- argument1, argument2,…: Các đối số của hàm, đƣợc gọi là tham 
+số hình thức. Danh sách các đối số có thể là một, nhiều hoặc không có 
+tham số nào. Nếu có nhiều đối số thì các đối số đƣợc ngăn cách với nhau 
+bởi dấu (,), trong trƣờng hợp không có tham số thì để trống, nhƣng vẫn 
+phải có dấu (). 
+ Ví dụ 4.2 
+int max(int a, int b) 

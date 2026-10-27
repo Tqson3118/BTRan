@@ -1,0 +1,39 @@
+// Trang 405 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+405 
+o xuat hien 3 lan trong chuoi. 
+p xuat hien 0 lan trong chuoi. 
+q xuat hien 0 lan trong chuoi. 
+r xuat hien 1 lan trong chuoi. 
+s xuat hien 0 lan trong chuoi. 
+t xuat hien 3 lan trong chuoi. 
+u xuat hien 1 lan trong chuoi. 
+v xuat hien 1 lan trong chuoi. 
+w xuat hien 0 lan trong chuoi. 
+x xuat hien 0 lan trong chuoi. 
+y xuat hien 0 lan trong chuoi. 
+z xuat hien 0 lan trong chuoi. 
+ Cách 2: Xây dựng hàm đếm số lần xuất hiện 
+1 #include <stdio.h> 
+2 #include <string.h> 
+3 void find_frequency(char [], int []); 
+4 int main() 
+5 { 
+6    char st[100]; 
+7    int c, count[26] = {0}; 
+8    printf("Nhap vao chuoi ky tu:\n"); 
+9    gets(st); 
+10    find_frequency(st, count); 
+11    printf("Ky tu  So lan\n"); 
+12    for (c = 0 ; c < 26 ; c++) 
+13       printf("%c \t  %d\n", c + 'a', count[c]); 
+14    return 0; 
+15 } 
+16 // xay dung ham xac dinh so lan xuat hien cua cac ky tu tu 'a' den 
+'z' trong chuoi 
+17 void find_frequency(char s[], int count[]) { 
+18    int c = 0; 
+19    while (s[c] != '\0') { 
+20       if (s[c] >= 'a' && s[c] <= 'z' ) 
+21          count[s[c]-'a']++; 
+22       c++; 

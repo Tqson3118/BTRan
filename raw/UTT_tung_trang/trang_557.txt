@@ -1,0 +1,42 @@
+// Trang 557 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+557 
+ 
+Trong đó: 
+ 
+x1, y1 là tung độ và hoành độ của điểm thứ nhất; 
+ 
+x2, y2 là tung độ và hoành độ của điểm thứ hai. 
+Cuối chƣơng trình đồ họa, chúng ta phải dỡ trình điều khiển đồ họa 
+và đặt màn hình trở lại chế độ văn bản bằng cách gọi hàm closegraph(); 
+8.2. CÁC HÀM ĐỒ HỌA 
+8.2.1. Thiết lập chế độ đồ họa 
+Nếu chúng ta muốn tạo bất kỳ hình ảnh đồ họa nào trên màn hình 
+đầu ra của trình biên dịch C thì việc đầu tiên cần làm là khai báo tệp tiêu 
+đề “Graphics.h”. Thƣ viện “Graphics.h” chứa tất cả các định nghĩa và giải 
+thích về các hàm đồ họa mà ngƣời dùng cần trong lập trình đồ họa. 
+Graphics Driver 
+Để hiểu khái niệm về trình điều khiển đồ họa, chúng ta phải hiểu 
+khái niệm về trình điều khiển thiết bị. Trình điều khiển thiết bị là một số 
+chƣơng trình nhỏ giao tiếp trực tiếp với phần cứng. Ngƣời dùng không thể 
+giao tiếp trực tiếp với máy, mà phải thông qua các chƣơng trình nhỏ cần 
+thiết để giao tiếp, đƣợc gọi là trình điều khiển thiết bị.  
+Trình điều khiển đồ họa là một chƣơng trình nhỏ của trình điều khiển 
+thiết bị, đƣợc áp dụng trên chế độ đồ họa. Trong các chƣơng trình về đồ 
+họa, có một biến nguyên gd đại diện cho trình điều khiển đồ họa, ngƣời 
+dùng cũng có thể chọn bất kỳ tên biến nào khác thay vì gd cho trình điều 
+khiển đồ họa.  
+Hàm initgraph() tự động chọn trình điều khiển đồ họa. Đối số đầu 
+tiên của phƣơng thức initgraph() đại diện cho địa chỉ của trình điều khiển 
+đồ họa. 
+Graphics Mode 
+ 
+ Để tạo ra các hình ảnh độ họa trong C, chúng ta phải chuyển qua 
+chế độ đồ họa. Số lƣợng chế độ đồ họa trong hệ thống máy tính phụ thuộc 
+vào bộ điều hợp (adapter) và màn hình của máy tính.  
+ 
+Mỗi chế độ đồ họa có một số cụ thể, trong tất cả các chế độ có sẵn 
+của hệ thống máy tính, chúng ta có thể chuyển sang chế độ đồ họa cung 
+cấp độ phân giải tốt nhất. Để chuyển qua chế độ đồ họa cung cấp độ phân 
+giải phù hợp, chúng ta cần gọi hàm initgraph(). Hàm này phát hiện chế độ 
+đồ họa có độ phân giải phù hợp và đặt số tƣơng ứng với chế độ đó trong 

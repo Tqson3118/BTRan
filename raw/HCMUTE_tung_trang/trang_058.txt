@@ -1,0 +1,24 @@
+// Trang 58 - Ngôn ngữ lập trình C_ebook.pdf
+
+55
+Trong ví dụ 2.7 này, ta lưu ý ở dòng số 6 và số 7, ở đây không có 
+cặp dấu { }. Do vậy dù biểu thức luận lý trong lệnh if ở dòng số 5 là 
+sai nhưng dòng 7 vẫn được thực thi (dòng 6 không thực thi). Do đó giá 
+trị b được tăng lên dẫn tới điều kiện if ở dòng 8 đúng nên khối lệnh từ 
+dòng 9 đến dòng 12 được thực hiện. Cuối cùng, giá trị các biến a, b, c 
+thu được như kết quả đã cho.
+2.3.2 Lệnh if đủ
+Không giống với lệnh if thiếu, lệnh if đủ sẽ lựa chọn và quyết định 
+thực hiện một trong hai khối lệnh cho trước tùy thuộc vào kết quả luận 
+lý của biểu thức. 
+ Cú pháp
+if (biểu thức)
+   {
+     Khối lệnh 1;
+    }
+else
+   {
+     Khối lệnh 2;
+   }
+  Hoạt động
+Hình 2.2. Lưu đồ giải thuật của lệnh if đủ

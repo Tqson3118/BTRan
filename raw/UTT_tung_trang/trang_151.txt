@@ -1,0 +1,63 @@
+// Trang 151 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+151 
+11 case 1: case 3: case 5: case 7: case 8:  case 10: case 12: d = 31; 
+12  
+break; 
+13  
+case 9: case 4: case 6: d = 30; break; 
+14  
+case 2:  
+15  
+ { 
+16  
+ if(n % 4 == 0 && n % 100!= 0||n % 400 == 0) 
+17  
+   d = 29; 
+18  
+ else d = 28; 
+19  
+ };break; 
+20  
+} 
+21  
+if (ng < d) 
+22  
+{ 
+23  
+ 
+ng++; 
+24  
+} 
+25  
+else if (th < 12) 
+26  
+{ 
+27  
+ 
+ng = 1; th++; 
+28  
+} 
+29  
+else  
+30  
+{ 
+31  
+ 
+ng = th = 1; n++; 
+32  
+} 
+33  
+printf("\nNgay ke tiep: %d- %d - %d", ng,th,n); 
+34 getch(); 
+35 return 0; 
+36 } 
+ Kết quả chƣơng trình 
+ 
+Nhap nam: 2019 
+ 
+Nhap thang: 3 
+ 
+Nhap ngay: 31 
+ 
+Ngay ke tiep: 1- 4 - 2019 

@@ -1,0 +1,44 @@
+// Trang 162 - Ngôn ngữ lập trình C_ebook.pdf
+
+159
+CHƯƠNG 7
+KIỂU DỮ LIỆU TỰ TẠO
+Mục tiêu: 
+Sau khi kết thúc chương này, người đọc có thể:
+- Định nghĩa kiểu cấu trúc và áp dụng kiểu cấu trúc trên các biến 
+cấu trúc, mảng một chiều kiểu cấu trúc và con trỏ cấu trúc.
+- Định nghĩa và sử dụng kiểu dữ liệu Union.
+- Định nghĩa và sử dụng kiểu dữ liệu liệt kê.
+7.1. KIỂU CẤU TRÚC
+7.1.1. Giới thiệu kiểu cấu trúc
+Kiểu cấu trúc – structure – là một tập hợp các biến khác kiểu dữ liệu 
+với nhau dưới cùng một tên gọi. Một biến kiểu cấu trúc có thể gồm nhiều 
+biến thành phần có kiểu dữ liệu khác nhau. Điều này khác với mảng một 
+chiều vì mảng một chiều bao gồm nhiều phần tử mảng có cùng kiểu dữ 
+liệu với nhau. Kiểu cấu trúc thường được sử dụng cho mục đích lưu trữ các 
+thông tin dữ liệu với nhiều loại định dạng dữ liệu khác nhau.
+7.1.2. Định nghĩa một kiểu cấu trúc mới
+Các kiểu cấu trúc là kiểu dữ liệu tự tạo, được xây dựng dựa trên 
+các đối tượng của các kiểu dữ liệu khác. Xét một kiểu cấu trúc được 
+định nghĩa như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+struct SinhVien
+{
+	
+char hoTen[40];
+	
+char MSSV[12];
+	
+float diemGiuaKy;
+	
+float diemCuoiKy;
+	
+float diemTongKet;
+};

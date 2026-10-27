@@ -1,0 +1,60 @@
+// Trang 24 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+24 
+ Ví dụ 1.1 
+“Ha noi” chứa  6 ký tự, bao gồm các ký tự H, a, dấu cách, n, o và i. 
+“Hanoi” chứa 5 ký tự, bao gồm các ký tự H, a, n, o, i. 
+1.2.2. Từ khóa 
+Trong ngôn ngữ C, từ khóa đƣợc xác định trƣớc, là các từ dành riêng 
+đƣợc sử dụng trong lập trình, có ý nghĩa đặc biệt đối với trình biên dịch. 
+Từ khóa là một phần của cú pháp và chúng không thể đƣợc sử dụng làm 
+định danh.  
+ Ví dụ 1.2 
+Cho khai báo: int bien_dem; 
+Trong đó: int là từ khóa để chỉ ra rằng bien_dem là một biến kiểu int 
+(kiểu số nguyên). 
+Ngôn ngữ C phân biệt giữa hoa và chữ thƣờng, vì vậy tất cả các từ 
+khóa phải đƣợc viết bằng chữ thƣờng. Sau đây là danh sách các từ khóa 
+đƣợc sử dụng trong C: 
+auto 
+double 
+int 
+struct 
+reak 
+else 
+long 
+switch 
+case 
+enum 
+register 
+typedef 
+char 
+extern 
+return 
+union 
+continue 
+for 
+signed 
+void 
+do 
+if 
+static 
+while 
+default 
+goto 
+sizeof 
+volatile 
+const 
+float 
+short 
+unsigned 
+1.2.3. Định danh  
+Khái niệm định danh rất quan trọng trong quá trình lập trình, nó 
+không những thể hiện rõ ý nghĩa trong chƣơng trình mà còn dùng để xác 
+định các đại lƣợng khác nhau khi thực hiện chƣơng trình. Định danh 
+thƣờng đƣợc đặt cho hằng, biến, mảng, con trỏ, nhãn, v.v. Chiều dài tối 
+đa của định danh là 32 ký tự. 
+Quy tắc đặt định danh: 
+- Định danh phải là duy nhất. 
+- Một định danh hợp lệ chứa các chữ cái (cả chữ hoa và chữ thƣờng), 
+chữ số, dấu gạch dƣới. 

@@ -1,0 +1,36 @@
+// Trang 189 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+189 
+4     int s1, s2, s3; 
+5     printf("Nhap vao 3 so nguyen: "); 
+6     scanf("%d %d %d", &s1, &s2, &s3); 
+7     printf("So thu nhat = %d,\tSo thu hai = %d,\tSo thu ba = %d\n", 
+s1, s2, s3); 
+8     if (s1 > s2) 
+9     { 
+10         if (s1 > s3) 
+11         { 
+12             printf("So thu nhat la so lon nhat, %d. \n",s1); 
+13         } 
+14         else 
+15         { 
+16             printf("So thu ba la so lon nhat, %d. \n", s3); 
+17         } 
+18     } 
+19     else if (s2 > s3) 
+20         printf("So thu hai la so lon nhat, %d \n", s2); 
+21     else 
+22         printf("So thu ba la so lon nhat, %d", s3); 
+23     return 0; 
+24 } 
+Kết quả chƣơng trình 
+Nhap vao 3 so nguyen: 12 45 33 
+So thu nhat = 12,  So thu hai = 45,   So thu ba = 33 
+So thu hai la so lon nhat, 45 
+ Bài tập 3.3 
+Viết chƣơng trình đọc vào nhiệt độ theo độ C và hiển thị thông báo 
+phù hợp theo trạng thái nhiệt độ sau đây: 
+Nhiệt độ < 0oC: Đóng băng. 
+Nhiệt độ 0oC - 10oC: Rất lạnh. 
+Nhiệt độ 10oC - 20oC: Lạnh. 
+Nhiệt độ 20oC - 30oC: Bình thƣờng 

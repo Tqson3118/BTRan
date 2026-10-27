@@ -1,0 +1,36 @@
+// Trang 78 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+78 
+1 #include<stdio.h> 
+2 #include<conio.h> 
+3 void main() 
+4 { 
+5    int a, b, tong, hieu, tich; 
+6    float thuong;  
+7        printf(“\n nhap a=”);  scanf(“%d”,&a); 
+8        printf(“\n nhap b=”);  scanf(“%d”,&b); 
+9        tong = a + b; 
+10        hieu = a - b; 
+11        tich = a * b; 
+12        thuong = (float) a/b; 
+13        printf(“\n tong = %d”, tong); 
+14        printf(“\n hieu = %d”, hieu); 
+15        printf(“\n tich = %d”, tich); 
+16        printf(“\n thuong = %3.2f”, thuong); 
+17 getch(); 
+18 } 
+Yêu cầu: 
+- Biên dịch và chạy chƣơng trình. 
+- Tìm hiểu về câu lệnh printf(), ý nghĩa của các ký hiệu %d, %3.2f. 
+- Mục đích của dòng lệnh thuong = (float) a/b; là gì? 
+Gợi ý: 
+- Tìm hiểu câu lệnh pritnf(): 
+ 
++ Hàm printf() đƣợc sử dụng cho đầu ra. Nó in ra lệnh đã cho vào 
+bảng điều khiển (console). 
++ Cú pháp của hàm printf() đƣợc đƣa ra dƣới đây: 
+printf("format string", argument_list); 
++ Mã định dạng có thể là %d (số nguyên), %c (ký tự), %s (chuỗi), 
+%f (float), v.v. 
+- Mục đích của dòng lệnh thuong = (float) a/b;: ép kiểu dữ liệu của 
+biểu thức a/b về kiểu float. 

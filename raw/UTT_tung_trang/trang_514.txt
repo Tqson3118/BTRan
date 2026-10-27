@@ -1,0 +1,44 @@
+// Trang 514 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+514 
+6    // Ghi tung ky tu vao tep 
+7    fputc('C', fp); 
+8    // dong tep 
+9    fclose(fp); 
+10 } 
+Kiểm tra tệp data_7_12.txt cùng thƣ mục với tệp chƣơng trình, nội 
+dung đƣợc ghi vào tệp là “C”. 
+Yêu cầu với sinh viên:  
+Sử dụng hàm fputc() ghi 1 chuỗi ký tự vào tệp. 
+7.2.7.4. Hàm fgetc() 
+Cú pháp: 
+int fgetc(FILE *stream) 
+Chức năng: Sử dụng để đọc từng ký tự một từ một file đã cho. Nó 
+trả về EOF khi kết thúc file. 
+ Ví dụ 7.13 
+Cho nội dung của tệp data_7_13.txt có nội dung nhƣ sau: 
+“Truong Dai hoc Cong nghe GTVT” 
+Sử dụng hàm fgetc() đọc tệp data_7_13.txt 
+1 
+#include<stdio.h> 
+2 
+#include<conio.h> 
+3 
+int main() { 
+4 
+    FILE *fp; 
+5 
+    char c; 
+6 
+    fp=fopen("data_7_13.txt", "r"); 
+7 
+    while ((c = fgetc(fp)) != EOF) { 
+8 
+        printf("%c", c); 
+9 
+    } 
+10     fclose(fp); 
+11    return 0; 
+12 } 
+ Kết quả chƣơng trình: 
+Truong Dai hoc Cong nghe GTVT 

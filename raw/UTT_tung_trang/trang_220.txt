@@ -1,0 +1,27 @@
+// Trang 220 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+220 
+Cú pháp: 
+Hàm không có kiểu trả về kết quả 
+Hàm có kiểu trả về kết quả 
+- Gọi nhƣ một lệnh 
+<tên hàm> ([danh sách tham số 
+thực sự]); 
+Ví dụ: tinhtong(x, y); 
+- Gọi trong biểu thức 
+C  = <tên hàm>([danh sách tham số 
+thực sự]); 
+- Hoặc kết hợp lệnh in ra màn hình 
+printf(“%d“, <tên hàm>(danh sách 
+tham số thực sự); 
+Ví dụ:  
+z = tinhtong(x, y); 
+printf(“tong = d”, tinhtong(x, y)); 
+Trong đó:  
+-  Số tham số thực sự phải bằng số tham số hình thức và có kiểu dữ 
+liệu tƣơng ứng. 
+- Tham số thực sự đƣợc truyền cho các tham số hình thức tuần tự từ 
+trái sang phải, tham số thực sự thứ nhất truyền cho tham số hình thức thứ 
+nhất, tham số thực sự thứ 2 truyền cho tham số hình thức thứ 2, v.v. 
+ 
+Hình 4.2. Minh họa cách truyền tham số 

@@ -1,0 +1,36 @@
+// Trang 113 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+113 
+5 int c; 
+6 printf("Nhan mot phim bat ky:\n"); 
+7 c = getch(); 
+8 if (c) 
+9     printf("Mot phim dang duoc nhan tu ban phim"); 
+10   else 
+11    printf("Xay ra loi!"); 
+12 getch();  
+13 } 
+Kết quả chƣơng trình: 
+Nhan mot phim bat ky 
+(Ngƣời dùng nhấn 1 phím trên bàn phím, nhƣng không hiển thị trên 
+màn hình) 
+Mot phim dang duoc nhan tu ban phim 
+2.2.3.2. Hàm getche() 
+Cú pháp: 
+ 
+int getche(void); 
+Chức năng: giống nhƣ hàm getch(), getche() là hàm trong thƣ viện 
+<conio.h>. Hàm getche() đọc một ký tự từ bàn phím và hiển thị ngay lập 
+tức ký tự vừa nhập lên màn hình mà không cần đợi nhấn phím Enter. 
+ Ví dụ 2.26 
+Xem xét ví dụ sau đây: 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 int main() 
+4 { 
+5     char ok; 
+6     printf("Xin chao!\n"); 
+7     printf("Ban muon tiep tuc, nhan y hoac n: "); 
+8     ok = getche(); // Cho nhan ban phim 
+9     if (ok == 'y') 
+10     { 

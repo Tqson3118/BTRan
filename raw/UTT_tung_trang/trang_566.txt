@@ -1,0 +1,57 @@
+// Trang 566 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+566 
+13  
+// khoi tao duong thang  
+14  
+line(100,420,100,60); 
+15  
+line(100,420,500,420); 
+16  
+//tao thanh bieu do 
+17  
+setfillstyle(LINE_FILL,RED); 
+18  
+bar(150,200,200,419); 
+19  
+setfillstyle(LINE_FILL,GREEN); 
+20  
+bar(225,90,275,419); 
+21  
+setfillstyle(LINE_FILL,BLUE); 
+22  
+bar(300,120,350,419); 
+23  
+setfillstyle(LINE_FILL,YELLOW); 
+24  
+bar(375,180,425,419); 
+25  
+getch(); 
+26 } 
+ Kết quả chƣơng trình: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Ví dụ 8.5 
+Sử dụng các hàm đồ họa vẽ ngôi nhà. 
+ Chƣơng trình: 
+1 
+#include<graphics.h> 
+2 
+#include<conio.h> 
+3 
+ int main(){ 
+4 
+ 
+int gd = DETECT,gm; 
+5 
+ 
+initgraph(&gd, &gm, ""); 
+6 
+ 
+/* Ve ngoi nha */ 

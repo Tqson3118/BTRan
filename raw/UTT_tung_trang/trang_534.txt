@@ -1,0 +1,48 @@
+// Trang 534 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+534 
+22   
+ 
+{ 
+23   
+ 
+ 
+printf ("%c", str); 
+24   
+ 
+ 
+str = fgetc(fptr); 
+25   
+ 
+} 
+26   
+fclose(fptr); 
+27      printf("\n\n"); 
+28  } 
+  Kết quả chƣơng trình: 
+Chuong trinh in noi dung cua tep van ban: 
+------------------------------ 
+Nhap vao ten tep tin can doc noi dung: test_7_1.txt 
+Noi dung cua tep test_7_1.txt duoc hien thi: 
+Dai hoc Cong nghe GTVT  
+Trƣờng hợp tệp không tồn tại 
+Chuong trinh doc noi dung cua tep van ban: 
+------------------------------ 
+Nhap vao ten cua tep tin can doc noi dung: test_6.txt 
+Tep khong ton tai hoac khong the mo. 
+ Bài tập 7.3 
+Viết chƣơng trình để viết nhiều dòng trong một tệp văn bản 
+ Chƣơng trình 
+1  #include <stdio.h> 
+2  #include <stdlib.h> 
+3  int main () 
+4  { 
+5    FILE * fptr; 
+6    int i,n; 
+7    char str[100]; 
+8    char fname[20]="test_7_3.txt"; 
+9    char str1; 
+10      printf("\n\nChuong trinh ghi nhieu dong vao 1 tep van ban va 
+doc noi dung tep :\n"); 
+11   printf("-------------------------------------\n");    
+12   printf("Nhap vao so dong can ghi: "); 

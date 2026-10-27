@@ -1,0 +1,48 @@
+// Trang 457 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+457 
+9 
+Nhap thong tin thu 4: 
+Nhap ho ten thi sinh: 
+Thuy 
+Nhap so bao danh thi sinh: 
+a1904 
+Nhap diem mon Toan: 
+6 
+Nhap diem mon Ly: 
+8 
+Nhap diem mon Hoa: 
+9 
+Nhap thong tin thu 5: 
+Nhap ho ten thi sinh: 
+Yen 
+Nhap so bao danh thi sinh: 
+a1905 
+Nhap diem mon Toan: 
+4 
+Nhap diem mon Ly: 
+4 
+Nhap diem mon Hoa: 
+4 
+Danh sach thi sinh du thi: 
+Stt  
+Ho_ten  SBD  D_toan  D_ly  D_hoa   Tong_diem 
+1    
+An      a1901 8.0     8.0   7.0     23.0 
+2    
+Binh    a1902 5.0     4.0   4.0     13.0 
+3    
+Cuong   a1903 8.0     9.0   9.0     26.0 
+4    
+Thuy    a1904 6.0     8.0   9.0     23.0 
+5    
+Yen     a1905 4.0     4.0   4.0     12.0 
+Danh sach thi sinh trung tuyen : 
+Stt  
+Ho_ten  SBD   D_toan  D_ly  D_hoa   Tong_diem 
+1    
+An       a1901  8.0   8.0  7.0      23.0 
+2    
+Cuong    a1903  8.0   9.0  9.0      26.0 
+3    
+Thuy     a1904  6.0   8.0  9.0      23.0 

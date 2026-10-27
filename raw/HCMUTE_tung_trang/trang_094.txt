@@ -1,0 +1,42 @@
+// Trang 94 - Ngôn ngữ lập trình C_ebook.pdf
+
+91
+    for (i=2; i<=n; i++)
+       	
+ if (n %i == 0) 
+	 	
+break;
+    if (i==n) 
+        printf(“SNT”);
+    else
+     printf(“Khong phai SNT”);
+}
+getch();
+return 0;
+ }
+Yêu cầu : 
+ Cho biết: Chương trình thực hiện chức năng gì?
+ Hãy viết lại chương trình khác thực hiện cùng chức năng với 
+chương trình trên.
+5. Viết chương trình nhập vào 2 số nguyên a, b từ bàn phím và in 
+ra tất cả các số nguyên tố trong đoạn [a b].
+Ví dụ : 	Nhap a:  	
+4
+     	
+Nhap b:   	
+15
+     	
+Cac so nguyen to trong doan [4 15] la: 7   11   13
+Ví dụ : 	Nhap a:  	
+14
+     	
+Nhap b:   	
+16
+     	
+Khong co so nguyen to trong doan [14  16].
+6. Viết chương trình nhập vào 2 số nguyên a và b và chỉ chấp nhận 
+b > a > 0. Tìm và in ra ước số chung lớn nhất và bội số chung nhỏ nhất 
+của 2 số này.
+7. Viết chương trình nhập vào số nguyên n, tính và in ra tổng sau:
+kiểm tra số nhập vào có là snt 
+hay k

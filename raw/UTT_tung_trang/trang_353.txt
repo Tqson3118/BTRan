@@ -1,0 +1,46 @@
+// Trang 353 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+353 
+ 
+ab 
+ 
+Nhap vao chuoi thu hai: 
+ 
+bcde 
+ 
+Chuoi ky tu thu duoc khi ghep hai chuoi tren: abbcde 
+ Cách 2: Không sử dụng hàm strcat() 
+1 
+#include <stdio.h> 
+2 
+void concatenate(char [], char []); 
+3 
+int main() 
+4 
+{ 
+5 
+   char p[100], q[100]; 
+6 
+   printf("Nhap vao chuoi p:\n"); 
+7 
+   gets(p); 
+8 
+   printf("Nhap vao chuoi q\n"); 
+9 
+   gets(q); 
+10    concatenate(p, q); 
+11    printf("Chuoi thu duoc khi ghep q vao p: \%s\n", p); 
+12     return 0; 
+13 } 
+14  void concatenate(char p[], char q[]) { 
+15    int c, d; 
+16       c = 0; 
+17     while (p[c] != '\0') { 
+18       c++;       
+19    } 
+20     d = 0; 
+21     while (q[d] != '\0') { 
+22       p[c] = q[d]; 
+23       d++; 
+24       c++;     
+25    } 

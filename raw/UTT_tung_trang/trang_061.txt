@@ -1,0 +1,35 @@
+// Trang 61 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+61 
+ Ví dụ 1.47 
+Xem xét đoạn chƣơng trình sau đây, để thấy sự khác nhau giữa ++i 
+và i++, -- i và i-- 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 int main() 
+3 { 
+4     int a = 10, b = 7; 
+5     int c = 12, d = 9; 
+6     printf("++a = %d \n", ++a); 
+7     printf("--b = %d \n", --b); 
+8     printf("c++ = %d \n", c++); 
+9     printf("d-- = %d \n", d--); 
+10     printf("Ket qua sau khi thuc hien tang, giam\n"); 
+11     printf("a = %d, b = %d, c = %d, d = %d", a, b, c, d) ;    
+12     return 0; 
+13 } 
+Kết quả chƣơng trình 
+++a = 11 
+--b = 6 
+c++ = 12 
+d-- = 9 
+Ket qua sau khi thuc hien tang, giam 
+a = 11, b = 6, c = 13, d = 8 
+Giải thích chƣơng trình: 
+Dòng lệnh 6: printf("++a = %d \n", ++a); in ra giá trị của ++a; do đó 
+giá trị đƣợc in ra là 11 (vì a đƣợc tăng trƣớc). 
+Dòng lệnh 7: printf("--b = %d \n", --b); in ra giá trị của -b; do đó giá 
+trị đƣợc in ra là 6 (vì b bị giảm trƣớc). 
+Dòng lệnh 8: printf("c++ = %d \n", c++); in ra giá trị của c++, do đó 
+giá trị đƣợc in ra là 12 (c đƣợc đƣa vào thực hiện trƣớc, sau đó mới tăng 
+c, tại thời điểm của dòng lệnh 8, giá trị c chƣa tăng). 

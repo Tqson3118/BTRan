@@ -1,0 +1,39 @@
+// Trang 495 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+495 
++ Nhập vào một mã sinh viên, hiển thị thông tin của sinh viên có mã 
+sinh viên vừa nhập; 
++ Nhập vào một mã sinh viên, xóa sinh viên trùng với mã sinh viên 
+trên; 
++ Sắp xếp danh sách trên theo thứ tự giảm dần của DTB, in danh 
+sách trên lên màn hình, mỗi ngƣời trên một dòng gồm các mục: Stt, Mã 
+sinh viên, Họ tên, điểm CSDL, điểm Toán rời rạc, điểm lập trình C,  điểm 
+DTB, xếp loại của sinh viên. 
+Yêu cầu: 
+ 
+- Thể hiện mỗi ý của bài tập bằng một hàm. 
+ Bài tập 6.5.  
+Viết chƣơng trình quản lý thông tin của các sách trong một cửa hàng. 
+Thông tin của một cuốn sách bao gồm: Mã sách, tên sách, số lƣợng, tác 
+giả, năm xuất bản và đơn giá. 
++ Nhập một danh sách n đầu sách (1 < b < 50).  
++ Với mỗi đầu sách tính giá tiền(GT) nhƣ sau: 
+o GT= SL * DG nếu SL < 10 
+ 
+    = SL * DG - 5% SL * DG nếu 10 <= SL <= 30 
+ 
+ = SL * DG - 10% SL * DG nếu 31 <= SL <= 50 
+ 
+ = SL * DG - 5% SL * DG nếu SL >= 51  
++ Tính tổng số tiền chi cho việc mua sách kể cả 10 % thuế giá trị gia 
+tăng đánh vào tổng giá tiền. 
++ Tìm xem trong danh sách có sách “Ngon ngu lap trinh C” không? 
+Nếu có thì cho biết có bao nhiêu cuốn và đơn giá của nó. 
+Yêu cầu: 
+- Thể hiện mỗi ý của bài tập bằng một hàm. 
+ Bài tập 6.6 
+Thông tin về một mặt hàng trong siêu thị bao gồm: Mã mặt hàng (ký 
+tự, 10), Tên mặt hàng (ký tự, 20), màu sắc (ký tự, 10), năm sản xuất (số 
+nguyên), giá bán (số nguyên). 
+Hãy thực hiện các yêu cầu sau đây bằng ngôn ngữ lập trình C 
+a. Nhập vào thông tin của n sản phẩm trong siêu thị. 

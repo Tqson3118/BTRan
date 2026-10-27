@@ -1,0 +1,46 @@
+// Trang 347 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+347 
+13       printf("Hai chuoi khong giong nhau.\n"); 
+14    return 0; 
+15 } 
+16  int compare_strings(char a[], char b[]) 
+17 { 
+18    int c = 0; 
+19    while (a[c] == b[c]) { 
+20       if (a[c] == '\0' || b[c] == '\0') 
+21          break; 
+22       c++; 
+23    } 
+24       if (a[c] == '\0' && b[c] == '\0') 
+25       return 0; 
+26    else 
+27       return -1; 
+28 } 
+Kết quả chƣơng trình: 
+Nhap vao chuoi thu nhat: 
+Cntt 
+Nhap vao chuoi thu hai: 
+Cngtvt 
+Hai chuoi khong giong nhau. 
+Cách 3: Sử dụng con trỏ: 
+1 
+#include<stdio.h> 
+2 
+int compare_string(char*, char*); 
+3 
+int main() 
+4 
+{ 
+5 
+    char a[1000], b[1000]; 
+6 
+    int kq; 
+7 
+    printf("Nhap vao chuoi thu nhat:\n"); 
+8 
+    gets(a); 
+9 
+    printf("Nhap vao chuoi thu hai:\n"); 
+10     gets(b); 
+11     kq = compare_string(a, b); 

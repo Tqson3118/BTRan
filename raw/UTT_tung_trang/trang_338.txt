@@ -1,0 +1,70 @@
+// Trang 338 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+338 
+7 
+    printf("%s",str);  
+8 
+    return 0;  
+9 
+} 
+Kết quả chƣơng trình: 
+DHCNGTVT 
+Cũng giống nhƣ mảng, trong quá trình khai báo chuỗi, ta có thể đặt 
+kích thƣớc chuỗi ký tự bên trong [] của khai báo. 
+ 
+Chẳng hạn, cho khai báo sau đây:  
+ 
+char str[15] = “DHCNGTVT”; 
+Đảm bảo rằng kích thƣớc chuỗi đặt bên trong [] đủ lớn để chứa tất cả 
+các ký tự trong chuỗi, cộng với ký tự „\0‟ (NULL) để kết thúc. Trong ví 
+dụ trên, các chỉ số từ 0 đến 8 sẽ đƣợc khởi tạo cho các ký tự của chuỗi 
+“DHCNGTVT” và ký tự „\0‟ (NULL). Các chỉ số còn lại từ 9 đến 14  sẽ 
+đƣợc khởi tạo bằng \0 (giống ký tự NULL khi chuyển đổi sang char). 
+Trong bộ nhớ, chuỗi trên đƣợc minh họa nhƣ sau: 
+D 
+H 
+C 
+N 
+G 
+T 
+V 
+T 
+\0 
+\0 
+\0 
+\0 
+\0 
+\0 
+\0 
+0 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+11 
+12 
+13 
+14 
+5.3.2.3. Khai báo bằng con trỏ 
+ 
+char *<str_pointer_name>; 
+Chương trình sẽ dành 2 byte bộ nhớ để lưu địa chỉ của biến con trỏ 
+đang trỏ đến, chưa cung cấp nơi để lưu trữ dữ liệu. Muốn lưu trữ dữ liệu, 
+gọi hàm malloc() và calloc() trong thư viện “alloc.h”, sau đó mới gán dữ 
+liệu cho biến. 
+ Ví dụ 5.44  
+ Cho đoạn chƣơng trình sau đây: 
+1  #include <stdio.h> 
+2  #include <string.h> 
+3  int main() 
+4  { 
+5   
+char *char_ptr = "DHCNGTVT"; 
+6       
+printf(char_ptr); 

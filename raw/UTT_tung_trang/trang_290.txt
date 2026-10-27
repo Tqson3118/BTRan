@@ -1,0 +1,87 @@
+// Trang 290 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+290 
+20  
+ 
+printf("%4d", a[i]); 
+21  
+} 
+22  
+printf("\n"); 
+23 } 
+24 void Sapxep(int a[], int n) 
+25 { 
+26  
+// ngam dinh sap xep tang dan 
+27  
+int i,j; 
+28  
+for(i=0;i<n-1;i++) 
+29  
+   for(j=i+1;j<n;j++) 
+30  
+ 
+{ 
+31  
+ 
+ 
+if(a[i]>a[j]) 
+32  
+ 
+ 
+{ 
+33  
+//Su dung bien tg de trao doi gia tri cua 2 bien a[i] va a[j] 
+34  
+ 
+ 
+int tg = a[i]; 
+35  
+ 
+ 
+a[i] = a[j]; 
+36  
+ 
+ 
+a[j]=  tg; 
+37  
+ 
+ 
+} 
+38  
+ 
+ 
+ 
+} 
+39 } 
+40 int main() 
+41 { 
+42  
+int n; 
+43  
+int a[MAX]; 
+44  
+//Kiem tra tinh hop le cua so n nhap vao, dam bao 0 <= n <= 
+MAX 
+45  
+do 
+46  
+{ 
+47  
+ 
+printf("\nNhap so phan tu: "); 
+48  
+ 
+scanf("%d", &n); 
+49  
+ 
+if(n <= 0 || n > MAX) 
+50  
+ 
+{ 
+51 
+printf("\Khong hop le. Nhap so trong pham vi tu 0 
+den MAX !"); 
+52  
+ 
+} 

@@ -1,0 +1,33 @@
+// Trang 122 - Ngôn ngữ lập trình C_ebook.pdf
+
+119
+	 	
+printf (“%d”, b[i]);
+	 }
+printf(“\n”);
+for (i=0; i<k; i++)
+	 {
+	 	
+printf (“%d”, c[i]);
+	 }
+getch();
+return 0;
+}
+Yêu cầu : 
+ Cho biết chức năng của chương trình là gì?
+5. Viết một chương trình thực hiện các yêu cầu sau:
+a. Nhập vào điểm kết thúc môn C của một lớp học gồm 35 
+sinh viên.
+b. Cho biết lớp có sinh viên đạt điểm 10.0 hay không.
+c. Cho biết tỉ lệ % đậu và tỉ lệ % rớt của lớp.
+d. Cho biết điểm rớt cao nhất của lớp là bao nhiêu.
+6. Viết chương trình nhập vào một mảng gồm 10 số nguyên, tìm 
+và in ra các số nguyên tố có trong mảng; nếu không có in ra thông báo.
+7. Viết chương trình nhập vào một mảng gồm 10 số nguyên, yêu 
+cầu: không cho phép nhập số âm. Sau đó tiến hành sắp xếp mảng theo 
+thứ tự số lẻ tăng dần và số chẵn giảm dần; in ra mảng đã sắp xếp.
+8. Viết chương trình nhập vào một ma trận 3x4 các số nguyên, sắp 
+xếp từng hàng của ma trận theo thứ tự tăng dần và in ra.
+9. Viết chương trình nhập vào một ma trận 4x4 các số nguyên, 
+không cho phép nhập số âm. Tìm và in ra phần tử lớn nhất trên đường 
+chéo chính của ma trận.

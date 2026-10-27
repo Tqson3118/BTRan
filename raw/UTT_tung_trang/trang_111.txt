@@ -1,0 +1,35 @@
+// Trang 111 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+111 
+Chƣơng trình: 
+1 #include <stdio.h> 
+2 int main() 
+3 { 
+ 
+4 char ch[100]; 
+5 printf("Nhap vao chuoi ky tu: \n"); 
+6 //Nhap chuoi su dung ham gets() 
+7 gets(ch); 
+8 printf("Chuoi vua duoc nhap la - "); 
+9 //In chuoi ra man hinh 
+10 puts(ch); 
+11 return 0; 
+12 } 
+Kết quả chƣơng trình: 
+Nhap vao chuoi ky tu: 
+Ha Noi! 
+Chuoi vua duoc nhap la - Ha Noi! 
+Lƣu ý:  
+- Hàm puts() đƣợc ƣu tiên để in một chuỗi vì nó đơn giản và ít rắc rối 
+hơn hàm printf() (việc thực hiện hàm puts() thƣờng đơn giản hơn printf() 
+và nếu chuỗi có các ký tự định dạng nhƣ „%‟ thì hàm printf() sẽ cho 
+những kết quả khác). Ngoài ra, nếu ch là mỗi chuỗi đầu vào của ngƣời 
+dùng, thì việc dùng hàm printf() có thể gây ra các sự cố bảo mật. 
+- Hàm puts() di chuyển con trỏ đến dòng tiếp theo, nếu không muốn 
+di chuyển con trỏ tới dòng tiếp theo, chúng ta có thể sử dụng hàm puts() ở 
+dạng biến thể khác nhƣ sau: 
+fputs(str, stdout) 
+2.2.2.2. Hàm putchar() 
+Cú pháp: 
+int putchar(int ch); 
+Trong đó: ch là mã ASCII của ký tự muốn in ra màn hình.  

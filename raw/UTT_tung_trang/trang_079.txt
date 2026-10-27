@@ -1,0 +1,36 @@
+// Trang 79 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+79 
+ Bài tập 1.5 
+Sử dụng Turbo C hoặc Dev C++, soạn thảo chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 void main() 
+4 { 
+5 int a; 
+6 long int b; 
+7 float x; 
+8 char st[10]; 
+9 printf("\n Vao du lieu tu ban phim "); 
+10 printf("\n a = "); scanf("%d",&a); 
+11 printf("\n b = "); scanf("%ld",&b); 
+12 printf("\n x = "); scanf("%f",&x); 
+13 printf("\n Nhap vao mot chuoi :");scanf("%s",st); 
+14 printf("\n a :%10d\n b :%10ld\n x :%10.2f",a,b,x); 
+15 printf("\n Chuoi da nhap :%s",st); 
+16 getch(); 
+17 } 
+Yêu cầu: 
+- Biên dịch và chạy chƣơng trình. 
+- Tìm hiểu về câu lệnh printf(), từ câu lệnh 9 đến câu lệnh 15? 
+Gợi ý: Câu lệnh prinft() từ 9 đến 13: in ra màn hình mời nhập các giá 
+trị a, b, x, chuỗi. 
+Câu lệnh printf() từ 14 đến 15: in ra màn hình các biến a, b, x theo 
+định dạng của số nguyên, số nguyên dàivà số thực. 
+ Bài tập 1.6 
+Sử dụng Turbo C hoặc Dev C++, soạn thảo chƣơng trình sau đây: 
+1 #include<stdio.h> 
+2 #include<conio.h> 
+3 #define  pi   3.14 
+4 void  main() 
+5 { 

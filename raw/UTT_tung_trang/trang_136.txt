@@ -1,0 +1,23 @@
+// Trang 136 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+136 
+ 
+Khi một loạt các quyết định đƣợc yêu cầu, cấu trúc if else lồng 
+nhau sẽ đƣợc sử dụng. 
+a. Cú pháp: 
+if (expression 1) 
+     statement block 1; 
+else if (expression 2) 
+    statement block 2; 
+… 
+else 
+    statement  block n; 
+b. Hoạt động: Câu lệnh if else lồng nhau quyết định chọn một trong 
+nhiều lựa chọn. Trình tự thực hiện đƣợc thực hiện từ trên xuống dƣới. 
+Ngay khi một trong các điều kiện trong khối if else đƣợc kiểm soát là 
+đúng, câu lệnh liên quan đến điều kiện đó đƣợc thực thi và phần còn lại 
+của khối if else lồng sẽ bị bỏ qua. Nếu không có điều kiện nào là đúng, 
+câu lệnh sau else cuối cùng sẽ đƣợc thực hiện. 
+c. Sơ đồ khối 
+ 
+Hình 3.5. Sơ đồ khối biểu diễn câu lệnh if else lồng nhau 

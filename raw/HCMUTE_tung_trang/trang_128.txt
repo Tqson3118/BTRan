@@ -1,0 +1,38 @@
+// Trang 128 - Ngôn ngữ lập trình C_ebook.pdf
+
+125
+thì câu lệnh trên đã thiết lập con trỏ tham chiếu đến phần tử đầu 
+tiên của mảng a bằng cách gán địa chỉ phần tử đầu tiên của mảng a cho 
+con trỏ p.
+1
+5
+3
+2
+4
+0
+1
+2
+3
+4
+*(p)
+*(p+1) *(p+2) *(p+3) *(p+4)
+p
+a:
+Hình 5.2. Mối liên hệ giữa mảng và con trỏ
+Lệnh  x = *p sẽ sao chép nội dung phần tử a[0] vào biến x. 
+Tương tự, *(p+i) sẽ tham chiếu đến phần tử thứ i trong mảng a, như 
+trình bày trong hình 5.2. Điều này luôn đúng bất kể kiểu dữ liệu 
+của mảng a. Khi p là con trỏ, nếu gặp lệnh p+1 thì chương trình sẽ 
+tự động cập nhật p sao cho có thể tham chiếu đến phần tử tiếp theo 
+trong mảng a. 
+Ngay khi tên mảng xuất hiện trong chương trình, nó được chuyển 
+sang kiểu con trỏ một cách tự động. Như vậy, 2 cách gán giá trị cho con 
+trỏ p sau đây là tương đương nhau:
+1
+2
+pa= &a[0];
+pa = a; 
+Như vậy, trong trường hợp này có thể xem a là con trỏ mà nội 
+dung của nó đã được thiết lập đến vùng nhớ cấp cho mảng a. Các phần 
+tử của mảng có thể được truy xuất thông qua tên mảng hoặc tên con trỏ 
+như sau: 

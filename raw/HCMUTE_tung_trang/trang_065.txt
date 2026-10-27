@@ -1,0 +1,39 @@
+// Trang 65 - Ngôn ngữ lập trình C_ebook.pdf
+
+62
+Với cả hai cách viết này giá trị của biến y đều bằng 100.
+2.5.  LỆNH RẼ NHÁNH SWITCH… CASE
+Lệnh switch…case hoạt động tương tự như lệnh if ... else if ... 
+else.... Tuy nhiên, biểu thức được sử dụng để kiểm tra phải có kết quả 
+là một giá trị hằng số cụ thể. Một bài toán sử dụng lệnh switch thì cũng 
+có thể sử dụng được lệnh if nhưng việc ngược lại có được hay không là 
+còn tùy thuộc vào giải thuật của bài toán.
+2.5.1 Cú pháp
+switch (biểu thức nguyên)
+{
+	 case n1:
+	 	
+	
+khối lệnh 1;
+	 	
+	
+break;
+	 case n2:
+	 	
+	
+khối lệnh 2;
+	 	
+	
+break;
+……………………
+case nk:
+	 	
+	
+khối lệnh k;
+	 	
+	
+break;
+[default: khối lệnh k+1; ]
+}
+2.5.2	
+Hoạt động

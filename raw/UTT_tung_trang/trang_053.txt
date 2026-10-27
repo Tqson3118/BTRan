@@ -1,0 +1,35 @@
+// Trang 53 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+53 
+c = (float) a /b; thì c có giá trị  = 2.5. 
+Trong trƣờng hợp không ép kiểu thì c = a/b ; cho kết quả c = 2.0 
+ Ví dụ 1.39   
+float a  = 7.0;  
+int b; 
+b = (int) (a/3); 
+Kết quả thu đƣợc b = 2. 
+1.6.3. Biểu thức 
+1.6.3.1. Định nghĩa biểu thức 
+Biểu thức là sự kết hợp giữa các phép toán và các toán hạng, dùng để 
+diễn đạt một công thức toán học nào đó. Toán hạng có thể là hằng, biến, 
+phần tử mảng, các hàm, v.v. Các phép toán bao gồm các phép toán số học 
+(+, - ,*, /), phép toán so sánh (>, <, =, !=,  ,  , v.v.) và phép toán logic 
+(and, or, not, v.v.). 
+Biểu thức đƣợc phân loại theo kiểu giá trị: nguyên, thực và biểu thức 
+logic. Khi viết biểu thức nên dùng các dấu ngoặc tròn để thể hiện đúng 
+trình tự tính toán trong biểu thức. 
+Biểu thức thƣờng đƣợc dùng trong:  
+- Vế phải của câu lệnh gán; 
+- Làm tham số thực sự của hàm; 
+- Làm chỉ số trong các câu lệnh if, switch, for, while, do…while. 
+ Ví dụ 1.40 
+Biểu thức tính nửa chu vi và diện tích của tam giác  
+p = (a + b + c )/2; 
+s = sqrt((p-a)*(p-b)*p-c)); (trong đó a, b, c là 3 biến số thực). 
+1.6.3.2. Biểu thức số học 
+Biểu thức với các toán tử là phép toán số học gọi là biểu thức số học. 
+ Ví dụ 1.41 
+Cho đoạn chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 int main ()  
+3 { float a, b, c x, y, z; 

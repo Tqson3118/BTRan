@@ -1,0 +1,53 @@
+// Trang 400 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+400 
+11    scanf("%d", &n); 
+12    while (i < n) { 
+13       sub[i] = a[t + i-1]; 
+14       i++; 
+15    } 
+16    sub[i] = '\0'; 
+17    printf("Chuoi con theo yeu cau: \"%s\"\n", sub); 
+18    return 0; 
+19 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi: 
+ 
+teacher 
+ 
+Nhap vao vi tri bat dau lay ra chuoi con: 
+ 
+3 
+ 
+Nhap vao so ky tu cua chuoi con: 
+ 
+2 
+ 
+Chuoi con theo yeu cau: "ac" 
+ Cách 2: Viết chƣơng trình sử dụng hàm 
+1 
+#include <stdio.h> 
+2 
+void substring(char [], char[], int, int); 
+3 
+int main() 
+4 
+{ 
+5 
+   char a[1000], sub[1000]; 
+6 
+   int vt, n, i = 0; 
+7 
+   printf("Nhap vao chuoi ky tu:\n"); 
+8 
+   gets(a); 
+9 
+   printf("Nhap vao vi tri bat dau cua chuoi con:\n"); 
+10    scanf("%d", &vt); 
+11    printf("Nhap vao do dai cua chuoi con:\n"); 
+12    scanf("%d",&n); 
+13    substring(a, sub, vt, n); 
+14    printf("Chuoi con duoc cat ra la: \"%s\"\n", sub); 
+15    return 0; 
+16 } 

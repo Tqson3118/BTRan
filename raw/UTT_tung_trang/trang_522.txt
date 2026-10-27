@@ -1,0 +1,20 @@
+// Trang 522 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+522 
+ Nội dung của tệp thứ nhất: 
+ 
+ Nội dung của tệp thứ hai: 
+ 
+ Kết quả chƣơng trình 
+Chuong trinh ghep hai tep va ghi vao mot tep moi : 
+------------------------------------------------- 
+Nhap ten tep 1 : test1.txt 
+Nhap ten tep 2 : test2.txt 
+Nhap ten tep moi khi hop nhat hai tep: test3.txt 
+Ghep noi 2 tep vao tep test3.txt thanh cong..!! 
+ Nội dung của tệp test3.txt 
+ 
+ Ví dụ 7.18 
+Chƣơng trình quản lý sinh viên 
+- Khai báo kiểu dữ liệu SinhVien có các trƣờng họ tên, giới tính, 
+tuổi, điểm Toán - Lý - Hóa và điểm trung bình. 

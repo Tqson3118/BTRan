@@ -1,0 +1,58 @@
+// Trang 239 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+239 
+30  
+printf("\n Ngay vua nhap %d-%d-%d\n", ng, th, n); 
+31  
+if (ng < d) 
+32  
+{ 
+33  
+ 
+ng++; 
+34  
+} 
+35  
+else if (th < 12) 
+36  
+{ 
+37  
+ 
+ng = 1; th++; 
+38  
+} 
+39  
+else  
+40  
+{ 
+41  
+ 
+ng = th = 1; n++; 
+42  
+} 
+43  
+printf("\nNgay ke tiep: %d- %d - %d", ng, th, n); 
+44 getch(); 
+45 return 0; 
+46 } 
+Từ chƣơng trình trên ta xây dựng thành các hàm nhƣ sau: 
+- Từ dòng 14 đến dòng 25 ta xây dựng hàm trả về ngày của tháng, ta 
+sử dụng hàm có kiểu trả về và 2 tham số hình thức là tháng và năm. 
+- Từ dòng 31 đến dòng 43 ta xây dựng hàm tính ngày tiếp theo, hàm 
+trả về ngày tiếp theo nên ta dùng hàm không trả về kết quả, có 3 tham số 
+hình thức ngày, tháng, năm. 
+Chƣơng trình dùng hàm: 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 int Ngaycuathang(int th, int n) 
+4 { 
+5  
+int d; 
+6  
+switch(th) 
+7  
+{ 
+8  
+case 1: case 3: case 5: case 7: case 8: case 10: case 12: 
+ 
+d = 31; 

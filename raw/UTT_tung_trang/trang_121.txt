@@ -1,0 +1,42 @@
+// Trang 121 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+121 
+ Bài tập 2.4 
+Viết chƣơng trình nhập vào thời gian di chuyển của các phƣơng tiện 
+(tính theo giờ và phút). Quy đổi thời gian di chuyển sang phút. 
+Dữ liệu test: 4h37 phút.  
+Kết quả mong muốn: 277 phút. 
+Phác thảo lời giải 
+- Nhập vào số giờ di chuyển số phút di chuyển. 
+- Sử dụng công thức chuyển đổi: số phút (tổng) = Số giờ * 60 + số phút 
+- In kết quả ra màn hình. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #define M  60   // so phut cua mot gio 
+3 int main()  
+4 { 
+5 int hrs;    // so gio      
+6 int mins;   // so phut 
+7 int tot_mins;    //tong so phut 
+8  
+printf("Nhap so gio: "); 
+9  
+scanf("%d", &hrs); 
+10  
+printf("Nhap so phut: "); 
+11  
+scanf("%d", &mins); 
+12  
+tot_mins = mins + (hrs * M); 
+13  
+printf("Tong cong co: %d phut.\n", tot_mins); 
+14  
+return(0); 
+15 } 
+Kết quả chƣơng trình 
+Nhap so gio: 4 
+Nhap so phut: 37 
+Tong cong co: 277 phut. 
+ Bài tập 2.5 
+Viết chƣơng trình thực hiện phép cộng, trừ, nhân, chia hai số, chia 
+lấy dƣ. 

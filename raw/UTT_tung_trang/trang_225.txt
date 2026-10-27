@@ -1,0 +1,35 @@
+// Trang 225 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+225 
+Sau khi doi a = 5 va b = 9 
+Nhận xét:  
+- Ở dòng 2 hàm hoandoi chúng ta sử dụng hai tham số hình thức là 
+tham trị. Khi gọi đến hàm này ở dòng 14, hoandoi(x,y) máy tính sẽ cấp 
+phát 2 ô nhớ a, b là bản sao của 2 biến x và y, 2 ô nhớ này có địa chỉ khác 
+x và y nên khi thực hiện các lệnh trong hàm này nó chỉ thực hiện trên 2 
+bản sao này và nó chỉ thay đổi trong hàm này. Khi ra khỏi hàm sẽ bị giải 
+phóng khỏi bộ nhớ. Nhƣ vậy, không thể mang giá trị của đối ra khỏi hàm. 
+Nên các tham số thực sự x và y truyền vào cho a, b không bị thay đổi. 
+ Ví dụ 4.6 
+Nhập vào 2 số nguyên x, y. Hoán đổi vị trí hai số nguyên x và y (ở 
+Ví dụ 4.5), kiểm tra địa chỉ của các biến ở các hàm. 
+Chƣơng trình 
+1 #include<stdio.h> 
+2 void hoandoi(int a, int b) 
+3 { 
+4  int tg; 
+5  tg = a; 
+6  a = b; 
+7  b = tg; 
+8 printf("Hoan doi trong ham a = %d va b = %d\n", a, b); 
+9 printf("Dia chi cua bien a,b trong ham hoan doi la:\na = %p\nb = 
+%p\n", &a, &b); 
+10 } 
+11 main() 
+12 { 
+13  int x = 5, y = 9; 
+14 printf("Truoc khi hoan doi a = %d va b = %d\n", x, y); 
+15  hoandoi(x, y); 
+16 printf("Dia chi cua bien x,y trong main:\n x= %p\ny = %p\n", &x, 
+&y); 
+17  printf("Sau doi a = %d va b = %d\n",x, y); 

@@ -1,0 +1,37 @@
+// Trang 560 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+560 
+5 
+ /*  hai dòng sau đây là cú pháp  để viết một chƣơng trình đồ 
+họa.*/ 
+6 
+   int gd = DETECT, gm; 
+7 
+   initgraph(&gd, &gm, ""); 
+8 
+   setbkcolor (GREEN); 
+9 
+   getch(); 
+10 
+   closegraph(); 
+11 
+   return 0; 
+12 
+} 
+ Kết quả chƣơng trình 
+Thiết lập màu nền màu xanh lá cây 
+ 
+8.2.3. Các hàm đồ họa để vẽ hình 
+Khi chúng ta muốn vẽ một hình bất kỳ nào đó trên màn hình, chúng ta 
+cần các hàm khác nhau đƣợc xác định trong thƣ viện Graphics.h. Các hàm 
+này đƣợc sử dụng để vẽ các hình ảnh khác nhau trên màn hình và cũng để 
+cung cấp các chế độ đồ họa hấp dẫn theo yêu cầu của ngƣời sử dụng.  
+Các hàm đồ họa đƣợc sử dụng để phát triển các chƣơng trình đồ họa, 
+vẽ hình, tạo hình ảnh và phát triển trò chơi và hoạt hình, v.v.  
+Các hàm chứa trong thƣ viện Graphics.h đƣợc sử dụng để vẽ các 
+hình dạng nhƣ hình tròn, hình elip, hình chữ nhật, đƣờng thẳng và các 
+hình dạng hình học khác. Chúng ta có thể tô màu cho các hình ảnh này và 
+màu sắc cũng có thể đƣợc thay đổi bằng cách sử dụng các hàm thiết lập 
+màu sắc. 
+Sau đây là bảng cung cấp tổng quan về các hàm trong thƣ viện 
+Graphics.h thƣờng đƣợc sử dụng để vẽ các hình đồ họa: 

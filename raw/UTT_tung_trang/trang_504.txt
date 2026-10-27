@@ -1,0 +1,47 @@
+// Trang 504 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+504 
+13     printf("Nhap vao so: "); 
+14     scanf("%d",&num); 
+15     fprintf(fptr,"%d",num); 
+16     fclose(fptr); 
+17     return 0; 
+18  } 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao so: 15 
+ 
+Mở tệp data.txt trong thƣ mục chứa tệp chƣơng trình: 
+ 
+15 
+ 
+Số 15 đã đƣợc ghi vào tệp 
+ Ví dụ 7.4 
+ Đọc tệp văn bản với lệnh fscanf() 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+int main() 
+4 
+{ 
+5 
+   int num; 
+6 
+   FILE *fptr; 
+7 
+   if ((fptr = fopen("data1.txt","r")) == NULL){ 
+8 
+       printf("Loi! khi mo tep"); 
+9 
+       //Chuong trinh se thoat neu con tro tep tra ve NULL 
+10        exit(1); 
+11    } 
+12    fscanf(fptr,"%d", &num); 
+13    printf("Gia tri cua n = %d", num); 
+14    fclose(fptr);  
+15    return 0; 
+16 } 
+Giả sử tệp data1.txt đang nằm cùng thƣ mục với tệp chƣơng trình, 
+chứa dữ liệu nhƣ sau: 

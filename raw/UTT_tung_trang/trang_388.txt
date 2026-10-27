@@ -1,0 +1,48 @@
+// Trang 388 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+388 
+Phan tu - 1: 4 
+Phan tu - 2: 5 
+Phan tu - 3: 12 
+Phan tu - 4: 33 
+Phan tu - 5: 65 
+ Bài tập 5.9 
+Cải tiến chƣơng trình đƣợc viết ở ví dụ 5.48, hãy viết chƣơng trình 
+sắp xếp mảng gồm mƣời phần tử theo thứ tự tăng dần. 
+Hàm sắp xếp gồm hai tham số: một con trỏ trỏ tới mảng và kích 
+thƣớc của mảng. Hàm trả về một con trỏ trỏ tới mảng đã đƣợc sắp xếp. 
+ Chƣơng trình 
+1 
+#include<stdio.h> 
+2 
+#include<conio.h>  
+3 
+int *sortAsc(int *p, int size);  
+4 
+   int main()  
+5 
+    {  
+6 
+     int arr[]={23,34,2,3,5,12,42,56,89,8};  
+7 
+     int *p=sortAsc(arr,10);  
+8 
+     // dau ra la mang da sap xep 
+9 
+ 
+ int i;  
+10      printf("Mang sau khi sap xep:\n"); 
+11  
+ for(i=0;i<10;i++)  
+12        printf("%d\n",*(p+i));  
+13      return 0; 
+14     }  
+15     int *sortAsc(int *p, int n){  
+16     int i,j;  
+17     for(i=0;i<n;i++)  
+18         for(j=i+1;j<n;j++)  
+19             if(*(p+j)<*(p+i))  
+20               {  
+21                 int temp=*(p+j);  
+22                 *(p+j)=*(p+i);  
+23                 *(p+i)=temp;  

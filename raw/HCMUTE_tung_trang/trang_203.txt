@@ -1,0 +1,58 @@
+// Trang 203 - Ngôn ngữ lập trình C_ebook.pdf
+
+200
+Trong ví dụ trên, chương trình chính được viết đầu tiên. Có 7 hàm 
+do người lập trình định nghĩa. Các hàm được khai báo từ dòng thứ 4 đến 
+dòng thứ 10, và được định nghĩa tương ứng bên dưới.  
+Khi số lượng hàm cũng như số lượng dòng lệnh chương trình 
+tăng lên, người ta thường chia ra thành nhiều tệp mã nguồn. Điều này 
+hữu ích cho quá trình kiểm thử và phát triển chương trình. Khi các hàm 
+được viết trong một tệp, các hàm từ các tệp khác cũng có thể sử dụng 
+các hàm này. Như vậy, việc tách riêng các hàm giúp cho việc chia sẻ 
+các hàm thuận lợi hơn.
+Ví dụ trên sẽ được viết lại với 3 tệp, tệp chứa hàm main sẽ gọi 
+các hàm trong 2 tệp còn lại. Các tệp đều nằm trong cùng một thư mục. 
+Chương trình được sắp xếp lại như sau bao gồm một tệp chứa chương 
+trình chính.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+/*chapter08.c*/
+#include  <stdio.h>
+#include <stdlib.h>
+#include “thaotacmang.h”
+#include “tinhtoan.h”
+void main (void)
+{
+int *arr;
+int n ;
+int max, min;
+float tb;
+do{
+printf(“ Nhap n “);
+scanf(“%d”,&n);
+}while(n<=0);
+arr = (int*) malloc (n*sizeof(int));
+Nhapmang(arr,n);
+printf(“cac phan tu mang :\n”);
+Inmang(arr,n);
+max = Timmax(arr,n);
+min = Timmin(arr,n);

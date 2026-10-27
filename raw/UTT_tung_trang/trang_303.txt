@@ -1,0 +1,41 @@
+// Trang 303 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+303 
+26 } 
+27  int main() 
+28 { 
+29     int m, n; 
+30     int a[100][100]; 
+31     printf("\nNhap vao so hang cua mang hai chieu: "); 
+32     scanf("%d",&m); 
+33     printf("\nNhap vao so cot cua mang hai chieu: "); 
+34     scanf("%d",&n); 
+35     Sinh_mang_nn(a,m,n); 
+36     Hien_thi(a,m,n); 
+37     getch(); 
+38     return 0; 
+39 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao so hang cua mang hai chieu: 3 
+ 
+Nhap vao so cot cua mang hai chieu: 4 
+ 
+Mang sau khi nhap: 
+ 
+12      16      9       18 
+ 
+34      78      90      43 
+ 
+90      52      7       35 
+Dạng 2: 
+Duyệt các phần tử của mảng: Duyệt qua các phần tử của mảng, sử dụng 
+chỉ số hàng và chỉ số cột, để thực hiện một số thao tác với mảng: tính tổng, 
+tìm max, min, liệt kê các phần tử thỏa mãn một số tính chất nào đó. 
+ Ví dụ 5.22 
+Nhập mảng hai chiều có kích thƣớc m  n, trong đó m là số hàng, n 
+là số cột. In phần tử lớn nhất, nhỏ nhất trong mảng. 
+ Phác thảo lời giải 
+- Xây dựng hàm nhập mảng hai chiều, sử dụng ba tham số là tên biến 
+mảng hai chiều (trong đó chỉ số cột phải đƣợc chỉ định trƣớc) và số hàng, 
+số cột của mảng hai chiều.  

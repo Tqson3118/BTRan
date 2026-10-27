@@ -1,0 +1,36 @@
+// Trang 199 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+199 
+********* 
+******** 
+******* 
+****** 
+***** 
+**** 
+*** 
+** 
+* 
+Chƣơng trình: 
+1 #include <stdio.h> 
+2 int main() { 
+3     int i, j; 
+4     for (i=0; i<10; i++){ 
+5         for (j=0; j<10-i; j++){ 
+6             printf("*"); 
+7         } 
+8         printf("\n"); 
+9     } 
+10     return (0); 
+11 } 
+ Bài tập 3.9 
+Rút tiền tại cây ATM. Giả sử tại cây ATM của một ngân hàng X chỉ 
+chứa các loại tiền mệnh giá 20000, 50000, 100000, 200000. Một khách 
+hàng một rút một số tiền a nào đó. Số tiền a cần rút phải là bội số của 
+20000. Hãy in ra màn hình tất cả các phƣơng án mà cây ATM có thể 
+“nhả” tiền ra cho khách hàng? Tổng có bao nhiêu phƣơng án rút tiền? 
+Phác thảo lời giải 
+- Khai báo các hằng m1, m2, m3, m4 ghi nhận các mệnh giá 20000, 
+50000, 100000, 200000. 
+- Nhập và kiểm tra số tiền nhập vào, đảm bảo là bội số của 20000. 
+- Xác định số tờ tối đa của từng mệnh giá: số tờ tối đa của từng mệnh 
+giá bằng số tiền chia cho mệnh giá. 

@@ -1,0 +1,13 @@
+// Trang 21 - Ngôn ngữ lập trình C_ebook.pdf
+
+18
+Trong các khối quyết định có điều kiện (các khối hình thoi) luôn 
+có 2 ngõ ra, một cho điều kiện đúng và một cho điều kiện sai. Các từ 
+khóa biểu diễn cho cặp luận lý đúng sai có thể dùng là True/False, Yes/
+No, T/F, Y/N, Đ/S hay một ngôn ngữ nào khác miễn là nó thỏa mãn ý 
+nghĩa biểu diễn luận lý đúng và sai. Chương trình máy tính là một quá 
+trình xử lý tuần tự, trong trường hợp xử lý song song sẽ dùng các kỹ 
+thuật khác và chưa được đề cập ở đây, chính vì điều đó, từ vị trí bắt đầu 
+chỉ có một đường duy nhất đi đến vị trí kết thúc.
+Ví dụ 1.4. Hãy giải thích hoạt động của chương trình dựa vào lưu 
+đồ sau đây:

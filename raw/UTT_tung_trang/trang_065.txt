@@ -1,0 +1,51 @@
+// Trang 65 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+65 
+3 
+{ 
+4 
+    int a = 9, b = 15; 
+5 
+    printf("Vi du ve OR bit:\n") 
+6 
+    printf("Ket qua = %d", a|b); 
+7 
+    return 0; 
+8 
+} 
+Kết quả chƣơng trình 
+Vi du ve OR bit: 
+Ket qua = 15 
+c. XOR bit 
+ 
+Kết quả của toán tử XOR bit là 1 nếu các bit tƣơng ứng của hai 
+toán hạng ngƣợc nhau. Nó đƣợc ký hiệu là ^. 
+ 
+ 
+1 ^ 1 = 0 
+1 ^ 0 = 1  
+ 
+ 
+ 
+0 ^ 1 = 1  
+0 ^ 0 = 0 
+ Ví dụ 1.53 
+Chúng ta hãy tìm hiểu cách tính XOR bit  của hai số nguyên 9 và 15. 
+910    =   000010012 
+1510  =   000011112 
+Toán tử XOR bit của 16 và 30 
+   910    =   000010012 
+           |  1510  =   000011112 
+ 
+ 
+                000001102 =  15 (Trong hệ thập phân) 
+ Ví dụ 1.54 
+Xét chƣơng trình sau đây: 
+1 
+#include <stdio.h> 
+2 
+int main() 
+3 
+{ 
+4 
+    int a = 9, b = 15; 

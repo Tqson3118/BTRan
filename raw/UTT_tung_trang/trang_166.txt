@@ -1,0 +1,51 @@
+// Trang 166 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+166 
+2 int main() 
+3 { 
+4 int n, donvi; 
+5 printf("Nhap n: "); 
+6 scanf("%d", &n); 
+7 printf("So dao cua %d la ", n); 
+8 for(;n>0;) 
+9  
+{ 
+10 
+ 
+donvi = n % 10; 
+11 
+ 
+n = n / 10; 
+12 
+ 
+printf("%d", donvi); 
+13 
+} 
+14 return 0; 
+15 } 
+Kết quả chƣơng trình 
+Nhap n: 1706 
+So dao cua 1706 la 6071 
+ Ví dụ 3.24 
+Viết chƣơng trình tính căn số liên tục sau:   
+  
+√  √    
+√      √  √ 
+ 
+   
+ 
+   
+ 
+ Phác họa lời giải 
+Dễ dàng nhận thấy công thức truy hồi của căn liên tục trên: 
+Điều kiện đầu:    √    
+   
+√    
+   
+ 
+   
+√    
+   
+ 
+ 
+…. 

@@ -1,0 +1,54 @@
+// Trang 40 - Ngôn ngữ lập trình C_ebook.pdf
+
+37
+4. Phép gán.
+Với phép chia /, kết quả sẽ là số nguyên nếu cả số chia và số bị 
+chia đều có kiểu dữ liệu là số nguyên, kết quả sẽ là số thực nếu số chia 
+hoặc số bị chia có kiểu dữ liệu là số thực. Ví dụ, đoạn lệnh sau:
+int a = 5, b = 2;
+float c = a/b;
+sẽ làm cho giá trị của biến c là 2.0 vì phép chia a/b sẽ cho kết quả 
+là số nguyên.
+Nhưng khi thực thi các lệnh
+int a = 5;
+float b = 2;
+float c = a/b;
+thì giá trị của biến c là 2.5 vì phép chia a/b sẽ cho kết quả là số thực.
+ Các phép toán quan hệ: được sử dụng để so sánh giá trị của các 
+toán hạng. Khác với các phép toán số học, trong đó toán tử bên trái được 
+cập nhật giá trị, các phép toán quan hệ trả về kết quả là giá trị luận lý: đúng 
+hoặc sai. Các phép toán quan hệ bao gồm các phép toán so sánh như sau:
+Nhóm phép 
+toán
+Ký hiệu trong 
+ngôn ngữ C
+Ý nghĩa
+Ví dụ
+Quan hệ
+>
+So sánh lớn hơn
+a > b
+>=
+So sánh lớn hơn 
+hoặc bằng
+a >= b
+<
+So sánh nhỏ 
+hơn
+c < d
+<=
+So sánh nhỏ 
+hơn hoặc bằng
+c <= d
+==
+So sánh bằng
+a == 5
+!=
+So sánh không 
+bằng
+a != 2
+Bảng 1.4. Các phép toán quan hệ trong ngôn ngữ C
+float a;
+int b=5,c=2;
+a=(float)b/c
+đây là ép kiểu giúp cho kq in ra thuộc kdl số thực

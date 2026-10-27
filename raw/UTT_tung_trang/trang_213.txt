@@ -1,0 +1,37 @@
+// Trang 213 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+213 
+12 } 
+13 void tong(int x,int y)    // dinh nghia ham tinh tong   
+14 { 
+15     int kq; 
+16     kq = x + y; 
+17     printf("Tong %d + %d = %d\n", x , y , kq);                  
+18 } 
+Kết quả chƣơng trình: 
+Nhap vao ba so: 12 23 43 
+Tong 12 + 23 = 35 
+Tong 12 + 43 = 55 
+Tong 23 + 43 = 66 
+4.1.1.2. Phân loại hàm 
+a. Thư viện chuẩn 
+Các hàm trong thƣ viện chuẩn là các hàm dựng sẵn trong ngôn ngữ C 
+để xử lý các công việc nhƣ tính toán trong toán học, các hàm xử lý vào ra 
+I/O, xử lý chuỗi, v.v. 
+Các  hàm này đƣợc xác định trong các tệp tiêu đề. Khi khai báo các 
+tệp tiêu đề này, các hàm có sẵn này đƣợc sử dụng. Chẳng hạn, hàm 
+printf() là hàm thƣ viện chuẩn để gửi đầu ra đƣợc định dạng đến màn hình 
+(hiển thị dữ liệu trên màn hình). Hàm này đƣợc định nghĩa trong tệp tiêu 
+đề “stdio.h”. 
+Có rất nhiều hàm đƣợc định nghĩa trong cùng một thƣ viện, chẳng 
+hạn trong thƣ viện “stdio.h”, ngoài hàm printf(), một số hàm nhƣ scanf(), 
+fprintf(), getchar(), v.v. sẽ đƣợc sử dụng khi đã khai báo thƣ viện 
+“stdio.h”. 
+- Hàm có sẵn trong thƣ viện, đƣợc phân chia thành 2 loại: 
+o Hàm có giá trị trả về: sqrt(), abs(), v.v. 
+o Hàm không có giá trị trả về: exit(), getch(), v.v. 
+b. Hàm do người dùng định nghĩa 
+ 
+Ngôn ngữ C cho phép lập trình viên xác định các hàm. Hàm đƣợc 
+tạo bởi ngƣời dùng đƣợc gọi là hàm do ngƣời dùng định nghĩa.  
+Hàm do ngƣời lập trình tự định nghĩa: có 2 loại: 

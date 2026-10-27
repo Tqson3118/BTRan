@@ -1,0 +1,47 @@
+// Trang 143 - Ngôn ngữ lập trình C_ebook.pdf
+
+140
+Để hiểu rõ cách thức chương trình hoạt động, có thể xem hình vẽ 
+mô tả như sau: 
+void main (void){
+int a=5,b=7,c=6,d=9,max1,max2,max;
+  max1 = timmax (a,b);
+  max2 = timmax(c,d);
+  max = timmax(max1, max2);                   
+  printf( " max = :%d",max);
+  }
+int   timmax(int a, int b)
+{
+int max;
+if (a>b) max = a;
+else   max = b;
+return   max;
+}
+int   timmax(int a, int b)
+{
+int max;
+if (a>b) max = a;
+else   max = b;
+return   max;
+}
+int   timmax(int a, int b)
+{
+int max;
+if (a>b) max = a;
+else   max = b;
+return   max;
+}
+Hình 6.2. Mô tả hoạt động của chương trình khi gọi hàm
+Hình 6.2 mô tả thứ tự hoạt động của chương trình. Trong đó, 
+khi gọi làm lần thứ nhất, giá trị 2 biến a, b, được sao chép vào giá 
+trị 2 biến nội bộ bên trong hàm, sau khi so sánh, hàm trả về kết quả 
+giá trị lớn nhất lưu lại trong biến max1. Khi gọi làm lần 2, hàm lại 
+thực thi với 2 giá trị mới là c và d, kết quả trả về cho biến max2. 
+Tương tự, khi gọi hàm lần thứ 3, kết quả trả về cho biến max. Như 
+vậy, thay vì thực hiện đoạn chương trình nhiều lần, ta đi định nghĩa 
+hàm 1 lần và cho phép hàm được gọi nhiều lần, như minh chứng ở 
+hình 6.2. Cần lưu ý là chương trình trên chỉ là một ví dụ minh họa 
+cách thức hàm hoạt động, không phải là một giải thuật tối ưu để tìm 
+số lớn nhất trong 4 số.
+6.3. PHÂN LOẠI HÀM THEO THAM SỐ VÀ GIÁ TRỊ TRẢ VỀ
+Trong mục 6.2, hàm được định nghĩa đầy đủ với kiểu giá trị trả 

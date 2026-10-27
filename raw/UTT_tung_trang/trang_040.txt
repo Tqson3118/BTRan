@@ -1,0 +1,41 @@
+// Trang 40 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+40 
+hoặc double, trong đó từ khóa float xác định một số chấm động chính xác 
+đơn trong phạm vi [1.2E-38, 3.4E+38], từ khóa double xác định một số 
+chấm động chính xác kép trong phạm vi [2.3E-308, 1.7E+308]. Số chữ số 
+có nghĩa sau dấu thập phân đƣợc gọi là độ chính xác, độ chính xác của 
+kiểu float là 6 chữ số thập phân và double là 15 chữ số thập phân. 
+ Ví dụ 1.17 
+Cho các khai báo sau đây: 
+float percentage = 95.67; 
+const float PI = 3.14159265359f; 
+double speed = 2.998e+8; 
+1.4.1.4. Kiểu void 
+Giống nhƣ tên, kiểu void không xác định giá trị. Từ khóa void đƣợc 
+sử dụng để xác định hàm không trả về giá trị hoặc kiểu con trỏ. 
+ Ví dụ 1.18 
+void * p; //Định nghĩa con trỏ p kiểu void. 
+1.4.2. Kiểu dữ liệu dẫn xuất 
+Các kiểu dữ liệu nguyên thủy đƣợc trình bày trong 1.4.1 đƣợc sử 
+dụng cho việc khai báo các biến trong chƣơng trình, tùy thuộc vào phạm 
+vi sử dụng. Những kiểu dữ liệu này có thể đƣợc sửa đổi cho phù hợp với 
+những tình huống khác nhau. Kết quả của việc sửa đổi đó, chúng ta có 
+đƣợc những kiểu dữ liệu dẫn xuất từ các kiểu nguyên thủy này. 
+Một kiểu dữ liệu dẫn xuất đƣợc xác định bằng cách xác định các bổ 
+từ chỉ kích thƣớc hoặc dấu cùng với các kiểu dữ liệu nguyên thủy. Các 
+kiểu dẫn xuất đƣợc tạo bằng các dữ liệu nguyên thủy cùng với các hành vi 
+hay thuộc tính đƣợc sửa đổi. Các bổ từ đƣợc sử dụng để kết hợp trong C 
+bao gồm: signed, unsigned, long và short. Các bổ từ trên đƣợc áp dụng 
+với kiểu dữ liệu ký tự và kiểu dữ liệu số nguyên, bổ từ long cũng có thể 
+đƣợc áp dụng với kiểu double. 
+Để khai báo kiểu dữ liệu dẫn xuất, ta đặt các bổ từ trƣớc các kiểu dữ 
+liệu nguyên thủy. 
+ Ví dụ 1.19 
+signed int a;  
+ 
+ 
+unsigned int b; 
+signed char c;  
+ 
+ 

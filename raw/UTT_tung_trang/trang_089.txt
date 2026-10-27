@@ -1,0 +1,42 @@
+// Trang 89 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+89 
+Chƣơng 2 
+CÁC LỆNH NHẬP - XUẤT DỮ LIỆU TRONG C 
+ 
+ 
+Nội dung của Chương 2, đề cập đến các câu lệnh được sử dụng để 
+nhập xuất các dữ liệu trên màn hình Console, hoặc đọc ghi trên các tệp. 
+Dữ liệu nhập vào hoặc xuất ra có thể là một ký tự, một đoạn văn bản, một 
+con số (số nguyên, số thực), v.v. Tùy theo dữ liệu nhập vào hoặc xuất ra 
+mà chúng ta có thể sử dụng những câu lệnh nhập xuất hợp lý, hiệu quả 
+với các mã định dạng để có kết quả như mong muốn. 
+2.1. NHẬP XUẤT DỮ LIỆU 
+Nhƣ chúng ta đều biết ba chức năng thiết yếu của máy tính là đọc, xử 
+lý và ghi dữ liệu. Phần lớn các chƣơng trình lấy dữ liệu làm đầu vào và 
+sau đó sau khi xử lý dữ liệu đã xử lý đƣợc hiển thị đƣợc gọi là thông tin. 
+Trong lập trình C, chúng ta có thể sử dụng hàm scanf() và printf() đƣợc 
+xác định trƣớc để đọc và in dữ liệu. 
+2.1.1. Hàm kết xuất dữ liệu printf() 
+Hàm printf() đƣợc viết tắt của cụm từ “print formated”, là một hàm 
+dựng sẵn trong thƣ viện “stdio.h”, có khả năng chuyển tạo khuôn mẫu đầu 
+ra trên màn hình đƣợc cung cấp với chuỗi có mã định dạng phù hợp tƣơng 
+ứng với các kiểu dữ liệu và theo trình tự xuất hiện của các đối số. 
+Cú pháp 
+printf("format 
+string", 
+[argument_1, 
+argument_2,…, 
+argument_n]); 
+Trong đó:  
+printf: tên hàm, phải viết bằng chữ thƣờng. 
+format string: chuỗi định dạng, đƣợc đặt trong cặp dấu nháy kép “ ”, 
+bao gồm một trong các thành phần sau đây: 
+- Chuỗi ký tự: in ra màn hình chuỗi ký tự đƣợc đƣa vào. 
+- Đối với những ký tự chuyển đổi dạng thức cho phép kết xuất giá 
+trị của các đối số ra màn hình (đƣợc gọi là mã định dạng). Mã định dạng 
+còn đƣợc gọi là các đặc tả, bao gồm dấu % và theo sau là các ký tự c, d, f, 
+u, s, v.v. tƣơng ứng với các kiểu dữ liệu của các đối số: 
++ %c: char (ký tự đơn); 
++ %s: string (chuỗi ký tự); 
++ %d hoặc %i: int (số nguyên dạng thập phân có dấu); 

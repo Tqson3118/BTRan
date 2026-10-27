@@ -1,0 +1,60 @@
+// Trang 409 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+409 
+4 
+    char s[150]; 
+5 
+    int i, j; 
+6 
+    printf("Nhap vao mot chuoi:\n "); 
+7 
+    gets(s); 
+8 
+     // lap tu ky tu dau tien den khi gap ky tu ket thuc chuoi '\0' 
+9 
+ 
+ //co the su dung vong lap while  
+10 
+    for(i = 0; s[i] != '\0'; ++i) 
+11 
+     { // neu gap 1 ky tu khong phai la ky tu (nam ngoai pham vi tu 
+a->z hoac A->Z) 
+12 
+        while (!( (s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 
+'Z') || s[i] == '\0') ) 
+13 
+        { // neu tai vi tri i la 1 ky tu dac biet hoac chu so 
+14 
+          // lan luot di doi cac ky tu cac ky tu tu phai qua trai, bat dau 
+tu i+1  
+15 
+            for(j = i; s[j] != '\0'; ++j)  
+16 
+            { 
+17 
+                s[j] = s[j+1];  
+18 
+            } 
+19 
+            s[j] = '\0';  
+20 
+        } 
+21 
+    } 
+22 
+    printf("Chuoi sau khi loai bo cac ky tu dac biet, chu so:\n "); 
+23 
+    puts(s); 
+24 
+    return 0; 
+25 
+} 
+ Kết quả chƣơng trình: 
+Nhap vao mot chuoi:  
+Sinh vien k69 .khoa cntt@truong dhcngtvt 
+Chuoi sau khi loai bo cac ky tu dac biet, chu so:  
+Sinhvienkkhoacntttruongdhcngtvt 
+ Bài tập 5.21 
+Viết chƣơng trình nhập vào một chuỗi ký tự. Cho biết ký tự nào xuất 
+hiện nhiều nhất trong chuỗi và số lần xuất hiện của ký tự đó? 
+ Chƣơng trình 

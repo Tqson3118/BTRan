@@ -1,0 +1,61 @@
+// Trang 443 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+443 
+ Ví dụ 6.21  
+ Xét chƣơng trình sau đây: 
+1 
+#include<stdio.h>   
+2 
+#include <stdlib.h>  
+3 
+#define MAX 100 
+4 
+struct Sinh_vien 
+5 
+{   
+6 
+    char ten_sv[20];   
+7 
+    char ma_sv[10];   
+8 
+    float diemtb;   
+9 
+};   
+10 int main()   
+11 {   
+12     struct Sinh_vien sv[MAX]; 
+13     int n, i; 
+14     printf("Nhap vao so luong sinh vien:\n"); 
+15     scanf("%d", &n); 
+16     //nhap thong tin cua cac sinh vien 
+17  
+printf("Nhap vao thong tin cua %d sinh vien:\n", n); 
+18     for(i = 0;i < n;i++) 
+19     { 
+20     printf("Nhap vao ten cua sinh vien thu %d:\n", i);   
+21  
+fflush(stdin); 
+22     gets(sv[i].ten_sv); 
+23  
+printf("Nhap vao ma cua sinh vien thu %d:\n",i);   
+24  
+fflush(stdin); 
+25  
+gets(sv[i].ma_sv); 
+26  
+printf("Nhap vao diem cua sinh vien thu %d:\n",i);   
+27  
+scanf("%f", &sv[i].diemtb);   
+28     } 
+29     // in thong tin cua cac sinh vien 
+30  
+printf("In thong tin chi tiet cua %d sinh vien:\n", n);   
+31     for(i = 0;i < n;i++) 
+32     { 
+33  
+printf("%s 
+%s 
+%f\n", 
+sv[i].ten_sv, 
+sv[i].ma_sv, 
+sv[i].diemtb);   

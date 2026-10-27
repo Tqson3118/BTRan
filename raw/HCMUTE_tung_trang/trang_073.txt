@@ -1,0 +1,17 @@
+// Trang 73 - Ngôn ngữ lập trình C_ebook.pdf
+
+70
+141: là mã ngành học
+125: là số thứ tự của sinh viên
+Hãy vẽ lưu đồ xử lý và viết chương trình thực hiện yêu cầu sau:
+ Nhập vào một mã số sinh viên theo định dạng trên.
+ Kiểm tra và cho biết sinh viên đó học ngành nào trong các 
+ngành học sau:
+mã ngành
+tên ngành
+141
+Điện tử - Truyền thông
+119
+Kỹ thuật Máy tính
+101
+Điện - Điện tử

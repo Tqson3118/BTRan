@@ -1,0 +1,27 @@
+// Trang 169 - Ngôn ngữ lập trình C_ebook.pdf
+
+166
+Các câu lệnh ở đoạn lệnh từ dòng lệnh số 17 đến dòng lệnh số 31 
+có tác dụng yêu cầu người dùng nhập các thông tin: tên thiết bị, năm sản 
+xuất, giá tiền, và trạng thái thiết bị, sau đó lưu vào vùng nhớ của biến c. 
+Câu lệnh gets(tam); ở dòng lệnh số 28 có tác dụng xóa bỏ ký tự Enter 
+còn xót lại của lệnh scanf dữ liệu trước đó scanf(“%f”,&c.giaTien); 
+ở dòng lệnh số 26, giúp cho việc nhập ký tự sau đó scanf(“%c”,&c.
+trangThai); ở dòng lệnh số 31 không bị trôi.
+Các câu lệnh trong đoạn lệnh từ dòng lệnh số 33 đến dòng lệnh số 
+35 có tác dụng in ra màn hình các thông tin đã lưu trong biến c. Kết quả 
+sau khi chạy chương trình trên là:
+Nhap thong tin cua 1 thiet bi:
+Nhap ten: may lanh
+Nhap nam san xuat: 2019
+Nhap gia tien: 4.5
+Nhap trang thái: Tot (T) hoac Hong (H): T
+Thong tin thiet bi da nhap:
+may lanh, 2019, 4.5, T
+trong đó, các thông tin: may lanh, 2019, 4.5, T là thông tin 
+người dùng đã nhập vào từ bàn phím.
+7.1.5. Mảng một chiều kiểu cấu trúc
+Khi cần phát sinh nhiều vùng nhớ cấu trúc cùng chung một kiểu 
+cấu trúc, ta có thể khai báo một mảng một chiều các phần tử kiểu cấu trúc. 
+Mảng một chiều các phần tử kiểu cấu trúc sẽ được khai báo tương tự như 
+các mảng một chiều khác. Câu lệnh khai báo một mảng một chiều sau:

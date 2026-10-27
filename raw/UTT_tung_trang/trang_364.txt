@@ -1,0 +1,53 @@
+// Trang 364 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+364 
+12   else 
+13     printf("%s khong la chuoi doi xung.\n",a); 
+14   return 0; 
+15 } 
+ Kết quả chƣơng trình: 
+ 
+Trƣờng hợp 1: 
+ 
+Nhap vao mot chuoi: 
+ 
+abcba 
+ 
+abcba la chuoi doi xung. 
+ 
+Trƣờng hợp 2: 
+ 
+Nhap vao mot chuoi: 
+ 
+abcab 
+ 
+abcab khong la chuoi doi xung. 
+Cách 2: 
+Phác thảo lời giải 
+- Nhập vào chuỗi a; 
+- Sử dụng các biến begin, end, middle để đánh dấu các vị trí đầu, 
+cuối, ở giữa của chuỗi a. 
+- Sử dụng biến length để lƣu trữ chiều dài của chuỗi a (Sử dụng hàm 
+strlen() hoặc sử dụng một vòng lặp while đếm từ ký tự đầu tiên cho đến 
+khi gặp ký tự „\0‟ thì dừng); chuỗi a chứa các ký tự có chỉ số từ 0 đến 
+length -1; 
+- Gán middle = length/2 (vị trí giữa của chuỗi), end = length - 1 
+(đánh dấu ký tự cuối của chuỗi a). 
+- Lần lƣợt so sánh các phần tử a[begin] với a[end], a[begin +1] với 
+a[end -1],… (Sử dụng một vòng lặp for để xử lý). 
+- Nếu tất cả các cặp đều giống nhau, khẳng định a là chuỗi đối xứng, 
+ngƣợc lại chỉ cần 1 cặp không thõa mãn tính chất, sử dụng lệnh break để 
+thoát và thông báo a không phải là chuỗi đối xứng. 
+Chƣơng trình 
+1 
+#include <stdio.h> 
+2 
+ int main() 
+3 
+{ 
+4 
+  char a[100]; 
+5 
+  int begin, middle, end, length = 0; 
+6 
+  printf("Nhap vao mot chuoi:\n"); 

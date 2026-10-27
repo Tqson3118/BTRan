@@ -1,0 +1,73 @@
+// Trang 202 - Ngôn ngữ lập trình C_ebook.pdf
+
+199
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+	{
+		 int i,min ;
+		 min = a[0] ;
+		 for (i=1;i<n;i++)
+		 min = (min>a[i])?a[i]:min ;
+		 return min ;
+	}
+void  Hoanvi(int *x, int *y)
+{
+	int tam;
+	tam  = *x;
+	*x = *y;
+	*y = tam;
+}
+float Tinhtrungbinh(int a, int b)
+{
+	return (float)(a+b)/2 ;
+}
+Kết quả khi chạy chương trình với n được nhập n = 6, các phần tử 
+mảng được nhập và kết quả tương ứng như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+Nhap n 6
+a[0] =  9
+a[1] =  4
+a[2] =  2
+a[3] =  7
+a[4] =  5
+a[5] =  6
+cac phan tu mang :
+9, 4, 2, 7, 5, 6,
+max = 9, min = 2
+trung binh  = 5.50
+cap nhat mang  :
+6, 4, 2, 7, 5, 9,
+mang sau khi sap xep :
+2, 4, 5, 6, 7, 9,

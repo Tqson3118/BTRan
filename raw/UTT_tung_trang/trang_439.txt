@@ -1,0 +1,50 @@
+// Trang 439 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+439 
+20 
+  scanf("%s", p->ten_sv); 
+21 
+  printf("Nhap diem cua sinh vien: "); 
+22 
+  scanf("%f", &p->diem_tb); 
+23 
+    // Hien thi thong tin qua bien sv 
+24 
+  printf("\nHien thi ket qua qua bien sv:\n"); 
+25 
+  printf("Ma_sv: %s\n", sv.ma_sv); 
+26 
+  printf("Ten sv: %s\n", sv.ten_sv); 
+27 
+  printf("Diem TB: %f\n", sv.diem_tb); 
+28 
+  // Hien thi thong tin qua bien con tro p 
+29 
+  printf("\nHien thi ket qua qua bien con tro p:\n"); 
+30 
+  printf("Ma sv: %s\n", p->ma_sv); 
+31 
+  printf("Ten sv: %s\n", p->ten_sv); 
+32 
+  printf("Diem TB: %f\n", p->diem_tb); 
+33 
+  return 0; 
+34 
+} 
+  Kết quả chƣơng trình: 
+Nhap vao ma sinh vien: sv01 
+Nhap vao ten sinh vien: Kien 
+Nhap diem cua sinh vien: 8.9 
+Hien thi ket qua qua bien sv: 
+Ma_sv: sv01 
+Ten sv: Kien 
+Diem TB: 8.900000 
+Hien thi ket qua qua bien con tro p: 
+Ma sv: sv01 
+Ten sv: Kien 
+Diem TB: 8.9 
+6.2. MẢNG CẤU TRÚC 
+Xem xét tình huống sau đây, chúng ta cần lƣu trữ thông tin của ba 
+sinh viên, thông tin của sinh viên bao gồm mã sinh viên, tên sinh viên, 
+điểm của sinh viên. Với những gì đã học ở phần trƣớc, chúng ta có thể 
+đƣa ra cấu trúc để lƣu trữ nhƣ sau: 

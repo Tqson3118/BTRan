@@ -1,0 +1,42 @@
+// Trang 351 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+351 
+16   } 
+17   d[c] = '\0'; 
+18 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi ky tu s: 
+ 
+cngtvt 
+ 
+Sao chep noi dung chuoi s va chuoi d: cngtvt 
+ Cách 4: Sử dụng con trỏ 
+1 #include <stdio.h> 
+2  void copy_string(char * , char * ); 
+3  int main() { 
+4   char s[1000], d[1000]; 
+5   printf("Nhap vao chuoi s:\n"); 
+6   gets(s); 
+7   copy_string(d, s); 
+8   printf("Sao chep noi dung chuoi s vao chuoi d: %s\n", d); 
+9   return 0; 
+10 } 
+11 void copy_string(char *target, char *source) { 
+12    while (*source) { 
+13       *target = *source; 
+14       source++; 
+15       target++; 
+16    } 
+17    *target = '\0'; 
+18 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi s: 
+ 
+abc 
+ 
+Sao chep noi dung chuoi s vao chuoi d: abc 
+5.3.4.4. Hàm ghép chuỗi 
+Hàm strcat() là một hàm trong thƣ viện chuẩn “string.h”, có nhiệm 
+vụ ghép nối nội dung của một chuỗi vào cuối của chuỗi khác. 

@@ -1,0 +1,42 @@
+// Trang 32 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+32 
+Sau định nghĩa này các tên mới byte đƣợc dùng với ý nghĩa là tên kiểu 
+dữ liệu nó tƣơng tự nhƣ unsigned charvà nguyen_dai tƣơng tự nhƣ long. 
+Chúng ta có thể định nghĩa biến a, b kiểu byte nhƣ sau: 
+byte a, b; (byte đƣợc sử dụng  là kiểu dữ liệu vừa đƣợc định nghĩa 
+unsigned char). 
+1.3.2.6. Định nghĩa hàm 
+Trong phần này chúng ta định nghĩa các hàm của ngƣời dùng, một 
+định nghĩa hàm bao gồm dòng tiêu đề của hàm và thân của hàm, với cú 
+pháp nhƣ sau: 
+<kiểu_hàm> <tên_hàm> ([khai báo đối]) 
+{ 
+< thân hàm > 
+} 
+  Ví dụ 1.10 
+Xây dựng hàm tìm số bé nhất của hai số nguyên a, b. 
+int max( int a, int b) 
+{ 
+ 
+ 
+if (a   ) return b; 
+ 
+ 
+else return a; 
+} 
+1.3.2.7.  Hàm main() 
+Đây là thành phần bắt buộc duy nhất trong một chƣơng trình C, thân 
+của hàm main() bắt đầu từ sau dấu mở móc mở ngoặc {cho tới dấu móc 
+đóng ngoặc}. Không giống nhƣ chƣơng trình của Pascal luôn có phần 
+chƣơng trình chính, chƣơng trình trong C đƣợc phân thành các hàm độc 
+lập các hàm có cú pháp nhƣ nhau và cùng mức và một hàm đảm nhiệm 
+phần thân chính của chƣơng trình, tức là chƣơng trình sẽ bắt đầu đƣợc 
+thực hiện từ dòng lệnh đầu tiên và kết thúc sau lệnh cuối cùng trong thân 
+hàm main(). 
+Trong định nghĩa một hàm nói chung đều có hai phần đó là tiêu đề 
+của hàm, dòng này bao gồm các thông tin: Tên hàm, kiểu hàm (kiểu giá 
+trị hàm trả về), các tham số hình thức (tên tham số và kiểu của chúng). 
+Phần thứ hai là thân của hàm, đây là tập các lệnh (hoặc khai báo) thực 
+hiện các thao tác theo yêu cầu về chức năng của hàm đó. Hàm main() 
+cũng chỉ là một trƣờng hợp riêng của hàm nhƣng có tên cố định là main, 

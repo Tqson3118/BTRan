@@ -1,0 +1,34 @@
+// Trang 118 - Ngôn ngữ lập trình C_ebook.pdf
+
+115
+Kết quả khi chạy chương trình:
+xin chao
+  Hàm strupr
+Cú pháp: char *strupr(char *s);     //  Phải khai báo thư viện 
+string.h
+Hàm có chức năng là chuyển chuỗi s sang chữ hoa
+Ví dụ 4.27: 
+1
+2
+char s[10] = “Xin Chao”;
+puts(strupr(s));
+Kết quả khi chạy chương trình:
+XIN CHAO
+ Hàm strlen
+Cú pháp: int strlen(const char *s); 	
+//Phải khai báo thư 
+viện string.h
+Hàm có chức năng là trả về độ dài chuỗi s.
+Ví dụ 4.28: 
+1
+2
+3
+4
+char s[] = “Xin chao”;
+int len_s;
+len_s = strlen(s);
+printf(“%d”,len_s);
+Kết quả khi chạy chương trình:
+8
+4.3 BÀI TẬP 
+1. Hãy tìm và sửa lỗi trong các câu/đoạn lệnh sau:

@@ -1,0 +1,53 @@
+// Trang 480 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+480 
+ } 
+ else if (cot_capnhat == 5) 
+ { 
+ printf("Nhap diem chuyen can:"); 
+ scanf("%f",&sv[index].d_cc); 
+ } 
+ else if (cot_capnhat == 6) 
+ { 
+ printf("Nhap diem giua ky:"); 
+ scanf("%f",&sv[index].d_gk); 
+ } 
+ else if (cot_capnhat == 7) 
+ { 
+ printf("Nhap diem cuoi ky:"); 
+ scanf("%f",&sv[index].d_kt); 
+ } 
+ else printf("Khong phai cot can cap nhat"); 
+sv[index].tong_diem 
+= 
+sv[index].d_tp1 
++ 
+sv[index].d_tp2 
++ 
+sv[index].d_cc + sv[index].d_gk + sv[index].d_kt; 
+} 
+else printf("Ban ghi khong ton tai. Kiem tra lai Masv va thu lai."); 
+} 
+// Ham hien thi thong tin cua sinh vien 
+void hienthi(sinhvien sv[], int spt)  
+{ 
+ int i = 0; 
+ tieude(); 
+ while (i < spt) 
+ { 
+  
+if(sv[i].masv!="") 
+  
+{ 
+  
+ 
+printf("%-7s",sv[i].masv); 
+  
+ 
+printf("%-10s",sv[i].tensv); 
+  
+ 
+printf("%-6c",sv[i].gt); 
+  
+ 
+printf("%-7.1f",sv[i].d_tp1); 

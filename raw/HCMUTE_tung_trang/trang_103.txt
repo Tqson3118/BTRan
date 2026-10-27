@@ -1,0 +1,76 @@
+// Trang 103 - Ngôn ngữ lập trình C_ebook.pdf
+
+100
+1
+2
+3
+4
+5
+6
+7
+8
+9
+int a[6]={1,7,9,6,8,2};
+int min, i;
+min = a[0];
+for (i=1; i<6; i++)
+{
+	
+if(min > a[i])  
+	
+	
+min = a[i];
+}
+printf(“%d”, min);
+Giải thích hoạt động: 
+Ví dụ 4.5c này khác với ví dụ 4.5a ở ý nghĩa tìm min so với tìm 
+max (ở dòng lệnh số 6). Lưu ý thêm là ta hoàn toàn có thể gộp các ví dụ 
+4.5a, 4.5b, 4.5c vào trong một chương trình nếu được yêu cầu.
+ Sắp xếp mảng:
+Ví dụ 4.6: Sắp xếp các giá trị của một mảng cho trước theo thứ tự 
+giảm dần:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+int a[6]={1,7,9,6,8,2};
+int  tam,i,j;
+for (i=0; i<5; i++)
+	
+for (j = i+1; j<6; j++)
+	
+	
+if (a [i]< a[j])
+	
+	
+{
+	
+	
+	
+tam = a[i];
+	
+	
+	
+a[i]= a[j];
+	
+	
+	
+a[j]= tam;
+	
+	
+}
+for (i=0; i<6; i++)
+{
+	
+printf (“%d”, a[i]);
+}

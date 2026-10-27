@@ -1,0 +1,42 @@
+// Trang 168 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+168 
+3.2.2.2. Hoạt động 
+Chừng nào biểu thức điều kiện còn đúng thì thực hiện lệnh, biểu thức 
+điều kiện sai thì thoát khỏi vòng lặp. 
+3.2.2.3.  Sơ đồ khối 
+ 
+Hình 3.8. Sơ đồ khối biểu diễn vòng lặp while 
+Lƣu ý: 
+Câu lệnh while có thể lồng vào nhau: 
+if (n < 10 && m < 20) 
+{ 
+ 
+while (n >= 1) 
+ 
+{ 
+ 
+ 
+while (m >= 1) 
+ 
+ 
+{ 
+ 
+ 
+ 
+printf(“%d”, m); 
+ 
+ 
+ 
+m--; 
+ 
+ 
+} 
+ 
+ 
+n--; 
+ 
+} 
+} 
+ Ví dụ 3.25 
+Xem xét ví dụ 3.23. 

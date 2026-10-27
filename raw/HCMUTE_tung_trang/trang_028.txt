@@ -1,0 +1,30 @@
+// Trang 28 - Ngôn ngữ lập trình C_ebook.pdf
+
+25
+Trong đó, giá trị số 5 và 7 ở dòng kết quả thứ 2 và dòng kế quả thứ 
+4 là giá trị dữ liệu do người dùng nhập vào từ bàn phím.
+Trong chương trình này, ở dòng lệnh số 1 và số 2 là hai câu lệnh 
+khai báo hai thư viện của hệ thống : stdio.h và conio.h . Dòng lệnh số 4 
+đánh dấu chương trình chính, dấu mở ngoặc { ở dòng lệnh số 5 thể hiện 
+vị trí bắt đầu nội dung chương trình chính và dấu đóng ngoặc } ở dòng 
+lệnh số 21 dùng để kết thúc nội dung chương trình chính.
+Ở dòng lệnh số 6, 7 và 8, các câu lệnh
+	int a;   //khai bao bien a, de luu so thu nhat
+	int b;   //khai bao bien b, de luu so thu hai
+	int tong;  //khai bao bien tong, de luu ket qua
+được dùng để khai báo ra các vùng nhớ phục vụ cho việc lưu trữ 
+dữ liệu, được gọi là biến – variable. Một biến là một vùng nhớ trong 
+bộ nhớ RAM dùng để lưu trữ dữ liệu trong quá trình xử lý của chương 
+trình. Ba câu lệnh trên là ba câu lệnh khai bao biến để tạo ra 3 biến có 
+tên gọi lần lượt là a, b và tong có kiểu dữ liệu là int (kiểu số nguyên). 
+Điều này có nghĩa là các biến này có thể lưu trữ được các giá trị số 
+nguyên, ví dụ như: 9, -15, hoặc 12345. Tất cả các biến cần phải được 
+khai báo một lần trước khi sử dụng trong chương trình với một tên gọi 
+và một kiểu dữ liệu cố định. 
+Ở dòng lệnh số 10, câu lệnh 
+printf (“Nhap so thu nhat : \n”);
+có tác dụng in ra màn hình câu thông báo Nhap so thu nhat :
+Câu lệnh tiếp theo ở dòng số 11
+scanf(“%d”,&a);   //nhap so nguyen tu ban phim
+sử dụng hàm scanf  để cho phép người dùng nhập một số nguyên 
+từ bàn phím và lưu vào biến a. Hàm scanf này có hai tham số: “%d” và 

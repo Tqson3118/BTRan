@@ -1,0 +1,47 @@
+// Trang 344 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+344 
+2 #include <string.h>  
+3 int main()  
+4 {  
+5    char ch[]={'d', 'h', 'c', 'n', 'g', 't', 'v', 't', '\0'};  
+6    printf("Do dai cua chuoi: %d", strlen(ch));  
+7    return 0;  
+8 } 
+  Kết quả chƣơng trình: 
+Do dai cua chuoi: 8 
+ Ví dụ 5.52   
+ Xem xét chƣơng trình sau đây: 
+1 
+#include<stdio.h>s 
+2 
+#include<string.h> 
+3 
+#define MAX_STRING_LEN 80 
+4 
+int main() { 
+5 
+  char S1[MAX_STRING_LEN]; 
+6 
+  char S2[MAX_STRING_LEN]; 
+7 
+  int i, l; 
+8 
+  printf("Nhap xau ban dau S1:\t"); 
+9 
+  scanf("%s",S1); 
+10   //Copy tat ca cac ky tu, ket thuc voi ky tu NULL 
+11   l = strlen(S1); 
+12   for (i = 0; i < l+1; ++i) 
+13     S2[i] = S1[i]; 
+14   /* thay doi xau ban dau S1 */ 
+15   S1[0] = S1[1] = S1[2] = '*'; 
+16   S1[3] = 0; 
+17   /* In ca hai xau ra man hinh */ 
+18   printf("S1:\t%s\n",S1); 
+19   printf("S2:\t%s\n",S2); 
+20 } 
+ Kết quả chƣơng trình: 
+Nhap xau ban dau S1:    dhcngtvt 
+S1:     *** 
+S2:     dhcngtvt 

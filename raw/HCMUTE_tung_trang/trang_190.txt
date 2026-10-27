@@ -1,0 +1,62 @@
+// Trang 190 - Ngôn ngữ lập trình C_ebook.pdf
+
+187
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+#include <stdio.h>
+#include <conio.h>
+enum MauSac
+{
+Den, Nau, Do, Cam, Vang, Luc, Lam, Tim, Xam, Trang
+};
+int main (void)
+{
+	
+enum MauSac R;
+	
+printf(“Kich thuoc R: %d\n”,sizeof(R));
+	
+printf(“Gia tri R: %d\n”,R);
+	
+R = Den;
+	
+printf(“Gia tri R: %d\n”, R);
+	
+R = Cam;
+	
+printf(“Gia tri R: %d\n”, R);
+	
+getch();
+	
+return 0;
+}
+Ở dòng lệnh số 11, câu lệnh enum MauSac R; chính là câu lệnh 
+khai báo một biến kiểu MauSac - là kiểu liệt kê đã định nghĩa trước đó. 
+Câu lệnh này sẽ khai báo ra một biến có tên là R mang kiểu dữ liệu 
+MauSac. Sau câu lệnh này, chương trình sẽ cấp cho biến R một ô nhớ 
+có kích thước 4 bytes, và mang một giá trị ngẫu nhiên, như minh họa ở 
+hình dưới.
+         R
+1824868116
+    Kích thước 4 bytes

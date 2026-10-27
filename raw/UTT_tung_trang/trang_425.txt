@@ -1,0 +1,50 @@
+// Trang 425 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+425 
+ 
+variable_struct.member; 
+Trong đó:  
+ 
+variable_struct: Tên biến cấu trúc; 
+ 
+member: Thành phần cần truy cập; 
+Chẳng hạn nv1.ho_ten, nv2.luong, nv[15].diachi; 
+Khi đã truy xuất đƣợc tới các thành phần của cấu trúc thì mỗi thành 
+phần đó là một biến bình thƣờng và ta gán giá trị hoặc nhập xuất giá trị 
+cho chúng nhƣ cách bình thƣờng mà chúng ta vẫn làm. 
+ Ví dụ 6.4 
+ Xét chƣơng trình sau đây: 
+1 
+#include<stdio.h> 
+2 
+#include<string.h> 
+3 
+struct Sinh_vien 
+4 
+{ 
+5 
+    char ten_sv[20]; 
+6 
+    int tuoi_sv; 
+7 
+    char dia_Chi[50]; 
+8 
+    //F (female) va M (male) 
+9 
+    char gioi_tinh; 
+10 }; 
+11 int main() 
+12 { 
+13     struct Sinh_vien s1; 
+14     /* 
+15      s1 la bien kieu cau truc Sinh_vien va  
+16  
+tuoi la thanh phan cua Sinh_vien 
+17     */ 
+18     s1.tuoi_sv = 18; 
+19     /* 
+20         su dung ham strcpy de them ten sinh vien 
+21     */ 
+22     strcpy(s1.ten_sv, "Kien"); 
+23     /* 
+24         Hien thi gia tri 

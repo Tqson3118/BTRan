@@ -1,0 +1,46 @@
+// Trang 200 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+200 
+- Ở mỗi phƣơng án rút tiền, nếu tổng tiền từng mệnh giá = số tiền thì 
+in các phƣơng án ra. 
+Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 
+3 
+#define m1 20000 
+4 
+#define m2 50000 
+5 
+#define m3 100000 
+6 
+#define m4 200000 
+7 
+ main() 
+8 
+{ 
+9 
+// khai bao so tien can rut 
+10 long sotien; 
+11 // khai bao so to  toi da cua cac menh gia 20000, 50000, 100000, 
+200000 
+12 int t1, t2, t3, t4; 
+13 // khai bao cac bien vong lap, la so to thuc te cua cac menh gia 
+14 // 20000, 50000, 100000, 200000 
+15 int i, j, k, l; 
+16 // dem cac phuong an 
+17 int dem =0; 
+18 // nhap va kiem tra so tien can rut la boi so cua 20000 
+19 printf("Nhap vao so tien can rut:"); 
+20 do{ 
+21   scanf("%ld",&sotien); 
+22   if (sotien % m1 !=0) printf("Nhap lai so tien! So tien la bo cua 
+%d: ",m1); 
+23 } while (sotien % m1 !=0); 
+24 t1 = (int)sotien/m1; 
+25 t2 = (int)sotien/m2; 
+26 t3 = (int)sotien/m3; 
+27 t4 = (int)sotien/m4; 
+28 printf("In cac phuong an:\n"); 
+29 printf("  P.A  20000 50000 100000 200000"); 

@@ -1,0 +1,36 @@
+// Trang 161 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+161 
+Chƣơng trình 
+1 #include <stdio.h>  
+2 #include <conio.h>  
+3 int main ()  
+4 {   unsigned int dong, cot, n, m;  
+5 printf("\n Nhap vao so dong va so cot :");  
+6 scanf("%d%d", &n, &m);  
+7 for (dong = 0; dong < n; dong++)  
+8 {  
+9 printf("\n");  
+10 for (cot = 1; cot <= m; cot++)  
+11 printf("%d\t", dong + cot);  
+12 }  getch();  
+13 return 0;  
+14 } 
+Kết quả chƣơng trình 
+ Nhap vao so dong va so cot :7 8 
+1     2      3       4       5       6       7       8 
+2     3      4       5       6       7       8       9 
+3     4      5       6       7       8       9       10 
+4     5      6       7       8       9       10      11 
+5     6      7       8       9       10      11      12 
+6     7      8       9       10      11      12      13 
+7     8      9       10      11      12      13      14 
+ Trong câu lệnh for, có thể sẽ không có phần Exp1 (phần khởi tạo) 
+int i; 
+i = 0; 
+for (; i < 10; i++) 
+ 
+printf(“%d\n”, i); 
+ Trong câu lệnh for, có thể sẽ không có phần Exp2 (điều kiện lặp) 
+for (i = 0; ; i++) 
+{ 

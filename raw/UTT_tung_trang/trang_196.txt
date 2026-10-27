@@ -1,0 +1,36 @@
+// Trang 196 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+196 
+30             case 6: 
+31                 strcpy(can, "Binh"); 
+32                 break; 
+33             case 7: 
+34                 strcpy(can, "Dinh"); 
+35                 break; 
+36             case 8: 
+37                 strcpy(can, "Mau"); 
+38                 break; 
+39             case 9: 
+40                 strcpy(can, "Ky"); 
+41                 break; 
+42         } 
+43         // Xac dinh Chi 
+44         switch (year % 12) { 
+45             case 0: 
+46                strcpy(chi, "Than"); 
+47                 break; 
+48             case 1: 
+49                 strcpy(chi, "Dau"); 
+50                 break; 
+51             case 2: 
+52                 strcpy(chi , "Tuat"); 
+53                 break; 
+54             case 3: 
+55                 strcpy(chi, "Hoi"); 
+56                 break; 
+57             case 4: 
+58                 strcpy(chi, "Ty"); 
+59                 break; 
+60             case 5: 
+61                 strcpy(chi, "Suu"); 
+62                 break; 

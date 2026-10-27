@@ -1,0 +1,43 @@
+// Trang 106 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+106 
+8 
+ 
+printf("=============\n"); 
+9 
+ 
+printf("%s", st); 
+10 
+ 
+return 0; 
+11 
+} 
+Kết quả chƣơng trình: 
+Nhap ten truong: 
+Truong Dai hoc Cong nghe GTVT 
+============= 
+Truong Dai hoc Cong nghe GTVT 
+Lƣu ý:  
+- Hàm scanf() cũng đƣợc sử dụng để nhập dữ liệu từ thiết bị chuẩn, 
+tuy nhiên giữa hàm scanf() và hàm gets() khác nhau: 
+- Nếu sử dụng hàm scanf() để nhập vào một chuỗi thì nó sẽ kết thúc 
+khi gặp một khoảng trắng, dòng mới hoặc End Of File (EOF), vì vậy hàm 
+scanf() rất khó lƣu chuỗi có chứa khoảng trắng. Đối với hàm gets() khi 
+nhập chuỗi chỉ kết thúc khi ta nhấn Enter, có nghĩa là hàm gets() dễ dàng 
+lƣu đƣợc một chuỗi mà có chứa khoảng trắng. 
+- Hàm scanf() có thể đọc nhiều giá trị của các kiểu dữ liệu khác nhau, 
+trong khi hàm gets() chỉ nhận kiểu dữ liệu chuỗi ký tự. 
+ Ví dụ 2.18 
+Ví dụ sau đây so sánh sự khác nhau giữa hàm gets() và hàm scanf(). 
+1 #include <stdio.h>  
+2 int main()  
+3 {  
+4     char str[20];  
+5     printf("Nhap vao mot chuoi su dung ham gets(): \n");  
+6     gets(str);  
+7   printf("Chuoi ky tu vua nhap su dung ham gets() : %s\n", str); 
+8 printf("Nhap vao mot chuoi su dung ham scanf(): \n"); 
+9 scanf("%s",str); 
+10 printf("Chuoi ky tu vua nhap su dung ham scanf() : %s\n", str); 
+11     return 0;  
+12 } 

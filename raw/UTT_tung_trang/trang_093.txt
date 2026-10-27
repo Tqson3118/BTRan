@@ -1,0 +1,43 @@
+// Trang 93 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+93 
+chƣơng trình sẽ dò tìm đối số tƣơng ứng là st. Vì vậy chuỗi “Truong Dai 
+hoc Cong nghe GTVT” đƣợc in ra màn hình. 
+ Ví dụ 2.5 
+Viết chƣơng trình in ra màn hình giá trị của số thực pi = 3.1415. 
+Chƣơng trình 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 
+3 
+main() 
+4 
+{ 
+5 
+float pi = 3.1415; 
+6 
+printf("In ra man hinh so thuc pi = %f \n", pi); 
+7 
+printf("In ra man hinh so thuc pi = %.2f \n", pi); 
+8 
+getch(); 
+9 
+} 
+Kết quả chƣơng trình 
+In ra man hinh so thuc pi = 3.141500 
+In ra man hinh so thuc pi = 3.14 
+Giải thích: 
+Dòng 5: Khai báo một biến pi kiểu thực, khởi tạo giá trị pi = 3.1415; 
+Dòng 6: Trong câu lệnh printf() có một mã định dạng %f, do đó 
+chƣơng trình sẽ dò tìm đối số tƣơng ứng là pi, in ra màn hình số thực 
+chấm động. 
+Dòng 7: Trong câu lệnh printf() có một mã định dạng %.2f, do đó 
+chƣơng trình sẽ dò tìm đối số tƣơng ứng là pi, tuy nhiên số thực đƣợc in 
+ra định dạng với phần thập phân sau dấu chấm có 2 ký tự. Vì vậy, kết quả 
+số pi đƣợc in ra là 3.14. 
+ Ví dụ 2.6 
+Cho đoạn chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 int main() 
+3 { 

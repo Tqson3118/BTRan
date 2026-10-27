@@ -1,0 +1,59 @@
+// Trang 451 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+451 
+32  
+     
+ 
+    else 
+if 
+(sv[i].d_tb 
+>= 
+50) 
+strcpy(sv[i].xeploai,"Trung binh"); 
+33  
+     
+ 
+        else strcpy(sv[i].xeploai,"Yeu"); 
+34  
+    } 
+35  
+    //hien thi thong tin cua tung sinh vien 
+36  
+    for(i = 0; I < N; i++){ 
+37  
+        printf("*-----------------------------------*\n"); 
+38  
+ 
+ 
+printf("Sinh vien %s:\n",sv[i].ten_sv ); 
+39  
+        printf("TiengAnh = %2d  Toan = %2d   VatLy = %2d \n", 
+sv[i].d_anh, sv[i].d_toan, sv[i].d_ly); 
+40  
+        printf("DiemTB = %4.1f \n", sv[i].d_tb); 
+41  
+        printf("XepLoai = %2s\n", sv[i].xeploai); 
+42  
+    } 
+43  
+   printf("*-------------------------------------*\n"); 
+44  
+    return (0); 
+45  
+} 
+ Kết quả chƣơng trình: 
+*-------------------------------------* 
+Sinh vien Cuong: 
+TiengAnh = 90  Toan = 82   VatLy = 88 
+DiemTB = 86.0 
+XepLoai = Gioi 
+*-------------------------------------* 
+Sinh vien Nam: 
+TiengAnh = 95  Toan = 90   VatLy = 89 
+DiemTB = 91.0 
+XepLoai = Xuat sac 
+*-------------------------------------* 
+Sinh vien Sinh: 
+TiengAnh = 52  Toan = 62   VatLy = 39 
+DiemTB = 51.0 
+XepLoai = Trung binh 

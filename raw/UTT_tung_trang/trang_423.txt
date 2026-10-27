@@ -1,0 +1,62 @@
+// Trang 423 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+423 
+đó tên là một chuỗi các ký tự, có độ dài tối đa 20 ký tự, tuổi thuộc kiểu 
+nguyên int, địa chỉ là một chuỗi các ký tự có độ dài tối đa 50 ký tự và giới 
+tính nhận một trong hai giá 0, 1, (hoặc F (female), M (male)). Sinh_vien 
+là tên của cấu trúc và đƣợc gọi là thẻ cấu trúc. 
+1  
+struct Sinh_vien 
+2  
+{ 
+3  
+char ten[20]; 
+int tuoi; 
+4  
+char dia_chi[50]; 
+5  
+char gioitinh; // nhan gia tri F (female) hoặc M (male) 
+6  
+}; 
+Khi một cấu trúc đƣợc xác định, nó tạo ra một kiểu do ngƣời dùng 
+định nghĩa (lúc này nó đƣợc sử dụng giống nhƣ các kiểu dữ liệu cơ bản đã 
+biết nhƣ số nguyên, số thực, ký tự, v.v.). Tuy nhiên,  không có không gian 
+lƣu trữ hoặc bộ nhớ đƣợc phân bổ. Để phân bổ bộ nhớ của một loại cấu 
+trúc nhất định và làm việc với nó, chúng ta cần tạo các biến. 
+Có thể khai báo các biến của một cấu trúc, cùng với định nghĩa cấu 
+trúc hoặc sau khi cấu trúc đƣợc xác định. Khai báo biến cấu trúc tƣơng tự 
+nhƣ khai báo của bất kỳ biến thông thƣờng nào của bất kỳ kiểu dữ liệu 
+nào khác. Các biến cấu trúc có thể đƣợc khai báo theo hai cách sau: 
+ Ví dụ 6.3 
+Khai báo các biến có kiểu Nhan_vien 
+1  struct Nhan_vien 
+2   
+{ 
+3   
+ 
+char ho_ten[20]; 
+4   
+ 
+char dia_chi[50]; 
+5   
+ 
+float luong; 
+6   
+}; 
+7   
+int main() 
+8   
+{ 
+9   
+// khai báo 2 biến nv1, nv2 có kiểu dữ liệu Nhan_vien 
+10   
+// khai báo mảng nv có tối đa 20 phần tử, mỗi phần tử có 
+kiểu Nhan_vien 
+11   
+ 
+struct Nhan_vien nv1, nv2, nv[20];  
+12   
+ 
+return 0; 
+13   
+} 

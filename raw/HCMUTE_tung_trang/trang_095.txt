@@ -1,0 +1,53 @@
+// Trang 95 - Ngôn ngữ lập trình C_ebook.pdf
+
+92
+n
+S
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+=
+...
+4
+3
+2
+1
+1
+...
+4
+3
+2
+1
+1
+3
+2
+1
+1
+2
+1
+1
+1
+8. Viết chương trình giải bài toán trăm trâu trăm cỏ.
+ Có 100 con trâu và 100 bó cỏ.
+ Trâu đứng ăn 5 (bó cỏ), trâu nằm ăn 3 (bó cỏ), trâu già 3 con 1 
+bó (cỏ).
+ Hỏi có bao nhiêu trâu đứng, bao nhiêu trâu nằm và bao nhiêu 
+trâu già.
+9. Viết chương trình xử lý các yêu cầu sau:
+ Nhập vào một số nguyên n và chỉ chấp nhận giá trị n > 0, nếu 
+không thỏa mãn yêu cầu trên thì bắt buộc người dùng nhập lại cho tới 
+khi nào thỏa mãn yêu cầu.
+ Tính và in ra tổng của tất cả các ước số của n trong đoạn [1 n].

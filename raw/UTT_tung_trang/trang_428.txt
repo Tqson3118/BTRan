@@ -1,0 +1,48 @@
+// Trang 428 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+428 
+15      printf("Nhap thong tin cho nv1:\n"); 
+16      printf("Ma nhan vien: ");  
+17   
+fflush(stdin); 
+18      gets(nv1.manv); 
+19      printf("Ho ten nhan vien: ");  
+20   
+fflush(stdin); 
+21      gets(nv1.hoten); 
+22      printf("Nhap luong cua nhan vien: ");  
+23   
+fflush(stdin); 
+24      scanf("%lf", &nv1.luong); 
+25   //Nhap thong tin cua nhan vien thu hai 
+26      printf("Nhap thong tin cho nv2:\n"); 
+27      printf("Ma nhan vien: ");  
+28   
+fflush(stdin); 
+29      gets(nv2.manv); 
+30      printf("Ho ten nhan vien: ");  
+31   
+fflush(stdin); 
+32      gets(nv2.hoten); 
+33      printf("Nhap luong cua nhan vien: ");  
+34   
+fflush(stdin); 
+35      scanf("%lf", &nv2.luong); 
+36   //Hien thi thong tin cua cac nhan vien 
+37     printf("\n ------ Hien thi thong tin nhan vien: ----\n"); 
+38      printf("%-20s %-30s %-7s\n", "Ma NV", "Ho ten", "Luong"); 
+39      printf("%-20s %-30s %-7.2lf\n", nv1.manv, nv1.hoten, 
+nv1.luong); 
+40      printf("%-20s %-30s %-7.2lf \n", nv2.manv, nv2.hoten, 
+nv2.luong); 
+41      return 0; 
+42  } 
+  Kết quả chƣơng trình: 
+ 
+Nhap thong tin cho nv1: 
+ 
+Ma nhan vien: nv01 
+ 
+Ho ten nhan vien: Le Kien 
+ 
+Nhap luong cua nhan vien: 7000000 

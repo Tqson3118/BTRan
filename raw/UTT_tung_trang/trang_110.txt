@@ -1,0 +1,35 @@
+// Trang 110 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+110 
+5  char ht[25]; 
+6  int  t; 
+7  printf("Nhap t = ");       
+8  scanf("%d",&t);   
+9  printf("Nhap vào chuoi ht: ");  
+10  fflush(stdin);     
+11  gets(ht); 
+12  printf("Chuoi vua nhap %s", ht); 
+13  return 0; 
+14 } 
+Kết quả chƣơng trình 
+Nhap t = 12 
+Nhap vao chuoi ht: Truong DH CNGTVT 
+Chuoi vua nhap: Truong DH CNGTVT 
+2.2.2. Các hàm xuất ký tự puts(), putchar() 
+Các hàm này đƣợc khai báo trong thƣ viện <stdio.h>. Các hàm 
+printf(),  puts(),  putchar() đều có tác dụng đƣa dữ liệu lên dòng ra chuẩn 
+stdout (màn hình). 
+2.2.2.1. Hàm puts() 
+Cú pháp: 
+int puts(const char *s); 
+Trong đó: 
+s là con trỏ kiểu char, trỏ tới vùng nhớ chứa chuỗi ký tự cần xuất ra stdout. 
+Chức năng: Đƣa chuỗi s và đƣa thêm ký tự “\n” lên stdout. Nếu 
+thành công, hàm trả về ký tự cuối cùng đƣợc đƣa ra (chính là „\n‟). Ngƣợc 
+lại, nếu có lỗi hàm trả về EOF. 
+Lƣu ý:  
+Phải khai báo thƣ viện <stdio.h> trƣớc khi sử dụng hàm puts(). 
+#include <stdio.h> 
+ Ví dụ 2.23 
+Viết chƣơng trình nhập vào 1 chuỗi ký tự, sử dụng hàm puts() in 
+chuỗi vừa nhập ra màn hình. 

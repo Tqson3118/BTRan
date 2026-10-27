@@ -1,0 +1,42 @@
+// Trang 139 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+139 
+21  
+ { 
+22       printf("\nLoai kha"); 
+23  
+ }  
+24  
+ else  
+25       printf("\nLoai gioi"); 
+26 else 
+27   printf("\nNhap diem khong hop le"); 
+28 } 
+Kết quả chƣơng trình: 
+Trƣờng hợp 1: 
+ 
+Nhap diem tb: 11 
+ 
+Nhap diem khong hop le 
+Trƣờng hợp 2: 
+ 
+Nhap diem tb: 8 
+ 
+Loai gioi 
+Giải thích chƣơng trình:  
+Trong chƣơng trình trên cấu trúc else if đƣợc lồng vào trong cấu trúc 
+dạng 2 (từ dòng 7 đến 26), trong cấu trúc else if ta không cần đặt trong 
+khối vì tất cả các if trong cấu trúc này đều có else, nên  câu lệnh sau else 
+cuối cùng: printf("\nNhap diem khong hop le") thuộc về khối lệnh: if (dtb 
+>= 0 && dtb <= 10).  
+Giả sử trong cấu trúc else if không có dòng 25 (else printf("\nLoai 
+gioi")) thì khi đó dòng 27 (else printf("Nhap diem khong hop le.\n")) đƣợc 
+chƣơng trình hiểu nằm trong cấu trúc else if, mà không thuộc về câu lệnh if 
+(dtb>=0 && dtb<= 10). Trong trƣờng hợp đó bạn cần phải đặt cấu trúc else 
+if vào trong {}, thì khi đó dòng else printf("\nNhap diem khong hop le") 
+mới đƣợc hiểu là phần sau của câu lệnh if (dtb >= 0 && dtb <= 10). 
+ Ví dụ 3.8 
+Viết chƣơng trình giải và biện luận phƣơng trình: ax2 + bx + c = 0. 
+Phác họa lời giải: 
+Nếu a = = 0: Phƣơng trình trở thành phƣơng trình bậc nhất bx + c = 0. 
+Nếu b = = 0: Phƣơng trình đƣợc rút gọn c = 0, có hai khả năng: 

@@ -1,0 +1,70 @@
+// Trang 313 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+313 
+67 
+    { 
+68 
+        for(j = 0; j < n; j++) 
+69 
+        { 
+70 
+            printf("%d\t", Tong[i][j]); 
+71 
+        } 
+72 
+        printf("\n"); 
+73 
+    } 
+74 
+    /* 
+75 
+        Tinh hieu cua hai ma tran 
+76 
+    */ 
+77 
+    for(i = 0; i < m; i++) 
+78 
+        for(j = 0; j < n; j++) 
+79 
+            Hieu[i][j] = a[i][j] - b[i][j]; 
+80 
+    // In hieu cua hai ma tran 
+81 
+    printf("Hieu cua hai ma tran la: \n"); 
+82 
+    for(i = 0; i < m; i++) 
+83 
+    { 
+84 
+        for(j = 0; j < n; j++) 
+85 
+        { 
+86 
+            printf("%d\t", Hieu[i][j]); 
+87 
+        } 
+88 
+        printf("\n"); 
+89 
+    } 
+90 
+    return 0; 
+91 
+} 
+Kết quả chƣơng trình:  
+ 
+Nhap so hang cua mang: 11 
+ 
+Khong hop le. Nhap so trong pham vi tu 0 den MAX ! 
+ 
+Nhap so hang cua mang: -1 
+ 
+Khong hop le. Nhap so trong pham vi tu 0 den MAX ! 
+ 
+Nhap so hang cua mang: 2 
+ 
+Nhap so cot cua mang: 12 
+ 
+Khong hop le. Nhap so trong pham vi tu 0 den MAX ! 
+ 
+Nhap so cot cua mang: -2 

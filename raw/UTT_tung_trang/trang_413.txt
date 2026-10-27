@@ -1,0 +1,39 @@
+// Trang 413 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+413 
+- Tìm phần tử lớn nhất và nhỏ nhất của mảng. 
+- Tính tổng các phần tử là số lẻ trong mảng, in kết quả tính đƣợc ra 
+màn hình. 
+- Liệt kê các số nguyên tố trong mảng. 
+- Nhập một số x, đƣa ra thông báo số x có trong mảng hay không? 
+- Sắp xếp mảng tăng dần. 
+Yêu cầu:  
+Viết thành hàm, với mỗi ý của bài đƣợc thể hiện bằng một hàm. 
+ Bài tập 5.24  
+Viết chƣơng trình nhập vào một dãy n số thực a[0], a[1],..., a[n-1], 
+sắp xếp dãy số theo thứ tự giảm dần. In dãy số sau khi sắp xếp. 
+Yêu cầu: 
+- Sinh mảng ngẫu nhiên. 
+- Sử dụng các thuật toán sắp xếp, với mỗi thuật toán xây dựng một 
+chƣơng trình. 
+ Bài tập 5.25 
+Viết chƣơng trình sắp xếp một mảng theo thứ tự tăng dần sau khi đã 
+loại bỏ các phần tử trùng nhau. 
+ Bài tập 5.26 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Nhập vào số phần tử của mảng, kiểm soát số phần tử của mảng lớn 
+hơn 0 và bé hơn 100. 
+- Nhập vào từng phần tử của mảng, kiểm soát giá trị mảng nhập vào 
+có giá trị trong phạm vi [-10, 10]. 
+- Liệt kê các số chẵn trong mảng. 
+- Tính tổng bình phƣơng của các số âm trong mảng. 
+- Liệt kê các số hoàn hảo trong mảng. Số hoàn hảo là số có tổng các 
+ƣớc số (trừ chính nó) bằng chính số đó. 
+- Nhập vào số x, đếm và in ra màn hình có bao nhiêu có bao nhiêu số 
+x trong mảng đã cho. 
+- Sắp xếp mảng tăng dần bằng thuật toán Quick_sort. 
+Yêu cầu:  
+Thể hiện mỗi ý của bài bằng một hàm. 
+ Bài tập 5.27 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Viết chƣơng trình nhập vào một mảng  gồm n số tự nhiên. 

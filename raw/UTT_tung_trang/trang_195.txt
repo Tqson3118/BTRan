@@ -1,0 +1,45 @@
+// Trang 195 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+195 
+- Ghép Can + Chi = Năm âm lịch. 
+Dữ liệu Test: 1980. 
+Kết quả mong muốn: Canh Thân.  
+Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <string.h> 
+3 
+int main() 
+4 
+{ 
+5 
+ int year; 
+6 
+ char can[20] = " "; 
+7 
+ char chi[20] = " "; 
+8 
+ printf("Nhap vao nam duong lich: "); 
+9 
+        scanf("%d", &year); 
+10 // Xac dinh Can 
+11         switch (year % 10) { 
+12             case 0: 
+13                 strcpy(can,"Canh"); 
+14                 break; 
+15             case 1: 
+16                strcpy(can,"Tan"); 
+17                 break; 
+18             case 2: 
+19                 strcpy(can, "Nham"); 
+20                 break; 
+21             case 3: 
+22                 strcpy(can, "Quy"); 
+23                 break; 
+24             case 4: 
+25                 strcpy(can,"Giap"); 
+26                 break; 
+27             case 5: 
+28                 strcpy(can,  "At"); 
+29                 break; 

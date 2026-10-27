@@ -1,0 +1,40 @@
+// Trang 64 - Ngôn ngữ lập trình C_ebook.pdf
+
+61
+2.4. TOÁN TỬ ĐIỀU KIỆN BA NGÔI
+C có một toán tử phổ biến và thích hợp để thay thế cho cú pháp 
+lệnh if đủ (if ...else...), đó là toán tử điều kiện 3 ngôi ( ? : ).
+ Cú pháp của toán tử ba ngôi là: 
+E1 ? E2 : E3
+Trong đó E1, E2, E3 là các biểu thức. 
+Ý nghĩa: nếu E1 là Đúng thì thực thi E2, nếu E1 là Sai thì thực 
+thi E3.
+Ví dụ 2.10a: Cho đoạn chương trình sau:
+1
+2
+3
+int a=2 , b = 3;
+a == 0 ? b = 1 : b = 2;
+printf(“b = %d”,b);
+Khi chạy đoạn chương trình trên, kết quả in ra màn hình sẽ là:  
+1
+b = 2
+Vì biểu thức a == 0 ở dòng lệnh thứ 2 có kết quả là sai nên chương 
+trình thực thi biểu thức ở sau dấu : , tức biểu thức b = 2. Điều này làm 
+cho giá trị biến b sẽ được thay đổi thành 2. 
+Ví dụ 2.10b: Cho đoạn chương trình sau:
+1
+2
+x=10;
+y=x>9?100:200;
+Khi thực hiện 2 dòng lệnh trên, biến y sẽ được gán giá trị 100 khi 
+biến x lớn hơn 9, ngược lại khi x <= 9 thì y sẽ được gán giá trị 200. 
+Đoạn mã ở ví dụ 2.10b tương đương với một lệnh if ...else... như sau: 
+1
+2
+3
+4
+x = 10;
+if (x < 9)
+y = 100;
+else y = 200;

@@ -1,0 +1,61 @@
+// Trang 27 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+27 
+9 
+{ 
+Phần hàm main() là 
+phần quan trọng nhất 
+của bất kỳ chƣơng 
+trình C nào. Trình biên 
+dịch bắt đầu thực hiện 
+chƣơng trình C từ hàm 
+main(). Hàm main() là 
+bắt buộc trong lập 
+trình C. Nó có hai 
+phần: 
+Phần khai báo: Tất cả 
+các biến đƣợc sử dụng 
+sau này trong phần thi 
+hành đƣợc khai báo 
+trong phần này. 
+Phần thực thi: Phần 
+này chứa các câu lệnh 
+sẽ đƣợc thực hiện bởi 
+trình biên dịch. 
+10 int x, y, tong; 
+11 printf("Nhap x = "); 
+12 scanf("%d", &x); 
+13 printf("Nhap y = "); 
+14 scanf("%d", &y); 
+15 tong  = tinhtong(x,y); 
+16 printf("Tong = %d ", tong); 
+17 getch(); 
+18 } 
+19 int tinhtong(int a, int b) 
+ 
+Phần 
+chƣơng 
+trình 
+con: Chứa tất cả các 
+hàm do ngƣời dùng 
+định nghĩa. 
+Khi biên dịch chƣơng 
+trình, căn cứ vào các 
+lời gọi hàm, mà các 
+mã chƣơng trình của 
+các hàm tƣơng ứng 
+đƣợc thực thi. 
+20 { 
+21 int t; 
+22 t = a + b ; 
+23 return t; 
+24 } 
+Như vậy, một chương trình bao gồm các thành phần cơ bản sau đây 
+1 
+[Phần tài liệu] 
+Mô tả tệp, tác giả, ngày viết, tóm tắt chƣơng trình. Phần 
+này có thể có hoặc không có. 
+2 
+Phần liên kết 
+Chỉ ra sự liên kết các thƣ viện chuẩn trong C. Phần này bắt 
+buộc phải có. 

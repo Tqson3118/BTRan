@@ -1,0 +1,48 @@
+// Trang 453 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+453 
+21      for(i=0; i<N; i++) 
+22   
+{ 
+23       
+sv[i].d_tb = (sv[i].d_anh + sv[i].d_toan +sv[i].d_ly)/3; 
+24      } 
+25      //hien thi thong tin cua tung sinh vien 
+26      for(i = 0; i < N; i++){ 
+27          printf("%8s: TiengAnh = %3d  Toan = %3d   VatLy = %3d 
+DiemTB = %5.1f\n",  
+28          sv[i].ten_sv, 
+sv[i].d_anh, 
+sv[i].d_toan, 
+sv[i].d_ly, 
+sv[i].d_tb); 
+29      } 
+30      return (0); 
+31  } 
+  Kết quả chƣơng trình: 
+Cuong:  TiengAnh =  82  Toan =  72   VatLy =     58 
+Nam:  
+TiengAnh =  77  Toan =  82   VatLy =     79 
+Sinh:  
+TiengAnh =  52  Toan =  62   VatLy =     39 
+Thuy:  
+TiengAnh =  61  Toan =  82   VatLy =     88 
+ Ví dụ 6.27 
+Bài toán tuyển sinh của trƣờng đại học. 
+Trƣờng Đại học Công nghệ GTVT có n thí sinh khối A nộp hồ sơ xét 
+tuyển  (n đƣợc nhập từ bàn phím). Thông tin của một thí sinh bao gồm họ 
+tên, số báo danh, điểm môn Toán, điểm môn Lý, điểm môn Hóa và tổng 
+điểm của ba môn. Điểm chuẩn để trúng tuyển vào trƣờng là 18.  
+- Lập trình nhập vào thông tin của n thí sinh khối A đã nộp hồ sơ. 
+- In ra màn hình danh sách thí sinh khối A đã nộp hồ sơ xét tuyển. 
+- In danh sách thí sinh trúng tuyển, thí sính trúng tuyển có tổng điểm 
+>= 18. 
+Phác thảo lời giải 
+- Khai báo 1 cấu trúc thisinh bao gồm các thông tin họ tên, số báo 
+danh, điểm môn toán, điểm môn lý, điểm môn hóa, điểm tổng. 
+- Sử dụng mảng cấu trúc để giải quyết bài toán; 
+- Xây dựng hàm nhapttts(), gồm hai tham số là tên biến mảng kiểu 
+thí sinh, số thí sinh; 
+- Xây dựng hàm hienthi() để hiển thị thông tin thí sinh đăng ký xét tuyển; 
+- Xây dựng hàm thisinhTT(): hiển thị danh sách các thí sinh trúng 
+tuyển (là thí sinh có tổng điểm   điểm chuẩn). 

@@ -1,0 +1,35 @@
+// Trang 55 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+55 
+Biểu thức ((a == b) || (b == c) || (c == a)) là một biểu thức logic với 
+phép || (or). 
+Các biểu thức logic này có thể đƣợc sử dụng trong câu lệnh if, câu 
+lệnh do … while hoặc câu lệnh while … do. 
+1.6.3.4. Biểu thức điều kiện 
+Cú pháp: 
+Expression_1 ? expression_2: expression_3 
+Trong đó:  
+- expression_1:  là biểu thức logic, nhận giá trị là T (True) hoặc F 
+(False). 
+- expression_2, expression_3: là các biểu thức tƣơng ứng nhận đƣợc 
+khi expression_1 đúng hoặc sai. 
+Chức năng: Giá trị của biểu thức điều kiện bằng giá trị của biểu thức 
+expression_2 nếu expression_1 nhận giá trị T (True) hoặc bằng giá trị của 
+biểu thức expression_3 nếu expression_2 nhận giá trị F (False). 
+ Ví dụ 1.43 
+Cho biểu thức điều kiện sau: 
+(a > b) ? a: b; 
+Biểu thức cho kết quả là số lớn nhất trong hai số a, b. Nếu a > b đúng 
+thì kết quả nhận đƣợc là a, ngƣợc lại nếu a > b sai, thì kết quả nhận đƣợc 
+là b.  
+1.6.4. Các toán tử 
+Các toán tử trong ngôn ngữ C là các ký hiệu đƣợc sử dụng để thực 
+hiện các thao tác toán học hoặc logic. Các toán tử tham gia vào một 
+chƣơng trình để thao tác dữ liệu, cùng với các biến, hằng và tạo thành một 
+phần của các biểu thức toán học hoặc biểu thức logic. 
+Các kiểu toán tử trong C: 
+- Toán tử số học. 
+- Toán tử quan hệ. 
+- Toán tử logic. 
+- Toán tử so sánh bit. 
+- Toán tử gán. 

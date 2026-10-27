@@ -1,0 +1,36 @@
+// Trang 83 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+83 
+1 #include<stdio.h> 
+2 #include<conio.h> 
+3 void main() 
+4 { 
+5 int m = 3,p = 5; 
+6 int a1,a2,a3,a4,a5; 
+7 float x1,x2,x3,x4; 
+8 clrscr(); 
+9 printf("\n Tim gia tri gan cho cac bien"); 
+10 a1 = m<p; 
+11 a2 = m == p; 
+12 a3 = p%m + p>m; 
+13 a4 = m*(p>m ? m:p); 
+14 a5 = m*(p<m ? p:p); 
+15 x1 = p/m; 
+16 x2 = (float)p/m; 
+17 x3 = (p +0.5)/m; 
+18 x4 = (int)(p+0.5)/m; 
+19 printf("\n a1 = %d ",a1); 
+20 printf("\n a2 = %d ",a2); 
+21 printf("\n a3 = %d ",a3); 
+22 printf("\n a4 = %d ",a4); 
+23 printf("\n a5 = %d ",a5); 
+24 printf("\n x1 = %10.3f ",x1); 
+25 printf("\n x2 = %10.3f ",x2); 
+26 printf("\n x3 = %10.3f ",x3); 
+27 printf("\n x4 = %10.3f ",x4); 
+28 getch(); 
+29 } 
+ Yêu cầu: 
+- Biên dịch và chạy chƣơng trình? Chƣơng trình có lỗi? Hãy sửa lỗi 
+của chƣơng trình? 
+- Nếu không còn lỗi, hãy cho biết kết quả của chƣơng trình và giải thích? 

@@ -1,0 +1,37 @@
+// Trang 268 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+268 
+4 int main() 
+5 { 
+6     int n; 
+7     unsigned long long fibonacci; 
+8     /*Nhap gia tri */ 
+9     printf("Nhap so: "); 
+10     scanf("%d", &n); 
+11  // bien fibonacci de ghi nhan gia tri cua so fibonacci thu n 
+12  
+fibonacci = fibo(n);  
+13     printf("So fibonacci thu %d co gia tri: %llu", n, fibonacci); 
+14     return 0; 
+15 } 
+16 // xay dung ham de quy de tim ra so fibonacci thu n 
+17 unsigned long long fibo(int num)  
+18 { 
+19     if(num == 0)      //neo, dieu kien co so 
+20         return 0; 
+21     else if(num == 1) //dieu kien co so 
+22         return 1; 
+23     else  
+24         return fibo(num-1) + fibo(num-2);  
+25 } 
+Kết quả chƣơng trình 
+Nhap so: 20 
+So fibonacci thu 20 co gia tri: 6765 
+Bài tập 4.7 
+Viết chƣơng trình bằng ngôn ngữ C để hiển thị menu máy tính. 
+Chƣơng trình sẽ nhắc ngƣời dùng chọn lựa chọn thao tác (từ 1 đến 5).  
+Sau đó, yêu cầu ngƣời dùng nhập hai giá trị nguyên để tính toán. 
+CHƢƠNG TRÌNH CHÍNH 
+          1. Thêm. 
+          2. Trừ. 
+          3. Nhân lên. 

@@ -1,0 +1,33 @@
+// Trang 181 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+181 
+Phác họa lời giải: 
+Bản chất của yêu cầu trên là vẽ các điểm trên màn hình theo tọa độ. 
+Bạn hãy xem mô tả đồ thị của bài trên trong hình dƣới, chú ý là trục tung i 
+trên màn hình quay xuống dƣới, gốc tọa độ là (1, 1). 
+ 
+Đƣờng j = n + i - 1 là tịnh tiến của đƣờng j = n và đƣờng j = n - i + 1 
+là đối xứng qua trục j = n của đƣờng j = n + i - 1. 
+Ðể vẽ cả dòng và cột bạn dùng 2 vòng lặp lồng vào nhau: vòng lặp 
+ngoài tính dòng (biến đếm i), với mỗi dòng, vòng lặp trong vẽ các cột 
+(biến đếm j). Hai vòng lặp này quét tất cả các vị trí phải vẽ (ký tự * hoặc 
+ký tự space).  
+Khi vẽ tam giác đặc, bạn quét toàn bộ miền:  
+{
+     
+          
+trong đó: 
+ 1         ta vẽ dấu space 
+ 
+             , phần còn lại ta vẽ dấu * 
+Chƣơng trình: 
+1 #include <stdio.h>  
+2 int main() {  
+3   unsigned n, i, j;  
+4   printf( "Nhap n: " );  
+5   scanf( "%u", &n );  
+6  //tam giac can dac 
+7   for ( i = 1; i <= n; ++i) 
+8   { 
+9     for ( j = 1; j <= n + i - 1; ++j )  
+10       printf( ( j < n - i + 1 )? "  " : "* " );  

@@ -1,0 +1,46 @@
+// Trang 271 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+271 
+58  
+printf("\nNhan phim y hoac Y de tiep tuc: ");   
+ 
+59  
+scanf("%s",&ok);   
+ 
+60  
+}while(ok == 'y'||ok == 'Y');    
+61  
+return 0;   
+ 
+ 
+62 }   
+Kết quả chƣơng trình 
+================================ 
+      CHUONG TRINH CHINH 
+================================ 
+     1. Cong hai so 
+     2. Tru hai so 
+     3. Nhan hai so 
+     4. Chia hai so 
+     5. Chia lay du 
+================================ 
+Nhap vao lua chon(1-5): 1 
+Nhap vao hai so nguyen: 12 3 
+Ket qua = 15 
+Nhan phim y hoac Y de tiep tuc: y 
+Nhap vao lua chon(1-5): 2 
+Nhap vao hai so nguyen: 12 5 
+Ket qua = 7 
+Nhan phim y hoac Y de tiep tuc: y 
+Nhap vao lua chon(1-5): 3 
+Nhap vao hai so nguyen: 12 4 
+Ket qua = 48 
+Nhan phim y hoac Y de tiep tuc: y 
+Nhap vao lua chon(1-5): 4 
+Nhap vao hai so nguyen: 12 4 
+Ket qua = 3.00 
+Nhan phim y hoac Y de tiep tuc: y 
+Nhap vao lua chon(1-5): 5 
+Nhap vao hai so nguyen: 12 5 
+Ket qua = 2 
+Nhan phim y hoac Y de tiep tuc: N 

@@ -1,0 +1,30 @@
+// Trang 29 - Ngôn ngữ lập trình C_ebook.pdf
+
+26
+&a. Tham số đầu tiên “%d” được gọi là mã định dạng, cho biết kiểu dữ 
+liệu của dữ liệu mà người dùng sẽ nhập vào. Trong trường hợp này, 
+“%d” là mã định dạng cho kiểu số nguyên. Trong tham số thứ hai 
+(&a), dấu & được gọi là toán tử lấy địa chỉ. Theo sau toán tử lấy địa 
+chỉ là tên biến a dùng để xác định địa chỉ (vị trí) của biến a trong bộ 
+nhớ RAM.   
+Tương tự, câu lệnh ở dòng lệnh số 14
+scanf(“%d”,&b);   //nhap so nguyen tu ban phim
+cho phép người dùng nhập một số nguyên từ bàn phím và lưu 
+vào biến b.
+Ở dòng lệnh số 16, câu lệnh
+tong = a + b;     //tinh tong
+thực hiện tính tổng của hai biến a và b bằng phép toán cộng +, sau 
+đó lưu kết quả vào vùng nhớ biến tong bằng phép toán gán = .
+Câu lệnh ở dòng số 17
+printf(“Tong la: %d \n”,tong);  //in ket qua
+gọi hàm printf để in ra màn hình dòng chữ Tong la:  đi kèm phía 
+sau là giá trị của biến tong. Hàm printf này có hai tham số, “Tong la: 
+%d \n” và tong . Tham số đầu tiên “Tong la: %d \n” là chuỗi định 
+dạng gồm chuỗi ký tự cần in ra màn hình Tong la: , mã định dạng 
+%d cho biết sẽ có một số nguyên được in ra và ký tự điều khiển \n 
+để đưa con trỏ xuống dòng. Tham số thứ hai, tong, sẽ xác định giá 
+trị dữ liệu cần in ra.
+Câu lệnh ở dòng lệnh 19
+getch(); //cho nhap 1 ky tu bat ky
+dùng hàm getch() nhằm tác dụng chờ người dùng nhập một ký 
+tự bất kỳ từ bàn phím. Để sử dụng được hàm getch(), ta cần khai báo 

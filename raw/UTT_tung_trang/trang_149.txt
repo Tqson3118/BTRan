@@ -1,0 +1,58 @@
+// Trang 149 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+149 
+6 
+    printf("nhap vao mot ky tu: ");  scanf("%c",&color);  
+7 
+    if(color == 'R'||color == 'r') printf("RED"); 
+8 
+    else if (color == 'G'||color == 'g')  
+9 
+     
+ 
+printf("GREEN"); 
+10     else if (color == 'B'||color == 'b') 
+11      
+ 
+printf("BLUE"); 
+12     else if (color == 'O'||color == 'o') 
+13      
+ 
+printf("ORANGE"); 
+14     else if (color == 'P'||color == 'p') 
+15      
+ 
+printf("PURPLE"); 
+16      
+ else printf("BLACK"); 
+17     getch();  
+18 }   
+ 
+ 
+Cách 2: Sử dụng cấu trúc swtich 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 
+3 
+int main()  
+4 
+{  
+5 
+    char color;  
+6 
+    printf("nhap vao mot ky tu: ");  scanf("%c",&color);  
+7 
+    switch(color)  
+8 
+    {  case 'R': case „r': printf("RED"); break;  
+9 
+        case 'G': case „g‟: printf("GREEN");break;  
+10         case 'B': case 'b': printf("BLUE");break;  
+11         case 'O': case 'o': printf("ORANGE");break; 
+12         case 'P': case 'p': printf("PURPLE");break; 
+13         default : printf("BLACK");break;  
+14  
+}  
+15     getch();  
+16 }   

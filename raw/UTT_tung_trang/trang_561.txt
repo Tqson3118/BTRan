@@ -1,0 +1,74 @@
+// Trang 561 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+561 
+Bảng 8.2.Các hàm trong Graphics.h đƣợc sử dụng để vẽ đồ hoạ 
+Tên hàm 
+Chức năng 
+Ví dụ minh họa 
+putpixel(x, y) 
+Vẽ một pixel tại vị trí 
+lƣới (x, y). 
+putpixel(320, 240): vẽ 
+một pixel với màu, đặt ở 
+chính giữa màn hình. 
+getpixel(x, y) 
+Lấy màu của pixel 
+nằm ở vị trí (x, y). 
+getpixel(320, 240): lấy 
+màu ở chính giữa màn 
+hình có độ phân giải 640 
+x 480. 
+line(x1, y1, x2, y2) 
+Vẽ một đƣờng thẳng 
+từ điểm (x1, y1) đến 
+điểm (x2, y2). 
+line(0, 0, 320, 240): vẽ 
+một đƣờng thẳng từ bên 
+trái màn hình đến trung 
+tâm màn hình. 
+circle(xc, yc, r) 
+Vẽ một vòng tròn có 
+tâm (xc, yc) và bán 
+kính = r. 
+circle(320, 240, 10): Vẽ 
+một vòng tròn có tâm ở 
+chính giữa màn hình, có 
+bán kính = 10 đơn vị 
+rectangle(x1, y1, x2, 
+y2) 
+Vẽ một hình chữ nhật 
+với 2 góc có tọa độ 
+(x1, y1) và (x2, y2). 
+rectangle(320, 240, 400, 
+300): vẽ một hình chữ 
+nhật sao cho (320, 240) 
+là tọa độ trên cùng bên 
+trái và (400, 300) là tọa 
+độ dƣới cùng bên phải. 
+ellipse(xc, yc, s, e, xr, 
+yr) 
+Vẽ một hình elip với 
+(xc, yc) làm tâm, xr, 
+yr là các trục lớn và 
+trục bé. Nếu s = 0, e = 
+180, chỉ có nửa trên 
+của hình elip đƣợc vẽ.  
+ellipse(320, 240, 0, 360, 
+100, 50): vẽ toàn bộ hình 
+elip có tâm (320, 240) - ở 
+chính giữa màn hình, có 
+trục lớn và trục bé tƣơng 
+ứng là 100 và 50. 
+arc(xc, yc, s, e, r) 
+Vẽ một cung có tâm 
+(xc, yc), bán kính = r, 
+góc bắt đầu và kết 
+thúc là s và e tƣơng 
+ứng. 
+arc(320, 240, 45, 135, 
+100): vẽ một cung có tâm 
+ở chính giữa màn hình 
+(320, 240), bán kính 100 
+đơn vị, góc bắt đầu là 45 
+độ, góc kết thúc là 135 
+độ. 

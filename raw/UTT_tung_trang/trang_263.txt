@@ -1,0 +1,53 @@
+// Trang 263 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+263 
+19  
+    } 
+20  
+} 
+21  
+//Ham kiem tra mot so co la so Armstrong 
+22  
+int checkArmstrong(int n1)  
+23  
+{ 
+24  
+    int ld, sum, num; 
+25  
+    sum = 0; 
+26  
+    num = n1; 
+27  
+    while(num!=0)   
+28  
+    {   
+29  
+        ld = num % 10;  // tim chu so cuoi cung cua so  
+30  
+        sum+ = ld * ld * ld;  // tinh lap phuong cua so cuoi cung 
+va them vao tong 
+31  
+        num = num/10;   
+32  
+    } 
+33  
+    return (n1 == sum); 
+34  
+} 
+Kết quả chƣơng trình 
+Kiem tra mot so co la so Armstrong: 
+------------------------------------- 
+Nhap vao mot so nguyen: 153 
+So 153 la so Armstrong. 
+Kiem tra mot so co la so Armstrong: 
+------------------------------------- 
+Nhap vao mot so nguyen: 120 
+So 120 khong la so Armstrong. 
+ Bài tập 4.4 
+ 
+Viết chƣơng trình in ra tất cả các số Armstrong trong phạm vi [a, 
+b], với a và b là các số nguyên dƣơng. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 /* Nguyen mau ham */  
+3 int isArmstrong(int num); 

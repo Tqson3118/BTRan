@@ -1,0 +1,35 @@
+// Trang 98 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+98 
+Giải thích chƣơng trình:  
+Dòng 7: scanf("%d", &a); chƣơng trình chờ ngƣời dùng nhập một 
+giá trị là số nguyên từ bàn phím và gán giá trị đó cho biến a. 
+Dòng 8: Trong câu lệnh printf(), chƣơng trình sẽ đọc và gặp %d, khi đó 
+chƣơng trình sẽ tìm đối số tƣơng ứng và in giá trị của biến a ra màn hình. 
+ Ví dụ 2.9 
+Viết chƣơng trình nhập vào giá trị của hai số nguyên a và b. In giá trị 
+của số a và b ra màn hình. 
+Chƣơng trình 
+1  #include <stdio.h> 
+2  #include <conio.h> 
+3  main() 
+4  { 
+5  int a, b, tong; 
+6  printf("Nhap vao gia tri cua a va b:"); 
+7  scanf("%d %d", &a, &b); 
+8  printf("Gia tri cua a = %d, b = %d\n", a, b); 
+9  tong = a + b; 
+10  printf("Tong = %d", tong); 
+11  getch(); 
+12  } 
+Kết quả chƣơng trình 
+Nhap vao gia tri cua a va b:12 34 
+Gia tri cua a = 12, b = 34 
+Tong = 46 
+Giải thích chƣơng trình: 
+Dòng 7: scanf("%d %d", &a, &b); Chƣơng trình khi đọc đến dòng 
+lệnh này, sẽ kiểm tra các mã định dạng. Có hai mã định dạng %d và %d, 
+tƣơng ứng với hai biến a và biến b, chƣơng trình chờ ngƣời dùng nhập hai 
+giá trị và gán hai giá trị này cho hai biến a, b. 
+Dòng 8: Hàm printf() sẽ tự động kiểm tra mã định dạng trong chuỗi 
+định dạng của hàm printf và in giá trị của hai biến a, b ra màn hình. 

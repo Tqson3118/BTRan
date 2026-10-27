@@ -1,0 +1,54 @@
+// Trang 578 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+578 
+5 
+void main() 
+6 
+{ 
+7 
+ 
+int gd=DETECT, gm; int i; 
+8 
+ 
+initgraph (&gd,&gm," "); 
+9 
+ 
+clrscr(); 
+10 
+ 
+for(i=0;i<500;i++) 
+11 
+ 
+{ 
+12 
+ 
+ 
+setcolor(i); 
+13 
+ 
+ 
+circle(100,100,30 + i);  
+14 
+ 
+ 
+delay(30); 
+15 
+ 
+} 
+16 
+ 
+getch(); 
+17 
+ 
+closegraph(); 
+18 
+} 
+ Kết quả chƣơng trình 
+Các vòng tròn tiếp tục đƣợc phát triển cho đến khi bằng số lƣợng 
+vòng tròn đã chỉ định. 
+ 
+ 
+ 
+ 
+ 
+ 

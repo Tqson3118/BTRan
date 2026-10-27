@@ -1,0 +1,37 @@
+// Trang 382 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+382 
+3 
+21 
+4 
+5 
+61 
+1 
+13 
+Ma tran thu nhat la: 
+4       12 
+54      3 
+22      5 
+Ma tran thu hai la: 
+65      3       21      4 
+5       61      1       13 
+Tich cua hai ma tran la: 
+320     744     96      172 
+3525    345     1137    255 
+1455    371     467     153  
+Trƣờng hợp 2: Số hàng của ma trận thứ hai khác số cột của ma trận 
+thứ nhất 
+Nhap so hang va so cot cua ma tran thu nhat: 
++ Nhap so hang cua ma tran thu nhat: 3 
++ Nhap so cot cua ma tran thu nhat: 2 
+Nhap 6 phan tu cua ma tran thu nhat: 
+12 
+43 
+54 
+5 
+65 
+2 
+Nhap so hang va so cot cua ma tran thu hai: 
++ Nhap so hang cua ma tran thu hai: 3 
++ Nhap so cot cua ma tran thu hai: 3 
+Hai ma tran nay khong the nhan voi nhau 

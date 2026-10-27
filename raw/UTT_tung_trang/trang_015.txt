@@ -1,0 +1,39 @@
+// Trang 15 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+15 
+LỜI NÓI ĐẦU 
+ 
+Năm 2016, C là ngôn ngữ lập trình hoạt động mạnh thứ 8 trên 
+GitHub xếp sau các ngôn ngữ nhƣ  Javascript, Java, Python, Ruby, PHP, 
+C#, C++. Tuy nhiên, GitHub chƣa phải là hình ảnh chính xác nhất để 
+đánh giá bởi GitHub luôn thiên vị với những ngôn ngữ mã nguồn mở và 
+hợp thời. Trên thực tế, tạp chí IEEE Spectrum xếp ngôn ngữ C nhƣ là 
+ngôn ngữ hàng đầu trong năm 2017 trƣớc cả Java, C # và Javascript. Có 
+một số lý do để các bạn sinh viên nên bắt đầu với ngôn ngữ lập trình C. 
+Thứ nhất, C là ngôn ngữ cấp thấp so với ngôn ngữ trìu tƣợng khác. 
+Bạn có thể viết mã gần gũi với phần cứng và trực tiếp điều khiển bộ nhớ. 
+Mặc dù đây là một trong những phần khiến ngƣời học khó học C nhƣng 
+đó cũng chính là lý do tại sao các lập trình viên ngôn ngữ này có xu 
+hƣớng phù hợp hơn với cách hoạt động của máy tính. Để viết mã C tốt, 
+bạn cần suy nghĩ nhƣ máy tính. 
+Thứ hai, nhiều lập trình viên nói rằng: Khi đã biết một ngôn ngữ lập 
+trình, bạn sẽ biết tất cả những ngôn ngữ khác nữa. Câu nói này có vẻ 
+đúng, đặc biệt là đối với ngôn ngữ C. Ví dụ, việc học từ ngôn ngữ cấp 
+thấp nhƣ C sang một ngôn ngữ cấp cao hơn nhƣ Python, Ruby khá dễ 
+dàng nhƣng để học ngƣợc lại thì không hề đơn giản. Bằng cách học C, 
+bạn chủ yếu sẽ học các nền tảng của ngôn ngữ lập trình hiện đại. Nếu bạn 
+thực sự hiểu C, bạn sẽ có thể học bất cứ ngôn ngữ nào khác một cách dễ 
+dàng bởi hầu hết các ngôn ngữ hiện đại thƣờng cao cấp hơn C. 
+Lý do thứ ba, hầu hết các ngôn ngữ hiện đại đều đƣợc sinh ra để đáp 
+ứng những thiếu sót của ngôn ngữ khác: ngôn ngữ C++ ra đời đáp ứng 
+những thiếu sót của ngôn ngữ C, tiếp theo sự ra đời của Java đáp ứng 
+những điểm chƣa hoàn thiện của C++ và C# ra đời để cải thiện Java v.v. 
+Vì thế bằng cách học C, bạn có thể hiểu rõ lý do tại sao một số ngôn ngữ 
+đƣợc thiết kế theo cách đó và có khả năng đánh giá tốt hơn về sự tiện lợi 
+mà các ngôn ngữ cao hơn cung cấp. 
+Lý do thứ tƣ, hầu hết các ngôn ngữ lập trình hiện đại đều đƣợc sử 
+dụng cho ba mục đích, đó là các ứng dụng kinh doanh, các ứng dụng web 
+và di động, cuối cùng là phân tích dữ liệu. Tuy nhiên, nếu bạn muốn phát 
+triển phần mềm đƣợc kết nối trực tiếp với phần cứng, bạn sẽ cần một 
+ngôn ngữ thấp hơn - và C là ngôn ngữ đƣợc sử dụng nhiều nhất. Các ứng 
+dụng đáng chú ý bao gồm hệ điều hành, ngôn ngữ lập trình, trình biên 

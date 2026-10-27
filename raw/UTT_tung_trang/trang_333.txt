@@ -1,0 +1,37 @@
+// Trang 333 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+333 
+ Chƣơng trình 
+1 #include<stdio.h> 
+2 void cyclicSwap(int *x,int *y,int *z); 
+3 int main() 
+4 { 
+5     int a, b, c; 
+6     printf("Nhap vao ba so a, b, c tuong ung: "); 
+7     scanf("%d %d %d",&a,&b,&c); 
+8     printf("Gia tri cac bien a, b, c truoc khi hoan doi:\n"); 
+9     printf("a = %d \nb = %d \nc = %d\n",a,b,c); 
+10     cyclicSwap(&a, &b, &c); 
+11     printf("Gia tri cua cac bien a, b, c sau khi hoan doi:\n"); 
+12     printf("a = %d \nb = %d \nc = %d",a, b, c); 
+13     return 0; 
+14 } 
+15 void cyclicSwap(int *x,int *y,int *z) 
+16 { 
+17     int tg; 
+18     // trao doi theo thu tu tuan hoan 
+19     tg = *y; 
+20     *y = *x; 
+21     *x = *z; 
+22     *z = tg; 
+23 } 
+  Kết quả chƣơng trình 
+Nhap vao ba so a, b, c tuong ung: 12 3 54 
+Gia tri cac bien a, b, c truoc khi hoan doi: 
+a = 12 
+b = 3 
+c = 54 
+Gia tri cua cac bien a, b, c sau khi hoan doi: 
+a = 54 
+b = 12 
+c = 3 

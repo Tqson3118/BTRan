@@ -1,0 +1,46 @@
+// Trang 92 - Ngôn ngữ lập trình C_ebook.pdf
+
+89
+2. Hãy đọc và phân tích chương trình sau :
+#include <stdio.h>
+#include <conio.h>
+int main (void)
+{
+int a =0,i=0;
+while (++i <10)
+{
+	 if (i%2==0)
+ 		
+a = a+i;
+    else
+ 		
+a = a+ 2*i;
+    if (i == 6) 
+break;
+}
+printf(“%d”, a);
+getch();
+return 0;
+}
+Yêu cầu: 
+ Vẽ lưu đồ hoạt động của chương trình..
+ Cho biết kết quả in ra màn hình của chương trình. 
+3. Hãy đọc và phân tích chương trình sau :
+#include <stdio.h>
+#include <conio.h>
+int main (void)
+30
+++i<10   Thực hiện phép tăng thêm 1 trước khi so sánh
+i là số chẵn
+i là số lẻ
+i=0 qua while ++i i=1
+bắt đầu vòng lặp
+i=1 lẻ a=2
+i=2 chẳn a=4
+i=3 lẻ a=10
+i=4 chẵn a=14
+i=5 lẻ a=24
+i=6 chẵn a=30 đồng thời tm if (i==6)
+lệnh break; thực hiện
+dừng vòng lặp
+kết quả in ra là 30

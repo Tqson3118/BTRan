@@ -1,0 +1,73 @@
+// Trang 369 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+369 
+51 
+  
+52 
+   return length; 
+53 
+} 
+54 
+  
+55 
+void copy_string(char *t, char *s) 
+56 
+{ 
+57 
+   while(*s) 
+58 
+   { 
+59 
+      *t = *s; 
+60 
+      s++; 
+61 
+      t++; 
+62 
+   } 
+63 
+   *t = '\0'; 
+64 
+} 
+65 
+void reverse_string(char *a) 
+66 
+{ 
+67 
+   int length, c; 
+68 
+   char *begin, *end, tg; 
+69 
+   length = string_length(a); 
+70 
+   begin = a; 
+71 
+   end = a; 
+72 
+   for (c = 0; c < (length - 1); c++) 
+73 
+       end++; 
+74 
+   for (c = 0; c < length/2; c++) 
+75 
+   {         
+76 
+      tg = *end; 
+77 
+      *end = *begin; 
+78 
+      *begin = tg; 
+79 
+      begin++; 
+80 
+      end--; 
+81 
+   } 
+82 
+} 
+83 
+int compare_string(char *first, char *second) 
+84 
+{ 
+85 
+   while(*first==*second) 

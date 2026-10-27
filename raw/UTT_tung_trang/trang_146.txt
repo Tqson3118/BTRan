@@ -1,0 +1,73 @@
+// Trang 146 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+146 
+ Ví dụ 3.11 
+1  #include <stdio.h> 
+2  #include <conio.h> 
+3  main() 
+4  { 
+5   
+int a, b; 
+6   
+printf("\n Nhap a = "); scanf("%d",&a); 
+7   
+printf("\n Nhap b = "); scanf("%d",&b); 
+8  switch (a) 
+9   
+{ 
+10   
+ 
+case 1 : printf("Mot"); break; 
+11   
+ 
+case 2 : switch (b) 
+12   
+ 
+ 
+   { 
+13   
+ 
+ 
+ 
+case 1 : printf("A"); break; 
+14   
+ 
+ 
+ 
+case 2 : printf("B"); break; 
+15   
+ 
+ 
+   } break; 
+16   
+ 
+case 3 : printf("Ba"); break; 
+17   
+} 
+18  } 
+ Các giá trị trong mỗi trường hợp phải khác nhau 
+ Ví dụ 3.12 
+1  
+#include <stdio.h> 
+2  
+#include <conio.h> 
+3  
+main() 
+4  
+{ 
+5  
+ 
+int a; 
+6  
+ 
+printf("\n Nhap a= "); scanf("%d",&a); 
+7  
+switch (a) 
+8  
+{ 
+9  
+ 
+case 1 : printf("Mot"); break; 
+10  
+ 
+case 1 : printf("MOT"); break; 

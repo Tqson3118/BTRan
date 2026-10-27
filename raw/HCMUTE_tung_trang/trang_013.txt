@@ -1,0 +1,20 @@
+// Trang 13 - Ngôn ngữ lập trình C_ebook.pdf
+
+10
+ Ngôn ngữ máy (machine language) hay còn được gọi là mã 
+máy (machine code).
+ Ngôn ngữ lập trình cấp thấp (low-level programming 
+language).
+ Ngôn ngữ lập trình cấp cao (high-level programming 
+language).
+Hình 1.1. Phân loại ngôn ngữ lập trình
+Ngôn ngữ cấp thấp cũng được chia ra 2 mức khác nhau, ngôn 
+ngữ máy hay mã máy và hợp ngữ (assembly language). Ngôn ngữ 
+máy (machine code) là các đoạn mã hệ 16 (hexadecimal code) hoặc 
+mã nhị phân (binary code) được sử dụng để lập trình cho các hệ 
+thống máy tính đầu tiên và được xem là thế hệ đầu tiên của ngôn ngữ 
+lập trình. Mã máy được viết dưới dạng nhị phân (0 và 1) giúp máy 
+tính (hay phần cứng hệ thống số) có thể đọc và thực thi trực tiếp các 
+tác vụ mà người lập trình thiết kế. Một lợi thế của ngôn ngữ máy là 
+máy tính có thể đọc trực tiếp và thực thi mà không cần tới một trình 
+biên dịch, hay chuyển đổi nào. Điều này giúp các chương trình được 

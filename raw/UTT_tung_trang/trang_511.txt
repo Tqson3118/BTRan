@@ -1,0 +1,37 @@
+// Trang 511 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+511 
+ Ví dụ 7.8 
+Cho đoạn chƣơng trình sau đây: 
+1  #include <stdio.h> 
+2  int main () { 
+3     FILE *fp; 
+4     fp = fopen("dulieu.bin","w+"); 
+5     fputs("Truong Dai hoc", fp); 
+6     fseek( fp, 14, SEEK_SET ); 
+7     fputs("DH Cong nghe GTVT", fp); 
+8     fclose(fp); 
+9     return(0); 
+10  } 
+ Giải thích chƣơng trình:  
+- Đầu tiên khai báo biến con trỏ fp, sau đó con trỏ fp ánh xạ đến tệp 
+dulieu.bin đƣợc tạo và lƣu cùng thƣ mục của chƣơng trình. Sử dụng hàm 
+fputs() để thêm nội dung vào tệp dulieu.bin. 
+- Sử dụng hàm fseek() đặt con trỏ vào vị trí 7. 
+- Ghi đè nội dung bắt đầu từ vị trí này với hàm fputs(). 
+- Khi biên dịch chƣơng trình, sẽ tạo ra tệp dulieu.bin. Đầu tiên nội 
+dung của tệp dulieu.bin đƣợc ghi là “ Truong Dai hoc”, sau đó hàm 
+fseek() sẽ đặt con trỏ bắt đầu từ vị trí thứ 7 và câu lệnh fputs() sẽ ghi đè 
+nội dung bắt đầu từ vị trí này. Kết quả nội dung mới của tệp dulieu.bin sẽ 
+là “Truong DH Cong nghe GTVT”. Chúng ta sẽ đọc nội dung của tệp 
+dulieu.bin bằng đoạn chƣơng trình sau đây: 
+ Ví dụ 7.9 
+1  #include <stdio.h> 
+2  int main () { 
+3     FILE *fp; 
+4     int c; 
+5     fp = fopen("dulieu.bin","r"); 
+6     while(1) { 
+7        c = fgetc(fp); 
+8        if( feof(fp) ) { 
+9           break; 

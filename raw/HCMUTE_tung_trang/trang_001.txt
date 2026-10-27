@@ -1,0 +1,13 @@
+// Trang 1 - Ngôn ngữ lập trình C_ebook.pdf
+
+NHAØ XUAÁT BAÛN
+ÑAÏI HOÏC QUOÁC GIA TP. HOÀ CHÍ MINH
+BOÄ GIAÙO DUÏC VAØ ÑAØO TAÏO
+TRÖÔØNG ÑAÏI HOÏC SÖ PHAÏM KYÕ THUAÄT THAØNH PHOÁ HOÀ CHÍ MINH
+NAÊM XAÂY DÖÏNG VAØ PHAÙT TRIEÅN
+60
+TRƯƠNG NGỌC SƠN - LÊ MINH
+TRƯƠNG NGỌC HÀ - LÊ MINH THÀNH
+NGÔN NGỮ LẬP TRÌNH C
+GIÁO TRÌNH
+(Ngành Kỹ thuật máy tính)

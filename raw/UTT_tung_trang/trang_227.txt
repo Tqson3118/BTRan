@@ -1,0 +1,47 @@
+// Trang 227 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+227 
+4  
+int tg; 
+5  
+tg = *a; 
+6  
+*a = *b; 
+7  
+*b = tg; 
+8 printf("Hoan doi trong ham a = %d va b = %d\n",*a , *b); 
+9 } 
+10 main() 
+11 { 
+12  
+int x = 5, y = 9; 
+13 printf("Truoc khi hoan doi a = %d va b = %d\n", x , y); 
+14  
+hoandoi(&x, &y); 
+15  
+printf("Sau doi a = %d va b = %d\n", x , y); 
+16 } 
+Kết quả chƣơng trình: 
+ 
+Truoc khi hoan doi a = 5 va b = 9 
+ 
+Hoan doi trong ham a = 9 va b = 5 
+ 
+Sau doi a = 9 va b = 5 
+ Ví dụ 4.8 
+Nhập vào 2 số nguyên a, b. Hoán đổi vị trí 2 số nguyên vừa nhập.  
+Xét chƣơng trình ở ví dụ 4.7. In ra địa chỉ của các biến ở chƣơng 
+trình con và địa chỉ của biến ở chƣơng trình chính. 
+Chƣơng trình: 
+1 #include<stdio.h> 
+2 void hoandoi(int *a, int *b) 
+3 { 
+4  
+int tg; 
+5  
+tg = *a; 
+6  
+*a = *b; 
+7  
+*b = tg; 
+8 printf("Trong hoandoi a = %d va b = %d\n",*a , *b); 

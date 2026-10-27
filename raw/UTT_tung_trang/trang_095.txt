@@ -1,0 +1,32 @@
+// Trang 95 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+95 
+4     int n = 255; 
+5     int l = 0; 
+6     float a = 3.14567; 
+7     printf("Xin chao"); 
+8     printf("Xin chao\nBan co khoe khong?"); 
+9     printf("Xin chao \"ban\", Ban co khoe khong?\n");  
+10     printf("Toi da hoan thanh 84.20%%  bai tap ve nha\n"); 
+11     printf("n dinh dang he bat phan: %o\n", n); 
+12     printf("n dinh dang o he hecxa (thuong) : %x\n", n); 
+13     printf("n dinh dang o he hecxa (Hoa) : %X\n", n); 
+14     printf("Tep duoc chua tai c:\\thumuc\\tep_tep\n"); 
+15     l = printf("Xin chao\n"); 
+16     printf("Do dai: %d\n", l); 
+17     printf("n(dem): %05d\n", n); 
+18     printf("str1=\"%20s\", str2=\"%-20s\"\n", "Xin chao", "Ban"); 
+19     printf("a = %.2f\n", a); 
+20     printf("n = %i \n", n); 
+21     printf("Dia chi cua n: %p\n", &n);      
+22     return0; 
+23 } 
+Kết quả chƣơng trình 
+Xin chao 
+Ban co khoe khong?Xin chao "ban", Ban co khoe khong? 
+Toi da hoan thanh 84.20%  bai tap ve nha 
+n dinh dang he bat phan: 377 
+n  dinh dang o he hecxa (thuong): ff 
+n dinh dang o he hecxa (Hoa): FF 
+Tep duoc chua tai c:\thumuc\tep_tep 
+Xin chao 

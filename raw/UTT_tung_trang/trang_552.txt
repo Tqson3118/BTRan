@@ -1,0 +1,23 @@
+// Trang 552 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+552 
+Hãy ghi các kết quả vào file văn bản có tên OUTPUT.TXT theo mẫu sau: 
+ 
+ Bài tập 7.23* 
+Viết chƣơng trình nhập và lƣu hồ sơ của sinh viên vào một file có tên 
+là “DSSV.TXT”. Sau đó đọc file “DSSV.TXT” và cất vào mảng, hãy sắp 
+xếp các hồ sơ sinh viên theo thứ tự giảm dần theo điểm trung bình môn 
+học rồi in ra màn hình hồ sơ các sinh viên theo thứ tự đó ra màn hình có 
+thông tin nhƣ sau : 
+- Mã số sinh viên. 
+- Họ và tên sinh viên. 
+- Điểm trung bình kiểm tra. 
+- Điểm thi hết môn. 
+- Điểm trung bình môn học (tính bằng (điểm TBKT+điểm thi)/2). 
+ Bài tập 7.24*  
+Tạo một file text có tên là “INPUT.TXT” có cấu trúc nhƣ sau: 
+- Dòng đầu tiên ghi hai số M và N (M, N là hai số nguyên dương 
+nhập từ bàn phím). 
+- Trong M dòng tiếp theo mỗi dòng ghi N số nguyên ngẫu nhiên trong 
+phạm vi từ 0 đến 100 (các số này cách nhau ít nhất một khoảng trắng). 
+ 

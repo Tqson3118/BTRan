@@ -1,0 +1,37 @@
+// Trang 247 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+247 
+ Chon xu ly: 
+    6.50 
+---------MENU--------- 
+1. Chon Xu ly: 
+2. Xuat danh sach: 
+ Moi ban chon: 2 
+ Xuat danh sach: 
+hoten               |java    |ltc     |dtb 
+pham thi thuan      |6.00    |7.00    |6.50 
+---------MENU--------- 
+1. Chon Xu ly: 
+2. Xuat danh sach: 
+ Moi ban chon: 3 
+-------------------------------- 
+ Ví dụ 4.15 
+Dùng hàm thực hiện các chƣơng trình sau theo Menu lựa chọn: 
+a. Nhập vào 1 số nguyên dƣơng n (n > 0). Viết hàm kiểm tra n có 
+phải là nguyên tố không? (số nguyên tố là số tự nhiên khác 0 chỉ có hai 
+ƣớc số dƣơng phân biệt là 1 và chính nó, số 1 không là số nguyên tố). 
+b. In ra các số nguyên tố < n. 
+c. Nhập vào 1 số nguyên dƣơng n (n > 0). Viết hàm kiểm tra n có là 
+số hoàn hảo không? (số hoàn hảo là số có tổng các ƣớc = chính nó). 
+d. In ra các số hoàn hảo < n. 
+e. Nhập vào 2 số nguyên dƣơng a, b. Viết hàm tìm USCLN của hai 
+số nguyên a, b. 
+f. Nhập vào 2 số nguyên tƣơng ứng là tử số và mẫu số của phần số, 
+in ra màn hình phân số tối giản. 
+Phác họa lời giải 
+Mỗi một mục a, b, c , d, e, f chúng ta xây dựng một hàm. Ở cách một 
+ta viết menu khi gọi đến hàm nào thì nhập đối số cho hàm đó. 
+Chƣơng trình 
+Cách 1:  
+1  #include <stdio.h> 
+2  #include <math.h> 

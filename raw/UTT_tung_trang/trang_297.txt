@@ -1,0 +1,47 @@
+// Trang 297 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+297 
+ Kết quả chƣơng trình: 
+Nhap so phan tu cua mang: 
+ 
+8 
+Nhap 8 phan tu cua mang: 
+ 
+45 
+ 
+12 
+ 
+12 
+ 
+5 
+ 
+45 
+ 
+78 
+ 
+3 
+ 
+12 
+Mang ban dau la:   45  12  12   5  45  78   3  12 
+Mang sau khi loai bo phan tu trung lap: 45  12   5  78   3 
+Yêu cầu đối với sinh viên: Xây dựng lại chƣơng trình bằng các 
+hàm sau đây: 
+- Hàm Nhap_mang(). 
+- Hàm Hien_thi(). 
+- Hàm Xoa_Trung_Lap_pt(). 
+5.1.2. Mảng hai chiều 
+5.1.2.1. Khai báo mảng hai chiều 
+Cú pháp: 
+data_Type array_Name[Row_Size][Column_Size]; 
+data_Type: kiểu dữ liệu của các phần tử của mảng, có thể là kiểu dữ 
+liệu cơ bản nhƣ: số nguyên, số thực, ký tự, logic,… cũng có thể là kiểu dữ 
+liệu có cấu trúc nhƣ kiểu bản ghi. 
+array_Name: tên biến mảng, đƣợc đặt tên giống tên biến, tên định danh. 
+Row_Size, Column_Size: kích thƣớc các chiều của mảng hai chiều; 
+thông thƣờng là số hàng và số cột của mảng hai chiều. 
+ Ví dụ 5.16 
+ Khai báo mảng hai chiều, kích thƣớc 4 × 5, các phần tử của mảng có 
+kiểu nguyên. 
+ 
+int arr[4][5]; 
+Hình ảnh của mảng hai chiều kích thƣớc  4 × 5: 

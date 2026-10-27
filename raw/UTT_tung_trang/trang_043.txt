@@ -1,0 +1,38 @@
+// Trang 43 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+43 
+int cần 16 bit (2 byte) thì một biến kiểu short int (hoặc có thể viết ngắn 
+gọn là short) chiếm giữ 8 bit (1 byte), cho phép biểu diễn các số trong 
+phạm vi [-128, 127]. 
+Bổ từ long đƣợc sử dụng với miền giá trị rộng hơn. Nó có thể đƣợc 
+sử dụng với kiểu int và kiểu double. Khi sử dụng với kiểu int, phạm vi 
+biến trong phạm vi từ -2.147.483.648 đến 2.147.483.647 và chiếm giữ 32 
+bit (8 byte) bộ nhớ. Tƣơng tự, khi áp dụng với kiểu double, biến chiếm 
+giữ 128 bit (16 byte) bộ nhớ. 
+1.4.3. Kiểu dữ liệu do ngƣời dùng định nghĩa 
+Mặc dù có một số loại cơ bản và dẫn xuất, ngôn ngữ C hỗ trợ tính 
+năng để xác định loại tùy chỉnh dựa trên nhu cầu ngƣời dùng. Kiểu do 
+ngƣời dùng xác định bao gồm mảng, con trỏ, cấu trúc, kiểu liệt kê, kiểu 
+hợp nhất, v.v. 
+Các kiểu dữ liệu do ngƣời dùng định nghĩa sẽ đƣợc trình bày chi tiết 
+ở các Chƣơng 5, 6, 7 của cuốn giáo trình này. 
+1.5. BIẾN VÀ HẰNG  
+1.5.1. Biến 
+1.5.1.1. Định nghĩa 
+Biến đƣợc sử dụng để thể hiện cho đại lƣợng có giá trị thay đổi (đã 
+biết hoặc chƣa biết trong bộ nhớ). Biến là tên tham chiếu đƣợc đặt cho vị 
+trí bộ nhớ chứa dữ liệu trong chƣơng trình. Mỗi biến trong C có một kiểu 
+dữ liệu cụ thể, xác định kích thƣớc và phạm vi của các giá trị có thể đƣợc 
+lƣu trữ trong bộ nhớ đó, đồng thời xác định tập hợp các phép toán đƣợc 
+áp dụng cho các biến đó. Tại thời điểm khai báo, phải xác định rõ ràng 
+kiểu dữ liệu của biến.  
+Trong ngôn ngữ C, có hai cách truy cập dữ liệu đƣợc lƣu trữ trong bộ 
+nhớ, theo địa chỉ của bộ nhớ hoặc tên tham chiếu đến vùng bộ nhớ đó, tức 
+là tên của biến. Tên biến là một định danh, phải tên thủ nghiêm ngặt các 
+quy tắc đặt tên định danh. Tên của một biến có thể bao gồm các chữ cái, 
+chữ số và ký tự gạch dƣới. Nó phải bắt đầu bằng một chữ cái hoặc dấu 
+gạch dƣới. C phân biệt ký tự hoa và ký tự thƣờng, do đó trình biên dịch C 
+xử lý các biến chứa các ký tự viết hoa và các biến chứa các ký tự viết 
+thƣờng khác nhau. Chẳng hạn, num, Num, NUM, nUm, v.v. là các biến 
+khác nhau trong chƣơng trình. Chúng ta không thể có hai biến có cùng tên 
+trong cùng một phạm vi. 

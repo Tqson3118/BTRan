@@ -1,0 +1,38 @@
+// Trang 47 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+47 
+6     r = 12; 
+7     dt = pi * r * r; 
+8     printf("Dien tich = %f", dt); 
+9     return 0; 
+10 } 
+Trong ví dụ 1.27, chúng ta đã khai báo và sử dụng biến pi nhƣ một 
+biến bình thƣờng, chúng ta dễ dàng sửa đổi giá trị của pi ở bất kỳ đâu 
+trong chƣơng trình. Đối với những chƣơng trình bé, số lƣợng dòng code ít 
+(10 dòng), việc thay đổi giá trị pi có thể đƣợc kiểm soát và kiểm tra vị trí 
+thay đổi. Nhƣng với những chƣơng trình lớn hơn, nếu ta vô tình thay đổi 
+giá trị của pi, điều này sẽ ảnh hƣởng khá nhiều đến các biểu thức phụ 
+thuộc vào số pi, bởi vì pi là một hằng toán học có giá trị cố định. 
+Việc khai báo các hằng sẽ hạn chế ngƣời dùng thay đổi giá trị của nó. 
+Trình biên dịch tìm kiếm sự thay đổi trong hằng và báo cáo lỗi nếu tìm thấy.  
+ 
+Chúng ta sẽ cải thiện chƣơng trình ở ví dụ 1.27 bằng cách sử dụng 
+một đại lƣợng có giá trị không thay đổi. 
+ Ví dụ 1.28 
+1 #include <stdio.h> 
+2 int main() 
+3 { 
+4     const float PI = 3.14159; 
+5     float r, pi, dt; 
+6     PI = 3.14; // se gay ra loi khi bien dich 
+7     r = 12; 
+8     dt = PI * r * r; 
+9     printf("Dien tich = %f", dt); 
+10     return 0; 
+11 } 
+Tại thời điểm biên dịch sẽ phát hiện sự thay đổi của biến pi, chƣơng 
+trình sẽ báo lỗi “Assignment of a read-only variable 'PI’”. 
+Có thể định nghĩa hằng có bất kỳ kiểu dữ liệu nào. Các hằng hoạt 
+động giống các biến thông thƣờng, nhƣng chúng chỉ đƣợc đọc ra, không 
+thể sửa đổi. Ngôn ngữ C hỗ trợ hai kiểu định nghĩa hằng: 
+- Sử dụng từ khóa const. 

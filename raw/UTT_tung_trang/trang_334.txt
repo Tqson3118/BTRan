@@ -1,0 +1,43 @@
+// Trang 334 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+334 
+ Ví dụ 5.40 
+Viết chƣơng trình nhập vào năm số nguyên từ bàn phím, sử dụng con trỏ. 
+Năm giá trị sẽ đƣợc lƣu trữ vào trong mảng sử dụng con trỏ. Sau đó 
+in các phần tử của mảng ra màn hình. 
+ Chƣơng trình 
+1 
+#include<stdio.h>  
+2 
+#include<conio.h>    
+3 
+   int main()  
+4 
+    {  
+5 
+     int arr[5],i;  
+6 
+     int *p=arr;  
+7 
+     printf("Nhap vao 5 gia tri cach nhau dau cach:");  
+8 
+     scanf("%d%d%d%d%d",p,p+1,p+2,p+3,p+4);  
+9 
+     printf("Cac gia tri cua mang:\n");  
+10      for(i=0;i<5;i++)  
+11         printf("%d\n",arr[i]);       
+12      getch();  
+13      return 0;    
+14     } 
+  Kết quả chƣơng trình 
+Nhap vao 5 gia tri cach nhau dau cach:12 4 56 43 6 
+Cac gia tri cua mang: 
+12 
+4 
+56 
+43 
+6  
+5.3. CHUỖI KÝ TỰ 
+5.3.1. Định nghĩa 
+Một chuỗi ký tự trong C là một dãy (mảng) các ký tự, đƣợc kết thúc 
+bằng ký tự „\0‟ (còn đƣợc gọi là ký tự NULL trong bảng mã ASCII).  

@@ -1,0 +1,73 @@
+// Trang 238 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+238 
+Phác họa lời giải 
+Xem lại đoạn chƣơng trình đã viết ở ví dụ 3.30. 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 int main() 
+4 { 
+5  
+int ng, th, n, d; 
+6  
+Do 
+7  
+{ 
+8  
+printf("\n Nhap nam: "); scanf("%d", &n); 
+9  
+}while(n < 1000 || n > 9999); 
+10  
+do 
+11  
+{ 
+12  
+printf("\n Nhap thang: "); scanf("%d", &th); 
+13  
+}while(th < 1|| th > 12);  
+14  
+switch(th) 
+15  
+{ 
+16  
+case 1: case 3: case 5: case 7: case 8: case 10: case 12: 
+ 
+ 
+d=31; 
+17  
+ 
+break; 
+18  
+case 9: case 4: case 6: d = 30; break; 
+19  
+case 2:  
+20  
+ 
+ { 
+21  
+ 
+  
+if(n % 4 == 0 && n % 100 !=0||n % 400 == 
+0) 
+22  
+ 
+  
+  
+d = 29; 
+23  
+ 
+  
+else d = 28; 
+24  
+ 
+ }; break; 
+25  
+} 
+26  
+do 
+27  
+{ 
+28  
+printf("\n Nhap ngay: "); scanf("%d", &ng); 
+29  
+}while(ng < 1|| ng > d);  

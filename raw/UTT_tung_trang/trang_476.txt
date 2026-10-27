@@ -1,0 +1,39 @@
+// Trang 476 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+476 
+float d_kt; 
+float tong_diem; 
+} sinhvien; 
+void Themsv(sinhvien sv[], int *spt); 
+int timkiem(sinhvien sv[], char id[], int spt); 
+void xoasv(sinhvien sv[], int *spt); 
+void khoitao(sinhvien sv[], int index); 
+void capnhat(sinhvien sv[], int spt); 
+void Sx_theo_tong(sinhvien sv[], int n); 
+void hienthi(sinhvien sv[], int spt); 
+void tieude(); 
+//Ham de hien thi cac menu duoc chon 
+void hienthi_menu(){ 
+printf("-------------------------------------------\n"); 
+printf("             CHUONG TRINH CHINH \n"); 
+printf("-------------------------------------------\n");  
+printf(" 1. Them ho so sinh vien\n"); 
+printf(" 2. Xoa ho so sinh vien\n"); 
+printf(" 3. Cap nhat ho so sinh vien\n"); 
+printf(" 4. Hien thi toan bo thong tin sinh vien\n"); 
+printf(" 5. Tinh diem tong ket cua sinh vien\n"); 
+printf(" 6. Hien thi sinh vien co diem tong ket cao nhat\n"); 
+printf(" 7. Hien thi sinh vien co diem tong ket thap nhat\n");  
+printf(" 8. Tim kiem sinh vien dua vao ma sinh vien\n");  
+printf(" 9. Sap xep danh sach sinh vien dua vao diem tong ket\n");  
+}  
+void Themsv(sinhvien sv[], int *spt ) 
+{ 
+ kt: 
+ printf("Nhap vao ma sinh vien:");  
+ fflush(stdin); 
+ scanf("%s",&sv[*spt].masv); 
+ if (timkiem(sv,sv[*spt].masv,*spt) != -1) 
+  { 
+  
+ printf("Ma sinh vien da ton tai\n"); goto kt; 

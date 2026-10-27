@@ -1,0 +1,24 @@
+// Trang 591 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+591 
+TÀI LIỆU THAM KHẢO 
+ 
+[1] PGS.TS. Phạm Văn Ất, Giáo trình Kỹ thuật lập trình C cơ sở và nâng 
+cao, NXB Giao thông vận tải, 2006. 
+[2] Nguyễn Linh Giang, Giáo trình Kỹ thuật lập trình C, NXB Giáo dục 
+Việt Nam, 2010. 
+[3] Quách Tuấn Ngọc, Ngôn ngữ lập trình C, NXB Thống kê, 2002. 
+[4] Nguyễn Thanh Thủy, Nguyễn Quang Huy, Bài tập ngôn ngữ lập trình 
+C, NXB Khoa học và Kỹ thuật, 2005. 
+[5] Th.S Trần Thị Hoa, Giáo trình lập trình căn bản, Lƣu hành nội bộ, 
+Học viện Kỹ thuật mật mã, 2013. 
+[6] Vũ Bá Duy, Giáo trình tin học cơ sở, phần lập trình trên ngôn ngữ C, 
+Lƣu hành nội bộ, Đại học Quốc gia Hà Nội, 2003. 
+[7] Brian W. Kernighan, Dennis M. Ritchie, The C programming 
+language, Second Edition, Prentice Hall, Englewood Cliffs, New 
+Jersey, 1988. 
+[8] https://www.programiz.com/c-programming (22.07.2019). 
+[9] https://www.w3resource.com/c-programming-exercises 
+(22.07.2019). 
+ 
+ 

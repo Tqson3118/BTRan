@@ -1,0 +1,39 @@
+// Trang 96 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+96 
+Do dai: 9 
+n(dem): 00255 
+str1 = "Xin chao", str2 = "Ban" 
+a = 3.15 
+n = 255 
+Dia chi cua n: 000000000062FE14 
+Yêu cầu:  
+Sinh viên dựa vào các dòng lệnh của chƣơng trình để giải thích kết 
+quả thu đƣợc. 
+2.1.2. Hàm nhập liệu scanf() 
+Hàm scanf() đƣợc viết tắt của cụm từ “scan formatted”, là hàm đƣợc 
+khai báo trong thƣ viện “stdio.h”. Có tác dụng đọc thông tin từ thiết bị 
+vào chuẩn (bàn phím), chuyển dịch chúng (thành số nguyên, số thực,…) 
+và lƣu trữ vào bộ nhớ theo các địa chỉ xác định. 
+Cú pháp: 
+scanf("format 
+specifiers", 
+argument_1, 
+argument_2,…, 
+argument_n); 
+Trong đó: 
+- scanf: tên hàm, phải viết bằng chữ thƣờng; 
+- format specifiers: chuỗi định dạng, bao gồm các mã định dạng, 
+đƣợc đặt trong cặp dấu nháy kép (“”), tƣơng tự nhƣ hàm printf, xác định 
+có bao nhiêu đối số và có những kiểu dữ liệu nào. Các mã định dạng còn 
+đƣợc gọi là đặc tả. Mỗi đặc tả  bắt đầu bằng ký hiệu %, có dạng nhƣ sau: 
+[wid[.pre]]<ký_tự_định_dạng>, trong đó: 
++ wid[.pre] với wid quy định độ rộng, pre là phần lẻ sau dấu thập 
+phân (áp dụng với số thực chấm động). 
++ <ký_tự_định_dạng>: là ký tự quy định kiểu dữ liệu cần nhập, 
+danh sách các ký tự định dạng đƣợc thể hiện ở Bảng 2.1 dƣới đây; 
+- argument_1, argument_2,…, argument_n: danh sách các đối số, 
+đƣợc cách nhau bởi dấu phẩy, mỗi đối số sẽ tiếp nhận giá trị nhập vào. Danh 
+sách các đối số tƣơng ứng với số mã định dạng trong chuỗi định dạng. 
+Sau đây là bảng danh sách của mã định dạng đƣợc sử dụng trong câu 
+lệnh scanf(): 

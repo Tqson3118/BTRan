@@ -1,0 +1,68 @@
+// Trang 455 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+455 
+35  
+printf("Danh sach thi sinh du thi: \n"); 
+36  
+printf("%-4s%-20s%-10s%-10s%-10s%-10s%-10s\n", 
+"Stt","Ho_ten","SBD","D_toan","D_ly","D_hoa","Tong_die
+m"); 
+37  
+for (i = 0;i < n;i++) 
+38  
+printf("%-4d%-20s%-10s%-10.1f%-10.1f%-10.1f%-10.1f\n", 
+i+1,a[i].ht,a[i].sbd,a[i].d_toan,a[i].d_ly,a[i].d_hoa,a[i].tong_di
+em); 
+39  
+} 
+40  
+void thisinhTT(thisinh a[], int n) 
+41  
+{ 
+42  
+int i, dem ; 
+43  
+printf("\nDanh sach thi sinh trung tuyen :\n"); 
+44  
+printf("%-4s%-20s%-10s%-10s%-10s%-10s%-10s\n", 
+"Stt","Ho_ten","SBD","D_toan","D_ly","D_hoa","Tong_die
+m"); 
+45  
+for (i = 0,dem = 0;i<n;i++) 
+46  
+if (a[i].tong_diem>=diemchuan) 
+47  
+{dem++; 
+48  
+printf("%-4d%-20s%-10s%-10.1f%-10.1f%-10.1f%-10.1f\n", 
+dem,a[i].ht,a[i].sbd,a[i].d_toan,a[i].d_ly,a[i].d_hoa,a[i].tong_d
+iem); 
+49  
+} 
+ 
+50  
+} 
+51  
+int main() 
+52  
+{ 
+53  
+int n; 
+54  
+struct thisinh a[max]; 
+55  
+printf("Nhap vao so luong thi sinh khoi A:\n"); 
+56  
+scanf("%d",&n); 
+57  
+nhapttts(a,n); 
+58  
+hienthi(a,n); 
+59  
+thisinhTT(a,n); 
+60  
+printf("\nNhan Enter ket thuc ...!"); 
+61  
+return 0; 
+62  
+} 

@@ -1,0 +1,135 @@
+// Trang 195 - Ngôn ngữ lập trình C_ebook.pdf
+
+192
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+	
+	
+}
+}
+int main (void)
+{    
+	
+int  n, i;
+	
+char tam[2];
+	
+float max;
+	
+struct  SinhVien *a;
+	
+puts (“Nhap so luong sinh vien: “);
+	
+scanf (“%d”,&n);
+	
+gets(tam);
+	
+a = (SinhVien*) malloc (n*sizeof (SinhVien));
+ 	
+if (a == NULL) 
+	
+	
+puts (“Khong the cap phat bo nho.”);
+	
+else
+	
+{
+	
+	
+NhapDs (a,n);
+	
+	
+InDs (a, n);
+	
+	
+max = a->diemTB;
+	
+	
+for (i= 0; i <n; i++)
+	
+	
+	
+if( max < (a +i)->diemTB)
+	
+	
+	
+	
+max = (a +i)->diemTB;
+	
+	
+	
+	
+	
+puts(“sinh vien co diem trung binh lon 
+nhat:”);
+	
+	
+for (i= 0; i <n; i++)
+	
+	
+	
+if( max == (a +i)->diemTB)
+	
+	
+	
+{
+	
+	
+	
+	
+puts( (a + i)->hoTen);
+	
+	
+	
+	
+printf ( “Diem tb: %f\n”, 
+(a + i)->diemTB);
+	
+	
+	
+}
+	
+}
+	
+free (a);
+	
+getch();
+	
+return 0;
+}

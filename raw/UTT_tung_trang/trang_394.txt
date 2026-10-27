@@ -1,0 +1,73 @@
+// Trang 394 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+394 
+9 
+   gets(a); 
+10 
+    tg = a; 
+11 
+   p = (char*)malloc(100); 
+12 
+  
+13 
+  if( p == NULL ) 
+14 
+   { 
+15 
+      printf("Khong the phan bo bo nho.\n"); 
+16 
+      exit(EXIT_FAILURE); 
+17 
+   } 
+18 
+    start = p; 
+19 
+    while(*tg) 
+20 
+   { 
+21 
+      ch = *tg; 
+22 
+       if ( !check_vowel(ch) ) 
+23 
+      { 
+24 
+         *p = ch; 
+25 
+         p++; 
+26 
+      } 
+27 
+      tg++; 
+28 
+   } 
+29 
+   *p = '\0'; 
+30 
+    p = start; 
+31 
+   strcpy(a, p); /* neu muon thay doi chuoi ban dau */ 
+32 
+   free(p); 
+33 
+    printf("Chuoi sau khi xoa di cac nguyen am (s): \"%s\"\n", a); 
+34 
+    return 0; 
+35 
+} 
+36 
+ // kiem tra nguyen am 
+37 
+int check_vowel(char a) 
+38 
+{ 
+39 
+  if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u') 
+40 
+    return 1; 
+41 
+  else if (a == 'A' || a == 'E' || a == 'I' || a == 'O' || a == 'U') 
+42 
+    return 1; 
+43 
+  else 

@@ -1,0 +1,51 @@
+// Trang 109 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+109 
+- Hàm scanf() cũng để lại ký tự „\n‟ trên stdin. Ký tự này sẽ làm 
+trôi hàm gets() và getchar() sau đó. Để các hàm này hoạt động đúng thì 
+phải khử ký tự „\n‟ trong hàm scanf() bằng cách thêm đặc tả %*c vào 
+cuối chuỗi điều khiển nhƣ sau: 
+ Ví dụ 2.21 
+Cho đoạn chƣơng trình sau: 
+1 
+#include <conio.h> 
+2 
+#include <stdio.h> 
+3 
+int main() 
+4 
+ { 
+5 
+ char ht[25]; 
+6 
+ int  t; 
+7 
+ printf("Nhap t = ");       
+8 
+ scanf("%d",&t);   
+9 
+ printf("Nhap vao chuoi ht: ");      
+10 
+ gets(ht); 
+11 
+ printf("\nChuoi vua nhap %s", ht); 
+12 
+ return 0; 
+13 
+} 
+Kết quả chƣơng trình: 
+Nhap t = 12 
+Nhap vao chuoi ht: 
+Chuoi vua nhap: 
+ 
+Để nhận dữ liệu đúng đắn bằng cách nhập vào từ bàn phím thì 
+trƣớc khi thực hiện scanf(), gets(), getchar(), ta nên “làm sạch” stdin 
+bằng hàm fflush(stdin). Dùng hàm này sẽ tránh đƣợc mọi hậu quả của các 
+thao tác nhập số liệu trƣớc đó. Với ví dụ 2.21 trên ta có thể viết lại thành 
+ví dụ 2.22 nhƣ sau: 
+ Ví dụ 2.22 
+1 #include "conio.h" 
+2 #include <stdio.h> 
+3 
+int main() 
+4  { 

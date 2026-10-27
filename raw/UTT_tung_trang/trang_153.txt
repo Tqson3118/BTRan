@@ -1,0 +1,54 @@
+// Trang 153 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+153 
++ Tháng là tháng 2 và không là năm nhuận có số ngày d = 28 ngày. 
+(Năm nhuận là năm chia hết cho 4 và không chia hết cho 100 hoặc 
+chia hết cho 400).  
+- Nhập vào ngày (1 < số ngày < d) 
++ Nếu ngày nhập vào < d thì tăng ngày lên. 
++ Nếu ngày nhập vào   d, kiểm tra lại tháng:  
+* Nếu tháng < 12, thì thiết lập ngày = 1 và tăng tháng lên một đơn vị. 
+* Nếu tháng  12, thì ngày = tháng = 1, tăng năm lên một đơn vị. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 int main() 
+4 { 
+5  
+int ng, th, n, d; 
+6  
+//Nhãn tn 
+7  
+tn: 
+8  
+printf("\n Nhap nam: "); scanf("%d",&n); 
+9  
+if (n < 1000 || n > 9999) 
+10  
+{  
+11  
+printf("\n Nhap lai nam: "); 
+12  
+//Nhay tu trong ra ngoai 
+13  
+goto tn; 
+14  
+} 
+15  
+tt: 
+16  
+printf("\n Nhap thang: "); scanf("%d",&th); 
+17  
+if (th < 1||th > 12)  
+18  
+{ 
+19  
+printf("\n Nhap lai thang: "); 
+20  
+goto tt; 
+21  
+} 
+22  
+switch(th) 
+23  
+{ 

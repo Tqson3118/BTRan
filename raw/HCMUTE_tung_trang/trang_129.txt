@@ -1,0 +1,55 @@
+// Trang 129 - Ngôn ngữ lập trình C_ebook.pdf
+
+126
+1
+5
+3
+2
+4
+0
+1
+2
+3
+4
+a[0]
+a[1]
+a[2]
+a[3]
+a[4]
+*(a)
+*(a+1) *(a+2) *(a+3) *(a+4)
+Thứ tự phần tử
+Giá trị mảng
+Truy xuất phần 
+tử mảng
+Truy xuất phần tử 
+mảng dùng con trỏ
+Hình 5.3. Mối liên hệ giữa mảng và con trỏ
+Tuy nhiên, cần phân biệt sự khác nhau khi sử dụng mảng và con 
+trỏ trong một số trường hợp cụ thể như sau:
+1
+2
+3
+4
+5
+6
+int a[] = {1,2,3,4,5,6} ;
+int *p;
+p = a;
+printf(“ p(0)= %d, p(1) = %d  \n “, *p,*(p+1)) ; 
+p++ ;
+printf(“ p(0)= %d, p(1) = %d  \n “, *p,*(p+1)) ;  
+Kết quả khi chạy chương trình 
+1
+2
+p(0)= 1, p(1) = 2
+p(0)= 2, p(1) = 3
+Trong ví dụ trên, chương trình đã khai báo mảng a và con trỏ p. 
+Sau đó, con trỏ p được gán nội dung là địa chỉ bắt đầu của mảng a. Như 
+đã giới thiệu ở trên, lệnh p = a sẽ tự động chuyển tên mảng a sang địa 
+chỉ bắt đầu của mảng và gán địa chỉ này cho con trỏ p. Câu lệnh p = a 
+tương đương với p = &a[0]; lấy địa chỉ của phần tử đầu tiên của mảng 
+gán cho con trỏ p. Như vậy, việc trỏ đến phần tử đầu tiên và phần tử tiếp 
+theo của con trỏ sẽ truy xuất tới phần tử a[0] và phần tử a[1] của mảng. 
+Lệnh p++ sẽ tự động tăng nội dung của biến con trỏ để truy xuất phần 
+tử tiếp theo. Khi sử dụng lệnh tăng hoặc cộng con trỏ, chương trình sẽ 

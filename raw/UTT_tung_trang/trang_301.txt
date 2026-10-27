@@ -1,0 +1,49 @@
+// Trang 301 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+301 
+22         printf("\n"); 
+23     } 
+24 } 
+25  int main() 
+26 { 
+27     int m, n; 
+28     int a[100][100]; 
+29     printf("\nNhap vao so hang cua mang hai chieu: "); 
+30     scanf("%d",&m); 
+31     printf("\nNhap vao so cot cua mang hai chieu: "); 
+32     scanf("%d",&n); 
+33     Nhap_mang(a,m,n); 
+34     Hien_thi(a,m,n); 
+35     getch(); 
+36     return 0; 
+37 } 
+ Kết quả chƣơng trình: 
+ 
+Nhap vao so hang cua mang hai chieu: 3 
+ 
+Nhap vao so cot cua mang hai chieu: 2 
+ 
+Nhap a[0][0]: 3 
+ 
+Nhap a[0][1]: 43 
+ 
+Nhap a[1][0]: 5 
+ 
+Nhap a[1][1]: 12 
+ 
+Nhap a[2][0]: 4 
+ 
+Nhap a[2][1]: 5 
+ 
+Mang sau khi nhap: 
+ 
+3       43 
+ 
+5       12 
+ 
+4       5 
+b. Sinh ngẫu nhiên và hiển thị mảng hai chiều. 
+ Ví dụ 5.21 
+Viết chƣơng trình sinh ngẫu nhiên mảng hai chiều kích thƣớc m  n 
+bao gồm các phần tử là các số nguyên dƣơng có giá trị trong phạm vi [0, 
+100] với m là số hàng, n là số cột của ma trận. Hiển thị mảng ra màn hình. 

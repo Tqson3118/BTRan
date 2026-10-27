@@ -1,0 +1,80 @@
+// Trang 379 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+379 
+22  
+ 
+if(n <= 0 || n > MAX) 
+23  
+ 
+{ 
+24  
+ 
+printf("Khong hop le. Nhap so trong pham vi tu 0 
+den MAX !\n"); 
+25  
+ 
+} 
+26  
+}while(n <= 0 || n > MAX); 
+27     printf("Nhap %d phan tu cua ma tran thu nhat:\n", m*n); 
+28     for(i = 0; i < m; i++)   // to iterate the rows 
+29         for(j = 0; j < n; j++)   // to iterate the columns 
+30             scanf("%d", &a[i][j]); 
+31     printf("Nhap so hang va so cot cua ma tran thu hai:\n"); 
+32    
+do 
+33  
+{ 
+34  
+ 
+printf("+ Nhap so hang cua ma tran thu hai: "); 
+35  
+ 
+scanf("%d", &p); 
+36  
+ 
+if(p <= 0 || p > MAX) 
+37  
+ 
+{ 
+38  
+ 
+ 
+printf("Khong hop le. Nhap so trong pham 
+vi tu 0 den MAX !\n"); 
+39  
+ 
+} 
+40  
+}while(p <= 0 || p > MAX); 
+41  
+ 
+do 
+42  
+{ 
+43  
+ 
+printf("+ Nhap so cot cua ma tran thu hai: "); 
+44  
+ 
+scanf("%d", &q); 
+45  
+ 
+if(q <= 0 || q > MAX) 
+46  
+ 
+{ 
+47  
+ 
+printf("Khong hop le. Nhap so trong pham vi tu 0 
+den MAX !\n"); 
+48  
+ 
+} 
+49  
+}while(q <= 0 || q > MAX); 
+50 // Kiem tra so hang cua ma tran thu hai co bang so cot cua ma tran 
+thu nhat 
+51     if(n != p) 
+52         printf("Hai ma tran nay khong the nhan voi nhau\n"); 
+53     else    

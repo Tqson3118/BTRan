@@ -1,0 +1,93 @@
+// Trang 466 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+466 
+ Bƣớc 5: Xây dựng hàm hiển thị tất cả các bản ghi 
+hienthi(sinhvien sv[], int spt) để hiển thị tất cả các thông tin của các sinh 
+viên trong lớp. Để hiển thị tất cả các bản ghi, chúng ta cần sử dụng một 
+vòng lặp để duyệt qua tất cả các đối tƣợng trong mảng các sinh viên. 
+//Hàm để hiển thị tất cả các bản ghi 
+// Ham hien thi thong tin cua sinh vien 
+1 
+void hienthi(sinhvien sv[], int spt)  
+2 
+{ 
+3 
+ 
+int i=0; 
+4 
+ 
+tieude(); 
+5 
+ 
+while (i<spt) 
+6 
+ 
+{ 
+7 
+ 
+ 
+if(sv[i].masv!="") 
+8 
+ 
+ 
+{ 
+9 
+ 
+ 
+ 
+printf("%-7s",sv[i].masv); 
+10  
+ 
+ 
+printf("%-10s",sv[i].tensv); 
+11  
+ 
+ 
+printf("%-6c",sv[i].gt); 
+12  
+ 
+ 
+printf("%-7.1f",sv[i].d_tp1); 
+13  
+ 
+ 
+printf("%-7.1f",sv[i].d_tp2); 
+14  
+ 
+ 
+printf("%-7.1f",sv[i].d_cc); 
+15  
+ 
+ 
+printf("%-7.1f",sv[i].d_gk); 
+16  
+ 
+ 
+printf("%-7.1f",sv[i].d_kt); 
+17  
+ 
+ 
+printf("%-7.1f",sv[i].tong_diem); 
+18  
+ 
+ 
+printf("\n"); 
+19  
+ 
+} 
+20  
+ 
+i=i+1; 
+21  
+} 
+22  
+if (spt==0) printf("Khong co ban ghi nao!\n"); 
+23 } 
+24 void tieude() 
+25 { 
+26 printf("MASV TENSV GT  D_TP1 D_TP2 D_CC D_GK 
+D_KT  TONG  \n "); 
+27 printf("========================================
+==========\n"); 
+28 } 
+Xóa bản ghi 

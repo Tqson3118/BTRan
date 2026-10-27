@@ -1,0 +1,39 @@
+// Trang 390 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+390 
+6    printf("Nhap vao mot chuoi ky tu: "); 
+7    gets(str); 
+8    printf("Nhap vao ky tu can dem so lan xuat hien trong chuoi: "); 
+9    scanf("%c",&ch); 
+10    for(i = 0; str[i] != '\0'; ++i) 
+11    { 
+12        if(ch == str[i]) 
+13            ++solan; 
+14    } 
+15    printf("So lan xuat hien cua ky tu %c trong chuoi = %d", ch, 
+solan); 
+16    return 0; 
+17 } 
+ Kết quả chƣơng trình: 
+ 
+Nhap vao mot chuoi ky tu: abbcccdddd 
+ 
+Nhap vao ky tu can dem so lan xuat hien trong chuoi: c 
+ 
+So lan xuat hien cua ky tu c trong chuoi = 3 
+ Bài tập 5.11 
+Nhập vào một chuỗi bao gồm các ký tự trong bảng chữ cái tiếng 
+Anh. Đếm số ký tự nguyên âm, phụ âm, dấu cách trong chuỗi đã nhập? 
+ Phác thảo lời giải 
+Đầu tiên, nhập vào một chuỗi ký tự từ bàn phím bao gồm các ký tự 
+trong bảng chữ cái tiếng Anh và lƣu trữ trong một biến. 
+Các biến đếm số nguyên âm, phụ âm, chữ số và dấu cách đƣợc khởi 
+tạo bằng 0. 
+Sử dụng vòng lặp, khi tìm thấy nguyên âm, biến đếm số nguyên âm 
+đƣợc tăng thêm 1. Tƣơng tự với các biến đếm số phụ âm, chữ số và 
+khoảng trắng đƣợc tăng lên khi tìm thấy các ký tự này. 
+In các biến đếm số nguyên âm, phụ âm, dấu cách ra màn hình. 
+ Chƣơng trình: 
+1 #include <stdio.h> 
+2 int main() 
+3 { 

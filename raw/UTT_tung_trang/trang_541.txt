@@ -1,0 +1,41 @@
+// Trang 541 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+541 
+19                  return 0; 
+20          } 
+21          fptr2 = fopen(temp, "w"); // Mo tep "ghi tam" o che do ghi  
+22          if (!fptr2)  
+23    
+{ 
+24          printf("Khong the mo tep tam thoi de ghi!!\n"); 
+25                  fclose(fptr1); 
+26                  return 0; 
+27          } 
+28       printf("Nhap vao chi so dong trong tep can xoa : "); 
+29          scanf("%d", &lno); 
+30    
+lno++; 
+31          // Sao chep tat ca noi dung vao tep tam thoi tru dong can 
+xoa noi dung 
+32          while (!feof(fptr1))  
+33          { 
+34              strcpy(str, "\0"); 
+35              fgets(str, MAX, fptr1); 
+36              if (!feof(fptr1))  
+37              { 
+38                  ctr++; 
+39                  /* bo qua dong da chon de xoa */ 
+40                  if (ctr != lno)  
+41                  { 
+42                      fprintf(fptr2, "%s", str); 
+43                  } 
+44              } 
+45          } 
+46          fclose(fptr1); 
+47          fclose(fptr2); 
+48          remove(fname);    
+// Xoa toan bo tep ban dau 
+49          rename(temp, fname);  // Doi ten tep tam thoi thanh tep 
+ban dau 
+50  /*------ doc noi dung tep ----------------*/ 
+51     fptr1=fopen(fname,"r");  

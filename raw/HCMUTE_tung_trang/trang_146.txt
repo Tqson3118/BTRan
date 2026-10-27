@@ -1,0 +1,40 @@
+// Trang 146 - Ngôn ngữ lập trình C_ebook.pdf
+
+143
+lại thì trả về 0. Lệnh return được sử dụng 2 lần trong hàm. Không có 
+giới hạn cho số lần sử dụng lệnh return. Trong trường hợp này, người 
+lập trình có thể dùng một biến trung gian và chỉ sử dụng lệnh return 1 
+lần ở cuối hàm. Tuy nhiên, đặt 2 lệnh return trong hàm này vẫn đảm 
+bảo đúng logic. Trong trường hợp phát hiện không phải là số nguyên tố, 
+lệnh return sẽ kết thúc hàm tại vị trí đó và trả về kết quả là 0 mà không 
+cần phải chạy hết vòng lặp for. Trường hợp nếu như là số nguyên tố, 
+lệnh return trong vòng lặp sẽ không được thực hiện, chương trình thực 
+hiện lệnh return ở cuối hàm. 
+ Hàm có tham số nhưng không có giá trị trả về.
+Trong nhiều trường hợp các hàm chỉ nhận tham số mà không trả 
+về giá trị. Trong một số ngôn ngữ lập trình như Pascal, các hàm không 
+trả về giá trị được gọi là các thủ tục. Tuy nhiên, ngôn ngữ C không phân 
+biệt hàm và thủ tục. Khai báo và sử dụng hàm không có giá trị trả về 
+như sau:
+void Tên_hàm (danh sách các tham số)
+	
+{
+	
+	
+Khai báo biến cục bộ;
+	
+	
+Câu lệnh;
+ 	
+	
+...
+	
+}
+Kiểu dữ liệu trả về trước Tên_hàm được thay thế bằng từ khóa 
+void để thể hiện thông tin: hàm không có giá trị trả về và dĩ nhiên, trong 
+hàm cũng không cần lệnh return.
+Ví dụ viết hàm kiểm tra một số có phải là số Armstrong hay không: 
+hàm không trả về kết quả là 0 hay 1 như hàm tìm số nguyên tố mà hàm 
+kiểm tra số Armstrong sẽ tự in ra kết quả sau khi kiểm tra trong hàm. Số 
+Armstrong được định nghĩa là số có giá trị bằng tổng lập phương của 
+các chữ số trong số đó. Ví dụ 153, 371

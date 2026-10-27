@@ -1,0 +1,47 @@
+// Trang 118 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+118 
+BÀI TẬP CHƢƠNG 2 
+A. BÀI TẬP CÓ LỜI GIẢI 
+ Bài tập 2.1 
+Viết chƣơng trình đổi từ độ C sang độ F. 
+Thang đo độ C, còn đƣợc gọi là thang đo độ Celsius, đƣợc phát triển 
+bởi nhà thiên văn học ngƣời Thụy Điển, ông Andres Celsius. Trong thang 
+đo độ C, nƣớc đóng băng ở 0 độ và sôi ở 100 độ.  
+Thang đo Fahrenheit đƣợc phát triển bởi nhà vật lý ngƣời Đức Daniel 
+Gabriel Fahrenheit. Trong thang đo Fahrenheit, nƣớc đóng băng ở 32 độ 
+và sôi ở 212 độ. 
+Công thức chuyển đổi từ centigrade sang Fahrenheit là: 
+C = (
+ 
+ ) * (F - 32) 
+Công thức:  
+  = (
+ 
+ ) * (  - 32)                         
+  
+     
+Phác thảo lời giải 
+- Nhập vào nhiệt độ ở độ C; 
+- Sử dụng công thức tính   
+  
+     để chuyển sang độ F; 
+- In kết quả ra màn hình, với định dạng chỉ gồm 2 chữ số thập phân. 
+Chƣơng trình 
+1 #include <stdio.h>    
+2 int main()  
+3 { 
+4  
+float do_f;     
+5     float do_c;   
+6  
+printf("Nhap nhiet do (do C): "); 
+7  
+scanf("%f", &do_c); 
+8  
+do_f = ((9.0 / 5.0) * do_c) + 32.0; 
+9  
+printf("Do F tuong ung la: %2.2f .\n", do_f); 
+10  
+return(0); 
+11 } 

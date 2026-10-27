@@ -1,0 +1,41 @@
+// Trang 265 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+265 
+38 { 
+39     // Lap tu dau den cuoi va in cac so hien tai, neu no la so 
+Armstrong 
+40     while(start <= end) 
+41     { 
+42         if(isArmstrong(start))  
+43         { 
+44             printf("%3d\t", start); 
+45         } 
+46         start++; 
+47     } 
+48 } 
+Kết quả chƣơng trình 
+Nhap vao can duoi: 1 
+Nhap vao can tren: 10000 
+Tat ca cac so Armstrong trong pham vi tu so 1 den so 10000 la: 
+1     153     370     371     407 
+ Bài tập 4.5 
+Viết chƣơng trình kiểm tra một số có là số đối xứng? 
+Dữ liệu test: 12321. 
+Kết quả mong muốn: 12321 là số đối xứng. 
+Dữ liệu test: 123123. 
+Kết quả mong muốn: 123123 không là số đối xứng. 
+Phác thảo lời giải 
+Xác định các hàm cần xây dựng để kiểm tra số nhập vào có là số đối 
+xứng hay không? 
+- Sử dụng hàm isPalindrom () để kết luận một số có là số đối xứng 
+hay không? Trong hàm isPalindrom() sử dụng 1 hàm khác có tên 
+reverse() để lấy nghịch đảo của một số. 
+- Hàm isPalindrom() trả về một trong hai giá trị 0 hoặc 1. Nếu trả về 
+giá trị 0,  kết luận số đã nhập không phải số đối xứng, nếu trả về giá trị 1, 
+kết luận số nhập vào là số đối xứng. 
+- Hàm reverse() đƣợc xây dựng để quy để đƣa ra nghịch đảo của một số. 
+Chƣơng trình 
+1  
+#include <stdio.h> 
+2  
+#include <math.h> 

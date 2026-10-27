@@ -1,0 +1,113 @@
+// Trang 156 - Ngôn ngữ lập trình C_ebook.pdf
+
+153
+Ví dụ, hàm sắp xếp mảng theo thứ tự tăng dần được định nghĩa và 
+sử dụng như sau: 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+#include  <stdio.h>
+#include <conio.h>
+#include<stdio.h>
+#include <stdlib.h>
+void Sapxepmang(int a[],int n);
+void Inmang(int a[],int n);
+void main (void)
+{
+	
+int arr[] = {6,13,2,3,9,7,5,18,4,12};
+	
+printf(“mang truoc khi sap xep :\n”);
+	
+Inmang(arr,10);
+	
+Sapxepmang(arr,10);
+	
+printf(“\nmang sau khi sap xep :\n”);	
+	
+Inmang(arr,10);
+}
+void Sapxepmang(int a[],int n)
+{
+	
+int i,j,tam ; 
+	
+for (i=0;i<n-1 ; i++)
+	
+	
+for(j=i+1; j<n;j++)
+	
+	
+{
+	
+	
+	
+if (a[i]>a[j])
+	
+	
+	
+{
+	
+	
+	
+tam = a[i];
+	
+	
+	
+a[i]= a[j];
+	
+	
+	
+a[j]=tam;	
+	
+	
+	
+}
+	
+	
+}
+}
+void Inmang(int a[],int n)
+{
+	
+int i;
+	
+for (i=0;i<n ; i++)
+	
+	
+printf(“%d, “,a[i]);
+}

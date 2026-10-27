@@ -1,0 +1,48 @@
+// Trang 191 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+191 
+trong đó W là khối lƣợng của một ngƣời (tính bằng kg) và H là chiều cao 
+của ngƣời đó (tính bằng m). 
+Căn cứ  vào chỉ số BMI, đƣa ra các nhận xét và yêu cầu sau đây: 
+- BMI < 18: Ngƣời gầy, cần bồi dƣỡng thêm. 
+- BMI = 18 - 24.9: Thân hình hoàn toàn bình thƣờng. 
+- BMI = 25 - 29.9: Ngƣời béo phì độ I, cần có chế độ ăn uống hợp lý. 
+- BMI = 30 - 34.9: Ngƣời béo phì độ II, hãy thận trọng. 
+- BMI > 35: Ngƣời béo phì độ III, cảnh báo nguy cơ béo phì. 
+Viết chƣơng trình tính chỉ số BMI và đƣa ra nhận xét, yêu cầu. 
+Phác họa lời giải 
+- Nhập vào chiều cao và cân nặng. 
+- Tính chỉ số BMI dựa vào chiều cao và cân nặng. 
+- Dựa vào chỉ số BMI, sử dụng câu lệnh if else đƣa ra các nhận xét 
+và lời khuyên. 
+- Khai báo biến ketQua lƣu lời khuyên, sử dụng hàm strcpy() để sao 
+chép đoạn lời khuyên cho biến ketQua. 
+- Hiển thị ketQua ra màn hình. 
+Chƣơng trình 
+1 
+#include <stdio.h> 
+2 
+#include <string.h> 
+3 
+int main() 
+4 
+{ 
+5 
+    float chieuCao, canNang, chiSoBMI; 
+6 
+    char ketQua[200]; 
+7 
+        printf("Nhap vao can nang: "); 
+8 
+    scanf("%f",&canNang); 
+9 
+     printf("Nhap vao chieu cao: "); 
+10     scanf("%f",&chieuCao);      
+11     // tinh chi so BMI 
+12     chiSoBMI = canNang / (chieuCao * chieuCao); 
+13     printf("Chi so BMI = %2.2f\n", chiSoBMI); 
+14     // phân loai dua vao chi so BMI 
+15     if (chiSoBMI < 18)  
+16     { 
+17  
+    strcpy(ketQua, "Ban hoi gay, can boi duong them!!"); 

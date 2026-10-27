@@ -1,0 +1,71 @@
+// Trang 444 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+444 
+34     } 
+35 return 0; 
+36 }   
+ Kết quả chƣơng trình: 
+ 
+Nhap vao so luong sinh vien: 
+ 
+4 
+ 
+Nhap vao thong tin cua 4 sinh vien: 
+ 
+Nhap vao ten cua sinh vien thu 0: 
+ 
+Le Kien 
+ 
+Nhap vao ma cua sinh vien thu 0: 
+ 
+sv01 
+ 
+Nhap vao diem cua sinh vien thu 0: 
+ 
+8.8 
+ 
+Nhap vao ten cua sinh vien thu 1: 
+ 
+Pham Thuan 
+ 
+Nhap vao ma cua sinh vien thu 1: 
+ 
+sv02 
+ 
+Nhap vao diem cua sinh vien thu 1: 
+ 
+9.2 
+ 
+Nhap vao ten cua sinh vien thu 2: 
+ 
+Le Chi 
+ 
+Nhap vao ma cua sinh vien thu 2: 
+ 
+sv03 
+ 
+Nhap vao diem cua sinh vien thu 2: 
+ 
+8.7 
+ 
+Nhap vao ten cua sinh vien thu 3: 
+ 
+Le An 
+ 
+Nhap vao ma cua sinh vien thu 3: 
+ 
+sv04 
+ 
+Nhap vao diem cua sinh vien thu 3: 
+ 
+9.0 
+ 
+In thong tin chi tiet cua 4 sinh vien: 
+ 
+Le Kien sv01 8.8 
+ 
+Pham Thuan sv02 9.2 
+ 
+Le Chi sv03 8.7 
+ 
+Le An sv04 9.0 

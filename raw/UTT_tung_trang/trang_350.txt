@@ -1,0 +1,42 @@
+// Trang 350 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+350 
+8 
+  copy_string(d, s); 
+9 
+  printf("Chuoi sao chep: %s\n", d); 
+10    return 0; 
+11 } 
+12  void copy_string(char d[], char s[]) { 
+13   int c = 0; 
+14    while (s[c] != '\0') { 
+15     d[c] = s[c]; 
+16     c++; 
+17   } 
+18   d[c] = '\0'; 
+19 } 
+  Kết quả chƣơng trình: 
+ 
+Noi dung cua chuoi luc ban dau: dhcngtvt 
+ 
+Nhap vao chuoi: 
+ 
+abc 
+ 
+Chuoi sao chep: abc 
+ Cách 3: Xây dựng hàm sao chép chuỗi ký tự 
+1 #include <stdio.h> 
+2  void copy_string(char [], char []); 
+3  int main() { 
+4   char s[1000], d[1000]; 
+5   printf("Nhap vao chuoi ky tu s:\n"); 
+6   gets(s); 
+7   copy_string(d, s); 
+8   printf("Sao chep noi dung chuoi s va chuoi d: %s\n", d); 
+9   return 0; 
+10 } 
+11  void copy_string(char d[], char s[]) { 
+12   int c = 0; 
+13    while (s[c] != '\0') { 
+14     d[c] = s[c]; 
+15     c++; 

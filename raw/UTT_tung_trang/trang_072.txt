@@ -1,0 +1,36 @@
+// Trang 72 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+72 
+thủ quy cách đặt tên của DOS và không cần có phần mở rộng (sẽ tự động 
+có phần mở rộng là .C hoặc .CPP). Sau đó gõ phím Enter. 
+- Nếu chƣơng trình đã đƣợc ghi một lần rồi thì nó sẽ ghi những thay 
+đổi bổ sung lên tập tin chƣơng trình cũ. 
+Lƣu ý:  
+Để đề phòng mất điện trong khi soạn thảo chƣơng trình bạn nên gõ 
+phím F2. 
+Quy tắc đặt tên tập tin của DOS:  
+Tên của tập tin gồm 2 phần: Phần tên và phần mở rộng. 
+ Phần tên của tập tin phải bắt đầu là 1 ký tự từ a...z (không phân biệt 
+hoa thƣờng), theo sau có thể là các ký tự từ a…z, các ký số từ 0...9 hay 
+dấu gạch dƣới (_), phần này dài tối đa là 8 ký tự.  
+Phần mở rộng: phần này dài tối đa 3 ký tự. 
+1.7.1.4. Thực hiện chương trình 
+Để dịch chƣơng trình ta dùng chức năng Compile trên menu Compile 
+hoặc nhấn tổ hợp phím Alt + F9, chức năng này có tác dụng dịch chƣơng 
+trình gốc và liên kết với các hàm thƣ viện nhằm tạo ra tệp chƣơng trình thực 
+hiện có đuôi là EXE. Các sai sót (error) và cảnh báo (warning) nếu có sẽ 
+đƣợc chỉ ra. Nếu có error hoặc warning thì ta cần trở lại màn hình soạn thảo 
+để sửa chữa chƣơng trình. Trƣờng hợp biên dịch không còn lỗi, ta nhận đƣợc 
+một chƣơng trình đúng, nó đƣợcc ghi lên đĩa dƣới dạng một tệp có tên là: 
+CHAO.EXE. Đến đây quá trình dịch xem nhƣ đƣợc hoàn thành. 
+1.7.1.5. Chạy chương trình 
+Để khởi động một tệp chƣơng trình thực hiện ta sử dụng tên của nó. 
+Chẳng hạn, để khởi động chƣơng trình CHAO.EXE ta bấm CHAO và 
+nhấn phím Enter (trong môi trƣờng DOS) hoặc ta có thể chạy trong môi 
+trƣờng Turbo C bằng cách bấm đồng thời  hai phím Ctrl + F9. Khi đó 
+chƣơng trình bắt đầu làm việc. Nếu nhập đủ các số liệu cần thiết chƣơng 
+trình sẽ tính toán và đƣa ra kết quả cuối cùng trên máy tính. 
+1.7.2. DevC 
+1.7.2.1. Soạn thảo chương trình C bằng DevC++ 
+Bƣớc 1: Chọn vào trình đơn File, chọn tiếp New.  
+Bƣớc 2: Lựa chọn Project… 

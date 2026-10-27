@@ -1,0 +1,45 @@
+// Trang 81 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+81 
+13 printf(“bieu thuc T = %3.1f”, t); 
+14 printf(“bieu thuc P = %3.1f”, p); 
+15 printf(“bieu thuc Q = %3.1f”, q); 
+16 getch(); 
+17 } 
+Yêu cầu: 
+- Biên dịch và chạy chƣơng trình. 
+- Cho biết chƣơng trình trên tính giá trị của những biểu thức nào? 
+- Tìm hiểu về các hàm sqrt(), exp(), sin(), log(), pow(). 
+- Cho biết thƣ viện math.h dùng để làm gì? 
+ Bài tập 1.8 
+Sử dụng Turbo C hoặc Dev C++, soạn thảo chƣơng trình sau đây: 
+1 
+# include “stdio.h”  
+2 
+# include “conio.h”  
+3 
+void main() 
+4 
+{ 
+5 
+int dai, rong; //khai báo các biến float cv, dt; 
+6 
+//In ra màn hình thông báo nhap chiều dai, rong 
+7 
+printf(“Nhap chieu dai, rong:”);  
+8 
+//Nhập số liệu cho các biến  
+9 
+scanf(“%d %d”, &dai, &rong); 
+ 
+10 cv = (float)(dai+rong)*2; 
+11 // Tính chu vi 
+12 dt = (float)(dai*rong); // Tính diện tích  
+13 printf(“\nchu vi = %d”,cv); 
+// In ra màn hình giá trị chu vi 
+14 printf(“\ndien tich = %d”,dt); // In ra màn hình diện tích 
+15 getch(); //Dừng màn hình để xem kết quả 
+16 } 
+Yêu cầu: 
+- Biên dịch và chạy chƣơng trình, chƣơng trình thông báo lỗi gì? 
+Cách khắc phục lỗi chƣơng trình thông báo? 

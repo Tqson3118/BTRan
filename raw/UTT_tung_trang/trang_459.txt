@@ -1,0 +1,49 @@
+// Trang 459 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+459 
+10 void nhaptt(hogd hgd[], int n) 
+11 { 
+12 int i; 
+13 float dtt; 
+14 double td; 
+15 printf("Nhap thong tin cua cac ho gia dinh:\n"); 
+16    for(i=0;i<n;i++) 
+17      { 
+18       dtt =0; 
+19       td =0; 
+20       printf("Nhap thong tin cua ho thu %d:\n", i+1); 
+21       printf("Nhap ten chu ho:"); 
+22       fflush(stdin); 
+23       gets(hgd[i].ht); 
+24       printf("Nhap vao chi so truoc:"); 
+25       scanf("%f", &hgd[i].csd); 
+26       printf("Nhap vao chi so sau:"); 
+27       scanf("%f", &hgd[i].css); 
+28       dtt = hgd[i].css - hgd[i].csd; 
+29       if (dtt<=50) td =1678*dtt; 
+30  
+ else if (dtt<=100) td= 1678*50 +1734*(dtt-50); 
+31      
+ 
+ else if (dtt<=200) td = 1678*50 + 50* 1734 + 
+2014*(dtt-100); 
+32            
+ else if (dtt<=300) td = 1678*50 + 50* 1734 + 
+2014*100 + 2536*(dtt -200); 
+33                 
+ 
+  else if (dtt<=400) td = 1678*50 + 50* 
+1734 + 2014*100 + 2536*100 + 2834*(dtt-300); 
+34                     
+ 
+  else td = 1678*50 + 50* 1734 + 
+2014*100 + 2536*100 + 2834*100 + 2927*(dtt-400); 
+35        
+hgd[i].tiendien = td; 
+36  
+  } 
+37 } 
+38 void hienthi(hogd hgd[], int n) 
+39 { 
+40 int i,j; 
+41 printf("%-4s%-20s%-15s%-15s%-15s\n", "Stt","Chu ho","Chi 

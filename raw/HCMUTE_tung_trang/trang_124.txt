@@ -1,0 +1,28 @@
+// Trang 124 - Ngôn ngữ lập trình C_ebook.pdf
+
+121
+CHƯƠNG 5 
+CON TRỎ
+Mục tiêu:
+Sau khi kết thúc chương này, người đọc có thể:
+- Khai báo được biến con trỏ.
+- Ứng dụng biến con trỏ trong các thao tác xử lý: trỏ tới vùng nhớ 
+khác, cấp phát bộ nhớ động cho con trỏ.
+5.1. GIỚI THIỆU
+Con trỏ (pointer) còn được một số tài liệu gọi là biến con trỏ. 
+Thực tế, con trỏ hay biến con trỏ đều như nhau, bởi con trỏ là biến 
+nhưng là một biến được sử dụng đặc biệt so với các biến thông thường 
+khác. Con trỏ là một biến mà nội dung của nó chứa địa chỉ của một biến 
+khác. Định nghĩa con trỏ nghe có vẻ hơi trừu tượng và người đọc khó có 
+thể hình dung được chức năng của con trỏ, so với các biến khác. 
+Chương này sẽ giới thiệu cách thức sử dụng biến con trỏ, cũng 
+như tác dụng của biến con trỏ trong việc truy xuất vùng nhớ. Con trỏ 
+được sử dụng khá nhiều trong ngôn ngữ C, C++, và đặc biệt trong lập 
+trình cho vi xử lý, vi điều khiển sử dụng ngôn ngữ C/C++. Sử dụng tốt 
+biến con trỏ cho phép người lập trình tối ưu hóa được vùng nhớ, nâng 
+cao hiệu suất của chương trình. Có thể hiểu, con trỏ là một đơn vị gián 
+tiếp, cho phép truy xuất đến bộ nhớ thông qua địa chỉ. Trong lập trình 
+cấp cao, các khái niệm về bộ nhớ, thanh ghi thông thường bị quên 
+lãngvì người viết chương trình sử dụng ngôn ngữ cấp cao và các biến 
+được đặt tên theo kiểu gợi nhớ. Để hiểu và sử dụng tốt con trỏ, chương 
+này sẽ giới thiệu sơ lược về biến, vùng nhớ, địa chỉ, nằm giúp người đọc 

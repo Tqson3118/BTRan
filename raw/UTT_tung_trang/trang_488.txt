@@ -1,0 +1,41 @@
+// Trang 488 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+488 
+BÀI TẬP CHƢƠNG 6 
+A. BÀI TẬP CÓ LỜI GIẢI 
+ Bài tập 6.1 
+Viết chƣơng trình quản lý các nhân viên của một công ty. Biết rằng 
+thông tin của một nhân viên bao gồm: mã nhân viên, tên nhân viên và tuổi 
+của nhân viên. 
+Hiển thị menu sau đây cho phép ngƣời dùng lựa chọn: 
+---------------------------------- 
+ 
+ 
+CHUONG TRINH CHINH             
+---------------------------------- 
+1. Nhap thong tin nhan vien 
+2. In danh sach nhan vien da sap xep theo ten 
+3. In danh sach nhan vien sap xep theo tuoi 
+Nếu ngƣời dùng lựa chọn 1, cho phép nhập thông tin của một nhân 
+viên. Nếu ngƣời dùng chọn 2, cho phép hiển thị danh sách nhân viên theo 
+tên, nếu ngƣời dùng chọn 3 cho phép hiển thị danh sách nhân viên theo 
+tuổi. Quá trình thực hiện chƣơng trình kết thúc nếu ngƣời dùng nhập vào 
+1 phím khác phím y, nhập y để tiếp tục công việc. 
+Chƣơng trình: 
+1 #include <stdio.h> 
+2 #include <stdlib.h> 
+3 #include <string.h> 
+4 struct Nhanvien 
+5 { 
+6  
+char tennv[30]; 
+7  
+char manv[30]; 
+8  
+int tuoi; 
+9 }; 
+10  
+11 void tieude();  
+12 void hienthi(); 
+13 int timkiem(Nhanvien ds_nv[], char id[], int n); 
+14 void tieude() 

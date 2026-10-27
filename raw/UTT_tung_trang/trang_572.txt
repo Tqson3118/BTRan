@@ -1,0 +1,64 @@
+// Trang 572 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+572 
+18 
+printf("khong the khoi dong do hoa \n"); 
+19 
+printf("ma 
+loi: 
+%d 
+\nnguyen 
+nhan 
+loi 
+%s", 
+maloi, 
+grapherrormsg(maloi)); 
+20 
+getch(); 
+21 
+exit(1); 
+22 
+} 
+23 
+setbkcolor(CYAN); 
+24 
+int x = 30,y = 100; 
+25 
+do 
+26 
+{ 
+27 
+if (x >= 640-30) x = 50; 
+28 
+bong(x,y,30,CYAN); 
+29 
+x + = 4; 
+30 
+bong(x,y,30,RED); 
+31 
+delay(200); // t tam dung 20 mili giay 
+32 
+} while (!kbhit()); // lap vo han toi khi nhan 1 phim bat ky thi 
+dung 
+33 
+getch(); 
+34 
+closegraph(); 
+35 
+} 
+ Ví dụ 8.10 
+Vẽ quả bóng màu đỏ và nhớ vào vùng nhớ p, xoá màn hình, vẽ bầu 
+trời sao, cho quả bóng chuyển động ngẫu nhiên trên màn hình đến khi ấn 
+một phím bất kỳ. 
+Gợi ý:  
+Tạo ảnh chuyển động mà không xoá màn hình nền. 
+Vẽ ảnh trong vùng chữ nhật (x1, y1, x2, y2), dùng hàm imagesize() 
+tính số byte cần thiết để lƣu ảnh trong vùng chữ nhật vừa vẽ (giả sử là n 
+byte), dùng hàm malloc() để cấp phát vùng nhớ n byte và cho con trỏ p 
+trỏ và vùng nhớ này, dùng hàm getimage() chép ảnh từ vùng chữ nhật vào 
+vùng nhớ p, xoá màn hình, tạo màn hình nền, dùng lệnh putimage() với 
+kiểu chép XOR_PUT để in ảnh lƣu trong P ra màn hình với toạ độ góc 
+trên bên trái là(x, y), tạm dừng chƣơng trình một lát, dùng putimage() với 
+kiểu chép XOR_PUT in lại ảnh lƣu trong P ra màn hình cũng tại (x, y) để 
+xoá ảnh cũ (vì 1 xor 1 cho 0), thay đổi các thành phần của toạ độ (x, y) in 
+ảnh tại toạ độ mới, v.v. 

@@ -1,0 +1,39 @@
+// Trang 308 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+308 
+18    for(int i = 0; i < n; i++) 
+19    { 
+20       for(int j = 0; j < n; j++) 
+21          printf("%d\t", a[i][j]); 
+22       printf("\n"); 
+23    } 
+24 } 
+25 //ham tinh tong cac phan tu tren duong cheo chinh 
+26 int Tong_CC(int a[][MAX], int n) 
+27 { 
+28    int t_1= 0; 
+29    for(int i = 0; i < n; i++) 
+30       t_1 +=  a[i][i]; 
+31    return t_1; 
+32 } 
+33 //ham tinh can bac hai tong binh phuong các phan tu 
+34 int TB(int a[][MAX], int n) 
+35 { 
+36     int bp ; 
+37     int t_2 = 0; 
+38     double normal; 
+39    for(int i = 0; i < n; i++)    
+40     { 
+41         for(int j = 0; j < n; j++)    
+42         { 
+43             bp = a[i][j]*a[i][j];   
+44             t_2 += bp;  
+45         } 
+46     } 
+47     normal = sqrt((double)t_2);    
+48    return normal; 
+49 } 
+50 int main(){ 
+51     int a[MAX][MAX]; 
+52     int n;   
+53     //doan chuong trinh kiem tra so hang nhap dam bao lon hon 0 va 

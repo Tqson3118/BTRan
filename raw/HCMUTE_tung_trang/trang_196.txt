@@ -1,0 +1,28 @@
+// Trang 196 - Ngôn ngữ lập trình C_ebook.pdf
+
+193
+Tạo cấu trúc để quản lý điểm của sinh viên với các thông tin sau:
+ Họ và tên
+ Mã số sinh viên
+ Điểm giữa kỳ
+ Điểm cuối kỳ
+ Điểm tổng kết, trong đó điểm giữa kỳ chiếm 50% và điểm cuối 
+kỳ chiếm 50%.
+Viết chương trình nhập dữ liệu cho 10 sinh viên và thực hiện các 
+yêu cầu sau:
+a. In ra danh sách sinh viên đậu, sinh viên đậu là sinh viên có điểm 
+tổng kết >= 5 và điểm giữa kỳ khác 0.
+b. In ra sinh viên có điểm tổng kết thấp nhất.
+c. Sắp xếp và in ra danh sách sinh viên đã nhập theo thứ tự tăng 
+dần của điểm tổng kết.
+4. Viết chương trình như ở bài tập trên nhưng xử lý cho n sinh 
+viên, yêu cầu cấp phát động bộ nhớ cho mảng cấu trúc.
+5. Tạo một kiểu cấu trúc để quản lý thiết bị, với các thông tin của 
+mỗi thiết bị cần quản lý là:
+ Mã thiết bị (kiểu int)
+ Tên thiết bị (chuỗi)
+ Năm sản xuất (kiểu int)
+ Trạng thái hiện tại (Tắt hay Mở)
+Viết chương trình thực hiện các công việc sau:
+a. Nhập thông tin của 10 thiết bị.
+b. In ra danh sách các thiết bị đang Mở. Nếu tất cả các thiết bị đều 

@@ -1,0 +1,48 @@
+// Trang 570 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+570 
+ Ví dụ 8.8 
+Vẽ bầu trời đầy sao, dừng màn hình lấy giá trị màu tại điểm ảnh có 
+tọa độ (100, 100). 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 
+3 
+#include <graphics.h> 
+4 
+#include <stdlib.h> 
+5 
+void main() 
+6 
+{ 
+7 
+int driver = 0, mode = 0, maloi; 
+8 
+initgraph(&driver,&mode," "); 
+9 
+if ( (maloi = graphresult()) != 0 ) 
+10 { 
+11      printf("khong the khoi dong do hoa \n"); 
+12      printf("ma loi : &d \nnguyen nhan loi %s ",maloi, 
+grapherrormsg(maloi) ); 
+13      getch(); 
+14      exit(1); 
+15  } 
+16 randomize(); // khởi tạo hàm radom (cho số ngẫu nhiên) 
+17 int I = 0; 
+18 while (i<200) 
+19 { 
+20 // random(639): so ngau nhien trong khoang tu 0 den 639 
+21 // ve mot diem co toa do (x, y) cho ngau nhien voi mau trang 
+22 putpixel(random(639), random(476), WHITE);  
+23 i++; 
+24 } 
+25 getch(); 
+26 // lay mau cua diem anh tren man hinh  
+27 // tai vi tri co toa do (100, 100) 
+28 int mau = getpixel(100,100); /* closegraph(); 
+29 printf(“mau cua diem anh tai vi tri co toa do (100,100) la : %d”, 
+mau); 
+30 getch(); 
+31 } 

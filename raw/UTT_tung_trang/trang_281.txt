@@ -1,0 +1,55 @@
+// Trang 281 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+281 
+21      
+printf("Nhap so phan tu cua mang = "); 
+22  
+scanf("%d", &n);        
+23  
+Sinh_ngau_nhien(a, n); 
+24  
+Hien_thi(a, n); 
+25     return 0; 
+26 } 
+Kết quả chƣơng trình: 
+ 
+Nhap so phan tu cua mang =10 
+ 
+Hien thi cac phan tu cua mang: 
+ 
+41  67  34   0  69  24  78  58  62  64 
+Lƣu ý:  
+Hàm rand() này sẽ không hề sinh ngẫu nhiên ra các số mới khi chạy 
+chƣơng trình ở các lần sau. Nghĩa là, kết quả của chƣơng trình trên ở mọi 
+lần chạy sẽ đều sinh ra 10 số giống nhau. Vậy muốn sinh ra các số ngẫu 
+nhiên ở các lần chạy, chúng ta sử dụng thêm hàm srand(time). 
+Để tạo ra các số ngẫu nhiên khác nhau tại mọi thời điểm chạy 
+chƣơng trình, chúng ta sẽ thêm hàm srand() và truyền vào một tham 
+số seed kiểu int theo thời gian hiện tại. Tham số này thay đổi thì 
+hàm srand() sẽ sinh ra các số khác nhau, bằng cách sử dụng 
+hàm time() trong thƣ viện time.h. Hàm time() trả về kiểu time_t nhƣng 
+chúng ta có thể ép kiểu về int. 
+Chƣơng trình đƣợc viết lại nhƣ sau: 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+#include <time.h> 
+4 
+void Sinh_ngau_nhien(int a[], int n)  
+5 
+{ 
+6 
+    int r; 
+7 
+    srand((int)time(0)); 
+8 
+ 
+for (int i = 0; i < n; i++)  
+9 
+       { 
+10 
+        r = rand() % 100; 
+11 
+        a[i]= r; 

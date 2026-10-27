@@ -1,0 +1,36 @@
+// Trang 77 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+77 
+2 # include “conio.h”  
+3 void void main() 
+4 { 
+5 printf(“TURBO C HAN HANH\n”); 
+6 printf(“LAM QUEN VOI BAN”); 
+7 getch(); 
+// tạm dừng máy để xem kết quả 
+8 } 
+Yêu cầu:  
+- Chạy chƣơng trình và cho biết kết quả? 
+- Giải thích kết quả đạt đƣợc của chƣơng trình? 
+- Ý nghĩa của các thƣ viện stdio.h và conio.h? 
+Gợi ý:  
+- Kết quả của chƣơng trình: 
+TURBO C HAN HANH 
+LÀM QUEN VỚI BẠN 
+- Ý nghĩa của thƣ viện stdio.h và conio.h 
++ Thƣ viện stdio.h: Thƣ viện chứa các hàm vào/ra chuẩn (standard 
+input/output). Gồm các hàm printf(), scanf(), getc(), putc(), gets(), puts(), 
+fflush(), fopen(), fclose(), fread(), fwrite(), getchar(), putchar(), getw(), 
+putw(),… 
++ Thƣ viện conio.h. đƣợc viết tắt của từ Console Input/Output.header là 
+thƣ viện đƣợc sử dụng trong trình biên dịch của các hệ điều hành cũ MS-
+DOS những năm 1980s với giao diện dòng lệnh. Thƣ viện conio.h hỗ trợ các 
+hàm giúp bạn thực hiện các thao tác input hoặc output từ màn hình console, 
+trong đó có 2 hàm bạn thƣờng thấy sử dụng phổ biến nhất là: 
+* clrscr(): lệnh xóa các output đã có trên màn hình console (làm sạch 
+màn hình console). 
+* getch(): lệnh lấy input từ màn hình console (do đó lập trình viên 
+thƣờng dùng điểm này của getch() để dừng màn hình console sau khi xuất 
+kết quả). 
+ Bài tập 1.4 
+Sử dụng Turbo C hoặc Dev C++, soạn thảo chƣơng trình sau đây: 

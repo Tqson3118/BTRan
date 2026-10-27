@@ -1,0 +1,35 @@
+// Trang 188 - Ngôn ngữ lập trình C_ebook.pdf
+
+185
+a.x
+a
+                                a.y
+Vùng nhớ chung, kích thước 8 bytes
+Câu lệnh printf(“Kich thuoc bien a: %d\n”,sizeof(a)); ở 
+dòng lệnh số 15 sẽ thực hiện in ra màn hình thông số kích thước vùng 
+nhớ của biến a, ta sẽ có kết quả là:
+Kich thuoc bien a: 8
+Tiếp tục, ở dòng lệnh số 17, câu lệnh a.x = 5; sẽ tiến hành lưu giá 
+trị số nguyên 5 vào vùng nhớ dùng chung. Lúc này, muốn truy xuất 
+đúng tới dữ liệu số nguyên đã lưu vào ô nhớ này, ta phải dùng tên gọi 
+a.x, như trong câu lệnh printf(“%d\n”,a.x); ở dòng lệnh số 18. Lệnh 
+in này sẽ in ra màn hình số 5 như hình dưới:
+1
+2
+Kich thuoc bien a: 8
+5
+Ở dòng lệnh thứ 20, câu lệnh a.y = 7.85; sẽ thực hiện lưu số 7.85 
+vào vùng nhớ dữ liệu của biến a. Lúc này, dữ liệu mới sẽ thay thế dữ 
+liệu cũ trong vùng nhớ, vùng nhớ dùng chung này của a sẽ có định dạng 
+số thực và ta phải dùng tên gọi a.y để truy xuất tới dữ liệu số thực. Câu 
+lệnh printf(“%f\n”,a.y); ở dòng lệnh số 21 thực hiện việc in dữ liệu 
+số thực trong vùng nhớ biến a và ta có kết quả như bên dưới:
+1
+2
+3
+Kich thuoc bien a: 8
+5
+7.850000
+7.3. KIỂU LIỆT KÊ (ENUMERATION)
+7.3.1.  Giới thiệu kiểu liệt kê
+Kiểu liệt kê, enumeration – gọi tắt là kiểu enum, là một tập hợp 

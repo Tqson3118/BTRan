@@ -1,0 +1,38 @@
+// Trang 85 - Ngôn ngữ lập trình C_ebook.pdf
+
+82
+Chú ý: Với lệnh while thì Biểu thức điều kiện được kiểm tra trước, 
+nếu đúng mới thực hiện. Với lệnh do...while thì Khối lệnh được thực hiện 
+trước khi kiểm tra Biểu thức, đồng nghĩa với việc Khối lệnh sẽ được thực 
+hiện ít nhất là 1 lần. Biểu thức điều kiện có thể gồm nhiều biểu thức, tuy 
+nhiên tính đúng sai sẽ được căn cứ theo kết quả của biểu thức cuối cùng.
+3.3.3. Ví dụ minh họa
+Ví dụ 3.7: Cho đoạn chương trình sau:
+1
+2
+3
+4
+5
+6
+int i = 0;
+do
+{
+    printf(“%d”,i);
+}
+while (i++ <4);
+Kết quả sau khi chạy đoạn chương trình trên sẽ là:  
+01234
+Giải thích hoạt động: 
+Lệnh do … while khác với while và for ở chỗ nó sẽ thực hiện khối 
+lệnh trước, sau đó mới kiểm tra biểu thức điều kiện. Như trong trường 
+hợp này, lệnh printf ở dòng lệnh số 4 sẽ được thực hiện ít nhất một lần 
+dù biểu thức điều kiện ở dòng 6 có đúng hay không. Ở đây, dòng lệnh 
+6 vừa có chức năng xét điều kiện vòng lặp vừa làm tăng biến điều kiện. 
+Như vậy, chương trình sẽ thực hiện như sau: đầu tiên lệnh printf được 
+thực hiện, sau đó biểu thức điều kiện được xét để kiểm tra xem biến i 
+có nhỏ hơn 4 không (và sau đó tăng giá trị biến i lên 1), nếu nhỏ hơn 
+thì chương trình quay lại lần lặp tiếp theo, cho đến khi i = 4 thì thoát ra 
+khỏi vòng lặp và kết thúc.
+Nếu thay dòng lệnh 6 bằng câu lệnh while (++i<4); thì kết quả 
+sẽ là:
+0123

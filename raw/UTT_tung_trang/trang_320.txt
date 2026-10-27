@@ -1,0 +1,40 @@
+// Trang 320 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+320 
+Gán giá trị 11 cho biến c. Vì con trỏ pc trỏ tới cùng địa chỉ của c, nên 
+giá trị (nội dung) đƣợc trỏ bởi con trỏ pc là 11 (Dòng lệnh 12, 13). 
+Dòng lệnh 14: *pc = 2; 
+ 
+ 
+ 
+ 
+ 
+Câu lệnh trên thay đổi giá trị tại vị trí bộ nhớ đƣợc trỏ bởi con trỏ pc 
+thành 2. Vì địa chỉ của con trỏ pc giống với địa chỉ của c, nên giá trị của c 
+cũng đƣợc thay đổi thành 2 (Dòng lệnh 15, 16). 
+ Ví dụ 5.28 
+Xem xét đoạn chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 main() { 
+3 /* khai bao bien va con tro */ 
+4 // bien q, r 
+5 // con tro p 
+6 double q , r , *p = &q ; 
+7 /* gan gia tri cho cac bien */ 
+8 q = 1.34; 
+9 r = 6.78; 
+10 /* in bien, con tro va noi dung cua con tro */ 
+11 printf ("Gia tri cua q = %f\n" , q); 
+12 printf ("Dia chi cua q = %p\n" , &q); 
+13 printf ("Gia tri cua r = %f\n" , r); 
+14 printf ("Dia chi cua r = %p\n" , &r); 
+15 printf ("Gia tri cua p = %p\n" , p); 
+16 printf ("Dia chi cu p = %p\n" , &p); 
+17 printf ("Gia tri cua *p = %f\n" , *p); 
+18 /* thay doi gia tri cua bien q */ 
+19 q = -7.89; 
+20 /* in bien, con tro va noi dung cua con tro sau thay doi */ 
+ 
+2 
+pc 
+c 

@@ -1,0 +1,35 @@
+// Trang 91 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+91 
+5 printf("\Bai hoc C dau tien. \n"); 
+6 getch(); 
+7 } 
+Kết quả chƣơng trình 
+Bai hoc C dau tien. 
+ 
+ Ví dụ 2.2  
+In ra màn hình giá trị của a = 5 (a là số nguyên) 
+Chƣơng trình 
+8 #include <stdio.h> 
+9 #include <conio.h> 
+10 main() 
+11 { 
+12 int a = 5; 
+13 printf("\n gia tri cua a = %d", a); 
+14 getch(); 
+15 } 
+Kết quả chƣơng trình 
+gia tri cua a = 5 
+Giải thích:  
+Dòng 5: Khai báo biến  nguyên a, khởi tạo giá trị bằng 5. 
+Dòng 6: Trong câu lệnh printf(), khi biên dịch gặp mã định dạng %d, 
+tƣơng ứng với đối số a, chƣơng trình sẽ in ra giá trị a, tức là in số 5 ra 
+màn hình. 
+ Ví dụ 2.3 
+Giả sử biến a có giá trị = 7 và b có giá trị = 4.  Viết chƣơng trình tính 
+và n tổng của 2 số ra màn hình. 
+Chƣơng trình 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 

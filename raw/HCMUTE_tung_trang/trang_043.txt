@@ -1,0 +1,48 @@
+// Trang 43 - Ngôn ngữ lập trình C_ebook.pdf
+
+40
+Xét câu lệnh sau:
+c= a>>2; 
+trong câu lệnh trên, giá trị của c là giá trị của a dịch đi bên phải 
+2 lần, giá trị của a vẫn không đổi. Kết quả là c được gán giá trị là 
+0b00000011. Khi dịch sang trái hoặc sang phải, nếu là các số nguyên 
+không dấu, số 0 sẽ được thêm vào tại vị trí bit bị thiếu. 
+ Các phép toán khác:
+Nhóm phép 
+toán
+Ký hiệu 
+trong ngôn 
+ngữ C
+Ý nghĩa
+Ví dụ
+Phép toán 
+khác
+++
+Tăng 1 đơn vị
+b = 3;
+b++;
+int c = ++b;
+– –
+Giảm 1 đơn vị
+b = 5;
+c = b – – + 2;
+?
+Toán tử điều 
+kiện
+ max= (a>b)?a:b;
++=   – =  *= 
+/=  %=
+Gán mở rộng
+int d = 1;
+d += 2; // d = d + 2;
+Bảng 1.7. Các phép toán khác trong ngôn ngữ C
+Một số phép toán khác khá thông dụng và được sử dụng nhiều 
+trong quá trình lập trình như phép tăng 1 đơn vị (++) và phép giảm 1 
+đơn vị (– –). Các phép toán này có thể được kết hợp với các phép toán 
+khác nhằm tiết kiệm số dòng lệnh trong quá trình lập trình. Phép tăng, 
+giảm được đặt ở vị trí trước và sau biến sẽ có tác dụng khác nhau. 
+Ví dụ:
+int a = 6, b = 7 ;
+a++ ;
+a=b++ // a=b và b=b+1 thực hiện = trước +1 sau
+a=++b // a=b+1 và b=b+1 thực hiện +1 trước = sau

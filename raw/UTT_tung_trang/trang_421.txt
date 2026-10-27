@@ -1,0 +1,38 @@
+// Trang 421 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+421 
+CHƢƠNG 6 
+KIỂU CẤU TRÖC 
+ 
+Nội dung của Chƣơng 6, trình bày:  
+- Định nghĩa kiểu dữ liệu do người dùng định nghĩa, cho phép nhiều 
+thành phần dữ liệu khác nhau được chứa đựng trong một cấu trúc; 
+- Khai báo và khởi tạo kiểu cấu trúc; 
+- Cách thức truy cập đến các thành phần của kiểu cấu trúc; 
+- Mối quan hệ giữa kiểu cấu trúc và con trỏ; 
+- Định nghĩa mảng cấu trúc, cách cấp phát bộ nhớ động cho mảng 
+cấu trúc. 
+6.1. ĐỊNH NGHĨA 
+Cấu trúc là kiểu dữ liệu do ngƣời dùng định nghĩa cho phép kết hợp 
+nhiều kiểu dữ liệu khác nhau. Kiểu cấu trúc giúp xây dựng một kiểu dữ 
+liệu phức tạp có ý nghĩa hơn. Nó có phần giống với mảng, nhƣng mảng 
+chỉ chứa dữ liệu cùng loại, trong khi, cấu trúc có thể lƣu trữ dữ liệu thuộc 
+bất kỳ loại nào, điều này thực tế hữu ích hơn. 
+Chẳng hạn, nếu chúng ta phải viết chƣơng trình lƣu trữ thông tin sinh 
+viên, trong đó thông tin sinh viên bao gồm tên sinh viên (chuỗi ký tự, có 
+độ dài tối đa 20 ký tự), tuổi (số nguyên), giới tính (kiểu logic, hoặc số 
+nguyên nhận hai giá trị 0, 1), địa chỉ (chuỗi ký tự), v.v. chúng ta có thể sử 
+dụng mảng cho bài toán này, với mỗi phần tử của mảng có kiểu dữ liệu có 
+thể lƣu giữ các kiểu dữ liệu khác nhau (chuỗi ký tự, số nguyên, logic, 
+v.v.). 
+Trong cấu trúc, dữ liệu đƣợc lƣu trữ dƣới dạng bản ghi. 
+6.1.1. Khai báo kiểu cấu trúc 
+Từ khóa struct đƣợc sử dụng để xác định một cấu trúc, struct định 
+nghĩa một kiểu dữ liệu mới là tập hợp của nhiều kiểu dữ liệu khác nhau. 
+Cú pháp:  
+ 
+struct  [struct_name_tag] 
+ 
+{ 
+ 
+Data_type member_1; 

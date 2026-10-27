@@ -1,0 +1,23 @@
+// Trang 215 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+215 
+Việc thực hiện chƣơng trình bắt đầu từ hàm main(). Khi trình biên 
+dịch gặp hàm functionName() trong hàm main(), điều khiển chƣơng trình 
+nhảy đến hàm void functionName(). Lúc này trình biên dịch bắt đầu thực 
+thi các mã bên trong hàm do ngƣời dùng định nghĩa. Khi tất cả các mã 
+trong thân hàm void functionName() đã đƣợc thực thi, điều khiển chƣơng 
+trình nhảy về câu lệnh tiếp theo sau lời gọi hàm functionName() trong 
+hàm main(). 
+ 
+Hình 4.1. Minh họa cách thức thực thi hàm functionName() 
+4.1.2.2. Khai báo hàm 
+a. Khai báo nguyên mẫu hàm 
+Một nguyên mẫu hàm đơn giản là khai báo một hàm chỉ định tên, 
+tham số và kiểu trả về của hàm, không chứa thân hàm. Một nguyên mẫu 
+hàm cung cấp thông tin cho trình biên dịch biết hàm này có thể đƣợc sử 
+dụng sau này trong chƣơng trình. 
+Cú pháp của nguyên mẫu hàm 
+returnType functionName(type1 argument1, type2 argument2,...); 
+Trong Ví dụ 4.1, hàm void tong(int a, int b) là nguyên mẫu hàm cung 
+cấp các thông tin cho trình biên dịch: 
++ Tên của hàm là tong(). 

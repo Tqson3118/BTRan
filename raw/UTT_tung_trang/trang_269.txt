@@ -1,0 +1,61 @@
+// Trang 269 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+269 
+          4. Chia. 
+          5. Chia lấy dƣ. 
+Ngƣời dùng nhập lựa chọn, chẳng hạn chọn 1. 
+Nhập vào hai số: 12 15. 
+Kết quả = 27. 
+Chƣơng trình hiển thị yêu cầu tiếp tục chƣơng trình: “Tiếp tục 
+chƣơng trình? Nhấn phím Y hoặc phím y”. 
+Nếu ngƣời dùng nhấn phím Y hoặc phím y, chƣơng trình sẽ đƣợc 
+tiếp tục, ngƣời dùng lựa chọn tiếp các lựa chọn (1 đến 5).  
+Ngƣợc lại chƣơng trình sẽ thoát. 
+Chƣơng trình 
+1 #include <stdio.h>    
+2 #include <stdlib.h>    
+3    void hienthi() 
+4    { 
+5     
+ 
+printf("================================\n");    
+6  
+ 
+printf("      CHUONG TRINH CHINH        \n");   
+ 
+7  
+printf("================================\n");    
+8  
+ 
+printf("     1.Cong hai so\n");   
+ 
+9  
+ 
+printf("     2.Tru hai so \n");    
+10  
+ 
+printf("     3.Nhan hai so\n");   
+ 
+11  
+ 
+printf("     4.Chia hai so\n");    
+12  
+ 
+printf("     5.Chia lay du\n");  
+13  
+printf("================================\n");    
+14    } 
+15    int Add(int a,int b) 
+16    {   
+ 
+17    return(a + b);   
+ 
+18    }   
+ 
+19    int Substract(int a, int b) 
+20    {   
+ 
+21    return(a - b);   
+ 
+22    }   
+ 

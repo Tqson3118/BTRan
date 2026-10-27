@@ -1,0 +1,40 @@
+// Trang 449 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+449 
+22       
+sv[i].d_tb = (sv[i].d_anh + sv[i].d_toan +sv[i].d_ly)/3; 
+23      } 
+24      //hien thi thong tin cua tung sinh vien 
+25      for(i=0; i<N; i++){ 
+26          printf("%8s: TiengAnh = %3d  Toan = %3d   VatLy = %3d 
+DiemTB = %5.1f\n",  sv[i].ten_sv, sv[i].d_anh, sv[i].d_toan, 
+sv[i].d_ly, sv[i].d_tb); 
+27      } 
+28      return (0); 
+29  } 
+ Kết quả chƣơng trình: 
+ Cuong: TiengAnh =  82  Toan =  72   VatLy =  58 DiemTB =  70.0 
+   Nam: TiengAnh =  77  Toan =  82   VatLy =  79 DiemTB =  79.0 
+  Sinh: TiengAnh =  52  Toan =  62   VatLy =  39 DiemTB =  51.0 
+  Thuy: TiengAnh =  61  Toan =  82   VatLy =  88 DiemTB =  77.0 
+ Ví dụ 6.25. 
+Khai báo kiểu struct và khởi tạo giá trị 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Khai báo kiểu cấu trúc sinh viên, bao gồm các trƣờng thông tin 
+nhƣ: tên sinh viên, điểm môn toán, điểm môn tiếng anh và điểm môn vật 
+lý, trung bình môn, xếp loại. 
+- Khởi tạo 4 sinh viên, bao gồm các thông tin: tên sinh viên, điểm 
+môn toán, điểm môn tiếng anh, điểm môn vật lý. 
+- Tính điểm trung bình cho các sinh viên và xếp loại của từng sinh 
+viên. In thông tin của các sinh viên ra màn hình. 
+Phác thảo lời giải 
+- Khai báo cấu trúc sinhvien. 
+- Khởi tạo mảng sv[] gồm 4 sinh viên, mỗi sinh viên có thông tin của 
+tên sinh viên, điểm môn tiếng anh, điểm môn toán, điểm môn vật lý. 
+- Sử dụng công thức điểm trung bình = (điểm môn tiếng anh + điểm 
+môn toán + điểm môn vật lý)/3. 
+- Xếp loại cho từng sinh viên, dựa vào tiêu chí:  
++ Điểm trung bình >=90: Xuất sắc. 
++ 90 > Điểm trung bình >=80: Giỏi. 
++ 80 > Điểm trung bình >= 65: Khá. 
++ 65 > Điểm trung bình >= 50: Trung bình. 

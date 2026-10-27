@@ -1,0 +1,55 @@
+// Trang 208 - Ngôn ngữ lập trình C_ebook.pdf
+
+205
+khiển quá trình biên dịch bao gồm: #if, #elif, #else, #ifdef, 
+#ifndef, và #endif. Các chỉ thị này điều khiển trình biên dịch có thể 
+biên dịch hoặc không biên dịch một đoạn chương trình. 
+Xét ví dụ sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+#include  <stdio.h>
+#define INTERGER
+#ifdef INTERGER
+int timmax(int a, int b)
+{
+  return a>b ? a:b ;
+} 
+#else
+float timmax(float a, float b)
+{
+	 return a>b ? a:b ; 
+} 
+#endif
+void main (void)
+{
+	 int a = 5, b = 9 ; 
+	 int max = timmax(a,b);
+	 printf (“max = %d”,max);
+}
+Chương trình trên xây dựng hàm tìm giá trị lớn nhất. Tuy nhiên, 
+2 hàm cùng tên và khác kiểu giá trị cho tham số và giá trị trả về. Chỉ 
+một trong 2 hàm được biên dịch. Lúc này bộ tiền xử lý sẽ kiểm tra 
+xem đoạn chương trình nào được biên dịch. Chương trình bắt gặp 
+chuỗi INTERGER được định nghĩa ở đầu chương trình ở dòng 2, vậy 
+nên đoạn chương trình từ dòng thứ 4 đến dòng thứ 7 được biên dịch, 
+ngược lại nếu chuỗi INTERGER không được định nghĩa ở dòng 2, đoạn 
+chương trình từ dòng 9 đến dòng thứ 12 sẽ được biên dịch. Các chỉ thị 

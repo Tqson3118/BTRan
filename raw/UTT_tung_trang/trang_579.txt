@@ -1,0 +1,28 @@
+// Trang 579 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+579 
+B. BÀI TẬP TỰ GIẢI 
+ Bài tập 8.3 
+ 
+Viết chƣơng trình bằng ngôn ngữ C để vẽ hai hình chữ nhật và 
+điền màu trắng vào một trong hai hình đó. 
+ Bài tập 8.4 
+ 
+Viết chƣơng trình bằng ngôn ngữ C để vẽ hình tròn. 
+ Bài tập 8.5 
+ 
+Viết chƣơng trình bằng ngôn ngữ C để thay đổi màu nền của màn 
+hình từ màu đen sang màu trắng. 
+ Bài tập 8.6 
+ 
+Viết chƣơng trình vẽ các điểm ảnh với màu đã cho trên màn hình. 
+ Bài tập 8.7 
+Viết chƣơng trình bằng ngôn ngữ C để vẽ biểu đồ hình tròn, cho thấy 
+tỷ lệ phần trăm của các thành phần khác nhau đƣợc vẽ với các kiểu và 
+màu sắc khác nhau. 
+ Bài tập 8.8* 
+Viết một chƣơng trình vẽ hình trong C, bằng cách sử dụng chuột vẽ 
+các hình dạng khác nhau nhƣ đƣờng thẳng, hình tròn và nhiều hình dạng 
+khác. Ngƣời dùng có thể thay đổi màu sắc, xóa màn hình. 
+ 
+ 

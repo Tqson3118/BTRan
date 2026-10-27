@@ -1,0 +1,42 @@
+// Trang 89 - Ngôn ngữ lập trình C_ebook.pdf
+
+86
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+int i=0, a = 3;
+for (; ;)
+{  a ++;
+   i++;
+   if (i<5) continue;
+   break;
+}
+printf(“gia tri a la %d”,a);return 0;
+return 0;
+}
+Kết quả sau khi chạy chương trình trên là:
+gia tri a la 8
+Ở dòng 8, nếu giá trị i thỏa mãn điều kiện i < 5 thì gặp câu lệnh 
+continue; nên vòng lặp được tiếp tục thực hiện (lúc này lệnh break; ở 
+dòng 9 sẽ không được thực hiện). Đến khi i = 5, điều kiện của lệnh if ở 
+dòng 8 sẽ có kết quả là sai, câu lệnh continue; không được thực hiện, 
+chương trình sẽ chuyển xuống dòng lệnh 9, khi đó lệnh break; được 
+thực hiện và thoát khỏi vòng lặp for và kết thúc chương trình.
+3.6. CÂU LỆNH GOTO VÀ NHÃN
+Lệnh goto có cú pháp:
+goto nhãn;
+nhãn:
+		
+Lệnh;
+Nhãn có thể viết như tên biến và có thêm dấu hai chấm (:) đứng 
+sau. Nhãn có thể được gán cho bất kỳ câu lệnh nào trong chương trình.
+Khi gặp lệnh này máy sẽ nhảy tới vị trí câu lệnh có nhãn tương 
+ứng với nhãn đã được viết sau từ khóa goto.
+Khi dùng lệnh goto cần lưu ý các đặc điểm sau:

@@ -1,0 +1,61 @@
+// Trang 144 - Ngôn ngữ lập trình C_ebook.pdf
+
+141
+về và tham số. Trong một số trường hợp cụ thể, các thành phần trong 
+định nghĩa hàm có thể vắng mặt. Dựa vào tham số và giá trị trả về có 
+thể phân loại hàm như sau:
+ Hàm có tham số và có giá trị trả về.
+Hàm có tham số và có giá trị trả về được định nghĩa như mục 6.2. 
+Trong đó, hàm có một hoặc nhiều tham số và trả về kiểu giá trị cụ thể. 
+Khai báo và sử dụng loại hàm này sẽ tương tự như trong trường hợp 
+hàm tìm giá trị lớn nhất trong mục 6.2. Ví dụ định nghĩa và sử dụng hàm 
+tính giai thừa của một số nguyên n như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+#include<stdio.h>
+#include <stdlib.h>
+int   giaithua(int n)
+{
+	
+int i,S=1 ;
+	
+for (i=1;i<=n;i++)
+	
+	
+S *=i ;
+	
+return   S;
+}
+void main (void)
+{
+	
+int n,Sn;
+	
+printf(“Nhap n : “);
+	
+scanf(“%d”,&n);
+	
+Sn = giaithua(n);
+	
+printf(“ giai thua cua %d la %d”,n,Sn);
+}
+Hàm giaithua nhận vào một giá trị kiểu số nguyên và trả về một 
+giá trị kiểu số nguyên. Lệnh return cho phép trả về giá trị với kiểu giá trị 
+được khai báo phía trước tên hàm. Trong trường hợp thiếu lệnh return, 
+trình biên dịch vẫn không báo lỗi hoặc cảnh báo. Tuy nhiên, hàm sẽ 
+không trả về giá trị để gán cho biến khi gọi hàm trong chương trình 

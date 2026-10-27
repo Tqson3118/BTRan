@@ -1,0 +1,79 @@
+// Trang 158 - Ngôn ngữ lập trình C_ebook.pdf
+
+155
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+int giaithua(int n)
+{
+int i,gt = n;
+for (i=n-1;i>0;i--)
+	
+gt=gt*i ;
+return gt ;
+}
+void main()
+{
+int n;
+	
+do{
+	
+printf(“Nhap n  :”);
+	
+scanf(“%d”,&n);
+	
+} while(n<1);
+printf(“Giai thua cua %d la %d”, n, giaithua(n));
+}
+Trong chương trình trên chúng ta tính giai thừa bằng cách lặp lại 
+phép nhân với biến điều khiển trong khi biến điều khiển giảm dần từ n 
+về 1. Chúng ta có thể xây dựng hàm đệ quy để tính giai thừa như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+int giaithua(int n)
+{
+if (n==1)
+	
+return 1;
+return n*giaithua(n-1) ;
+}
+void main()
+{
+int n;
+	
+do{
+	
+printf(“Nhap n  :”);
+	
+scanf(“%d”,&n);
+	
+} while(n<1);
+printf(“Giai thua cua %d la %d”, n, giaithua(n));
+}

@@ -1,0 +1,49 @@
+// Trang 548 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+548 
+59 
+    int index = 0; 
+60 
+    int owlen; 
+61 
+    owlen = strlen(oldWord); 
+62 
+    /* 
+63 
+     * Lap cho den khi tat ca tu can thay the trong tep duoc thay the.  
+64 
+     */ 
+65 
+    while ((pos = strstr(str, oldWord)) != NULL) 
+66 
+    { 
+67 
+        // Sao chep dong hien tai 
+68 
+        strcpy(temp, str); 
+69 
+        // Chi so cua tu hien tai tim thay 
+70 
+        index = pos - str; 
+71 
+        str[index] = '\0'; 
+72 
+        // Ghep str voi tu moi  
+73 
+        strcat(str, newWord); 
+74 
+        // Ghep str voi cac tu con lai  
+75 
+        //  sau khi tu cu duoc tim thay. 
+76 
+        strcat(str, temp + index + owlen); 
+77 
+    } 
+78 
+} 
+ Kết quả chƣơng trình 
+Nhap tep van ban ban dau: test_7_3.txt 
+Nhap tu can thay the: ao 
+Duoc thay the bang tu: Ao 
+Thay the thanh cong tat ca cac tu can thay the 'ao' bang tu 'Ao'. 
+  

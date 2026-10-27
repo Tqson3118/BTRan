@@ -1,0 +1,64 @@
+// Trang 357 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+357 
+ Cách 3: Sử dụng hàm đệ quy 
+1 
+#include <stdio.h> 
+2 
+#include <string.h> 
+3 
+void reverse(char*, int, int); 
+4 
+ int main() 
+5 
+{ 
+6 
+   char a[100]; 
+7 
+   printf("Nhap vao chuoi:\n"); 
+8 
+   gets(a); 
+9 
+   reverse(a, 0, strlen(a)-1); 
+10 
+   printf("Chuoi dao nguoc la:\n"); 
+11 
+   printf("%s\n", a); 
+12 
+   return 0; 
+13 
+} 
+14 
+ void reverse(char *x, int begin, int end) 
+15 
+{ 
+16 
+   char c; 
+17 
+    if (begin >= end) 
+18 
+      return; 
+19 
+    c         = *(x+begin); 
+20 
+   *(x+begin) = *(x+end); 
+21 
+   *(x+end)   = c; 
+22 
+    reverse(x, ++begin, --end); 
+23 
+} 
+ Kết quả khi biên dịch: 
+ 
+Nhap vao chuoi: 
+ 
+bo mon he thong thong tin 
+ 
+Chuoi dao nguoc la: 
+ 
+nit gnoht gnoht eh nom ob 
+ Cách 4: Chƣơng trình không đệ quy, sử dụng con trỏ 
+1 
+#include<stdio.h> 
+2 
+ int string_length(char*); 

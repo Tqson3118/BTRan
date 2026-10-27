@@ -1,0 +1,36 @@
+// Trang 45 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+45 
+ Ví dụ 1.24 
+Khai bƣớc trƣớc, khởi tạo sau: 
+int a, b, c; 
+float d, si;  
+a = 10;   // gán giá trị sau khai báo a = 10  
+b = 5000;  // gán giá trị b = 5000 
+c = 10; // gán giá trị c = 10 
+d = 0.5; // gán giá trị d = 05. 
+si = (b * c * d) / 100; // gán si bởi biểu thức 
+ Ví dụ 1.25 
+Vừa khai báo vừa khởi tạo giá trị: 
+int a = 10, b = 5000, c = 10; 
+float d = 0.5; 
+1.5.1.4. Phạm vi của biến 
+Khi lập trình, chúng ta phải nắm rõ phạm vi của biến. Nếu khai báo 
+và sử dụng không đúng, không rõ ràng, sẽ dẫn đến sai sót khó kiểm soát 
+đƣợc, vì vậy cần phải xác định đúng vị trí, phạm vi sử dụng biến trƣớc khi 
+sử dụng biến. 
+Khai báo biến ngoài (biến toàn cục): vị trí biến đặt bên ngoài tất cả 
+các hàm, cấu trúc, v.v. Các biến này có ảnh hƣởng đến toàn bộ chƣơng 
+trình. Chu trình sống của biến toàn cục là từ lúc bắt đầu chạy chƣơng 
+trình đến khi kết thúc chƣơng trình. 
+Khai báo biến trong (biến cục bộ): Vị trí biến đặt bên trong hàm, cấu 
+trúc, v.v. Biến cục bộ chỉ ảnh hƣởng nội bộ bên trong hàm, cấu trúc đó, 
+v.v. Chu trình sống của biến cục bộ từ lúc bắt đầu từ lúc hàm, cấu trúc, 
+v.v. đƣợc gọi thực hiện đến khi thực hiện xong hàm, cấu trúc, v.v. 
+ Ví dụ 1.26 
+Xét đoạn chƣơng trình sau đây: 
+1 #include <stdio.h> 
+2 // Khai bao bien toan cuc: 
+3  int a, b; 
+4  int c; 
+5  float f; 

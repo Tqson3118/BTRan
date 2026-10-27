@@ -1,0 +1,37 @@
+// Trang 108 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+108 
+ Ví dụ 2.20 
+Viết chƣơng trình đọc vào từ bàn phím một ký tự, thoát khi nhấn 
+phím “q”. 
+Chƣơng trình 
+1 #include <conio.h> 
+2 #include <stdio.h> 
+3 int main() 
+4 { 
+5     char ch; 
+6     printf("Nhap vao 1 ky tu:"); 
+7     // nhap vao 1 ky tu den khi ky tu nhap vao la 'q'  
+8     while((ch = getchar())!= 'q') 
+9     { 
+10         fflush(stdin); 
+11         printf("ky tu vua nhap: %c\n", ch); 
+12     } 
+13    printf("Thoat chuong trinh!"); 
+14    return 0; 
+15 } 
+Kết quả chƣơng trình 
+Nhap vao 1 ky tu: a 
+ky tu vua nhap: a 
+b 
+ky tu vua nhap: b 
+c 
+ky tu vua nhap: c 
+q 
+Thoat chuong trinh! 
+Lƣu ý: 
+- Xét câu lệnh ch = getchar(); Nếu bấm phím A và nhấn phím 
+Enter thì ch = „A‟, ký tự “\n” vẫn ở lại trên stdin và nó sẽ làm trôi các 
+hàm getchar() hoặc hàm gets() sau đó. Nếu chỉ nhấn phím Enter thì ch = 
+„\n‟ và „\n‟ bị loại khỏi stdin. Để tránh bị trôi ký tự, trong đoạn chƣơng 
+trình đã sử dụng hàm fflush(stdin); 

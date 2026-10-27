@@ -1,0 +1,84 @@
+// Trang 294 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+294 
+3 
+{ 
+4 
+    
+int a[100], vt, i, n; 
+5 
+    
+printf("Nhap vao so phan tu cua mang\n"); 
+6 
+    
+scanf("%d", &n); 
+7 
+     
+printf("Nhap %d phan tu cua mang:\n", n); 
+8 
+     
+for (i = 0; i < n; i++) 
+9 
+     scanf("%d", &a[i]); 
+10      
+printf("Nhap vi tri phan tu can xoa trong mang\n"); 
+11     
+scanf("%d", &vt); 
+12     
+ 
+ if (vt >= n+1) 
+13       
+ 
+ 
+ printf("Vi tri can xoa khong ton tai.\n"); 
+14     
+ 
+Else 
+15     
+ 
+{ 
+16      
+ 
+ 
+  for (i = vt; i < n - 1; i++) 
+17         
+ 
+ 
+ 
+  a[i] = a[i+1]; 
+18         
+printf("Mang sau khi xoa:\n"); 
+19         
+ 
+for (i = 0; i < n - 1; i++) 
+20            
+ 
+printf("%4d", a[i]); 
+21     
+ 
+} 
+22     return 0; 
+23 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao so phan tu cua mang 
+ 
+8 
+ 
+Nhap 8 phan tu cua mang: 
+ 
+54 
+ 
+34 
+ 
+12 
+ 
+6 
+ 
+33 
+ 
+23 
+ 
+7 
+ 
+83 

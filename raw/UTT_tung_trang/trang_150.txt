@@ -1,0 +1,49 @@
+// Trang 150 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+150 
+Nhận xét:  
+Qua hai chƣơng trình của ví dụ 3.14 ở trên ta thấy nếu một bài toán có 
+nhiều lựa chọn thì việc lựa chọn cấu trúc switch sẽ dễ nhìn và linh động hơn. 
+ Ví dụ 3.15 
+Viết chƣơng trình nhập vào một ngày/tháng/năm, in ra màn hình 
+ngày kế tiếp (ngày/tháng/năm) của ngày vừa nhập. 
+Phác họa lời giải 
+- Đầu tiên nhập vào một ngày/tháng/năm 
+- Kiểm tra tháng: 
++ Các tháng 1, 3, 5, 7, 8, 10, 12 có số ngày = 31 ngày.  
++ Các tháng 4, 6, 9, 11 có số ngày = 30 ngày.  
++ Tháng 2 và năm nhuận có số ngày = 29 ngày. 
++ Tháng 2 và không là năm nhuận có số ngày = 28 ngày.  
+(Năm nhuận là năm chia hết cho 4 và không chia hết cho 100 hoặc 
+chia hết cho 400).  
+- Nếu ngày nhập vào < ngày của tháng thì tăng ngày lên. 
++ Nếu ngày nhập vào   ngày của tháng, đƣa ra yêu cầu kiểm tra tháng.  
++ Nếu tháng < 12, thực hiện gán ngày  = 1 và tăng tháng lên 1 đơn vị. 
++ Nếu tháng >= 12, thực hiện gán ngày = tháng = 1, tăng năm lên 1 
+đơn vị. 
+Chƣơng trình 
+1 
+#include<stdio.h> 
+2 
+#include<conio.h> 
+3 
+int main() 
+4 
+{ 
+5 
+ 
+int ng,th,n,d; 
+6 
+ 
+printf("\n Nhap nam: "); scanf("%d",&n); 
+7 
+ 
+printf("\n Nhap thang: "); scanf("%d",&th); 
+8 
+ 
+printf("\n Nhap ngay: "); scanf("%d",&ng); 
+9 
+ 
+switch(th) 
+10  
+{ 

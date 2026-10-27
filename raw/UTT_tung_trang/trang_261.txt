@@ -1,0 +1,67 @@
+// Trang 261 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+261 
+Phác thảo lời giải 
+- Xây dựng hàm toBin(int n) chuyển số thập phân sang nhị phân, 
+theo nguyên tắc ghi nhận số dƣ của phép chia n cho 2. Kết quả thu đƣợc 
+của phép chia tiếp tục chia cho 2, đến khi nào kết quả của phép chia thu 
+đƣợc bằng 0. 
+Chƣơng trình 
+1  
+#include<stdio.h> 
+2  
+long toBin(int); 
+3  
+int main() 
+4  
+{ 
+5  
+    long so_np; 
+6  
+    int so_tp; 
+7  
+ 
+printf("\nSu dung ham: Chuyen tu thap phan sang nhi 
+phan:\n"); 
+8  
+ 
+printf("-----------------------------------------\n");     
+9  
+    printf("Nhap vao so thap phan: "); 
+10  
+    scanf("%d",&so_tp); 
+11  
+    //goi ham chuyen doi thap phan sang nhi phan 
+12  
+ 
+so_np = toBin(so_tp); 
+13  
+    printf("\nSo nhi phan tuong ung : %ld\n",so_np); 
+14  
+    return 0; 
+15  
+} 
+16  
+long toBin(int n) 
+17  
+{ 
+18  
+    long np = 0, du , f = 1; 
+19  
+    while(n != 0) 
+20  
+    { 
+21  
+         du = n % 2; 
+22  
+         np = np + du * f; 
+23  
+         f = f * 10; 
+24  
+         n = n / 2; 
+25  
+    } 
+26  
+    return np; 
+27  
+} 

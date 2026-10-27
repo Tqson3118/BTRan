@@ -1,0 +1,41 @@
+// Trang 532 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+532 
+BÀI TẬP CHƢƠNG 7 
+A. BÀI TẬP CÓ LỜI GIẢI 
+ Bài tập 7.1 
+Viết chƣơng trình tạo và lƣu thông tin trong tệp văn bản 
+ Phác thảo lời giải 
+- Sử dụng hàm fgets() để nhập 1 dòng văn bản. 
+- Sử dụng hàm fprintf() để in. 
+Chƣơng trình: 
+1  #include <stdio.h> 
+2  #include <stdlib.h> 
+3  int main() 
+4  { 
+5     char str[1000]; 
+6     FILE *fptr; 
+7     char fname[20]="test_7_1.txt"; 
+8     printf("\nTao tep (test_7_1.txt) va nhap dong van ban:\n"); 
+9   
+printf("------------------------------------\n");  
+10     fptr=fopen(fname,"w"); 
+ 
+11     if(fptr==NULL) 
+12     { 
+13        printf(" Loi khi mo tep!"); 
+14        exit(1); 
+15     } 
+16   printf(" Nhap dong van ban luu vao tep test_6_1.txt : "); 
+17     fgets(str, sizeof str, stdin); 
+18     fprintf(fptr,"%s",str); 
+19     fclose(fptr); 
+20   printf("\n Tep %s duoc tao thanh cong...!!\n\n",fname); 
+21     return 0; 
+22  } 
+ Kết quả chƣơng trình: 
+Tao tep (test_7_1.txt) va nhap dong van ban: 
+---------------------------------------------- 
+ Nhap dong van ban luu vao tep test_7_1.txt : Dai hoc Cong nghe 
+GTVT 
+ Tep test_7_1.txt duoc tao thanh cong...!!  

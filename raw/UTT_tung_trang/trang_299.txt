@@ -1,0 +1,35 @@
+// Trang 299 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+299 
+{12, 5, 0, 0, 0}, 
+{0, 0, 23, 63, 0}, 
+}; 
+Đôi khi, trong quá trình khai báo mảng hai chiều, có thể bỏ trống 
+khai báo số lƣợng dòng, nhƣng tuyệt đối không thể bỏ trống số lƣợng cột. 
+Trong quá trình biên dịch, chƣơng trình tự xác định số lƣợng dòng cần 
+cấp phát: 
+int arr[][5] = 
+{ 
+{12, 0, 9, 12, 65}, 
+{1, 9, 27, 15, 8}, 
+{12, 5, 7, 34}, 
+{0, 0, 23, 63, 0 }, 
+}; 
+5.1.2.2. Truy cập đến phần tử của mảng hai chiều 
+Truy cập đến một phần tử trong mảng hai chiều thông qua chỉ số 
+hàng và chỉ số cột của phần tử đó. 
+Cú pháp: 
+array_Name[row_index][col_index]; 
+Trong đó: 
+array_Name: Tên mảng hai chiều; 
+row_index, col_index: Chỉ số hàng, chỉ số cột của phần tử cần truy cập. 
+ Ví dụ 5.19 
+Cho mảng int arr[4][5] = 
+{ 
+{12, 0, 9, 5, 7}, 
+{1, 9, 27, 15, 8}, 
+{12, 5, 19, 25, 37}, 
+{0, 0, 23, 63, 41}, 
+}; 
+Khi đó phần tử arr[2][3] là phần tử ở hàng 2, cột thứ 3, có giá trị 
+arr[2][3] = 25. 

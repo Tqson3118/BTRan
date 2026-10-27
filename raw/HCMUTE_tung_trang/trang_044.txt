@@ -1,0 +1,31 @@
+// Trang 44 - Ngôn ngữ lập trình C_ebook.pdf
+
+41
+giá trị a được khởi tạo là 6, lệnh a++ sẽ cập nhật giá trị a bằng cách 
+tăng a lên 1 đơn vị. Lệnh a++ tương đương với lệnh a = a+1.
+Một ví dụ khác:
+int a = 6, b = 7, c ;
+c = a++ +b ;
+Phép tăng và giảm khi được sử dụng chung với các toán tử 
+khác như ví dụ trên cần chú ý phép tăng đặt trước hay đặt sau toán 
+hạng. Ví dụ, câu lệnh c = a++ +b tương đương với 2 câu lệnh c = 
+a+b và câu lệnh a = a+1. Có nghĩa là phép tăng sau khi thực hiện 
+toán tử chính là toán tử +. Nếu câu lệnh trên được thay đổi thành c = 
+++a  + b thì kết quả tương đương với hai câu lệnh là a = a+1 và c = 
+a + b. Trong trường hợp này, phép tăng được thực hiện trước toán tử 
+chính là phép cộng. Rõ ràng trong 2 trường hợp, kết quả cuối cùng 
+là khác nhau.
+Toán tử điều kiện (?): là toán tử được sử dụng phổ biến trong các 
+phát biểu điều kiện. Sử dụng toán tử điều kiện cho phép câu lệnh ngắn 
+gọn. Một toán tử điều kiện được phát biểu dưới cú pháp như sau:
+Toán hạng = biểu thức ? giá trị 1: giá trị 2
+Trong đó, nếu biểu thức trả về kết quả là đúng (true) thì giá trị 1 
+được gán cho toán hạng bên trái biểu thức, ngược lại thì giá trị 2 được 
+gán cho toán hạng bên trái biểu thức. 
+Ví dụ sau sẽ tìm và gán giá trị lớn nhất cho biến max giữa 2 biến 
+a và b:
+int a = 6, b = 7, max ;
+max = (a>b)?a:b ;
+Toán tử điều kiện được xem là tương đương một phát biểu điều 
+kiện (if… else…).
+Cuối cùng là các phép toán mở rộng. Đây chỉ là hình thức viết rút 

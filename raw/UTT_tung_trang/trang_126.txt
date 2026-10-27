@@ -1,0 +1,38 @@
+// Trang 126 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+126 
+3.1. CẤU TRÖC PHÂN NHÁNH 
+Trong ngôn ngữ lập trình C, các câu lệnh quyết định đƣợc sử dụng để 
+thực hiện các hoạt động dựa trên cơ sở điều kiện và khi chƣơng trình gặp 
+phải tình huống phải lựa chọn thực hiện một câu lệnh cụ thể trong số 
+nhiều câu lệnh. 
+Các câu lệnh quyết định cho phép chúng ta đánh giá một hoặc nhiều 
+điều kiện và sau đó ra quyết định có thực thi một tập hợp các câu lệnh hay 
+không. Bằng cách sử dụng các câu lệnh quyết định, chúng ta có thể thực 
+thi các câu lệnh hoặc chọn một số câu lệnh sẽ đƣợc thực thi dựa trên kết 
+quả của điều kiện (cho dù đúng hay sai).  
+Trong ngôn ngữ lập trình C, có ba cấu trúc của câu lệnh quyết định 
+thƣờng đƣợc sử dụng, bao gồm: 
+- Cấu trúc điều kiện if; 
+- Cấu trúc lựa chọn switch; 
+- Câu lệnh goto. 
+3.1.1. Câu lệnh điều kiện if 
+Trong quá trình viết chƣơng trình, lập trình viên luôn muốn kiểm 
+soát luồng chƣơng trình, cho phép chƣơng trình đƣa ra các quyết định về 
+một đoạn mã chƣơng trình nào đó đƣợc thực thi, có giá trị. Câu lệnh if 
+cho phép chúng ta kiểm soát đoạn mã chƣơng trình đƣợc thực thi dựa trên 
+một điều kiện đã cho đƣợc kiểm tra là đúng hay sai. Một trong những 
+chức năng quan trọng của câu lệnh if cho phép chƣơng trình chọn một 
+hành động thực hiện dựa trên điều kiện đầu vào của ngƣời dùng. Chẳng 
+hạn, bằng cách sử dụng câu lệnh if để kiểm tra mật khẩu do ngƣời dùng 
+nhập, chƣơng trình quyết định liệu ngƣời dùng có đƣợc phép truy cập 
+chƣơng trình hay không. 
+Có bốn dạng câu lệnh điều kiện: 
+- Câu lệnh điều kiện dạng khuyết; 
+- Câu lệnh điều kiện dạng đầy đủ; 
+- Câu lệnh else if; 
+- Câu lệnh if lồng nhau. 
+3.1.1.1. Câu lệnh điều kiện dạng khuyết 
+a. Cú pháp: 
+if (expression) 
+<statement>; 

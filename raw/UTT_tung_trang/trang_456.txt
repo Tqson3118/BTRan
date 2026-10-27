@@ -1,0 +1,39 @@
+// Trang 456 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+456 
+ Kết quả chƣơng trình: 
+Nhap vao so luong thi sinh khoi A: 
+5 
+Nhap thong tin cua cac thi sinh: 
+Nhap thong tin thu 1: 
+Nhap ho ten thi sinh: 
+An 
+Nhap so bao danh thi sinh: 
+a1901 
+Nhap diem mon Toan: 
+8 
+Nhap diem mon Ly: 
+8 
+Nhap diem mon Hoa: 
+7 
+Nhap thong tin thu 2: 
+Nhap ho ten thi sinh: 
+Binh 
+Nhap so bao danh thi sinh: 
+a1902 
+Nhap diem mon Toan: 
+5 
+Nhap diem mon Ly: 
+4 
+Nhap diem mon Hoa: 
+4 
+Nhap thong tin thu 3: 
+Nhap ho ten thi sinh: 
+Cuong 
+Nhap so bao danh thi sinh: 
+a1903 
+Nhap diem mon Toan: 
+8 
+Nhap diem mon Ly: 
+9 
+Nhap diem mon Hoa: 

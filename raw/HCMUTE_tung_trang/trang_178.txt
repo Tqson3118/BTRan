@@ -1,0 +1,60 @@
+// Trang 178 - Ngôn ngữ lập trình C_ebook.pdf
+
+175
+cho con trỏ p một vùng nhớ gồm n ô nhớ kiểu ThietBi bởi câu lệnh ở dòng 
+21, với số n là giá trị người dùng đã nhập vào từ bàn phím trước đó ở câu 
+lệnh tại dòng 18. Ở đây, việc sử dùng hàm cấp phát bộ nhớ động malloc() 
+đòi hỏi phải khai báo thư viện malloc.h như ở dòng lệnh số 3. Sau đó, 
+chương trình sẽ kiểm tra xem việc cấp phát bộ nhớ có diễn ra thành công hay 
+không. Tiếp tục, chương trình sẽ yêu cầu người dùng nhập dữ liệu cho n thiết 
+bị và lưu vào n ô nhớ đã cấp cho con trỏ p, ở đoạn lệnh từ dòng 27 đến dòng 
+46. Kế tiếp, chương trình sẽ in ra lại dữ liệu đã lưu trước đó của n thiết bị, 
+ở đoạn lệnh từ dòng 49 tới dòng 52. Cuối cùng, chương trình sẽ giải phóng 
+vùng nhớ đã cấp phát cho con trỏ p bởi lệnh free() ở dòng lệnh số 53. 
+Kết quả sau khi chạy chương trình trên là:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+Nhap so n: 3
+Nhap thong tin cua thiet bi thu 0:
+Nhap ten: may phat song
+Nhap nam san xuat: 2018
+Nhap gia tien: 35.5
+Nhap trang thai: Tot (T) hoac Hong (H): T
+Nhap thong tin cua thiet bi thu 1:
+Nhap ten: VOM
+Nhap nam san xuat: 2017
+Nhap gia tien: 0.5
+Nhap trang thai: Tot (T) hoac Hong (H): T
+Nhap thong tin cua thiet bi thu 2:
+Nhap ten: dao dong ky
+Nhap nam san xuat: 2019
+Nhap gia tien: 35.6
+Nhap trang thai: Tot (T) hoac Hong (H): T
+Thong tin cac thiet bi da nhap:
+may phat song, 2018, 35.5, T
+VOM, 2017, 0.5, T
+dao dong ky, 2019, 35.6, T

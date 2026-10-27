@@ -1,0 +1,48 @@
+// Trang 393 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+393 
+14     } 
+15   } 
+16   t[d] = '\0'; 
+17   strcpy(s, t);  // thay doi cau truc cua chuoi ban dau 
+18   printf("Chuoi thu duoc sau khi xoa di cac nguyen am: %s\n", s); 
+19   return 0; 
+20 } 
+21 // ham kiem tra 1 ky tu co phai la nguyen am hay khong 
+22 // cac nguyen am trong bang chu cai tieng Anh: a, A, e, E, i, I, o, ), 
+u, U (viet hoa va viet thuong) 
+23 // tra ve 1 neu la mot nguyen am, tra ve 0 neu khong phai la 
+nguyen am 
+24 int check_vowel(char ch) 
+25 { 
+26     if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 
+'I' || ch =='o' || ch=='O' || ch == 'u' || ch == 'U') 
+27       return 1; 
+28     else 
+29       return 0; 
+30 } 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi s: 
+ 
+abcabutikmnopq 
+ 
+Chuoi thu duoc sau khi xoa di cac nguyen am: bcbtkmnpq 
+ Cách 2: Sử dụng con trỏ 
+ Chƣơng trình: 
+1 
+#include<stdio.h> 
+2 
+#include<stdlib.h> 
+3 
+#include<string.h> 
+4 
+int check_vowel(char); 
+5 
+main() 
+6 
+{ 
+7 
+   char a[100], *tg, *p, ch, *start; 
+8 
+    printf("Nhap vao chuoi ban dau:\n"); 

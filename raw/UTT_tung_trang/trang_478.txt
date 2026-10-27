@@ -1,0 +1,87 @@
+// Trang 478 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+478 
+  
+printf("Nhap ma sv can xoa:"); scanf("%s", &id); 
+  
+index = timkiem(sv, id, *spt); 
+  
+ 
+  
+if (index != -1 && *spt != 0) 
+  
+ { 
+  
+ 
+ if (index == *spt-1) // xoa phan tu cuoi cung 
+  
+ 
+ { 
+  
+ 
+ khoitao(sv, index);  
+  
+ 
+ *spt--; 
+  
+ 
+ printf("Ban ghi cua sinh vien da bi xoa.\n"); 
+  
+ 
+ } 
+  
+ 
+ else  
+  
+ 
+ 
+{ 
+  
+ 
+ 
+for(i = index;i<*spt;i++) //Xoa phan tu dau tien 
+hoac phan tu o giua 
+  
+ 
+ 
+ 
+{ 
+  
+ 
+ 
+ 
+sv[i] = sv[i+1]; 
+  
+ 
+ 
+ 
+khoitao(sv, *spt); 
+  
+ 
+ 
+ 
+(*spt)--; 
+  
+ 
+ 
+ 
+} 
+  
+ 
+    } 
+  
+ } 
+  
+else printf("Ban ghi khong ton tai. Kiem tra Masv va thu 
+lai.\n"); 
+  } 
+ else printf("Khong co ban gi de xoa\n"); 
+} 
+void khoitao(sinhvien sv[], int index) 
+{ 
+strcpy(sv[index].masv,""); 
+strcpy(sv[index].tensv,""); 
+sv[index].gt = NULL; 
+sv[index].d_tp1 = 0; 
+sv[index].d_tp2 = 0; 
+sv[index].d_cc = 0; 

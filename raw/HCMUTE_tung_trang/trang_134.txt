@@ -1,0 +1,30 @@
+// Trang 134 - Ngôn ngữ lập trình C_ebook.pdf
+
+131
+void  free(void *)
+Ví dụ giải phóng vùng nhớ đã cấp phát trước đó cho con trỏ p:
+free(p);
+5.4.3. Hàm calloc và realloc
+Ngoài hàm malloc, 2 hàm khác trong thư viện sdtlib.h cũng cho 
+phép cấp phát bộ nhớ động là hàm calloc() và hàm realloc(). 
+Hàm calloc() có chức năng giống như hàm malloc. Trong khi hàm 
+malloc trả về vùng nhớ được cấp phát với giá trị dữ liệu ban đầu của 
+các ô nhớ là ngẫu nhiên thì hàm calloc trả về vùng nhớ được cấp phát 
+và khởi tạo giá trị ban đầu cho các phần tử là giá trị 0. Cú pháp hàm 
+calloc() có khác so với hàm malloc về tham số của hàm:
+void * calloc(size_t n, size_t size)
+Tham số đầu tiên n dùng để xác định số lượng phần tử cần cấp 
+phát, tham số thứ 2, size, xác định kích thước của mỗi phần tử. Để cấp 
+phát vùng nhớ cho một mảng 100 phần tử số nguyên, có thể sử dụng 
+hàm calloc như sau:
+int *p;
+p=(int*)calloc(100, sizeof(int)); 
+Tương tự như hàm malloc(), hàm calloc() trả về giá trị rỗng 
+(NULL) nếu quá trình cấp phát không thành công.
+Hàm cuối cùng quản lý việc cấp phát động bộ nhớ là hàm realloc(). 
+Hàm realloc() được sử dụng để thay đổi kích thước của vùng nhớ đã 
+được cấp phát động trước đó bởi hàm malloc() hoặc hàm calloc(). Cú 
+pháp của hàm realloc() như sau:
+void * realloc(void *p, size_t size)
+Trong đó p là con trỏ tham chiếu đến vùng nhớ hiện hành đã được 
+cấp phát. Size là kích thước mới được yêu cầu cấp phát. Kết quả trả về 

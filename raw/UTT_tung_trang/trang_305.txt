@@ -1,0 +1,60 @@
+// Trang 305 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+305 
+30       for(int j = 0; j < n; j++) 
+31          if(a[i][j]>max) 
+32             max = a[i][j]; 
+33    return max; 
+34 } 
+35 //ham tim gia tri nho nhat cua mang hai chieu 
+36 int In_Min(int a[][MAX], int m, int n) 
+37 { 
+38    int min = a[0][0]; 
+39    for(int i = 0; i < m; i++) 
+40       for(int j = 0; j < n; j++) 
+41          if(a[i][j]<min) 
+42             min = a[i][j]; 
+43    return min; 
+44 } 
+45 int main(){ 
+46     int a[MAX][MAX]; 
+47     int m,n;   
+48     //doan chuong trinh kiem tra so hang nhap dam bao lon hon 0 va 
+be hon MAX 
+49  
+do 
+50  
+{ 
+51  
+ 
+printf("Nhap so hang cua mang: "); 
+52  
+ 
+scanf("%d", &m); 
+53  
+ 
+if(m <= 0 || m > MAX) 
+54  
+ 
+{ 
+55  
+ 
+ 
+printf("Khong hop le. Nhap so trong pham 
+vi tu 0 den MAX !\n"); 
+56  
+ 
+} 
+57  
+}while(m <= 0 || m > MAX); 
+58  
+59  
+//doan chuong trinh kiem tra so cot nhap vao 
+60  
+ 
+Do 
+61  
+{ 
+62  
+ 
+printf("Nhap so cot cua mang: "); 

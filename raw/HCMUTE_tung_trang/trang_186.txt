@@ -1,0 +1,38 @@
+// Trang 186 - Ngôn ngữ lập trình C_ebook.pdf
+
+183
+thể thuộc các kiểu dữ liệu khác nhau, và kích thước của vùng nhớ dùng 
+chung phải bảo đảm lưu trữ được dữ liệu của biến thành phần có kích 
+thước lớn nhất. Tại một thời điểm, chỉ có một biến thành phần có thể sử 
+dụng vùng nhớ chung này.
+7.2.2. Định nghĩa một kiểu Union mới
+Kiểu Union được định nghĩa tương tự như kiểu cấu trúc. Xét đoạn 
+lệnh định nghĩa một kiểu Union như sau:
+1
+2
+3
+4
+5
+union KieuSo
+{
+	
+int x;
+	
+double y;
+};
+trong đoạn lệnh này, union là từ khóa bắt buộc, KieuSo là tên 
+của kiểu dữ liệu, các biến thành phần được khai báo trong cặp dấu 
+ngoặc { }; ở đây là biến thành phần x kiểu int và biến thành phần y 
+kiểu double. Lúc này, chương trình sẽ tạo ra một kiểu union mới có tên 
+là KieuSo, kiểu này có 2 biến thành phần là biến x kiểu int và biến y 
+kiểu double. 
+Như vậy, cú pháp chung của thao tác định nghĩa để tạo nên một 
+kiểu cấu trúc mới sẽ là:
+union       TênKiểuUnion
+{
+		
+Khai báo các biến thành phần;
+};
+7.2.3. Khai báo và sử dụng biến kiểu Union
+Các biến union cần được khai báo trước khi sử dụng, tương tự như 
+biến cấu trúc và các biến bình thường khác. Xét chương trình sau:

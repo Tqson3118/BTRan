@@ -1,0 +1,54 @@
+// Trang 435 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+435 
+5 
+   struct NgaySinh  
+6 
+{   
+7 
+   int ngay;   
+8 
+   int thang;   
+9 
+   int nam;    
+10 }ns;   
+11 }nv1, nv2; 
+6.1.6.3. Truy cập đến thành phần của cấu trúc lồng 
+Để truy cập đến một thành phần của cấu trúc lồng nhau, ta sử dụng 
+toán tử dấu chấm (.) 
+ Ví dụ 6.14 
+1 
+nv1.ns.ngay; 
+2 
+nv1.ns.thang; 
+3 
+nv1.ns.nam; 
+6.1.6.4. Minh họa cấu trúc lồng  
+ Ví dụ 6.15 
+ Xem xét đoạn chƣơng trình sau đây: 
+1 
+#include <stdio.h>   
+2 
+#include <string.h>   
+3 
+struct Nhan_vien  
+4 
+{      
+5 
+   int id_nv;   
+6 
+   char ten_nv[20];   
+7 
+   struct Ngay_Sinh   
+8 
+    {   
+9 
+      int ngay;   
+10       int thang;   
+11       int nam;    
+12     }ns;   
+13 }nv1;   
+14 int main( )   
+15 {   
+16    //gan gia tri cho bien cau truc nv1   
+17    nv1.id_nv=101;   

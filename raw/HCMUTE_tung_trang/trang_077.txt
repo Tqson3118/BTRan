@@ -1,0 +1,47 @@
+// Trang 77 - Ngôn ngữ lập trình C_ebook.pdf
+
+74
+hiện biểu thức 3 (ở đây i++ hay i = i +1). Như vậy, sau lần lặp đầu tiên, 
+kết quả sẽ là a = 4 và i = 1. Tiếp đó, chương trình sẽ thực hiện lần lặp 
+tiếp theo: quay về xét điều kiện của biểu thức 2 xem còn đúng không. 
+Lúc này, kết quả của biểu thức 2 vẫn còn đúng (vì khi đó i = 1 là nhỏ 
+hơn 5), chương trình sẽ thực hiện khối lệnh (a++) làm cho a sẽ bằng 5. 
+Chương trình sẽ tiếp tục thực hiện biểu thức 3 (i++ hay i bằng 2) và tiếp 
+tục quay lại vòng lặp. Biểu thức 2 sẽ được xét, khối lệnh được thực hiện, 
+biểu thức 3 được thực hiện…Cứ như vậy cho đến khi điều kiện ở biểu thức 
+2 là sai thì chương trình sẽ thoát ra khỏi vòng lặp. Sau khi kết thúc vòng lặp 
+này, kết quả thu được là a = 8 và i = 5.
+Để hiểu rõ hơn thứ tự các lệnh thực hiện, ta có thể xem xét tiếp ví 
+dụ 3.2 sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+#include <stdio.h>
+int main(void)
+{  
+int i, a = 0;
+for (i = 0; i<2; i++,printf(“gia tri i la %d, “,i))
+    {a ++;
+    printf(“\n gia tri a la %d, “,a);
+    }
+printf(“\ngia tri sau vong lap cua i la %d va a la 
+%d”, i, a);
+getch();
+return 0;
+}
+Khi chạy chương trình, kết quả in ra màn hình sẽ là:
+1
+2
+3
+gia tri a la 1, gia tri i la 1,
+gia tri a la 2, gia tri i la 2,
+gia tri sau vong lap cua i la 2 va a la 2

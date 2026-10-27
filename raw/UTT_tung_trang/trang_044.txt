@@ -1,0 +1,35 @@
+// Trang 44 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+44 
+1.5.1.2. Khai báo biến 
+Trong ngôn ngữ C, bạn phải khai báo biến trƣớc khi sử dụng. Khai 
+báo biến thông báo cho trình biên dịch về tên tham chiếu mà chúng ta sử 
+dụng cho một vị trí trong bộ nhớ. 
+Cú pháp: 
+<data_type> <variable_names>; 
+Trong đó: 
+data_type: kiểu dữ liệu, có thể là kiểu dữ liệu nguyên thủy (char, 
+int, float) hoặc có thể là kiểu dữ liệu dẫn xuất (signed char, unsigned int, 
+long double, v.v.), cũng có thể là các kiểu dữ liệu do ngƣời dùng định 
+nghĩa (array, struct, pointer, v.v.) 
+variable_names: danh sách các biến có cùng kiểu dữ liệu, các biến 
+đƣợc ngăn cách bởi dấu phẩy (,), kết thúc câu lệnh khai báo biến là dấu 
+chấm phẩy (;) 
+ Ví dụ 1.23 
+int   a, b, c; //khai báo ba biến a, b, c có kiểu nguyên int. 
+float  delta ;//khai báo biến delta có kiểu thực chấm động đơn float. 
+char  ch_1, ch_2; //khai báo hai biến ch_1, ch_2 có kiểu char. 
+unsigned int  arr[100]; // khai báo một biến mảng arr, có tối đa 100 
+phần tử, mỗi phần tử có kiểu nguyên không âm. 
+int * ptr; // khai báo biến con trỏ *ptr, trỏ tới các phần tử có kiểu 
+nguyên. 
+1.5.1.3. Khai báo và khởi tạo giá trị cho các biến 
+Cú pháp: 
+<data_type> <variable_name> = <value-or-expression>; 
+Trong đó: 
+data_type: kiểu dữ liệu, có thể là kiểu dữ liệu nguyên thủy (char, int, 
+float) hoặc có thể là kiểu dữ liệu dẫn xuất (signed char, unsigned int, long 
+double, v.v.), cũng có thể là các kiểu dữ liệu do ngƣời dùng định nghĩa 
+(array, struct, pointer, v.v.) 
+variable_name:  tên biến; 
+ <value-or-expression>:  giá trị hoặc một biểu thức; 

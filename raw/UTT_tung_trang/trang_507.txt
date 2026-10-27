@@ -1,0 +1,40 @@
+// Trang 507 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+507 
+11    FILE *fptr; 
+12    if ((fptr = fopen("databinary.bin","wb")) == NULL){ 
+13        printf("Loi!"); 
+14        // chuong trinh thoat neu con tro tep tra ve gia tri NULL 
+15        exit(1); 
+16    } 
+17    for(n = 1; n < 5; ++n) 
+18    { 
+19       num.n1 = n; 
+20       num.n2 = 5*n; 
+21       num.n3 = 5*n + 1; 
+22       fwrite(&num, sizeof(struct threeNum), 1, fptr);  
+23    } 
+24    fclose(fptr);  
+25    return 0; 
+26 } 
+Trong ví dụ trên, đầu tiên ngƣời lập trình tạo ra tệp nhị phân 
+databinary.bin trong cùng vị trí với tệp chạy chƣơng trình. 
+Khai báo cấu trúc threeNum với thành phần là 3 số n1, n2, n3 và 
+định nghĩa 1 biến cấu trúc trong hàm chính là num; 
+Khai báo biến con trỏ fptr.  
+Ánh xạ biến con trỏ fptr vào tệp databinary. Sử dụng hàm fopen với 
+tham số wb cho phép ghi tệp tên nhị phân; 
+Bên trong vòng lặp for, chúng ta sử dụng hàm fwrite() để lƣu trữ giá 
+trị vào tệp. 
+Tham số đầu tiên của hàm fwrite() là địa chỉ của biến num; 
+Tham số thứ hai lấy kích thƣớc của cấu trúc threeNum; 
+Tham số thứ ba là 1, vì chúng ta chỉ đƣa vào 1 kiểu thể hiện của num; 
+Tham số thứ 4 là biến con trỏ fptr trỏ tới tệp lƣu trữ dữ liệu. 
+Đóng tệp tin nhị phân bằng hàm fclose(). 
+7.2.6.2. Đọc nội dung từ tệp nhị phân 
+Sử dụng hàm fread() để đọc nội dung đƣợc ghi trong tệp nhị phân. 
+Cú pháp: 
+ 
+fread(address_data, size_data, numbers_data, pointer_to_file); 
+ 
+Các tham số tƣơng tự hàm fwrite(). 

@@ -1,0 +1,38 @@
+// Trang 125 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+125 
+Chƣơng 3 
+CÁC CẤU TRÖC PHÂN NHÁNH VÀ VÕNG LẶP 
+Các câu lệnh điều khiển là trái tim của bất kỳ ngôn ngữ lập trình nào. 
+Trong hầu hết các chƣơng trình, 60-70 % các câu lệnh của chƣơng trình là 
+câu lệnh điều khiển. Để làm chủ hoàn toàn chƣơng trình của mình, chúng 
+ta cần kiểm soát tốt chƣơng trình, cần nắm vững các cấu trúc của các lệnh 
+điều khiển. 
+Mỗi một chƣơng trình, theo mặc định đƣợc thực hiện tuần tự. Từng 
+câu lệnh đƣợc thực thi lần lƣợt. Tuy nhiên, có những tình huống xảy ra 
+khi chúng ta cần thực thi một hoặc nhiều câu lệnh dựa trên các điều kiện, 
+chẳng hạn hiển thị các tệp tin bí mật nếu ngƣời dùng có thông tin xác 
+thực. Cũng có nhiều tình huống, chúng ta cần thực hiện lặp đi lặp lại một 
+số câu lệnh nào đó, chẳng hạn gửi email đề nghị cho tất cả các khách 
+hàng, v.v. Các câu lệnh điều khiển trong lập trình xử lý các tình huống 
+nhƣ vậy.  
+Tập hợp các câu lệnh điều khiển trong ngôn ngữ lập trình C đƣợc 
+phân chia thành ba loại nhƣ sơ đồ dƣới đây: 
+ 
+Hình 3.1. Phân cấp các câu lệnh trong chƣơng trình C 
+Lệnh điều 
+khiển 
+Câu lệnh 
+quyết định 
+if 
+switch 
+Câu lệnh 
+lặp 
+for 
+while 
+do while 
+Câu lệnh 
+nhảy 
+break 
+continue 
+goto 

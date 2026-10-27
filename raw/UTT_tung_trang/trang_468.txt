@@ -1,0 +1,82 @@
+// Trang 468 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+468 
+21  
+ 
+ 
+ 
+ 
+{ 
+22  
+ 
+ 
+ 
+ 
+sv[i]=sv[i+1]; 
+23  
+ 
+ 
+ 
+ 
+khoitao(sv, *spt); 
+24  
+ 
+ 
+ 
+ 
+(*spt)--; 
+25  
+ 
+ 
+ 
+ 
+} 
+26  
+ 
+ 
+    } 
+27  
+ 
+ } 
+28  
+ 
+else printf("Ban ghi khong ton tai. Kiem tra Masv 
+va thu lai.\n"); 
+29  
+ } 
+30  
+else printf("Khong co ban gi de xoa\n"); 
+31 } 
+//Hàm khoitao 
+1 
+void khoitao(sinhvien sv[], int index) 
+2 
+{ 
+3 
+strcpy(sv[index].masv,""); 
+4 
+strcpy(sv[index].tensv,""); 
+5 
+sv[index].gt =NULL; 
+6 
+sv[index].d_tp1 = 0; 
+7 
+sv[index].d_tp2 = 0; 
+8 
+sv[index].d_cc = 0; 
+9 
+sv[index].d_gk = 0; 
+10 
+sv[index].d_kt = 0; 
+11 
+sv[index].tong_diem = 0; 
+12 
+} 
+Cập nhật bản ghi 
+ Bƣớc 7: Xây dựng hàm capnhat(sinhvien sv[], int spt) để cập 
+nhật một bản ghi đƣợc chỉ định. Quá trình cập nhật bắt đầu bằng cách yêu 
+cầu ngƣời dùng nhập mã sinh viên của sinh viên cần cập nhật thông tin. 
+Giá trị mã sinh viên sẽ đƣợc kiểm tra để đảm bảo sinh viên đƣợc cập nhật 
+thực sự tồn tại. Nếu giá trị mã sinh viên đó tồn tại, việc thay đổi với bản 
+ghi đƣợc thực hiện sau khi yêu cầu ngƣời dùng nhập giá trị mới của 
+trƣờng cần thay đổi. 

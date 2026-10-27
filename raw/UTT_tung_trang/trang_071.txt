@@ -1,0 +1,59 @@
+// Trang 71 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+71 
+Các phím, phím tắt thực hiện các thao tác khác: 
+Bảng 1.16. Một số phím khác 
+Phím 
+Ý nghĩa 
+Phím tắt 
+F10 
+Kích hoạt menu chính 
+Ctrl + K + D, Ctrl + 
+K + Q 
+F2 
+Lƣu chƣơng trình đang soạn vào đĩa 
+Ctrl + K + S 
+F3 
+Tạo tập tin mới 
+Tab 
+Di chuyển con trỏ một khoảng đồng thời 
+đẩy dòng văn bản 
+Ctrl + I 
+ESC 
+Hủy bỏ thao tác lệnh 
+Ctrl + U 
+Đóng tập tin hiện tại 
+Alt + F3 
+Hiện hộp thoại tìm kiếm 
+Ctrl + Q +F 
+Hiện hộp thoại tìm kiếm và thay thế 
+Ctrl + Q + A 
+Tìm kiếm tiếp tục 
+Ctrl + L 
+ Ví dụ 1.59  
+Soạn thảo đoạn chƣơng trình sau, sau đó ghi chƣơng trình với tên là 
+CHAO.C 
+1 
+#include <stdio.h> 
+2 
+#include<conio.h> 
+3 
+int main () 
+4 
+{ 
+5 
+char ten[50]; 
+6 
+printf(“Xin cho biet ten cua ban !”); 
+7 
+scanf(“%s”,ten); 
+8 
+printf(“Xin chao ban %s”,ten); 
+9 
+getch(); 
+10 return 0; 
+11 } 
+1.7.1.3. Ghi chương trình đang soạn thảo vào đĩa 
+Sử dụng File/Save hoặc gõ phím F2. Có hai trƣờng hợp xảy ra: 
+- Nếu chƣơng trình chƣa đƣợc ghi lần nào thì một hội thoại sẽ xuất 
+hiện cho phép bạn xác định tên tập tin (FileName). Tên tập tin phải tuân 

@@ -1,0 +1,54 @@
+// Trang 69 - Ngôn ngữ lập trình C_ebook.pdf
+
+66
+trị 1 thì chương trình sẽ nhảy đến dòng 11 tương ứng với nhãn case 1:, 
+nếu là các giá trị khác thì chương trình sẽ nhảy đến dòng lệnh 15 tương 
+ứng với nhãn default:. Với trường hợp cụ thể của ví dụ này, kết quả của 
+biểu thức a%3 là 0, do đó chương trình sẽ nhảy đến nhãn case 0: ở dòng 
+7 để thực hiện tiếp cho đến khi gặp lệnh break ở dòng lệnh 10 thì kết 
+thúc lệnh switch. Sau đó, chương trình nhảy đến dòng lệnh 19 và thực 
+thi tiếp cho đến cuối chương trình chính.
+Bây giờ, ta giả sử lệnh break; ở dòng lệnh 10 bị bỏ đi, thì điều gì 
+sẽ xảy ra? Kết quả của trường hợp này sẽ là:
+1
+2
+Chia hetkhong chia het
+ Gia tri cua b la 1
+Điều gì đã xảy ra? Sau khi nhảy tới nhãn case 0: và thực thi khối 
+lệnh ở dòng 8 và 9, vì không có lệnh break nên chương trình đã thực 
+hiện tiếp các lệnh ở dòng lệnh 11, 12, 13 cho đến khi gặp lệnh break tiếp 
+theo. Lúc này chương trình mới thoát ra khỏi lệnh switch và kết thúc 
+lệnh switch. Đây là vấn đề cần lưu ý để chương trình thực hiện đúng với 
+ý đồ của người lập trình.
+2.6. BÀI TẬP
+1. Hãy tìm và sửa lỗi trong các câu/đoạn lệnh sau:
+a.
+max = a;
+If (a < b)
+	
+max = b;
+b.
+scanf(“%d”,&a);
+if a < 0
+	
+printf(“La so am\n”);
+c.
+scanf(“%d”,&a);
+if (a % 2 == 0)
+	
+printf(“La so chan\n”);
+else (a % 2 != 0)
+	
+printf(“La so le\n”);
+{
+}
+{
+}
+if (a<0)
+int a;
+int a;
+else
+{
+}
+{
+}

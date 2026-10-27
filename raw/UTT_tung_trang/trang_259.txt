@@ -1,0 +1,47 @@
+// Trang 259 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+259 
+BÀI TẬP CHƢƠNG 4 
+A. BÀI TẬP CÓ LỜI GIẢI 
+ Bài tập 4.1 
+Viết chƣơng trình in các số nguyên tố trong phạm vi [a, b] với a, b là 
+hai số nguyên. 
+Phác thảo lời giải 
+- Xây dựng hàm ktnguyento(int n) để kiểm tra số n có là số nguyên 
+tố hay không? Sử dụng biến flag để ghi nhận trạng thái của một số. Khi 
+khai báo biến flag nhận giá trị khởi tạo 1. Trong quá trình kiểm tra tính 
+chia hết của số n cho i, với i có thể nhận giá trị từ 2 đến n/2, nếu n chia 
+hết hết cho i, lập tức trạng thái của biến flag chuyển về 0, đồng thời lệnh 
+break đƣợc thực hiện để thoát khỏi vòng lặp. 
+- Trong chƣơng trình chính, hàm main(), dựa vào trạng thái của biến 
+flag của các số trong phạm vi [a, b] để in ra các số nguyên tố. 
+Chƣơng trình 
+1 
+#include <stdio.h> 
+2 
+int ktnguyento(int n); 
+3 
+int main() 
+4 
+{ 
+5 
+    int a, b, i, flag; 
+6 
+    printf("Nhap vao hai so nguyen:\n"); 
+7 
+    do 
+8 
+    { 
+9 
+    printf("Nhap a = "); 
+10     scanf("%d", &a); 
+11     printf("Nhap b = "); 
+12     scanf("%d", &b); 
+13     if (a > b) printf("Nhap lai! Nhap vao 2 so thoa man a < b:\n"); 
+14     } while (a >= b); 
+15  
+printf("Cac so nguyen to trong pham vi tu %d den %d la: 
+", a, b); 
+16     for(i = a + 1; i < b; ++i) 
+17     { 
+18         // i  la so nguyen to, co flag se nhan gia tri 1 

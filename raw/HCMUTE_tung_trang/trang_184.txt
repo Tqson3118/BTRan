@@ -1,0 +1,61 @@
+// Trang 184 - Ngôn ngữ lập trình C_ebook.pdf
+
+181
+54
+55
+56
+57
+  
+58
+59
+60
+61
+62
+63
+64
+	
+else
+	
+{
+	
+	
+NhapDuLieu(p,n);
+	
+	
+	
+printf(“\nThong tin cac thiet bi da 
+nhap:\n”);
+	
+	
+for ( i = 0; i < n; i++)
+	
+	
+	
+InMotThietBi(*(p+i));
+	
+}
+	
+free(p);
+	
+getch();
+	
+return 0;
+}
+Trong chương trình này, hàm NhapDuLieu và hàm InMotThietBi 
+được định nghĩa tương tự như ở chương trình trước. Trong hàm 
+main, một vùng nhớ mảng một chiều gồm n phần tử kiểu cấu 
+trúc ThietBi được cấp phát động cho con trỏ p. Tiếp đó, câu lệnh 
+NhapDuLieu(p,n); ở dòng lệnh 55 sẽ gọi hàm NhapDuLieu, và truyền 
+địa chỉ bắt đầu của vùng nhớ mà p đang quản lý (địa chỉ này đang 
+lưu trong biến p) vào cho con trỏ đầu vào x của hàm NhapDuLieu. 
+Khi hàm NhapDuLieu chạy, con trỏ x sẽ truy xuất tới vùng nhớ của 
+p và lưu dữ liệu người dùng nhập từ bàn phím vào vùng nhớ này. 
+Sau đó, hàm main thực hiện vòng lặp for ở dòng lệnh số 63. Vòng 
+lặp này sẽ thực hiện việc in thông tin của từng thiết bị đã nhập. Ở 
+mỗi lần in thông tin, câu lệnh InMotThietBi(*(p+i)); ở dòng lệnh 
+số 59 sẽ gọi hàm InMotThietBi, thông số *(p+i) sẽ lấy toàn bộ giá 
+trị của ô nhớ thứ i trong vùng nhớ kiểu cấu trúc ThietBi của con trỏ 
+p truyền vào cho biến đầu vào a của hàm InMotThietBi. Lúc này, 
+tham số a sẽ mang thông tin dữ liệu tương tự như ô nhớ *(p+i), và 
+hàm InMotThietBi sẽ in các nội dung này ra màn hình. Kết quả sau 
+khi chạy chương trình trên là:

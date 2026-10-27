@@ -1,0 +1,29 @@
+// Trang 69 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+69 
+ 
+Hình 1.5. Giao diện màn hình của Turbo C 
+1.7.1.2. Soạn thảo chương trình mới 
+Muốn soạn thảo một chƣơng trình mới ta chọn mục New trong menu 
+File (File/New). Trên màn hình sẽ xuất hiện một vùng trống để cho ta 
+soạn thảo nội dung của chƣơng trình. Trong quá trình soạn thảo chƣơng 
+trình ta có thể sử dụng các phím sau: 
+Các phím xem thông tin trợ giúp: 
+- F1: Xem toàn bộ thông tin trong phần trợ giúp. 
+- Ctrl-F1: Trợ giúp theo ngữ cảnh (tức là khi con trỏ đang ở trong 
+một từ nào đó, chẳng hạn int mà bạn gõ phím Ctrl-F1 thì bạn sẽ có đƣợc 
+các thông tin về kiểu dữ liệu int). 
+Các phím di chuyển con trỏ trong vùng soạn thảo chƣơng trình: 
+Bảng 1.12. Các phím di chuyển con trỏ 
+Phím 
+Ý nghĩa 
+Phím tắt   
+( tổ hợp phím) 
+Enter 
+Đƣa con trỏ xuống dòng 
+Mũi tên đi lên 
+Đƣa con trỏ lên hàng trƣớc 
+Ctrl-E 
+Mũi tên đi xuống 
+Đƣa con trỏ xuống hàng sau 
+Ctrl-X 

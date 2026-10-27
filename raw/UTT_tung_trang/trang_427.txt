@@ -1,0 +1,44 @@
+// Trang 427 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+427 
+ Kết quả chƣơng trình: 
+ 
+Nhap ten sinh vien s1: 
+ 
+Nam 
+ 
+Nhap tuoi sinh vien s1: 
+ 
+19 
+ 
+Ten cua sinh vien: Nam 
+ 
+Tuoi cua sinh vien: 19 
+Lƣu ý: Nếu sử dụng lệnh scanf(“%s”, s1.ten_sv); khi nhập vào “Le 
+Thanh Nam”, khi sử dụng lệnh in ra, trên màn hình chỉ ghi nhận “Le”. Để 
+xử lý vấn đề này, chúng ta sử dụng câu lệnh:  
+fflush(stdin);  
+gets(s1.ten_sv); 
+Hàm fflush() trong thƣ viện stdio.h cũng có tác dụng cho phép lựa 
+chọn xóa bộ nhớ đệm cho stream nào. Ở đây ta truyền vào stdin để xóa bộ 
+đệm cho dòng nhập chuẩn, tức là bàn phím. 
+ Ví dụ 6.6 
+ 
+Khai báo kiểu Nhan_Vien bao gồm các thông tin: Mã nhân viên, 
+họ tên, lƣơng. Khai báo 2 đối tƣợng nv1, nv2 thuộc kiểu Nhan_Vien, 
+nhập và hiển thị thông tin của hai nhân viên nv1, nv2. 
+ Chƣơng trình 
+1  #include <stdio.h> 
+2  #include <stdlib.h>  
+3  // khai bao struct Nhan_Vien 
+4  struct Nhan_Vien 
+5  { 
+6      char manv[20]; // ma nhan vien 
+7      char hoten[30]; // ho ten nhan vien 
+8      double luong; // luong nhan vien 
+9  }; 
+10  int main()  
+11  { 
+12  // khai bao 2 bien nv1, nv2 
+13      struct Nhan_Vien nv1, nv2 
+14  //Nhap thong tin cua nhan vien thu nhat  

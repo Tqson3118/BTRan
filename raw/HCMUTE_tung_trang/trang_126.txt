@@ -1,0 +1,52 @@
+// Trang 126 - Ngôn ngữ lập trình C_ebook.pdf
+
+123
+địa chỉ của biến mà nó tham chiếu tới. Giả sử đoạn chương trình khai 
+báo 3 biến với giá trị khởi tạo như sau:
+1
+2
+int a = 3, b = 5 ; 
+int *p ;
+3
+4225568
+a
+5
+4225572
+b
+--
+4225588
+p
+Tên biến
+Giá trị
+Địa chỉ
+Hình 5.1. Thuộc tính của các biến
+Đoạn chương trình này có 3 biến, mỗi biến được khai báo với một 
+tên, các biến được truy xuất nội dung thông qua tên biến. Đồng thời, 
+mỗi biến có một địa chỉ trong bộ nhớ. Trong trường hợp này, 2 biến a 
+và b nằm ở hai vùng nhớ có địa chỉ bắt đầu là 4225568 và 4225572. Các 
+biến được khai báo có thể nằm ở các vùng nhớ nối tiếp nhau hoặc không 
+và không có cơ chế đảm bảo các biến nằm liên tiếp nhau trong bộ nhớ. 
+Mỗi biến được gán giá trị. Các giá trị này được xem như nội dung biến. 
+Trường hợp con trỏ p cũng tương tự, tên con trỏ là p, vùng nhớ của con 
+trỏ p được đặt ở vị trí bắt đầu là 4225588. Nội dung biến có thể được 
+cập nhật thông qua tên biến, ví dụ, lệnh a = 8; sẽ làm giá trị biến a được 
+cập nhật giá trị mới là 8. Nội dung biến con trỏ chưa được khởi tạo. Xét 
+chương trình ví dụ tiếp theo dưới đây:
+1
+2
+3
+4
+5
+6
+	
+a = 9 ;
+	
+b = 12 ;
+	
+p = &a ;
+	
+*p = 7 ; 
+	
+p = &b ;
+	
+a = *p ;

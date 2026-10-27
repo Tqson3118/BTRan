@@ -1,0 +1,38 @@
+// Trang 354 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+354 
+26     p[c] = '\0'; 
+27 } 
+ Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi p: 
+ 
+Truong Dai hoc 
+ 
+Nhap vao chuoi q 
+  Cong nghe GTVT 
+Chuoi thu duoc khi ghep q vao p: Truong Dai hoc Cong nghe GTVT 
+Cách 3: Sử dụng con trỏ 
+1 #include <stdio.h> 
+2 void concatenate_string(char*, char*); 
+3 int main() 
+4 { 
+5     char a[100], b[100]; 
+6     printf("Nhap vao chuoi a:\n"); 
+7     gets(a); 
+8     printf("Nhap vao chuoi b:\n"); 
+9     gets(b); 
+10    // ghep b vao a 
+11     concatenate_string(a, b); 
+12     //ket qua cua phep ghep 
+13 printf("Chuoi thu duoc sau khi ghep b vao a: \"%s\"\n", a);  
+14     return 0; 
+15 } 
+16 void concatenate_string(char *a, char *b) 
+17 { 
+18    while(*a) 
+19      a++; 
+20    while(*b) 
+21    { 
+22       *a = *b; 
+23       b++; 

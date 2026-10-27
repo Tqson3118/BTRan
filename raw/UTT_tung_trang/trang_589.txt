@@ -1,0 +1,116 @@
+// Trang 589 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+589 
+PHỤ LỤC 5: MÃ ĐỊNH DẠNG 
+Stt 
+Mã  
+Diễn giải 
+Kiểu dữ liệu 
+1 
+ %c 
+Ký tự 
+char 
+unsigned char 
+2 
+ %d 
+Số nguyên có dấu 
+short 
+unsigned short 
+int 
+long 
+3 
+ %e , %E 
+Số chấm động (ký hiệu có số 
+mũ) 
+float 
+double 
+4 
+ %f 
+Số chấm động (ký hiệu thập 
+phân) 
+float 
+5 
+ %g , %G 
+Tƣơng tự  %e, %E 
+float 
+double 
+6 
+ %hi 
+Số nguyên ngắn có dấu 
+short 
+7 
+ %hu 
+Số nguyên ngắn không âm 
+unsigned short 
+8 
+ %i 
+Số nguyên có dấu 
+short 
+unsigned short 
+int 
+long 
+9 
+ %l, %ld, %li 
+Số nguyên có dấu (chỉ số nguyên 
+dài) 
+long 
+10 
+ %lf 
+Số chấm động (dài) 
+double 
+11 
+ %Lf 
+Số chấm động (dài) 
+long double 
+12 
+ %lu 
+Số nguyên thập phân không dấu 
+(dài) 
+unsigned int 
+unsigned long 
+13 
+ %lli, %lld 
+Số nguyên (dài) 
+long long 
+14 
+ %llu 
+Số nguyên thập phân không dấu 
+(dài) 
+unsigned long long 
+15 
+ %o 
+Số nguyên bát phân không dấu 
+short 
+unsigned short 
+int 
+unsigned int 
+long 
+16 
+ %p 
+Con trỏ 
+void * 
+17 
+ %s 
+Chuỗi ký tự 
+char * 
+18 
+ %u 
+Số nguyên thập phân không dấu 
+unsigned int 
+unsigned long 
+19 
+ %x, %X 
+Số nguyên hexa không dấu 
+short 
+unsigned short 
+int 
+unsigned int 
+long 
+20 
+ %n 
+Không in gì cả 
+ 
+21 
+ %% 
+In ký tự %  
+ 

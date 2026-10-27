@@ -1,0 +1,37 @@
+// Trang 317 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+317 
+5.2.2. Khai báo con trỏ 
+Trong C, ta có thể khai báo một biến đặc biệt để lƣu trữ địa chỉ (thay 
+vì giá trị). Biến này đƣợc gọi là biến con trỏ, hay đơn giản gọi là con trỏ. 
+Cú pháp khai báo con trỏ: 
+ 
+data_type* pointer_variable_name; 
+Trong đó: 
+data_type: là kiểu dữ liệu của con trỏ, nó có thể là một trong các 
+kiểu dữ liệu cơ bản nhƣ số nguyên, số thực, ký tự, v.v. hoặc cũng có thể là 
+một kiểu dữ liệu có cấu trúc. 
+pointer_variable_name: tên biến con trỏ, đƣợc đặt giống định danh. 
+ Ví dụ 5.26 
+int *k; // con trỏ k trỏ tới một số nguyên. 
+double *t; //con trỏ t trỏ tới một số thực kiểu double. 
+float *x; // con trỏ x trỏ tới một số thực kiểu float. 
+char *y; // con trỏ y trỏ tới một ký tự. 
+Các phép toán thƣờng sử dụng với con trỏ. 
+Toán tử &: lấy địa chỉ của biến và gán địa chỉ đó cho biến con trỏ. 
+Toán tử *: trả về giá trị trong vùng nhớ mà con trỏ đang trỏ tới. 
+Lƣu ý: Phân biệt dấu * đƣợc dùng khi khai báo một biến con trỏ với 
+toán tử * để lấy giá trị từ địa chỉ.  
+Khởi tạo con trỏ. 
+Khởi tạo con trỏ là quá trình gán địa chỉ của một biến cho một biến 
+con trỏ. Biến con trỏ chỉ có thể chứa địa chỉ của một biến có cùng kiểu dữ 
+liệu. Trong ngôn ngữ lập trình C, toán tử địa chỉ & đƣợc sử dụng để xác 
+định địa chỉ của một biến. 
+Trong trƣờng hợp không chắc chắn về việc gán địa chỉ của biến nào 
+cho biến con trỏ trong khai báo, chúng ta nên gán giá trị NULL cho biến 
+con trỏ. Một con trỏ đƣợc gán giá trị NULL đƣợc gọi là con trỏ NULL. 
+ Ví dụ 5.27 
+Xem xét đoạn chƣơng trình sau đây để hiểu con trỏ hoạt động nhƣ 
+thế nào? 
+1 
+#include <stdio.h> 

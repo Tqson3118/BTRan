@@ -1,0 +1,70 @@
+// Trang 27 - Ngôn ngữ lập trình C_ebook.pdf
+
+24
+1.5. MỘT CHƯƠNG TRÌNH C KHÁC: CỘNG HAI SỐ NGUYÊN
+Chúng ta sẽ viết một chương trình C thực hiện việc nhập hai số 
+nguyên từ bàn phím, sau đó thực hiện tính tổng hai số này và cuối 
+cùng in kết quả ra màn hình. Nội dung của chương trình được thể 
+hiện ở hình dưới.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+#include <stdio.h>
+#include <conio.h>
+int main (void)
+{
+	
+int a;  //khai bao bien a, de luu so thu nhat
+	
+int b;   //khai bao bien b, de luu so thu hai
+	
+int tong;//khai bao bien tong, de luu ket qua
+	
+	
+printf (“Nhap so thu nhat : \n”);
+	
+scanf(“%d”,&a);  //nhap so nguyen tu ban phim
+	
+	
+printf(“Nhap so thu hai: \n”);
+	
+scanf(“%d”,&b);  //nhap so nguyen tu ban phim
+	
+	
+tong = a + b;     //tinh tong
+	
+printf(“Tong la: %d \n”,tong);  //in ket qua
+	
+getch(); //cho nhap 1 ky tu bat ky
+	
+return 0; 	
+}
+Kết quả sau khi thực thi chương trình như sau:
+1
+2
+3
+4
+5
+Nhap so thu nhat :
+5
+Nhap so thu hai:
+7
+Tong la: 12

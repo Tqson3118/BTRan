@@ -1,0 +1,43 @@
+// Trang 163 - Ngôn ngữ lập trình C_ebook.pdf
+
+160
+Ở dòng lệnh số 1, từ khóa struct là bắt buộc để bắt đầu cho phần 
+định nghĩa một kiểu cấu trúc. Tên gọi SinhVien là tên được đặt cho kiểu 
+cấu trúc đang định nghĩa. Các biến được khai báo bên trong cặp dấu 
+ngoặc {  }; của phần định nghĩa ở trên được gọi là các biến thành phần 
+của kiểu cấu trúc. Các biến thành phần trong cùng một kiểu cấu trúc 
+phải có tên gọi khác nhau, tuy nhiên các biến thành phần của các kiểu 
+cấu trúc khác nhau có thể có tên gọi trùng nhau. Việc định nghĩa một 
+kiểu cấu trúc phải được kết thúc bằng một dấu chấm phẩy ; 
+Các biến thành phần của một kiểu cấu trúc có thể là các biến thuộc 
+các kiểu dữ liệu cơ bản (char, int, float,...) hoặc là biến con trỏ, biến 
+mảng, hoặc là biến thuộc một kiểu cấu trúc khác. Xét một kiểu cấu trúc 
+khác được định nghĩa như sau:
+1
+2
+3
+4
+5
+6
+7
+struct ThietBi
+{
+	
+char tenTB[20];
+	
+int namSanXuat;
+	
+float giaTien;
+	
+char  trangThai;
+};
+Kiểu cấu trúc ThietBi này được định nghĩa gồm 4 biến thành phần, 
+biến thành phần tenTB là một mảng gồm 20 phần tử kiểu ký tự dùng để 
+lưu tên của thiết bị, biến thành phần namSanXuat là một biến kiểu int 
+dùng để lưu năm sản xuất của thiết bị, biến thành phần giaTien là một 
+biến kiểu float dùng để lưu giá tiền của thiết bị, và biến thành phần 
+trangThai có kiểu ký tự sẽ dùng để lưu ký tự: có thể là ‘H’ hoặc ‘T’ cho 
+trạng thái ‘hỏng’ hoặc ‘tốt’ của thiết bị.
+Như vậy, cú pháp chung của thao tác định nghĩa để tạo nên một 
+kiểu cấu trúc mới sẽ là:
+struct       TênKiểuCấuTrúc

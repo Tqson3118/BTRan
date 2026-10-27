@@ -1,0 +1,41 @@
+// Trang 431 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+431 
+Trong đó:  
+existing_name: Kiểu_dữ_liệu_hiện_Có; 
+alias_name: Tên_thay_thế; 
+Có thể sử dụng từ khóa typedef với cấu trúc để định nghĩa một kiểu 
+dữ liệu mới và sau đó sử dụng kiểu dữ liệu đó để định nghĩa các biến cấu 
+trúc một cách trực tiếp nhƣ sau: 
+typedef struct [struct_name_tag] 
+ 
+{ 
+     data_type member_1; 
+     data_type member_2; 
+     … 
+ 
+data_type member_n; 
+}type_name; 
+ type_name struct_variable_name; 
+Trong đó:  
+ 
+struct_varible_name: danh sách các biến cấu trúc; 
+ Ví dụ 6.9 
+Xem xét ví dụ sau đây: 
+1 #include<stdio.h> 
+2 #include<string.h> 
+3 typedef struct Sinh_vien 
+4 { 
+5     char ten_sv[20]; 
+6     int tuoi_sv; 
+7     char dia_Chi[50]; 
+8     //F (female) va M (male) 
+9     char gioi_tinh; 
+10 }SV; 
+11 int main() 
+12 { 
+13      SV s1; 
+14     // Khoi tao gia tri cua bien s1, la bien cau truc thay the duoc su 
+dung trong chuong trinh 
+15  
+strcpy(s1.ten_sv,"Le Thi Chi"); 

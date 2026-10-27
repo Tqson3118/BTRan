@@ -1,0 +1,81 @@
+// Trang 490 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+490 
+50  
+gets(ds_nv[*n].tennv);  
+51  
+printf("Nhap tuoi nhan vien:"); 
+52  
+scanf("%d", &ds_nv[*n].tuoi); 
+53 (*n)++; 
+54 } 
+55 int timkiem(Nhanvien ds_nv[], char id[], int n) 
+56 { 
+57  
+int timthay = -1; 
+58  
+for (int i = 0; i<n && timthay == -1; i++) 
+59  
+{ 
+60  
+ 
+if (strcmp(ds_nv[i].manv, id) == 0) timthay = i; 
+61  
+ 
+else timthay = -1; 
+62  
+} 
+63 return timthay; 
+64 } 
+65 void In_ds_theo_ten(Nhanvien *ds_nv, int n) 
+66 { 
+67  
+int i, j; 
+68  
+Nhanvien tg; 
+69  
+for(i = 0; i < n; i++) 
+70  
+ 
+for (j = i+1; j < n; j++) 
+71  
+ 
+{ 
+ 
+ 
+72  
+ 
+ 
+if(strcmp((ds_nv+i)->tennv, 
+(ds_nv+j)-
+>tennv)>0)  
+73  
+ 
+ 
+{ 
+74  
+ 
+ 
+tg = *(ds_nv+j); 
+75  
+ 
+ 
+*(ds_nv+j) = *(ds_nv+i); 
+76  
+ 
+ 
+*(ds_nv+i) = tg; 
+77  
+ 
+ 
+} 
+78  
+ 
+} 
+79  
+hienthi(ds_nv, n); 
+80 } 
+81 void In_ds_theo_tuoi(Nhanvien *ds_nv, int n) 
+82 { 
+83  
+int i, j; 

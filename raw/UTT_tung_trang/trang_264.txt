@@ -1,0 +1,38 @@
+// Trang 264 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+264 
+4 void printArmstrong(int start, int end); 
+5 int main() 
+6 { 
+7     int start, end; 
+8     /* Nhap vao can duoi va can tren*/ 
+9     printf("Nhap vao can duoi: "); 
+10     scanf("%d", &start); 
+11     printf("Nhap vao can tren: "); 
+12     scanf("%d", &end); 
+13     printf("Tat ca cac so Armstrong trong pham vi tu so %d den so 
+%d la: \n", start, end); 
+14     printArmstrong(start, end); 
+15     return 0; 
+16 } 
+17 //Ham kiem tra so Armstrong 
+18 int isArmstrong(int num) 
+19 { 
+20     int temp, lastDigit, sum; 
+21     temp = num; 
+22     sum = 0; 
+23     /* Tinh tong lap phuong cua cac chu so */ 
+24     while(temp != 0) 
+25     { 
+26         lastDigit = temp % 10; 
+27         sum += lastDigit * lastDigit * lastDigit; 
+28         temp /= 10; 
+29     } 
+30     // kiem tra tong lap phuong cac chu so co bang so ban dau 
+31     if(num == sum) 
+32         return 1; 
+33     else  
+34         return 0; 
+35 } 
+36 //Ham in tat ca cac so Armstrong 
+37 void printArmstrong(int start, int end) 

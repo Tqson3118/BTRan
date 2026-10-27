@@ -1,0 +1,30 @@
+// Trang 140 - Ngôn ngữ lập trình C_ebook.pdf
+
+137
+ Hình 6.1 bên dưới mô tả cấu trúc của một hàm.
+Hàm
+Thực hiện tính toán, xử lý...
+Tham số 
+truyền vào
+Kết quả trả về
+Hình 6.1. Hàm với tham số truyền vào, kết quả trả về của hàm.
+Trong ngôn ngữ C cũng như trong một số ngôn ngữ lập trình 
+khác, dựa theo cách thức mà nó tồn tại, hàm có thể được chia làm 
+2 nhóm: hàm được xây dựng sẵn (built-in function) hoặc các hàm 
+do người lập trình định nghĩa (user-defined function). Trong các 
+chương trước, chúng ta sử dụng các hàm được xây dựng sẵn trong 
+các thư viện. Cụ thể như hàm printf, hàm scanf hoặc hàm malloc… 
+Chúng ta cũng không quan đến các đoạn lệnh chi tiết trong các hàm 
+trên. Tuy nhiên, khi sử dụng cần tuân thủ về tham số cũng như kết 
+quả trả về mà các hàm quy ước.
+Chương này giúp cho người lập trình tự xây dựng và sử dụng các 
+hàm, cụ thể là các hàm do người dùng định nghĩa, đồng thời, nắm được 
+các phương pháp truyền tham số cho hàm, giúp cho quá trình lập trình 
+hiệu quả hơn, tiết kiệm được nhiều thời gian hơn.
+6.2. ĐỊNH NGHĨA HÀM
+Hàm được định nghĩa bao gồm tên hàm, danh sách và kiểu dữ 
+liệu của các tham số, kiểu dữ liệu trả về của hàm và quan trọng hơn hết 
+là các phát biểu thực thi chức năng của hàm. Bên trong hàm được xây 
+dựng bởi các phát biểu là các đoạn lệnh và bao gồm cả việc khai báo và 
+sử dụng các biến, hằng số. 
+Một cách tổng quát, hàm được định nghĩa như sau:

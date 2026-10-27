@@ -1,0 +1,54 @@
+// Trang 155 - Ngôn ngữ lập trình C_ebook.pdf
+
+152
+Hàm tìm số lớn nhất trong mảng sử dụng tham số con trỏ. Trong 
+thân hàm, biến tham số được sử dụng như một mảng số nguyên, việc 
+truy xuất các vùng nhớ đã được cấp phát sử dụng mảng hoặc con trỏ đã 
+được giới thiệu ở chương 5. Trong chương trình trên, tại vị trí gọi hàm 
+ở câu lệnh 8, người dùng truyền địa chỉ cho tham tham số của hàm bằng 
+tên mảng, chương trình sẽ tự động chuyển sang kiểu con trỏ. Cũng có 
+thể truyền địa chỉ phần tử đầu tiên cho tham số. Hơn nữa, cũng có thể 
+khai báo hàm sử dụng mảng, thay cho con trỏ, hoặc có thể dùng con trỏ 
+thay cho mảng bên trong hàm. 
+Chương trình trên có thể được viết lại như sau mà không làm thay 
+đổi kết quả cũng như chức năng của hàm.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+#include  <stdio.h>
+#include <conio.h>
+int Timmax (int *a,int n);
+void main (void)
+{
+int arr[] = {6,13,2,3,9,7,5,18,4,12};
+int max ; 
+max = Timmax(&arr[0],10);	
+printf (“Max = %d “,max);
+}
+int Timmax (int a[],int n)
+{
+int i,max ;
+max = *a ;
+for (i=1;i<n;i++)
+max = (max<*(a+i))? *(a+i):max ;
+return max ;
+}
+Mảng được truyền cho hàm thông qua tham chiếu địa chỉ. Hay nói 
+cách khác, tham số hàm là một biến con trỏ được tham chiếu đến mảng 
+khi hàm thực thi nên mọi thao tác trên mảng bên trong hàm sẽ là thao 
+tác trên mảng mà địa chỉ của nó được truyền cho tham số hàm. 

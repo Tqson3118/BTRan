@@ -1,0 +1,98 @@
+// Trang 193 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+193 
+Chƣơng trình: 
+1  
+#include <stdio.h> 
+2  
+int main() 
+3  
+{ 
+4  
+   int so; 
+5  
+   printf("Nhap vao mot so(0-9) : "); 
+6  
+   scanf("%d",&so); 
+7  
+   switch(so) 
+8  
+   { 
+9  
+ 
+ case 0: 
+10  
+ 
+       printf("Zero\n"); 
+11  
+ 
+       break; 
+12  
+ 
+ case 1: 
+13  
+ 
+       printf("one\n"); 
+14  
+ 
+       break; 
+15  
+ 
+case 2: 
+16  
+ 
+       printf("Two\n"); 
+17  
+ 
+       break; 
+18  
+ 
+case 3: 
+19  
+ 
+       printf("Three\n"); 
+20  
+ 
+       break; 
+21  
+ 
+case 4: 
+22  
+ 
+       printf("Four\n"); 
+23  
+ 
+       break; 
+24  
+ 
+case 5: 
+25  
+ 
+       printf("Five\n"); 
+26  
+ 
+       break; 
+27  
+ 
+case 6: 
+28  
+ 
+       printf("Six\n"); 
+29  
+ 
+       break; 
+30  
+ 
+case 7: 
+31  
+ 
+       printf("Seven\n"); 
+32  
+ 
+       break; 
+33  
+ 
+case 8: 
+34  
+ 
+       printf("Eight\n"); 

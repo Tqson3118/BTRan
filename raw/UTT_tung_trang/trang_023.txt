@@ -1,0 +1,38 @@
+// Trang 23 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+23 
+C hỗ trợ tính năng phân bổ bộ nhớ động. Trong ngôn ngữ C, chúng 
+ta có thể giải phóng bộ nhớ được phân bổ bất cứ lúc nào bằng cách gọi 
+hàm free(). 
+- Tốc độ nhanh 
+Thời gian biên dịch và thực thi nhanh do ngôn ngữ C cung cấp sẵn 
+các thư viện. 
+- Con trỏ 
+C cung cấp các tính năng của con trỏ. Chúng ta có thể tương tác 
+trực tiếp với bộ nhớ bằng cách sử dụng các con trỏ. Chúng ta có thể sử 
+dụng các con trỏ cho bộ nhớ, cấu trúc, hàm, mảng, v.v. 
+- Đệ quy 
+Trong C, chúng ta có thể gọi hàm trong hàm. Nó cung cấp khả năng 
+sử dụng lại mã cho mọi hàm. Đệ quy cho phép lập trình viên sử dụng 
+phương pháp quay lui. 
+- Mở rộng 
+Một lý do nữa cho việc C được sử dụng rộng rãi và hiệu quả là do 
+các trình dịch, các thư viện và các phần mềm thông dịch của các ngôn 
+ngữ bậc cao khác lại thường được tạo nên từ C.  
+1.2. TẬP KÝ TỰ HỢP LỆ TRONG C 
+1.2.1. Tập ký tự 
+ 
+Mỗi ngôn ngữ lập trình đều đƣợc xây dựng từ một bộ ký tự riêng 
+của nó. Các ký tự đƣợc nhóm lại theo nhiều cách khác nhau để tạo nên 
+các từ. Sau đó các từ lại đƣợc liên kết theo một nguyên tắc nào đó để tạo 
+thành các câu lệnh. Một chƣơng trình bao gồm nhiều câu lệnh để diễn đạt 
+một thuật toán nào đó. 
+Ngôn ngữ C đƣợc xây dựng trên bộ ký tự gồm: 
+ - 26 chữ cái latinh: a, b, c,…, x, y, z  hoặc chữ cái hoa: A, B, C,..., 
+X, Y, Z. 
+- 10 chữ số: 0, 1, 2,…, 8, 9. 
+- Các ký tự toán học: +,  - ,  *,  /,  =,  (, ), ... 
+- Ký tự gạch nối  _ 
+- Các ký tự đặc biệt khác nhƣ: . , : ; [ ] { } ? ! \ & | % # $, v.v.  
+Lƣu ý: 
+- Dấu cách thực sự là một khoảng cách dùng để tách các từ. 

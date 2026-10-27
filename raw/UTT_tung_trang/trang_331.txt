@@ -1,0 +1,49 @@
+// Trang 331 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+331 
+8     // cap phat bo nho dong bang ham malloc 
+9  
+p = (int*) malloc(n * sizeof(int)); 
+10     // neu khong du bo nho 
+11  
+if(p == NULL)                      
+12     { 
+13         printf("Loi! bo nho khong duoc phan bo."); 
+14         exit(0); 
+15     } 
+16     // nhap mang thong qua con tro 
+17  
+printf("Nhap cac phan tu cua mang:\n"); 
+18     for(i = 0; i < n; ++i) 
+19     { 
+20      
+printf("Nhap gia tri phan tu thu %d: ", i+1); 
+21         scanf("%d", p + i); 
+22         tong += *(p + i); 
+23     } 
+24     printf("Tong cac phan tu = %d", tong); 
+25     free(p); 
+26     return 0; 
+27 } 
+ Kết quả chƣơng trình: 
+ 
+Nhap vao so phan tu cua mang: 5 
+ 
+Nhap cac phan tu cua mang: 
+ 
+Nhap gia tri phan tu thu 1: 12 
+ 
+Nhap gia tri phan tu thu 2: 4 
+ 
+Nhap gia tri phan tu thu 3: 65 
+ 
+Nhap gia tri phan tu thu 4: 4 
+ 
+Nhap gia tri phan tu thu 5: 23 
+ 
+Tong cac phan tu = 108 
+ Ví dụ 5.38 
+Làm lại ví dụ 5.37 với hàm calloc() và hàm free() 
+ Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <stdlib.h> 

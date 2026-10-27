@@ -1,0 +1,36 @@
+// Trang 361 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+361 
+ Ví dụ 5.58  
+Chuyển đổi chuỗi ký tự từ viết thƣờng sang viết hoa 
+ Cách 1: Sử dụng hàm strupr() 
+1 #include <stdio.h> 
+2 #include <string.h> 
+3 int main() 
+4 { 
+5    char a[1000]; 
+6    printf("Nhap vao chuoi ky tu:\n"); 
+7    gets(a); 
+8    printf("Chuoi sau khi chuyen doi thanh ky tu hoa: %s\n", 
+strupr(a)); 
+9    return  0; 
+10 } 
+ Cách 2: Không sử dụng hàm strupr() 
+1 #include <stdio.h> 
+2 void upper_string(char []); 
+3 int main() 
+4 { 
+5    char a[100]; 
+6     
+7    printf("Nhap vao chuoi can chuyen doi thanh ky tu viet hoa:\n"); 
+8    gets(a); 
+9    // goi ham chuyen doi 
+10    upper_string(a); 
+11    printf("Chuoi thu duoc sau chuyen doi: %s\n", a); 
+12    return 0; 
+13 } 
+14 // xay dung ham chuyen doi 
+15 void upper_string(char s[]) { 
+16    int c = 0; 
+17    // dua vao bang ma ASCII 
+18    while (s[c] != '\0') { 

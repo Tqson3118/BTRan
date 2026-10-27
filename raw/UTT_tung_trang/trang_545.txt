@@ -1,0 +1,38 @@
+// Trang 545 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+545 
+74 
+         * - duoc su dung de in chuoi can le ben trai 
+75 
+         * 15 la do rong cua ky tu 
+76 
+         */ 
+77 
+        printf("%-15s => %d\n", words[i], count[i]); 
+78 
+    }     
+79 
+    return 0; 
+80 
+} 
+ 
+  Kết quả chƣơng trình: 
+Nhap vao ten tep: test_7_3.txt 
+So lan xuat hien cua tat ca cac tu trong tep: 
+ao              => 3 
+lua             => 3 
+ha              => 2 
+dong            => 2 
+nang            => 1 
+sai             => 1 
+gon             => 1 
+anh             => 3 
+di              => 1 
+ma              => 1 
+chot            => 1 
+mat             => 1 
+boi             => 1 
+vi              => 1 
+em              => 1 
+mac             => 1 
+van             => 2 

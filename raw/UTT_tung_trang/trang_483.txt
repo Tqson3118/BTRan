@@ -1,0 +1,38 @@
+// Trang 483 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+483 
+%f",sv[index].masv,min); 
+printf("\n"); 
+} 
+else if (spt == 1) 
+{ 
+index = 0; 
+min = sv[0].tong_diem; 
+printf("Sinh vien co ma sinh vien ID %s  co tong diem thap nhat la: %f: 
+%f",sv[index].masv,min); 
+printf("\n"); 
+} 
+else printf("Khong co ban ghi nao!\n"); 
+} 
+//Ham tim kiem thong tin sinh vien 
+void find(sinhvien sv[], int spt) 
+{ 
+char id[10]; 
+printf("Nhap ma sinh vien can tim:"); 
+scanf("%s",&id); 
+int index=timkiem(sv,id, spt); 
+if (index != -1)  
+{ //hien thi thong tin ban ghi tim thay 
+tieude(); 
+printf("%-7s",sv[index].masv); 
+printf("%-10s",sv[index].tensv); 
+printf("%-6c",sv[index].gt); 
+printf("%-7.1f",sv[index].d_tp1); 
+printf("%-7.1f",sv[index].d_tp2); 
+printf("%-7.1f",sv[index].d_cc); 
+printf("%-7.1f",sv[index].d_gk); 
+printf("%-7.1f",sv[index].d_kt); 
+printf("%-7.1f",sv[index].tong_diem); 
+printf("\n"); 
+} 
+else printf("Ban ghi khong ton tai.\n"); 

@@ -1,0 +1,38 @@
+// Trang 549 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+549 
+B. BÀI TẬP TỰ GIẢI 
+ Bài tập 7.10 
+Viết chƣơng trình so sánh 2 tệp văn bản. 
+ Bài tập 7.11 
+Viết chƣơng trình xóa 1 từ trong tệp văn bản. 
+ Bài tập 7.12 
+Viết chƣơng trình đếm số lần xuất hiện của 1 từ đƣợc nhập từ bàn 
+phím trong một tệp văn bản. 
+ Bài tập 7.13 
+Viết chƣơng trình sao chép nội dung từ một tệp văn bản này sang 
+một tệp văn bản khác. 
+Gợi ý: 
+Các bƣớc để thực hiện việc sao chép nội dung từ một tệp văn bản 
+sang một tệp văn bản khác: 
+- Khởi tạo tệp nguồn và tệp đích; 
+- Mở tệp nguồn ở chế độ đọc (r) và tệp đích ở chế độ ghi (w). Kiểm 
+tra sự tồn tại của các tệp; 
+- Đọc từng ký tự từ tập nguồn và ghi từng ký tự ở tệp đích sử dụng 
+hàm fputc(). 
+- Thực hiện lặp bƣớc 3 cho đến khi đọc đến ký tự cuối cùng ở tệp 
+nguồn và ghi sang tệp đích. 
+- Đóng cả hai tệp nguồn và đích.  
+ Bài tập 7.14 
+Viết chƣơng trình thay thế chuyển tất cả các ký tự viết hoa trong tệp 
+văn bản thành ký tự viết thƣờng. 
+ Bài tập 7.15 
+Viết chƣơng trình thay thế 1 dòng đƣợc chỉ định trong tệp văn bản 
+bằng một dòng văn bản khác. 
+ Bài tập 7.16 
+Viết chƣơng trình ghi vào tệp test_7_16.txt  n số nguyên (đƣợc nhập 
+từ bàn phím). Đọc các số từ tệp test_7_16.txt ghi vào một mảng. Sắp xếp 
+mảng tăng dần theo giá trị và ghi các số của mảng vào một tệp 
+test_sap_xep.txt. 
+ 
+ 

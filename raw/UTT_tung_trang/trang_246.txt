@@ -1,0 +1,72 @@
+// Trang 246 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+246 
+28 int main() 
+29 { 
+30  
+int chon; 
+31  
+Nhap(); 
+32  
+do 
+33  
+{ 
+34  
+printf("\n---------MENU---------"); 
+35  
+printf("\n1. Chon Xu ly:"); 
+36  
+printf("\n2. Xuat danh sach: "); 
+37  
+printf("\n Moi ban chon: "); scanf("%d",&chon); 
+38  
+switch(chon) 
+39  
+{ 
+40  
+ 
+case 1:  
+41  
+ 
+ 
+printf("\n Chon xu ly: "); 
+42  
+ 
+ 
+XuLy(); 
+43  
+ 
+ 
+break; 
+44  
+ 
+case 2:  
+45  
+ 
+ 
+printf("\n Xuat danh sach: "); 
+46  
+ 
+ 
+Xuat(); 
+47  
+ 
+ 
+break; 
+48  
+} 
+49  
+}while (chon!=3); 
+50  
+getch(); 
+51  
+return 0; 
+52 } 
+Kết quả chƣơng trình 
+Nhap ho ten: pham thi thuan 
+Nhap java: 6 
+Nhap ltc: 7 
+---------MENU--------- 
+1. Chon Xu ly: 
+2. Xuat danh sach: 
+ Moi ban chon: 1 

@@ -1,0 +1,25 @@
+// Trang 96 - Ngôn ngữ lập trình C_ebook.pdf
+
+93
+CHƯƠNG 4
+MẢNG VÀ CHUỖI
+Mục tiêu:
+Sau khi kết thúc chương này, người đọc có thể:
+- Khai báo được mảng 1 chiều, mảng 2 chiều, chuỗi, mảng chuỗi.
+- Ứng dụng được các thao tác xử lý trên mảng: nhập dữ liệu, xuất 
+dữ liệu, tìm số lớn nhất/nhỏ nhất, sắp xếp.
+4.1. MẢNG
+Mảng là tập hợp các phần tử có cùng kiểu dữ liệu và các phần tử 
+trong mảng được cấp các địa chỉ ô nhớ liền kề nhau.
+4.1.1. Mảng 1 chiều 
+4.1.1.1. Khai báo mảng 1 chiều:
+ Cú pháp 1:  kiểu dữ liệu    tên mảng [số phần tử];
+Ví dụ 4.1a:   int    a[10];
+Mỗi phần tử trong mảng có kiểu int
+10 phần tử
+Với cách khai báo như ví dụ 4.1a thì mảng a gồm 10 phần tử, các 
+phần tử trong mảng này có kiểu dữ liệu là int (có kích thước vùng nhớ 
+là 4 byte), vùng nhớ của các phần tử này liên tiếp nhau trong vùng nhớ 
+từ phần tử a[0] đến phần tử a[9].
+Khi kháo báo như trên, các phần tử mảng được tham chiếu 
+như sau:

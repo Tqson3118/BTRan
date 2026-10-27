@@ -1,0 +1,55 @@
+// Trang 473 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+473 
+ Bƣớc 10: Xây dựng hàm tìm kiếm find(sinhvien sv[], int spt) để 
+tìm kiếm một bản ghi trong danh sách. Hàm này yêu cầu ngƣời dùng nhập 
+mã sinh viên. Mã sinh viên đƣợc kiểm tra để đảm bảo nó thực sự tồn tại. 
+Nếu bản ghi đƣợc tìm thấy, tất cả các thông tin của sinh viên tìm đƣợc sẽ 
+hiển thị. Ngƣợc lại, nếu không tìm thấy bản ghi, một thông báo “Bản ghi 
+không tồn tại” đƣợc hiển thị. 
+//Ham tim kiem thong tin sinh vien 
+1 
+void find(sinhvien sv[], int spt) 
+2 
+{ 
+3 
+char id[10]; 
+4 
+printf("Nhap ma sinh vien can tim:"); 
+5 
+scanf("%s",&id); 
+6 
+int index=timkiem(sv,id, spt); 
+7 
+if (index != -1)  
+8 
+{ //hien thi thong tin ban ghi tim thay 
+9 
+tieude(); 
+10 
+printf("%-7s",sv[index].masv); 
+11 
+printf("%-10s",sv[index].tensv); 
+12 
+printf("%-6c",sv[index].gt); 
+13 
+printf("%-7.1f",sv[index].d_tp1); 
+14 
+printf("%-7.1f",sv[index].d_tp2); 
+15 
+printf("%-7.1f",sv[index].d_cc); 
+16 
+printf("%-7.1f",sv[index].d_gk); 
+17 
+printf("%-7.1f",sv[index].d_kt); 
+18 
+printf("%-7.1f",sv[index].tong_diem); 
+19 
+printf("\n"); 
+20 
+} 
+21 
+else printf("Ban ghi khong ton tai.\n"); 
+22 
+} 
+Sắp xếp danh sách 

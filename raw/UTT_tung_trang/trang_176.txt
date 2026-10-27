@@ -1,0 +1,36 @@
+// Trang 176 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+176 
+30 else printf(“\n khong la tam giac”); 
+31 } 
+Kết quả chƣơng trình 
+Nhap canh a= 0 
+Nhap canh a= 2 
+Nhap canh b= 0 
+Nhap canh b= 2 
+Nhap canh c= 2 
+Tam giac deu 
+Chu vi tam giac: 6.00 
+Dien tich tam giac 1.73 
+Nhận xét 
+So sánh 2 chƣơng trình ở ví dụ 3.8 và 3.29, ở ví dụ 3.29 từ dòng 7 
+đến dòng 18 ràng buộc điều kiện chỉ cho nhập a, b, c > 0, khi xét điều 
+kiện a, b, c là 3 cạnh tam giác không phải xét điều kiện a, b, c lớn hơn 0 
+nữa. Còn ở ví dụ 3.8 không đƣa ràng buộc khi nhập vào giá trị a, b, c, do 
+đó ngƣời nhập vẫn có thể nhập giá trị âm, sau đó mới xét điều kiện để ba 
+số là 3 cạnh của một tam giác. 
+ Ví dụ 3.30 
+Viết chƣơng trình nhập vào một ngày, tháng, năm (ràng buộc cho 
+ngày chỉ nhập từ một đến ngày theo tháng, tháng nhập từ tháng một đến 
+tháng mƣời hai, năm chỉ nhập năm có bốn chữ số). Tìm ngày kế tiếp 
+(ngày, tháng, năm) của ngày vừa nhập. 
+Dữ liệu test: 22/12/2018. 
+Kết quả mong đợi: 23/12/2018. 
+Phác họa lời giải 
+Ví dụ này đã đƣợc giải quyết ở ví dụ 3.16, nhƣng chúng ta kiểm tra 
+ràng buộc điều kiện nhập cho ngày, tháng, năm bằng lệnh goto phức tạp 
+hơn nhiều nếu ta dùng do…while: 
+- Nhập vào tháng, 1   tháng    . 
+- Nhập vào năm (1000   năm   9999). 
+- Kiểm tra tháng (d) để trả ngày theo tháng: 
++ Tháng 1, 3, 5, 7, 8, 10, 12 có số ngày d = 31 ngày.  

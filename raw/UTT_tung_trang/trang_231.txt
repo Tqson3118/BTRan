@@ -1,0 +1,37 @@
+// Trang 231 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+231 
+38    Nhaphs(&b); 
+39    Nhaphs(&c); 
+40    delta = b * b - 4 * a * c; 
+41    Inketqua(a, b, c, delta, x1, x2); 
+42  } 
+Kết quả chƣơng trình 
+Nhap he so: 1 
+Nhap he so: 3 
+Nhap he so: 2 
+Phuong trinh co 2 nghiem phan biet: 
+x1= -1.000000 
+x2= -2.000000 
+ Ví dụ 4.10 
+Dùng hàm viết chƣơng trình thực hiện các yêu cầu sau:  
+Nhập vào 3 số thực a, b, c từ bàn phím.  
+a. Kiểm tra a, b, c có lập thành ba cạnh của tam giác không?  
+b. Nếu có hãy kiểm tra đây là tam giác cân, đều, vuông hay tam giác thƣờng.  
+c. Tính chu vi và diện tích của tam giác. In kết quả ra màn hình. 
+Phác họa lời giải 
+Đây là ví dụ 3.8 chúng ta đã viết chƣơng trình trong một hàm main, 
+dựa vào chƣơng trình ở dƣới chúng ta chuyển thành hàm: 
+1  #include <stdio.h> 
+2  #include <conio.h> 
+3  #include <math.h> 
+4  main() 
+5  { 
+6  float a, b,c; 
+7   
+printf("\nNhap canh a = "); scanf("%f", &a); 
+8   
+printf("\nNhap canh b = "); scanf("%f", &b); 
+9   
+printf("\nNhap canh c = "); scanf("%f", &c); 
+10  if (a + b > c && b + c > a && c + a > b && a > 0 && b >0 && 

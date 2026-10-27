@@ -1,0 +1,48 @@
+// Trang 188 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+188 
+BÀI TẬP CHƢƠNG 3 
+A. BÀI TẬP CÓ LỜI GIẢI 
+ Bài tập 3.1 
+Viết chƣơng trình, nhập vào một số, in ra màn hình số vừa nhập là số 
+chẵn hay số lẻ? 
+Phác thảo lời giải 
+Số chẵn là số chia hết cho hai (dƣ của phép chia = 0), số lẻ là số 
+không chia hết cho 2 (dƣ của phép chia = 1). 
+Chƣơng trình 
+1 
+#include <stdio.h> 
+2 
+int main() 
+3 
+{ 
+4 
+    int so; 
+5 
+    printf("Nhap vao mot so: "); 
+6 
+    scanf("%d", &so; 
+7 
+    // Kiem tra so vua nhap la so chan hay so le 
+8 
+    if(so % 2 == 0) 
+9 
+        printf("%d la so chan.", so); 
+10 
+    else 
+11 
+        printf("%d la so le.", so); 
+12 
+    return 0; 
+13 
+} 
+Kết quả chƣơng trình: 
+Nhap vao mot so: 12 
+12 la so chan. 
+ Bài tập 3.2 
+Viết chƣơng trình nhập vào 3 số  nguyên a, b, c. In ra màn hình số 
+lớn nhất. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 int main() 
+3 { 

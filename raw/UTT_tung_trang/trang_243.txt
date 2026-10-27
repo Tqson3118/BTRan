@@ -1,0 +1,77 @@
+// Trang 243 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+243 
+22  
+ 
+ 
+printf("Nhap ms= "); scanf("%d",&ms); 
+23  
+ 
+}while (ms == 0); 
+24  
+ 
+//in ra phan so ban dau 
+25  
+ 
+printf("\nPhan so ban dau la %d/%d\n",ts,ms); 
+26  
+ 
+//lay so nguyen duong cua ts, ms 
+27  
+ 
+dts = abs(ts); 
+28  
+ 
+dms = abs(ms); 
+29  
+ 
+int a = uscln(dts,dms); 
+30  
+ 
+//Rut gon phan so 
+31  
+ 
+ts = ts/a; 
+32  
+ 
+ms = ms/a; 
+33  
+ 
+if (ms < 0)  
+34  
+ 
+{ 
+35  
+ 
+ 
+ts = -ts; ms = -ms; 
+36  
+ 
+} 
+37  
+ 
+if (ms == 1) printf("%d\n",ts); 
+38  
+ 
+else printf("Phan so rut gon: %d/%d\n", ts, ms); 
+39  
+ 
+getch(); 
+40  
+} 
+Kết quả chƣơng trình 
+Nhap ts = 4 
+Nhap ms = -6 
+Phan so ban dau la 4/-6 
+Phan so rut gon: -2/3 
+ Ví dụ 4.13 
+Tính S(n) = x + x^2 + x^3 + … + x^n 
+Chƣơng trình 
+1  #include <stdio.h> 
+2  #include <conio.h> 
+3  float luythua(float x, int n) 
+4  { 
+5   
+int i; 
+6   
+float t = 1; 

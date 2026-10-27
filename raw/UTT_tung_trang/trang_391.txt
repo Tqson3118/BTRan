@@ -1,0 +1,44 @@
+// Trang 391 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+391 
+4     char str[150]; 
+5     // khai bao bien i dieu khien vong lap 
+6     // cac bien vowels: dem so nguyen am, consonants: so dem phu 
+am, digits: dem so chu so, spaces: dem khoang trang 
+7  
+int i, vowels, consonants, digits, spaces; 
+8     // khoi tao cac bien dem = 0 
+9     vowels = consonants = digits = spaces = 0; 
+10     printf("Nhap vao mot chuoi ky tu: "); 
+11     scanf("%[^\n]", str); 
+12     // dem so nguyen am 
+13     // trong bang chu cai tieng anh 
+14     // nguyen am bao gom: a, e, i, o, u, A, E, I, O, U 
+15     for(i=0; str[i]!='\0'; ++i) 
+16     { 
+17         if(str[i]=='a' || str[i]=='e' || str[i]=='i' || 
+18            str[i]=='o' || str[i]=='u' || str[i]=='A' || 
+19            str[i]=='E' || str[i]=='I' ||str[i]=='O' || 
+20            str[i]=='U') 
+21         { 
+22             ++vowels; 
+23         } 
+24         // dem so phu am, la nhung ky tu con lai trong bang chu cai 
+25 
+else if((str[i]>='a'&& str[i]<='z') || (str[i]>='A'&& str[i]<='Z')) 
+26         { 
+27             ++consonants; 
+28         } 
+29         // dem chu so trong xau 
+30  
+ 
+else if(str[i]>='0' && str[i]<='9') 
+31         { 
+32             ++digits; 
+33         } 
+34         // dem khoang trang 
+35  
+ 
+else if (str[i]==' ') 
+36         { 
+37             ++spaces; 

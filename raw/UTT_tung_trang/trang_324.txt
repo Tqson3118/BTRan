@@ -1,0 +1,39 @@
+// Trang 324 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+324 
+Nhận xét:  
+Có sự khác biệt  4 bytes giữa 2 phần tử liên tiếp trong mảng x, bởi 
+kích thƣớc của int là 4 byte. Nhƣng x và &x[0] cho cùng một kết quả. 
+Mối quan hệ giữa mảng và con trỏ đƣợc thể hiện qua hình ảnh sau đây: 
+ 
+ 
+ 
+ 
+Tƣơng ứng với khai báo: int x[4]; 
+Ở ví dụ 5.34, ta đã nhận xét rằng: 
+  x và &x[0] cùng chứa 1 địa chỉ, hay &x[0] tƣơng đƣơng x; 
+Do đó, x[0] tƣơng đƣơng *x. 
+Tƣơng tự: 
+ 
+&x[1] tƣơng đƣơng x + 1,  x[1] tƣơng đƣơng &(x + 1); 
+ 
+&x[2] tƣơng đƣơng x + 2,  x[2] tƣơng đƣơng &(x + 2); 
+ 
+… 
+ 
+&x[i] tƣơng đƣơng x + i,  x[i] tƣơng đƣơng &(x + i). 
+ Ví dụ 5.31 
+Viết chƣơng trình sử dụng con trỏ để nhập vào n phần tử của một 
+mảng. Tỉnh tổng và in tổng ra màn hình. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #define MAX 50 
+3 int main() 
+4 { 
+5   int i,n, a[MAX], sum = 0; 
+6   printf("Nhap vao so phan tu cua mang:"); 
+7   scanf("%d",&n); 
+8   printf("Su dung con tro, nhap vao gia tri cac phan tu:\n"); 
+9   for(i = 0; i < n; ++i) 
+10   { 
+11       scanf("%d", a+i); 

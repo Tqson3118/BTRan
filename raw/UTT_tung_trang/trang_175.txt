@@ -1,0 +1,47 @@
+// Trang 175 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+175 
+thực hiện trƣớc rồi kiểm tra điều kiện, ta viết ràng buộc khi nhập a, b, c 
+nhƣ sau: 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 #include <math.h> 
+4 main() 
+5 { 
+6 float a, b,c; 
+7 do 
+8 { 
+9  
+printf(“\nNhap canh a= “); scanf(“%f”,&a); 
+10 }while (a <= 0); 
+11 do 
+12 { 
+13  
+printf(“\nNhap canh b= “); scanf(“%f”,&b); 
+14 }while (b <= 0); 
+15 do 
+16 { 
+17  
+printf(“\nNhap canh c= “); scanf(“%f”,&c); 
+18 }while (c <= 0); 
+19 if (a + b > c && b + c >a && c + a > b)  
+20 { 
+21  
+if (a == b && b == c) printf(“\nTam giac deu”); 
+22  
+else if (a == b ||b == c|| c == a) printf(“\nTam giac can”); 
+23    
+else if (a * a + b * b == c * c ||a * a + c * c == b * b||c * c + 
+b * b == a * a) printf(“\nTam giac vuong”); 
+24  
+else printf(“\nTam giac thuong”); 
+25  
+float p = (a + b + c)/2; 
+26  
+float s = sqrt(p*(p-a)*(p-b)*(p-c)); 
+27  
+printf(“\nChu vi tam giac: %.2f”,2*p); 
+28  
+printf(“\nDien tich tam giac %.2f”,s); 
+29 } 

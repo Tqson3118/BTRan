@@ -1,0 +1,38 @@
+// Trang 482 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+482 
+{ 
+  for (j = 0; j < spt-1; ++j) 
+ if (max < sv[j+1].tong_diem) 
+ { 
+ max = sv[j+1].tong_diem; 
+ index = j+1; 
+ } 
+printf("Sinh vien co ma sinh vien ID %s  co tong diem cao nhat la: 
+%f",sv[index].masv,max); 
+printf("\n"); 
+} 
+else if (spt == 1) 
+{ 
+index = 0; 
+max = sv[0].tong_diem; 
+printf("Sinh vien co ma sinh vien ID %s  co tong diem cao nhat la: 
+%f",sv[index].masv,max); 
+printf("\n"); 
+} 
+else printf("Khong co ban ghi nao!\n"); 
+} 
+//Ham hien thi diem thap nhat 
+void thapnhat(sinhvien sv[], int spt) 
+{ 
+float min = sv[0].tong_diem; 
+int index = 0,j; 
+if (spt >= 2) 
+{ 
+  for (j = 0; j < spt-1; ++j) 
+ if (min > sv[j+1].tong_diem) 
+ { 
+ min = sv[j+1].tong_diem; 
+ index = j+1; 
+ } 
+printf("Sinh vien co ma sinh vien ID %s  co tong diem thap nhat la: %f: 

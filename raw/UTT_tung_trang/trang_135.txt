@@ -1,0 +1,57 @@
+// Trang 135 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+135 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <math.h> 
+3 
+int main() 
+4 
+{ 
+5 
+float dtb; 
+6 
+printf("\nNhap diem tb: "); scanf("%f",&dtb); 
+7 
+if(dtb < 4)  
+8 
+ 
+ { 
+9 
+      printf("\nLoai yeu"); 
+10  
+ }  
+11 else if(dtb < 5.5)  
+12  
+ { 
+13     
+  printf("\n Loai trung binh yeu"); 
+14  
+ }  
+15 else if(dtb < 7)  
+16  
+ { 
+17     
+  printf("\n Loai trung binh"); 
+18  
+ }  
+19 else if(dtb < 8.5) 
+20  
+ { 
+21        printf("\nLoai kha"); 
+22  
+ }  
+23  
+ else  
+24        printf("\nLoai gioi"); 
+25 } 
+ Kết quả chƣơng trình: 
+ 
+Nhap diem tb: 7 
+ 
+Loai kha 
+3.1.1.4. Câu lệnh điều kiện lồng nhau 
+Khi một câu lệnh if…else xuất hiện bên trong một câu lệnh “if” hoặc 
+“else” thì đƣợc gọi là câu lệnh điều kiện lồng nhau. 

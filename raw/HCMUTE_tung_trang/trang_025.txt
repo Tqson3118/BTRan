@@ -1,0 +1,31 @@
+// Trang 25 - Ngôn ngữ lập trình C_ebook.pdf
+
+22
+ Ở dòng lệnh số 3, câu lệnh
+#include<stdio.h>
+là một lệnh tiền xử lý trong ngôn ngữ C. Các câu lệnh tiền xử lý 
+sẽ bắt đầu bằng dấu # và được xử lý trước khi chương trình được biên 
+dịch. Câu lệnh này là câu lệnh khai báo thư viện sẽ yêu cầu bộ tiền xử 
+lý bao gồm file thư viện stdio.h vào chương trình, đây là thư viện xuất/
+nhập dữ liệu tiêu chuẩn trong C. Thư viện này sẽ chứa các thông tin 
+được sử dụng bởi trình biên dịch khi tiến hành biên dịch cho các hàm 
+xuất nhập dữ liệu cơ bản, như hàm printf hoặc scanf.
+Ở dòng lệnh số 5, câu
+//bat dau chuong trinh chinh
+cũng là một câu chú thích. Đây là câu chú thích trên 1 dòng lệnh. 
+Để viết câu chú thích trên 1 dòng lệnh, ta sẽ bắt đầu bằng ký hiệu //. Câu 
+chú thích trên 1 dòng lệnh sẽ tự động kết thúc khi ta đưa con trỏ xuống 
+dòng mới.
+Ở dòng lệnh số 6, câu
+int main (void)
+đánh dấu phần chương trình chính, phần bắt buộc phải có trong 
+mỗi chương trình C. Các thông số viết phía trước và phía sau từ main 
+cho biết main là một khối chương trình được gọi là hàm – function. 
+Một chương trình C có thể có một hoặc nhiều hàm nhưng bắt buộc phải 
+có một hàm main, hay còn gọi là chương trình chính. Phía bên trái từ 
+main là từ int thể hiện rằng hàm main sẽ trả về một giá trị số nguyên 
+Thông số (void) phía bên phải của main thể hiện rằng hàm main không 
+cần nhận bất kỳ thông tin đầu vào nào. Điều này sẽ được giải thích kỹ 
+hơn ở chương Hàm.
+Dấu mở ngoặc { ở dòng lệnh số 7 thể hiện vị trí bắt đầu của hàm 
+main và tương ứng dấu đóng ngoặc } ở dòng 13 thể hiện vị trí kết thúc 

@@ -1,0 +1,42 @@
+// Trang 348 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+348 
+12     if (kq == 0) 
+13        printf("Hai chuoi giong nhau.\n"); 
+14     else 
+15        printf("Hai chuoi khac nhau.\n"); 
+16     return 0; 
+17 }  
+18 int compare_string(char *a, char *b) { 
+19    while (*a == *b) { 
+20       if (*a == '\0' || *b == '\0') 
+21          break;      
+22       a++; 
+23       b++; 
+24    } 
+25   
+26    if (*a == '\0' && *b == '\0') 
+27       return 0; 
+28    else 
+29       return -1; 
+30 } 
+Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi thu nhat: 
+ 
+abc 
+ 
+Nhap vao chuoi thu hai: 
+ 
+abc 
+ 
+Hai chuoi giong nhau. 
+5.3.4.3. Hàm sao chép chuỗi 
+Hàm strcpy() là một hàm trong thƣ viện chuẩn “string.h” của C, đƣợc 
+sử dụng để sao chép nội dung từ chuỗi này đến chuỗi khác. 
+Cú pháp: 
+ 
+char* strcpy(char* dest, const char* src); 
+Có hai tham số của hàm: 
+ 
+dest: con trỏ trỏ tới mảng đích nơi nội dung sẽ đƣợc sao chép. 

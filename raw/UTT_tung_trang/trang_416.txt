@@ -1,0 +1,38 @@
+// Trang 416 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+416 
+ Bài tập 5.35 
+Viết chƣơng trình nhập vào hai ma trận A và B có cấp m, n. In hai 
+ma trận lên màn hình. Tổng hai ma trận A và B là ma trận C đƣợc tính bởi 
+công thức: 
+              với i = 0, 1, 2, …, m - 1 và  j = 0, 1, 2,…, n - 1; 
+Tính ma trận tổng C và in kết quả lên màn hình. 
+ Bài tập 5.36 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Nhập vào ma trận A cấp m × k, ma trận B cấp k × n, với m, n, k 
+đƣợc nhập từ bàn phím và kiểm soát giá trị trong phạm vi từ 1 đến 10. 
+- Tích của ma trận A với ma trận B đƣợc xác định nhƣ sau: 
+                                          với i = 0, 
+1, 2, …, m - 1 và  j = 0, 1, 2,…, n - 1;  
+- Tính ma trận tích C và in kết quả lên màn hình. 
+ Bài tập 5.37 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Nhập vào số hàng m và số cột n, với m, n là các số nguyên dƣơng 
+nhỏ hơn 10. 
+- Sinh ngẫu nhiên các phần tử của ma trận A cấp m × n. 
+- Hiển thị các phần tử của ma trận A gồm m hàng, mỗi hàng gồm n 
+phần tử. 
+- Tìm phần tử lớn nhất của mảng, cho biết vị trí của phần tử này? 
+- Sắp xếp lại ma trận tăng dần, in các phần tử trên cùng một hàng. 
+ Bài tập 5.38 
+Xét ma trận A vuông cấp n, các phần tử a[i, i] ( i = 1, 2, 3,..., n ) đƣợc 
+gọi là đƣờng chéo chính của ma trận vuông A. Ma trận vuông A đƣợc gọi 
+là ma trận tam giác nếu tất cả các phần tử dƣới đƣờng chéo chính đều 
+bằng 0. Định thức của ma trận tam giác bằng tích các phần tử trên đƣờng 
+chéo chính. Hãy biến đổi ma trận A về ma trận tam giác. In kết quả từng 
+bƣớc lên màn hình. 
+Bài tập 5.39 
+Thực hiện các bài tập ở phần mảng từ bài 5.23 đến bài tập 5.39 bằng 
+cách sử dụng con trỏ. 
+ 
+ 

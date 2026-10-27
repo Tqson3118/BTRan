@@ -1,0 +1,46 @@
+// Trang 515 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+515 
+7.3. MỘT SỐ VÍ DỤ VỀ TỆP 
+ Ví dụ 7.14 
+Viết chƣơng trình nhập tên và điểm của sinh viên. Lƣu kết quả vào tệp. 
+Phác thảo lời giải 
+- Khai báo một biến tệp fptr; 
+- Dùng phƣơng thức fopen() mở một tệp Sinhvien.txt đƣợc lƣu cùng 
+thƣ mục của chƣơng trình. 
+- Nhập thông tin bao gồm tên và điểm của n sinh viên, dùng phƣơng 
+thức fpritnf() để ghi vào tệp. 
+- Đóng tệp. 
+Chƣơng trình 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+int main() 
+4 
+{ 
+5 
+   char tensv[50]; 
+6 
+   int diem, i, n; 
+7 
+   printf("Nhap vao so sinh vien: "); 
+8 
+   scanf("%d", &n); 
+9 
+   FILE *fptr; 
+10    fptr = (fopen("Sinhvien.txt", "w")); 
+11    if(fptr == NULL) 
+12    { 
+13        printf("Loi!"); 
+14        exit(1); 
+15    } 
+16    for(i = 0; i < n; ++i) 
+17    { 
+18       printf("Nhap ten sinh vien thu %d : ", i+1); 
+19       scanf("%s", tensv); 
+20       printf("Nhap diem: "); 
+21       scanf("%d", &diem); 
+22       fprintf(fptr,"\nTen SV: %s \nDiem =%d \n", tensv, diem); 
+23    } 

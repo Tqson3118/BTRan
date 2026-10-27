@@ -1,0 +1,53 @@
+// Trang 314 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+314 
+ 
+Khong hop le. Nhap so trong pham vi tu 0 den MAX ! 
+ 
+Nhap so cot cua mang: 3 
+ 
+Nhap  6 phan tu cua ma tran thu nhat: 
+ 
+4 5 12 6 7 42 
+ 
+Nhap 6 phan tu cua ma tran thu hai 
+ 
+3 5 65 2 54 21 
+ 
+Ma tran thu nhat la: 
+ 
+4       5       12 
+ 
+6       7       42 
+ 
+Ma tran thu hai la: 
+ 
+3       5       65 
+ 
+2       54      21 
+ 
+Tong cua hai ma tran la: 
+ 
+7       10      77 
+ 
+8       61      63 
+ 
+Hieu cua hai ma tran la: 
+ 
+1       0       -53 
+ 
+4       -47     21 
+Yêu cầu với sinh viên: 
+- Xây dựng hàm nhập ma trận m  n. 
+- Xây dựng hàm hiển thị ma trận m  n. 
+- Xây dựng hàm tính tổng hai ma trận cấp m  n. 
+- Xây dựng hàm tính hiệu hai ma trận cấp m  n. 
+5.2. CON TRỎ 
+Con trỏ trong ngôn ngữ C là một biến chứa địa chỉ của một biến khác 
+có cùng kiểu dữ liệu. Con trỏ đƣợc sử dụng để truy cập bộ nhớ và thao tác 
+địa chỉ. Con trỏ là một trong những tính năng khác biệt và thú vị nhất của 
+ngôn ngữ C. Nó cung cấp sức mạnh và tính linh hoạt cho ngôn ngữ. Mặc 
+dù ban đầu con trỏ có thể hơi khó hiểu và phức tạp, một khi chúng ta hiểu 
+khái niệm này, chúng ta sẽ có thể làm đƣợc nhiều hơn thế với ngôn ngữ C. 
+Trƣớc khi chúng ta bắt đầu hiểu con trỏ là gì và chúng có thể làm gì, 
+hãy bắt đầu bằng cách hiểu "Địa chỉ của bộ nhớ vị trí" nghĩa là gì? 

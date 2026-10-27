@@ -1,0 +1,38 @@
+// Trang 525 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+525 
+62                 if(daNhap){ 
+63           printf("\nBan da chon sap xep SV theo STB!"); 
+64                     sapxep(a, n); 
+65                     xuatN(a, n); 
+66                 }else{ 
+67                     printf("\nNhap DS SV truoc!!!!"); 
+68                 } 
+69              printf("\nBam phim bat ky de tiep tuc!"); 
+70                 getch(); 
+71                 break; 
+72             case 4: 
+73                 if(daNhap){ 
+74             printf("\nBan da chon thoat xep loai SV!"); 
+75                     xeploaiN(a, n); 
+76                 }else{ 
+77                     printf("\nNhap DS SV truoc!!!!"); 
+78                 } 
+79             printf("\nBam phim bat ky de tiep tuc!"); 
+80                 getch(); 
+81                 break; 
+82             case 5: 
+83                 if(daNhap){ 
+84                   printf("\nBan da chon xuat DS SV!"); 
+85                     xuatFile(a, n, fileName); 
+86                 }else{ 
+87                    printf("\nNhap DS SV truoc!!!!"); 
+88                 } 
+89              printf("\nXuat DSSV thanh cong vao file %s!", 
+fileName); 
+90            printf("\nBam phim bat ky de tiep tuc!"); 
+91                 getch(); 
+92                 break; 
+93             case 0: 
+94            printf("\nBan da chon thoat chuong trinh!"); 
+95                 getch(); 

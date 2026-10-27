@@ -1,0 +1,46 @@
+// Trang 105 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+105 
+từ bàn phím. Các hàm trên chỉ nhận đủ dữ liệu mà chúng yêu cầu (trong 
+trƣờng hợp này, scanf chỉ nhận chuỗi không có khoảng trắng), do đó một 
+phần dữ liệu còn sót lại trên stdin, có thể là ký tự „\n‟ hoặc phần dữ liệu sau 
+khoảng trắng. Điều này ảnh hƣởng đến các hàm nhập dữ liệu phía sau. 
+ 2.2.1.1. Hàm gets()  
+Hàm gets() đƣợc sử dụng để đọc một dòng văn bản từ một thiết bị 
+đầu vào chuẩn (stdin) và lƣu vào một biến chuỗi. Khi chƣơng trình đọc 
+vào một dòng mới thì hàm gets sẽ bị chấm dứt. Nội dung của 2.2.1.1 sẽ 
+giới thiệu cách đọc dữ liệu chuỗi từ console bằng cách sử dụng hàm gets() 
+trong C và chỉ ra sự khác biệt giữa hàm gets() và hàm scanf(). 
+Cú pháp: 
+char *gets(char *str) 
+Trong đó:  
+- str là con trỏ kiểu char trỏ tới vùng nhớ chứa dãy ký tự. 
+Chức năng:  Hàm gets() ghi nhận chuỗi ký tự từ stdin, cho đến khi 
+gặp ký tự “\n”. Ký tự “\n” bị loại khỏi stdin, nhƣng không đƣợc đặt vào 
+chuỗi. Chuỗi đƣợc bổ sung thêm “\0” và đặt vào vùng nhớ do con trỏ str 
+trỏ tới. Hàm trả về địa chỉ của chuỗi nhận đƣợc. 
+Có thể sử dụng cú pháp sau: gets(<variable_name>); với 
+variable_name: biến ghi nhận chuỗi ký tự nhập vào. 
+Lƣu ý:  
+Trƣớc khi sử dụng hàm gets(), phải khai báo thƣ viện <stdio.h> 
+#include <stdio.h> 
+ Ví dụ 2.17 
+Viết chƣơng trình nhập vào tên trƣờng và hiển thị ra màn hình. 
+Chƣơng trình 
+1 
+// Vi du ve ham gets() 
+2 
+#include <stdio.h>  
+3 
+int main() 
+4 
+{ 
+5 
+ 
+char st[50]; 
+6 
+ 
+printf("\nNhap ten truong: \n"); 
+7 
+ 
+gets(st); 

@@ -1,0 +1,52 @@
+// Trang 493 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+493 
+--------------------------------------------------- 
+|       TEN NV          |     MANV      |    TUOI   | 
+--------------------------------------------------- 
+Chi                        nv04           36 
+Kien                      nv02           40 
+Luan                      nv01           40 
+Thuan                    nv03           38 
+Nhan phim y de tiep tuc:y 
+Nhap vao lua chon (1-3): 3 
+--------------------------------------------------- 
+|       TEN NV          |     MANV      |    TUOI   | 
+--------------------------------------------------- 
+Kien                       nv02           40 
+Luan                       nv01           40 
+Thuan                     nv03           38 
+Chi                          nv04           36 
+B. BÀI TẬP TỰ GIẢI 
+ Bài tập 6.2  
+Cho biết kết quả chƣơng trình và giải thích: 
+1  
+#include <stdio.h> 
+2  
+#include <string.h> 
+3  
+#include <stdlib.h>> 
+4  
+struct personal 
+5  
+{ 
+6  
+char name[20]; 
+7  
+int day; 
+8  
+char month[10]; 
+9  
+int year; 
+10  
+float salary; 
+11  
+}; 
+12  
+main() 
+13  
+{ 
+14  
+struct personal person; 
+15  
+printf("Input Values\n"); 

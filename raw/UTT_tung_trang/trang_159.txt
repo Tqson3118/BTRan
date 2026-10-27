@@ -1,0 +1,43 @@
+// Trang 159 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+159 
+Chƣơng trình:  
+1  
+#include<stdio.h> 
+2  
+#include<conio.h> 
+3  
+main() 
+4  
+{ 
+5  
+    int s = 0,i;  
+6  
+    for(i = 1;i <= 10; i++) 
+7  
+     s = s + i;  
+8  
+    printf("\n Tong s = %d",s);  
+9  
+} 
+Kết quả chƣơng trình 
+ Tong s = 55 
+Chú ý: 
+ Cấu trúc for có thể lồng vào nhau 
+ Ví dụ 3.19 
+ Viết chƣơng trình in ra hình chữ nhật sao nhƣ sau: 
+* * * * * * * * * *  
+* * * * * * * * * *  
+* * * * * * * * * *  
+* * * * * * * * * *  
+* * * * * * * * * * 
+Phác họa lời giải 
+Hình chữ nhật sao có 5 hàng và 10 cột là ma trận 5  10. 
+Đối với 5 hàng: ta dùng biến chạy i từ  0 đến 4. 
+Với i = 0, hàng đầu thì phải in ra đƣợc 10 cột *, ta dùng biến chạy j, 
+duyệt cột từ 0 đến 9. 
+Với i = 1 hàng thứ hai cũng phải in ra đƣợc 10 cột *, ta dùng biến 
+chạy j, duyệt cột từ 0 đến 9. 
+… 
+Với i = 4, hàng thứ 5 cũng phải in ra đƣợc 10 cột *, ta dùng biến 
+chạy j, duyệt cột từ 0 đến 9. 

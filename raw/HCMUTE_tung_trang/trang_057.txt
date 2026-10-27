@@ -1,0 +1,53 @@
+// Trang 57 - Ngôn ngữ lập trình C_ebook.pdf
+
+54
+Khi chạy chương trình, kết quả in ra màn hình sẽ là:
+Gia tri cua a la 5 cua b la 6
+Giải thích hoạt động của chương trình:
+Chương trình ở ví dụ 2.6 này chỉ khác với ví dụ 2.5 ở dòng 5. Ở 
+đây, biểu thức luận lý trong câu lệnh if là c < a. Như vậy khi thực hiện, 
+biểu thức này sẽ cho kết quả là sai, tương đương với giá trị bằng 0. 
+Khi đó toàn bộ các lệnh từ dòng 6 đến dòng 9 sẽ không được thực thi. 
+Chương trình sẽ chuyển đến dòng 10 và in ra kết quả. Như vậy giá trị 
+của a và b sẽ không đổi so với lúc ban đầu.
+Ví dụ 2.7: Cho chương trình sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+#include <stdio.h>
+int main(void)
+{  
+      int a = 5, b = 6, c = 7;
+      if (a > c)
+      a = a + b;
+      b = b + 1;
+      if (a < b)
+      {
+           c = b - a;
+           b = c + 5;
+      }
+	
+printf(“Gia tri cua a la %d cua b la %d va c la 
+%d”,a,b,c);
+	
+getch();
+	
+return 0;
+}
+Khi chạy chương trình, kết quả in ra màn hình sẽ là:  
+Gia tri cua a la 5 cua b la 7 va c la 2
+Giải thích hoạt động của chương trình:

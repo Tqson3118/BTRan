@@ -1,0 +1,17 @@
+// Trang 210 - Ngôn ngữ lập trình C_ebook.pdf
+
+207
+TÀI LIỆU THAM KHẢO
+1. Paul Deitel and Harvey Deitel, C How to program, 6th Edition, 
+Prentice Hall, 2010.
+2. Brian W. Kernighan and Dennis M. Ritchie, The C Programming 
+Language, Prentice Hall, 1988.
+3. Peter D. Hipson, Advanced C, SAMS Publishing, 1992.
+4. Dan Gookin, C for Dimmies, Wiley Publishing, InC., 2004.
+5. John W. Perry, Advanced C Programming by Example, Pws 
+Pub Co, 1998
+6. Richard Reese, Understanding and Using C Pointers, O’Reilly, 
+2013.
+7. K. N. King, C Programming – A modern Approach, W. W. 
+Norton & Company, 2008.
+8. Zed A. Shaw, Lear C the Hard Way, Addison-Wesley, 2015. 

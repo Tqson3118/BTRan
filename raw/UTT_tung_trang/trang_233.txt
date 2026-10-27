@@ -1,0 +1,53 @@
+// Trang 233 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+233 
+ 
+printf("\nChu vi tam giac: %.2f",2 * p); 
+ 
+printf("\nDien tich tam giac %.2f", s); 
+ 
+} 
+ 
+else printf("\n khong la tam giac"); 
+Chƣơng trình dùng hàm:  
+Cách 1:  
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3 #include <math.h> 
+4 void nhap(float *n) 
+5 { 
+6  
+do 
+7  
+{ 
+8  
+ 
+printf("Nhap canh: "); scanf("%f", n); 
+9  
+}while (n <= 0); 
+10 } 
+11 bool kttamgiac(float a, float b, float c) 
+12 { 
+13  
+if (a + b > c && b + c > a && c + a > b) return 1; 
+14  
+else return 0; 
+15 } 
+16 void loaitamgiac(float a, float b, float c) 
+17 { 
+18  
+if (a == b && b == c) printf("\nTam giac deu"); 
+19  
+else if (a == b ||b == c|| c == a) printf("\nTam giac can"); 
+20    
+else if (a * a + b * b == c * c ||a * a + c * c == b * b||c * c 
++ b * b == a * a) printf("\nTam giac vuong"); 
+21  
+else printf("\n thuong"); 
+22 } 
+23 void tinhdientich(float a, float b, float c) 
+24 { 
+25  
+float p = (a + b + c)/2; 
+26  
+float s = sqrt(p * (p - a) * (p - b) *( p - c)); 

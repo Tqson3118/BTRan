@@ -1,0 +1,39 @@
+// Trang 197 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+197 
+63             case 6: 
+64                 strcpy(chi ,"Dan"); 
+65                 break; 
+66             case 7: 
+67                 strcpy(chi , "Mao"); 
+68                 break; 
+69             case 8: 
+70                 strcpy(chi, "Thin"); 
+71                 break; 
+72             case 9: 
+73                 strcpy(chi, "Ty"); 
+74                 break; 
+75             case 10: 
+76                 strcpy(chi, "Ngo"); 
+77                 break; 
+78             case 11: 
+79                 strcpy(chi, "Mui"); 
+80                 break; 
+81         }   
+82         printf("Nam am lich tuong ung voi nam duong lich %d la 
+%s %s ", year, can, chi);  
+83     } 
+Kết quả chƣơng trình: 
+Nhap vao nam duong lich: 1980 
+Nam am lich tuong ung voi nam duong lich 1980 la Canh Than 
+ Bài tập 3.7 
+Viết chƣơng trình bằng C để hiển thị bảng đa biến theo chiều dọc từ 
+1 đến n? 
+1 
+#include <stdio.h> 
+2 
+int main() 
+3 
+{ 
+4 
+   int j, i, n; 

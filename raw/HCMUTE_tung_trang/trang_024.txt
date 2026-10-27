@@ -1,0 +1,48 @@
+// Trang 24 - Ngôn ngữ lập trình C_ebook.pdf
+
+21
+SST dòng 
+lệnh
+Nội dung chương trình
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+/* Vi du:
+	
+Chuong trinh C dau tien */
+#include <stdio.h>
+#include <conio.h>
+//bat dau chuong trinh chinh
+int main (void)
+{
+	
+printf(“Chao mung den voi C! \n”);
+	
+getch();	
+	
+	
+return 0; /* cho biet chuong trinh da ket 
+thuc thanh cong */
+} //ket thuc chuong trinh chinh
+Sau khi thực thi, chương trình sẽ in ra màn hình dòng chữ Chao 
+mung den voi C!, như ở hình sau:
+Chao mung den voi C!
+Ở dòng lệnh số 1 và số 2, ta có hai câu:
+/* Vi du:
+	Chuong trinh C dau tien */
+được viết bắt đầu bằng ký hiệu /* và kết thúc bởi ký hiệu */ để thể hiện 
+rằng đây là hai câu chú thích – comment. Đây là cách viết chú thích 
+trên nhiều dòng lệnh. Câu chú thích được đặt trong chương trình để giải 
+thích hoặc làm rõ thêm cho chương trình mà không ảnh hưởng đến hoạt 
+động của chương trình khi chạy. Các câu chú thích sẽ được bỏ qua khi 
+biên dịch chương trình.

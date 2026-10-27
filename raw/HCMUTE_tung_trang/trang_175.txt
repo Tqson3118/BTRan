@@ -1,0 +1,22 @@
+// Trang 175 - Ngôn ngữ lập trình C_ebook.pdf
+
+172
+là biến thành phần namSanXuat của biến c. Kết quả ta có giá trị 2015 
+được lưu trong vùng nhớ c.namSanXuat như minh họa ở hình dưới.
+địa chỉ biến c (ví dụ) là: 2685540
+Sau khi khai báo con trỏ cấu trúc, ta cũng có thể cấp phát bộ nhớ 
+động cho con trỏ để dùng cho việc lưu trữ dữ liệu. Việc cấp phát bộ nhớ 
+động cho con trỏ cấu trúc được thực hiện tương tự như thao tác cấp phát 
+bộ nhớ cho con trỏ của các kiểu dữ liệu khác. Xét câu lệnh cấp phát bộ 
+nhớ cho con trỏ cấu trúc ThietBi p đã khai báo ở trên như sau:
+p = (ThietBi*)malloc(sizeof(ThietBi));
+trong câu lệnh này, hàm malloc được sử dụng để cấp phát cho con 
+trỏ p một ô nhớ dữ liệu kiểu ThietBi, hàm sizeof() được sử dụng để 
+giúp cung cấp thông tin kích thước của một ô nhớ kiểu ThietBi cho 
+hàm malloc. Sau câu lệnh cấp phát này, nếu chương trình cấp phát 
+thành công vùng nhớ cho con trỏ p thì p sẽ lưu địa chỉ của ô nhớ đã cấp 
+phát, nếu không thành công thì p sẽ lưu giá trị NULL.
+Ô nhớ cấp phát cho p, (có thể) có địa chỉ hiện tại là 1514208
+Sau khi cấp phát, ta có thể truy xuất tới các biến thành phần của 
+ô nhớ đã cấp phát cho con trỏ p bằng cách sử dụng toán tử mũi tên (->) 
+với con trỏ p. Chẳng hạn câu lệnh:

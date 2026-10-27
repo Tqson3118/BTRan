@@ -1,0 +1,41 @@
+// Trang 117 - Ngôn ngữ lập trình C_ebook.pdf
+
+114
+Xin chao
+ Hàm strcmp
+Cú pháp: int *strcmp(const char *s1, const char *s2); //   Phải khai 
+báo thư viện string.h.
+Hàm có chức năng so sánh chuỗi s1 với chuỗi s2. Kết quả trả về:
+•  < 0 nếu s1 < s2
+•   = 0 nếu s1 = s2
+•   > 0 nếu s1 > s2
+Ví dụ 4.25: 
+1
+2
+3
+4
+5
+6
+7
+8
+int a, b, c;
+char s1[] =”aaa”,s2[]=”bbb”,s3[]= “aaa”;
+a=strcmp(s1, s2); //ket qua tra ve - 1
+printf(“%d”,a);
+b=strcmp(s1, s3); //ket qua tra ve 0
+printf(“\n %d”,b);
+c=strcmp(s2, s3); //ket qua tra ve 1
+printf(“\n %d”,c);
+Kết quả khi chạy chương trình:
+-1
+ 0
+ 1
+ Hàm strlwr
+Cú pháp: char *strlwr(char *s);    //Phải khai báo thư viện 
+string.h
+Hàm có chức năng là chuyển chuỗi s sang chữ thường
+Ví dụ 4.26:
+1
+2
+char s[10] = “Xin Chao”;
+puts(strlwr(s));

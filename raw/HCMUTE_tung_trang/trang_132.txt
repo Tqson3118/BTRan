@@ -1,0 +1,30 @@
+// Trang 132 - Ngôn ngữ lập trình C_ebook.pdf
+
+129
+ngăn xếp là vùng nhớ Heap. Vùng nhớ Heap được sử dụng để cấp phát 
+động trong quá trình chương trình thực thi.
+5.4.1. Hàm malloc
+Hàm malloc được sử dụng để cấp phát bộ nhớ với kích thước theo 
+yêu cầu, hàm sẽ trả về con trỏ tham chiếu đến địa chỉ bắt đầu của vùng 
+nhớ được cấp phát. Sử dụng hàm malloc theo cú pháp sau:
+void * malloc(size_t size)
+Trong đó, size là kich thước tính theo đơn vị byte của vùng nhớ 
+cần cấp phát. Nếu quá trình cấp phát thành công, hàm sẽ trả về con trỏ 
+tham chiếu đến địa chỉ đầu tiên của vùng nhớ được cấp phát. Trường 
+hợp ngược lại, hàm sẽ trả về con trỏ rỗng (NULL). 
+Ví dụ: cấp phát bộ nhớ cho mảng 100 phần tử kiểu số nguyên 
+như sau:
+int *p;
+p = malloc(100*sizeof(int));
+Chương trình sẽ cấp phát bộ nhớ có kích thước tổng cộng là 400 
+byte cho 100 phần tử kiểu số int. Hàm sizeof() sẽ trả về kích thước của 
+một kiểu dữ liệu. Nếu quá trình cấp phát thành công, p là con trỏ tham 
+chiếu đến vùng nhớ đã được cấp phát. Kết quả trả về của hàm malloc 
+tự động được chuyển sang kiểu (int *) và gán cho biến con trỏ p. Thông 
+thường hàm malloc được ghi ở hình thức rõ ràng về kiểu dữ liệu trả về 
+như sau:
+int *p;
+p = (int*)malloc(100*sizeof(int));
+Ví dụ: viết chương trình nhập dữ liệu cho mảng gồm n phần 
+tử số nguyên với giá trị n được nhập trước, sau đó in ra phần tử lớn 
+nhất.

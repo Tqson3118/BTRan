@@ -1,0 +1,40 @@
+// Trang 19 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+19 
+CHƢƠNG 7: TỆP 
+Trong đề cương của môn học đối với sinh viên ngành Hệ thống thông 
+tin và sinh viên ngành Công nghệ thông tin không có phần này, tuy nhiên, 
+đối với một lập trình viên, không thể không biết cách làm việc và xử lý 
+trên tệp, vì đó là xương sống của hầu hết các ứng dụng. Chính vì thế 
+trong nội dung của cuốn giáo trình này, nhóm tác giả đã mạnh dạn đưa 
+thêm Chương 7, là một nội dung để các bạn tham khảo và hơn cả là làm 
+chủ kiến thức về tệp. 
+Nội dung của Chương 7, trình bày khái niệm về tệp, cách thức khai 
+báo tệp, phân loại tệp, các thao tác xử lý với tệp bao gồm mở tệp, đọc và 
+ghi tệp, đóng tệp. Nắm được nguyên tắc cơ bản này, trong hầu hết các 
+ứng dụng, các bạn đều phải tuần tự thực hiện việc tạo tệp, dùng lệnh để 
+mở tệp, sau đó là xử lý trên tệp, bao gồm hai hoạt động đọc nội dung từ 
+một tệp hoặc ghi nội dung vào tệp. Sau khi kết thúc quá trình làm việc với 
+tệp, cần đóng tệp để tránh mất dữ liệu. Có nhiều tham số, chẳng hạn mở 
+tệp chỉ đọc, mở tệp cho phép đọc ghi, v.v các bạn nên tham khảo qua các 
+ví dụ của Chương để tìm hiểu thêm. 
+CHƢƠNG 8: ĐỒ HỌA 
+Nội dung của Chương 8, giới thiệu những kiến thức cơ bản về đồ 
+họa, cách thức vẽ các hình khối cơ bản, phối kết hợp giữa các hình khối 
+để tạo ra những hình ảnh chuyển động. Chương 8, thực sự mới chỉ mang 
+đến cho các bạn cái nhìn tổng quan, nhóm tác giả hy vọng trong những 
+lần tái bản sau sẽ đem đến một nội dung đầy đủ và phong phú hơn. 
+Cuối mỗi chƣơng đều xây dựng hệ thống câu hỏi và bài tập để sinh 
+viên ôn tập, rèn luyện và củng cố lý thuyết môn học. “Giáo trình Ngôn 
+ngữ lập trình C” đƣợc biên soạn công phu, nghiêm túc dựa trên kinh 
+nghiệm giảng dạy môn học cho sinh viên từ khóa 64 đến khóa 68 tại 
+Trƣờng Đại học Công nghệ Giao thông vận tải của các giảng viên bộ môn 
+Hệ thống thông tin. Khi biên soạn giáo trình này, nhóm tác giả có tham 
+khảo một số giáo trình viết về ngôn ngữ C của một số trƣờng đại học có 
+uy tín ở Việt Nam, một số chuyên gia nổi tiếng và một số tài liệu uy tín 
+của nƣớc ngoài, đƣợc sự tham gia và đóng góp ý kiến của nhiều thầy cô 
+đã và đang giảng dạy môn Ngôn ngữ lập trình C ở các trƣờng đại học trên 
+địa bàn Hà Nội. Nhóm tác giả chân thành cảm ơn NCS.ThS. Trần Nguyên 
+Hƣơng, giảng viên Trƣờng Đại học Kinh doanh và Công nghệ Hà Nội, đã 
+góp nhiều ý kiến quý báu, chia sẻ nhiều kinh nghiệm trong quá trình 
+nhóm biên soạn cuốn giáo trình này. 

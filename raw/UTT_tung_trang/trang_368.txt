@@ -1,0 +1,73 @@
+// Trang 368 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+368 
+16 
+   kq = is_palindrome(a); 
+17 
+    if (kq == 1) 
+18 
+      printf("\"%s\" la chuoi doi xung.\n", a); 
+19 
+   else 
+20 
+      printf("\"%s\" khong la chuoi doi xung.\n", a); 
+21 
+    return 0; 
+22 
+} 
+23 
+  
+24 
+int is_palindrome(char *a) 
+25 
+{ 
+26 
+   int kt, length; 
+27 
+   char *reverse; 
+28 
+  
+29 
+   length = string_length(a);     
+30 
+   reverse = (char*)malloc(length+1);     
+31 
+  
+32 
+   copy_string(reverse, a); 
+33 
+   reverse_string(reverse); 
+34 
+    kt = compare_string(a, reverse); 
+35 
+    free(reverse); 
+36 
+    if (kt == 0) 
+37 
+      return 1; 
+38 
+   else 
+39 
+      return 0; 
+40 
+} 
+41 
+  
+42 
+int string_length(char *a) 
+43 
+{ 
+44 
+   int length = 0;   
+45 
+  
+46 
+   while(*a) 
+47 
+   { 
+48 
+      length++; 
+49 
+      a++; 
+50 
+   } 

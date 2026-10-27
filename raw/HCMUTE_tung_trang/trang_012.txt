@@ -1,0 +1,27 @@
+// Trang 12 - Ngôn ngữ lập trình C_ebook.pdf
+
+9
+CHƯƠNG 1
+GIỚI THIỆU
+Mục tiêu: 
+Sau khi kết thúc chương này, người đọc có thể:
+- Phân biệt được các loại ngôn ngữ lập trình.
+- Vẽ được lưu đồ giải thuật cho các yêu cầu lập trình. 
+- Sử dụng được các thành phần cơ bản trong ngôn ngữ C: câu 
+lệnh, câu chú thích, biến, hằng, phép toán.
+- Sử dụng được các hàm xuất, nhập dữ liệu trong C.
+- Viết được các chương trình C cơ bản theo đúng cấu trúc 
+chương trình.
+1.1. CHƯƠNG TRÌNH VÀ NGÔN NGỮ LẬP TRÌNH
+Chương trình máy tính (computer program) là một chuỗi các lệnh 
+được viết bởi một loại ngôn ngữ lập trình để thực hiện một hoặc một 
+số tác vụ nào đó. Trong đó ngôn ngữ lập trình là một tập quy ước 
+cụ thể được sử dụng để viết chương trình cho máy tính. Nói cách 
+khác, chương trình được xem như một loạt các lệnh mà máy tính 
+có thể đọc hiểu và thực thi theo đó. Khi nói đến chương trình máy 
+tính, người ta thường hình dung ra chương trình được chạy trên một 
+máy tính. Tuy nhiên, chương trình, nhìn ở góc độ kỹ thuật thì là một 
+chuỗi các mã lệnh dùng để điều khiển phần cứng, cụ thể là bộ vi xử 
+lý, bộ vi điều khiển. Có nhiều loại ngôn ngữ lập trình khác nhau. 
+Các ngôn ngữ lập trình được phân loại theo mức độ trừu tượng, trong 
+đó gồm có:

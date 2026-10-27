@@ -1,0 +1,41 @@
+// Trang 461 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+461 
+73 k=thongke(h,n,301,400); 
+74 printf("So ho gia dinh su dung tu 301 den 400 so la %d, 
+chiem %2.1f %\n",k,(float)k/n*100); 
+75 k=thongke(h,n,401,500); 
+76 printf("So ho gia dinh su dung tu 401 den 500 so la %d, 
+chiem %2.1f %\n",k,(float)k/n*100); 
+77 return 0; 
+78 } 
+  Kết quả chƣơng trình 
+Nhap so ho gia dinh: 
+3 
+Nhap thong tin cua cac ho gia dinh: 
+Nhap thong tin cua ho thu 1: 
+Nhap ten chu ho: Anh 
+Nhap vao chi so truoc: 45 
+Nhap vao chi so sau: 501 
+Nhap thong tin cua ho thu 2: 
+Nhap ten chu ho: Dan 
+Nhap vao chi so truoc: 101 
+Nhap vao chi so sau: 302 
+Nhap thong tin cua ho thu 3: 
+Nhap ten chu ho: Thang 
+Nhap vao chi so truoc: 136 
+Nhap vao chi so sau: 432 
+Bang tong hop tien dien cua cac ho gia dinh: 
+Stt  
+Chu ho     Chi so dau     Chi so cuoi    Tien dien 
+1    
+Anh        45             501            1072912 
+2    
+Dan        101            302            374536 
+3    
+Thang     136            432            615456 
+So ho gia dinh su dung <= 100 so la 0, chiem 0.0 
+So ho gia dinh su dung  tu 101 den 100 so la 0, chiem 0.0% 
+So ho gia dinh su dung tu 201 den 300 so la 2, chiem 66.7% 
+So ho gia dinh su dung tu 301 den 400 so la 0, chiem 0.0% 
+So ho gia dinh su dung tu 401 den 500 so la 1, chiem 33.3% 

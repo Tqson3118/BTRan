@@ -1,0 +1,57 @@
+// Trang 135 - Ngôn ngữ lập trình C_ebook.pdf
+
+132
+con trỏ tham chiếu đến vùng nhớ đã được thay đổi kích thước hoặc con 
+trỏ rỗng (NULL) nếu quá trình thay đổi kích thước không thành công. 
+Trong trường hợp tham số vào size cho hàm realloc() là 0 thì vùng nhớ 
+cấp cho con trỏ p sẽ được giải phóng và hàm realloc() sẽ trả về NULL. 
+Lúc này hàm realloc() được dùng tương tự như hàm free(). 
+Ví dụ sử dụng hàm realloc() để tăng kích thước vùng nhớ đã cấp 
+cho con trỏ p từ 100 phần tử lên 200 phần tử như sau:
+int *p; 
+p =(int*)malloc(100*sizeof(int)) ;
+p = (int*)realloc(p, 200*sizeof(int)); 
+Ví dụ: Viết chương trình nhập n số nguyên, in ra các số đã nhập 
+theo thứ tự tăng dần. Sau đó nhập thêm m số nguyên nữa, tìm và in ra 
+giá trị bé nhất trong số (n+m) số nguyên vừa nhập.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+#include<stdio.h>
+#include <stdlib.h>
+void main(void)
+{
+int n,m, i,j,min;
+int *p ;
+do 
+{
+	
+printf(“Nhap n: “);
+	
+scanf(“%d”,&n) ;	
+}while (n<=0);
+p = (int *)calloc (n,sizeof(int));	
+if (p!=NULL)
+{
+	
+for (i=0;i<n;i++)
+	
+{
+	
+	
+printf(“\nnhap phan tu thu %d: “,i+1);

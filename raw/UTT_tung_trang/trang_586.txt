@@ -1,0 +1,32 @@
+// Trang 586 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+586 
+STT 
+Thƣ viện chuẩn 
+Các hàm thƣờng sử dụng 
+Hàm memchr() tìm kiếm kí tự c trong giới hạn 
+n byte kí tự 
+Hàm memset() gán giá trị c cho n byte đầu tiên 
+của vùng nhớ 
+7 
+<time.h> 
+Hàm clock() tính thời gian thực hiện chƣơng 
+trình 
+Hàm time() trả về số giây tính từ 01/01/1970 
+đến thời điểm gọi hàm time 
+Hàm localtime() convert timer thành thời gian 
+Hàm asctime() convert struct tm thành định 
+dạng hh:mm:ss 
+Hàm ctime() convert timer thành thời gian 
+định dạng hh:mm:ss 
+Hàm gmtime() convert timer thành thời gian 
+UTC 
+Hàm mktime() convert thời gian định dạng tm 
+sang định dạng time_t 
+Hàm difftime() trả về khoảng thời gian giữa 2 
+mốc thời gian 
+Hàm strftime() trả về số kí tự đƣợc đặt trong 
+vùng nhớ 
+ 
+ 
+ 

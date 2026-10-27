@@ -1,0 +1,61 @@
+// Trang 172 - Ngôn ngữ lập trình C_ebook.pdf
+
+169
+39
+40
+41
+42
+43
+44
+45
+ nhap:\n”);
+	
+for ( i = 0; i < n; i++)
+	
+	
+printf(“%s, %d, %.1f, %c\n”,d[i].tenT-
+B,d[i].namSanXuat,d[i].giaTien,d[i].trangThai);
+	
+getch();
+	
+return 0;
+}
+Trong chương trình này, mảng một chiều d gồm 5 phần tử kiểu 
+cấu trúc ThietBi được khai báo trong hàm main ở dòng lệnh số 15. Mục 
+đích của việc khai báo mảng d là tạo ra vùng nhớ gồm 5 ô nhớ để lưu 
+trữ thông tin của 5 thiết bị. Mỗi thiết bị sẽ có bốn thành phần thông tin 
+cần lưu trữ là: tenTB, namSanXuat, giaTien, trangThai. Tiếp theo, 
+các thông tin của 5 thiết bị sẽ được người dùng nhập vào từ bàn phím, ở 
+đoạn lệnh từ dòng lệnh số 17 đến dòng lệnh số 36, bằng cách dùng một 
+vòng lặp. Cuối cùng, thông tin của tất cả các thiết bị sẽ được in ra màn 
+hình, ở đoạn lệnh từ dòng lệnh số 39 đến dòng lệnh số 42. Kết quả sau 
+khi chạy chương trình trên là:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+Nhap thong tin cua thiet bi thu 0:
+Nhap ten: quat
+Nhap nam san xuat: 2017
+Nhap gia tien: 0.25
+Nhap trang thai: Tot (T) hoac Hong (H): T
+Nhap thong tin cua thiet bi thu 1:
+Nhap ten: den
+Nhap nam san xuat: 2017
+Nhap gia tien: 0.75
+Nhap trang thai: Tot (T) hoac Hong (H): H
+Nhap thong tin cua thiet bi thu 2:
+Nhap ten: may lanh
+Nhap nam san xuat: 2018

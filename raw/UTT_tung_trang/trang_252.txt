@@ -1,0 +1,38 @@
+// Trang 252 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+252 
+143            } while (a == 0||b == 0); 
+144           phanSo(a, b); 
+145           break; 
+146        } 
+147     }while(luachon!= 5); 
+148  } 
+Kết quả chƣơng trình 
+-----------MENU----------- 
+1. Kiem tra so nguyen to 
+2. In cac so nguyen to 
+3. Kiem tra so hoan hao 
+4. In cac so hoan hao 
+5. Phan so toi gian 
+Moi ban chon: 1 
+nhap n = 23 
+23 la so nguyen to 
+-----------MENU----------- 
+1. Kiem tra so nguyen to 
+2. In cac so nguyen to 
+3. Kiem tra so hoan hao 
+4. In cac so hoan hao 
+5. Phan so toi gian 
+Moi ban chon: 2 
+nhap n = 12 
+Cac so nguyen to la: 2 3 5 7 11 
+-----------MENU----------- 
+1. Kiem tra so nguyen to 
+2. In cac so nguyen to 
+3. Kiem tra so hoan hao 
+4. In cac so hoan hao 
+5. Phan so toi gian 
+Moi ban chon: 3 
+nhap n = 6 
+6 la so hoan hao 
+-----------MENU----------- 

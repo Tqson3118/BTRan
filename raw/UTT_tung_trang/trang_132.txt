@@ -1,0 +1,33 @@
+// Trang 132 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+132 
+ 
+else if (expression 2) 
+ 
+<statement block 2>; 
+ 
+… 
+ 
+else if (expression n-1) 
+ 
+<statement block n-1>; 
+ 
+else  
+ 
+<statement block n>; 
+Trong đó:  
+- expression 1, expression 2,…, expression n: là các điều kiện; 
+- statement block 1, statement block 2,…, statement block n: 
+Khối lệnh thực hiện. 
+b. Hoạt động 
+Nếu biểu thức điều kiện 1 (expression 1) đúng thì chƣơng trình thực 
+hiện khối lệnh 1 (statement block 1) và thoát khỏi cấu trúc if. Ngƣợc lại 
+nếu biểu thức điều kiện 2 (expression 2) đúng thì chƣơng trình thực hiện 
+khối lệnh 2 (statement block 2) và thoát khỏi cấu trúc if, v.v. 
+Tƣơng tự nhƣ vậy, nếu biểu thức điều kiện n - 1 (expression n - 1) 
+đúng thì chƣơng trình thực hiện khối lệnh n - 1 (statement block n - 1) 
+đồng thời thoát khỏi cấu trúc if, ngƣợc lại thực hiện khối lệnh n 
+(statement block n). 
+c. Sơ đồ khối 
+ 
+Hình 3.4. Sơ đồ khối biểu diễn câu lệnh else if 

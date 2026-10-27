@@ -1,0 +1,73 @@
+// Trang 147 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+147 
+11  
+ 
+case 2 : printf("Hai"); break; 
+12  
+ 
+case 3 : printf("Ba"); break; 
+13  
+ 
+case 1 : printf("1"); break; 
+14  
+ 
+case 1 : printf("mot"); break; 
+15  
+} 
+Kết quả chƣơng trình: báo lỗi ở ngay dòng 9, 10, 13, 14 
+ Nếu các lệnh giống nhau thì viết gộp: 
+ Ví dụ 3.13 
+1  
+#include <stdio.h> 
+2  
+#include <conio.h> 
+3  
+main() 
+4  
+{ 
+5  
+ 
+int a; 
+6  
+ 
+printf("\n Nhap a= "); scanf("%d",&a); 
+7  
+switch (a) 
+8  
+{ 
+9  
+ 
+case 1 : printf("\n Hello"); break; 
+10  
+ 
+case 2 : printf("\n Hello"); break; 
+11  
+ 
+case 3 : printf("\n Good bye"); break; 
+12  
+ 
+case 4 : printf("\n Good bye"); break; 
+13  
+ 
+case 5 : printf("\n Good bye"); break; 
+14  
+ 
+case 6 : printf("\n Good bye"); break; 
+15  
+} 
+16  
+} 
+ Chƣơng trình trên ở dòng 9, 10 cùng in ra một dòng Hello. Các 
+dòng 11, 12, 13, 14 cùng in ra dòng Good bye, do đó các case có các lệnh 
+giống nhau thì ta bỏ trống không viết gì hoặc chỉ viết dấu chấm phẩy “;”. 
+Câu lệnh sẽ đƣợc viết ở case cuối có lệnh giống. 
+Chƣơng trình trên sẽ đƣợc viết lại nhƣ sau: 
+1  
+#include <stdio.h> 
+2  
+#include <conio.h> 
+3  
+main() 
+4  
+{ 

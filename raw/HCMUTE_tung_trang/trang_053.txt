@@ -1,0 +1,44 @@
+// Trang 53 - Ngôn ngữ lập trình C_ebook.pdf
+
+50
+13
+14
+15
+16
+17
+18
+19
+printf(“\nc = “); 
+scanf(“%f”, &c); 
+p = a+b+c; q = p/2; 
+s = sqrt(q*(q-a)*(q-b)*(q-c));
+printf(“\nChu vi la %5.1f, dien tich la %5.2f “,p,s); 
+getch();
+return 0;
+}
+Kết quả thực hiện chương trình:
+1
+2
+3
+4
+5
+Nhap so do 3 canh cua tam giac 
+a = 3 ↵ 
+b = 4 ↵ 
+c = 5 ↵ 
+Chu vi la 12.0, dien tich la 6.00
+Lưu ý: 
+ Trong chương trình ví dụ trên chúng ta sử dụng hàm tính căn 
+bậc 2: sqrt, hàm này được khai báo trong thư viện math.h.
+ Chương trình trên chưa xử lý trường hợp a, b, c không hợp lệ 
+(ba số a, b, c có thể không thoả mãn là 3 cạnh một tam giác).
+2.2.2 Cấu trúc rẽ nhánh
+Chúng ta hãy xem lại chương trình trong ví dụ 2.4 trên, điều gì 
+xảy ra nếu dữ liệu không thoả mãn, tức là khi bạn nhập 3 số a, b, c từ 
+bàn phím nhưng chúng không thoả mãn là số đo 3 cạnh một tam giác 
+trong khi chương trình của chúng ta vẫn cứ tính và in diện tích.
+Rõ ràng là có hai khả năng: 
+ Nếu a, b, c thoả mãn là 3 cạnh tam giác thì có thể tính chu vi, 
+diện tích và in kết quả.
+  Ngược lại, phải thông báo dữ liệu không phù hợp. Như vậy 
+cần phải có một sự lựa chọn một trong hai nhánh xử lý, tuỳ vào điều 

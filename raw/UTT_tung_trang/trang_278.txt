@@ -1,0 +1,39 @@
+// Trang 278 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+278 
+9        } 
+10 return 0;  
+11 } 
+ Kết quả chƣơng trình: 
+13      -6      9       45      7 
+Lƣu ý trong ví dụ trên, kích thƣớc của mảng không đƣợc chỉ định rõ 
+ràng. Trình biên dịch biết kích thƣớc của nó là 5 vì 5 giá trị trong danh 
+sách khởi tạo. Thêm một giá trị bổ sung vào danh sách sẽ khiến nó có 
+kích thƣớc thành 6 và do biểu thức sizeof trong vòng lặp for, mã sẽ tự 
+động điều chỉnh theo thay đổi này. Thực hành lập trình tốt là khai báo một 
+kích thƣớc thay đổi và lƣu trữ số lƣợng phần tử trong mảng trong đó. 
+size = sizeof (tên_mảng) / sizeof (kiểu_dữ_liệu_mảng) 
+5.1.1.3. Các dạng bài tập mảng một chiều 
+Dạng 1: Nhập và hiển thị mảng một chiều 
+a. Nhập mảng 
+Cách 1:   
+Nhập từng phần tử của mảng. 
+Để nhập các phần tử của mảng, ta thực hiện nhƣ sau: 
+- Nhập từng phần tử của mảng sử dụng một vòng lặp 
+- Xây dựng một hàm nhap() có kiểu void, không trả về giá trị, truyền 
+vào hai tham số là tên biến mảng và số lƣợng phần tử của mảng. 
+Cách 2: Sinh ngẫu nhiên các phần tử của mảng, sử dụng hàm rand() 
+để sinh ra các giá trị ngẫu nhiên. 
+ 
+Cú pháp hàm rand(): 
+ 
+int rand(void) 
+Hàm rand() không nhận tham số vào, trả về một giá trị ngẫu nhiên 
+trong phạm vi từ 0 đến RAND_MAX. Trong đó, RAND_MAX là một 
+hằng số có giá trị mặc định (đƣợc định nghĩa trong thƣ viện “stdlib.h”, 
+thông thƣờng RAND_MAX = 32767) 
+b. Hiển thị mảng 
+Để hiển thị các phần tử của mảng, ta thực hiện nhƣ sau: 
+- Sử dụng một vòng lặp để hiển thị các phần tử của mảng. 
+- Xây dựng một hàm hienthi() có kiểu void, truyền vào hai tham số là 
+tên biến mảng và số lƣợng phần tử của mảng. 

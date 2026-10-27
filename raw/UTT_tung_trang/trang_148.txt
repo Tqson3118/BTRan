@@ -1,0 +1,60 @@
+// Trang 148 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+148 
+5  
+ 
+int a; 
+6  
+ 
+printf("\n Nhap a= "); scanf("%d",&a); 
+7  
+switch (a) 
+8  
+{ 
+9  
+ 
+case 1 : ; 
+10  
+ 
+case 2 : printf("\n Hello"); break; 
+11  
+ 
+case 3 :  
+12  
+ 
+case 4 :  
+13  
+ 
+case 5 : ; 
+14  
+ 
+case 6 : printf("\n Good bye"); break; 
+15  
+} 
+16  
+} 
+ Ví dụ 3.14 
+Viết chƣơng trình nhập vào 1 biến ký tự color rồi in ra thông báo nhƣ 
+sau: 
+- RED, nếu color = 'R' hoặc color = 'r'.  
+- GREEN, nếu color = „G' hoặc color = 'g'.  
+- BLUE, nếu color  =  'B' hoặc color = 'b'. 
+- ORANGE, nếu color = „O‟ hoặc color = „o‟. 
+- PURPLE, nếu color = „P‟ hoặc color = „p‟. 
+- BLACK, nếu color có giá trị khác. 
+Phác họa lời giải 
+Bài toán có 6 lựa chọn, chúng ta có thể sử dụng cấu trúc else if  và so 
+sánh với cấu trúc switch.  
+Chƣơng trình 
+ 
+Cách 1: Sử dụng cấu trúc else if 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 
+3 
+int main()  
+4 
+{  
+5 
+    char color;  

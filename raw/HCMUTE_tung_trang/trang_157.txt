@@ -1,0 +1,49 @@
+// Trang 157 - Ngôn ngữ lập trình C_ebook.pdf
+
+154
+Kết quả sau khi thực thi chương trình:
+mang truoc khi sap xep :
+6, 13, 2, 3, 9, 7, 5, 18, 4, 12,
+mang sau khi sap xep :
+2, 3, 4, 5, 6, 7, 9, 12, 13, 18,
+6.6. ĐỆ QUY 
+Trong ngôn ngữ C, hàm có thể gọi các hàm khác và cũng có thể 
+gọi chính nó. Một hàm được gọi bởi chính nó được gọi là hàm đệ quy. 
+Các hàm đệ quy hữu ích trong các chương trình cần lặp lại các quá trình 
+tính toán hoặc xử lý. Cấu trúc hàm đệ quy được minh họa như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+void recurse()
+{
+    ... .. ...
+    recurse();
+    ... .. ...
+}
+ 
+int main()
+{
+    ... .. ...
+    recurse();
+    ... .. ...
+}
+Trong hàm main chúng ta gọi hàm recurse(). Trong hàm recurse() 
+lại gọi chính hàm recurse(). Hàm recurse() trong ví dụ trên được gọi là hàm 
+đệ quy. Có thể thấy hàm recurse() gọi chính nó và quá trình cứ thế lặp lại 
+không thoát. Do đó, khi xây dựng các hàm đệ quy cần chú ý điều kiện dừng 
+của hàm để tránh việc các hàm được lặp lại vô tận. 
+Một ví dụ của hàm đệ quy là thực hiện phép tính giai thừa. Giai thừa 
+của n có thể được tính bằng cách lặp lại các phép nhân. Chúng ta có thể viết 
+hàm tính giai thừa bằng phương pháp sử dụng vòng lặp trong đó các biến 
+có thể xuất phát từ 1 và tăng dần đến n hoặc đi theo chiều ngược lại từ n về 
+1. Hàm tính giai thừa sử dụng vòng lặp được minh họa như sau:

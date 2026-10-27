@@ -1,0 +1,36 @@
+// Trang 235 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+235 
+3 float a, b, c; 
+4 int Kiemtra() 
+5 { 
+6    if(a + b > c && a + c > b && b + c > a && a>0 && b>0 && 
+c>0) 
+7       return 1; 
+8    else 
+9      return 0; 
+10 } 
+11 void Loaitamgiac() 
+12 { 
+13    if (Kiemtra()==1) 
+14    { 
+15       if(a == b && b == c) 
+16          printf("Tam giac deu\n"); 
+17       else if(a == b || a == c || b == c) 
+18          printf("Tam giac can\n"); 
+19       else if(a * a + b * b == c * c || a * a + c * c == b * b || c * c + b 
+* b == a * a) 
+20          printf("Tam giac vuong\n"); 
+21       else 
+22          printf("Tam giac thuong\n"); 
+23    } 
+24    else printf("Khong phai la tam giac\n"); 
+25 } 
+26 void DienTichChuVi() 
+27 { 
+28   if (Kiemtra()==1) { 
+29    float p, cv, s; 
+30    cv = a + b + c; 
+31    p = cv/2; 
+32    s = sqrt(p * (p - a) * (p - b) * (p - c)); 
+33    printf("\nChu vi: %2.f", cv); 

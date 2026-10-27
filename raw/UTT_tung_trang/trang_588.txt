@@ -1,0 +1,55 @@
+// Trang 588 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+588 
+PHỤ LỤC 4: MỨC ĐỘ ƢU TIÊN CỦA CÁC TOÁN TỬ 
+Loại 
+Toán tử 
+Thứ tự ƣu tiên 
+Postfix 
+() [] -> . ++ - - 
+Trái sang phải 
+Unary 
++ - ! ~ ++ - - (type)* & sizeof 
+Phải sang trái 
+Tính nhân 
+* / % 
+Trái sang phải 
+Tính cộng 
++ - 
+Trái sang phải 
+Dịch chuyển 
+<< >> 
+Trái sang phải 
+Quan hệ 
+< <= > >= 
+Trái sang phải 
+Cân bằng 
+== != 
+Trái sang phải 
+Phép AND bit 
+& 
+Trái sang phải 
+Phép XOR bit 
+^ 
+Trái sang phải 
+Phép OR bit 
+| 
+Trái sang phải 
+Phép AND 
+logic 
+&& 
+Trái sang phải 
+Phép OR logic 
+|| 
+Trái sang phải 
+Điều kiện 
+?: 
+Phải sang trái 
+Gán 
+= += -= *= /= %=>>= <<= &= ^= |= 
+Phải sang trái 
+Dấu phảy 
+, 
+Trái sang phải 
+ 
+ 

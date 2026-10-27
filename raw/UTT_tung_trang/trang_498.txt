@@ -1,0 +1,34 @@
+// Trang 498 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+498 
+Viết chƣơng trình thực hiện những công việc sau: 
+a. Nhập vào bộ phim mới cùng với các thông tin liên quan đến bộ 
+phim này. 
+b. Nhập một thể loại: In ra danh sách các bộ phim thuộc thể loại này. 
+c. Nhập một tên nam diễn viên. In ra các bộ phim có diễn viên này 
+đóng. 
+d. Nhập tên đạo diễn. In ra danh sách các bộ phim do đạo diễn này 
+dàn dựng. 
+ Bài tập 6.11 
+Một thƣ viện cần quản lý thông tin về các đầu sách. Mỗi đầu sách 
+bao gồm các thông tin sau: MaSSach (mã số sách), TenSach (tên sách), 
+TacGia (tác giả), SL (số lƣợng các cuốn sách của đầu sách).  
+Viết chƣơng trình thực hiện các chức năng sau: 
+a. Nhập vào một danh sách các đầu sách (tối đa là 100 đầu sách). 
+b. Nhập vào tên của quyển sách. In ra thông tin đầy đủ về các sách 
+có tên đó, nếu không có thì tên của quyển sách đó thì báo là: Không Tìm 
+Thấy. 
+c. Tính tổng số sách có trong thƣ viện. 
+ Bài tập 6.12 
+Viết chƣơng trình quản lý vé tàu, thông tin một vé tàu nhƣ sau: 
+- Ngày giờ khởi hành, ngày giờ đến. 
+- Ga đi, ga đến. 
+- Loại tàu, loại chỗ ngồi (ngồi, nằm, cứng, mềm). 
+- Số toa, số ghế. 
+a. Viết hàm nhập vào danh sách các vé tàu. 
+b. In danh sách các vé tàu có ga đến là Huế. 
+c. In danh sách các vé tàu có ga đến là Hà Nội và đi ngày 08/8/2019. 
+d. Đếm xem có bao nhiêu khách đi tàu loại chỗ ngồi là nằm cứng. 
+ 
+ 
+ 

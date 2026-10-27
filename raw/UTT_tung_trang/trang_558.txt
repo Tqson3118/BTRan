@@ -1,0 +1,37 @@
+// Trang 558 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+558 
+biến gm. Trong ví dụ 8.1, chúng tôi đã khai báo một biến số nguyên gm 
+đại diện cho chế độ đồ họa. Bạn cũng có thể chọn bất kỳ tên biến nào 
+khác thay vì gm cho chế độ đồ họa. 
+Trong phƣơng thức initgraph() ở ví dụ 8.1, bao gồm tham số đầu tiên gd 
+là địa chỉ của trình điều khiển đồ họa, tham số thứ hai gm là chế độ đồ họa. 
+Phƣơng thức initgraph() 
+Phƣơng thức initgraph() đƣợc sử dụng để quyết định trình điều khiển 
+đồ họa phù hợp, khởi tạo chế độ đồ họa để đặt độ phân giải màn hình tối 
+đa và chọn đƣờng dẫn tệp BGI thích hợp nhất. Trong ví dụ 8.1, phƣơng 
+thức initgraph() có ba đối số, trong đó đối số thứ ba đƣợc sử dụng để chọn 
+đƣờng dẫn của tệp BGI, các tệp BGI là phần mở rộng của trình điều khiển 
+đồ họa. 
+Phƣơng thức initgraph() đƣợc sử dụng để quyết định trình điều khiển 
+đồ họa phù hợp, khởi tạo chế độ đồ họa để đặt độ phân giải màn hình tối 
+đa và chọn đƣờng dẫn tệp BGI thích hợp. 
+Trong chƣơng trình trên trong phƣơng thức initgraph() có ba đối số. 
+Chúng tôi đã thảo luận về hai đối số đầu tiên là địa chỉ của trình điều 
+khiển đồ họa (& gd) và địa chỉ của chế độ đồ họa (& gm). 
+Đối số thứ ba của phƣơng thức initgraph() đƣợc sử dụng để chọn 
+đƣờng dẫn có tệp BGI của bạn. Các tệp BGI này là phần mở rộng của 
+trình điều khiển đồ họa. 
+Phƣơng thức closegraph() 
+Phƣơng thức closegraph() đƣợc sử dụng để để đóng (thoát) chế độ 
+đồ họa. 
+Phƣơng thức restorecrtmode () 
+Phƣơng thức restorectmode() đƣợc sử dụng để khôi phục chế độ đồ 
+họa gốc. Hàm này có thể đƣợc sử dụng cùng với setgraphmode() để 
+chuyển đổi quan lại giữa chế độ văn bản và chế độ đồ họa.  
+8.2.2. Thiết lập màu sắc 
+Có 16 màu đƣợc khai báo trong tệp tiêu đề Graphics.h. Chúng ta sử 
+dụng màu sắc để đặt màu vẽ hiện tại, thay đổi màu nền, thay đổi màu văn 
+bản, để tô màu hình kín, v.v. Để chỉ định màu, chúng ta có thể sử dụng 
+các hằng số màu nhƣ setcolor (RED) hoặc mã số nguyên tƣơng ứng của 
+chúng nhƣ setcolor (4). Dƣới đây là mã màu theo thứ tự tăng dần. 

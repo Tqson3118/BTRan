@@ -1,0 +1,40 @@
+// Trang 424 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+424 
+Có thể khai báo nhƣ sau: 
+1  
+struct Nhan_vien 
+2  
+{ 
+3  
+char ho_ten[20]; 
+4  
+char dia_chi[50]; 
+5  
+float luong; 
+6  
+} nv1, nv2, nv[20]; 
+Cú pháp khai báo biến kiểu cấu trúc: 
+Cách 1: Khai báo Kiểu cấu trúc, sau đó khai báo biến cấu trúc 
+//khai báo kiểu cấu trúc 
+struct [struct_name_tag] 
+{ 
+  data_type member; 
+}; 
+//Khai báo biến cấu trúc 
+ struct struct_name_tag variable_struct; 
+Trong đó: 
+  variable_struct: danh sách các biến kiểu cấu trúc. 
+Cách 2: Khai báo danh sách biến cấu trúc cùng với khai báo kiểu cấu 
+trúc  
+struct [struct_name_tag] 
+{ 
+    data_type member; 
+} variable_struct; 
+Trong đó: 
+ 
+variable_struct: Danh sách các biến cấu trúc 
+6.1.2. Truy cập đến các thành phần của kiểu cấu trúc 
+Các thành phần của cấu trúc có thể đƣợc truy cập và gán giá trị. Để 
+truy cập đến thành phần của cấu trúc, ta sử dụng toán tử (.) 
+Cú pháp: 

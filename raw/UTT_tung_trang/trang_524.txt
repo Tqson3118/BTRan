@@ -1,0 +1,38 @@
+// Trang 524 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+524 
+29     while(true){ 
+30         system("cls"); 
+31         
+printf("******************************************\n"); 
+32    printf("**  CHUONG TRINH QUAN LY SINH VIEN  
+**\n"); 
+33    printf("**      1. Nhap du lieu              **\n"); 
+34    printf("**      2. In danh sach sinh vien    **\n"); 
+35    printf("**      3. Sap xep sinh vien theo DTB**\n"); 
+36    printf("**      4. Xep loai sinh vien        **\n"); 
+37    printf("**      5. Xuat DS sinh vien         **\n"); 
+38    printf("**      0. Thoat                     **\n"); 
+39    printf("***************************************\n"); 
+40         printf("** Nhap lua chon cua ban**\n"); 
+41         scanf("%d",&key); 
+42         switch(key){ 
+43             case 1: 
+44             printf("\nBan da chon nhap DS sinh vien!"); 
+45                 nhapN(a, n); 
+46                 printf("\nBan da nhap thanh cong!"); 
+47                 daNhap = true; 
+48              printf("\nBam phim bat ky de tiep tuc!"); 
+49                 getch(); 
+50                 break; 
+51             case 2: 
+52                 if(daNhap){ 
+53             printf("\nBan da chon xuat DS sinh vien!"); 
+54                     xuatN(a, n); 
+55                 }else{ 
+56                     printf("\nNhap DS SV truoc!!!!"); 
+57                 } 
+58              printf("\nBam phim bat ky de tiep tuc!"); 
+59                 getch(); 
+60                 break; 
+61             case 3: 

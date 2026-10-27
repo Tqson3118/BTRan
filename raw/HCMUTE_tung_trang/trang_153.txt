@@ -1,0 +1,54 @@
+// Trang 153 - Ngôn ngữ lập trình C_ebook.pdf
+
+150
+truyền tham chiếu. Trong trường hợp này, tham số không nhận giá trị trực 
+tiếp mà nhận địa chỉ của biến bên ngoài. Kết hợp với các phép toán con 
+trỏ, cho phép các câu lệnh bên trong hàm truy xuất đến các biến bên ngoài. 
+Trong ví dụ sau, để người đọc không nhầm lẫn, 2 biến bên trong hàm hoanvi 
+được đổi tên là x và y. Hàm hoán đổi giá trị 2 biến được viết lại như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+#include  <stdio.h>
+void  hoanvi(int *x, int *y) ;
+void main (void)
+{
+ int a = 5, b =6;
+ hoanvi(&a , &b);
+ printf (“a = %d , a= %d”, a,b);	
+}
+void  hoanvi(int *x, int *y)
+{
+	
+int tam;
+	
+tam  = *x;
+	
+*x = *y;
+	
+*y = tam;
+}
+Kết quả sau khi chạy chương trình sẽ là:
+a = 6, b= 5
+Trong ví dụ trên, giá trị của 2 biến a và b của hàm main đã bị 
+thay đổi bởi các đoạn chương trình trong hàm hoanvi. Hàm hoanvi 
+được định nghĩa với 2 tham số kiểu con trỏ. Như chương trước đã 
+giới thiệu, con trỏ được sử dụng để truy xuất biến khác thông qua địa 
+chỉ. Trong hàm main, hàm hoanvi được gọi với 2 giá trị cho tham số 
+là địa chỉ của 2 biến a và b. Lúc này, con trỏ x trong hàm hoán vị sẽ 
+trỏ tới biến a, con trỏ y sẽ trỏ đến biến b, dẫn đến các phép toán trên 
+2 con trỏ này ảnh hưởng trực tiếp đến 2 vùng nhớ cho biến a và biến 
+b của chương trình chính.

@@ -1,0 +1,44 @@
+// Trang 119 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+119 
+Kết quả chƣơng trình: 
+Nhap nhiet do (do C): 33 
+Do F tuong ung la: 91.40. 
+ Bài tập 2.2 
+Viết chƣơng trình tính thể tích hình cầu, khi biết bán kính của hình cầu. 
+Công thức tính thể tích hình cầu: 
+ 
+V = 
+ 
+       
+Phác thảo lời giải: 
+- Khai báo hằng PI. 
+- Nhập bán kinh của hình cầu. 
+- Sử dụng công thức tính V = 
+ 
+       để tính thể tích hình cầu. 
+- In kết quả ra màn hình, với định dạng chỉ gồm 2 chữ số thập phân. 
+Chƣơng trình 
+1 #include <stdio.h> 
+2 #define PI  3.141592653589793238 
+3 int main()  
+4 { 
+5  
+float r; // ban kinh cua hinh cau 
+6  
+float V; // the tich cua hinh cau 
+7  
+printf("Nhap vao ban kinh cua hinh cau: "); 
+8  
+scanf("%f",&r); 
+9  
+V = (4.0 / 3.0) * PI * (r *r *r);  
+10  
+printf("The tich cua hinh cau ban kinh %.2f la %5.2f.\n", r, 
+V); 
+11  
+return(0); 
+12 } 
+Kết quả của chƣơng trình 
+Nhap vao ban kinh cua hinh cau: 6 
+The tich cua hinh cau ban kinh 6.00 la 904.78 

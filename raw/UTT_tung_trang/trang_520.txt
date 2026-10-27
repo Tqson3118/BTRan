@@ -1,0 +1,52 @@
+// Trang 520 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+520 
+Nhap diem sinh vien: 
+ 8.8 
+Ten Sinh vien: An  Diem sV: 9.10 
+Ten Sinh vien: Cuong  Diem sV: 4.50 
+Ten Sinh vien: Thuy  Diem sV: 6.80 
+Ten Sinh vien: Nam  Diem sV: 8.80 
+ Ví dụ 7.17 
+Viết chƣơng trình để ghép hai tệp và ghi vào một tệp mới. 
+Giả sử tệp thứ nhất test1.txt ghi nội dung: “Bo mon he thong thong 
+tin, Khoa CNTT”. Tệp thứ hai test1.txt ghi nội dung “, Truong Dai hoc 
+Cong nghe GTVT”. 
+Tệp kết quả khi ghép tệp 1 và tệp 2 có tên test3.txt có nội dung. 
+“Bo mon he thong thong tin, Khoa CNTT, Truong Dai hoc Cong 
+nghe GTVT” 
+ Chƣơng trình: 
+1  #include <stdio.h> 
+2  #include <stdlib.h> 
+3  int main() 
+4  { 
+5   
+FILE *f1, *f2, *fnew; 
+6   
+char ch, fname1[20], fname2[20], fname3[30]; 
+7   
+8   
+printf("\n\n Chuong trinh ghep hai tep va ghi vao mot tep 
+moi :\n"); 
+9   
+printf("-------------------------------------\n");   
+10   
+// nhap dung ten tep 1 da tao tren cung thu muc cua 
+chuong trinh, vd test1.txt 
+11   
+// ghi san noi dung cua test1.txt 
+12   
+printf("Nhap ten tep 1 : "); 
+13   
+scanf("%s",fname1); 
+14   
+// nhap dung ten tep 2 da tao tren cung thu muc cua 
+chuong trinh, vd test2.txt 
+15   
+// ghi san noi dung cua test2.txt 
+16   
+printf("Nhap ten tep 2 : "); 
+17   
+scanf("%s",fname2); 
+18     // nhap dung ten tep 3 da tao tren cung thu muc cua chuong 
+trinh, vd test3.txt 

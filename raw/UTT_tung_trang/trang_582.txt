@@ -1,0 +1,42 @@
+// Trang 582 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+582 
+Nhóm 5: Từ khóa cấu trúc 
+Từ khóa 
+Ý nghĩa 
+enum 
+Kiểu liệt kê 
+typedef 
+Định nghĩa kiểu mới 
+struct 
+Cấu trúc 
+union 
+Cho phép tạo các kiểu dữ liệu khác nhau trong cùng một 
+vùng nhớ 
+Nhóm 6: Các từ khóa khác 
+Từ khóa 
+Ý nghĩa 
+asm 
+Khai báo bắt đầu mã Assembly 
+const 
+Khai báo hằng (read only) 
+static 
+Khai báo tĩnh (vùng nhớ cố định) 
+extern 
+Tham chiếu đến biến cùng tên nào đó, đã đƣợc định nghĩa 
+bên ngoài 
+register 
+Đặt trƣớc các biến nhằm yêu cầu trình biên dịch duy trì giá 
+trị biến đó trên thanh ghi của máy tính nhằm tăng tốc độ 
+thực hiện 
+auto 
+Dùng để khai báo các biến cục bộ (tuy nhiên rất ít dùng vì 
+mặc định khi khai báo biến cục bộ thì mặc định nó là auto 
+rồi) 
+sizeof 
+Trả về kích thƣớc (byte) vùng nhớ 
+Lƣu ý: Các từ khóa viết thƣờng, không đƣợc đặt định danh trùng với 
+từ khóa. 
+ 
+ 
+ 

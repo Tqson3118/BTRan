@@ -1,0 +1,41 @@
+// Trang 359 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+359 
+36       c++; 
+37     return c; 
+38 } 
+ Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi: 
+ 
+khoa cong nghe thong tin 
+ 
+Chuoi dao nguoc la: 
+ 
+nit gnoht ehgn gnoc aohk 
+5.3.4.6. Chuyển đổi ký tự hoa sang ký tự thường và ngược lại 
+Hàm strlwr() là một hàm dựng sẵn trong C, đƣợc sử dụng để chuyển 
+đổi một chuỗi ký tự đã cho thành các ký tự thƣờng. 
+Cú pháp: 
+ 
+char *strlwr(char *str); 
+Trong đó, con trỏ str trỏ tới chuỗi đang cần chuyển đổi sang ký tự 
+thƣờng, kết quả trả về của hàm là một con trỏ trỏ vào chuỗi ký tự đã đƣợc 
+chuyển đổi sang ký tự thƣờng. 
+Hàm strupr() đƣợc sử dụng để chuyển đổi các ký tự của chuỗi str đã 
+cho sang ký tự viết hoa. 
+Cú pháp: 
+ 
+char *strupr(char *str); 
+Trong đó, con trỏ str trỏ tới chuỗi đang cần chuyển đổi sang ký tự 
+hoa, kết quả trả về là một con trỏ trỏ vào chuỗi đã đƣợc chuyển đổi sang 
+ký tự viết hoa. 
+ Ví dụ 5.57 
+Chuyển đổi ký tự thƣờng thành ký tự hoa. 
+ Cách 1: Sử dụng hàm strlwr() 
+1 #include <stdio.h> 
+2 #include <string.h>  
+3 int main() 
+4 { 
+5    char a[1000]; 
+6    printf("Nhap chuoi can chuyen doi:\n"); 

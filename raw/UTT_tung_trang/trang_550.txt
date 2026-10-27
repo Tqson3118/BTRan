@@ -1,0 +1,38 @@
+// Trang 550 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+550 
+ Bài tập 7.17 
+Viết chƣơng trình nhập vào thông tin của n sinh viên, biết thông tin 
+của một sinh viên bao gồm mã sinh viên (chuỗi ký tự), tên sinh viên 
+(chuỗi ký tự), điểm tổng kết năm học (số thực), đánh giá (chuỗi ký tự). 
+Đánh giá của sinh viên đƣợc dựa vào điểm tổng kết năm học. 
+Nếu điểm tổng kết   5: “Lên lớp” 
+Nếu điểm tổng kết < 5: “Thi lại” 
+Sắp xếp danh sách sinh viên theo điểm tổng kết và ghi vào tệp 
+Dslop.txt 
+Đọc tệp Dslop.txt, lọc các sinh viên có đánh giá “Lên lớp” ghi vào 
+một tệp “Lenlop.txt”, lọc các sinh viên có đánh giá “Thi lại” ghi vào một 
+tệp “Thilai.txt” 
+ Bài tập 7.18 
+Viết chƣơng trình nhập vào thông tin của n nhân viên của một công 
+ty. Thông tin của một nhân viên bao gồm: Mã nhân viên, tên nhân viên, 
+địa chỉ, bậc lƣơng, lƣơng. 
+Biết rằng lƣơng nhân viên = 1.3 *(bậc lƣơng * lƣơng cơ bản) (Lƣơng 
+cơ bản = 1.390.000); 
+a. Ghi thông tin các nhân viên vào tệp nhanvien.bin; 
+b. Đọc thông tin từ tệp nhanvien.bin ghi vào mảng cấu trúc 
+nhanvien[]; 
+c. Sắp xếp lại danh sách nhân viên theo lƣơng, ghi vào tệp 
+nhanviensx.bin. 
+Lƣu ý: 
+- Mỗi ý xây dựng bằng một hàm. 
+ Bài tập 7.19 
+Viết chƣơng trình cho phép nhập từ bàn phím thông tin của n sản 
+phẩm (n đƣợc nhập từ bàn phím), mỗi sản phẩm bao gồm các thông tin: 
+mã hàng (chuỗi ký tự, độ dài tối đa 10 ký tự), tên hàng (chuỗi ký tự, độ 
+dài tối đa 30 ký tự), số lƣợng( kiểu số nguyên), đơn giá (kiểu số thực), số 
+tiền (kiểu số thực). Biết rằng số tiền = đơn giá * số lƣợng. 
+a. Viết hàm tính số tiền của mỗi mặt hàng; 
+b. Ghi thông tin của các sản phẩm vào tệp dssp.bin; 
+c. Đọc nội dung từ tệp dssp.bin ghi vào một mảng; 
+d. Cho biết mặt hàng có số tiền mua lớn nhất.  

@@ -1,0 +1,110 @@
+// Trang 559 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+559 
+Bảng 8.1. Bảng màu đƣợc sử dụng trong chƣơng trình đồ họa 
+Tên hằng 
+Giá 
+trị 
+Backgroup 
+Màu nền 
+Foregroup 
+Màu ký tự 
+Màu hiển thị 
+BLACK 
+0 
+Có 
+Có 
+Đen 
+BLUE 
+1 
+Có 
+Có 
+Xanh da trời 
+GREEN 
+2 
+Có 
+Có 
+Xanh lá cây 
+CYAN 
+3 
+Có 
+Có 
+Xanh lơ 
+RED 
+4 
+Có 
+Có 
+Đỏ 
+MAGENTA 
+5 
+Có 
+Có 
+Tím 
+BROWN 
+6 
+Có 
+Có 
+Nâu 
+LIGHTGRAY 
+7 
+Có 
+Có 
+Xám nhạt 
+DARKGRAY 
+8 
+Không 
+Có 
+Xám đậm 
+LIGHTBLUE 
+9 
+Không 
+Có 
+Xanh da trời nhạt 
+LIGHTGREEN 
+10 
+Không 
+Có 
+Xanh da trời đậm 
+LIGHTCYAN 
+11 
+Không 
+Có 
+Xanh lơ nhạt 
+LIGHTRED 
+12 
+Không 
+Có 
+Đỏ nhạt 
+LIGHTMAGENTA 
+13 
+Không 
+Có 
+Tím nhạt 
+YELLOW 
+14 
+Không 
+Có 
+Vàng 
+WHITE 
+15 
+Không 
+Có 
+Trắng 
+Để thiết lập màu nền sử dụng hàm setbkcolor() 
+Cú pháp: 
+ 
+void setbkcolor(int color); 
+Hàm setbkcolor đặt nền thành màu đƣợc chỉ định bởi tên hằng màu 
+hoặc giá trị của màu đó (tham chiếu Bảng 8.1, những tên hằng màu hoặc 
+giá trị này đƣợc định nghĩa trong Graphics.h). Những màu này cũng có 
+thể đƣợc sử dụng để thiết lập textcolor (màu của văn bản) hoặc điền vào 
+các hình dạng khác nhau mà bạn tạo trong chƣơng trình của mình.  
+ Ví dụ 8.2 
+1 
+#include<graphics.h> /* header file */ 
+2 
+#include<conio.h> 
+3 
+main() 
+4 
+{ 

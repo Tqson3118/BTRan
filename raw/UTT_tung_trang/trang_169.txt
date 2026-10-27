@@ -1,0 +1,59 @@
+// Trang 169 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+169 
+Nhập một số nguyên dƣơng n. Xuất ra số ngƣợc lại.  
+Dữ liệu test: 1706. 
+Kết quả mong đợi: 6071. 
+Phác họa lời giải 
+Ở ví dụ 3.23, ta giải bài này bằng cách dùng vòng lặp for, nhƣng 
+trong vòng lặp for khuyết đi 2 biểu thức Exp1 và Exp3 vì không cần biến 
+chạy và bƣớc nhảy. Chỉ cần xét điều kiện dừng. Bài toán này không biết 
+trƣớc số lần lặp trƣớc. 
+Và chừng nào điều kiện còn đúng n khác 0 thì thực hiện phép lấy số 
+đơn vị (n%10) và bỏ số đơn vị (n/10).  
+Dùng while xử lý nhƣ sau: 
+Chƣơng trình 
+1  
+#include <stdio.h>  
+2  
+int main() 
+3  
+{ 
+4  
+int n, donvi; 
+5  
+printf("Nhap n: "); 
+6  
+scanf("%d", &n); 
+7  
+printf("So dao cua %d la ", n); 
+8  
+while (n > 0) 
+9  
+ 
+{ 
+10  
+ 
+ 
+donvi = n % 10; 
+11  
+ 
+ 
+n = n / 10; 
+12  
+ 
+ 
+printf("%d", donvi); 
+13  
+ 
+} 
+14  
+return 0; 
+15  
+} 
+Kết quả chƣơng trình 
+ 
+Nhap n: 3265 
+ 
+So dao cua 3265 la 5623 
+Nhận xét 

@@ -1,0 +1,32 @@
+// Trang 6 - Ngôn ngữ lập trình C_ebook.pdf
+
+3
+LỜI NÓI ĐẦU
+Trong ngành công nghiệp hiện đại, các hệ thống tự động trở nên 
+phổ biến, hiệu quả, và dần thay thế các hệ thống điều khiển bằng tay.
+Trong các hệ thống tự động, thiết bị được lập trình hầu như đóng vai 
+trò chủ đạo.  Đặc biệt trong kỷ nguyên công nghiệp và cuộc cách mạng 
+công nghiệp 4.0, tự động hoá, vạn vật kết nối (IoT), thông minh nhân 
+tạo (AI) thì các thiết bị lập trình, các hệ thống lập trình chiếm ưu thế và 
+là sức mạnh công nghệ. Ở góc nhìn kỹ thuật, ngôn ngữ lập trình là công 
+cụ cần thiết để tiếp cận công nghệ, đặc biệt là trong cuộc cách mạng 
+công nghiệp 4.0. Ngôn ngữ lập trình không những cung cấp các kiến 
+thức về lập trình, nó còn giúp rèn luyện khả năng tư duy, thông qua việc 
+giải quyết các bài toán, các giải thuật trong lập trình điều khiển. Hiện 
+nay có nhiều ngôn ngữ lập trình khác nhau, mỗi ngôn ngữ có thế mạnh, 
+cũng như phạm vi áp dụng riêng. Tuy nhiên, Ngôn ngữ lập trình C đã 
+được lựa chọn để dạy trong khối kỹ thuật. C là ngôn ngữ chuẩn và nền 
+tảng. Nhiều ứng dụng, trong đó có ứng dụng hệ thống, được xây dựng 
+từ ngôn ngữ C. Mặt khác, ngôn ngữ C được xem là ngôn ngữ nguồn gốc 
+và nền tảng của ngôn ngữ lập trình cấp cao (high-level programming 
+language). Theo quan sát và kinh nghiệm thực tế, các ngôn ngữ phát 
+triển sau đều dựa trên kiến trúc, hoặc có cấu trúc câu lệnh, vận hành của 
+câu lệnh giống như ngôn ngữ C. Do đó, việc học tốt, cũng như hiểu và 
+vận dụng tốt ngôn ngữ C sẽ giúp lập trình viên có thể dễ dàng tiếp cận 
+các ngôn ngữ lập trình hiện đại khác. Tài liệu Giáo trình Ngôn ngữ lập 
+trình C cung cấp cho sinh viên khối kỹ thuật các kiến thức cơ sở về 
+ngôn ngữ lập trình, ngôn ngữ lập trình C, hiểu các đối tượng trong ngôn 
+ngữ lập trình, hiểu cách vận hành của các câu lệnh, các cấu trúc điều 
+kiện, cấu trúc lập, hàm, mảng, con trỏ. Từ đó người học có thể vận dụng 
+vào trong các lĩnh vực khác như lập trình giao diện, lập trình game, lập 
+trình vi điều khiển, vi xử lý, lập trình cho các thiết bị lập trình được… 

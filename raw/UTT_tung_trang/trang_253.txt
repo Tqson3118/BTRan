@@ -1,0 +1,41 @@
+// Trang 253 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+253 
+1. Kiem tra so nguyen to 
+2. In cac so nguyen to 
+3. Kiem tra so hoan hao 
+4. In cac so hoan hao 
+5. Phan so toi gian 
+Moi ban chon: 4 
+nhap n = 18 
+Cac so hoan hao la: 6 
+-----------MENU----------- 
+1. Kiem tra so nguyen to 
+2. In cac so nguyen to 
+3. Kiem tra so hoan hao 
+4. In cac so hoan hao 
+5. Phan so toi gian 
+Moi ban chon: 5 
+Nhap tu so = -6 
+Nhap mau so = -9 
+Phan so toi gian -6/-9 = 2/3 
+Nhận xét 
+Trong chƣơng trình chúng ta thấy từ case 1 đến case 4 đều có lặp các lệnh: 
+       
+ do { 
+           printf("nhap n = "); 
+           scanf("%d",&n); 
+           if (n < 1) 
+            printf("\nn duong, nhap lai\n"); 
+           } while ( n < 1); 
+Mục đích của chƣơng trình là muốn gọi đến hàm nào sẽ nhập n tƣơng 
+ứng cho hàm đó. Nếu chúng ta chỉ nhập một lần n ở đầu của menu thì ta 
+có thể sửa chƣơng trình gọn hơn nhƣ sau: 
+Chƣơng trình 
+ Cách 2:  
+1 
+#include <stdio.h> 
+2 
+#include <math.h> 
+3 
+int kiemTraSNT(int n) 

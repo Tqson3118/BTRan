@@ -1,0 +1,69 @@
+// Trang 398 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+398 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi ky tu: 
+ 
+aproach 
+ 
+Chuoi duoc sap xep lai: aachopr 
+ Cách 2: Sử dụng con trỏ: 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+#include <string.h> 
+4 
+void sort_string(char*); 
+5 
+int main() 
+6 
+{ 
+7 
+   char a[100]; 
+8 
+   printf("Nhap vao chuoi:\n"); 
+9 
+   gets(a); 
+10 
+   sort_string(a); 
+11 
+   printf("Chuoi sau khi sap xep:\n"); 
+12 
+   printf("%s\n", a); 
+13 
+   return 0; 
+14 
+} 
+15 
+ void sort_string(char *s) 
+16 
+{ 
+17 
+   int i, d = 0, length; 
+18 
+   char *p, *kq, ch; 
+19 
+   length = strlen(s); 
+20 
+   kq = (char*)malloc(length+1); 
+21 
+   p = s; 
+22 
+    for ( ch = 'a' ; ch <= 'z' ; ch++ ) 
+23 
+   { 
+24 
+      for ( i = 0 ; i < length ; i++ ) 
+25 
+      { 
+26 
+         if ( *p == ch ) 
+27 
+         { 
+28 
+            *(kq+d) = *p; 
+29 
+            d++; 

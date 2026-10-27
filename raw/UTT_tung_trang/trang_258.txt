@@ -1,0 +1,39 @@
+// Trang 258 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+258 
+5. Phan so toi gian 
+Moi ban chon: 2 
+Cac so nguyen to la: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 
+-----------MENU----------- 
+1. Kiem tra so nguyen to 
+2. In cac so nguyen to 
+3. Kiem tra so hoan hao 
+4. In cac so hoan hao 
+5. Phan so toi gian 
+Moi ban chon: 3 
+46 khong phai la so hoan hao 
+-----------MENU----------- 
+1. Kiem tra so nguyen to 
+2. In cac so nguyen to 
+3. Kiem tra so hoan hao 
+4. In cac so hoan hao 
+5. Phan so toi gian 
+Moi ban chon: 4 
+Cac so hoan hao la: 6 28 
+-----------MENU----------- 
+1. Kiem tra so nguyen to 
+2. In cac so nguyen to 
+3. Kiem tra so hoan hao 
+4. In cac so hoan hao 
+5. Phan so toi gian 
+Moi ban chon: 6 
+-----------MENU----------- 
+1. Kiem tra so nguyen to 
+2. In cac so nguyen to 
+3. Kiem tra so hoan hao 
+4. In cac so hoan hao 
+5. Phan so toi gian 
+Moi ban chon: 5 
+Nhap tu so = 2 
+Nhap mau so = -6 
+Phan so toi gian 2/-6 = -1/3 

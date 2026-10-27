@@ -1,0 +1,81 @@
+// Trang 182 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+182 
+11       printf("\n"); 
+12   } 
+13  //Tam giac can rong 
+14   for (i = 1; i <= n; ++i)  
+15   { 
+16     for (j = 1; j <= n + i - 1; ++j)  
+17   if (j == n - i + 1 || j == n + i - 1 || i == n)  
+printf("*");  
+18   else printf("  "); 
+19     printf("\n"); 
+20   }    
+21   return 0;  
+22 } 
+Kết quả chƣơng trình: 
+Nhap n: 4 
+ 
+ 
+ 
+* 
+ 
+ 
+ 
+ 
+ 
+* 
+* 
+* 
+ 
+ 
+ 
+* 
+* 
+* 
+* 
+* 
+ 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+ 
+ 
+ 
+ 
+* 
+ 
+ 
+ 
+ 
+ 
+* 
+ 
+* 
+ 
+ 
+ 
+* 
+ 
+ 
+ 
+* 
+ 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+ Ví dụ 3.32 
+Tìm ƣớc số lẻ lớn nhất của số nguyên dƣơng n.  
+Dữ liệu test: n = 100. 
+Kết quả mong đợi:  ƣớc lẻ lớn nhất là 25. 
+Chƣơng trình 
+1  #include<stdio.h> 

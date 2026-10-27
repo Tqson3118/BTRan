@@ -1,0 +1,50 @@
+// Trang 151 - Ngôn ngữ lập trình C_ebook.pdf
+
+148
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+#include<stdio.h>
+#include <stdlib.h>
+int   timmax(int a, int b);// khai báo hàm
+void main (void)
+{
+  int a = 5, b = 7, c=6, d= 9, max1, max2, max;
+  max1 = timmax (a,b);
+  max2 = timmax(c,d);
+  max = timmax(max1, max2);                   
+  printf( “ max = :%d”,max);
+}
+int   timmax(int a, int b)
+{
+  int max;
+  if (a>b) max = a;
+  else   max = b;
+  return   max;
+}
+Hàm timmax có thể được đặt ở bất kỳ vị trí nào trong chương trình 
+cùng với hàm main và các hàm khác. Khi nó đã được khai báo ở vị trí 
+đầu chương trình, bất kỳ hàm nào trong cùng một tập tin chương trình 
+đều có thể gọi hàm timmax.
+6.5. TRUYỀN THAM SỐ CHO HÀM
+6.5.1. Truyền giá trị cho tham số hàm
+Truyền giá trị cho tham số hàm, hay gọi ngắn gọn là truyền tham 
+số kiểu tham trị, là phương pháp phổ biến khi gọi hàm. Các giá trị tại 
+vị trí tham số trong lúc gọi hàm được sao chép vào các biến cục bộ của 
+hàm, sau khi hàm kết thúc, các biến này tự mất đi. 
+Ví dụ về phương pháp truyền giá trị cho tham số hàm như sau: 

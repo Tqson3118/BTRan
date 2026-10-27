@@ -1,0 +1,39 @@
+// Trang 512 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+512 
+10        } 
+11        printf("%c", c);  
+12     } 
+13     fclose(fp); 
+14     return(0); 
+15  } 
+  Kết quả chƣơng trình: 
+Truong DH Cong nghe GTVT 
+ Yêu cầu đối với sinh viên: Sử dụng ví dụ 7.8 và ví dụ 7.9 viết 
+thành một chƣơng trình gồm hai hàm: 
+ 
+Hàm ghi dữ liệu vào tệp; 
+ 
+Hàm đọc và hiển thị dữ liệu ra màn hình. 
+7.2.7. Một số hàm khác đƣợc sử dụng để xử lý tệp 
+ 
+Trong các ví dụ ở trên, chúng ta đã sử dụng các hàm fputs(), hàm 
+fgets(), nhƣng chƣa rõ chức năng của các hàm này. Mục 7.2.7 sẽ giải 
+thích kỹ hơn về  một số hàm đƣợc sử dụng để xử lý với tệp. 
+7.2.7.1. Hàm fputs() 
+Cú pháp: 
+ 
+int fputs(const char  * s,  FILE  * stream) 
+Chức năng: Ghi một chuỗi ký tự vào tệp. 
+ Ví dụ 7.10 
+ Xét đoạn chƣơng trình sau đây: 
+1  #include <stdio.h> 
+2  main() { 
+3     FILE *fp; 
+4     // Gan tep 
+5     fp = fopen("data_7_10.txt", "w"); 
+6     // Ghi chuoi vao tep 
+7     fputs("Hoc lap trinh C!", fp); 
+8     // dong tep 
+9     fclose(fp); 
+10  } 

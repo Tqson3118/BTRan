@@ -1,0 +1,42 @@
+// Trang 206 - Ngôn ngữ lập trình C_ebook.pdf
+
+203
+Trong ví dụ trên, các hàm được đặt trong các tệp khác nhau, và 
+trong hàm chương trình chính sử dụng chỉ thị bao hàm tệp #include để 
+khai báo cho quá trình tiền xử lý. Trong thực tế, các hàm được định 
+nghĩa trong các tệp mã nguồn (.c), đồng thời được khai báo trong tệp 
+tiêu đề (.h). Trong trường hợp này thì tập tin điều khiển trình biên dịch 
+(makefile) phải được thay đổi để tạo liên kết các tệp.
+8.3. CHỈ THỊ ĐỊNH NGHĨA  #define
+Chỉ thị định nghĩa #define được sử dụng để định nghĩa một đối tượng 
+thay thế. Sau khi định nghĩa, đối tượng được dùng trong toàn bộ các hàm 
+cùng trong một tệp mà đối tượng được định nghĩa. Chỉ thị #define được 
+dùng với 2 mục đích khác nhau; định nghĩa một thay thế hoặc định nghĩa 
+một macro. Macro được hiểu là một đoạn code. Macro chỉ là một đoạn 
+code được định nghĩa ngắn gọn với một chuỗi. Macro không phải làm hàm.
+Cú pháp sử dụng chỉ thị #define định nghĩa một chuỗi tương 
+đương như sau:
+#define   tên   giáTrịThayThế  
+Ví dụ sử dụng chỉ thị #define định nghĩa hằng số và chuỗi như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+#include  <stdio.h>
+#define PI 3.14
+#define hello  “xin chao \n”
+void main (void)
+{
+	 float r = 2 ; 
+	 printf(hello) ;
+	 printf (“Dien tich hinh tron la %.2f”,r*r*PI);
+}
+Dòng thứ 2 là thao tác định nghĩa một hằng số PI. Trong chương 
+trình, khi sử dụng chuỗi có tên PI, trình biên dịch tự động thay thế bằng giá 
+trị 3.14 như đã được định nghĩa. Tương tự, dòng 3 định nghĩa một chuỗi 
+hello tương đương với một chuỗi “xin chao \n”. Khi gặp chuỗi hello tại 

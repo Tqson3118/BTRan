@@ -1,0 +1,29 @@
+// Trang 127 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+127 
+Trong đó: 
+- expression: là biểu thức điều kiện (hay còn gọi là biểu thức logic) 
+- statement: là câu lệnh đƣợc thực hiện tùy theo điều kiện, có thể là 
+câu lệnh đơn (một câu lệnh) hoặc câu lệnh ghép (từ hai câu lệnh trở lên, 
+đƣợc đặt trong dấu {}).  
+ Chú ý: Không đặt dấu chấm phẩy sau câu lệnh if 
+if (expression);  
+Trình biên dịch không báo lỗi nhƣng khối lệnh không đƣợc thực hiện 
+cho dù điều kiện đúng hay sai. 
+b. Hoạt động: Nếu biểu thức điều kiện (expression) đúng thì thực 
+hiện câu lệnh (statement). Nếu biểu thức điều kiện sai thì máy bỏ qua câu 
+lệnh (statement), thực hiện các câu lệnh tiếp theo trong chƣơng trình. 
+c. Sơ đồ khối 
+ 
+Hình 3.2. Sơ đồ khối biểu diễn câu lệnh if dạng khuyết 
+ Ví dụ 3.1 
+Viết chƣơng trình nhập vào hai số nguyên a, b. Tìm số lớn nhất của 
+hai số và in giá trị lớn nhất đó ra màn hình. 
+ Phác họa lời giải:  
+Trƣớc tiên ta cho a là giá trị lớn nhất, bằng cách gán a cho max, sau 
+đó so sánh b với max, nếu b lớn hơn max ta gán b cho max và kết quả số 
+lớn nhất là max. 
+ Mô tả bằng ngôn ngữ tự nhiên  
+- Khai báo 3 biến a, b, max; 
+- Nhập vào a; 
+- Nhập vào b; 

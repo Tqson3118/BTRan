@@ -1,0 +1,45 @@
+// Trang 42 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+42 
+Tiêu chuẩn chung yêu cầu char, signed char, unsigned char là các 
+kiểu khác nhau. Ngoài ra, các hàm chuẩn về dãy các ký tự sử dụng các 
+con trỏ chỉ tới kiểu char (không có định tính), nhiều trình dịch C sẽ bắt lỗi 
+(hay cảnh cáo) nếu các kiểu ký tự khác đƣợc dùng nhƣ là dãy ký tự đƣợc 
+chuyển vào các hàm này. 
+Bảng 1.3. Kiểu dữ liệu char 
+Kiểu 
+Phạm vi 
+Kích thƣớc 
+[signed] char 
+-128 đến 127 
+1byte 
+unsigned char 
+0 đến 255 
+1byte 
+ Ví dụ 1.22 
+Đoạn chƣơng trình sau minh họa sự khác nhau giữa hai kiểu char 
+char ch1;  
+unsigned char ch2; 
+ch1 = 200; ch2 = 200; 
+Khi đó, nếu ta dùng câu lệnh in ra màn hình: 
+  printf(“ch1 = %d, ch2 = %d”, ch1, ch2); 
+thì sẽ cho kết quả nhƣ sau ch1 = -56, ch2 = 200, nhƣng cả ch1 và ch2 đều 
+biểu diễn chung một ký tự có mã trong bảng mã ASCII là 200, tức là nếu 
+ta dùng câu lệnh in printf(“ch1 = %c, ch2 = %c”, ch1, ch2) thì sẽ ra màn 
+hình hai giá trị ký tự của ch1 và ch2 là giống nhau. 
+Giải thích: Số 200 đƣợc biểu diễn ở hệ nhị phân là 11001000. Vì 
+ch2 là unsigned char (số không dấu) nên tất cả các bit trong dãy nhị phân 
+11001000 đều đƣợc dùng để tính giá trị vậy giá trị của ch2 là 200, còn 
+ch1 là kiểu signed char (có dấu) nên bit đầu tiên trong dãy nhị phân là bit 
+dấu, ở đây là bit 1 nên đó là số âm. Nhƣ vậy, dãy nhị phân trên là biểu 
+diễn số âm ở dạng mã bù. Để chuyển về biểu diễn ở dạng mã ngƣợc ta lấy 
+dãy nhị phân trên trừ cho 1 đƣợc kết quả là 11000111. Từ mã ngƣợc trên 
+ta đảo ngƣợc các bit sẽ đƣợc biểu diễn ở dạng mã thuận nhƣ sau 
+10111000. Giá trị của dãy nhị phân 10111000 là  -56. 
+1.4.2.2. Bổ từ short và long 
+Hai bổ từ này đƣợc sử dụng khi muốn biểu diễn số nguyên ngắn hơn 
+hoặc dài hơn chiều dài bình thƣờng. Bổ từ short đƣợc sử dụng khi chiều 
+dài yêu cầu ngắn hơn chiều dài bình thƣờng và bổ từ long đƣợc dùng khi 
+chiều dài yêu cầu dài hơn chiều dài số nguyên bình thƣờng. 
+Bổ từ short đƣợc sử dụng với kiểu dữ liệu int. Nó sửa đổi kiểu dữ 
+liệu int theo hƣớng chiếm ít vị trí bộ nhớ hơn. Nhƣ vậy, nếu kiểu dữ liệu 

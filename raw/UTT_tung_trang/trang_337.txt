@@ -1,0 +1,73 @@
+// Trang 337 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+337 
+5.3.2. Khai báo 
+5.3.2.1. Khai báo bằng mảng 
+ 
+char str_name[size]; 
+Trong đó: 
+ 
+str_name: tên biến chuỗi; 
+ 
+size: độ dài của chuỗi; 
+ 
+char: là kiểu dữ liệu ký tự; 
+Độ dài tối đa của biến chuỗi là một hằng nguyên có giá trị từ 1 đến 
+255. Khai báo độ dài tối đa để khi biên dịch, chương trình cấp số ô nhớ 
+theo khai báo, tránh trường hợp khai báo thừa hoặc thiếu, dẫn đến tình 
+trạng lãng phí bộ nhớ. 
+ Ví dụ 5.42 
+Khai báo chuỗi Ho_ten có độ dài tối đa 25 ký tự: 
+ 
+char Ho_ten[25]; 
+Với khai báo này, chƣơng trình sẽ cung cấp 25 + 1 bytes để lƣu trữ nội 
+dung của biến Ho_ten, byte cuối cùng lƣu trữ ký tự „\0‟ kết thúc chuỗi. 
+ 
+Hình ảnh minh họa: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\0 
+5.3.2.2. Khai báo và khởi tạo giá trị 
+ 
+char str_name[] = < “const_str”>; 
+Trong đó: 
+ 
+str_name: tên biến chuỗi; 
+ 
+const_str: hằng chuỗi; 
+ Ví dụ 5.43 
+Cho chƣơng trình sau đây: 
+1 
+#include<stdio.h>  
+2 
+int main()  
+3 
+{     
+4 
+    // khai bao va khoi tao gia tri 
+5 
+    char str[] = "DHCNGTVT";  
+6 
+    // in chuoi ky tu 

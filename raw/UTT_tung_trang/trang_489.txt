@@ -1,0 +1,89 @@
+// Trang 489 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+489 
+15 { 
+16  
+printf("---------------------------------\n"); 
+17  
+printf("|  TEN NV  |   MANV   |  TUOi  | \n"); 
+18  
+printf("---------------------------------\n"); 
+19 } 
+20 void hienthi(Nhanvien ds_nv[], int n) 
+21 { 
+22  
+int i = 0; 
+23  
+tieude(); 
+24  
+if (n == 0) printf("Danh sach nhan vien rong!\n "); 
+25  
+while(i < n) 
+26  
+{ 
+27  
+ 
+if(ds_nv[i].manv!="") 
+28  
+ 
+ 
+{ 
+29  
+ 
+ 
+ 
+printf("%-27s", ds_nv[i].tennv); 
+30  
+ 
+ 
+ 
+printf("%-15s", ds_nv[i].manv); 
+31  
+ 
+ 
+ 
+printf("%-5d", ds_nv[i].tuoi); 
+32  
+ 
+ 
+ 
+printf("\n"); 
+33  
+ 
+ 
+} 
+34  
+ 
+i++; 
+35  
+}  
+36 } 
+37 void Themnv(Nhanvien ds_nv[], int *n) 
+38 { 
+39 kt: 
+40  
+printf("Nhap ma nhan vien:");  
+41  
+scanf("%s", &ds_nv[*n].manv); 
+42  
+fflush(stdin); 
+43  
+if (timkiem(ds_nv, ds_nv[*n].manv, *n)!=-1) 
+44  
+ 
+{ 
+45  
+ 
+ 
+printf("Ma nhan vien da ton tai\n");  
+46  
+ 
+ 
+goto kt; 
+47  
+ 
+} 
+48  
+printf("Nhap ten nhan vien:"); 
+49  
+fflush(stdin); 

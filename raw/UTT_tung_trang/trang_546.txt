@@ -1,0 +1,61 @@
+// Trang 546 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+546 
+yeu             => 1 
+mau             => 1 
+ay              => 1 
+vo              => 1 
+cung            => 1 
+tho             => 1 
+cua             => 1 
+con             => 1 
+nguyen          => 1 
+trang           => 1 
+ Bài tập 7.9 (*)  Bài đọc thêm 
+Viết chƣơng trình để tìm và thay thế một từ trong tệp văn bản. 
+Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+#include <string.h> 
+4 
+#define BUFFER_SIZE 1000 
+5 
+/* Dinh nghia ham thay the */ 
+6 
+void replaceAll(char *str, const char *oldWord, const char 
+*newWord); 
+7 
+int main() 
+8 
+{ 
+9 
+    /* Con tro tep anh xa den tep van ban */ 
+10 
+    FILE * fPtr; 
+11 
+    FILE * fTemp; 
+12 
+    char path[100]; 
+13 
+    char buffer[BUFFER_SIZE]; 
+14 
+    char oldWord[100], newWord[100]; 
+15 
+    printf("Nhap tep van ban ban dau: "); 
+16 
+    scanf("%s", path); 
+17 
+    printf("Nhap tu can thay the: "); 
+18 
+    scanf("%s", oldWord); 
+19 
+    printf("Duoc thay the bang tu : "); 
+20 
+    scanf("%s", newWord); 
+21 
+    /* Mo tat ca cac tep tin can thiet */ 
+22 
+    fPtr  = fopen(path, "r"); 

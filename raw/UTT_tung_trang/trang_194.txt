@@ -1,0 +1,82 @@
+// Trang 194 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+194 
+35  
+ 
+       break; 
+36  
+ 
+case 9: 
+37  
+ 
+       printf("Nine\n"); 
+38  
+ 
+       break; 
+39  
+ 
+default: 
+40  
+ 
+  printf("So khong hop le. \nHay thu lai ....\n"); 
+41  
+ 
+       break; 
+42  
+      } 
+43  
+} 
+Kết quả chƣơng trình: 
+Nhap vao mot so(0-9) : 2 
+Two 
+ Bài tập 3.6 
+Viết chƣơng trình nhập vào một năm dƣơng lịch, cho biết năm âm 
+lịch tƣơng ứng. 
+Phác họa lời giải 
+Cách tính Lịch Âm Lịch = Can + Chi. 
+ 
+Bƣớc 1: Xác định Can 
+ 
+Tính Can dựa vào số dƣ (Ca) của phép chia năm dƣơng lịch cho 
+10 rồi tra theo bảng sau đây: 
+ 
+Ca = namDL % 10 
+Ca 
+0 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+Can Canh Tân 
+Nhâm Quý Giáp Ất 
+Bính Đinh Mậu Kỷ 
+ 
+Bƣớc 2: Xác định Chi 
+ 
+Tính Chi dựa vào số dƣ (Ci) của phép chia năm dƣơng lịch cho 12 
+rồi tra theo bảng sau đây: 
+ 
+Ci = namdL % 12 
+Ci 
+0 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+11 
+Chi Thân Dậu Tuất Hợi Tý Sửu Dần Mão Thìn Tỵ Ngọ Mùi 
+- Nhập vào năm dƣơng lịch. 
+- Sử dụng các biến Ca (dƣ của phép chia năm dƣơng lịch cho 10) và 
+biến Ci (dƣ của phép chia năm dƣơng lịch cho 12) để xác định Can và Chi 
+tƣơng ứng. 

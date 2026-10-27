@@ -1,0 +1,46 @@
+// Trang 232 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+232 
+c >0)  
+11  { 
+12   
+if (a == b && b == c) printf("\nTam giac deu"); 
+13   
+else if (a == b ||b == c|| c == a) printf(" \nTam giac can"); 
+14     
+else if (a * a + b * b == c * c ||a * a + c * c == b * b||c * c 
++ b * b == a * a) printf("\nTam giac vuong"); 
+15   
+else printf("\nTam giac thuong"); 
+16   
+float p = (a + b + c)/2; 
+17   
+float s = sqrt(p * (p - a) * ( p - b) * (p - c)); 
+18   
+printf("\nChu vi tam giac: %.2f",2 * p); 
+19   
+printf("\nDien tich tam giac %.2f", s); 
+20  } 
+21  else printf("\n khong la tam giac"); 
+22  } 
+Dựa vào chƣơng trình trên ta chia thành hàm nhƣ sau: 
+- Từ dòng 7 đến dòng 9:  
+ 
+printf("\nNhap canh a= "); scanf("%f", &a); 
+ 
+printf("\nNhap canh b= "); scanf("%f", &b); 
+ 
+printf("\nNhap canh c= "); scanf("%f", &c); 
+Để tránh lặp đi lặp lại nhiều lệnh, chúng ta sẽ tách thành 1 hàm nhập.  
+- Dòng 10: tách thành hàm kiểm tra tam giác. 
+- Từ dòng 12 đến dòng 15 tách thành hàm phân loại tam giác. 
+if (a == b && b == c) printf("\nTam giac deu"); 
+else if (a == b ||b == c|| c == a) printf(" \nTam giac can"); 
+else if (a * a + b * b == c * c ||a * a + c * c == b * b||c * c + b * b == 
+a * a) printf("\nTam giac vuong"); 
+else printf("\nTam giac thuong"); 
+- Từ dòng 16 đến dòng 21 tách thành hàm tính diện tích, chu vi tam giác: 
+ 
+float p = (a + b + c)/2; 
+ 
+float s = sqrt(p * (p - a) * (p - b) * (p - c)); 

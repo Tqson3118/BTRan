@@ -1,0 +1,45 @@
+// Trang 341 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+341 
+5  
+char name[50]; 
+6  
+printf("\nNhap vao ten day du: \n"); 
+7  
+gets(name); 
+8  
+printf("=============\n"); 
+9  
+printf("%s", name); 
+10  
+return 0; 
+11 } 
+ Kết quả chƣơng trình: 
+Nhap vao ten day du: 
+Le Thi Chi 
+============= 
+Le Thi Chi 
+Kết quả của hai đoạn chƣơng trình hoàn toàn khác nhau, ở ví dụ sử 
+dụng hàm gets(), chƣơng trình in ra toàn bộ chuỗi ký tự nhập vào, trong khi ở 
+ví dụ sử dụng hàm scanf() chỉ đọc ra từ đầu tiên “Le”, lý do thật đơn giản, 
+bởi vì hàm scanf() xem từ “Le” nhƣ một giá trị và trong C, hàm scanf() đơn 
+giản chỉ dùng cho việc nhập chuỗi không có ký tự trắng, chẳng hạn nếu nhập 
+“LeThiChi” thì chƣơng trình sẽ in toàn vẹn chuỗi ký tự này. 
+5.3.3.2. Xuất chuỗi ký tự ra màn hình 
+Trong C, để in một biến chuỗi str ra màn hình chuẩn stdout, ta có thể 
+sử dụng một trong hai câu lệnh sau đây:  
+ 
+puts(str); 
+ 
+printf(str); 
+Hàm puts() có thể đƣợc ƣu tiên để in chuỗi vì nó thƣờng ít tốn kém 
+hơn (Việc thực hiện puts() đơn giản hơn hàm printf())và nếu trong chuỗi 
+có các ký tự định dạng, chẳng hạn nhƣ “%” thì printf() sẽ đƣa ra những 
+kết quả khác không mong đợi. Ngoài ra nếu str là một chuỗi đầu vào của 
+ngƣời dùng, việc sử dụng hàm printf() có thể gây ra sự cố về bảo mật. 
+ 
+Cũng lƣu ý rằng, hàm puts() di chuyển con trỏ đến dòng tiếp theo. 
+Nếu chúng ta không muốn di chuyển con trỏ, có thể sử dụng hàm fputs() 
+là một biến thể của hàm puts() nhƣ sau: 
+ 
+fputs(str, stdout) 

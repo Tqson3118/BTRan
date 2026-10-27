@@ -1,0 +1,39 @@
+// Trang 221 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+221 
+Khi gặp một lời gọi hàm ở một vị trí nào đó thì hàm bắt đầu đƣợc 
+thực hiện, tức là máy sẽ tạm rời vị trí đó và chuyển đến hàm tƣơng ứng. 
+Quá trình đó sẽ diễn ra theo trình tự bốn bƣớc sau:  
+1. Cấp phát bộ nhớ cho các tham số và các biến tự động.  
+2. Gán giá trị của các tham số thực sự cho các tham số hình thức (hay 
+còn gọi là đối) tƣơng ứng: Nếu đối không phải là con trỏ thì gán giá trị 
+của tham số thực sự cho đối, nếu tham số hình thức là con trỏ thì gán địa 
+chỉ của tham số thực sự cho tham số tƣơng ứng  
+3. Thực hiện các câu lệnh trong thân hàm. 
+4. Khi gặp câu lệnh return hoặc dấu } cuối cùng của thân hàm thì 
+máy sẽ giải phóng bộ nhớ cho các đối, các biến/mảng tự động, thoát khỏi 
+hàm và trở về nơi gọi hàm đó.  
+Lƣu ý: 
+- Đối và biến tự động đƣợc cấp phát bộ nhớ khi hàm đƣợc xét đến và 
+sẽ bị giải phóng khỏi bộ nhớ trƣớc khi ra khỏi hàm. Nhƣ vậy, không thể 
+mang giá trị của đối ra khỏi hàm. Có nghĩa là không thể sử dụng đối để 
+làm thay đổi giá trị của bất kỳ đại lƣợng nào bên ngoài hàm. Nhƣng đối 
+và biến tự động có thể trùng tên với bất kỳ đại lƣợng nào ở bên ngoài hàm 
+mà không gây ra một nhầm lẫn nào.  
+- Khi một hàm đƣợc gọi, giá trị của các tham số thực sự đƣợc gán 
+cho các đối không phải là con trỏ. Nhƣ vậy, các đối không phải là con trỏ 
+chính là các bản sao của các tham số thực sự. Hàm chỉ làm việc trên các 
+đối này, tức là chỉ làm việc trên các bản sao. Các đối này có thể bị biến 
+đổi trong thân hàm, nhƣng các tham số thực sự không bị thay đổi. 
+4.2.2.2. Truyền tham số 
+a. Phạm vi hoạt động của biến 
+Biến toàn cục:  
++ Khai báo: Bên ngoài các hàm (cả hàm main). Thƣờng sau khai báo 
+#include. 
++ Phạm vi: Toàn bộ chƣơng trình. 
++ Thời gian hoạt động: Đến khi kết thúc chƣơng trình. 
++ Ƣu điểm: Sử dụng linh hoạt. 
++ Nhƣợc điểm: Tốn ô nhớ của máy tính. 
+Biến cục bộ: 
++ Khai báo: Trong thân của hàm hoặc khối lệnh{ }. 
++ Phạm vi: Chỉ trong bản thân hàm hoặc khối lệnh đó sử dụng đƣợc. 

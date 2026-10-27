@@ -1,0 +1,65 @@
+// Trang 187 - Ngôn ngữ lập trình C_ebook.pdf
+
+184
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+#include <stdio.h>
+#include <conio.h>
+union KieuSo
+{
+	
+int x;
+	
+double y;
+};
+int main (void)
+{
+	
+union KieuSo a;
+	
+printf(“Kich thuoc bien a: %d\n”,sizeof(a));
+	
+	
+a.x = 5;
+	
+printf(“%d\n”,a.x);
+	
+	
+a.y = 7.85;
+	
+printf(“%f\n”,a.y);
+	
+getch();
+	
+return 0;
+}
+Trong chương trình này, ở dòng lệnh số 14, câu lệnh union KieuSo 
+a; là câu lệnh khai báo biến a thuộc kiểu dữ liệu KieuSo là kiểu union. 
+Sau câu lệnh này, chương trình sẽ phát sinh cho biến a một vùng nhớ, 
+vùng nhớ này sẽ là vùng nhớ dùng chung cho cả hai biến thành phần 
+a.x và a.y; kích thước vùng nhớ sẽ là 8 bytes (bằng với kích thước vùng 
+nhớ của biến thành phần lớn nhất – biến y kiểu double) như minh họa 
+ở hình sau:

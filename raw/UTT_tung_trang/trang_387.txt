@@ -1,0 +1,43 @@
+// Trang 387 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+387 
+14       { 
+15  
+  printf("Phan tu thu - %d : ",i+1); 
+16  
+  scanf("%d",a+i); 
+17  
+  }    
+18    for(i=0;i<n;i++) 
+19    { 
+20     for(j=i+1;j<n;j++) 
+21     { 
+22        if( *(a+i) > *(a+j)) 
+23        { 
+24       tmp = *(a+i); 
+25       *(a+i) = *(a+j); 
+26       *(a+j) = tmp; 
+27        } 
+28     } 
+29    } 
+30    printf("In mang sau khi sap xep : \n"); 
+31    for(i=0;i<n;i++) 
+32       { 
+33  
+  printf("Phan tu - %d : %d \n",i+1,*(a+i)); 
+34  
+  }          
+35 printf("\n"); 
+36 free(a); 
+37 } 
+  Kết quả chƣơng trình: 
+Sap xep mang su dung con tro: 
+------------------------------ 
+Nhap so phan tu cua mang: 5 
+Nhap 5 phan tu cua mang: 
+Phan tu thu - 1: 12 
+Phan tu thu - 2: 5 
+Phan tu thu - 3: 65 
+Phan tu thu - 4: 33 
+Phan tu thu - 5: 4 
+In mang sau khi sap xep: 

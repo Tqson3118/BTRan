@@ -1,0 +1,39 @@
+// Trang 385 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+385 
+Phan tu thu - 3: 54 
+Phan tu thu - 4: 22 
+Cac phan tu cua mang theo thu tu dao nguoc: 
+Phan tu - 4: 22 
+Phan tu - 3: 54 
+Phan tu - 2: 3 
+Phan tu - 1: 12 
+ Bài tập 5.7 
+Viết chƣơng trình tìm phần tử lớn nhất của một mảng đƣợc cấp phát 
+bộ nhớ động. 
+ Chƣơng trình 
+1 #include <stdio.h> 
+2 #include <stdlib.h> 
+3 int main() 
+4 { 
+5     int i,n; 
+6     float *p; 
+7  
+printf("\nTim kiem phan tu lon nhat cua mang :\n");  
+8  
+printf("------------------------------------\n");   
+9      printf(" Nhap so phan tu cua mang (1 den 100): "); 
+10      scanf("%d",&n); 
+11     // su dung ham calloc() cap phat bo nho cho n phan tu  
+12     p=(float*)calloc(n,sizeof(float));   
+13     if(p==NULL) 
+14     { 
+15         printf("Khong du bo nho cap phat."); 
+16         exit(0); 
+17     } 
+18     printf("\n"); 
+19     for(i=0;i<n;++i)   
+20     { 
+21        printf("Nhap phan tu thu %d: ",i+1); 
+22        scanf("%f",p+i); 
+23     } 

@@ -1,0 +1,30 @@
+// Trang 33 - Ngôn ngữ lập trình C_ebook.pdf
+
+30
+1.8.  BIẾN
+Như đã đề cập ở phần trước, biến là một vùng nhớ trong bộ nhớ 
+RAM dùng để lưu trữ dữ liệu trong quá trình xử lý của chương trình. 
+Muốn tạo ra một biến, chúng ta cần tiến hành khai báo biến. Ví dụ, 
+trong chương trình trên, câu lệnh:
+int a; 
+là câu lệnh khai báo biến có tên gọi là a với kiểu dữ liệu là kiểu 
+số nguyên int. Lúc này, chương trình sẽ tạo ra một vùng nhớ kiểu số 
+nguyên cho biến a và giá trị dữ liệu hiện tại đang chứa trong vùng nhớ 
+biến a là một giá trị ngẫu nhiên. 
+a
+2019896881
+Để quản lý giá trị ban đầu của biến sau khi khai báo ta có thể 
+khởi tạo giá trị ban đầu cho biến ngay tại thời điểm khai báo biến. 
+Ví dụ, câu lệnh
+int a = 0;   
+sẽ tạo ra vùng nhớ cho biến a và khởi tạo giá trị ban đầu là số 
+0 cho vùng nhớ biến a.
+a
+0
+Như vậy, cú pháp chung của câu lệnh khai báo biến trong C sẽ là:
+TênKiểuDữLiệu       tênBiến;
+hoặc:
+TênKiểuDữLiệu       tênBiến = giá trị khởi tạo;
+Ta cũng có thể khai báo một danh sách gồm nhiều biến có cùng 
+kiểu dữ liệu bằng một câu lệnh duy nhất. Ví dụ, có thể viết
+int a, b, tong;   	 

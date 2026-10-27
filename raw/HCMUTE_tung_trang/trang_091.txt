@@ -1,0 +1,70 @@
+// Trang 91 - Ngôn ngữ lập trình C_ebook.pdf
+
+88
+Đây là vòng lặp do … while có kết hợp với với lệnh goto… nhãn. 
+Dòng lệnh ở dòng 7 chỉ thực hiện khi a = 4 và lệnh goto ở dòng 11 sẽ 
+được thực hiện.
+3.7. BÀI TẬP
+1. Hãy tìm và sửa lỗi trong các câu/đoạn lệnh sau:
+a.
+int a, i;
+scanf(“%d”,&a);
+printf(“Nhap 5 so nguyen: \n”);
+i = 0;
+while (i < 5);
+	
+scanf(“%d”, &a);
+	
+i++;
+b.
+float a = -1;
+while (a <0 && a > 10)
+{
+	
+printf(“Nhap so trong pham vi 0 - 10: \n”);
+	
+scanf(“%f”,&a);
+}
+c.
+int a = -1;
+while (a <= 0)
+do
+{
+	
+printf(“Nhap so > 0: \n”);
+	
+scanf(“%d”,&a);
+}
+d.
+int b;
+do
+	
+printf(“Nhap so nguyen duong: “);
+	
+scanf(“%d”,&b);
+while (a < 0);
+e.
+int kq = 1,i = 0;
+int a;
+scanf(“%d”,&a);
+for (i < 5)
+{
+	
+kq = a*kq; i++;
+}
+printf(“%d”,kq);
+int a, i=0;
+printf("Nhap vao 5 so nguyen: \n"}
+while (i<5)
+{ scanf ("%d",&a);
+i++;}
+float a=-1;
+while (a<0||a>10)
+{ printf("Nhap so trong pham vi 0 - 10:\n");
+scanf("%f",&a);
+}
+while (a<=0);
+{
+}
+b=0
+while (i<5) hoặc for (;i<5;)

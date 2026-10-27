@@ -1,0 +1,40 @@
+// Trang 41 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+41 
+unsigned char d; 
+short int e;  
+ 
+ 
+long int f; 
+long double g; 
+1.4.2.1. Bổ từ signed và unsigned 
+Khi khai báo một số nguyên, mặc định đó là số nguyên có dấu (âm, 
+dƣơng). Bổ từ signed và unsigned đƣợc sử dụng để thể hiện dấu của các 
+kiểu dữ liệu ký tự hoặc số nguyên. 
+Có hai kiểu char và int có thể có dấu âm hoặc không. Theo mặc định 
+thì mọi kiểu int là có dấu (nghĩa là chúng chấp nhận các số âm). Để dùng 
+dƣới dạng không có dấu (tức là kiểu nguyên chỉ chấp nhận các số không 
+âm) thì từ khoá unsigned phải đƣợc dùng. Ngoài ra, thay vì khai báo đầy 
+đủ trong dạng unsigned int, ngƣời ta có thể lƣợc bỏ bớt từ khóa int (và nó 
+đƣợc xem nhƣ hiểu ngầm - điều này chỉ dùng đƣợc cho kiểu int mà thôi).  
+ Ví dụ 1.20 
+Khai báo unsigned int a và unsigned a đƣợc chƣơng trình xem là 
+tƣơng đƣơng nhau. 
+Kiểu unsigned chỉ rõ rằng một biến chỉ có thể nhận giá trị dƣơng. Bổ 
+từ này thƣờng đƣợc sử dụng với kiểu int và trong một vài trƣờng hợp có 
+thể đƣợc sử dụng với kiểu dữ liệu float, nhƣng điều này làm mất tính linh 
+động của mã lệnh. 
+Với việc thêm bổ từ unsigned vào trƣớc kiểu dữ liệu int, miền giá trị 
+của các số dƣơng này đƣợc tăng lên gấp đôi. 
+Chẳng hạn, nếu ta khai báo: unsigned int a; khi đó phạm vi của biến 
+a sẽ là [0, 65535], thay vì [-32768, 32767] mà kiểu int hỗ trợ. 
+Đặc tả của C không xác định rõ ràng là kiểu char sẽ là loại có dấu 
+hay không dấu; khi đó, dấu của kiểu này tùy thuộc vào quy định của nhà 
+phát hành trình dịch. Nhƣ vậy, một cách để giảm sai sót khi làm việc trên 
+nhiều loại trình dịch C khác nhau là khai báo rõ ràng bằng các định 
+tính signed hay unsigned nếu dùng kiểu char để tính toán trên các con số. 
+(Điều này thực sự sẽ không quá quan trọng nếu dùng kiểu char nhƣ là 
+kiểu "ký tự".) 
+ Ví dụ 1.21 
+unsigned char g; 
+signed char t; 

@@ -1,0 +1,38 @@
+// Trang 186 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+186 
+5  int  n, i, kt;  
+6  printf(“Nhap n:”);  
+7  scanf(“%d”,&n);  
+8  kt = 1;  
+9  for (i = 2; i < n; i++)  
+10  {  
+11        if  (n % i == 0)   
+12          {  
+13            kt = 0;   
+14   
+ 
+  break;  
+15          }  
+16  }  
+17  if (kt == 1)   printf(“%d la so nguyen to”, n);  
+18  else   printf(“%d khong la so nguyen to”, n);  
+19  getch();  
+20  } 
+Kết quả chƣơng trình 
+ 
+Nhap n:23  
+ 
+23 la so nguyen to 
+3.3.2. Câu lệnh continue 
+Cú pháp:  continue; 
+Chức năng: Khi gặp lệnh continue, chƣơng trình sẽ bỏ qua các lệnh 
+còn lại trong thân vòng lặp của lần lặp hiện tại và quay lại thực hiện lần 
+lặp tiếp theo của vòng lặp. 
+Lƣu ý: 
+ Lệnh continue chỉ áp dụng cho cấu trúc lặp, không áp dụng cho cấu 
+trúc switch, if. 
+ Ví dụ 3.35 
+In ra màn hình các tháng trong năm trừ tháng 5. 
+ 
+ 

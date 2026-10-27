@@ -1,0 +1,37 @@
+// Trang 189 - Ngôn ngữ lập trình C_ebook.pdf
+
+186
+các hằng số kiểu số nguyên được biểu diễn dưới các tên gọi khác nhau. 
+Các giá trị hằng số nguyên bên trong một kiểu liệt kê được mặc định 
+bắt đầu bằng số 0, và sẽ tăng lên 1 đơn vị sau mỗi giá trị được liệt kê.
+7.3.2. Định nghĩa một kiểu Enumeration mới
+Tương tự như kiểu cấu trúc hoặc union, kiểu liệt kê là kiểu dữ liệu 
+do người dùng tự tạo và cần phải được định nghĩa trước khi sử dụng. 
+Đoạn lệnh định nghĩa một kiểu liệt kê sau:
+1
+2
+3
+4
+enum MauSac
+{
+Den, Nau, Do, Cam, Vang, Luc, Lam, Tim, Xam, Trang
+};
+sẽ tạo ra một kiểu liệt kê mới có tên gọi là MauSac, các tên định 
+danh bên trong: Den, Nau, Do, Cam, Vang, Luc, Lam, Tim, Xam, Trang 
+sẽ tương ứng với các số nguyên lần lượt là: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Đơn 
+giản hơn, có thể hiểu các giá trị 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 bên trong kiểu 
+MauSac sẽ có tên định danh tương ứng là Den, Nau, Do, Cam, Vang, 
+Luc, Lam, Tim, Xam, Trang. Khác với kiểu cấu trúc hoặc kiểu union, 
+kiểu liệt kê không tồn tại các biến thành phần.
+Như vậy, cú pháp để định nghĩa một kiểu liệt kê mới sẽ là:
+enum       TênKiểuLiệtKê
+{
+		
+Danh sách tên định danh;
+};
+7.3.3.  Khai báo và sử dụng biến kiểu liệt kê
+Thao tác định nghĩa kiểu liệt kê ở phần trước hoàn toàn chưa tạo 
+ra vùng nhớ dữ liệu nào cho người dùng. Muốn có vùng nhớ dữ liệu, 
+người dùng cần tiến hành khai báo các biến kiểu liệt kê. Một biến kiểu 
+liệt kê sẽ được khai báo tương tự như các biến bình thường khác. Hãy 
+xem xét chương trình sau:

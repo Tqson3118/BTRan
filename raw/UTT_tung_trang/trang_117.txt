@@ -1,0 +1,33 @@
+// Trang 117 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+117 
+3 #include <string.h> 
+4 main() 
+5 { 
+6   char masv[5], ht[30]; 
+7   float d_toan, d_anh, tong_diem; 
+8   printf("Nhap ma sinh vien: ");  
+9   gets(masv); 
+10   puts("Nhap ho ten: "); gets(ht); 
+11   fflush(stdin); 
+12   printf("Nhap diem toan: ");  
+13   scanf("%f",&d_toan); 
+14   printf("Nhap diem tieng anh: ");  
+15   scanf("%f", &d_anh); 
+16   tong_diem = d_toan + d_anh; 
+17   puts("Ma Sv: "); puts(masv); 
+18   puts("Ho ten: "); puts(ht); 
+19   printf("Tong diem: = %3.2f",tong_diem); 
+20   getch(); 
+21 } 
+Kết quả chƣơng trình 
+Nhap ma sinh vien: sv01 
+Nhap ho ten: 
+Kien 
+Nhap diem toan: 9 
+Nhap diem tieng anh: 8 
+Ma Sv: 
+sv01 
+Ho ten: 
+Kien 
+Tong diem: = 17.00 

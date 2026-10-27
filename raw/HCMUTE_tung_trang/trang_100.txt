@@ -1,0 +1,54 @@
+// Trang 100 - Ngôn ngữ lập trình C_ebook.pdf
+
+97
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+printf(“\ngia tri phan tu a[2] la: %d”,a[2]);
+printf(“\ngia tri phan tu a[3] la: %d”,a[3]);
+printf(“\ngia tri phan tu a[4] la: %d”,a[4]);
+printf(“\ngia tri phan tu a[5] la: %d”,a[5]);
+printf(“\ngia tri phan tu a[6] la: %d”,a[6]);
+printf(“\ngia tri phan tu a[7] la: %d”,a[7]);
+printf(“\ngia tri phan tu a[8] la: %d”,a[8]);
+printf(“\ngia tri phan tu a[9] la: %d”,a[9]);
+return 0;  
+}
+Kết quả chạy chương trình:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+gia tri phan tu a[0] la: 5
+gia tri phan tu a[1] la: 7
+gia tri phan tu a[2] la: 9
+gia tri phan tu a[3] la: 3
+gia tri phan tu a[4] la: 4
+gia tri phan tu a[5] la: 6
+gia tri phan tu a[6] la: 8
+gia tri phan tu a[7] la: 1	
+gia tri phan tu a[8] la: 2
+gia tri phan tu a[9] la: 5
+Phần trên đây đã trình bày 3 cú pháp khai báo của mảng một 
+chiều. Cũng cần lưu ý thêm, khi ta đã khai báo mảng một chiều và 
+gán giá trị ban đầu cho các phần tử thì những phần tử nếu chưa được 
+gán giá trị sẽ có giá trị bằng 0. Nếu khai báo 1 mảng là bao nhiêu 
+phần tử thì chương trình sẽ tạo ra một số lượng các ô nhớ tương ứng 
+cho dù ta có dùng hay không dùng đến, do vậy, ta cần khai báo một 
+mảng có kích thước phù hợp với dự định sẽ dùng để tránh lãng phí 
+bộ nhớ.
+4.1.1.2. Các thao tác cơ bản trên mảng 1 chiều:
+ Nhập giá trị cho các phần tử mảng:

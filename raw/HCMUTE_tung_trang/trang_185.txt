@@ -1,0 +1,48 @@
+// Trang 185 - Ngôn ngữ lập trình C_ebook.pdf
+
+182
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+Nhap so n: 2
+Nhap thong tin cua thiet bi thu 0:
+Nhap ten: may vi tinh
+Nhap nam san xuat: 2018
+Nhap gia tien: 15.5
+Nhap trang thai: Tot (T) hoac Hong (H): T
+Nhap thong tin cua thiet bi thu 1:
+Nhap ten: Tivi
+Nhap nam san xuat: 2019
+Nhap gia tien: 12.4
+Nhap trang thai: Tot (T) hoac Hong (H): T
+Thong tin cac thiet bi da nhap:
+may vi tinh, 2018, 15.5, T
+Tivi, 2019, 12.4, T
+trong đó, các thông tin ở các dòng kết quả từ dòng số 1 đến dòng 
+số 13 là thông tin do người dùng nhập vào từ bàn phím.
+Như vậy, khi hàm có tham số đầu vào là kiểu cấu trúc thì lúc 
+gọi hàm, tùy thuộc vào loại tham số đầu vào của hàm, ta có thể thực 
+hiện truyền địa chỉ hoặc truyền giá trị của vùng nhớ kiểu cấu trúc vào 
+cho hàm.
+7.2. KIỂU UNION
+7.2.1. Giới thiệu kiểu Union
+Kiểu Union (hay còn gọi là kiểu hợp nhất) là kiểu dữ liệu tương tự 
+như kiểu cấu trúc nhưng có các biến thành phần cùng chia sẻ chung một 
+vùng nhớ. Trong một số trường hợp, việc dùng chung một vùng nhớ cho 
+các biến thành phần của biến kiểu Union sẽ giúp tiết kiệm bộ nhớ hơn 
+so với biến kiểu cấu trúc. Các biến thành phần của một kiểu Union có 

@@ -1,0 +1,71 @@
+// Trang 397 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+397 
+Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+#include <string.h> 
+4 
+int main() 
+5 
+{ 
+6 
+  char ch, in[100], out[100]; 
+7 
+  int no[26] = {0}, n, i, t, x; 
+8 
+  printf("Nhap vao chuoi ky tu:\n"); 
+9 
+  scanf("%s", in); 
+10 
+  n = strlen(in); // so ky tu cua chuoi a 
+11 
+  /* Luu tru so lan xuat hien cua cac ky tu tu a den z 
+12 
+   xuat hien trong chuoi in vao trong mot mang  */ 
+13 
+  for (i = 0; i < n; i++) 
+14 
+  { 
+15 
+    ch = in[i] - 'a'; 
+16 
+    no[ch]++; 
+17 
+  } 
+18 
+  t = 0; 
+19 
+  /* Chen cac ky tu tu 'a' den 'z'  vao chuoi dau ra  
+20 
+  voi so lan xuat hien trong chuoi dau vao  */ 
+21 
+  for (ch = 'a'; ch <= 'z'; ch++) 
+22 
+  { 
+23 
+    x = ch - 'a'; 
+24 
+    for (i = 0; i < no[x]; i++) 
+25 
+    { 
+26 
+      out[t] = ch; 
+27 
+      t++; 
+28 
+    } 
+29 
+  } 
+30 
+  out[t] = '\0'; 
+31 
+  printf("Chuoi duoc sap xep lai: %s\n", out); 
+32 
+  return 0; 
+33 
+} 
+ 

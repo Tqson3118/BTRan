@@ -1,0 +1,52 @@
+// Trang 42 - Ngôn ngữ lập trình C_ebook.pdf
+
+39
+thức quan hệ (a>b) và (c==0). Biểu thức (a>b) trả về kết quả là đúng 
+(true), tuy nhiên biểu thức (c==0) trả về kết quả là sai (false) nên biểu 
+thức luận lý ((a>b)&&(c==0)) trả về kết quả là sai (false).
+ Các phép toán bit-wise: các phép toán bit-wise thao tác trên 
+từng bit riêng lẻ. Các toán tử bit-wise thực sự hữu ích cho các lập trình 
+viên khi lập trình điều khiển như lập trình vi xử lý, vi điều khiển, lập 
+trình điều khiển hệ thống nhúng.
+Nhóm phép 
+toán
+Ký hiệu 
+trong ngôn 
+ngữ C
+Ý nghĩa
+Ví dụ
+a = 0b00001111 ;
+b= 0b11101000;
+Bit-wise
+&
+AND
+c= a&b;
+→c = 00001000 
+|
+OR
+c= a|b;
+→c = 11101111
+^
+XOR
+c= a^b;
+→c = 11100111 
+~
+NOT
+c= ~a;
+→c = 11110000
+<<
+Dịch trái
+c= a<<1;
+→c = 00011110
+>>
+Dịch phải
+c= a>>2; 
+→c = 00000111
+Bảng 1.6. Các phép toán bit-wise trong ngôn ngữ C
+Các phép toán bit-wise hoạt động tương tự như các phép toán số 
+học. Toán hạng bên trái của biểu thức sẽ được cập nhật giá trị trong khi 
+các toán hạng bên phải không thay đổi. Ví dụ:
+unsigned char a = 0b00001111,b=0x11101000 ,c;
+c= a&b;
+câu lệnh gán c = a&b, kết quả giá trị c sẽ là phép and từng bit 
+trong 2 thanh ghi, kết quả sẽ là  c = 0b00001000.

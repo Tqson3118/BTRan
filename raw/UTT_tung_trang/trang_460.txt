@@ -1,0 +1,40 @@
+// Trang 460 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+460 
+so dau","Chi so cuoi","Tien dien"); 
+42 for (i=0,j=0;i<n;i++) 
+43 {j++; 
+44 printf("%-4d%-20s%-15.0f%-15.0f%-15.0f\n", 
+j, 
+hgd[i].ht,hgd[i].csd,hgd[i].css, hgd[i].tiendien); 
+45 } 
+46 } 
+47 int thongke(hogd hgd[],int n,float d,float c) 
+48 // thong ke dien tieu thu trong khoang tu d den c 
+49 { 
+50 int i, dem=0;float dtt; 
+51 for (i=0;i<n;i++) 
+52 {dtt = hgd[i].css-hgd[i].csd; 
+53 if ((dtt>=d) && (dtt<=c)) dem++; 
+54 } 
+55 return dem; 
+56 }  
+57 int main() 
+58 { 
+59 hogd h[max]; 
+60 float d,c; 
+61 int i,j,n,k; 
+62 printf("Nhap so ho gia dinh:\n");  
+63 scanf("%d", &n); 
+64 nhaptt(h,n); 
+65 printf("Bang tong hop tien dien cua cac ho gia dinh:\n"); 
+66 hienthi(h,n); 
+67 k=thongke(h,n,0,100); 
+68 printf("So ho gia dinh su dung <=100 so la %d, chiem %2.1f 
+%\n",k,(float)k/n*100); 
+69 k=thongke(h,n,101,200); 
+70 printf("So ho gia dinh su dung  tu 101 den 100 so la %d, 
+chiem %2.1f %\n",k,(float)k/n*100); 
+71 k=thongke(h,n,201,300); 
+72 printf("So ho gia dinh su dung tu 201 den 300 so la %d, 
+chiem %2.1f %\n",k,(float)k/n*100); 

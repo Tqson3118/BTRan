@@ -1,0 +1,36 @@
+// Trang 115 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+115 
+Kết quả chƣơng trình: 
+Nhan mot phim bat ky: 
+Phim vua nhan la: a 
+2.2.3.4. Hàm kbhit() 
+Cú pháp: 
+ 
+int kbhit(void); 
+Chức năng: Hàm kbhit() đƣợc sử dụng để xác định một phím đã 
+đƣợc nhấn hay chƣa. Nếu một phím đƣợc nhấn thì hàm trả về kết quả 
+khác không, ngƣợc lại hàm trả về kết quả bằng 0. 
+Lƣu ý: Để sử dụng hàm kbhit() cần khai báo thƣ viện <conio.h> 
+ Ví dụ 2.28 
+1 #include <stdio.h> 
+2 #include <conio.h> 
+3  main() 
+4 { 
+5    while (!kbhit()) 
+6       printf("Ban da khong nhan mot phim nao ca!.\n"); 
+7    printf("Ban da nhan mot phim nao do!"); 
+8    return 0; 
+9 } 
+Đoạn chƣơng trình trên sẽ in ra màn hinh “Ban da khong nhan mot 
+phim nao ca!” cho đến khi ngƣời dùng nhấn một phím bất kỳ và dòng 
+“Ban da nhan mot phim nao do!” đƣợc in ra màn hình. 
+2.3. MỘT SỐ VÍ DỤ 
+ Ví dụ 2.29  
+ 
+Viết chƣơng trình đọc tên, họ và năm sinh và hiển thị tên và năm 
+của ngƣời vừa nhập. 
+Chƣơng trình: 
+1 #include <stdio.h> 
+2 int main() 
+3 { 

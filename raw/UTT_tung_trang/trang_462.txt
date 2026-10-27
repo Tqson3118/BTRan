@@ -1,0 +1,37 @@
+// Trang 462 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+462 
+6.3. CASE STYDY 
+6.3.1. Phát biểu bài toán 
+ 
+Viết chƣơng trình bằng ngôn ngữ lập trình C để lƣu trữ và thực hiện 
+phân tích, thống kê cho một lớp có 20 sinh viên. Thông tin của mỗi sinh 
+viên bao gồm: mã sinh viên, tên sinh viên, giới tính, hai điểm thành phần, 
+điểm chuyên cần, điểm giữa kỳ, điểm thi cuối kỳ và điểm tổng kết. 
+Chƣơng trình nhắc ngƣời dùng chọn thao tác với các bản ghi từ 
+Menu sau đây: 
+---------------------------------------------------------------------------- 
+Chƣơng trình trình 
+---------------------------------------------------------------------------- 
+1. Thêm hồ sơ sinh viên. 
+2. Xóa hồ sơ sinh viên. 
+3. Cập nhật hồ sơ sinh viên. 
+4. Hiển thị toàn bộ thông tin sinh viên. 
+5. Tính điểm tổng kết của sinh viên đƣợc chọn. 
+6. Hiển thị thông tin sinh viên có điểm cao nhất. 
+7. Hiển thị thông tin sinh viên có điểm thấp nhất. 
+8. Tìm kiếm sinh viên dựa vào mã sinh viên. 
+9. Sắp xếp danh sách sinh viên dựa vào điểm tổng kết. 
+6.3.2. Hƣớng giải quyết vấn đề  
+6.3.2.1. Lựa chọn cấu trúc dữ liệu để giải quyết bài toán 
+Lƣu ý: Thông tin của các sinh viên đƣợc lƣu trữ trong một mảng cấu trúc.   
+Để giải quyết bài toàn này một cách đơn giản và dễ thực hiện nhất, ta 
+chia giải pháp thành các bƣớc sau đây: 
+ Bƣớc 1: Định nghĩa một cấu trúc có tên sinhvien để lƣu trữ các 
+bản ghi. Cấu trúc sinhvien chứa 9 thành phần sau đây: 
+- masv (chuỗi ký tự, có độ dài tối đa 10 ký tự) để lƣu mã sinh viên, 
+phân biệt sinh viên này với sinh viên khác; 
+- tensv (chuỗi ký tự, hoặc mảng các ký tự, độ dài tối đa 25 ký tự) để 
+lƣu tên của sinh viên; 
+- gioi_tinh (ký tự) lƣu giới tính của sinh viên, nhận một trong hai giá 
+trị F (female - nữ) hoặc M (male - nam); 

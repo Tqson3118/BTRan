@@ -1,0 +1,48 @@
+// Trang 162 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+162 
+ 
+if (i <= 10) 
+ 
+printf(“%d\n”, i); 
+} 
+ Trong câu lệnh for, có thể sẽ không có phần Exp3 (bƣớc nhảy) 
+int i; 
+for (i = 0; i < 10; ) 
+ 
+{ 
+ 
+printf(“%d\n”, i); 
+ 
+i = i + 1; 
+ 
+} 
+ Trong câu lệnh for, có thể khuyết cả 3 
+int i; 
+i = 0; 
+for (; ; ) 
+{ 
+ 
+if(i < 10) 
+ 
+printf("%d\n", i); 
+ 
+i++; 
+ 
+} 
+} 
+ Không đƣợc thêm; ngay sau lệnh for 
+for (i = 0; i < 10; i++); 
+{ 
+ 
+printf(“%d”, i); 
+ 
+printf(“\n”); 
+} 
+for (i = 0; i < 10; i++) 
+{ 
+}; 
+ Máy sẽ không báo lỗi nhƣng thực hiện câu lệnh không đúng 
+ Các thành phần Exp1, Exp2, Exp3 cách nhau bằng dấu “;”. Nếu 
+có nhiều thành phần trong mỗi phần thì đƣợc cách nhau bằng dấu phẩy “,” 
+for (i = 1, j = 2; i + j < 10; i++, j += 2) 

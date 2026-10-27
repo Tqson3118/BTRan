@@ -1,0 +1,41 @@
+// Trang 167 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+167 
+   
+√      
+   
+         
+Nhƣ vậy, ta cần thực hiện một vòng lặp với biến đếm k chạy từ 2 (vì 
+s1 ứng với k = 1 đã đƣợc tính) đến n. Biểu thức trong thân vòng lặp: 
+   
+√      
+   
+         
+    
+⁄
+               
+     
+Chƣơng trình 
+1 #include <stdio.h>  
+2 #include <math.h>  
+3 int main() {  
+4   unsigned n, k;  
+5   double S = 1.0;  
+6   printf( "Nhap n: " );  
+7   scanf( "%u", &n );  
+8   for ( k = 2; k <= n; ++k )  
+9     S = pow( k + S, 1.0 / ( k + 1 ) );  
+10   printf( "Ket qua: %lf\n", S );  
+11   return 0;  
+12 } 
+Kết quả chƣơng trình 
+Nhap n: 2 
+Ket qua: 1.44225 
+3.2.2. Cấu trúc vòng lặp while  
+3.2.2.1. Cú pháp 
+while (expression) 
+  statement;   
+Trong đó: 
+- expression: Biểu thức điều kiện 
+- statement: khối lệnh (là câu lệnh đơn hoặc câu lệnh ghép), gọi là 
+thân vòng lặp. 

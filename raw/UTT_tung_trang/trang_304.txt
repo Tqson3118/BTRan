@@ -1,0 +1,47 @@
+// Trang 304 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+304 
+- Xây dựng hàm hiển thị mảng hai chiều, các tham số tƣơng tự hàm 
+nhập mảng. 
+- Xây dựng hàm tìm giá trị lớn nhất, các tham số tƣơng tự hàm nhập mảng. 
+- Xây dựng hàm tìm giá trị nhỏ nhất, các tham số tƣơng tự hàm nhập 
+mảng. 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+// khai bao hang MAX la gioi han cua so hang va so cot  
+3 
+#define MAX 100 
+4 
+// ham nhap vao mang hai chieu kich thuoc m x n  
+5 
+void Nhap_Mang(int a[][MAX], int m, int n) 
+6 
+{ 
+7 
+   for(int i = 0; i < m; i++) 
+8 
+      for(int j = 0; j < n; j++) 
+9 
+      { 
+10          printf("A[%d][%d] = ", i, j); 
+11          scanf("%d", &a[i][j]); 
+12       } 
+13 } 
+14 //hàm in mang hai chieu 
+15 void In_Mang(int a[][MAX], int m, int n) 
+16 { 
+17    for(int i = 0; i < m; i++) 
+18    { 
+19       for(int j = 0; j < n; j++) 
+20          printf("%d\t", a[i][j]); 
+21       printf("\n"); 
+22    } 
+23 } 
+24 //ham tim gia tri lon nhat cua mang hai chieu 
+25 //thuc chat giong mang mot chieu 
+26 int In_Max(int a[][MAX], int m, int n) 
+27 { 
+28    int max = a[0][0]; 
+29    for(int i = 0; i < m; i++) 

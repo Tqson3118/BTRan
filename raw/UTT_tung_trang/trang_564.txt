@@ -1,0 +1,67 @@
+// Trang 564 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+564 
+Tên hàm 
+Chức năng 
+Ví dụ minh họa 
+tự: 
+x: Kiểu font 
+y: hƣớng font 
+z: kích thƣớc  
+ont, 
+HORIZ_DIR, 
+4): 
+Thiết lập theo font chữ 
+hiện tại, hƣớng từ trái 
+qua phải, kích thƣớc 4. 
+sound(x) 
+Kích hoạt loa ở một 
+thời điểm cụ thể, đơn 
+vị tính là x Hz. 
+sound(7): Kích hoạt âm 
+thanh ở 7Hz. 
+nosound() 
+Tắt âm thanh kích 
+hoạt loa trƣớc đó. 
+ 
+delay(x) 
+Cho phép lệnh thực 
+hiện trƣớc đó vẫn 
+đƣợc kích hoạt trong 
+một đơn vị thời gian 
+là x (msec) 
+Delay(6000): cho phép 
+lệnh thực hiện trong 6s. 
+getimage(int x1, int 
+y1, int x2, int y2, void 
+*p) 
+Chép các điểm ảnh 
+trong vùng chữ nhật 
+(x1, y1, x2, y2) vào 
+vùng nhớ do con trỏ p 
+trỏ tới (vùng nhớ này 
+và con trỏ p cho bởi 
+hàm malloc, độ lớn 
+vùng nhớ cho bởi hàm 
+imagesize). 
+ 
+bar(left, 
+top, 
+right, 
+bottom) 
+Vẽ một thanh hình 
+chữ nhật hai chiều 
+đầy. Hàm không vẽ 
+ranh giới thanh, hình 
+đƣợc vẽ sử dụng mẫu 
+và màu hiện tại. 
+bar(20, 30, 40, 70): Vẽ 
+hình chữ nhật đầy hai 
+chiều, có góc trên bên 
+trái là (20, 30) và góc 
+dƣới bên phải là (40, 70). 
+8.3. MỘT SỐ VÍ DỤ 
+ Ví dụ 8.3 
+Vẽ  các hình chữ nhật, hình tròn, thanh bar, đƣờng thẳng, hình elip 
+và hiển thị trong chƣơng trình “Chuong trinh ve cac hinh don gian” trên 
+màn hình. 

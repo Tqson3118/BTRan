@@ -1,0 +1,47 @@
+// Trang 66 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+66 
+5 
+    printf("Vi du ve XOR bit:\n") 
+6 
+    printf("Ket qua = %d", a^b); 
+7 
+    return 0; 
+8 
+} 
+Kết quả chƣơng trình 
+Vi du ve XOR bit: 
+Ket qua = 6 
+d. Đảo bit   
+Toán tử đảo bit là toán tử đơn nguyên (chỉ hoạt động trên một toán 
+hạng). Nó thay đổi 1 thành 0 và 0 thành 1 và đƣợc ký hiệu là ~. 
+ 
+ ~ 1 = 0 
+~ 0 = 1 
+Lƣu ý:  
+Với số nguyên n bất kỳ, ~n = - (n + 1).  
+Để có công thức này, chúng ta cần dựa trên phép toán bù 2. Bù 2 là 
+một phép toán trên số nhị phân. Bù 2 của một số nguyên đƣợc tính bằng -
+(số đảo bit của số đó cộng với 1). 
+Bảng 1.11. Bù 2 của một số nguyên 
+Số thập 
+phân 
+Nhị phân 
+Bù 2 
+0 
+00000000 - (1111111 +1) = -00000000 = - 0 (thập phân) 
+1 
+00000001 - (1111110 + 1) = -11111111 = -256 (thập phân) 
+12 
+00001100 - (11110011 +1) = -11110100 = -244 (thập phân) 
+220 
+11011100 - (00100011 +1) = -00100100 = -36 (thập phân) 
+ Ví dụ 1.55 
+35 = 00100011 (Hệ nhị phân) 
+Xác định đảo bit của 35 
+~ 00100011  
+= 11011100  = 220 (Hệ thập phân) = - 36 (Bù 2) 
+ Ví dụ 1.56 
+Cho chƣơng trình sau đây: 
+1 
+#include <stdio.h> 

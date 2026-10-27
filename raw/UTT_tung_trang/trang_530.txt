@@ -1,0 +1,38 @@
+// Trang 530 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+530 
+Diem TB: 8.33 
+Thong tin SV thu 4: 
+Ho ten SV: Mai 
+Gioi tinh: F 
+Diem Toan - Ly - Hoa: 9.00 - 6.00 - 8.00 
+Diem TB: 7.67 
+____________________________________ 
+Bam phim bat ky de tiep tuc! 
+**       Nhap lua chon cua ban          ** 
+3 
+Ban da chon sap xep SV theo DTB! 
+___________________________________ 
+Thong tin SV thu 1: 
+Ho ten SV: Cuong 
+Gioi tinh: M 
+Diem Toan - Ly - Hoa: 6.00 - 7.00 - 8.00 
+Diem TB: 7.00 
+Thong tin SV thu 2: 
+Ho ten SV: Mai 
+Gioi tinh: F 
+Diem Toan - Ly - Hoa: 9.00 - 6.00 - 8.00 
+Diem TB: 7.67 
+Thong tin SV thu 3: 
+Ho ten SV: An 
+Gioi tinh: M 
+Diem Toan - Ly - Hoa: 8.00 - 8.00 - 8.00 
+Diem TB: 8.00 
+Thong tin SV thu 4: 
+Ho ten SV: Thuy 
+Gioi tinh: F 
+Diem Toan - Ly - Hoa: 9.00 - 8.00 - 8.00 
+Diem TB: 8.33 
+____________________________________ 
+Bam phim bat ky de tiep tuc! 
+**       Nhap lua chon cua ban          ** 

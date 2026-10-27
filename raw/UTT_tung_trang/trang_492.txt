@@ -1,0 +1,37 @@
+// Trang 492 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+492 
+119  
+} 
+120 printf("Nhan phim y de tiep tuc:"); scanf("%s", &ok); 
+121 }while(ok == 'y'); 
+122 return 0; 
+123 } 
+Kết quả chƣơng trình 
+----------------------------------------------------- 
+                    CHUONG TRINH CHINH 
+----------------------------------------------------- 
+1. Nhap thong tin nhan vien 
+2. In danh sach nhan vien da sap xep theo ten 
+3. In danh sach nhan vien sap xep theo tuoi 
+Nhap vao lua chon (1-3): 1 
+Nhap ma nhan vien:nv01 
+Nhap ten nhan vien:Luan 
+Nhap tuoi nhan vien:40 
+Nhan phim y de tiep tuc:y 
+Nhap vao lua chon (1-3): 1 
+Nhap ma nhan vien:nv02 
+Nhap ten nhan vien:Kien 
+Nhap tuoi nhan vien:40 
+Nhan phim y de tiep tuc:y 
+Nhap vao lua chon (1-3): 1 
+Nhap ma nhan vien:nv03 
+Nhap ten nhan vien:Thuan 
+Nhap tuoi nhan vien:38 
+Nhan phim y de tiep tuc:y 
+Nhap vao lua chon (1-3): 1 
+Nhap ma nhan vien:nv04 
+Nhap ten nhan vien:Chi 
+Nhap tuoi nhan vien:36 
+Nhan phim y de tiep tuc:y 
+Nhap vao lua chon (1-3): 2 

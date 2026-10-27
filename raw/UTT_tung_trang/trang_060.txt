@@ -1,0 +1,39 @@
+// Trang 60 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+60 
+16  printf("Ket qua cua phep !(a == b) la %d \n", kq); 
+17  kq = !(a == b); 
+18  printf("Ket qua cua phep !(a == b) la %d \n", kq); 
+19  return 0; 
+20 } 
+Kết quả chƣơng trình 
+a = 2  b = 2  c = 3 
+1: Dung - 0: Sai 
+Ket qua cua phep (a == b) && (c > b) la = 1 
+Ket qua cua phep (a == b) && (c < b) la 0 
+Ket qua cua phep (a == b) || (c < b) la 1 
+Ket qua cua phep (a != b) || (c < b) la 0 
+Ket qua cua phep !(a == b) la 1 
+Ket qua cua phep !(a == b) la 0 
+1.6.4.4. Toán tử tăng giảm 
+Có hai toán tử tăng ++ và giảm -- để thay đổi giá trị của toán hạng 
+(hằng hoặc biến) 1 đơn vị. 
+Toán tử  ++ tăng giá trị lên 1 trong khi toán tử  -- giảm giá trị xuống 1.  
+Hai toán tử này là toán tử đơn nguyên, nghĩa là chúng chỉ hoạt động 
+trên một toán hạng duy nhất. 
+Bảng 1.8. Toán tử tăng giảm 
+Toán tử 
+Mô tả 
+i++ 
+i = i + 1, i đƣợc đƣa vào thực hiện biểu thức trƣớc, sau đó mới 
+tăng i lên. 
+++i 
+i = i + 1, i đƣợc tăng trƣớc, sau đó sẽ lấy kết quả để thực hiện 
+biểu thức. 
+i-- 
+i = i  - 1, i đƣợc đƣa vào thực hiện biểu thức trƣớc, sau đó mới 
+giảm i. 
+--i 
+i = i - 1, i đƣợc giảm trƣớc, sau đó lấy kết quả để thực hiện 
+biểu thức. 
+ 

@@ -1,0 +1,85 @@
+// Trang 562 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+562 
+Tên hàm 
+Chức năng 
+Ví dụ minh họa 
+moveto(x, y) 
+Di chuyển con trỏ đến 
+tọa độ (x, y). 
+moveto(320, 
+240): 
+di 
+chuyển con trỏ đến chính 
+giữa màn hình (có tọa độ 
+(320, 240)) từ vị trí hiện 
+tại của nó. 
+lineto(x, y) 
+Vẽ một đƣờng thẳng 
+từ vị trí hiện tại đến 
+điểm (x, y). 
+lineto(320, 240): vẽ một 
+đƣờng thẳng từ vị trí hiện 
+tại đến chính giữa màn 
+hình. 
+moverel(xr, yr) 
+Di chuyển con trỏ  
+đến điểm mới có tọa 
+độ  tƣơng đối, theo 
+hƣớng trục x thêm xr 
+đơn vị, hƣớng trục y 
+(xr + yr ) đơn vị. 
+moverel(10, 
+5): 
+di 
+chuyển 
+con 
+trỏ 
+theo 
+hƣớng trục x thêm 10 
+đơn vị và theo hƣớng trục 
+y thêm 15 đơn vị. 
+linerel(xd, yd) 
+vẽ đƣờng thẳng từ vị 
+trí con trỏ vẽ hiện tại 
+(giả sử con trỏ vẽ hiện 
+tại có toạ độ (x, y) ) 
+đến điểm có toạ độ (x 
++ dx, y + dy), vẽ xong 
+con trỏ tới điểm mới. 
+linerel(10, 5): vẽ một 
+đƣờng thẳng từ vị trí hiện 
+tại đến một điểm có 
+khoảng cách từ điểm hiện 
+tại thêm 10 đơn vị theo 
+trục xvà 5 đơn vị theo 
+trục y. 
+outtextxy(x, 
+y,“string”) 
+Hiển thị chuỗi ký tự 
+trong dấu “ ”, tại vị trí 
+(x, y). 
+outtextxy(320, 
+240, 
+“DHCNGTVT”): 
+Hiển 
+thị chuỗi DHCNGTVT ở 
+chính giữa màn hình (có 
+tọa độ (320, 240))  
+setlinestyle(x,y,z) 
+Vẽ các đƣờng thẳng 
+với 
+các 
+kiểu 
+của 
+đƣờng thẳng đƣợc chỉ 
+định. 
+x: kiểu đƣờng thẳng. 
+x = 0: nét liền. 
+x = 1:  nét chấm 
+chấm. 
+setlinestyle(0, 1,1): thiết 
+lập hệ thống vẽ một 
+đƣờng có nét liền, có độ 
+dày 1 và với một mẫu cụ 
+thể. 

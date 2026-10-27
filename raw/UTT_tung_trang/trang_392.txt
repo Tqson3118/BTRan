@@ -1,0 +1,42 @@
+// Trang 392 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+392 
+38         } 
+39     } 
+40     // In ket qua so nguyen am, phu am, chu so, khaong trang dem duoc 
+41     printf("So nguyen am: %d",vowels); 
+42     printf("\nSo phu am: %d",consonants); 
+43     printf("\nSo chu so: %d",digits); 
+44     printf("\nSo khoang trang: %d", spaces); 
+45     return 0; 
+46 } 
+  Kết quả chƣơng trình 
+ 
+Nhap vao mot chuoi ky tu: abbcuikthqo uuabiemmmnk 
+ 
+So nguyen am: 9 
+ 
+So phu am: 13 
+ 
+So chu so: 0 
+ 
+So khoang trang: 1 
+ Bài tập 5.12 
+Viết chƣơng trình nhập vào một chuỗi ký tự. Hiển thị chuỗi ký tự thu 
+đƣợc ra màn hình sau khi xóa hết các nguyên âm trong chuỗi? 
+Cách 1: 
+ Chƣơng trình: 
+1 #include <stdio.h> 
+2 #include <string.h> 
+3 int check_vowel(char); 
+4 int main() 
+5 { 
+6   char s[100], t[100]; 
+7   int c, d = 0; 
+8    printf("Nhap vao chuoi s:\n"); 
+9   gets(s); 
+10    for(c = 0; s[c] != '\0'; c++) { 
+11     if(check_vowel(s[c]) == 0) {   // Neu ky tu s[c] khong phai la 
+mot nguyen am 
+12       t[d] = s[c]; 
+13       d++; 

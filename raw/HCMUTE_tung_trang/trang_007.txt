@@ -1,0 +1,34 @@
+// Trang 7 - Ngôn ngữ lập trình C_ebook.pdf
+
+4
+Kỹ thuật lập trình đòi hỏi nhiều kỹ năng tư duy, kinh nghiệm và cả kiến 
+thức. Trong đó, kỹ năng  tư duy là cách mà người lập trình đưa ra các 
+giải thuật để giải quyết bài toán hiệu quả. Kinh nghiệm giúp người lập 
+trình chuyển đổi từ ý tưởng sang chương trình một cách tối ưu. Chính vì 
+thế, học lập trình đòi hỏi nhiều yếu tố hơn một số môn học khác. Cụ thể, 
+thực hành luôn được đòi hỏi kèm theo hoặc song song với quá trình học 
+lý thuyết. Quá trình thực hành giúp người học hình dung được, nắm được 
+cách vận hành của từng cấu trúc lệnh. Do đó, nhóm biên soạn đã cố gắng 
+trình bày cụ thể lý thuyết, giải thích chương trình và đưa ra một số bài ví dụ 
+mẫu nhằm giúp người học có thể tiếp cận kỹ thuật lập trình một cách dễ 
+nhất. Để đạt hiệu quả cao trong quá trình học tập, người học cần thực 
+hành lại các ý tưởng lập trình, các bài mẫu được trình bày trong tài liệu.
+Giáo trình gồm những phần sau:
+Chương 1: Giới thiệu
+Chương 2: Lệnh rẽ nhánh có điều kiện
+Chương 3: Lệnh vòng lặp
+Chương 4: Mảng và chuỗi 
+Chương 5: Con trỏ 
+Chương 6: Hàm
+Chương 7: Kiểu dữ liệu tự tạo 
+Chương 8: Tiền xử lý 
+Cuối cùng, tuy đã rất cố gắng biên soạn và chỉnh sửa nhưng chắc 
+hẳn không thể tránh khỏi những thiếu sót, rất mong nhận được những 
+đóng góp quý báu từ sinh viên và quý đồng nghiệp để tài liệu này được 
+hoàn thiện hơn trong những lần tái bản tiếp theo. 
+Mọi ý kiến phản hồi xin gửi về: 
+Bộ môn Kỹ thuật Máy tính – Viễn thông, Khoa Điện-Điện tử, 
+Trường Đại học Sư phạm Kỹ thuật TP HCM
+Email: sontn@hcmute.edu.vn, leminh@hcmute.edu.vn, hatn@
+hcmute.edu.vn, thanhlm@hcmute.edu.vn
+Nhóm tác giả

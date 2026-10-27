@@ -1,0 +1,65 @@
+// Trang 193 - Ngôn ngữ lập trình C_ebook.pdf
+
+190
+d.
+#include<stdio.h>
+struct DuLieu a[3]
+{
+	
+float nhietDo;
+	
+float doAm;
+};
+int main(void)
+{
+	
+printf(“Nhap du lieu buoi sang, trua, 
+chieu:\n”);
+	
+int i;
+	
+for(i = 0; i < 3; i++)
+	
+{
+	
+	
+scanf(“%f”,&a[i].nhietDo);
+	
+	
+scanf(“%f”,&a[i].doAm);
+	
+}
+	
+return 0;
+}
+Cho chương trình dưới. Hãy phân tích và cho biết chương trình 
+thực hiện chức năng gì?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+#include <stdio.h>
+#include <conio.h>
+#include <malloc.h>
+	
+struct SinhVien
+{
+	
+char	 hoTen[30];
+	
+float   diemToan;
+	
+float   diemLy;
+	
+float   diemHoa;
+	
+float	 diemTB;
+};

@@ -1,0 +1,36 @@
+// Trang 171 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+171 
+Biến decimal để tính số thập phân. 
+Biến num để lấy phần nguyên sau khi bỏ hàng đơn vị. 
+Biến base là cơ số 2, ban đầu base = 1 = 20. 
+Chừng nào biến num còn lớn hơn 0 thì thực hiện các thao tác trên. 
+Chƣơng trình 
+1 #include "stdio.h" 
+2 #include "conio.h" 
+3 main() 
+4 { 
+5     int num, binary, decimal = 0, base = 1, donvi; 
+6     printf("\nNhap so nhi phan(1 & 0): "); 
+7     scanf("%d", &num);  
+8     binary = num; 
+9     while (num > 0) 
+10     { 
+11         donvi = num % 10; 
+12         decimal = decimal + donvi * base; 
+13         num = num / 10 ; 
+14         base = base * 2; 
+15     } 
+16     printf("So nhi phan = %d \n", binary); 
+17     printf("Gia tri he thap phan = %d \n", decimal); 
+18     getch(); 
+19 } 
+Kết quả chƣơng trình 
+ 
+Nhap so nhi phan(1 & 0): 1011 
+ 
+So nhi phan = 1011 
+ 
+Gia tri he thap phan = 11 
+  Ví dụ 3.28 
+Viết chƣơng trình đổi hệ thập phân sang hệ nhị phân. 

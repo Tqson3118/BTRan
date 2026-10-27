@@ -1,0 +1,39 @@
+// Trang 329 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+329 
+mảng quá lớn, nhƣng khi biên dịch chỉ sử dụng một phần nhỏ trong đó, điều 
+đó gây lãng phí bộ nhớ. Để giải quyết vấn đề này, chúng ta có thể phân bổ bộ 
+nhớ một cách linh động trong thời gian chạy chƣơng trình. Có ba hàm thƣ 
+viện đƣợc định nghĩa trong thƣ viện “stdlib.h” bao gồm malloc(), calloc(), 
+free(), giúp chƣơng trình cấp phát và thu hồi bộ nhớ động. 
+5.2.5.1. Hàm malloc() 
+Từ “malloc” viết tắt của cụm từ “memory allocation” (“phân bổ bộ 
+nhớ”). Hàm malloc() dự trữ một khối bộ nhớ của số byte đƣợc chỉ định. 
+Hàm malloc() trả về một con trỏ kiểu void có thể chuyển hóa thành con 
+trỏ ở bất kỳ dạng nào. 
+Cú pháp của hàm malloc() 
+ 
+ptr = (cast-type*) malloc(byte-size) 
+ Ví dụ 5.35 
+p = (int*)malloc(100* sizeof(int)); 
+Kích thƣớc của int là 4 byte, do đó câu lệnh trên phân bổ 400 byte bộ 
+nhớ. Con trỏ p giữ địa chỉ của byte đầu tiên trong bộ nhớ đƣợc phân bổ. 
+Tuy nhiên, nếu không đủ dung lƣợng, quá trình phân bổ thất bại và trả về 
+một con trỏ NULL. 
+5.2.5.2. Hàm calloc() 
+Từ “calloc” viết tắt của cụm từ “contiguous allocation” (“phân bổ 
+liền kề”). Hàm calloc() phân bổ nhiều khối bộ nhớ và khởi tạo chúng về 0. 
+Cú pháp của hàm calloc() 
+ 
+ptr = (cast-type*)calloc(n, element-size); 
+ Ví dụ 5.36 
+ 
+p = (float*) calloc(25, sizeof(float)); 
+Câu lệnh này phân bổ không gian liền kề trong bộ nhớ cho 25 phần 
+tử, mỗi phần tử có có kích thƣớc kiểu float. 
+5.2.5.3. Phân biệt giữa malloc() và calloc() 
+Giống nhau:  
+Cả hai hàm malloc() và calloc() đều đƣợc sử dụng để cấp phát bộ 
+nhớ động cho chƣơng trình. Nếu cấp phát thành công, hàm trả về con trỏ 
+trỏ tới vùng nhớ đƣợc cấp phát, trả về NULL nếu không đủ bộ nhớ. 
+Hàm malloc() và calloc() trả về NULL trong các trƣờng hợp sau đây: 

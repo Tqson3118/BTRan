@@ -1,0 +1,71 @@
+// Trang 543 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+543 
+8 
+    FILE *fptr; 
+9 
+    char path[100]; 
+10 
+    int i, len, index, isUnique; 
+11 
+    // Danh sach cua cac tu rieng biet 
+12 
+    char words[MAX_WORDS][50]; 
+13 
+    char word[50]; 
+14 
+    // Dem cac tu rieng biet 
+15 
+    int  count[MAX_WORDS]; 
+16 
+    /* Nhap ten tep van ban can dem cac tu*/ 
+17 
+    printf("Nhap bao ten tep: "); 
+18 
+    scanf("%s", path); 
+19 
+    /* Mo tep o che do doc */ 
+20 
+    fptr = fopen(path, "r"); 
+21 
+    /* Thoat neu mo tep khong thanh cong */ 
+22 
+    if (fptr == NULL) 
+23 
+    { 
+24 
+        printf("Khong the mo tep.\n"); 
+25 
+        printf("Kiem tra lai tep!\n"); 
+26 
+        exit(EXIT_FAILURE); 
+27 
+    } 
+28 
+    // Khoi tao mang bien dem cac tu trong tep ve 0 
+29 
+    for (i=0; i<MAX_WORDS; i++) 
+30 
+        count[i] = 0; 
+31 
+    index = 0; 
+32 
+    while (fscanf(fptr, "%s", word) != EOF) 
+33 
+    { 
+34 
+        // Chuyen doi sang ky tu thuong 
+35 
+        strlwr(word); 
+36 
+        // Xoa ky tu dau cham cau cuoi cung 
+37 
+        // ham ispunct() kiem tra ky tu co phai la ky tu dac biet 
+hay khong 
+38 
+        // bao gom cac ky tu  ! " # $ % & ' ( ) * + , - . / : ; < = > ? 
+@ [ \ ] ^ _ ` { | } ~ 
+39 
+        len = strlen(word); 
+40 
+        if (ispunct(word[len - 1])) 

@@ -1,0 +1,112 @@
+// Trang 171 - Ngôn ngữ lập trình C_ebook.pdf
+
+168
+ d[0].tenTB           d[0].namSanXuat d[0].giaTien d[0].trangThai 
+                                       
+d[0]
+2019
+Xét một chương trình khác được viết như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+#include <stdio.h>
+#include <conio.h>
+struct ThietBi
+{
+	
+char tenTB[20];
+	
+int namSanXuat;
+	
+float giaTien;
+	
+char  trangThai;
+};
+int main (void)
+{
+	
+char tam[2];
+	
+struct ThietBi  d[5];
+	
+int i, n = 5;
+	
+for (i = 0; i < n; i++)
+	
+{
+	
+	
+printf(“\nNhap thong tin cua thiet bi 
+thu %d:\n”, i);
+	
+	
+printf(“Nhap ten: “);
+	
+	
+gets(d[i].tenTB);
+	
+	
+printf(“Nhap nam san xuat: “);
+	
+	
+scanf(“%d”,&d[i].namSanXuat);
+	
+	
+printf(“Nhap gia tien: “);
+	
+	
+scanf(“%f”,&d[i].giaTien);
+	
+	
+	
+gets(tam);
+	
+	
+printf(“Nhap trang thai: Tot (T) hoac 
+Hong (H): “);
+	
+	
+scanf(“%c”,&d[i].trangThai);
+	
+	
+gets(tam);
+	
+}
+	
+	
+printf(“\nThong tin cac thiet bi da 

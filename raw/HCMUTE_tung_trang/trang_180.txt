@@ -1,0 +1,94 @@
+// Trang 180 - Ngôn ngữ lập trình C_ebook.pdf
+
+177
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+	
+	
+printf(“Nhap nam san xuat: “);
+	
+	
+scanf(“%d”,&(x+i)->namSanXuat);
+	
+	
+printf(“Nhap gia tien: “);
+	
+	
+scanf(“%f”,&(x+i)->giaTien);
+	
+	
+	
+gets(tam);
+	
+	
+printf(“Nhap trang thai: Tot (T) hoac 
+Hong (H): “);
+	
+	
+scanf(“%c”,&(x+i)->trangThai);
+	
+	
+gets(tam);
+	
+}
+}
+void InMotThietBi(struct ThietBi a)
+{
+	
+printf(“%s, %d, %.1f, %c\n”,a.tenTB,a.namSanXu-
+at,a.giaTien,a.trangThai);
+}
+int main (void)
+{
+	
+int i, n = 2;
+	
+struct ThietBi  d[2];
+	
+NhapDuLieu(&d[0],n);
+	
+	
+printf(“\nThong tin cac thiet bi da nhap:\n”);
+	
+for ( i = 0; i < n; i++)
+	
+	
+InMotThietBi(d[i]);
+	
+getch();
+	
+return 0;
+}

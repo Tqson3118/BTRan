@@ -1,0 +1,59 @@
+// Trang 399 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+399 
+30 
+         } 
+31 
+         p++; 
+32 
+      } 
+33 
+      p = s; 
+34 
+   } 
+35 
+   *(kq+d) = '\0'; 
+36 
+    strcpy(s, kq); 
+37 
+   free(kq); 
+38 
+} 
+  Kết quả chƣơng trình: 
+ 
+Nhap vao chuoi: 
+ 
+sort a string 
+ 
+Chuoi sau khi sap xep: 
+ 
+aginorrsstt 
+ Bài tập 5.15 
+Viết chƣơng trình nhập vào một chuỗi ký tự. Hãy in ra màn hình 
+chuỗi ký tự  gồm n ký tự đƣợc lấy ra từ chuỗi đã cho từ vị trí t trong chuỗi 
+đã cho, n và t đƣợc nhập từ bàn phím? 
+Xây dựng chƣơng trình ngôn ngữ C để tìm chuỗi con của chuỗi và tất 
+cả các chuỗi con của chuỗi. Một chuỗi con là một phần của chuỗi dài hơn. 
+Ví dụ: các chuỗi con của chuỗi "the" là "" (chuỗi rỗng), "t", "th", "the", 
+"h", "he" và "e".  
+Thƣ viện "string.h" không chứa hàm để tìm một chuỗi con trực tiếp. 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+int main() 
+3 
+{ 
+4 
+   char a[1000], sub[1000]; 
+5 
+   int t,n , i = 0; 
+6 
+   printf("Nhap vao chuoi:\n"); 
+7 
+   gets(a); 
+8 
+   printf("Nhap vao vi tri bat dau lay ra chuoi con:\n"); 
+9 
+   scanf("%d", &t); 
+10    printf("Nhap vao so ky tu cua chuoi con:\n"); 

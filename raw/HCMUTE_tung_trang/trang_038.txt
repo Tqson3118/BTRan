@@ -1,0 +1,55 @@
+// Trang 38 - Ngôn ngữ lập trình C_ebook.pdf
+
+35
+Giá trị khởi tạo 3.14 của hằng PI là cố định và không được phép 
+thay đổi. Nếu người dùng yêu cầu thay đổi giá trị của hằng PI, chương 
+trình sẽ báo lỗi. Chẳng hạn câu lệnh sau:
+PI = 4.5; //cau lenh gay ra loi
+sẽ gây ra lỗi vì giá trị đã khởi tạo của hằng PI là cố định (3.14) và 
+không được phép thay đổi.
+Sau khi khai báo, có thể sử dụng hằng số PI trong các câu lệnh 
+khác trong chương trình. Ví dụ, đoạn lệnh tính toán chu vi của một hình 
+tròn có đường kính là 5cm có thể viết như sau:
+1
+2
+3
+int d = 5;
+float C;
+C = d*PI;
+Ngôn ngữ C sử dụng các hệ thống số trong lập trình máy tính bao 
+gồm các số thực, các số nguyên. Trong đó hệ thống số nguyên có thể 
+được biểu diễn trong các hệ khác nhau như hệ nhị phân, hệ bát phân, 
+hệ thập phân và hệ thập lục phân. Quy ước các hằng số được biểu diễn 
+dưới dạng các hệ thống số khác nhau như sau: 
+Hệ thống số
+Cơ 
+số
+Ký tự sử dụng biểu diễn số
+Ví dụ: (giá trị 240 
+hệ thập phân)
+Biểu diễn trong 
+ngôn ngữ C
+Nhị phân
+2
+0,1
+(11110000)2
+int a = 
+0b11110000
+Bát phân
+8
+0,1,2,3,4,5,6,7
+(360)8
+int a = 0360
+Hệ thập phân
+10
+0,1,2,3,4,5,6,7,8,9
+(240)10
+int a = 240
+Hệ thập lục phân
+16
+0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+(F0)16
+int a = 0xF0
+1.10. CÁC PHÉP TOÁN TRONG C
+Ngôn ngữ C cung cấp nhiều phép toán khác nhau cho người dùng 
+để phục vụ cho các yêu cầu lập trình khác nhau. Các phép toán được sử 

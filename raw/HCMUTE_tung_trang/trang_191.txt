@@ -1,0 +1,34 @@
+// Trang 191 - Ngôn ngữ lập trình C_ebook.pdf
+
+188
+Hai câu lệnh ở dòng lệnh số 12 và 13 sẽ in ra kích thước và giá trị 
+hiện tại của biến R, kết quả thu được sẽ là:
+Kich thuoc R: 4
+Gia tri R: 1824868116
+Tiếp tục, ở dòng lệnh 15, câu lệnh R = Den; sẽ thực hiện gán một 
+giá trị dữ liệu mới vào R. Lúc này, tên định danh Den là một trong số 
+các tên định danh đã được liệt kê ở phần định nghĩa của kiểu MauSac 
+và tương ứng với số 0. Do đó, câu lệnh R = Den; sẽ làm cho giá trị biến 
+R bằng 0. Kết quả in ra màn hình của lệnh in printf(“Gia tri R: 
+%d\n”, R); ở dòng lệnh 16 sẽ như hình dưới.
+Kich thuoc R: 4
+Gia tri R: 1824868116
+Gia tri R: 0
+Tương tự, câu lệnh R = Cam; ở dòng lệnh 18 sẽ làm cho giá trị 
+biến R bằng 3 vì tên định danh Cam tương đương với số 3 như đã liệt kê 
+ở phần định nghĩa của kiểu MauSac. Kết quả của lệnh in printf(“Gia 
+tri R: %d\n”, R); ở dòng lệnh 19 sẽ như hình dưới.
+Kich thuoc R: 4
+Gia tri R: 1824868116
+Gia tri R: 0
+Gia tri R: 3
+7.4. BÀI TẬP 
+1. Hãy tìm và sửa lỗi trong các câu/đoạn lệnh sau:
+a.
+struct 
+{
+	
+int ma;
+	
+int namSX;
+} thietBi;

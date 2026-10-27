@@ -1,0 +1,47 @@
+// Trang 97 - Ngôn ngữ lập trình C_ebook.pdf
+
+94
+ 
+Ta xem kết quả của chương trình sau để hiểu rõ hơn.
+Ví dụ 4.1b:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+#include <stdio.h>
+int main(void)
+{  
+int   a[10];
+printf(“kich thuoc cua a[0] la: %d”,sizeof(a[0]));
+printf(“\ndia chi cua a[0] la: %d”,&a[0]);
+printf(“\ndia chi cua a[1] la: %d”,&a[1]);
+printf(“\ndia chi cua a[2] la: %d”,&a[2]);
+printf(“\ndia chi cua a[3] la: %d”,&a[3]);
+printf(“\ndia chi cua a[4] la: %d”,&a[4]);
+printf(“\ndia chi cua a[5] la: %d”,&a[5]);
+printf(“\ndia chi cua a[6] la: %d”,&a[6]);
+printf(“\ndia chi cua a[7] la: %d”,&a[7]);
+printf(“\ndia chi cua a[8] la: %d”,&a[8]);
+printf(“\ndia chi cua a[9] la: %d”,&a[9]);
+return 0;
+}
+Giải thích chương trình: 
+Ở dòng lệnh số 5 có câu lệnh sizeof(), ý nghĩa của câu lệnh này 
+là lấy kích thước tính theo byte của một biến bất kỳ. Dòng lệnh 6 có 
+câu lệnh &a[0]: ý nghĩa của câu lệnh này là lấy địa chỉ đầu tiên của 
+biến a[0]. Các câu lệnh ở các dòng phía dưới sẽ lấy và in ra địa chỉ 
+của các phần tử còn lại của mảng. Kết quả khi chạy chương trình trên 
+sẽ là:

@@ -1,0 +1,40 @@
+// Trang 250 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+250 
+73     if (bm < 0) 
+74     {am = -am; bm = -bm;} 
+75     if (b == 1) printf("\n Phan so %d",a); 
+76     else printf("\nPhan so toi gian %d/%d = %d/%d\n", a,   b, am, bm); 
+77  } 
+78  int main() 
+79  { 
+80     int n, i, luachon; 
+81     int a, b; 
+82     Do 
+83     { 
+84        printf("\n-----------MENU-----------\n"); 
+85        printf("\n1. Kiem tra so nguyen to"); 
+86        printf("\n2. In cac so nguyen to"); 
+87        printf("\n3. Kiem tra so hoan hao"); 
+88        printf("\n4. In cac so hoan hao"); 
+89        printf("\n5. Phan so toi gian"); 
+90        printf("\nMoi ban chon: ");scanf("%d",&luachon); 
+91        switch(luachon) 
+92        { 
+93        case 1: 
+94         
+ do { 
+95            printf("nhap n = "); 
+96            scanf("%d",&n); 
+97            if (n < 1) 
+98              printf("\nn duong, nhap lai\n"); 
+99           } while (n < 1); 
+100           if(kiemTraSNT(n) == 1) 
+101              printf("\n%d la so nguyen to\n",n); 
+102           else 
+103              printf("\nkhong phai so nguyen to\n"); 
+104           break; 
+105        case 2: 
+106         
+ do { 
+107             printf("nhap n = "); 

@@ -1,0 +1,38 @@
+// Trang 417 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+417 
+ Bài tập 5.40 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Nhập vào một chuỗi ký tự. In chuỗi ra màn hình. 
+- Đếm có bao nhiêu khoảng trắng trong chuỗi. 
+- Loại bỏ các khoảng trắng thừa trong chuỗi (Định nghĩa khoảng 
+trắng thừa nếu có từ hai khoảng cách liên tiếp trở lên). In chuỗi sau khi 
+loại bỏ các khoảng trắng thừa ra màn hình. 
+ Bài tập 5.41 
+Viết chƣơng trình nhập vào hai chuỗi s1 và s2, nối chuỗi s2 vào s1. 
+Xuất chuỗi s1 ra màn hình. 
+Yêu cầu: 
+- Xây dựng hàm nhập chuỗi. 
+- Xây dựng hàm nối chuỗi s2 vào s1. 
+- Xây dựng hàm hiển thị chuỗi. 
+ Bài tập 5.42 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Nhập vào một chuỗi ký tự, in chuỗi ký tự ra màn hình. 
+- Viết chƣơng trình đổi tất cả các kí tự có trong chuỗi thành chữ 
+thƣờng (không dùng hàm strlwr). 
+- Đổi tất cả các kí tự trong chuỗi sang chữ in hoa (không dùng hàm 
+struppr). 
+- Đổi những kí tự đầu tiên của mỗi từ thành chữ in hoa. 
+- Chữ xen kẻ 1 chữ hoa và 1 chữ thƣờng. Chẳng hạn, nhập 
+ABCDEfgh đổi thành AbCdEfGh. 
+- Đảo ngƣợc các kí tự trong chuỗi. Chẳng hạn, nhập ABCDE, xuất ra 
+màn hình là: EDCBA. 
+Yêu cầu:  
+Mỗi ý trong bài đƣợc thể hiện bằng một hàm. 
+ Bài tập 5.43 
+Viết chƣơng trình thực hiện các yêu cầu sau đây: 
+- Nhập vào một chuỗi ký tự s, in chuỗi ký tự ra màn hình. 
+- Nhập một ký tự ch, tìm kiếm và trả lời ký tự ch có trong chuỗi 
+không, nếu có xuất ra vị trí của từ chứa kí tự  đó.  Chẳng hạn,  chuỗi s là 
+“dai hoc cong nghe gtvt”, nếu nhập ký tự  „c‟, vị trí đƣợc in ra màn hình 
+là 3 (từ thứ 3 của chuỗi s). 

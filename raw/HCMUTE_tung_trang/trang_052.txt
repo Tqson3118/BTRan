@@ -1,0 +1,59 @@
+// Trang 52 - Ngôn ngữ lập trình C_ebook.pdf
+
+49
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+#include <stdio.h>
+#include <conio.h>
+int main(void)
+{ 
+int namsinh;
+printf(“Nhap nam sinh cua ban : “);
+scanf(“%d”, &namsinh);
+printf(“\nChao ban! Tinh den nam 2020,tuoi ban là %4d 
+tuoi”,2020-namsinh);
+getch();
+return 0;
+}
+Ví dụ 2.4: Viết chương trình nhập ba số thực a, b, c từ bàn phím là 
+số đo 3 cạnh tam giác, sau đó tính và in chu vi và diện tích của tam giác.
+ Giải:
+ Dữ liệu vào : a, b, c kiểu float là 3 cạnh một tam giác. 
+Tính toán: 
+Chu vi p = (a+b+c), diện tích s = sqrt(q*(q-a)*(q-b)*(q-c)) với q 
+= p/2 và sqrt là hàm tính căn bậc 2.
+Chúng ta có chương trình được viết như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+int main(void) 
+{ float a,b,c, p,q,s;
+printf(“Nhap so do 3 canh cua tam giac “); 
+printf(“\na = “);
+ scanf(“%f”, &a);
+ printf(“\nb = “); 
+scanf(“%f”, &b); 
+printf(“\nc = “); 
+scanf(“%f”, &c); 

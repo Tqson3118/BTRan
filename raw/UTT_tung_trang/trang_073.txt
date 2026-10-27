@@ -1,0 +1,8 @@
+// Trang 73 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+73 
+ 
+Hình 1.6. Khởi động soạn thảo chƣơng trình C bằng DevC++ 
+Bƣớc 3: Chọn C Project 
+ 
+Hình 1.7. Màn hình New Project 

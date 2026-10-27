@@ -1,0 +1,33 @@
+// Trang 145 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+145 
+b. Hoạt động 
+Máy sẽ lần lƣợt so sánh biến/biểu thức với các giá trị 1, giá trị 2, giá 
+trị 3,…, giá trị n.  
+- Nếu giá trị của biến/biểu thức bằng value i thì máy sẽ nhảy tới thực 
+hiện lệnh statement thứ i (i = 1, 2,.., n), sau đó thực hiện lệnh break để 
+thoát khỏi  câu lệnh switch. 
+- Giá trị của biến/biểu thức khác tất cả các value i (i = 1, 2, 3,…, n) thì: 
+o Nếu có  từ khóa default thì máy sẽ thực hiện lệnh sau default (lệnh 
+n + 1). 
+o Nếu không có default thì máy sẽ ra khỏi cấu trúc switch. 
+c. Sơ đồ khối 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Hình 3.6. Sơ đồ khối biểu diễn câu lệnh switch 
+Một số chú ý:  
+  Cấu trúc switch có thể lồng vào nhau 

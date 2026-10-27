@@ -1,0 +1,34 @@
+// Trang 223 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+223 
+28 } 
+Kết quả chƣơng trình 
+a = 15 
+a = 7 
+a = 8 
+a = 3 
+Nhận xét 
+Khi chạy chƣơng trình máy sẽ thực hiện các lệnh trong main(), gọi 
+đến tinh1() dòng 24.  
+Ở dòng 8: gặp lệnh printf("a= %d\n", a); in ra a = 15. 
+Từ dòng 9 đến dòng 13: Khi thực hiện khối lệnh của câu lệnh if, sử 
+dụng biến cục bộ a = 2. Do đó, ở dòng 13 in ra a = 7. 
+Gọi hàm tinh2(): Trong hàm tinh2() không khai báo biến a, nên sử 
+dụng a toàn cục a = 6. Do đó, ở dòng 19, khi in ra a = 8. 
+Gặp dòng 26, in ra a = 3.  
+b. Truyền tham số cho hàm 
+Nếu một hàm sử dụng các đối số, trong hàm main() phải khai báo các 
+biến chấp nhận các giá trị của các đối số. Các biến này đƣợc gọi là tham 
+số hình thức của hàm. 
+Các tham số hình thức hoạt động giống nhƣ các biến cục bộ khác 
+trong hàm, đƣợc tạo khi nhập giá trị vào hàm và bị hủy khi thoát khỏi hàm. 
+Trong các lời gọi hàm, có hai cách để đối số có thể truyền cho hàm: 
++ Gọi theo giá trị 
+Phƣơng thức này sẽ sao chép giá trị thực của một đối số vào tham số 
+hình thức của hàm. Trong trƣờng hợp này, các thay đổi đƣợc thực hiện 
+cho tham số bên trong hàm, không có tác dụng với đối số. 
++ Gọi theo tham chiếu 
+Phƣơng thức này sẽ sao chép địa chỉ của một đối số vào tham số hình 
+thức. Bên trong hàm, địa chỉ đƣợc sử dụng để truy cập đối số thực tế đƣợc 
+sử dụng trong các lời gọi hàm. Điều này có nghĩa là những thay đổi đƣợc 
+thực hiện cho các tham số ảnh hƣởng đến đối số. 

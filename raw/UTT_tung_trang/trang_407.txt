@@ -1,0 +1,49 @@
+// Trang 407 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+407 
+ Bài tập 5.19 
+Viết chƣơng trình nhập vào một chuỗi ký tự, đếm số ký tự, số chữ số 
+và số các ký tự đặc biệt trong chuỗi vừa nhập? 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <string.h> 
+3 
+#include <stdlib.h> 
+4 
+#define MAX 100 //so ky tu cua chuoi 
+5 
+int main() 
+6 
+{ 
+7 
+    char str[MAX]; 
+8 
+    // khai bao cac bien: so_kt:so ky tu trong chuoi 
+9 
+    //so_cs: so cac chu so 0, 1, 2,..., 9 trong chuoi 
+10     //so_ktdb: so cac ky tu dac biet trong chuoi nhu cach dau, dau . 
+11     int so_kt, so_cs, so_ktdb, i; 
+12     // khoi tao gia tri ban dau 
+13  
+so_kt = so_cs= so_ktdb = i = 0; 
+14        printf("\n\nChuong trinh in so ky tu, so chu so, so ky tu dac 
+biet trong chuoi :\n"); 
+15        printf("---------------------------------------\n");  
+16        printf("Nhap vao chuoi can dem : "); 
+17        fgets(str, sizeof str, stdin); 
+ 
+18      /* Kiem tra moi phan tu cua chuoi, duyet tu dau cho den khi 
+gap ky tu ket thuc '\0'*/ 
+19     while(str[i]!='\0') 
+20     { 
+21         if((str[i]>='a' && str[i]<='z') || (str[i]>='A' && str[i]<='Z')) // 
+neu gap cac ky tu viet hoa va viet thuong 
+22         { 
+23             so_kt++; // tang so ky tu len 1 don vi 
+24         } 
+25         else if(str[i]>='0' && str[i]<='9') //neu gap cac chu so tu 0 
+den 9 
+26         { 
+27             so_cs++; // tang so chu so len 1 don vi 

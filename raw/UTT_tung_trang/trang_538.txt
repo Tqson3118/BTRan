@@ -1,0 +1,48 @@
+// Trang 538 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+538 
+6 
+    int ctr = 0;   
+7 
+    char fname[FSIZE]; 
+8 
+    char c;  
+9 
+    printf("\n\nDoc tep va dem so dong cua tep :\n"); 
+10  
+printf("-----------------------------------------\n");  
+11  
+printf("Nhap ten tep can mo (tep da duoc luu trong may): 
+"); 
+12  
+scanf("%s",fname); 
+13     fptr = fopen(fname, "r"); 
+14     if (fptr == NULL) 
+15     { 
+16         printf("Khong the mo tep %s", fname); 
+17         return 0; 
+18     } 
+19     // Trich xuat cac ky tu tu tep va luu tru trong bien c 
+20     for (c = getc(fptr); c != EOF; c = getc(fptr)) 
+21         if (c == '\n') // Tang bien diem neu gap ky tu xuong dong 
+22             ctr = ctr + 1; 
+23     fclose(fptr); 
+24     printf("So dong cua tep %s la : %d \n", fname, ctr-1); 
+25     return 0; 
+26 } 
+ Kết quả chƣơng trình: 
+Doc tep va dem so dong cua tep: 
+-------------------------------------------------- 
+Nhap ten tep can mo (tep da duoc luu trong may) : test_7_3.txt 
+So dong cua tep test_7_3.txt la: 5 
+ Bài tập 7.6 
+Viết chƣơng trình đếm số từ và đếm số ký tự trong một tệp văn bản 
+ Chƣơng trình: 
+1 
+#include <stdio.h> 
+2 
+#include <stdlib.h> 
+3 
+int main()  
+4 
+{  

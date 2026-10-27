@@ -1,0 +1,42 @@
+// Trang 165 - Ngôn ngữ lập trình C_ebook.pdf
+
+162
+Lúc này, kích thước của vùng nhớ mỗi biến a, b sẽ bằng tổng 
+kích thước của các biến thành phần (hoTen, MSSV, diemGiuaKy, 
+diemCuoiKy, diemTongKet). Lưu ý với các biến thành phần của mỗi 
+biến cấu trúc, máy tính sẽ cấp vùng nhớ theo đơn vị word (thường là 4 
+byte). Chẳng hạn, biến thành phần hoTen của biến a và biến b ở trên, đã 
+được định nghĩa trong kiểu cấu trúc SinhVien là một mảng một chiều 
+gồm 40 ký tự, thì máy tính sẽ cấp vùng nhớ cho thành phần này là 10 
+words (tương đương 40 bytes). Nếu thành phần hoTen được định nghĩa 
+là mảng 38 ký tự: 
+1
+2
+3
+4
+5
+6
+7
+8
+struct SinhVien
+{
+	
+char hoTen[38];
+	
+char MSSV[12];
+	
+float diemGiuaKy;
+	
+float diemCuoiKy;
+	
+float diemTongKet;
+};
+thì máy tính cũng sẽ cấp vùng nhớ cho thành phần này hoTen của 
+biến a hoặc biến b là 10 words (tức 40 bytes, dư 2 bytes).
+Khi khai báo một biến cấu trúc, có thể tiến hành khởi tạo giá trị 
+ban đầu cho các biến thành phần của biến cấu trúc này. Ví dụ câu lệnh 
+khai báo biến sau:
+struct ThietBi  c = {“Quat”, 2019, 225.5, ‘T’};
+sẽ phát sinh vùng nhớ cho biến c thuộc kiểu cấu trúc ThietBi và 
+khởi tạo giá trị ban đầu cho các biến thành phần của biến c như sau:
+Tổng kích thước vùng nhớ của biến c là 32 bytes

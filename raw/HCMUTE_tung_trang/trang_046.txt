@@ -1,0 +1,31 @@
+// Trang 46 - Ngôn ngữ lập trình C_ebook.pdf
+
+43
+scanf(“%d,%d,%d”,&a,&b,&c) ;
+trong trường hợp này, các dấu “,” được đặt trong chuỗi định dạng 
+là không hợp lệ. Các ký tự định dạng được liệt kê trong bảng trên và 
+luôn được bắt đầu bằng từ khóa “%”.
+1.11.2 Hàm xuất dữ liệu
+Cũng trong chương trình cộng hai số, ta có câu lệnh
+printf(“Tong la: %d \n”,tong);  //in ket qua
+là câu lệnh in dữ liệu ra màn hình sử dụng hàm printf. Hàm printf 
+ở lệnh này có hai tham số, “Tong la: %d \n” và tong . Tham số đầu 
+tiên “Tong la: %d \n”  là chuỗi định dạng gồm chuỗi ký tự cần in ra 
+màn hình Tong la: , mã định dạng %d cho biết sẽ có một số nguyên 
+được in ra, ký tự điều khiển \n để đưa con trỏ xuống dòng. Tham số thứ 
+hai, tong, sẽ xác định giá trị dữ liệu cần in ra.
+Vậy cú pháp chung của hàm in dữ liệu ra màn hình là:
+printf (“chuỗiĐịnhDạng”, biếnCầnIn);
+trong đó:
+ biếnCầnIn là biến chứa dữ liệu cần in ra màn hình.
+ chuỗiĐịnhDạng có thế là:
++ chuỗi ký tự thông thường.
++ mã định dạng (%d,  %f,  %c,  %s,...) dùng để định dạng dữ liệu 
+cho biếnCầnIn.
++ ký tự điều khiển (\n    \t    …).
+Lưu ý là để trình biên dịch có thể biên dịch được hàm scanf và 
+printf, ta cần khai báo thư viện stdio.h bằng câu lệnh
+#include <stdio.h>
+ở đầu chương trình.
+Danh sách các mã định dạng dữ liệu cho biến được liệt kê trong 
+bảng sau:

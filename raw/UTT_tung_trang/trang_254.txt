@@ -1,0 +1,45 @@
+// Trang 254 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+254 
+4 
+{ 
+5 
+   int i; 
+6 
+   if(n < 2) 
+7 
+      return 0; 
+8 
+   for(i = 2; I < n; i++) 
+9 
+   { 
+10       if(n % i == 0) 
+11          return 0; 
+12    } 
+13    return 1; 
+14 } 
+15 void inSNT(int n) 
+16 { 
+17    int i; 
+18    printf("\nCac so nguyen to la: "); 
+19    for(i = 2; i < n; i++) 
+20    { 
+21       if(kiemTraSNT(i) == 1) 
+22       { 
+23          printf("%d ", i); 
+24       } 
+25    } 
+26 } 
+27 int kiemTraSHH(int n) 
+28 { 
+29    int i, S; 
+30    S = 0; 
+31    for(i = 1; i < n; i++) 
+32    { 
+33       if(n % i == 0) 
+34       { 
+35          S = S + i; 
+36       } 
+37    } 
+38    if(S == n) 
+39       return 1; 

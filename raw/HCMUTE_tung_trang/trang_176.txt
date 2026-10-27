@@ -1,0 +1,51 @@
+// Trang 176 - Ngôn ngữ lập trình C_ebook.pdf
+
+173
+p->giaTien = 5.6;
+sẽ thực hiện lưu giá trị 5.6 vào biến thành phần giaTien của ô nhớ 
+đã cấp phát.
+Nếu không còn nhu cầu sử dụng vùng nhớ đã xin cấp phát trước 
+đó, có thể yêu cầu giải phóng bộ nhớ đã cấp phát cho con trỏ bằng cách 
+dùng hàm free().Ví dụ câu lệnh:
+free(p);
+sẽ giải phóng vùng nhớ đã cấp cho con trỏ p.
+Xét một chương trình được viết như sau:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+#include <stdio.h>
+#include <conio.h>
+#include <malloc.h>
+struct ThietBi
+{
+	
+char tenTB[20];
+	
+int namSanXuat;
+	
+float giaTien;
+	
+char  trangThai;
+};
+int main (void)
+{
+	
+char tam[2];
+	
+int i, n;
+	
+printf(“Nhap so n: “);

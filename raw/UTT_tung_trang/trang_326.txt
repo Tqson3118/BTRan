@@ -1,0 +1,40 @@
+// Trang 326 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+326 
+ Kết quả chƣơng trình: 
+ 
+*p  
+  = 7 
+ 
+*p + 1 = 8 
+ 
+*p - 1 = 6 
+Trong ví dụ 5.32, &a[2] (địa chỉ của phần tử thứ 3 trong mảng a) 
+đƣợc gán cho con trỏ p. Do đó giá trị a[2] = 7 đƣợc hiển thị khi thực hiện 
+dòng lệnh 7: 
+printf("*p = %d \n", *p); 
+Dòng lệnh 8, 9 sẽ in ra các giá trị *p + 1 và *p - 1, do đó các giá trị 
+đƣợc hiển thị trên màn hình là 8 và 6. 
+Trong trƣờng hợp của ví dụ này, con trỏ p chỉ lƣu địa chỉ phần tử thứ 
+3 của mảng a, không trỏ tới mảng a. 
+5.2.4. Con trỏ và hàm 
+Ngoài việc truyền các tham số trong hàm, chúng ta còn có thể truyền 
+địa chỉ cho hàm, bởi vì địa chỉ cũng là một loại giá trị. 
+Con trỏ làm tham số hàm đƣợc sử dụng để giữ địa chỉ của các đối số 
+đƣợc truyền trong lúc gọi hàm. Kỹ thuật này đƣợc gọi là tham chiếu, khi 
+một hàm đƣợc gọi bằng tham chiếu, bất kỳ thay đổi nào đƣợc thực hiện 
+cho các biến tham chiếu sẽ ảnh hƣởng đến các biến ban đầu. 
+Xem xét ví dụ sau đây: 
+ Ví dụ 5.33 
+Viết chƣơng trình hoán đổi giá trị của hai biến. 
+1 #include <stdio.h> 
+2 void swap(int *n1, int *n2); 
+3 int main() 
+4 { 
+5     int a = 5, b = 10; 
+6     // Trao doi dia chi cua 2 bien a va b 
+7     swap( &a, &b); 
+8     printf("a = %d\n", a); 
+9     printf("b = %d", b); 
+10     return 0; 
+11 } 

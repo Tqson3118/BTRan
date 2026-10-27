@@ -1,0 +1,39 @@
+// Trang 26 - Ngôn ngữ lập trình C_ebook.pdf
+
+23
+của hàm main. Phần được viết giữa một cặp dấu ngoặc { } được gọi là 
+một khối lệnh.
+Ở dòng lệnh số 8, câu
+printf(“Chao mung den voi C! \n”);
+là câu lệnh yêu cầu in ra màn hình một chuỗi các ký tự với nội 
+dung Chao mung den voi C! . Mỗi câu lệnh trong C sẽ được kết thúc 
+bằng một dấu chấm phẩy (;) 
+Ở dòng lệnh số 9, câu lệnh
+getch();
+là lệnh chờ nhập một ký tự bất kỳ từ bàn phím. Lệnh này được sử dụng 
+nhằm mục đích dừng chương trình để chờ người dùng nhập một ký tự 
+bất kỳ từ bàn phím. Để chương trình có thể hiểu và biên dịch được lệnh 
+getch(); chúng ta cần lệnh khai báo thư viện #include <conio.h> như ở 
+dòng lệnh số 4.
+Ở dòng lệnh số 10, câu lệnh
+return 0; /* cho biet chuong trinh da ket thuc thanh 
+cong */
+là câu lệnh kết thúc hàm main và trả về số 0. return là một từ khóa 
+dùng để kết thúc một hàm bằng cách trả về một giá trị, và giá trị số 0 
+trong câu lệnh này cho biết chương trình chính (hàm main) đã kết thúc 
+thành công. Điều này sẽ được giải thích kỹ hơn ở chương 6.
+Như vậy, tới đây, ta có thể thấy cấu trúc chung của một chương 
+trình C về cơ bản sẽ là:
+#include <TênThưViện.h>
+	
+int main (void)
+	
+{
+	
+	
+//Nội dung chương trình chính
+	
+	
+return 0;
+	
+}

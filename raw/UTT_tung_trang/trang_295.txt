@@ -1,0 +1,51 @@
+// Trang 295 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+295 
+ 
+Nhap vi tri phan tu can xoa trong mang 
+ 
+3 
+ 
+Mang sau khi xoa: 
+   54  34  12  33  23   7  83 
+ Yêu cầu đối với sinh viên: Xây dựng lại chƣơng trình bằng các 
+hàm sau đây: 
+- Hàm Nhap_mang(). 
+- Hàm Hien_thi(). 
+- Hàm Xoa_pt(). 
+c. Xóa bỏ các phần tử trùng lặp trong mảng 
+ Phát biểu bài toán: 
+Cho dãy số a[0], a[1], a[2],…, a[n - 1]. Nếu trong mảng có những 
+phẩn tử a[i], a[j], a[k],… giống nhau thì chỉ giữ lại phần tử a[i] và xóa bỏ 
+các phần tử khác. Hiển thị mảng sau khi loại bỏ các phần tử trùng lặp 
+trong mảng. 
+ Phác thảo lời giải: 
+ 
+Xét phần tử a[i] (       ). Xét các phần tử từ vị trí i + 1 
+đến vị trí n - 1, so sánh các phần tử này với a[i]. Nếu phát hiện trùng, di 
+chuyển các phần tử này sang trái một vị trí. Quá trình này đƣợc lặp đi lặp 
+lại cho đến khi không còn phần tử nào trong phạm vi [i + 1, n - 1] trùng 
+lặp với a[i]. 
+ Ví dụ 5.15 
+Viết chƣơng trình nhập vào một mảng bao gồm n phần tử là các số 
+nguyên, xác định các phần tử trùng lặp và xóa khỏi mảng. In mảng sau 
+khi xóa ra màn hình? 
+ Chƣơng trình: 
+1 
+#include<stdio.h> 
+2 
+#include<conio.h> 
+3 
+int main() 
+4 
+{ 
+5 
+    int a[20], i, j, k, n; 
+6 
+    printf("Nhap so phan tu cua mang: \n"); 
+7 
+    scanf("%d", &n); 
+8 
+    printf("Nhap %d phan tu cua mang:\n", n); 
+9 
+    for(i = 0; i < n; i++) 

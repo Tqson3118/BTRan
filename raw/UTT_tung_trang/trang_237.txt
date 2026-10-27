@@ -1,0 +1,35 @@
+// Trang 237 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+237 
+Kết quả chƣơng trình  
+a = 3 
+b = 3 
+c = 4 
+1. Kiem tra a,b,c co lap thanh tam giac duoc khong 
+2. Kiem tra tam giac la tam giac gi 
+3. Dien tich chu vi tam giac 
+Moi ban chon: 1 
+Lap thanh 3 canh tam giac 
+1. Kiem tra a,b,c co lap thanh tam giac duoc khong 
+2. Kiem tra tam giac la tam giac gi 
+3. Dien tich chu vi tam giac 
+Moi ban chon: 2 
+Tam giac can 
+1. Kiem tra a,b,c co lap thanh tam giac duoc khong 
+2. Kiem tra tam giac la tam giac gi 
+3. Dien tich chu vi tam giac 
+Moi ban chon: 3 
+Chu vi: 10 
+Dien tich:  4 
+So sánh cách 1 và cách 2 của ví dụ 4.10 
+Hai cách trên đều cho kết quả giống nhau. Nhƣng việc dùng biến 
+toàn cục chƣa tối ƣu vì việc chúng ta khai báo biến toán cục máy tính sẽ 
+cấp phát ô nhớ cho ba biến a, b, c trong suốt toàn bộ chƣơng trình, dẫn 
+đến tình trạng chiếm một phần bộ nhớ của máy tính, tốn bộ nhớ. 
+ Ví dụ 4.11 
+Dùng hàm viết chƣơng trình nhập vào một ngày/tháng/năm (ràng 
+buộc cho ngày chỉ nhập từ một đến ngày theo tháng, tháng nhập từ tháng 
+một đến mƣời hai, năm chỉ nhập năm có bốn chữ số). Tìm ngày kế tiếp 
+(ngày/tháng/năm) của ngày vừa nhập.  
+ 
+ 

@@ -1,0 +1,60 @@
+// Trang 322 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+322 
+ 
+Dia chi cua r = 000000000062FE00 
+ 
+Gia tri cua p = 000000000062FDF8 
+ 
+Dia chi cua p = 000000000062FE08 
+ 
+Gia tri cua *p = 1.340000 
+ 
+ 
+Gia tri cua q = -7.890000 
+ 
+Dia chi cua q = 000000000062FDF8 
+ 
+Gia tri cua r = 6.780000 
+ 
+Dia chi cua r = 000000000062FE00 
+ 
+Gia tri cua p = 000000000062FDF8 
+ 
+Dia chi cua p = 000000000062FE08 
+ 
+Gia tri cua *p = -7.890000 
+ 
+ 
+Gia tri cua q = 12.860000 
+ 
+Dia chi cua q = 000000000062FDF8 
+ 
+Gia tri cua r = 6.780000 
+ 
+Dia chi cua r = 000000000062FE00 
+ 
+Gia tri cua p = 000000000062FDF8 
+ 
+Dia chi cua p = 000000000062FE08 
+ 
+Gia tri cua *p = 12.860000 
+ 
+ 
+Gia tri cua q = 12.860000 
+ 
+Dia chi cua q = 000000000062FDF8 
+ 
+Gia tri cua r = 5.690000 
+ 
+Dia chi cua r = 000000000062FE00 
+ 
+Gia tri cua p = 000000000062FE00 
+ 
+Dia chi cua p = 000000000062FE08 
+ 
+Gia tri cua *p = 5.690000 
+Yêu cầu đối với sinh viên:  
+- Giải thích  Kết quả chƣơng trình dựa vào các dòng lệnh. 
+- Giải thích tại sao kết quả của chƣơng trình trên các máy khác nhau 
+là khác nhau? 

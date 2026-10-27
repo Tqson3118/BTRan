@@ -1,0 +1,32 @@
+// Trang 23 - Ngôn ngữ lập trình C_ebook.pdf
+
+20
+ngữ C. Các ngôn ngữ phổ biến hiện nay có thể kể đến là: Java, Python, 
+C++, C#, Swiff, Ruby, Perl, PHP, Visual Basic, Objective-C, R, Go,… 
+Trong số đó, nhiều ngôn ngữ phát triển từ ngôn ngữ C chuẩn như C++, 
+C#, Objective-C. Thực tế cho thấy, các ngôn ngữ khác nhau sử dụng 
+bộ từ khóa khác nhau dùng để phát biểu câu lệnh, tuy nhiên, cấu trúc, 
+cách vận hành các câu lệnh và các phát biểu có nhiều nét tương đồng 
+với nhau. Chính vì điều đó, hiểu và lập trình tốt ngôn ngữ C giúp lập 
+trình viên có thể tiếp cận các ngôn ngữ các một cách nhanh và đơn giản. 
+Tuy không phải là một ngôn ngữ hiện đại, C vẫn là một trong 
+các ngôn ngữ được sử dụng phổ biến hiện nay. Ngôn ngữ lập trình C 
+được ứng dụng trong một số lĩnh vực như lập trình hệ thống (system 
+programming), đặc biệt C là ngôn ngữ tiêu chuẩn cho việc lập trình 
+các hệ thống nhúng dựa trên hệ điều hành Linux (Embedded system 
+programming), lập trình điều khiển với các hệ thống điện tử dân dụng, công 
+nghiệp, sử dụng vi xử lý, vi điều khiển. Một số ngôn ngữ lập trình khác 
+có cấu trúc giống hoặc gần giống ngôn ngữ lập trình C được phát triển 
+như ngôn ngữ mô tả phần cứng Verilog (Verilog hardware description 
+language) được dùng trong thiết kế vi mạch số, Ngôn ngữ Python 
+được ứng dụng rộng rãi trong lĩnh vực trí tuệ nhân tạo, Swiff và 
+Objective-C được sử dụng để lập trình ứng dụng trên các thiết bị di 
+động chạy hệ điều hành iOS. Nắm vững ngôn ngữ lập trình C là nền 
+tảng để tiếp cận các ngôn ngữ lập trình khác nhanh hơn, hiệu quả hơn. 
+1.4. MỘT CHƯƠNG TRÌNH C ĐƠN GIẢN
+Một chương trình C bao gồm các hàm, các biến và các câu lệnh 
+được đặt trong cùng một tập tin hoặc có thể trong các tập tin khác nhau. 
+Trong ví dụ đầu tiên tiếp cận với ngôn ngữ C, chúng ta sẽ tiến hành viết 
+một chương trình bằng ngôn ngữ C, biên dịch và chạy trên máy tính. 
+Một chương trình C thực thi việc in ra màn hình một dòng chữ 
+được viết như bên dưới:

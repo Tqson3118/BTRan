@@ -1,0 +1,63 @@
+// Trang 282 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+282 
+12 
+       } 
+13 
+} 
+14 
+void Hien_thi(int a[], int n) 
+15 
+{ 
+16 
+ 
+ printf("Hien thi cac phan tu cua mang:\n"); 
+17 
+ 
+for(int I = 0; i < n; i++) 
+18 
+ 
+ 
+printf("%4d", a[i]); 
+19 
+} 
+20 
+int main(){ 
+21 
+    int a[1000]; 
+22 
+    int n; 
+23 
+     
+printf("Nhap so phan tu cua mang = "); 
+24 
+ 
+scanf("%d", &n);        
+25 
+ 
+Sinh_ngau_nhien(a, n); 
+26 
+ 
+Hien_thi(a, n); 
+27 
+    return 0; 
+28 
+} 
+Để ý về kết quả khi biên dịch, khác so với kết quả của các lần chạy trƣớc: 
+ 
+Nhap so phan tu cua mang = 10 
+ 
+Hien thi cac phan tu cua mang: 
+   42  11  19  80  22   7  69   9  54  30 
+Lƣu ý: 
+-  Muốn sinh các số nguyên ngẫu nhiên trong phạm vi [a, b], ta sử 
+dụng câu lệnh r = a + rand() % (max +1 - b). Chẳng hạn sinh các số ngẫu 
+nhiên có phạm vi từ 10 đến 50, ta sử dụng lệnh r = 10 + rand() % (50 + 1 
+- 10). 
+-  Muốn sinh các số thực ngẫu nhiên có giá trị trong phạm vi [a, b], ta 
+sử dụng câu lệnh r  = a + rand()/(float) RAND_MAX *(b - a). Chẳng hạn 
+sinh các số thực ngẫu nhiên trong phạm vi từ 5 đến 100, ta sử dụng lệnh r 
+= 5 + rand()/(float) RAND_MAX *(100 - 5). 
+Dạng 2: Xử lý với các phần tử của mảng 
+Các bài tập ở dạng này thƣờng đƣợc giải quyết thông qua việc duyệt 
+các phần tử của mảng.  

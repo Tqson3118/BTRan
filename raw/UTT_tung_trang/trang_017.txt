@@ -1,0 +1,39 @@
+// Trang 17 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+17 
+dung khá quan trọng của Chương 2, giới thiệu các mã định dạng, để đưa 
+dữ liệu vào hoặc đưa dữ liệu ra đúng quy chuẩn, định dạng. 
+CHƢƠNG 3: CÁC CẤU TRÚC PHÂN NHÁNH VÀ VÒNG LẶP 
+Hầu hết các ngôn ngữ lập trình đều cố gắng diễn đạt các hoạt động 
+của con người thành các cấu trúc lệnh. Có ba cấu trúc lệnh chủ yếu, thứ 
+nhất là cấu trúc tuần tự, các lệnh được thực hiện liên tiếp nhau, câu lệnh 
+nào viết trước thì được xử lý trước, thứ hai là cấu trúc điều kiện, hay còn 
+gọi là cấu trúc phân nhánh, thực hiện các công việc dựa vào một điều 
+kiện đúng hay sai, hoặc dựa trên các giá trị có thể nhận được của một 
+biểu thức mà thực hiện các nhánh tương ứng. Cấu trúc thứ ba, diễn đạt 
+một công việc nào đó được lặp đi lặp lại, có thể vô hạn, dựa vào một biểu 
+thức điều kiện. 
+Chương 3, giới thiệu các câu lệnh điều kiện if, cấu trúc lựa chọn 
+switch, cấu trúc lặp với số lần xác định for và lặp với số lần không xác 
+định với hai câu lệnh do… while và while. Với từng cấu trúc của các lệnh 
+này, các bạn sinh viên nên tìm hiểu kỹ từng thành phần, cú pháp và chức 
+năng hoạt động thông qua các ví dụ minh họa được trình bày khá chi tiết 
+trong giáo trình. 
+CHƢƠNG 4: HÀM 
+Một trong những yếu điểm của các sinh viên khi học các ngôn ngữ 
+lập trình, là xây dựng một chương trình gọn gàng với số dòng mã ít, tối 
+ưu. Làm thế nào để phân chia chương trình hợp lý nhất, sử dụng code 
+như thế nào cho hợp lý, tránh trường hợp một đoạn code xuất hiện nhiều 
+lần trong một chương trình được trình bày trong nội dung Chương 4. 
+Nội dung Chương 4, trình bày khái niệm về hàm, cách khai báo hàm, 
+cách truyền tham số và gọi hàm trong chương trình. Khác với các ngôn 
+ngữ khác, chẳng hạn như C++, ngôn ngữ C chỉ có hai cách truyền tham 
+số: đó là truyền tham trị và truyền con trỏ. Xác định đúng thì mới xây 
+dựng được một chương trình tường minh, theo đúng tư tưởng của ngôn 
+ngữ thuần C. Có rất nhiều ví dụ được đưa ra trong Chương 4, giúp cách 
+bạn xác định được khi nào nên dùng hàm và dùng hàm như thế nào cho 
+đúng cách. 
+CHƢƠNG 5: MẢNG VÀ CON TRỎ 
+Ngoài các kiểu dữ liệu cơ bản như ký tự, số nguyên, số thực, v.v. 
+ngôn ngữ lập trình C cho phép lập trình viên tự định nghĩa các các kiểu 
+dữ liệu phù hợp với nhu cầu xử lý thực tế trong các bài toán cụ thể. 

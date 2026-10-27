@@ -1,0 +1,39 @@
+// Trang 30 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+30 
+#include “phanso.h” 
+Sự khác nhau giữa cặp < > và “ ” bao quanh tên tệp là với cặp < >, 
+chƣơng trình dịch tìm tên tệp tiêu đề trong thƣ mục ngầm định xác định 
+bởi đƣờng dẫn trong mục Option/Directories, còn với cặp “ ” chƣơng 
+trình dịch tìm tệp trong thƣ mục hiện tại, nếu không có mới tìm trong thƣ 
+mục các tệp tiêu đề ngầm định nhƣ trƣờng hợp < >. 
+1.3.2.3. Phần định nghĩa marco 
+Khái niệm macro là gì? Giả sử trong chƣơng trình có một nội dung 
+(giá trị) nào đó và chúng ta muốn sử dụng nó nhiều lần trong chƣơng 
+trình, nhƣng chúng ta không muốn viết trực tiếp nó vào chƣơng trình lúc 
+soạn thảo, vì một vài lý do nào đó (chẳng hạn nhƣ nó sẽ làm chƣơng trình 
+khó đọc, khó hiểu, hoặc khi thay đổi sẽ khó, v.v.). Lúc này chúng ta hãy 
+gán cho nội dung đó một “tên” và bạn sử dụng “tên” đó để viết trong 
+chƣơng trình nguồn. Khi biên dịch chƣơng trình, chƣơng trình dịch sẽ tự 
+động thay thế nội dung của “tên” vào đúng vị trí của “tên” đó. Thao tác 
+này gọi là phép thế macro và chúng ta gọi “tên” là tên của macro và nội 
+dung của nó đƣợc gọi là nội dung của macro. 
+Một macro đƣợc định nghĩa nhƣ sau: 
+#define tên_macro nội_dung 
+Trong đó, tên macro là một tên hợp lệ, nội dung (giá trị) của macro 
+đƣợc coi thuần tuý là một xâu cần thay thế vào vị trí xuất hiện tên của 
+macro tƣơng ứng, giữa tên và nội dung cách nhau một hay nhiều khoảng 
+trống (dấu cách). Nội dung của macro bắt đầu từ kí tự khác dấu trống đầu 
+tiên sau tên macro cho tới hết dòng. 
+ Ví dụ 1.7 
+#define SOCOT 20 
+#define max(a,b) (a > b ? a:b) 
+Với hai ví dụ trên, khi gặp tên SOCOT, chƣơng trình dịch sẽ tự động 
+thay thế bởi 20 và max(a, b) sẽ đƣợc thay thế bởi (a > b ? a : b); 
+Lƣu ý: 
+- Phép thay thế macro đơn giản chỉ là thay nội dung macro vào vị trí 
+tên của nó do vậy sẽ không có cơ chế kiểm tra kiểu. 
+- Khi định nghĩa các macro có “tham số” có thể sau khi thay thế biểu 
+thức mới thu đƣợc có trật tự tính toán không nhƣ bạn mong muốn. Chẳng 
+hạn, ta có macro tính bình phƣơng một số nhƣ sau: #define bp(a) a*a và 
+trong chƣơng trình có câu lệnh bp(x + y) sẽ đƣợc thay là x + y * x + y và 

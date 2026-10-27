@@ -1,0 +1,78 @@
+// Trang 183 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+183 
+2  #include<conio.h> 
+3  int main() 
+4  { 
+5   
+int i, n, max; 
+6   
+do 
+7   
+{ 
+8   
+printf("\nNhap n (n > 0): "); 
+9   
+scanf("%d", &n); 
+10   
+  if(n <= 0) 
+11   
+   { 
+12   
+   printf("\n N phai > 0. Xin nhap lai !"); 
+13   
+   } 
+14   
+}while(n <= 0); 
+15      i = 1; 
+16   
+max = 1; 
+17   
+printf("\nCac uoc so le cua so %d la: ",n); 
+18   
+while(i <= n) 
+19   
+{ 
+20   
+ 
+if((n % i == 0) && (i % 2 == 1)) 
+21   
+ 
+{ 
+22   
+ 
+ 
+if(i > max) 
+23   
+ 
+ 
+{ 
+24   
+ 
+ 
+max = i; 
+25   
+ 
+ 
+} 
+26   
+ 
+ 
+printf("%4d", i); 
+27   
+ 
+} 
+28   
+ 
+ 
+i++; 
+29   
+} 
+30   
+printf("\nUoc so le lon nhat la %d", max); 
+31   
+getch(); 
+32   
+return 0; 
+33  } 
+ 

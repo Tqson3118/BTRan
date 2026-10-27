@@ -1,0 +1,44 @@
+// Trang 342 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+342 
+Hai ví dụ sau đây cho thấy sự khác nhau giữa hàm puts() và hàm 
+prinft(): 
+ Ví dụ 5.47 
+ Sử dụng hàm puts(): 
+1 
+#include<stdio.h>  
+2 
+int main()  
+3 
+{  
+4 
+    puts("DHCNGTVT");  
+5 
+    puts("CNGTVT");  
+6 
+    getchar();  
+7 
+    return 0;  
+8 
+} 
+ Kết quả chƣơng trình: 
+ 
+DHCNGTVT 
+ 
+CNGTVT 
+ Ví dụ 5.48  
+Sử dụng hàm puts() có kèm theo các ký tự định dạng % 
+1 #include<stdio.h>  
+2 int main()  
+3 {      
+4     puts("CNGTVT%sDHCNGTVT%s");      
+5     getchar();  
+6     return 0;  
+7 } 
+ Kết quả chƣơng trình: 
+ 
+CNGTVT%sDHCNGTVT%s 
+ Ví dụ 5.49 
+ Sử dụng hàm printf() 
+1 #include<stdio.h>  
+2 int main()  

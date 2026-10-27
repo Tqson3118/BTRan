@@ -1,0 +1,24 @@
+// Trang 158 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+158 
+Bƣớc 3: Thực hiện exp3 và quay lại bƣớc 2. 
+Bƣớc 4: Thoát khỏi vòng lặp. 
+3.2.1.3. Sơ đồ khối 
+ 
+Hình 3.7. Sơ đồ khối biểu diễn vòng lặp for 
+ Ví dụ 3.18    
+Tính tổng s = 1 + 2 + 3 + ... + 10  
+Phác họa lời giải 
+Khai báo biến tổng s, khởi tạo giá trị ban đầu s = 0. 
+Để tính tổng các số từ 1 đến 10, ta sử dụng một biến i. Ban đầu gán i 
+= 0, cho i chạy từ 1 đến 10, ứng với mỗi i ta cộng vào s nhƣ sau: 
+Với i = 0, s0 = 0, tăng i = i + 1 = 1. 
+Với i = 1, s1 = 0 + 1 = s0 + 1 = s0 + i, tăng i = i + 1 = 2; 
+Với i = 2, s2 = 0 + 1+ 2 = s1 + 2 = s1 + i, tăng i = i + 1 = 3. 
+… 
+Với  i = 10, s10 = (0 + 1 + 2 + 3 + … + 9) + 10 = s9 + 10 = s9 + i , 
+tăng i = 11, dừng chƣơng trình. 
+Nhƣ vậy: 
++ Với i   10 thì thực hiện tính tổng, nếu i > 10 thì dừng chƣơng 
+trình. 
++ Với mỗi giá trị biến i ta có hai biểu thức giống nhau: i + 1 và s + i.  

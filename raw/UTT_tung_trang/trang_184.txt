@@ -1,0 +1,39 @@
+// Trang 184 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+184 
+Kết quả chƣơng trình 
+ 
+Nhap n(n > 0): 0 
+ 
+n phai > 0. Xin nhap lai ! 
+ 
+Nhap n(n > 0): 25 
+ 
+Cac uoc so le cua so 25 la:    1   5  25 
+ 
+Uoc so le lon nhat la 25 
+3.3. CÂU LỆNH BREAK, CONTINUE 
+3.3.1. Câu lệnh break 
+Cú pháp:   
+break; 
+Chức năng: Lệnh break cho phép thoát ra khỏi vòng lặp chứa 
+nó ngay lập tức. 
+Lƣu ý:  
+- Câu lệnh break dùng trong vòng lặp và câu lệnh switch. 
+ Ví dụ 3.33 
+Giả sử mật khẩu là 111. Đọc vào một mật khẩu ngƣời dùng tối đa số lần 
+nhập là 4. Nếu nhập đúng số 111 thì thoát không phải kiểm tra hết n lần. Nếu 
+nhập không đúng số 111 báo nhập sai. Nếu nhập quá số lần quy định thì in ra 
+dòng thông báo “So lan nhap da het, may se khoa trong 5 phut”. 
+Dữ liệu test: 111 
+Kết quả mong đợi: thoát. 
+Dữ liệu test: 222 
+Kết quả mong đợi: Ban da nhap sai. 
+Chƣơng trình 
+1  #include<stdio.h> 
+2  #include<conio.h> 
+3  main() 
+4  { 
+5  int pass, i; 
+6  for (i=0; i<4; i++) 
+7  { 

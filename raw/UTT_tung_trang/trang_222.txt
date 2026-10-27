@@ -1,0 +1,61 @@
+// Trang 222 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+222 
++ Thời gian: Biến cục bộ sẽ bị xóa khi ra khỏi thân hàm hoặc khối lệnh. 
++ Ƣu điểm: Tốn ít ô nhớ. 
++ Nhƣợc điểm: Sử dụng trong thân các hàm đƣợc khai báo. 
+ Ví dụ 4.4 
+Cho đoạn chƣơng trình sau, hãy cho biết kết quả chƣơng trình? 
+1 
+#include <stdio.h> 
+2 
+#include <conio.h> 
+3 
+int a = 6; 
+4 
+void tinh1() 
+5 
+{ 
+6 
+ 
+int a = 5; 
+7 
+ 
+a = a + 10; 
+8 
+ 
+printf("a = %d\n", a); 
+9 
+ 
+if (a > 3) 
+10  
+{ 
+11  
+ 
+int a = 2; 
+12  
+ 
+a = a + 5; 
+13  
+ 
+printf("a = %d\n", a); 
+14  
+} 
+15 } 
+16 void tinh2() 
+17 { 
+18  
+a = a + 2; 
+19  
+printf("a = %d\n",a); 
+20 } 
+21 main() 
+22 { 
+23  
+int a = 3; 
+24  
+tinh1(); 
+25  
+tinh2(); 
+26 printf("a = %d\n",a); 
+27 getch(); 

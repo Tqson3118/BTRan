@@ -1,0 +1,52 @@
+// Trang 539 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+539 
+5 
+    FILE *fptr;  
+6 
+    char ch;  
+7 
+    // wrd: bien dem so tu, charctr: bien dem so ky tu 
+8 
+ 
+int wrd=1,charctr=1; 
+9 
+    char fname[20]; 
+10     printf("\nDem so tu va so ky tu trong mot tep :\n"); 
+11  
+printf("-----------------------------------\n");  
+12  
+printf("Nhap ten tep can mo : "); 
+13  
+scanf("%s",fname);     
+14     fptr=fopen(fname,"r");  
+15     if(fptr==NULL)  
+16      {  
+17          printf("Tep khong ton tai hoac khong the mo!.");  
+18       }  
+19     else  
+20         {  
+21           ch=fgetc(fptr);  
+22           printf("Noi dung cua tep %s la : ",fname);  
+23           while(ch!=EOF)  
+24             {  
+25                 printf("%c",ch);  
+26         // gap ky tu la dau cach ' ' hoac dau xuong dong \n 
+27  
+ 
+ 
+if(ch==' '||ch=='\n') 
+28                   {  
+29                         wrd++;   
+30                   } 
+31                     else 
+32                   { 
+33                         charctr++;  
+34                   } 
+35                 ch=fgetc(fptr);  
+36             } 
+37        printf("\nSo tu trong tep %s la : %d\n",fname,wrd-2);  
+38         printf("So ky tu trong tep %s la : %d\n\n",fname,charctr-1);     
+39         }  
+40     fclose(fptr);  
+41 } 

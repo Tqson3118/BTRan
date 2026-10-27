@@ -1,0 +1,48 @@
+// Trang 283 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+283 
+ Ví dụ 5.9 
+Viết chƣơng trình nhập vào điểm của n sinh viên trong lớp (n đƣợc 
+nhập từ bàn phím). Tính và in tổng điểm của các sinh viên trong lớp. 
+ Phác thảo lời giải 
+- Sử dụng mảng marks để lƣu điểm của các sinh viên trong lớp. 
+- Khai báo biến sum để ghi nhận tổng điểm của các sinh viên, ban 
+đầu khởi tạo biến sum = 0. 
+- Duyệt qua từng phần tử của mảng marks, cộng điểm của từng sinh 
+viên vào biến sum. 
+- Hiển thị kết quả biến sum khi kết thúc vòng lặp. 
+ Chƣơng trình: 
+1 #include <stdio.h> 
+2 int main(){ 
+3 int i, n; // khai bao bien n la so sinh vien cua lop 
+4 int marks[100]; // khai bao mang diem cua cac sinh vien 
+5 int sum = 0; // bien tong, ghi nhan tong diem cua cac sinh vien 
+6 printf("Nhap vao so sinh vien trong lop: "); 
+7 scanf("%d", &n); 
+8 for(i=0; i<n; i++){ 
+9  
+printf("Nhap vao diem cua sinh thu %d: ", i+1); 
+10  
+scanf("%d", &marks[i]); //Nhap diem cua tung sinh vien 
+trong lop 
+11  
+sum + = marks[i]; 
+12 } 
+13 printf("Tong diem cua cac sinh vien trong lop = %d", sum); 
+14 return 0; 
+15 } 
+Kết quả chƣơng trình: 
+ 
+Nhap vao so sinh vien trong lop: 5 
+ 
+Nhap vao diem cua sinh thu 1: 7 
+ 
+Nhap vao diem cua sinh thu 2: 6 
+ 
+Nhap vao diem cua sinh thu 3: 7 
+ 
+Nhap vao diem cua sinh thu 4: 3 
+ 
+Nhap vao diem cua sinh thu 5: 7 
+ 
+Tong diem cua cac sinh vien trong lop = 30 

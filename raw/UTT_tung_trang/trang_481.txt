@@ -1,0 +1,57 @@
+// Trang 481 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+481 
+  
+ 
+printf("%-7.1f",sv[i].d_tp2); 
+  
+ 
+printf("%-7.1f",sv[i].d_cc); 
+  
+ 
+printf("%-7.1f",sv[i].d_gk); 
+  
+ 
+printf("%-7.1f",sv[i].d_kt); 
+  
+ 
+printf("%-7.1f",sv[i].tong_diem); 
+  
+ 
+printf("\n"); 
+  
+} 
+  
+i = i+1; 
+ } 
+ if (spt == 0) printf("Khong co ban ghi nao!\n"); 
+} 
+//Ham tinh diem trung binh cua sinh vien 
+void tb_sv(sinhvien sv[], int spt) 
+{ 
+char id[10]; 
+float dtb = 0; 
+printf("Nhap ma sinh vien:"); 
+scanf("%s",&id); 
+int index = timkiem(sv, id,spt); 
+if (index != -1 && spt>0) 
+{ 
+sv[index].tong_diem 
+= 
+sv[index].d_tp1 
++ 
+sv[index].d_tp2 
++ 
+sv[index].d_cc + sv[index].d_gk + sv[index].d_kt; 
+dtb = sv[index].tong_diem/5; 
+printf("Diem trung binh cua sinh vien la: %f",dtb); 
+printf("\n"); 
+} 
+else printf("Ban ghi khong ton tai. Kiem tra lai Masv va thu lai."); 
+} 
+//Ham hien thi diem cao nhat  
+void caonhat(sinhvien sv[], int spt) 
+{ 
+float max = sv[0].tong_diem; 
+int index = 0,j; 
+if (spt >= 2) 

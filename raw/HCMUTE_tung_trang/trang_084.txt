@@ -1,0 +1,20 @@
+// Trang 84 - Ngôn ngữ lập trình C_ebook.pdf
+
+81
+(dòng lệnh 13) và chỉ còn cách tắt đi và chạy lại. Chương trình này là 
+cơ sở dùng để kiểm tra thông tin bảo mật nào đó nếu áp dụng thêm các 
+phần học ở các chương tiếp theo.
+3.3. LỆNH DO .... WHILE
+3.3.1. Cú pháp
+do
+   {
+     Khối lệnh ;
+    }
+while (biểu thức);
+3.3.2. Hoạt động
+Hình 3.3. Lưu đồ giải thuật vòng lặp do... while
+Nguyên tắc thực hiện: 
+ Bước 1: Máy thực hiện Khối lệnh.
+ Bước 2: Sau đó tính giá trị của Biểu thức, nếu giá trị của Biểu 
+thức là sai thì chương trình thoát ra khỏi vòng lặp. Nếu giá trị của Biểu 
+thức là đúng thì quay lại Bước 1.

@@ -1,0 +1,39 @@
+// Trang 51 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+51 
+ Ví dụ 1.36 
+Hằng chuỗi ký tự  “Ha Noi”; 
+  “ ” /*Chuỗi rỗng*/. 
+Chuỗi ký tự đƣợc lƣu trữ trong máy dƣới dạng một mảng có các phần 
+tử là các ký tự riêng biệt. Trình biên dịch tự động thêm ký tự  „\0‟ vào cuối 
+mỗi chuỗi (ký tự \0 đƣợc xem là dấu hiệu kết thúc của một chuỗi ký tự). 
+Lƣu ý: Phân biệt giữa hằng ký tự và hằng chuỗi ký tự: „A‟ là hằng 
+ký tự khác với “A” là hằng chuỗi ký tự. 
+1.6. BIỂU THỨC VÀ PHÉP TOÁN 
+1.6.1. Toán tử gán 
+Làm thế nào để gán giá trị cho các biến? Ngôn ngữ C cung cấp một 
+toán tử gán cho mục đích này, gán giá trị cho một biến bằng toán tử gán 
+đƣợc gọi là một câu lệnh gán trong C. Chức năng của toán tử này là gán 
+các giá trị hoặc giá trị trong các biến ở phía bên phải của một biểu thức 
+cho các biến ở phía bên trái. 
+Cú pháp của biểu thức gán: 
+ 
+Variable = constant/variable/expression; 
+Trong đó: 
+ 
+Variable: biến 
+ 
+Constant: hằng, giá trị không thay đổi 
+ 
+Exprssion: biểu thức 
+Lƣu ý: 
+Kiểu dữ liệu của biến ở phía bên trái phải khớp với kiểu dữ liệu của 
+hằng/ biến / biểu thức ở phía bên phải với một vài ngoại lệ trong đó có thể 
+chuyển đổi loại tự động. 
+ Ví dụ 1.37 
+b = c; // biến b đƣợc gán giá trị của biến c; 
+a = 9; // biến a  đƣợc gán giá trị bằng 9; 
+b = c + 5; // biến b đƣợc gán giá trị bằng biểu thức c + 5. 
+1.6.2. Ép kiểu dữ liệu 
+Trong C cũng nhƣ một số ngôn ngữ lập trình khác, trong một biểu 
+thức thì các toán hạng phải cùng kiểu. Tuy nhiên, trong thực tế thì không 

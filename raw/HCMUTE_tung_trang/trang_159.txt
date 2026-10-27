@@ -1,0 +1,45 @@
+// Trang 159 - Ngôn ngữ lập trình C_ebook.pdf
+
+156
+Trong ví dụ trên, chúng ta lặp phép nhân trong hàm giai thừa bằng 
+cách gọi chính nó và giảm giá trị tham số đi 1 đơn vị. Điều kiện dừng 
+được thiết lập là n=1.
+6.7. MỘT SỐ HÀM THƯ VIỆN CHUẨN
+Thư viện chuẩn cung cấp nhiều hàm thông dụng bao gồm các 
+hàm xử lý, tính toán. Các hàm chuẩn này tồn tại trên hầu hết các hệ 
+thống chuẩn. Phần này giới thiệu sơ lược một số hàm, người đọc có 
+thể tự tìm hiểu thêm chức năng hàm, tham số, kiểu giá trị trả về của 
+hàm khi sử dụng.
+ Các hàm xử lý toán học: sqrt, pow, sin, cos, tan.
+ Các hàm thao tác trên ký tự: isdigit, isalpha, isspace, toupper, 
+tolower.
+ Các hàm thao tác trên chuỗi: strlen, strcpy, strcmp, strcat, 
+strstr, strtok.
+ Các hàm thao tác trên thiết bị xuất nhập: printf, scanf, 
+sprintf, sscanf.
+ Các hàm thao tác trên tập tin: fopen, fclose, fgets, fprints.
+ Các hàm thao tác trên dữ liệu thời gian: clock, time, difftime.
+ Các hàm hỗ trợ sắp xếp và tìm kiếm: qsort, bsearch.
+6.8. BÀI TẬP
+1.  Hãy tìm và sửa lỗi trong các câu/đoạn lệnh sau:
+a.
+void Ham1(int a, int b)
+{
+	
+return (a + b);
+}
+b.
+#include<stdio.h>
+int Ham2(void)
+{
+	
+int a, b, max;
+	
+max = a;
+	
+if(max < b)
+	
+	
+max = b;
+	
+return max;

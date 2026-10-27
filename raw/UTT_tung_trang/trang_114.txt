@@ -1,0 +1,35 @@
+// Trang 114 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+114 
+11        printf("\nBan vua nhan Yes"); 
+12     } 
+13     else 
+14     { 
+15        printf("\nBan vua nhan No"); 
+16     } 
+17     return 0; 
+18 } 
+Kết quả chƣơng trình: 
+Xin chao! 
+Ban muon tiep tuc, nhan y hoac n: y 
+Ban vua nhan Yes 
+2.2.3.3. Hàm putch() 
+Cú pháp: 
+ 
+putch(character); hoặc putch(character_variable); 
+Chức năng: Hàm putch() đƣợc sử dụng để in ký tự ra màn hình tại 
+vị trí con trỏ hiện tại.  
+Để sử dụng hàm putch() cần khai báo thƣ viện <conio.h> 
+ Ví dụ 2.27 
+Xem xét ví dụ sau đây: 
+1 #include<stdio.h> 
+2 #include<conio.h> 
+3 int main() 
+4 { 
+5   char ch; 
+6   printf("Nhan mot phim bat ky: "); 
+7   ch = getch(); 
+8   printf("\nPhim vua nhan la: "); 
+9   putch(ch); 
+10   getch();  
+11 } 

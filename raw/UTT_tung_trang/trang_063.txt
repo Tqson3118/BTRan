@@ -1,0 +1,48 @@
+// Trang 63 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+63 
+15     c %= a;     // c = 0 
+16     printf("c = %d\n", c); 
+17     return 0; 
+18 } 
+1.6.4.6. Toán tử bit 
+Trong quá trình tính toán, các phép toán nhƣ: cộng, trừ, nhân, chia, 
+v.v đƣợc chuyển thành cấp độ bit giúp xử lý nhanh hơn và tiết kiệm điện 
+năng. Toán tử bit đƣợc sử dụng trong lập trình C để thực hiện các phép 
+toán bit 
+Bảng 1.10. Các toán tử bit 
+Toán tử 
+Nghĩa của toán tử 
+& 
+AND bit 
+| 
+OR bit 
+  
+XOR bit 
+  
+Đảo bit 
+  
+Dịch trái 
+  
+Dịch phải 
+a. AND bit 
+Đầu ra của AND bit là 1 nếu các bit tƣơng ứng của hai toán hạng là 
+1. Nếu một bit của toán hạng là 0, kết quả của bit tƣơng ứng đƣợc ƣớc 
+tính thành 0. 
+ 
+1 & 1 = 1 
+1 & 0 = 0 
+ 
+ 
+0 & 1 = 0 
+0 & 0 = 0 
+ Ví dụ 1.49 
+Chúng ta hãy tìm hiểu cách tính AND bit của hai số nguyên 9 và 15. 
+910    =   000010012 
+1510  =   000011112 
+Toán tử AND bit của 16 và 15 
+   910    =   000010012 
+          & 1510  =   000011112 
+ 
+ 
+             000010012 =  9 (Trong hệ thập phân) 

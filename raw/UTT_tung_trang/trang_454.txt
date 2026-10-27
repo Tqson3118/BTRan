@@ -1,0 +1,72 @@
+// Trang 454 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+454 
+Chƣơng trình: 
+1  
+#include<stdio.h> 
+2  
+#define max 50 
+3  
+#define diemchuan 18 
+4  
+struct thisinh 
+5  
+{ 
+6  
+char ht[30]; 
+7  
+char sbd[10]; 
+8  
+float d_toan,d_ly,d_hoa,tong_diem; 
+9  
+} ; 
+10  
+void nhapttts(thisinh a[], int n) 
+11  
+{ 
+12  
+int i; 
+13  
+printf("Nhap thong tin cua cac thi sinh:\n"); 
+14  
+for (i = 0;i < n;i++) 
+15  
+{ 
+16  
+printf("Nhap thong tin thu %d:\n", i+1); 
+17  
+printf("Nhap ho ten thi sinh:\n"); 
+18  
+fflush(stdin); 
+19  
+gets(a[i].ht); 
+20  
+printf("Nhap so bao danh thi sinh:\n"); 
+21  
+fflush(stdin); 
+22  
+gets(a[i].sbd); 
+23  
+printf("Nhap diem mon Toan: \n"); 
+24  
+scanf("%f", &a[i].d_toan); 
+25  
+printf("Nhap diem mon Ly: \n"); 
+26  
+scanf("%f", &a[i].d_ly); 
+27  
+printf("Nhap diem mon Hoa: \n"); 
+28  
+scanf("%f", &a[i].d_hoa); 
+29  
+a[i].tong_diem=a[i].d_toan+a[i].d_ly+a[i].d_hoa; 
+30  
+} 
+31  
+} 
+32  
+void hienthi(thisinh a[], int n) 
+33  
+{ 
+34  
+int i; 

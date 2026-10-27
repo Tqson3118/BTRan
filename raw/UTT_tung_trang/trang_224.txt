@@ -1,0 +1,55 @@
+// Trang 224 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+224 
+Khái niệm tham số: Tham số là biến đƣợc khai báo trong hàm, 
+dùng để cung cấp giá trị cho hàm và lƣu kết quả tính toán cho hàm. 
+ Truyền tham trị: Khi một hàm đƣợc gọi, giá trị của các tham số 
+thực sự đƣợc gán cho các tham số hình thức, các tham số hình thức này 
+chính là các bản sao của các tham số thực sự. Các đối này đƣợc cấp phát 
+bộ nhớ khi hàm đƣợc xét đến và sẽ bị giải phóng khỏi bộ nhớ trƣớc khi ra 
+khỏi hàm. Nhƣ vậy, không thể mang giá trị của đối ra khỏi hàm. Có nghĩa 
+là không thể sử dụng đối để làm thay đổi giá trị của bất kỳ đại lƣợng nào 
+bên ngoài hàm. Hàm chỉ làm việc trên các bản sao, các đối này có thể bị 
+biến đổi trong thân hàm, nhƣng các tham số thực sự không bị thay đổi. 
+ Ví dụ 4.5 
+Nhập vào 2 số nguyên x, y. Hoán đổi vị trí hai số nguyên x và y. 
+Chƣơng trình 
+1 
+#include<stdio.h> 
+2 
+void hoandoi(int a, int b) 
+3 
+{ 
+4 
+ 
+int tg; 
+5 
+ 
+tg = a; 
+6 
+ 
+a = b; 
+7 
+ 
+b = tg; 
+8 
+printf("\nHoan doi trong ham a = %d va b = %d\n", a , b); 
+9 
+} 
+10 
+main() 
+11 
+{ 
+12 
+int x = 5, y = 9; 
+13 
+printf("\nTruoc khi doi a = %d va b = %d\n", x , y); 
+14 
+hoandoi(x, y); 
+15 
+printf("\nSau khi doi a = %d va b = %d\n", x , y); 
+16 
+} 
+Kết quả chƣơng trình 
+Truoc khi doi a = 5 va b = 9 
+Hoan doi trong ham a = 9 va b = 5 

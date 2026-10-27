@@ -1,0 +1,79 @@
+// Trang 475 - DC2TT23 - Giao_trinh_ngon_ngu_lap_trinh_C (2).pdf
+
+475 
+18  
+ 
+ 
+case 6: caonhat(sv, spt);break; 
+19  
+ 
+ 
+case 7: thapnhat(sv, spt);break; 
+20  
+ 
+ 
+case 8:find(sv, spt);break; 
+21  
+ 
+ 
+case 9: { 
+22  
+ 
+ 
+ 
+     Sx_theo_tong(sv, spt); 
+23  
+ 
+ 
+ 
+ 
+ hienthi(sv, spt); 
+24  
+ 
+ 
+ 
+ 
+ break; 
+25  
+ 
+ 
+ 
+    } 
+26  
+ 
+default: printf("Khong co lua chon nay\n"); break; 
+27  
+ 
+} 
+28  
+ 
+printf("Nhan phim y de tiep tuc:");  
+29  
+ 
+scanf("%s", &ok);  
+30  
+} while (ok == 'y'); 
+31  
+32  
+if (ok != 'y') printf("CAM ON BAN DA THUC HIEN 
+CHUONG TRINH!\n"); 
+33  
+return 0; 
+34 } 
+6.3.2.2. Giải quyết vấn đề 
+Chƣơng trình: 
+#include <stdio.h> 
+#include <conio.h> 
+#include <string.h> 
+#define MAX 100 
+//dinh nghia kieu cau truc sinh vien 
+ 
+typedef struct 
+{ 
+char masv[10]; 
+char tensv[10]; 
+char gt; 
+float d_tp1; 
+float d_tp2; 
+float d_cc; 
+float d_gk; 
