@@ -413,7 +413,7 @@ int main(void) {
     content: "Hàm đệ quy in ngược số nguyên sau đây sẽ hiển thị kết quả nào lên màn hình khi gọi printReverse(123)?",
     questionType: 'single',
     questionSubtype: 'output',
-    difficulty: 'medium',
+    difficulty: 'hard',
     codeSnippet: `#include <stdio.h>
 
 void printReverse(int n) {
@@ -434,7 +434,7 @@ int main(void) {
     ],
     correctAnswers: ['C'],
     explanation: "Lần 1: n=123, in 123%10 = 3, gọi printReverse(12). Lần 2: in 12%10 = 2, gọi printReverse(1). Lần 3: in 1%10 = 1, gọi printReverse(0). Lần 4: n=0 return. Kết quả in là '321'.",
-    tags: ["c-lang", "ch4", "output", "medium"],
+    tags: ["c-lang", "ch4", "output", "hard"],
     reference: {
       uttPage: 'Trang 248',
       hcmutePage: 'Trang 153',
@@ -486,7 +486,7 @@ int main(void) {
     content: "Xung đột tầm vực biến: Kết quả in ra của chương trình sử dụng biến trùng tên sau là gì?",
     questionType: 'single',
     questionSubtype: 'output',
-    difficulty: 'medium',
+    difficulty: 'hard',
     codeSnippet: `#include <stdio.h>
 
 int x = 100; // Biến toàn cục
@@ -509,7 +509,7 @@ int main(void) {
     ],
     correctAnswers: ['A'],
     explanation: "Biến cục bộ che khuất (shadows) biến toàn cục cùng tên trong phạm vi hàm của nó. Do đó trong hàm show in ra 20, còn trong hàm main in ra giá trị của biến toàn cục là 100.",
-    tags: ["c-lang", "ch4", "output", "medium"],
+    tags: ["c-lang", "ch4", "output", "hard"],
     reference: {
       uttPage: 'Trang 232',
       hcmutePage: 'Trang 145',
@@ -759,7 +759,7 @@ int tinhTong(int a, int b) {
     content: "Lỗi quản lý bộ nhớ nguy hiểm nào xuất hiện trong đoạn mã trả về con trỏ sau đây?",
     questionType: 'single',
     questionSubtype: 'debug',
-    difficulty: 'medium',
+    difficulty: 'hard',
     codeSnippet: `int* taoBien(void) {
     int x = 100;
     return &x;
@@ -772,7 +772,7 @@ int tinhTong(int a, int b) {
     ],
     correctAnswers: ['D'],
     explanation: "Bẫy con trỏ lơ lửng (Dangling pointer): Biến cục bộ x nằm trên Stack Frame của taoBien. Khi hàm thoát, vùng nhớ này bị thu hồi. Trả về &x dẫn đến con trỏ trỏ vào vùng nhớ không hợp lệ.",
-    tags: ["c-lang", "ch4", "debug", "medium"],
+    tags: ["c-lang", "ch4", "debug", "hard"],
     reference: {
       uttPage: 'Trang 237',
       hcmutePage: 'Trang 147',

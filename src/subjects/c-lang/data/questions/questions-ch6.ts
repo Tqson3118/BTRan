@@ -40,7 +40,7 @@ export const questionsCh6: CQuestion[] = [
     content: "Kích thước bộ nhớ của biến con trỏ kiểu int* so với kiểu char* trên cùng hệ thống 64-bit là như thế nào?",
     questionType: 'single',
     questionSubtype: 'theory',
-    difficulty: 'medium',
+    difficulty: 'easy',
     options: [
       { id: 'A', text: "Con trỏ int* có kích thước 4 bytes còn con trỏ char* có kích thước 1 byte theo kiểu trỏ tới." },
       { id: 'B', text: "Cả hai đều có kích thước bằng nhau (đều là 8 bytes trên kiến trúc vi xử lý hệ thống 64-bit)." },
@@ -49,7 +49,7 @@ export const questionsCh6: CQuestion[] = [
     ],
     correctAnswers: ['B'],
     explanation: "Căn cứ UTT tr.317 và HCMUTE tr.122: Mọi con trỏ trên cùng kiến trúc đều có cùng kích thước (8 bytes trên 64-bit, 4 bytes trên 32-bit), bất kể kiểu dữ liệu đích.",
-    tags: ["c-lang", "ch6", "theory", "medium"],
+    tags: ["c-lang", "ch6", "theory", "easy"],
     reference: {
       uttPage: 'Trang 317',
       hcmutePage: 'Trang 122',
@@ -88,7 +88,7 @@ export const questionsCh6: CQuestion[] = [
     content: "Nguyên lý số học con trỏ: Biểu thức 'p + 1' (với p là con trỏ kiểu int*) sẽ làm dịch chuyển địa chỉ bao nhiêu bytes?",
     questionType: 'single',
     questionSubtype: 'theory',
-    difficulty: 'medium',
+    difficulty: 'easy',
     options: [
       { id: 'A', text: "Luôn luôn dịch chuyển đúng chính xác 1 byte trong bộ nhớ bất kể kiểu dữ liệu con trỏ trỏ tới." },
       { id: 'B', text: "Dịch chuyển đúng 1 * sizeof(int) bytes (thường là 4 bytes trên các trình biên dịch hiện đại)." },
@@ -97,7 +97,7 @@ export const questionsCh6: CQuestion[] = [
     ],
     correctAnswers: ['B'],
     explanation: "Căn cứ UTT tr.322 và HCMUTE tr.126: Phép toán số học con trỏ (p + k) dịch địa chỉ đi một khoảng k * sizeof(*p) bytes.",
-    tags: ["c-lang", "ch6", "theory", "medium"],
+    tags: ["c-lang", "ch6", "theory", "easy"],
     reference: {
       uttPage: 'Trang 322',
       hcmutePage: 'Trang 126',
@@ -484,7 +484,7 @@ int main(void) {
     content: "Kết quả in ra của con trỏ cấp 2 trong đoạn mã sau đây là gì?",
     questionType: 'single',
     questionSubtype: 'output',
-    difficulty: 'medium',
+    difficulty: 'hard',
     codeSnippet: `#include <stdio.h>
 
 int main(void) {
@@ -502,7 +502,7 @@ int main(void) {
     ],
     correctAnswers: ['D'],
     explanation: "*pp lấy con trỏ p, **pp lấy giá trị ô nhớ a (100). Do đó **pp + 5 = 100 + 5 = 105.",
-    tags: ["c-lang", "ch6", "output", "medium"],
+    tags: ["c-lang", "ch6", "output", "hard"],
     reference: {
       uttPage: 'Trang 329',
       hcmutePage: 'Trang 131',
@@ -796,7 +796,7 @@ free(p);`,
     content: "Lỗi sử dụng sau giải phóng (Use-After-Free) được minh họa bằng trường hợp nào sau đây?",
     questionType: 'single',
     questionSubtype: 'debug',
-    difficulty: 'medium',
+    difficulty: 'hard',
     codeSnippet: `int *p = (int *)malloc(sizeof(int));
 *p = 10;
 free(p);
@@ -809,7 +809,7 @@ printf("%d", *p);`,
     ],
     correctAnswers: ['A'],
     explanation: "Use-after-free: sau free(p), ô nhớ không còn thuộc quyền sở hữu của chương trình. Đọc `*p` gây hành vi không xác định (Undefined Behavior) vì ô nhớ có thể đã bị cấp cho tiến trình khác.",
-    tags: ["c-lang", "ch6", "debug", "medium"],
+    tags: ["c-lang", "ch6", "debug", "hard"],
     reference: {
       uttPage: 'Trang 333',
       hcmutePage: 'Trang 135',
@@ -878,7 +878,7 @@ a = p;`,
     content: "Đoạn mã sau có lỗi logic gì khi sử dụng hàm realloc để mở rộng kích thước bộ nhớ?",
     questionType: 'single',
     questionSubtype: 'debug',
-    difficulty: 'medium',
+    difficulty: 'hard',
     codeSnippet: `int *p = (int *)malloc(10 * sizeof(int));
 p = (int *)realloc(p, 1000000000 * sizeof(int));`,
     options: [
@@ -889,7 +889,7 @@ p = (int *)realloc(p, 1000000000 * sizeof(int));`,
     ],
     correctAnswers: ['D'],
     explanation: "Bẫy realloc: Nếu không đủ RAM, realloc trả về NULL nhưng khối nhớ cũ vẫn còn nguyên. Nếu gán trực tiếp `p = realloc(p, ...)`, p thành NULL, mất dấu khối cũ -> rò rỉ bộ nhớ. Cần dùng biến tạm: `int *tmp = realloc(...)`.",
-    tags: ["c-lang", "ch6", "debug", "medium"],
+    tags: ["c-lang", "ch6", "debug", "hard"],
     reference: {
       uttPage: 'Trang 332',
       hcmutePage: 'Trang 134',

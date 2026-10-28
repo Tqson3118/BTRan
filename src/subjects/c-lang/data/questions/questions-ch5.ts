@@ -109,22 +109,22 @@ export const questionsCh5: CQuestion[] = [
     id: 'q-c-ch5-005',
     chapterId: 5,
     articleId: 'c-art-ch5-02',
-    content: "Để lưu trữ một chuỗi ký tự có độ dài thực tế là N ký tự, cần khai báo mảng char với kích thước tối thiểu là bao nhiêu?",
+    content: "Các hàm kiểm tra phân loại ký tự trong thư viện <ctype.h> như isalpha(c), isdigit(c), isspace(c) trả về giá trị gì khi ký tự c thỏa mãn điều kiện?",
     questionType: 'single',
     questionSubtype: 'theory',
-    difficulty: 'easy',
-    options: [
-      { id: 'A', text: "Chỉ cần đúng N bytes vì trình biên dịch tự động nén ký tự kết thúc vào phần thông tin tiêu đề." },
-      { id: 'B', text: "Phải là 2 * N bytes để hệ thống lưu thêm bảng mã ánh xạ ký tự Unicode cho từng ký tự." },
-      { id: 'C', text: "Tối thiểu phải là N + 1 bytes để chừa lại đúng 1 byte lưu trữ ký tự kết thúc chuỗi '\0'." },
-      { id: 'D', text: "Phải là N + 4 bytes để lưu trữ thêm con trỏ kích thước và địa chỉ bắt đầu của chuỗi trong RAM." },
+    difficulty: 'medium',
+        options: [
+      { id: 'A', text: "Trả về số nguyên khác 0 (chân trị True) nếu thỏa mãn và trả về 0 (False) nếu không thỏa mãn điều kiện." },
+      { id: 'B', text: "Trả về kiểu dữ liệu boolean true/false nguyên thủy được định nghĩa trực tiếp trong chuẩn C89 của C." },
+      { id: 'C', text: "Trả về chính mã ký tự ASCII của ký tự c nếu thỏa mãn và trả về giá trị số âm -1 nếu không thỏa mãn." },
+      { id: 'D', text: "Trả về con trỏ vùng đệm tĩnh lưu trữ địa chỉ của ký tự c được định nghĩa trong bảng mã ký tự ASCII." },
     ],
-    correctAnswers: ['C'],
-    explanation: "Căn cứ UTT tr.336 và HCMUTE tr.107: Mọi chuỗi C dài N ký tự cần N bytes cho nội dung và 1 byte cho ký tự '\0', tổng cộng là N + 1 bytes.",
-    tags: ["c-lang", "ch5", "theory", "easy"],
+    correctAnswers: ['A'],
+    explanation: "Căn cứ HCMUTE tr.110-114 và UTT tr.349: Các hàm kiểm tra trong <ctype.h> (isalpha, isdigit, isalnum, isspace...) nhận tham số int c và trả về một số nguyên khác 0 (nonzero, quy ước true trong C) nếu thỏa mãn điều kiện, và trả về 0 nếu sai.",
+    tags: ["c-lang", "ch5", "theory", "medium"],
     reference: {
-      uttPage: 'Trang 336',
-      hcmutePage: 'Trang 107',
+      uttPage: 'Trang 349',
+      hcmutePage: 'Trang 110 - 114',
       section: '5.2',
     },
     mockExamPreset: false,
@@ -277,22 +277,34 @@ export const questionsCh5: CQuestion[] = [
     id: 'q-c-ch5-012',
     chapterId: 5,
     articleId: 'c-art-ch5-02',
-    content: "Hàm strstr(haystack, needle) trong thư viện chuẩn <string.h> thực hiện chức năng gì?",
+    content: "Kết quả in ra màn hình của đoạn chương trình C sau đây sử dụng các hàm chuyển đổi ký tự trong <ctype.h> là gì?",
     questionType: 'single',
-    questionSubtype: 'theory',
-    difficulty: 'easy',
+    questionSubtype: 'output',
+    difficulty: 'hard',
+    codeSnippet: `#include <stdio.h>
+#include <ctype.h>
+
+int main(void) {
+    char s[] = "C-lang 2024!";
+    for (int i = 0; s[i] != '\\0'; i++) {
+        if (islower(s[i])) s[i] = toupper(s[i]);
+        else if (isupper(s[i])) s[i] = tolower(s[i]);
+    }
+    printf("%s", s);
+    return 0;
+}`,
     options: [
-      { id: 'A', text: "Tìm kiếm sự xuất hiện đầu tiên của chuỗi con needle trong chuỗi haystack và trả về con trỏ trỏ tới vị trí đó." },
-      { id: 'B', text: "Nối chuỗi ký tự needle vào phía sau chuỗi haystack và trả về con trỏ trỏ tới đầu chuỗi kết quả mới." },
-      { id: 'C', text: "So sánh độ dài số lượng ký tự giữa hai chuỗi và trả về giá trị số học nguyên là hiệu độ dài hai chuỗi." },
-      { id: 'D', text: "Thay thế tất cả các lần xuất hiện của chuỗi needle trong chuỗi haystack bằng một ký tự khoảng trắng." },
+      { id: 'A', text: "In ra 'c-LANG 2024!' (đảo ngược chữ hoa thành thường và chữ thường thành hoa, giữ nguyên số và ký tự đặc biệt)." },
+      { id: 'B', text: "In ra 'C-LANG 2024!' (chuyển đổi toàn bộ tất cả các chữ cái trong chuỗi văn bản thành chữ in hoa)." },
+      { id: 'C', text: "In ra 'c-lang 2024!' (chuyển đổi toàn bộ tất cả các chữ cái trong chuỗi văn bản thành chữ in thường)." },
+      { id: 'D', text: "Chương trình báo lỗi biên dịch do các hàm tolower và toupper không xử lý được ký tự khoảng trắng và số." },
     ],
     correctAnswers: ['A'],
-    explanation: "Căn cứ UTT tr.348 và HCMUTE tr.114: strstr tìm kiếm chuỗi con trong chuỗi mẹ. Nếu tìm thấy, trả về con trỏ trỏ tới vị trí bắt đầu chuỗi con; nếu không tìm thấy, trả về NULL.",
-    tags: ["c-lang", "ch5", "theory", "easy"],
+    explanation: "Căn cứ HCMUTE tr.112-114: islower() kiểm tra chữ thường, toupper() chuyển thành chữ hoa ('l','a','n','g' -> 'L','A','N','G'); isupper() kiểm tra chữ hoa, tolower() chuyển thành chữ thường ('C' -> 'c'). Các ký tự '-', khoảng trắng, số '2024' và '!' không đổi. Kết quả in ra là 'c-LANG 2024!'.",
+    tags: ["c-lang", "ch5", "output", "hard"],
     reference: {
-      uttPage: 'Trang 348',
-      hcmutePage: 'Trang 114',
+      uttPage: 'Trang 350',
+      hcmutePage: 'Trang 112 - 114',
       section: '5.2',
     },
     mockExamPreset: false,
@@ -574,36 +586,24 @@ for (int j = 0; j < 2; j++) {
   {
     id: 'q-c-ch5-022',
     chapterId: 5,
-    articleId: 'c-art-ch5-02',
-    content: "Kết quả so sánh chuỗi strcmp trong đoạn chương trình sau là gì?",
+    articleId: 'c-art-ch5-03',
+    content: "Khai báo mảng các chuỗi ký tự char ds[10][50]; trong ngôn ngữ C có ý nghĩa tổ chức bộ nhớ như thế nào và cú pháp truy xuất ra sao?",
     questionType: 'single',
-    questionSubtype: 'output',
-    difficulty: 'medium',
-    codeSnippet: `#include <stdio.h>
-#include <string.h>
-
-int main(void) {
-    char a[] = "apple";
-    char b[] = "banana";
-    if (strcmp(a, b) < 0)
-        printf("Nho hon");
-    else
-        printf("Lon hon");
-    return 0;
-}`,
-    options: [
-      { id: 'A', text: "In ra 'Lon hon' (vì chuỗi 'apple' có độ dài số lượng ký tự ngắn hơn chuỗi 'banana')." },
-      { id: 'B', text: "In ra 'Nho hon' (vì mã ASCII của ký tự 'a' là 97 nhỏ hơn mã ASCII của ký tự 'b' là 98)." },
-      { id: 'C', text: "In ra 'Lon hon' (vì hàm strcmp luôn ưu tiên chuỗi xuất hiện trước trong bảng từ điển)." },
-      { id: 'D', text: "Chương trình gặp lỗi biên dịch vì hàm strcmp chỉ chấp nhận hai con trỏ cấp phát động." },
+    questionSubtype: 'theory',
+    difficulty: 'hard',
+        options: [
+      { id: 'A', text: "Khai báo một mảng một chiều gồm 50 chuỗi, mỗi chuỗi ký tự có độ dài tối đa là 10 ký tự bao gồm cả ký tự kết thúc chuỗi '\\0'." },
+      { id: 'B', text: "Khai báo mảng gồm 10 chuỗi ký tự, mỗi chuỗi tối đa 49 ký tự nội dung (1 byte cho '\\0'), truy xuất chuỗi thứ i qua mảng ds[i]." },
+      { id: 'C', text: "Khai báo một chuỗi ký tự duy nhất có tổng dung lượng 500 bytes được hệ thống cấp phát liên tục trên phân vùng nhớ Heap." },
+      { id: 'D', text: "Khai báo 10 con trỏ chuỗi độc lập và các chuỗi này bắt buộc phải được lập trình viên cấp phát động bằng hàm malloc hệ thống." },
     ],
     correctAnswers: ['B'],
-    explanation: "Ký tự đầu tiên 'a' (ASCII 97) so với 'b' (ASCII 98): 97 - 98 = -1 < 0. Do đó strcmp(a, b) < 0, in 'Nho hon'.",
-    tags: ["c-lang", "ch5", "output", "medium"],
+    explanation: "Căn cứ HCMUTE tr.104-106 và UTT tr.300: char ds[10][50] là mảng 2 chiều ký tự (mảng của các chuỗi). Nó quản lý 10 chuỗi, mỗi chuỗi tối đa 50 bytes (49 ký tự nội dung + 1 byte '\\0'). Chuỗi thứ i được đại diện bởi con trỏ/mảng con ds[i], và ký tự thứ j của chuỗi thứ i là ds[i][j].",
+    tags: ["c-lang", "ch5", "theory", "hard"],
     reference: {
-      uttPage: 'Trang 346',
-      hcmutePage: 'Trang 113',
-      section: '5.2',
+      uttPage: 'Trang 300',
+      hcmutePage: 'Trang 104 - 106',
+      section: '5.3',
     },
     mockExamPreset: false,
   },
@@ -794,7 +794,7 @@ str[0] = 'h';`,
     content: "Lỗi định dạng khai báo nào khiến hàm nhận mảng hai chiều sau đây bị từ chối biên dịch?",
     questionType: 'single',
     questionSubtype: 'debug',
-    difficulty: 'medium',
+    difficulty: 'hard',
     codeSnippet: `void inMaTran(int a[][], int m, int n) {
     // Code in ma tran
 }`,
@@ -806,7 +806,7 @@ str[0] = 'h';`,
     ],
     correctAnswers: ['D'],
     explanation: "Trong C, khi truyền mảng 2D vào hàm, bắt buộc phải chỉ định số cột ở chiều thứ hai (ví dụ int a[][N]) để compiler tính được độ dịch dòng a + i*N + j.",
-    tags: ["c-lang", "ch5", "debug", "medium"],
+    tags: ["c-lang", "ch5", "debug", "hard"],
     reference: {
       uttPage: 'Trang 299',
       hcmutePage: 'Trang 103',
